@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribute — Dipolar Strings</title>
+<meta name="description" content="Contribute to the Dipolar Strings model: working groups by aspect, a propose → debate → consensus → new version workflow, backed by GitHub and Zenodo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;--paper:#f6f8fb;--grid:#e5ecf4;--line:#d3dded;
+    --ink:#0e1a26;--muted:#5b6b7a;--blue:#1858c7;--amber:#c9770f;--red:#d23b1e;--green:#1a8f63;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:var(--amber);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code,.mono{font-family:"IBM Plex Mono",monospace}
+
+  header.bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:.4px;font-size:16px;color:var(--ink)}
+  .brand .z{color:var(--blue)}
+  nav.top a{color:var(--muted);font-size:13px;margin-left:22px;font-family:"IBM Plex Mono"}
+  nav.top a:hover{color:var(--ink);text-decoration:none}
+  nav.top a.active{color:var(--amber)}
+  nav.top a.gh{color:var(--blue)}
+  @media(max-width:660px){nav.top a{margin-left:14px}nav.top a.hidem{display:none}}
+
+  .hero{padding:60px 0 10px}
+  .eyebrow{font-family:"IBM Plex Mono";font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+  h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(34px,6vw,60px);line-height:1.04;margin:0 0 18px;letter-spacing:-1px}
+  h1 .sub{display:block;color:var(--amber)}
+  .lede{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:56ch;margin:0 0 26px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{font-family:"IBM Plex Mono";font-size:13px;padding:11px 18px;border-radius:3px;border:1px solid var(--line);color:var(--ink);background:var(--bg);display:inline-flex;align-items:center;gap:8px;transition:.15s}
+  .btn:hover{border-color:var(--amber);text-decoration:none}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:500}
+  .btn.primary:hover{filter:brightness(1.15)}
+
+  section{padding:66px 0;border-top:1px solid var(--line)}
+  .sec-eyebrow{font-family:"IBM Plex Mono";font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+  h2{font-family:"Space Grotesk";font-weight:600;font-size:clamp(25px,4vw,36px);margin:0 0 18px;letter-spacing:-.5px}
+  p.body{max-width:64ch;color:#3a4a58}
+
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px}
+  @media(max-width:820px){.flow{grid-template-columns:1fr 1fr}}
+  @media(max-width:460px){.flow{grid-template-columns:1fr}}
+  .step{border:1px solid var(--line);border-radius:6px;padding:18px;background:var(--paper);transition:.15s}
+  a.step:hover{border-color:var(--amber);text-decoration:none}
+  .step .k{font-family:"IBM Plex Mono";font-size:12px;color:var(--amber)}
+  .step .h{font-family:"Space Grotesk";font-weight:500;font-size:16px;margin:8px 0 6px;color:var(--ink)}
+  .step p{margin:0;font-size:13px;color:var(--muted)}
+  .step .where{font-family:"IBM Plex Mono";font-size:11px;color:var(--blue);margin-top:10px;display:block}
+
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 24px}
+  .fbtn{font-family:"IBM Plex Mono";font-size:12px;padding:7px 14px;border-radius:3px;cursor:pointer;border:1px solid var(--line);background:var(--bg);color:var(--muted);transition:.15s}
+  .fbtn.on{border-color:var(--amber);color:var(--amber)}
+  .groups{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.groups{grid-template-columns:1fr}}
+  .grp{border:1px solid var(--line);border-radius:6px;padding:22px;background:var(--paper);display:flex;flex-direction:column;transition:.15s;color:inherit}
+  .grp:hover{border-color:var(--amber);text-decoration:none}
+  .grp .tag{font-family:"IBM Plex Mono";font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:3px;align-self:flex-start;margin-bottom:12px}
+  .tag.fal{color:var(--red);border:1px solid var(--red)}
+  .tag.open{color:var(--blue);border:1px solid var(--blue)}
+  .grp h3{font-family:"Space Grotesk";font-weight:600;font-size:19px;margin:0 0 8px;color:var(--ink)}
+  .grp p{margin:0 0 16px;font-size:14px;color:var(--muted);flex:1}
+  .grp .foot{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .grp .status{font-family:"IBM Plex Mono";font-size:11px;color:var(--muted)}
+  .grp .join{font-family:"IBM Plex Mono";font-size:12px;color:var(--amber)}
+  .grp.hide{display:none}
+
+  .rules{border-left:3px solid var(--green);background:#f0f8f4;padding:22px 26px;border-radius:0 6px 6px 0;margin-top:8px}
+  .rules ul{margin:0;padding-left:20px}
+  .rules li{margin:8px 0;color:#3a4a58}
+  .rules li strong{color:var(--ink)}
+  .rules code{background:#eaf1f8;padding:1px 6px;border-radius:3px;color:var(--blue);font-size:.9em}
+
+  .callout{border:1px dashed var(--line);border-radius:6px;padding:20px 22px;margin-top:22px;background:var(--paper)}
+  .callout p{margin:0;font-size:14px;color:var(--muted)}
+  .callout strong{color:var(--amber)}
+  .callout code{background:#eaf1f8;padding:1px 6px;border-radius:3px;color:var(--blue);font-size:.9em}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="brand">Dipolar<span class="z">·</span>Strings</span>
+    <nav class="top">
+      <a href="index.html">Model</a>
+      <a class="hidem" href="#groups">Groups</a>
+      <a class="hidem" href="#workflow">Workflow</a>
+      <a class="active" href="contribute.html">Contribute</a>
+      <a class="gh" href="https://github.com/rstpier/DipolarString">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Open research · falsification-partner mode</div>
+    <h1>The model is<span class="sub">a versioned repository.</span></h1>
+    <p class="lede">DS moves like an open project: you propose a quantified change, debate it in the relevant working group, reach consensus, and each consensus produces a new version time-stamped by a Zenodo DOI. Nothing merges without passing the verification harness.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#groups">Join a group →</a>
+      <a class="btn" href="https://github.com/rstpier/DipolarString/discussions/new/choose">Propose an idea</a>
+      <a class="btn" href="https://github.com/rstpier/DipolarString">View repository ↗</a>
+    </div>
+  </div>
+</div>
+
+<section id="workflow">
+  <div class="wrap">
+    <div class="sec-eyebrow">From idea to version</div>
+    <h2>The contribution loop</h2>
+    <p class="body">Five steps, each on an existing GitHub primitive. No infrastructure to reinvent: scientific versioning and DOI archiving are native.</p>
+    <div class="flow">
+      <a class="step" href="https://github.com/rstpier/DipolarString/discussions/new/choose">
+        <span class="k">01</span>
+        <div class="h">Propose</div>
+        <p>An idea, a correction, a derivation. Clearly stated, tied to one aspect.</p>
+        <span class="where">→ Discussion / Issue</span>
+      </a>
+      <a class="step" href="https://github.com/rstpier/DipolarString/discussions">
+        <span class="k">02</span>
+        <div class="h">Debate</div>
+        <p>The working group for that aspect challenges, refines, or refutes.</p>
+        <span class="where">→ Discussion category</span>
+      </a>
+      <a class="step" href="https://github.com/rstpier/DipolarString/blob/main/verify_all.py">
+        <span class="k">03</span>
+        <div class="h">Verify</div>
+        <p>Any numerical claim must keep <code>verify_all.py</code> green (40/40).</p>
+        <span class="where">→ Pull request + CI</span>
+      </a>
+      <a class="step" href="https://github.com/rstpier/DipolarString/pulls">
+        <span class="k">04</span>
+        <div class="h">Consensus</div>
+        <p>Maintainer review. Explicit agreement required before merge.</p>
+        <span class="where">→ PR review</span>
+      </a>
+      <a class="step" href="https://github.com/rstpier/DipolarString/releases">
+        <span class="k">05</span>
+        <div class="h">Version</div>
+        <p>Merge → release tag → new version DOI under the concept DOI.</p>
+        <span class="where">→ Release + Zenodo</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="groups">
+  <div class="wrap">
+    <div class="sec-eyebrow">Where the work happens</div>
+    <h2>Working groups</h2>
+    <p class="body">The model's aspects aren't invented for the occasion: they are the falsification targets and open problems already inventoried in the paper. Each group is a dedicated discussion category.</p>
+
+    <div class="filters">
+      <button class="fbtn on" data-f="all">All</button>
+      <button class="fbtn" data-f="fal">Falsification targets</button>
+      <button class="fbtn" data-f="open">Open problems</button>
+    </div>
+
+    <div class="groups" id="groups-grid">
+
+      <a class="grp" data-cat="fal" href="https://github.com/rstpier/DipolarString/discussions/categories/shadow-eht">
+        <span class="tag fal">Falsification · #1</span>
+        <h3>Shadow &amp; EHT</h3>
+        <p>The δ = +4.63% deviation (b_c = e·r_s). Confront with ngEHT, 345 GHz, AMT. Track any measurement of δ after 2022.</p>
+        <div class="foot"><span class="status">active · most decisive</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="fal" href="https://github.com/rstpier/DipolarString/discussions/categories/gravitational-waves">
+        <span class="tag fal">Falsification · #2·#4</span>
+        <h3>Gravitational waves</h3>
+        <p>Zero breathing mode (binary) and non-periodic echoes with exponential spacing. Outside current quasi-periodic template searches.</p>
+        <div class="foot"><span class="status">active</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="fal" href="https://github.com/rstpier/DipolarString/discussions/categories/lrd-jwst">
+        <span class="tag fal">Falsification · #3</span>
+        <h3>LRD &amp; JWST</h3>
+        <p>Hard mass cutoff below M_crit ∝ ℓ₁² with an obligatory thermal photosphere. Confront with upcoming spectroscopic samples.</p>
+        <div class="foot"><span class="status">active · registered prediction</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="fal" href="https://github.com/rstpier/DipolarString/discussions/categories/pbh-evaporation">
+        <span class="tag fal">Falsification · #5</span>
+        <h3>PBH &amp; evaporation</h3>
+        <p>No evaporation burst, ever (binary). Dark-matter window reopened below 10¹⁵ g. HAWC / Fermi watch.</p>
+        <div class="foot"><span class="status">watch</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/microscopic-derivation">
+        <span class="tag open">Open problem · major</span>
+        <h3>Microscopic derivation of the medium</h3>
+        <p>The deepest debt: make the distributed RLC parameters emerge from a well-defined statistical mechanics of DQDs. Without it, DS stays a structured set of analogies.</p>
+        <div class="foot"><span class="status">priority</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/neutrino-sector">
+        <span class="tag open">Open problem</span>
+        <h3>Neutrino sector</h3>
+        <p>Three readings fail against oscillation data. Candidate: the DQD opening amplitude as flavor coordinate. Needs quantization to exactly three levels.</p>
+        <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/derivation-of-g">
+        <span class="tag open">Open problem</span>
+        <h3>Derivation of G</h3>
+        <p>Reclassified: demonstrated conformal obstruction, not a target. P = u/3 makes the substrate scale-free. Unlocking G needs an independent conformal-breaking scale — the sole lead: ∂Z/∂E².</p>
+        <div class="foot"><span class="status">obstruction · long-horizon</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/quantum-sector">
+        <span class="tag open">Open problem</span>
+        <h3>Quantitative quantum sector</h3>
+        <p>The hydrogen-spectrum recovery is structural, not quantitative: derive the Rydberg constant from substrate parameters. And close ℓcell, on which Πsat and ωc depend.</p>
+        <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/rotation-kerr">
+        <span class="tag open">Open problem</span>
+        <h3>Rotation / Kerr analogue</h3>
+        <p>The model is static; real objects spin. Build a "Kerr analogue" (frozen collapse + frozen vorticity) and the ergosphere for Blandford–Znajek jet launching.</p>
+        <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/chiral-closure">
+        <span class="tag open">Open problem</span>
+        <h3>Chiral closure of the Maxwell-3D node</h3>
+        <p>The 3-DQD node uniqueness theorem is conditional on one residual postulate: that the weave's geometric handedness transmits to the ±½ coefficients. A scattering computation remains.</p>
+        <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section id="consensus">
+  <div class="wrap">
+    <div class="sec-eyebrow">How consensus forms</div>
+    <h2>Ground rules</h2>
+    <p class="body">The model holds a strict epistemic posture, and it applies to contributions too. Disagreement is welcome; what isn't is an unverifiable claim presented as settled.</p>
+    <div class="rules">
+      <ul>
+        <li><strong>GR and QM rule.</strong> Any divergence in an already-tested regime is, by construction, a defect of DS — not a prediction.</li>
+        <li><strong>Quantified or nothing.</strong> A numerical contribution merges only if <code>verify_all.py</code> stays at 40/40. Code ships with the prose.</li>
+        <li><strong>Declared maturity level.</strong> Each statement is filed: <em>Derived</em>, <em>Calibrated</em>, <em>Postulated</em>, or <em>Closed</em>. No silent drift from postulate to result.</li>
+        <li><strong>Consensus = explicit maintainer agreement</strong> on a PR, not a popularity vote. An unresolved technical objection blocks the merge.</li>
+        <li><strong>Every version is traceable.</strong> Merge → tag → Zenodo version DOI under the concept DOI <code>10.5281/zenodo.21196098</code>. You always know who changed what, and when.</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <p><strong>One maintainer setup step.</strong> These links assume the repository is public with <em>Discussions</em> enabled and one category per group above (slugs: <code>shadow-eht</code>, <code>gravitational-waves</code>, <code>lrd-jwst</code>, <code>pbh-evaporation</code>, <code>microscopic-derivation</code>, <code>neutrino-sector</code>, <code>derivation-of-g</code>, <code>quantum-sector</code>, <code>rotation-kerr</code>, <code>chiral-closure</code>). Also add a CI action that runs <code>verify_all.py</code> on every pull request. Until a category exists, its link lands on the Discussions home — harmless.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>R. St-Pierre · Independent researcher, Québec · open, speculative project</span>
+    <span><a href="index.html">← Back to the model</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.fbtn'),cards=document.querySelectorAll('.grp');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      var f=b.getAttribute('data-f');
+      cards.forEach(function(c){
+        var show=(f==='all')||(c.getAttribute('data-cat')===f);
+        c.classList.toggle('hide',!show);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
