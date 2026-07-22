@@ -271,20 +271,28 @@
 (function(){
   var NS = 'dipolarstrings_org';
   
+  // 1. Incrémenter et afficher les lectures
   fetch('https://api.counterapi.dev/v1/' + NS + '/reads/up')
     .then(function(res){ return res.json(); })
     .then(function(data){ if(data.count !== undefined) document.getElementById('cnt-reads').textContent = data.count; })
     .catch(function(){ document.getElementById('cnt-reads').textContent = '1'; });
 
+  // 2. Lire la valeur actuelle des téléchargements
   fetch('https://api.counterapi.dev/v1/' + NS + '/downloads')
     .then(function(res){ return res.json(); })
     .then(function(data){ if(data.count !== undefined) document.getElementById('cnt-dl').textContent = data.count; })
     .catch(function(){ document.getElementById('cnt-dl').textContent = '0'; });
 
+  // 3. Incrémenter au clic + mise à jour visuelle immédiate
   var pdfBtn = document.getElementById('pdf-download-link');
   if(pdfBtn){
     pdfBtn.addEventListener('click', function(){
-      fetch('https://api.counterapi.dev/v1/' + NS + '/downloads/up');
+      var dlEl = document.getElementById('cnt-dl');
+      var currentVal = parseInt(dlEl.textContent, 10);
+      if(!isNaN(currentVal)){
+        dlEl.textContent = currentVal + 1;
+      }
+      fetch('https://api.counterapi.dev/v1/' + NS + '/downloads/up', { keepalive: true });
     });
   }
 })();
