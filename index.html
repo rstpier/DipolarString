@@ -280,32 +280,32 @@
 (function(){
   var NS = 'dipolarstrings_org';
   
-  // 1. Incrémenter et afficher les lectures (Page view)
+  // 1. Incrémenter et afficher les lectures
   fetch('https://api.counterapi.dev/v1/' + NS + '/reads/up')
-    .then(function(res){ return res.json(); })
-    .then(function(data){ if(data && data.count !== undefined) document.getElementById('cnt-reads').textContent = data.count; })
+    .then(function(r){ return r.json(); })
+    .then(function(d){ if(d && d.count !== undefined) document.getElementById('cnt-reads').textContent = d.count; })
     .catch(function(){ document.getElementById('cnt-reads').textContent = '1'; });
 
-  // 2. Aicher le nombre de téléchargements enregistrés sur le serveur
+  // 2. Lire les téléchargements (affiche 0 si le compteur n'existe pas encore)
   fetch('https://api.counterapi.dev/v1/' + NS + '/downloads')
-    .then(function(res){ return res.json(); })
-    .then(function(data){ if(data && data.count !== undefined) document.getElementById('cnt-dl').textContent = data.count; })
+    .then(function(r){ return r.json(); })
+    .then(function(d){ document.getElementById('cnt-dl').textContent = (d && d.count !== undefined) ? d.count : '0'; })
     .catch(function(){ document.getElementById('cnt-dl').textContent = '0'; });
 
-  // 3. Forcer l'envoi de l'incrémentation au serveur lors du clic
+  // 3. Incrémenter au clic garanti via sendBeacon
   var pdfBtn = document.getElementById('pdf-download-link');
   if(pdfBtn){
     pdfBtn.addEventListener('click', function(){
-      // Mise à jour visuelle immédiate
-      var dlEl = document.getElementById('cnt-dl');
-      var currentVal = parseInt(dlEl.textContent, 10);
-      if(!isNaN(currentVal)){
-        dlEl.textContent = currentVal + 1;
+      var url = 'https://api.counterapi.dev/v1/' + NS + '/downloads/up';
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(url);
+      } else {
+        fetch(url, { keepalive: true });
       }
       
-      // Ping instantané garanti vers le serveur distant
-      var img = new Image();
-      img.src = 'https://api.counterapi.dev/v1/' + NS + '/downloads/up?t=' + Date.now();
+      var dlEl = document.getElementById('cnt-dl');
+      var val = parseInt(dlEl.textContent, 10);
+      if(!isNaN(val)) dlEl.textContent = val + 1;
     });
   }
 })();
