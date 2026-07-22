@@ -95,6 +95,7 @@
   .lk .k{font-family:"IBM Plex Mono";font-size:12px;color:var(--blue);letter-spacing:1px}
   .lk .v{font-family:"Space Grotesk";font-weight:500;font-size:17px;color:var(--ink);margin-top:8px;display:block}
   .lk .m{font-family:"IBM Plex Mono";font-size:11px;color:var(--muted);margin-top:6px;word-break:break-all}
+  .lk .stats{font-family:"IBM Plex Mono";font-size:11px;color:var(--muted);margin-top:10px;display:flex;gap:12px;border-top:1px solid var(--line);padding-top:8px}
 
   footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:13px}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
@@ -241,10 +242,14 @@
     <div class="sec-eyebrow">Paper, data, code</div>
     <h2>Access &amp; archive</h2>
     <div class="links">
-      <a class="lk" href="DS_model_V2_6_final.pdf">
+      <a class="lk" id="pdf-download-link" href="DS_model_V2_6_final.pdf" target="_blank">
         <span class="k">MANUSCRIPT</span>
         <span class="v">Paper V2.6 (PDF) →</span>
         <span class="m">Dipolar String Model — R. St-Pierre</span>
+        <div class="stats">
+          <span>Reads: <b id="cnt-reads">--</b></span>
+          <span>Downloads: <b id="cnt-dl">--</b></span>
+        </div>
       </a>
       <a class="lk" href="https://github.com/rstpier/DipolarString">
         <span class="k">CODE · GITHUB</span>
@@ -334,6 +339,29 @@
   tMismatch.addEventListener('click',function(){state.target=0.92;tMismatch.classList.add('active');tMatch.classList.remove('active');});
   resize();
   if(reduce){frame();updateReadout();}else{requestAnimationFrame(tick);}
+
+  // --- COMPTEURS READ & DOWNLOAD ---
+  var NS = 'dipolarstrings_org';
+  
+  // Incrémente et affiche les lectures (Page view)
+  fetch('https://api.counterapi.dev/v1/' + NS + '/reads/up')
+    .then(function(res){ return res.json(); })
+    .then(function(data){ if(data.count !== undefined) document.getElementById('cnt-reads').textContent = data.count; })
+    .catch(function(){ document.getElementById('cnt-reads').textContent = '1'; });
+
+  // Lit la valeur actuelle des téléchargements
+  fetch('https://api.counterapi.dev/v1/' + NS + '/downloads')
+    .then(function(res){ return res.json(); })
+    .then(function(data){ if(data.count !== undefined) document.getElementById('cnt-dl').textContent = data.count; })
+    .catch(function(){ document.getElementById('cnt-dl').textContent = '0'; });
+
+  // Incrémente le compteur au clic sur le PDF
+  var pdfBtn = document.getElementById('pdf-download-link');
+  if(pdfBtn){
+    pdfBtn.addEventListener('click', function(){
+      fetch('https://api.counterapi.dev/v1/' + NS + '/downloads/up');
+    });
+  }
 })();
 </script>
 </body>
