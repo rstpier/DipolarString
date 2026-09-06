@@ -1,56 +1,76 @@
-# Dipolar Strings (DS / CD) model
+# Dipolar Strings (DS / CD)
 
-Reproducible material for *Dipolar String Model: an Exploratory Framework for the Vacuum from
-Transmission-Line Electrodynamics* (R. St-Pierre, 2026) — a deterministic framework in which the
-physical vacuum is modelled as a gas of dipolar cells behaving as bifilar transmission lines, and
-gravity as refraction of an impedance field.
+Repository for the **Dipolar Strings (DS)** exploratory framework by R. St-Pierre.
 
-**Status: exploratory working paper. No human peer review has taken place.** Both numerical
-implementations originate from the same human–AI collaboration, disclosed in the manuscript's
-Acknowledgments; independent third-party verification is invited and has not yet been performed.
+The project investigates a deterministic description of the physical vacuum based on
+dipolar cells modelled as transmission-line structures. The repository contains the
+scientific manuscript, numerical simulations, verification scripts, and archived
+releases.
 
-## Current version — V2.7
+> **Status:** Exploratory research project. The model has not undergone independent
+> peer review. Independent verification and critical evaluation are encouraged.
 
-| | |
-|---|---|
-| Manuscript | [`v2.7/DS_model_V2_7_final.pdf`](v2.7/DS_model_V2_7_final.pdf) (54 pp.) · [LaTeX source](v2.7/DS_model_V2_7_final.tex) |
-| Package | [`v2.7/DS_V2.7_package.zip`](v2.7/DS_V2.7_package.zip) — manuscript, scripts, verification logs, frozen environment |
-| Verification | `v2.7/verification/verify_all.py` — 40 symbolic/numerical checks, expected **40/40 PASS** |
-| Website | https://dipolarstrings.org |
+---
 
-New in V2.7: an appendix on the emergent relativistic dynamics of autonomous sub-gap breathers
-(proof of mechanism on a discrete sine-Gordon lattice, with measured second-order convergence),
-plus the master script reproducing it.
+## Latest Stable Release
 
-Previous version: [`v2.6/`](v2.6/) — archived on Zenodo as
-[10.5281/zenodo.21434867](https://doi.org/10.5281/zenodo.21434867).
+**Version:** V2.7
 
-## Archive
+- Manuscript: `v2.7/DS_model_V2_7_final.pdf`
+- Reproducible package: `v2.7/DS_V2.7_package.zip`
+- Verification: `v2.7/verification/verify_all.py`
+- Website: https://dipolarstrings.org
 
-- Concept DOI (always resolves to the latest version): [10.5281/zenodo.21196098](https://doi.org/10.5281/zenodo.21196098)
-- v1.0 version DOI — time-stamped record of the registered LRD prediction (Section 15.2): [10.5281/zenodo.21196099](https://doi.org/10.5281/zenodo.21196099)
+---
 
-## Reproduce
+## Repository Structure
 
-```bash
-pip install -r v2.7/requirements.txt
-cd v2.7/verification && python3 verify_all.py     # 40/40 PASS, exit 0
-python3 ../scripts/p2_master.py rest              # breather appendix, first table
+```
+v2.7/      Latest stable release
+v2.6/      Previous archived release
 ```
 
-`p2_master.py all` includes the h = 0.25 runs and takes several hours.
+Future development is performed on dedicated Git branches. The `main` branch always
+contains the latest stable version.
 
-## Falsification targets
+---
 
-The model is meant to be shot at. The five open confrontations — black-hole shadow diameter
-(+4.63 %, ngEHT), Little Red Dot mass function, exponentially spaced gravitational-wave echoes,
-absence of any primordial-black-hole evaporation burst, and the 2PN double-pulsar residuals — are
-stated in the Discussion of the manuscript, and the known failures are inventoried in its Open
-Problems section. Contributions are organised by
-[discussion category](https://github.com/rstpier/DipolarString/discussions); see
-[contribute.html](https://dipolarstrings.org/contribute.html).
+## Reproducibility
 
-## Licence
+The latest stable release includes:
 
-Manuscript and figures: CC BY 4.0 ([`LICENSE-MANUSCRIPT.md`](LICENSE-MANUSCRIPT.md)).
-Code: MIT ([`LICENSE`](LICENSE)).
+- scientific manuscript
+- LaTeX source
+- numerical scripts
+- verification scripts
+- verification logs
+- frozen Python environment
+
+See the documentation included in the corresponding release package for detailed
+reproduction instructions.
+
+---
+
+## Releases
+
+Latest release DOI:
+
+- https://doi.org/10.5281/zenodo.21434867
+
+Concept DOI (always points to the latest release):
+
+- https://doi.org/10.5281/zenodo.21196098
+
+---
+
+## Contributing
+
+The project welcomes independent verification, reproduction attempts, criticism,
+and discussions.
+
+---
+
+## License
+
+- Manuscript and figures: CC BY 4.0
+- Code: MIT

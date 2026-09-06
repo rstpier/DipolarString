@@ -1,0 +1,32 @@
+DS V2.9.1 APPENDIX-E RECONSTRUCTION LOG
+Date: 2026-08-31
+Status: reconstructed source, not byte-for-byte historical recovery
+========================================================================
+[PASS] GitHub main branch searched: no calc1/calc1b/calc1_common/calc2/calc3
+[PASS] GitHub v2.8-foundations branch searched: no historical calc files
+[PASS] 30-point band cache: k=(30,), modes=(30,1452)
+[PASS] Bound-band anchor: omega=0.36558142, core weight=0.49310
+[PASS] Free variance at T=480: 23.45460756 (paper 23.455)
+[PASS] Exact dispersive predictor: 23.45432810 (paper 23.452)
+[PASS] Quadratic predictor: 22.86192410 (paper 22.87)
+[PASS] Phase residual hierarchy: 0.081656 -> 0.014596 (paper 0.084 -> 0.016)
+[PASS] Full-map norm: 0.9999999999999868
+[PASS] Modal amplitude error: 1.65e-9 (paper 1.9e-8)
+[PASS] Modal phase error: 1.09e-9 rad (paper 1.5e-9 rad)
+[PASS] Interference peak: 0.3926990817 (paper 0.3927)
+[PASS] Interference correlation: 0.99982585 (paper 0.99962)
+[PASS] E/N: 0.3671338054 (paper 0.36713)
+[PASS] P/N: 1.5023598523 (paper 1.5024)
+[PASS] Gauge velocity maximum relative error: 1.4249% (paper <=1.5%)
+[PASS] V0=+0.015 full/projected delays: 9.1756 / 9.1349 (paper 9.2 / 9.3)
+[PASS] V0=+0.015 on-band fraction: 0.99997186 (paper 1.0000)
+[PASS] V0=-0.015 full/projected delays: 8.1884 / 5.0178 (paper 8.0 / 5.1)
+[PASS] V0=-0.015 off-band fraction: 0.73839% (paper 0.78%)
+[PASS] Localized-state weight: 0.88240 in explicit radius-11 window (paper 0.88)
+[PASS] Localized frequency: 0.41818919 (paper full-map 0.41819)
+[OPEN] Reconstructed finite-difference m_F*omega'' mean: 1.0678; historical 0.975.
+       The printed derivative convention is insufficient to identify the historical
+       estimator uniquely. The discrepancy is retained, not tuned.
+========================================================================
+VERDICT: the lost experimental layer is substantially reconstructed. All decisive
+Appendix-E anchors except the finite-force mass estimator are independently recovered.

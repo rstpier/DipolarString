@@ -1,0 +1,12 @@
+DS V2.9.1 — reconstructed scn_from_dqd.py
+sign motifs scanned               : 4096
+symmetric + unitary candidates    : 8
+proper cubic rotations checked    : 24
+cubic-equivariant candidates      : 2
+Bloch directions                  : 50 (seed=291)
+|q|                               : 0.005
+cubic candidate 1: pass=False  v_range=[0.000005696243, 0.499997032092]  max|v-1/2|=5.000e-01  max polarization split=5.000e-01
+cubic candidate 2: pass=True  v_range=[0.499999830137, 0.499999995504]  max|v-1/2|=1.699e-07  max polarization split=1.450e-13
+unique 50-direction isotropic node: True
+equals archived S_johns.npy       : True
+RESULT: PASS

@@ -1,0 +1,41 @@
+DS V2.9.1 CURRENT-CLAIM VERIFICATION
+========================================================================
+[PASS] Electron reduced-Compton anchor: R3=3.8615927e-13 m
+[PASS] String length anchor: ell1=8.0877008e-13 m
+[PASS] Cell energy density: u0=4.6427621e+23 J/m^3
+[PASS] Bifilar geometry: D/r=2cosh(pi)=23.1839066
+[PASS] Pole reflection coefficient: Gamma=0.333333333333
+[PASS] Impedance form of alpha: alpha_Z=0.00729735256434
+[PASS] Conditional Z3 coefficient: Delta_Z3=102.776999383=3/(4alpha_Z)
+[PASS] A8 critical density: uc/u0=14.4741
+[PASS] A8 critical mass: Mcrit=1291777 Msun
+[PASS] A8 critical compactness: rs/R=0.81447
+[PASS] Mass-function median: median=6.02165
+[PASS] Mass-function 10-percent quantile: q10=5.48783
+[PASS] Registered half-decade fraction: f1/2=0.86154
+[PASS] Simple quadratic turning point: vertex=14.4082, R2=0.9991595; implies exponent -1/2
+[PASS] Exact ell1-squared mass scaling: normalized=[1. 1. 1.]
+[PASS] Johns matrix shape: shape=(12, 12)
+[PASS] Johns symmetry: S=S^T
+[PASS] Johns unitarity: S^T S=I
+[PASS] Johns entry alphabet: entries=[-0.5  0.   0.5]
+[PASS] No self-reflection: diag(S)=0
+[PASS] Constraint scan: symmetric unitary candidates=8
+[PASS] Cubic-equivariant candidates: rotation-equivariant candidates=2
+[PASS] Low-q isotropic selection: isotropic candidates=1
+[PASS] Archived Johns node selected: S_johns equals selected candidate
+[PASS] Two transverse acoustic modes: v/c_link=[0.49998263 0.49998263]
+[PASS] Two zero-frequency constraint modes: count=2
+[PASS] Low-impedance equation withdrawn: no synchronization-speed equation label
+[PASS] A8 source printed: corrected source present
+[PASS] Conditional phase equation printed: phase normalization and Z3 coefficient present
+[PASS] Instanton-to-G gap disclosed: missing gravitational map stated
+[PASS] Appendix-E reconstruction inventory: files=5/5
+[PASS] Reconstructed 30-point band cache: k=(30,), modes=(30, 1452)
+[PASS] Braided-defect band anchor: omega=0.36558142, core=0.49310
+[PASS] Free-envelope anchors: variance=23.454608, quadratic=22.861924
+[PASS] Two-packet interference: peak=0.3926990817, corr=0.999826
+[PASS] Single-action-quantum closures: E/N=0.3671338, P/N=1.5023599, m*omega2=1.000000
+[SKIP] Optional symbolic checks: install requirements.txt (sympy missing)
+========================================================================
+RESULT: 36/36 PASS; 0 FAIL; 16.0 s
