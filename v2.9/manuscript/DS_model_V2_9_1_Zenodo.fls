@@ -1,4 +1,4 @@
-PWD /mnt/data/ds_final_patch/DS_V2_9_FINAL_COMPLETE/manuscript
+PWD /home/user/DipolarString/v2.9/manuscript
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -10,7 +10,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -232,6 +231,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -242,8 +243,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def

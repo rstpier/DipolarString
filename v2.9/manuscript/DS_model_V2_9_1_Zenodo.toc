@@ -50,45 +50,45 @@
 \contentsline {subsection}{\numberline {7.5}Parity invariance and the status of the weave chirality}{18}{subsection.7.5}%
 \contentsline {paragraph}{A note on the network vs.\ the gas.}{19}{paragraph*.35}%
 \contentsline {paragraph}{Epistemological placement.}{19}{paragraph*.36}%
-\contentsline {section}{\numberline {8}Kinematic Gravity and Vacuum Refraction}{19}{section.8}%
+\contentsline {section}{\numberline {8}Kinematic Gravity and Vacuum Refraction}{20}{section.8}%
 \contentsline {paragraph}{Static use of the Lagrangian (revised).}{20}{paragraph*.37}%
 \contentsline {paragraph}{What this does and does not establish (revised).}{20}{paragraph*.38}%
 \contentsline {paragraph}{Reality clause on the static field.}{21}{paragraph*.39}%
 \contentsline {subsection}{\numberline {8.1}Unified Gravitational Force Law}{21}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Conformal Representative and Matter Coupling}{21}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Conformal Representative and Matter Coupling}{22}{subsection.8.2}%
 \contentsline {paragraph}{Equivalence-principle consistency of the clause.}{22}{paragraph*.41}%
 \contentsline {subsection}{\numberline {8.3}Post-Newtonian Parameters and Classical Tests}{22}{subsection.8.3}%
 \contentsline {paragraph}{Second post-Newtonian deviation.}{23}{paragraph*.43}%
 \contentsline {paragraph}{ISCO of the scalar profile (diagnostic only).}{23}{paragraph*.44}%
 \contentsline {subsection}{\numberline {8.4}Adiabaticity Criterion: Attractive and Repulsive Regimes of the $Z$ Field}{23}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}Mutual-Inductance Coupling and the Hydrogen Spectrum}{24}{subsection.8.5}%
-\contentsline {paragraph}{The exact product, the geometric bound, and the single-string contact.}{24}{paragraph*.45}%
+\contentsline {paragraph}{The exact product, the geometric bound, and the single-string contact.}{25}{paragraph*.45}%
 \contentsline {section}{\numberline {9}Substrate Stars and Frozen Collapses}{25}{section.9}%
 \contentsline {paragraph}{A8 --- Non-gravitating confining native energy.}{25}{paragraph*.46}%
 \contentsline {subsection}{\numberline {9.1}Hydrostatic Equilibrium Model}{25}{subsection.9.1}%
-\contentsline {paragraph}{Numerical method and reproducibility.}{25}{paragraph*.47}%
+\contentsline {paragraph}{Numerical method and reproducibility.}{26}{paragraph*.47}%
 \contentsline {subsection}{\numberline {9.2}Numerical Results: Attractor, Critical Mass, and Stability}{26}{subsection.9.2}%
 \contentsline {paragraph}{Scaling verification and anchor sensitivity.}{27}{paragraph*.49}%
-\contentsline {paragraph}{Justification of the stability criterion.}{28}{paragraph*.51}%
+\contentsline {paragraph}{Justification of the stability criterion.}{27}{paragraph*.51}%
 \contentsline {subsection}{\numberline {9.3}Frozen Collapses: The Three Families of Dark Objects}{28}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Debts of the Calculation}{28}{subsection.9.4}%
-\contentsline {part}{II\hspace {1em}Kinematics of Media}{28}{part.2}%
+\contentsline {subsection}{\numberline {9.4}Debts of the Calculation}{29}{subsection.9.4}%
+\contentsline {part}{II\hspace {1em}Kinematics of Media}{29}{part.2}%
 \contentsline {section}{\numberline {10}Quantum Correlations: Scope and Withdrawals}{29}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Differential-Mode Phase Opposition: Conditional Scope}{29}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Withdrawal of the Low-Impedance Corridor}{29}{subsection.10.2}%
 \contentsline {subsection}{\numberline {10.3}Entanglement and Measurement: No Present Mechanism}{29}{subsection.10.3}%
-\contentsline {section}{\numberline {11}Lorentz Invariance as an Emergent Symmetry of the Substrate}{29}{section.11}%
+\contentsline {section}{\numberline {11}Lorentz Invariance as an Emergent Symmetry of the Substrate}{30}{section.11}%
 \contentsline {subsection}{\numberline {11.1}The Heaviside Ellipsoid and Convective Impedance}{30}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Clock Slowing by Inductive Overload}{30}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.2}Clock Slowing by Inductive Overload}{31}{subsection.11.2}%
 \contentsline {paragraph}{Impedance and geometry are one clock.}{32}{paragraph*.53}%
 \contentsline {subsection}{\numberline {11.3}Demonstration of Emergent Covariance}{32}{subsection.11.3}%
-\contentsline {section}{\numberline {12}Stability of the Substrate}{32}{section.12}%
-\contentsline {paragraph}{Purpose.}{32}{paragraph*.54}%
-\contentsline {subsection}{\numberline {12.1}Stability Constraints}{32}{subsection.12.1}%
+\contentsline {section}{\numberline {12}Stability of the Substrate}{33}{section.12}%
+\contentsline {paragraph}{Purpose.}{33}{paragraph*.54}%
+\contentsline {subsection}{\numberline {12.1}Stability Constraints}{33}{subsection.12.1}%
 \contentsline {paragraph}{Gaseous nature and stability of $\alpha $.}{33}{paragraph*.55}%
 \contentsline {paragraph}{Cosmological scope note.}{33}{paragraph*.56}%
 \contentsline {subsection}{\numberline {12.2}Dynamical Axioms}{33}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}$\mathcal {R}$ as a Derivation Target}{33}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.3}$\mathcal {R}$ as a Derivation Target}{34}{subsection.12.3}%
 \contentsline {paragraph}{Epistemological status.}{34}{paragraph*.57}%
 \contentsline {section}{\numberline {13}Electrodynamic Synthesis: Unified Impedance Ansatz}{34}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Scale Distinction of the Reflection Coefficients}{35}{subsection.13.1}%
@@ -97,30 +97,30 @@
 \contentsline {subsection}{\numberline {13.4}Derivation of the Saturation Coefficient and Atomic Repulsion}{36}{subsection.13.4}%
 \contentsline {paragraph}{Saturation coefficient.}{36}{paragraph*.58}%
 \contentsline {paragraph}{Mechanism and scale of the atomic wall.}{36}{paragraph*.59}%
-\contentsline {paragraph}{Consistency clause $\chi _{\text {vac}} \ll 1$.}{36}{paragraph*.60}%
+\contentsline {paragraph}{Consistency clause $\chi _{\text {vac}} \ll 1$.}{37}{paragraph*.60}%
 \contentsline {section}{\numberline {14}Tensor Sector $z_{ij}$, Nematic Order, and Spin-2}{38}{section.14}%
 \contentsline {paragraph}{Preliminary concession.}{38}{paragraph*.61}%
 \contentsline {subsection}{\numberline {14.1}Decomposition and Axiom A7}{38}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Quadrupolar Nematic Order}{38}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.2}Quadrupolar Nematic Order}{39}{subsection.14.2}%
 \contentsline {paragraph}{Condensed-matter precedent.}{39}{paragraph*.62}%
 \contentsline {paragraph}{Observational content after the bootstrap.}{39}{paragraph*.63}%
-\contentsline {subsection}{\numberline {14.3}Cost of Deser's Theorem and Survival Condition}{39}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.3}Cost of Deser's Theorem and Survival Condition}{40}{subsection.14.3}%
 \contentsline {paragraph}{Proper predictions of the sector.}{40}{paragraph*.64}%
 \contentsline {section}{\numberline {15}Discussion: Experimental Constraints and Falsification Program}{40}{section.15}%
 \contentsline {paragraph}{Falsification hierarchy (revised).}{40}{paragraph*.65}%
 \contentsline {paragraph}{Photonic Pump--Probe experiment}{40}{paragraph*.66}%
-\contentsline {paragraph}{Power scales and technological bounds}{40}{paragraph*.67}%
+\contentsline {paragraph}{Power scales and technological bounds}{41}{paragraph*.67}%
 \contentsline {paragraph}{Position on quantitative vacuum birefringence.}{41}{paragraph*.68}%
 \contentsline {paragraph}{A scale-dependent discriminant (coherence-length hypothesis).}{41}{paragraph*.69}%
-\contentsline {paragraph}{Gravitational constraints and proper predictions}{41}{paragraph*.70}%
+\contentsline {paragraph}{Gravitational constraints and proper predictions}{42}{paragraph*.70}%
 \contentsline {subsection}{\numberline {15.1}Information and the Absence of Hawking Evaporation}{43}{subsection.15.1}%
 \contentsline {subsection}{\numberline {15.2}Confrontation with the Little Red Dot Masses}{43}{subsection.15.2}%
 \contentsline {paragraph}{Statistical comparison.}{43}{paragraph*.71}%
 \contentsline {paragraph}{Calibration-robust statement of the prediction.}{43}{paragraph*.72}%
-\contentsline {paragraph}{Persistence in redshift.}{43}{paragraph*.73}%
+\contentsline {paragraph}{Persistence in redshift.}{44}{paragraph*.73}%
 \contentsline {paragraph}{Direct dynamical mass: the arbitration has moved against the low-mass school.}{44}{paragraph*.74}%
 \contentsline {paragraph}{The thermal surface: what is established and what is not.}{44}{paragraph*.75}%
-\contentsline {paragraph}{Analytic origin and prior-robustness of the accumulation.}{46}{paragraph*.77}%
+\contentsline {paragraph}{Analytic origin and prior-robustness of the accumulation.}{45}{paragraph*.77}%
 \contentsline {paragraph}{Chandra X-ray constraint.}{46}{paragraph*.78}%
 \contentsline {paragraph}{Registered prediction.}{46}{paragraph*.79}%
 \contentsline {paragraph}{Experiments to watch}{46}{paragraph*.80}%
@@ -129,7 +129,7 @@
 \contentsline {paragraph}{Why electromagnetic screening does not yet close the calculation.}{48}{paragraph*.82}%
 \contentsline {paragraph}{The two missing bridges to $G$.}{48}{paragraph*.83}%
 \contentsline {paragraph}{The residual as the stated fact.}{48}{paragraph*.85}%
-\contentsline {paragraph}{Constraint and associated prediction.}{49}{paragraph*.86}%
+\contentsline {paragraph}{Constraint and associated prediction.}{48}{paragraph*.86}%
 \contentsline {paragraph}{Status.}{49}{paragraph*.87}%
 \contentsline {section}{\numberline {16}Open Problems and Limitations}{49}{section.16}%
 \contentsline {section}{\numberline {17}General Conclusion}{53}{section.17}%
