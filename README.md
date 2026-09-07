@@ -73,6 +73,7 @@ Concept DOI (always points to the latest release):
 
 Archived version records:
 
+- Latest deposit — https://doi.org/10.5281/zenodo.22559109
 - V2.6 — https://doi.org/10.5281/zenodo.21434867
 - v1.0 — https://doi.org/10.5281/zenodo.21196099
 
