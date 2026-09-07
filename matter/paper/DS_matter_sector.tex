@@ -1,0 +1,203 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- 1. Encoding, Fonts, Language ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+
+% --- 2. Mathematics ---
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{empheq}
+
+% --- Theorem environments (manual numbering kept consistent with cross-references) ---
+\theoremstyle{plain}
+\newtheorem*{thmA}{Theorem 1 (Exclusion of the static lattice)}
+\newtheorem*{thmB}{Theorem 2 (Exclusion of the self-bound liquid)}
+\newtheorem*{thmC}{Theorem 3 (Exact covariance of the scalar sector)}
+\newtheorem*{thmD}{Theorem 4 (Uniqueness of the Johns node from substrate constraints)}
+\theoremstyle{remark}
+\newtheorem*{remarkstar}{Remark}
+
+% --- 3. Geometry and Layout ---
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% --- 4. Tables, Figures, Captions ---
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+
+% --- 5. TikZ (2D & 3D) ---
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{arrows.meta, backgrounds, shadings, positioning, calc}
+
+\tikzset{
+    picto_box/.style={
+        draw=gray!60,
+        thick,
+        minimum width=1.5cm,
+        minimum height=1.5cm,
+        inner sep=5pt,
+        rounded corners=2pt
+    },
+    pole/.style={circle, fill=black, inner sep=1.2pt}
+}
+
+% --- 6. Hyperlinks (always load last!) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    pdftitle={The Matter Sector of the Dipolar String Model},
+}
+
+% --- 7. Document metadata ---
+\title{\textbf{The Matter Sector of the Dipolar String Model:}\\ \large \textsc{[subtitle to fill]}}
+\author{R. St-Pierre\thanks{Independent researcher, Qu\'ebec, Canada. This research received no external funding. The author declares no conflict of interest.}}
+\date{[month] 2026 --- admin@dipolarstrings.org --- draft, not deposited}
+
+% --- 8. Custom macros ---
+\newcommand{\dqd}{\ensuremath{\ooalign{$\bigcirc$\cr\hfil\scalebox{0.7}{$=$}\hfil}}}
+\newcommand{\Ncd}{\ensuremath{N_{\mathrm{DS}}}}
+
+% Every claim carries its maturity level.  Six levels, as in the main manuscript:
+% Derived, Conditionally derived, Calibrated, Postulated, Reparametrized, Closed.
+% A ratio obtained by fitting a measured mass is Reparametrized, not Derived.
+\newcommand{\status}[1]{\medskip\noindent\textbf{Status: #1.}\ }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent\textbf{Background.} % What the main framework establishes, and that it is a
+% theory of the medium.  State here that the matter sector was previously out of scope.
+
+\noindent\textbf{Methods.} % What was actually computed, and by whom/with what.
+
+\noindent\textbf{Results.} % Ratios, never absolute masses.  Each with its level.
+
+\noindent\textbf{Conclusions.} % What is now attainable that was not, and what stays closed.
+\end{abstract}
+
+%==============================================================================
+\section{Scope, and what this paper does not claim}
+%==============================================================================
+% THIS SECTION COMES FIRST AND IS NOT OPTIONAL.
+% The main manuscript withdrew its muon, tau, W, Z and H entries as
+% "reverse-engineered mass fits without predictive content".  A matter-sector
+% paper that does not open by delimiting itself repeats that failure.
+%
+% State plainly, before any result:
+%   - the framework is a theory of the medium; this paper attempts one sector of matter;
+%   - a vacuum that is purely electromagnetic and impedance-matched is conformally
+%     invariant and has no intrinsic scale, so m_e is structurally an INPUT;
+%   - what is attainable is a spectrum of RATIOS given the one anchor R_3 = hbar/m_e c_0;
+%   - any table entry whose index was chosen to reproduce the mass it explains is a
+%     parametrization, and is labelled as such.
+
+%==============================================================================
+\section{Inherited framework}\label{sec:inherited}
+%==============================================================================
+% Anchor R_3 = hbar/(m_e c_0), hence ell_1 = 2 pi R_3 / 3.
+% Mass law m propto Ncd^2 Z_{Ncd}.  Resonance radius R_{Ncd} = (p ell_1/2pi)(Z_0/Z_{Ncd}).
+% Z_e ~ 0.73 Z_0 ~ 275 Ohm, filed Calibrated: it depends on the undetermined
+% aspect ratio R_3/r ~ 37.1.  The model counts two inputs, not one.
+% States in scope in the current catalogue: photon (Ncd=1), DQD (Ncd=2), electron (Ncd=3).
+
+%==============================================================================
+\section{The obstruction, and what remains attainable}\label{sec:obstruction}
+%==============================================================================
+% Four independent analyses converge on the absence of an intrinsic scale.
+% Give them, then state the corollary that governs everything below:
+% ratios yes, absolute masses no; and coiling a line does not raise the coupling,
+% so no confinement-type strong-coupling regime is reachable by winding.
+
+%==============================================================================
+\section{Results}\label{sec:results}
+%==============================================================================
+% One subsection per target.  Each ends with \status{...}.
+% Delete the subsections that the imported work does not address --- an empty
+% subsection reads as a claim.
+
+\subsection{Proton characteristic impedance}\label{sec:proton}
+% Required: Z_p/Z_e ~ 22.7 from m_p/m_e = 1836 and N_p/N_e = 9.
+% Toroidal-helix geometry gives N^{3/2} = 27, within 19 %.
+% The question is whether the gap closes from an internal matching condition
+% WITHOUT fitting.  If it was fitted, the level is Reparametrized.
+\status{[level]}
+
+\subsection{Equation of state of the $e/3$ energy fluid}\label{sec:efluid}
+% Charge is not carried by the connectivity of the network: a stationary state
+% bearing net flux through a closed surface needs a genuine divergence source,
+% and the braided defect provides none with either handedness, at equal cost.
+% Any charge construction lives here.
+\status{[level]}
+
+\subsection{Three-dimensional stabilization}\label{sec:stabilization}
+% Derrick: E(lambda) = A lambda^3 + B lambda^2 + C lambda admits a finite
+% equilibrium size iff |B| >= sqrt(3AC).  The Dzyaloshinskii--Moriya carrier is
+% EXCLUDED by astrophysical polarization-rotation bounds by more than thirty
+% orders of magnitude.  A mechanism proposed here must not be that one.
+\status{[level]}
+
+\subsection{Spin and statistics}\label{sec:spin}
+% The semi-classical magneton mu = mu_B is a declared half-success: spin 1/2,
+% g = 2 and fermionic statistics are absent.  Say which of the three, if any,
+% this work supplies.
+\status{[level]}
+
+%==============================================================================
+\section{Epistemological status of the results}\label{sec:status}
+%==============================================================================
+% Reproduce the six-level ledger for this paper's own claims:
+% Derived / Conditionally derived / Calibrated / Postulated / Reparametrized / Closed.
+% Nothing is presented above its level.  If a result rests on the imported
+% computation alone, say so and give the level accordingly.
+
+%==============================================================================
+\section{Open problems}\label{sec:open}
+%==============================================================================
+% What this paper does not close, and what would close it.
+% Carry forward from matter/OPEN_PROBLEMS.md the items left standing.
+
+%==============================================================================
+\section{Falsification}\label{sec:falsification}
+%==============================================================================
+% What measurement would kill this sector.  If nothing would, say that, and
+% say what that implies about the status of the results above.
+
+%==============================================================================
+\section*{Acknowledgments and Methodological Disclosure}
+%==============================================================================
+% The main manuscript discloses its human--AI collaboration in detail and states
+% its limitation plainly: "Both numerical implementations originate from this
+% same collaboration; independent third-party verification has not yet been
+% performed."
+%
+% This paper involves a SECOND AI system, and that changes what may be claimed.
+% Two cases, and they must not be conflated:
+%   (a) the second system was given the DS manuscript and asked to extend it ---
+%       this is NOT independent verification; the prior is shared;
+%   (b) the second system reproduced a result from the structure equations alone,
+%       without the manuscript's conclusions --- closer to independence, and the
+%       protocol must be described precisely enough for a reader to judge.
+% State which one applies, name the systems and their roles, and do not describe
+% (a) as independent replication.
+
+%==============================================================================
+\begin{thebibliography}{99}
+\bibitem{pdg} S. Navas \textit{et al.} (Particle Data Group), \textit{Review of Particle Physics}, Phys. Rev. D \textbf{110}, 030001 (2024).
+\bibitem{dsmodel} R. St-Pierre, \textit{Dipolar String Model: an Exploratory Framework for the Vacuum from Transmission-Line Electrodynamics}, V2.10 (2026). Concept DOI: \href{https://doi.org/10.5281/zenodo.21196098}{10.5281/zenodo.21196098}.
+% add the references the imported work actually uses; do not carry over
+% entries from the main manuscript that this paper never cites.
+\end{thebibliography}
+
+\end{document}

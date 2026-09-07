@@ -45,6 +45,7 @@ OPEN_PROBLEMS.md  the work list, from the manuscript's own inventory
 notes/            derivations in progress, one file per attempt
 scripts/          code; anything numerical ships with the prose
 verification/     checks a matter-sector claim must pass to be merged
+paper/            article skeleton for deposit — compiles clean, awaits content
 ```
 
 ## Rules
