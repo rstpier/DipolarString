@@ -124,7 +124,7 @@
       <div class="field">
         <div class="sym">Z</div>
         <div class="nm">Impedance</div>
-        <p>Refraction of the impedance field <em>is</em> gravity. An exponential profile Z(r)&nbsp;=&nbsp;Z₀·e^(2GM/rc²) reproduces Schwarzschild at every tested order.</p>
+        <p>Refraction of the impedance field <em>is</em> gravity. The exponential profile Z(r)&nbsp;=&nbsp;Z&#8320;&middot;e^(2GM/rc&sup2;) describes the substrate&rsquo;s internal state and coincides with Schwarzschild through first post-Newtonian order; beyond it, the Deser bootstrap drives the tensor sector to full General Relativity and the exterior of every compact object is exactly Schwarzschild.</p>
       </div>
       <div class="field">
         <div class="sym">Ω</div>
@@ -144,37 +144,27 @@
   <div class="wrap">
     <div class="sec-eyebrow">What would kill the model</div>
     <h2>Falsification hierarchy</h2>
-    <p class="body">Ordered by accessibility and decisiveness. The first has no adjustable parameter — a ratio of two pure constants.</p>
+    <p class="body">Ordered by decisiveness. Note that a non-detection concludes nothing on the first item — it is a standing exposure rather than a decidable test.</p>
     <ol class="fal">
       <li>
-        <div><span class="t">Shadow deviation δ = +4.63%</span>
-        <span class="d">b_c = e·r_s versus (3√3/2)·r_s for Schwarzschild. Within ~1–1.4σ of the 2022 EHT bounds, on the positive side.</span></div>
-        <span class="probe">ngEHT · most accessible</span>
+        <div><span class="t">No PBH evaporation burst</span>
+        <span class="d">No horizon, no late-time thermal flux, no final burst. A single confirmed detection falsifies the model outright.</span></div>
+        <span class="probe">HAWC / Fermi &middot; binary</span>
       </li>
       <li>
-        <div><span class="t">Zero breathing mode</span>
-        <span class="d">A single scalar-mode detection by LVK falsifies the tensor construction.</span></div>
-        <span class="probe">LVK · binary</span>
+        <div><span class="t">Non-periodic post-merger echoes</span>
+        <span class="d">Successive echoes from a fresh remnant are spaced at geometrically growing intervals (t<sub>n+1</sub> &asymp; 3&thinsp;t<sub>n</sub>), outside current quasi-periodic template searches. Astrophysically aged progenitors are structurally silent. Currently the only channel that is both decidable and open.</span></div>
+        <span class="probe">LIGO / Virgo / KAGRA</span>
       </li>
       <li>
         <div><span class="t">Hard LRD mass cutoff</span>
-        <span class="d">Caustic pile-up below M_crit ∝ ℓ₁², with an obligatory thermal photosphere. No competitor produces a hard cutoff.</span></div>
-        <span class="probe">JWST</span>
+        <span class="d">Caustic pile-up below M_crit &prop; &ell;&#8321;&sup2;, with the calibration-invariant exponent dN/dM &prop; (M_crit &minus; M)<sup>&minus;1/2</sup>. No growth-distribution scenario produces a hard cutoff. <em>Demoted:</em> a direct dynamical black-hole mass in a lensed little red dot returns &asymp;5&times;10&#8311; M&#9737;, above the model&rsquo;s cutoff and consistent with the virial calibration.</span></div>
+        <span class="probe">JWST &middot; disfavoured</span>
       </li>
       <li>
-        <div><span class="t">Non-periodic echoes</span>
-        <span class="d">Spacing exponential in compactness (Δt ∝ e^x/x²), not logarithmic. Outside current quasi-periodic template searches.</span></div>
-        <span class="probe">LIGO / Virgo</span>
-      </li>
-      <li>
-        <div><span class="t">No PBH evaporation burst</span>
-        <span class="d">No horizon, no late-time thermal flux. A single confirmed detection falsifies.</span></div>
-        <span class="probe">HAWC / Fermi · binary</span>
-      </li>
-      <li>
-        <div><span class="t">2PN pulsar deviation</span>
-        <span class="d">Δg₀₀ = −U³/6. Masked by the Lense–Thirring term until the moment of inertia is measured independently.</span></div>
-        <span class="probe">PSR J0737−3039 · demoted</span>
+        <div><span class="t">Zero breathing mode</span>
+        <span class="d">A single scalar-mode detection by LVK falsifies the construction. Stated at the level of an assumption of the construction — the scalar sector is constrained by fiat of the bootstrap — rather than a derived prediction.</span></div>
+        <span class="probe">LVK &middot; binary &middot; assumption-level</span>
       </li>
     </ol>
   </div>
@@ -182,15 +172,15 @@
 
 <section id="results">
   <div class="wrap">
-    <div class="sec-eyebrow">No adjustable secondary parameter</div>
+    <div class="sec-eyebrow">Derived, calibrated, and what each status means</div>
     <h2>A few closed-form outputs</h2>
     <div class="res">
-      <div class="r"><div class="eq">Z_e ≈ 0.73 Z₀ ≈ 275 Ω</div><div class="lb">Electron characteristic impedance, derived from the loop geometry.</div></div>
-      <div class="r"><div class="eq">D/r = 2 cosh π ≈ 23.18</div><div class="lb">Universal geometric ratio, from the matching condition alone.</div></div>
-      <div class="r"><div class="eq">γ = β = 1 · α₁ = α₂ = 0</div><div class="lb">Identical to GR at first post-Newtonian order (scalar sector).</div></div>
-      <div class="r"><div class="eq">M_crit ≈ 1.6 × 10⁶ M☉ ∝ ℓ₁²</div><div class="lb">Stable branch of substrate stars, horizonless and singularity-free.</div></div>
-      <div class="r"><div class="eq">r_ph = r_s · b_c = e·r_s</div><div class="lb">Photon sphere and critical impact parameter of the exponential metric.</div></div>
-      <div class="r"><div class="eq">Γ_pole = 1/3</div><div class="lb">String/vacuum interface coefficient, intrinsic to the sub-vacuum.</div></div>
+      <div class="r"><div class="eq">D/r = 2 cosh &pi; &asymp; 23.18</div><div class="lb">Universal geometric ratio, from the matching condition alone. Parameter-free.</div></div>
+      <div class="r"><div class="eq">&Gamma;_pole = 1/3</div><div class="lb">String/vacuum interface coefficient, intrinsic to the sub-vacuum. Parameter-free.</div></div>
+      <div class="r"><div class="eq">&gamma; = &beta; = 1</div><div class="lb">Identical to GR at first post-Newtonian order (scalar sector). The preferred-frame parameters &alpha;&#8321;, &alpha;&#8322; are <em>not</em> established — they require a boosted computation that has not been performed, and are listed among the open problems.</div></div>
+      <div class="r"><div class="eq">M_crit &asymp; 1.29 &times; 10&#8310; M&#9737; &prop; &ell;&#8321;&sup2;</div><div class="lb">Stable branch of substrate stars, horizonless and singularity-free, with maximal compactness r_s/R = 0.81 — outside their own Schwarzschild radius.</div></div>
+      <div class="r"><div class="eq">Z_e &asymp; 0.73 Z&#8320; &asymp; 275 &Omega; <em>(calibrated)</em></div><div class="lb">Electron characteristic impedance. Its closed form is exact but depends on an aspect ratio R&#8323;/r that the framework does not derive. What is input-independent is the inequality Z_e &lt; Z&#8320; across the plausible range — the electron is an impedance well regardless.</div></div>
+      <div class="r"><div class="eq">Johns node — uniqueness</div><div class="lb">Under five constraints already internal to the model, the symmetric condensed node is the unique scattering matrix with an isotropic, non-birefringent light cone. A uniqueness statement about the node, not a derivation of electromagnetism.</div></div>
     </div>
   </div>
 </section>
@@ -242,7 +232,7 @@
       <a class="lk" href="https://doi.org/10.5281/zenodo.21434867">
         <div>
           <span class="k">ZENODO · V2.6</span>
-          <span class="v">Archived version of record →</span>
+          <span class="v">Earlier archived version →</span>
           <span class="m">10.5281/zenodo.21434867</span>
         </div>
       </a>
