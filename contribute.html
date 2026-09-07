@@ -204,11 +204,25 @@
         <div class="foot"><span class="status">priority</span><span class="join">Join →</span></div>
       </a>
 
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/phase-lock">
+        <span class="tag open">Open problem · major</span>
+        <h3>Formalization of the distributed phase-lock</h3>
+        <p>The PLL invoked to give the substrate its coherence is so far <em>a name imported from electronics, without governing equations</em> — yet it underwrites lattice rigidity, the transparency clause χ_vac ≪ 1, and the nematic order behind axiom A7. The natural formalization is a distributed injection-locking / Kuramoto dynamics on the DQD gas. The difficulty is quantified: three single-cell computations of χ_vac all failed, and failed differently — one landing <strong>eighteen orders above the PVLAS bound</strong>, one twelve. Estimates disagreeing among themselves by six orders exclude a merely wrong constant; the suppression must be collective. The correctly posed question is whether the ordered gas has a finite coherence length ξ — no value for ξ exists anywhere in the model. Testable residue: any excess over Euler–Heisenberg must <em>grow</em> as the interaction volume shrinks at fixed field. PVLAS probes at L ~ cm, BIREF@HIBEF at L ~ µm; comparing the excess at two focusing scales does not require ξ to be known in advance.</p>
+        <div class="foot"><span class="status">quantified failure · near-term lab test</span><span class="join">Join →</span></div>
+      </a>
+
       <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/neutrino-sector">
         <span class="tag open">Open problem</span>
         <h3>Neutrino sector</h3>
         <p>Three readings fail against oscillation data. Candidate: the DQD opening amplitude as flavor coordinate. Needs quantization to exactly three levels.</p>
         <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/proton-impedance">
+        <span class="tag open">Open problem</span>
+        <h3>Proton characteristic impedance</h3>
+        <p>The most self-contained item in the inventory. The mass law m ∝ N²Z, with m_p/m_e = 1836 and N_p/N_e = 9, requires Z_p/Z_e ≈ 22.7. A closed toroidal-helix geometry for the N = 27 soliton (9 turns of 3 strings, L ∝ N², C ∝ 1/N) gives Z_p/Z_e = N<sup>3/2</sup> = 27 — <strong>within 19% of the required value</strong>, a residual of logarithmic order comparable to the ln(8R₃/r) corrections of the electron derivation. Closing that gap from an internal matching condition, without fitting, would make the proton mass geometric. Read it with the mass-scale obstruction: the target is a <em>ratio</em>, not an absolute mass — an impedance-matched vacuum is conformally invariant and has no intrinsic scale, so m_e is structurally an input, not something merely yet to be derived.</p>
+        <div class="foot"><span class="status">open · 19% from closing</span><span class="join">Join →</span></div>
       </a>
 
       <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/derivation-of-g">
@@ -230,6 +244,13 @@
         <h3>Quantitative quantum sector</h3>
         <p>The hydrogen-spectrum recovery is structural, not quantitative: derive the Rydberg constant from substrate parameters. And close ℓcell, on which Πsat and ωc depend.</p>
         <div class="foot"><span class="status">open</span><span class="join">Join →</span></div>
+      </a>
+
+      <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/strong-field-gravity">
+        <span class="tag open">Open problem · major</span>
+        <h3>Strong-field &amp; radiative gravitational sector</h3>
+        <p>With the scalar sector constrained and the tensor sector bootstrapped to GR, the exterior is Schwarzschild and no deviation is predicted — but that bootstrap is <strong>asserted (Deser), not performed</strong>. The quadrupole formula, the polarization content and the GW luminosity all await that computation, and every surviving gravitational-wave claim rests on it. Second debt, new in V2.9: the interior is integrated with the scalar force law while the exterior is Schwarzschild, and at the surface of the critical configuration U = GM/Rc₀² ≈ 0.4, so the two descriptions differ there at second post-Newtonian order by O(1) coefficients. No matched interior–exterior solution has been constructed, and the substrate-star numbers are exposed to that uncertainty.</p>
+        <div class="foot"><span class="status">bootstrap asserted · matching unbuilt</span><span class="join">Join →</span></div>
       </a>
 
       <a class="grp" data-cat="open" href="https://github.com/rstpier/DipolarString/discussions/categories/preferred-frame">
@@ -272,7 +293,7 @@
       </ul>
     </div>
     <div class="callout">
-      <p><strong>One maintainer setup step.</strong> These links assume the repository is public with <em>Discussions</em> enabled and one category per group above (slugs: <code>shadow-eht</code>, <code>gravitational-waves</code>, <code>lrd-jwst</code>, <code>pbh-evaporation</code>, <code>microscopic-derivation</code>, <code>neutrino-sector</code>, <code>derivation-of-g</code>, <code>quantum-interpretation</code>, <code>quantum-sector</code>, <code>preferred-frame</code>, <code>rotation-kerr</code>, <code>chiral-closure</code>). Also add a CI action that runs <code>verify_v291.py</code> on every pull request. Until a category exists, its link lands on the Discussions home — harmless.</p>
+      <p><strong>One maintainer setup step.</strong> These links assume the repository is public with <em>Discussions</em> enabled and one category per group above (slugs: <code>shadow-eht</code>, <code>gravitational-waves</code>, <code>lrd-jwst</code>, <code>pbh-evaporation</code>, <code>microscopic-derivation</code>, <code>phase-lock</code>, <code>neutrino-sector</code>, <code>proton-impedance</code>, <code>derivation-of-g</code>, <code>quantum-interpretation</code>, <code>quantum-sector</code>, <code>strong-field-gravity</code>, <code>preferred-frame</code>, <code>rotation-kerr</code>, <code>chiral-closure</code>). Also add a CI action that runs <code>verify_v291.py</code> on every pull request. Until a category exists, its link lands on the Discussions home — harmless.</p>
     </div>
   </div>
 </section>
