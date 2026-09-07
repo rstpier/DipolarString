@@ -1,14 +1,15 @@
 # Dipolar String Model — final V2.9 branch publication package
 
 Author: R. St-Pierre  
-Package date: 31 August 2026  
-Manuscript version: **V2.9.1**  
+Package date: 7 September 2026  
+Manuscript version: **V2.9.2**  
 Concept DOI: 10.5281/zenodo.21196098
 
 This archive is the final consolidated package for the V2.9 development branch. The
-manuscript itself remains V2.9.1 because that is the exact version encoded in the PDF,
-LaTeX source and citation metadata. The package name uses "V2.9 FINAL" only as a branch
-label; it does not rewrite the manuscript's version history.
+manuscript is V2.9.2, the version encoded in the PDF, the LaTeX source and the citation
+metadata; V2.9.1 was the 31 August 2026 Zenodo edition, superseded by the two corrections
+recorded under "V2.9.2 (September 2026)" in the Document History. The package name uses
+"V2.9 FINAL" only as a branch label; it does not rewrite the manuscript's version history.
 
 The bundle combines the current manuscript and figures, current verification scripts,
 A8-consistent substrate calculations, Johns-node reconstruction, Appendix D breather
@@ -27,7 +28,7 @@ python scripts/schrodinger/calc1b.py
 python scripts/schrodinger/calc3.py
 python scripts/schrodinger/calc2.py --localized
 cd manuscript
-latexmk -pdf -interaction=nonstopmode -halt-on-error DS_model_V2_9_1_Zenodo.tex
+latexmk -pdf -interaction=nonstopmode -halt-on-error DS_model_V2_9_2_Zenodo.tex
 ```
 
 Recorded final-package check on 31 August 2026: **40/40 current-claim verification tests

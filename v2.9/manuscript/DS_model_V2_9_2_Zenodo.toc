@@ -43,9 +43,9 @@
 \contentsline {paragraph}{Purpose and placement.}{15}{paragraph*.32}%
 \contentsline {subsection}{\numberline {7.1}From one dimension to three: what is missing}{16}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}The 3-DQD cell and its twelve ports}{16}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Uniqueness theorem}{16}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Uniqueness theorem}{17}{subsection.7.3}%
 \contentsline {paragraph}{Proof (constructive, machine-verified).}{17}{paragraph*.33}%
-\contentsline {paragraph}{Reading of the result.}{17}{paragraph*.34}%
+\contentsline {paragraph}{Reading of the result.}{18}{paragraph*.34}%
 \contentsline {subsection}{\numberline {7.4}Why the crossing is orthogonal: Lemma and axiomatic closure of C1}{18}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Parity invariance and the status of the weave chirality}{18}{subsection.7.5}%
 \contentsline {paragraph}{A note on the network vs.\ the gas.}{19}{paragraph*.35}%
@@ -136,11 +136,12 @@
 \contentsline {paragraph}{Broader impact.}{54}{paragraph*.88}%
 \contentsline {section}{\numberline {A}Document History}{56}{appendix.A}%
 \contentsline {paragraph}{V2.9.1 Zenodo edition (31 August 2026).}{57}{paragraph*.89}%
+\contentsline {paragraph}{V2.9.2 (September 2026).}{57}{paragraph*.90}%
 \contentsline {section}{\numberline {B}Fundamental Table of Elementary Particles}{57}{appendix.B}%
-\contentsline {paragraph}{Methodological note on the calibration of the indices}{57}{paragraph*.90}%
+\contentsline {paragraph}{Methodological note on the calibration of the indices}{57}{paragraph*.91}%
 \contentsline {section}{\numberline {C}Nomenclature and Units of Variables}{59}{appendix.C}%
 \contentsline {section}{\numberline {D}Emergent Relativistic Dynamics of Autonomous Sub-Gap Breathers}{63}{appendix.D}%
-\contentsline {paragraph}{Status: proof of mechanism.}{63}{paragraph*.91}%
+\contentsline {paragraph}{Status: proof of mechanism.}{63}{paragraph*.92}%
 \contentsline {subsection}{\numberline {D.1}Model and definitions}{63}{subsection.D.1}%
 \contentsline {subsection}{\numberline {D.2}Breather at rest --- stability and convergence (three resolutions)}{63}{subsection.D.2}%
 \contentsline {subsection}{\numberline {D.3}Boosted breathers --- kinematics and internal clock}{64}{subsection.D.3}%
@@ -150,7 +151,7 @@
 \contentsline {subsection}{\numberline {D.7}Summary ($h = 0.5$, $\omega = 0.95$; all masses in units $E_0/c^2$)}{64}{subsection.D.7}%
 \contentsline {subsection}{\numberline {D.8}Limits of interpretation}{64}{subsection.D.8}%
 \contentsline {section}{\numberline {E}Emergent Single-Band Schr\"odinger Dynamics of the Braided-Defect Envelope}{65}{appendix.E}%
-\contentsline {paragraph}{Status: proof of mechanism.}{65}{paragraph*.96}%
+\contentsline {paragraph}{Status: proof of mechanism.}{65}{paragraph*.97}%
 \contentsline {subsection}{\numberline {E.1}Setting and definitions}{65}{subsection.E.1}%
 \contentsline {subsection}{\numberline {E.2}Free envelope: dispersive transport and its quadratic truncation}{66}{subsection.E.2}%
 \contentsline {subsection}{\numberline {E.3}A single action quantum: de Broglie and inertia}{66}{subsection.E.3}%

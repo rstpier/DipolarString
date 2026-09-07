@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788738966.22509 "DS_model_V2_9_1_Zenodo.tex" "DS_model_V2_9_1_Zenodo.pdf" "DS_model_V2_9_1_Zenodo" 1788738968.90492 0
+["pdflatex"] 1788740289.11856 "DS_model_V2_9_2_Zenodo.tex" "DS_model_V2_9_2_Zenodo.pdf" "DS_model_V2_9_2_Zenodo" 1788740291.20368 0
   "../figures/fig_branch.png" 1788738239.34425 89074 48cea8fdf8848a9ccb2936536fe1746b ""
   "../figures/fig_heaviside.png" 1788738239.3448 146405 57b93620829bfbb1a817e982fff09a93 ""
   "../figures/fig_lrd.png" 1788738239.3448 108586 cb5d1a76742598a34b8b14e8d524cce1 ""
@@ -256,14 +256,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1788738906.16475 122105 9446c830ad4815932a1f88d36fef8ec3 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1788738954 6881600 f50343c3861820d776b7b36f46acedcb ""
-  "DS_model_V2_9_1_Zenodo.aux" 1788738968.69274 39178 9749ce33fc4fe6e80e2e93ae152210f0 "pdflatex"
-  "DS_model_V2_9_1_Zenodo.out" 1788738968.69674 20211 6245499260372903ae33ba91040fa483 "pdflatex"
-  "DS_model_V2_9_1_Zenodo.tex" 1788738763.89389 265726 5b8db7761f623aa126024a812d70335c ""
-  "DS_model_V2_9_1_Zenodo.toc" 1788738968.70074 14720 cbf331ab27e18bcae23499f88c17c39a "pdflatex"
+  "DS_model_V2_9_2_Zenodo.aux" 1788740291.0445 39291 ca4c3ee294b750eb8da4bf1cd8e18c7b "pdflatex"
+  "DS_model_V2_9_2_Zenodo.out" 1788740291.0485 20211 6245499260372903ae33ba91040fa483 "pdflatex"
+  "DS_model_V2_9_2_Zenodo.tex" 1788740217.51092 265444 269b13611c664f77d764b3d688407f10 ""
+  "DS_model_V2_9_2_Zenodo.toc" 1788740291.0485 14792 497ada04330f98371a732874bc0c0a94 "pdflatex"
   (generated)
-  "DS_model_V2_9_1_Zenodo.aux"
-  "DS_model_V2_9_1_Zenodo.log"
-  "DS_model_V2_9_1_Zenodo.out"
-  "DS_model_V2_9_1_Zenodo.pdf"
-  "DS_model_V2_9_1_Zenodo.toc"
+  "DS_model_V2_9_2_Zenodo.aux"
+  "DS_model_V2_9_2_Zenodo.log"
+  "DS_model_V2_9_2_Zenodo.out"
+  "DS_model_V2_9_2_Zenodo.pdf"
+  "DS_model_V2_9_2_Zenodo.toc"
   (rewritten before read)

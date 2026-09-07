@@ -200,7 +200,7 @@ def block_johns() -> None:
 
 
 def block_manuscript_hygiene() -> None:
-    source = (ROOT / "manuscript" / "DS_model_V2_9_1_Zenodo.tex").read_text(encoding="utf-8")
+    source = (ROOT / "manuscript" / "DS_model_V2_9_2_Zenodo.tex").read_text(encoding="utf-8")
     check("Low-impedance equation withdrawn", "eq:vsync" not in source, "no synchronization-speed equation label")
     check("A8 source printed", "u - u_0" in source, "corrected source present")
     check("Conditional phase equation printed", "eq:phase_action" in source and "eq:z3_coefficient" in source,

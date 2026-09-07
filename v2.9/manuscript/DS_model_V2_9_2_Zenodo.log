@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.6)  6 SEP 2026 23:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.6)  7 SEP 2026 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**DS_model_V2_9_1_Zenodo.tex
-(./DS_model_V2_9_1_Zenodo.tex
+**DS_model_V2_9_2_Zenodo.tex
+(./DS_model_V2_9_2_Zenodo.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -847,8 +847,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box78
 )
-(./DS_model_V2_9_1_Zenodo.aux)
-\openout1 = `DS_model_V2_9_1_Zenodo.aux'.
+(./DS_model_V2_9_2_Zenodo.aux)
+\openout1 = `DS_model_V2_9_2_Zenodo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -930,9 +930,9 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 70.
 
-(./DS_model_V2_9_1_Zenodo.out) (./DS_model_V2_9_1_Zenodo.out)
+(./DS_model_V2_9_2_Zenodo.out) (./DS_model_V2_9_2_Zenodo.out)
 \@outlinefile=\write4
-\openout4 = `DS_model_V2_9_1_Zenodo.out'.
+\openout4 = `DS_model_V2_9_2_Zenodo.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
 3.
@@ -995,13 +995,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/
 texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] (./DS_model_V2_9_1_
+rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] (./DS_model_V2_9_2_
 Zenodo.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 26.
  [2] [3])
 \tf@toc=\write5
-\openout5 = `DS_model_V2_9_1_Zenodo.toc'.
+\openout5 = `DS_model_V2_9_2_Zenodo.toc'.
 
  [4] [5]
 [6] [7]
@@ -1129,48 +1129,48 @@ Package pdftex.def Info: ../figures/fig_lrd.png  used on input line 1076.
 (pdftex.def)             Requested size: 373.3035pt x 255.97914pt.
  [45 <../figures/fig_lrd.png>] [46] [47]
 [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 1230--1230
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1232
 []|\T1/lmr/bx/n/10 State
  []
 
 
-Overfull \hbox (6.95506pt too wide) in alignment at lines 1228--1232
+Overfull \hbox (6.95506pt too wide) in alignment at lines 1230--1234
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.95506pt too wide) in alignment at lines 1232--1234
+Overfull \hbox (6.95506pt too wide) in alignment at lines 1234--1236
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
 []|\T1/lmr/m/n/10 Dipolar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
 \T1/lmr/m/n/10 Quan-tum
  []
 
 
-Overfull \hbox (0.86469pt too wide) in paragraph at lines 1238--1238
+Overfull \hbox (0.86469pt too wide) in paragraph at lines 1240--1240
 []|$\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 511[]$| 
  []
 
 
-Overfull \hbox (6.95506pt too wide) in alignment at lines 1234--1239
+Overfull \hbox (6.95506pt too wide) in alignment at lines 1236--1241
  [] [] [] [] [] [] [] 
  []
 
 [58] [59] [60] [61]
-Underfull \hbox (badness 1215) in paragraph at lines 1363--1364
+Underfull \hbox (badness 1215) in paragraph at lines 1365--1366
 []\T1/lmr/m/n/10.95 N. Lu, S. Ma, O. J. Pic-cinni, Y. Chen, and L. Sun, \T1/lmr
 /m/it/10.95 GW250114 re-veals sig-na-
  []
 
 [62]
-Overfull \hbox (46.40796pt too wide) in paragraph at lines 1368--1368
+Overfull \hbox (46.40796pt too wide) in paragraph at lines 1370--1370
 |[]\T1/lmr/bx/n/14.4 Emergent Rel-a-tivis-tic Dy-nam-ics of Au-tonomous Sub-Gap
  Breathers| 
  []
@@ -1178,65 +1178,65 @@ Overfull \hbox (46.40796pt too wide) in paragraph at lines 1368--1368
 [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 1460.
+(hyperref)                removing `\omega' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1460.
+(hyperref)                removing `subscript' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1460.
+(hyperref)                removing `superscript' on input line 1462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1462.
 
 [64]
-Overfull \hbox (23.16838pt too wide) in paragraph at lines 1482--1483
+Overfull \hbox (23.16838pt too wide) in paragraph at lines 1484--1485
 []\T1/lmr/m/n/10.95 Reproduction: \T1/lmtt/m/n/10.95 python3 p2_master.py all \
 T1/lmr/m/n/10.95 (adds \T1/lmtt/m/n/10.95 open\T1/lmr/m/n/10.95 ); the $\OML/lm
 m/m/it/10.95 h \OT1/lmr/m/n/10.95 = 0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 25
 $ \T1/lmr/m/n/10.95 force point: \T1/lmtt/m/n/10.95 p2_master.py
  []
 
-[65] [66] [67] (./DS_model_V2_9_1_Zenodo.aux)
+[65] [66] [67] (./DS_model_V2_9_2_Zenodo.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `DS_model_V2_9_1_Zenodo.out' has not changed.
+Package rerunfilecheck Info: File `DS_model_V2_9_2_Zenodo.out' has not changed.
 
 (rerunfilecheck)             Checksum: 6245499260372903AE33BA91040FA483;20211.
  ) 
 Here is how much of TeX's memory you used:
- 27768 strings out of 476064
- 517192 string characters out of 5792854
+ 27769 strings out of 476064
+ 517205 string characters out of 5792854
  1960975 words of memory out of 5000000
  48907 multiletter control sequences out of 15000+600000
  717463 words of font info for 127 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 84i,14n,93p,6543b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,93p,5442b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/p
@@ -1255,10 +1255,10 @@ nts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb
 1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on DS_model_V2_9_1_Zenodo.pdf (67 pages, 1200240 bytes).
+Output written on DS_model_V2_9_2_Zenodo.pdf (67 pages, 1199961 bytes).
 PDF statistics:
- 1513 PDF objects out of 1728 (max. 8388607)
- 1356 compressed objects within 14 object streams
- 381 named destinations out of 1000 (max. 500000)
+ 1515 PDF objects out of 1728 (max. 8388607)
+ 1358 compressed objects within 14 object streams
+ 382 named destinations out of 1000 (max. 500000)
  625 words of extra memory for PDF output out of 10000 (max. 10000000)
 

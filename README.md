@@ -16,8 +16,8 @@ releases.
 
 **Version:** V2.9 — manuscript revision V2.9.1, package frozen 31 August 2026
 
-- Manuscript: `v2.9/manuscript/DS_model_V2_9_1_Zenodo.pdf`
-- LaTeX source: `v2.9/manuscript/DS_model_V2_9_1_Zenodo.tex`
+- Manuscript: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.pdf`
+- LaTeX source: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.tex`
 - Verification: `v2.9/verification/verify_v291.py` — 40/40 current-claim tests PASS
 - Package documentation: `v2.9/README.md`, `v2.9/MANIFEST.md`
 - Website: https://dipolarstrings.org

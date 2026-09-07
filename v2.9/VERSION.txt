@@ -1,6 +1,6 @@
 Package label: DS V2.9 FINAL COMPLETE
-Scientific manuscript revision: V2.9.1
-Package freeze date: 2026-08-31
+Scientific manuscript revision: V2.9.2
+Package freeze date: 2026-09-07
 Concept DOI: 10.5281/zenodo.21196098
 Appendix E historical source status: NOT RECOVERED; transparent reconstruction included
 

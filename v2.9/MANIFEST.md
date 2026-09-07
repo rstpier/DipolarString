@@ -4,8 +4,8 @@
 
 | Path | Function | Status |
 |---|---|---|
-| `manuscript/DS_model_V2_9_1_Zenodo.pdf` | Publication manuscript | Current |
-| `manuscript/DS_model_V2_9_1_Zenodo.tex` | Complete source | Current |
+| `manuscript/DS_model_V2_9_2_Zenodo.pdf` | Publication manuscript | Current |
+| `manuscript/DS_model_V2_9_2_Zenodo.tex` | Complete source | Current |
 | `figures/fig_branch_v291.png` | A8-corrected equilibrium branch | Regenerated |
 | `figures/fig_scaling_v291.png` | Quadratic length scaling | Regenerated |
 | `figures/fig_lrd_v291.png` | A8-corrected mass distribution | Regenerated |
