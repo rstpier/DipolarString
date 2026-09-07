@@ -36,10 +36,17 @@ v2.9/      V2.9.2 package — scripts, data, verification suite, historical arch
 v2.8/      Johns-node microstructure sessions (DQD development)
 v2.7/      Archived release
 v2.6/      Archived release
+
+matter/    Working directory for the matter sector — not part of any release
 ```
 
 V2.10 changes three sentences of the manuscript and nothing else, so it does not duplicate
 the V2.9.2 code and data; `v2.9/` stays frozen and its checksums remain valid.
+
+`matter/` is a research front, not a release. The framework is a theory of the medium,
+not of matter; that directory is where an attempt at the matter sector is built, and it
+opens with the constraints that make several obvious routes dead ends before they start
+([`matter/CONSTRAINTS.md`](matter/CONSTRAINTS.md)).
 
 The `main` branch always contains the latest stable version; development is performed on
 dedicated Git branches.
