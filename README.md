@@ -14,7 +14,7 @@ releases.
 
 ## Latest Stable Release
 
-**Version:** V2.9 — manuscript revision V2.9.1, package frozen 31 August 2026
+**Version:** V2.9 — manuscript revision V2.9.2, package frozen 7 September 2026
 
 - Manuscript: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.pdf`
 - LaTeX source: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.tex`
