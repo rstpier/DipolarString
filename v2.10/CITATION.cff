@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the Zenodo version record."
+title: "Dipolar String Model: V2.10 incremental package"
+type: software
+authors:
+  - family-names: "St-Pierre"
+    given-names: "R."
+version: "2.10"
+date-released: "2026-09-07"
+doi: "10.5281/zenodo.21196098"
+license: "CC-BY-4.0 AND MIT"
+repository-code: "https://doi.org/10.5281/zenodo.21196098"

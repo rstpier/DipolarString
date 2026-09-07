@@ -14,12 +14,12 @@ releases.
 
 ## Latest Stable Release
 
-**Version:** V2.9 — manuscript revision V2.9.2, package frozen 7 September 2026
+**Version:** V2.10, frozen 7 September 2026 — an incremental package over V2.9.2
 
-- Manuscript: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.pdf`
-- LaTeX source: `v2.9/manuscript/DS_model_V2_9_2_Zenodo.tex`
-- Verification: `v2.9/verification/verify_v291.py` — 40/40 current-claim tests PASS
-- Package documentation: `v2.9/README.md`, `v2.9/MANIFEST.md`
+- Manuscript: `v2.10/manuscript/DS_model_V2_10_Zenodo.pdf`
+- LaTeX source: `v2.10/manuscript/DS_model_V2_10_Zenodo.tex`
+- Verification: `v2.10/verification/verify_v2_10.py` — 40/40 delegated + 9 source checks PASS
+- Package documentation: `v2.10/README.md`; scripts, data and archives in `v2.9/`
 - Website: https://dipolarstrings.org
 
 A passing verification run means only that the listed consequences follow from the
@@ -31,11 +31,15 @@ experimental validation of the physical model.
 ## Repository Structure
 
 ```
-v2.9/      Latest stable release — manuscript, scripts, verification, historical archives
+v2.10/     Latest stable release — corrected manuscript and its figures (incremental)
+v2.9/      V2.9.2 package — scripts, data, verification suite, historical archives
 v2.8/      Johns-node microstructure sessions (DQD development)
 v2.7/      Archived release
 v2.6/      Archived release
 ```
+
+V2.10 changes three sentences of the manuscript and nothing else, so it does not duplicate
+the V2.9.2 code and data; `v2.9/` stays frozen and its checksums remain valid.
 
 The `main` branch always contains the latest stable version; development is performed on
 dedicated Git branches.
@@ -46,8 +50,8 @@ dedicated Git branches.
 
 ```bash
 python -m pip install -r v2.9/requirements.txt
-cd v2.9
-python verification/verify_v291.py      # 40/40 PASS, exit 0
+cd v2.10
+python verification/verify_v2_10.py     # exit 0
 ```
 
 The release also ships the substrate, Johns-node, Schrödinger and breather calculations

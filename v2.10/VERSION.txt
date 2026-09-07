@@ -1,0 +1,11 @@
+Package label: DS V2.10 (incremental)
+Scientific manuscript revision: V2.10
+Package freeze date: 2026-09-07
+Concept DOI: 10.5281/zenodo.21196098
+Supersedes: V2.9.2 (v2.9/, 2026-09-07)
+
+Scope: this package carries the manuscript and the figures it includes.
+Scripts, data, verification logs and historical archives are unchanged from
+V2.9.2 and remain in v2.9/. The numerical suite is not duplicated here;
+verification/verify_v2_10.py runs the V2.9.2 suite from v2.9/ and adds the
+source-level checks specific to this revision.

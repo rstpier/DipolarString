@@ -1,5 +1,24 @@
 # Changelog
 
+## V2.10 (7 septembre 2026)
+
+- Cible de falsification primaire : une phrase résiduelle de la section LRD
+  nommait encore la déviation d'ombre comme cible primaire du modèle, en
+  contradiction avec son retrait dans la même révision ; elle nomme désormais
+  l'absence permanente de sursauts d'évaporation de PBH, première entrée de la
+  hiérarchie révisée
+- Comptage des niveaux de maturité : la liste annonçait six niveaux en en
+  présentant sept, le septième étant le relevé de ce que la révision retire et
+  non un niveau ; l'annonce est corrigée, pas la liste
+- Item chiralité du tissage : intitulé « resolved, with a residual question »,
+  ce qui se lisait comme un item clos ; ce qui est dissous est la clôture
+  chirale du théorème 4, la question converse restant ouverte
+- Paquet incrémental : `v2.10/` porte le manuscrit corrigé et ses quatre
+  figures ; scripts, données, journaux et archives historiques restent dans
+  `v2.9/`, gelé et dont les sommes de contrôle restent valides
+- `verify_v2_10.py` rejoue la suite V2.9.2 depuis `v2.9/` (40/40) et ajoute
+  neuf contrôles de source propres à cette révision
+
 ## V2.9.2 (septembre 2026)
 
 - Canal des tailles : le rayon de boucle du proton est donné sous les deux fermetures

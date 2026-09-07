@@ -1,0 +1,17 @@
+./CITATION.cff
+./PACKAGE_CONTENTS.txt
+./README.md
+./VERSION.txt
+./figures/fig_branch.png
+./figures/fig_heaviside.png
+./figures/fig_lrd.png
+./figures/fig_scaling.png
+./manuscript/DS_model_V2_10_Zenodo.aux
+./manuscript/DS_model_V2_10_Zenodo.fdb_latexmk
+./manuscript/DS_model_V2_10_Zenodo.fls
+./manuscript/DS_model_V2_10_Zenodo.log
+./manuscript/DS_model_V2_10_Zenodo.out
+./manuscript/DS_model_V2_10_Zenodo.pdf
+./manuscript/DS_model_V2_10_Zenodo.tex
+./manuscript/DS_model_V2_10_Zenodo.toc
+./verification/verify_v2_10.py
