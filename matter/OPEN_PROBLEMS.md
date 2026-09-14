@@ -51,7 +51,9 @@ localized configuration collapses (Derrick). The Dzyaloshinskii–Moriya carrier
 **Closes when:** a stabilization mechanism of a different kind is exhibited, or
 the absence of stable 3D solitons is accepted as structural and its consequences
 for the electron-as-quantum reading (§1) are drawn.
-**Must respect:** §3. Do not restart from Dzyaloshinskii–Moriya.
+**Must respect:** §3, and §9 — a *topologically protected* twist cannot also be mixed. §3a
+gives the scaling: the class that works is a four-derivative curvature term, and the one
+DS-internal candidate is a bending energy of the bifilar line at fixed `D`.
 
 ### 4. Spin ½, `g = 2`, fermionic statistics
 *Manuscript status: declared half-success. No dedicated group.*

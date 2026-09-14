@@ -1,7 +1,8 @@
 # Constraints on any matter-sector attempt
 
-Every item here is established in the V2.10 manuscript, not assumed. Each names
-the section that establishes it. A line of work that violates one of these is not
+Every item here is established, not assumed — in the V2.10 manuscript, or in an
+audit recorded under `notes/` with a script under `scripts/` that reproduces it.
+Each names what establishes it. A line of work that violates one of these is not
 merely unpromising — it is refuted before it starts.
 
 ---
@@ -96,6 +97,36 @@ astrophysical polarization by more than thirty orders of magnitude**.
 Do not start from the Dzyaloshinskii–Moriya route. If a stabilization mechanism
 exists, it is a different one.
 
+### 3a. Which class of term could work, and what the model does not have
+
+Derrick scaling in three dimensions, where a term `∫(∂ᵏφ)² d³x` goes as `λ^(3−2k)`:
+
+| term | scaling | stabilises? |
+|---|---|---|
+| potential | `λ³` | no |
+| chiral, one derivative (DM) | `λ²` | **only if `\|B\| ≥ √(3AC)`** — a threshold |
+| gradient | `λ¹` | no |
+| **curvature, four derivatives** | **`λ⁻¹`** | **yes, for every `D > 0` — no threshold** |
+
+`E = Aλ³ + Cλ + D/λ` gives `λ² = (−C + √(C²+12AD))/6A`, positive for every `D > 0`. A bending
+rigidity would therefore evade Derrick *more robustly* than the excluded chiral term, and it is
+not of DM type.
+
+**But V2.10 contains no such term:** *bending* and *Skyrme* each appear zero times. What exists
+is three different things, which must not be conflated with a string bending stiffness:
+
+- **A5**, topological rigidity of the DQD — *"possesses no continuous deformation mode"*:
+  discrete, not elastic, and it serves as the short-distance regularization;
+- the **shear modulus of A7** — a collective, `S`-dependent property of the *medium*;
+- the **phase stiffness `ρ_φ`** — undetermined, a stated target of the phase-lock problem.
+
+Two cautions before pursuing this. A stiffness calculation was already rejected once, for
+displacing `D` about `D₀`, as illegitimate under A5 — and it gave `χ_vac ~ 2×10⁻⁴`, eighteen
+orders above the PVLAS bound. Any bending coefficient must be confronted with that bound *before*
+being used to stabilise anything. And a free consistency check exists: the Genesis conjecture
+already assumes closed loops with a *minimum circumference* `~ ℓ₁`, which is what a bending
+rigidity would produce. A derived stiffness must reproduce it, or one of the two is wrong.
+
 ---
 
 ## 4. The particle catalogue is a parametrization, not a prediction
@@ -145,6 +176,56 @@ inversion mechanism is available here.
 
 ---
 
+## 8. The connectivity sector cannot supply a charge-conserving doublet
+
+*Established by audit of the S₃ reconnection attempt, 14 September 2026. See
+[`notes/2026-09-14-s3-reconnection-audit.md`](notes/2026-09-14-s3-reconnection-audit.md);
+reproduce with `scripts/audit_s3_reconnection.py`.*
+
+Let `G` be the relabelling group whose action on a closure is gauge. For a three-string closure
+the physical states of the connected sector are the `G`-orbits of the two 3-cycles, and the two
+cases were computed:
+
+- **`G` contains an odd permutation** → the two 3-cycles merge into one physical state. No
+  doublet. (The manuscript puts us here: the Johns node is `O_h`-invariant, *reflections
+  included*, so odd relabellings are gauge.)
+- **`G` contains only even permutations** → the two stay distinct, and what distinguishes them is
+  the **sense of traversal of the loop**. Under the framework's charge-as-chirality assignment
+  that is the charge, since parity acts as charge conjugation (§2). Then
+
+      [Q̂,H] = 0  ⟹  (q₊−q₋)⟨−|H|+⟩ = 0  ⟹  ⟨−|H|+⟩ = 0
+
+  and any mass-mixing term between them vanishes identically.
+
+**Either way there is no charge-conserving two-state mass doublet in the connectivity sector.** A
+doublet requires a degree of freedom carried by neither the pairing nor the winding sense.
+
+---
+
+## 9. Topological protection and mediated mixing are mutually exclusive
+
+*Same audit.*
+
+A recurring proposal is to supply the missing two-state degree of freedom `η = ±` as a
+*topologically protected* twist, framing or self-linking parity. That is self-defeating:
+
+- if `η` is topologically protected, no **local** operator changes it, so it commutes with any
+  local reconnection operator, the Hamiltonian is block-diagonal in `η`, and the mixing amplitude
+  `⟨−|H_eff|+⟩` vanishes **at every order**;
+- if the mixing amplitude is non-zero, `η` is changed by a local operator and is therefore **not**
+  protected — and an unprotected two-state degree of freedom has no symmetry reason to be
+  degenerate at zeroth order, so the diagonal term generically survives and destroys the
+  Dirac-like form.
+
+The mechanism needs `η` protected and unprotected at once. Only an approximate symmetry with
+explicitly controlled breaking could thread this, and it has to be exhibited, not assumed.
+
+Combined with §3, this closes the chirality-like candidates entirely: the weave chirality is mute
+in the electromagnetic sector, so it does not couple; and anything that does couple is not
+protected. **Any `η` is a new field.**
+
+---
+
 ## What is *not* closed
 
 The obstruction above bites on absolute scales and on the routes named. It does
@@ -159,7 +240,12 @@ not forbid:
 - constructing the equation of state of the `e/3` energy fluid (§2), which is
   the declared home of charge;
 - a stabilization mechanism for three-dimensional solitons that is **not** of
-  Dzyaloshinskii–Moriya type (§3).
+  Dzyaloshinskii–Moriya type (§3). The scaling in §3a says which class works: a four-derivative
+  curvature term, which stabilises without a threshold. Deriving a **bending energy for a bifilar
+  line at fixed `D`** from the telegrapher parameters is the one route that would supply it
+  without a new field — bending the axis changes `L` and `C` at order `(D/R_c)²`, and the
+  geometry is fixed, `D/r = 2 cosh π` being derived. It must be argued explicitly that bending
+  the axis at fixed `D` is not the internal deformation A5 forbids.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.
