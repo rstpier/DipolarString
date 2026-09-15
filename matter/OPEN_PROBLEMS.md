@@ -73,9 +73,18 @@ Charge is not carried by the connectivity of the network (`CONSTRAINTS.md` §2).
 If it exists here it resides in the constitutive content of the string, whose
 equation of state the framework does not give.
 
-**Closes when:** an equation of state is written that supplies a genuine
-divergence source, and reproduces the three structural consequences already
-established (mirror-pair creation, mechanical annihilation, P acting as C).
+**Step 1 of the matter topology (15 September):** `notes/2026-09-15-string-end-charge.md`,
+`scripts/string_end_charge.py`, 11/11. The manuscript's string is a conductor carrying a
+charged fluid (`±e/3` per branch), not a flux line; the divergence source the model *does*
+have is the **unpaired branch** — a broken DQD — Coulomb `e/3` beyond `ℓ₁`. Complete DQDs
+and their A7 chains carry only bound charge. The three structural consequences are
+unpairing (0.47 keV, the manuscript's `E_coh`), re-pairing, and the exchange of forward and
+return branches under inversion. What stays open is the core: *why* the fluid carries
+`e/3` — `Γ_pole = 1/3` is a reflection coefficient and does not fix a charge.
+
+**Closes when:** an equation of state is written for the fluid that fixes its charge at
+`e/3` per branch and holds it there (the unpaired branch already supplies the divergence
+source and the three structural consequences).
 **Must respect:** §2. Also carries the declared baryon-asymmetry debt: strict pair
 creation implies exact matter–antimatter symmetry at formation.
 

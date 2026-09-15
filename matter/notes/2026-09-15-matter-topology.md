@@ -3,7 +3,11 @@
 **Date:** 15 September 2026
 **Status:** DESIGN — everything here is POSTULATED unless marked otherwise. It reuses derived
 pieces (steps 2–5, the open-turn resonance) and borrows its structure from two published
-constructions that obtain fermions from a string medium. Figure:
+constructions that obtain fermions from a string medium. **Step 1 done (15 September,
+`2026-09-15-string-end-charge.md`):** the DS string is a conductor carrying a charged fluid, not a
+flux line; the charge is the *unpaired branch*, not a string end; pair creation is unpairing
+(0.5 keV); the field sector confines nothing. Level 1 stands with that substitution, Level 3's
+confinement falls. Figure:
 `../figures/matter_topology.png` (`../scripts/draw_matter_topology.py`).
 
 ## 1. Which theories do more, and what they use
@@ -29,7 +33,7 @@ which is word for word Bilson-Thompson's antiparticle rule.
 | winding chirality of a string | the helon's twist: charge `±e/3` or 0 | manuscript (postulated), `Γ_pole = 1/3` (derived) |
 | unordered pair, half-twist | the ℤ₂ framing of a ribbon: `π` in `θ_tot`, antiperiodic mode | step 2, §5c (derived) |
 | triple bundle, closed cyclically | the closure of a 3-braid with one cyclic permutation — one loop of `3ℓ₁`; transverse doublet, ℤ₃ permutation part, holonomy `2π[(1−a)Lk + aWr]` | steps 3a–3b (derived) |
-| **end of a string** | **a charge — a genuine divergence source** | Levin–Wen; to derive in DS (§5) |
+| **unpaired branch** (a broken DQD) | **a charge `±e/3` — the divergence source; the end of a string is nothing** | step 1 (derived): `2026-09-15-string-end-charge.md` |
 | the weave (closed, endless) | the neutral vacuum: no ends, no charge | Theorem 4; `CONSTRAINTS.md` §2, §8 |
 | open turn at the end of a braid | the massive resonance: `βℓ_s = π` | `2026-09-15-open-turn-closure.md` (derived) |
 
@@ -39,10 +43,11 @@ which is word for word Bilson-Thompson's antiparticle rule.
 neutral by construction, and `CONSTRAINTS.md` §2/§8 (connectivity carries no charge) becomes a
 *feature*: closed networks cannot be charged, only string ends can.
 
-**Level 1 — charge.** Cutting a string creates two ends of opposite chirality: **mirror-pair
-creation**; rejoining them is **annihilation**; the mirror image of an end is the opposite
-charge: **P acts as C**. The three structural consequences of item 2 are the three moves on
-string ends. Charge magnitude `e/3` per string from `Γ_pole = 1/3`.
+**Level 1 — charge** (corrected by step 1). Unpairing a DQD frees two branches of opposite
+charge: **mirror-pair creation** (0.5 keV); re-pairing them is **annihilation**; inversion
+exchanges the forward and return branches: **P acts as C**. The three structural consequences of
+item 2 are the three moves on branches. Charge magnitude `e/3` per branch is the fluid's content,
+asserted to follow from `Γ_pole = 1/3` — the open core of item 2.
 
 **Level 2 — fermions.** A **braid of three string ends**, its far end attached to the weave.
 Charge = (sum of chiralities)/3; colour = position of the odd string; chirality of the particle =
@@ -62,9 +67,11 @@ structure is the triple of steps 3a–3b.
 **Level 3 — mass.** The free end of the braid is folded into a turn of size `R` — the author's
 *partially open turn*. The mass is the mode energy of that end-resonance, `∝ 1/ℓ`, with
 `βℓ_s = π` at the fundamental (derived). The electron's anchor fixes `ℓ_s`. Quark braids are open
-at both ends: an open braid must terminate on another braid — **confinement is topological** —
-and a hadron is a **Θ-graph** of three braids joined at two junctions (proton: `u, u, d`, charge
-+1). Their masses are *not* in this topology: the model has no strong sector and cannot reach
+at both ends; the note first read this as "an open braid must terminate on another braid" —
+topological confinement — and a hadron as a **Θ-graph** of three braids (proton: `u, u, d`,
+charge +1). **Step 1 removes the support for that:** unpaired branches are free charges in a
+linear medium beyond half a cell; nothing in the field sector confines them. The Θ-graph stays as
+a drawing, not a mechanism. Their masses are *not* in this topology: the model has no strong sector and cannot reach
 hadron masses with the vacuum's string (`CONSTRAINTS.md` §1a, §1c). That limit is inherited, not
 created, by the topology.
 

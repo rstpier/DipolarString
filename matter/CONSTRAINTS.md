@@ -111,6 +111,15 @@ open problem of the framework, as it is of the Standard Model.
 
 ---
 
+**The divergence source the model does have (15 September, `notes/2026-09-15-string-end-charge.md`).**
+The string is a conductor carrying a charged fluid, `±e/3` per branch; a complete DQD and its A7
+chains are neutral (bound charge only); an **unpaired branch** is a free charge `e/3`, Coulomb
+beyond `ℓ₁`. Charge is therefore a broken pair, created by unpairing at `0.5 keV`, and the electron
+is three unpaired negative branches. Not a string end, not a flux line, not connectivity. What is
+not fixed is the fluid's charge itself: `Γ_pole = 1/3` is a reflection coefficient.
+
+---
+
 ## 3. No stable three-dimensional solitons — and the obvious repair is excluded
 
 The geometric chirality of the weave is real but **mute** in the electromagnetic
