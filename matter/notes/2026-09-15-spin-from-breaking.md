@@ -55,5 +55,44 @@ half-integer ladder of the daughters (the antiperiodic ring, the open turn). Its
 prediction — the electron ring at `R₃/2` — is worth carrying into the next manuscript revision as
 a question, not a change.
 
+## 5. The author's correction — an open-chain mother, `(+)———   ———(−)`, and the axis rule
+
+Script: `../scripts/open_turn_stability.py`, 5/5 PASS. Corrections stated by the author: the mother
+is not a closed ring but an **open chain of DQDs**, `=:=:=:=:=:=:=` (three DQDs are `===`); the
+chain splits lengthwise into a `+` row and a `−` row; the fluids keep opposite momenta and pile
+up at **opposite extremities**, `(+)———   ———(−)`; and **spin = number of symmetry axes / 2**:
+the string `—` and the DQD `=` have two axes (spin 1), a chain with its charge at one end has one
+axis (spin ½).
+
+- **Arithmetic unchanged.** An open bifilar chain of 3 DQDs (length `3ℓ₁`, open ends) has the
+  half-wave fundamental at `ℏc/2R₃ = 0.256 MeV`, and so has each daughter chain of 3 strings:
+  half the electron mass, strings of `ℓ₁/2` (`R₃/2`) needed — as in §2.
+- **The axis rule** reproduces photon 1, DQD 1, one-ended chain ½ — and gives 3/2 for a triangle
+  of three strings, 2 for a square, infinity for a closed ring. It is a shape heuristic; spin is
+  the double cover of the rotation group, and the rule says nothing about the `−1` under `2π` or
+  the exchange sign.
+- **A static charge at one end of a conductor cannot stay there.** In the model's own
+  electrodynamics the fluid of an open chain either spreads along it (equipotential — then the
+  chain has two axes and the rule gives spin 1) or oscillates as the half-wave mode, whose
+  antinodes sit at *both* ends with opposite signs and average to a uniform net charge. A
+  persistent one-way flow is impossible on an open chain. The picture `———(−)` needs a **trap at
+  the pole** — the "reactive barrier of `Γ_pole` transferring momentum onto the walls" the
+  manuscript mentions (l. 315), a nonlinearity it does not write down: the fluid's equation of
+  state, item 2 once more.
+- **Stability: the chain closes.** The free ends of a chain carry opposite poles and attract;
+  the interaction energy falls monotonically as the gap closes — 3.3 keV released at `δ = e/3`,
+  0.6 MeV at the mode's `δ ≈ 4e` — and every mode family loses energy on closing (Compton
+  `3π → 2π`: 0.77 → 0.51 MeV; low `π → 0`: 0.26 → 0). Nothing in the model holds the gap open:
+  the like net charges lose to the poles by the chaining margin (~45), and the classical gap mode
+  is continuous (no topological obstruction). The one-axis object decays into the closed ring,
+  the assembly the fluid prefers (step-1 note §6). That 0.6 MeV is of the order of the electron
+  mass: either `δ ≈ 4e` is too large to be physical, or the closed ring is the deep ground state.
+
+**What the corrected mechanism needs, in one line:** something that traps the fluid at a pole
+and keeps a chain from closing — a nonlinearity of the fluid at the pole. V2.10 names it
+(`Γ_pole` as a wall, `Π_sat`) and does not give it. Until it does, the model's electron is the
+closed ring, with the consequences already recorded (`L_z = n + ½` only through a pair's
+half-twist, no exchange sign).
+
 **Must respect:** `CONSTRAINTS.md` §1 (ratios only), §6 (the spin sector is a declared
 half-success), §9.
