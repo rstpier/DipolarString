@@ -86,3 +86,16 @@ chasse le fluide. Barre rigide de longueur λ_C (trois cordes), masse m_e, fluid
 Ce que la base doit encore fournir : pourquoi la charge en rotation ne rayonne pas (un mode
 stationnaire réactif, pas une forme), et le −1 sous un tour complet, qu'une rotation classique ne
 donne pas. La condition sur g est la première prédiction que la base peut être tenue de vérifier.
+
+**R9 — La particule de l'espace.** Le DQD est la particule stable de l'espace.
+→ À préciser : sa masse (nulle ?), sa rotation propre, et pourquoi il est stable là où la fille
+ne l'est pas.
+
+**R10 — La vitesse de rotation.** La vitesse de rotation est stabilisée par Z₀ de l'espace.
+→ Lecture calculée (`rod_z0.py`, 6/6) : le fluide est EM, il va à c₀ (c₀ et Z₀ viennent des mêmes
+L₀, C₀), donc le pôle éloigné de la fille tourne à c₀. Avec S = ℏ/2 et la répartition de masse
+que g = 2 impose (moitié au pôle, moitié au pivot), la fille mesure exactement ℏ/(m_e c) = 386 fm
+et son moment vaut exactement un magnéton de Bohr : trois nombres de l'électron (spin, taille de
+Compton, μ_B) sortis d'une seule barre, sans le manuscrit. Dette inchangée et plus aiguë : une
+charge qui tourne à c₀ rayonne 3×10⁵ W classiquement (3×10⁻¹⁹ s) ; « stabilisée par Z₀ » doit
+vouloir dire « mode lié, non rayonnant », et c'est cela qu'il faut écrire.
