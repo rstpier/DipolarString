@@ -150,7 +150,12 @@ Faddeev term" must name its field.
 `S = ½∫dt dx[C'(∂ₜΦ)² − (1/L')(∂ₓΦ)²]` is a 1+1 D scalar action whose only variables are `Φ`
 and `θ` — it carries no orientation of the string. The Faddeev term is the Maxwell term of the
 director's Berry gauge field (verified identity, `scripts/audit_s3_reconnection.py`); it would
-require a coupling between `θ` and that connection, which the action does not contain. What exists is three different things, none of them a quartic gradient
+require a coupling between `θ` and that connection, which the action does not contain — **and
+which the bifilar geometry does not supply**: the differential TEM mode is real, its U(1) Berry
+connection vanishes identically, and the holonomy over a full turn of the pair axis is 1
+(`scripts/step2_bifilar_berry_phase.py`). The Faddeev route is closed for V2.10. What the geometry
+*does* supply is a ℤ₂ holonomy — a half-turn flips the mode — physical only if the pair is unordered;
+see `notes/2026-09-15-hopfion-direction.md` §5. What exists is three different things, none of them a quartic gradient
 term:
 
 - **A5**, topological rigidity of the DQD — *"possesses no continuous deformation mode"*:

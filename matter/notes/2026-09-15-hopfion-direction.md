@@ -1,7 +1,9 @@
 # Direction — Hopf solitons of the director field
 
 **Date:** 15 September 2026
-**Status:** POSTULATED. A research direction, not a result. Nothing here is derived.
+**Status:** the Faddeev route is CLOSED for V2.10 (steps 1–2, both derived, 15 September); a ℤ₂
+holonomy of the bifilar mode is DERIVED for an unordered pair and recorded as a lead. The rest is
+POSTULATED.
 **Origin:** a discussion thread following the S₃ audit, starting from the working postulate
 *there is no static mass value* and ending on a structure the literature already knows.
 
@@ -146,13 +148,47 @@ stability) as the Maxwell term of `a[n]`; the Hopf charge appears as linking; an
 *charge* phase is what couples to the geometry, a first bridge between the charge sector and
 the topology — which nothing in DS currently provides.
 
-**Step 2 — the calculation that would justify it, not done.** Derive the geometric
-(Pancharatnam-type) phase acquired by the two-conductor mode of a bifilar line when its frame
-is transported along the line — from the two-conductor geometry, `D/r = 2 cosh π`, and the
-telegrapher parameters. If that phase is non-zero, the `θ`–`a[n]` coupling is a *consequence*
-of the bifilar structure and the term is derived, not added. If it vanishes, the direction
-closes for this model. **This respects NO-GO C's spirit: the term must come out of the
-geometry, or not at all.**
+**Step 2 — done. Negative for the Faddeev route; one unexpected positive.**
+Script: `scripts/step2_bifilar_berry_phase.py`, 6/6 PASS.
+
+The differential TEM mode of two conductors at `±(D/2)m`, `D/r = 2 cosh π`, is a **real**
+field profile. For a real normalised family, `⟨E|∂_ψE⟩ = ½ ∂_ψ⟨E|E⟩ = 0`, so the U(1) Berry
+connection `A = i⟨E|∂_ψE⟩` is **identically zero** (numerically `< 10⁻¹³` at four angles) and
+the holonomy over a full turn of the pair axis is `1`. **The bifilar geometry supplies no
+continuous `θ`–`a[n]` coupling at the TEM level. The Faddeev term cannot be generated this
+way. The Hopfion-via-Faddeev route is closed for V2.10.**
+
+The method is not blind: the witness — the degenerate circular pair `e± = (eₓ ± i e_y)/√2` of
+a round optical fibre (Tomita–Chiao) — acquires `e^{∓iψ}` exactly. A linearly polarised real
+mode is `(e₊e^{−iψ} + e₋e^{+iψ})/√2`: the two Berry phases cancel. That is *why* a mode locked
+to a material frame has no anholonomy, and it is a theorem, not a feature of this geometry.
+
+The only loophole is **beyond TEM**: higher angular modes `e^{±ilφ}` around the pair come in
+degenerate `±` pairs and would carry a U(1) Berry phase like the fibre. They live at
+`ω ~ c/D`, near the Brillouin cutoff, outside the telegrapher description. Whether DS reaches
+them is a question about extending the model, not about V2.10.
+
+**The unexpected positive: a ℤ₂ holonomy.** `⟨E(m)|E(−m)⟩ = −1` exactly: half a turn of the
+ribbon swaps the conductors and flips the sign of the differential mode. If the two conductors
+are *labelled* (`m` a vector, parameter space `S¹`) the half-turn is not a closed loop and
+nothing happens. If they are **unordered** (`m ~ −m`, a director, parameter space `RP¹`) the
+half-turn *is* a closed loop and its holonomy is **−1** — a ℤ₂ Berry phase, the Möbius bundle
+over `RP¹`. The manuscript's own nematic order is exactly of this kind: *"compensated
+head-to-tail alignment, null net polarization"*. Consequences, if the DQD pair is unordered:
+
+- on a closed string loop with an **odd number of half-twists**, the differential mode is
+  **antiperiodic**, `Φ(s+L) = −Φ(s)`, and the single-valuedness quantization shifts by a
+  half-integer — the "fractional winding" the S₃ dossier reached for, now with a geometric
+  origin;
+- a mode that returns to minus itself around the minimal closed loop of its parameter space is
+  the signature of **double-valuedness** — the structure spin ½ needs (Finkelstein–Rubinstein)
+  — though the loop here is a twist of the *internal* frame, not a `2π` rotation of *space*;
+  identifying the two would require `Lk = Tw + Wr` on a closed loop and is not done.
+
+This is not the Faddeev term (which needs continuous Berry *curvature*), and it is not spin.
+It is a derived geometric fact about a bifilar ribbon, conditional on the pair being unordered.
+**Status: DERIVED (unordered pair) / OPEN (whether the DQD pair is unordered, and the link to
+spatial rotation).**
 
 Companion tests, cheaper and independent: the `l`-degeneracy of the Bohr-scale cavity mode
 (§1.7); the Rydberg radius by Hartree self-consistency (§1.6).

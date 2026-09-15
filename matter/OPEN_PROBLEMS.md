@@ -61,11 +61,17 @@ Berry gauge field (verified identity); it arises when a U(1) phase coupled to th
 integrated out; and **the V2.10 telegrapher action contains no coupling between its phase `θ` and
 any orientation variable** — its only variables are `Φ` and `θ`. The direction is located, not
 closed.
-**Closes when — step 2:** derive the geometric phase of the bifilar two-conductor mode under
-transport of its frame along the line, from the two-conductor geometry and the telegrapher
-parameters. Non-zero ⟹ the `θ`–`a[n]` coupling is a consequence of the bifilar structure, the
-Faddeev term follows, and Hopfions exist in DS with a derived (not added) term. Zero ⟹ the
-direction closes for this model. Name the field (`n` or `t`) before starting.
+**Step 2 done (15 September), negative:** the differential TEM mode is real, its U(1) Berry
+connection is identically zero, and the bifilar geometry supplies no continuous `θ`–`a[n]`
+coupling. **The Hopfion-via-Faddeev route is closed for V2.10.** Witness (fibre circular pair)
+confirms the method. Script: `scripts/step2_bifilar_berry_phase.py`, 6/6.
+**What remains, and it is not this route:** (i) beyond TEM — degenerate angular modes near the
+Brillouin cutoff would carry a U(1) phase, but that is an extension of the model; (ii) a **ℤ₂
+holonomy**, derived: half a turn of the ribbon flips the differential mode, so for an *unordered*
+pair (the manuscript's own nematic case) a closed loop with an odd number of half-twists makes
+the mode antiperiodic and shifts the quantization by a half-integer. Not Faddeev, not spin; a
+lead on double-valuedness, conditional on the DQD pair being unordered — which is the next
+question to settle.
 **Must respect:** §3, §3a, §9 — a *topologically protected* label cannot also be mixed, so a
 protected Hopf charge is a quantum number, not a mass mechanism. Any coefficient obtained must
 be confronted with the PVLAS bound before use.
