@@ -35,10 +35,22 @@ self-intersects at the matching pitch. A4 cannot select a pitch: it pushes towar
 `Z₀`, the wrong direction. Coincidences recorded and not used: `(N−1)^{3/2} = 22.63`,
 `27/2^{1/4} = 22.70`.
 
-**Closes when:** a principle fixes the coil geometry (turn radius, pitch, major
-radius) and the capacitance reading — or names a different object for `N_DS = 27`.
-Then the two integrals above give `Z_p` with no further input. Until then the proton
-stays *Reparametrized*.
+**Search for another object (15 September), negative for the whole class:**
+`scripts/proton_object_search.py`, 9/9; note §5. The mass law's own object is a flat
+coil of 204 turns of radius `R₃/22.67 = 1.64 r` — below two tube radii, outside the
+thin-wire regime; built physically it gives `L_p/L_e = 5.8`. Loose objects (27-string
+ring, three orthogonal rings) give `Z_p/Z_e = 1.5–1.7`. The tightest coherent
+multilayer coil the tube allows — the inductance-maximising object for this wire —
+gives at most `L_p/L_e = 72` and `Z_p/Z_e = 10.5`: **every object of 27 strings of
+`ℓ₁` falls short by a factor 26 in `L` and 2.2 in `Z`.** Carrying `1836 L_e` as
+inductance needs `N ≈ 190` strings (`L_max ∝ W^{5/3}`). The `1/ℓ` mode-energy reading
+puts the proton loop at 0.21 fm (a factor 4 from the charge radius, the least
+inconsistent reading) but is `E = hc/λ` until a closure fixes `ℓ_p/ℓ_e`.
+
+**Closes when:** the catalogue changes, not the object — either `N_p ~ 200` rather than
+27, or mass is not the inductance of the string, with a closure for `ℓ_p/ℓ_e`. Under
+the electron's own electrodynamics no shape of 27 strings can do it. Until then the
+proton stays *Reparametrized*.
 **Must respect:** `CONSTRAINTS.md` §1 — the target is the ratio `Z_p/Z_e`, never
 an absolute `m_p`; and §4 — a fit is not a derivation.
 **Most contribution-shaped item in the inventory:** self-contained and quantified.

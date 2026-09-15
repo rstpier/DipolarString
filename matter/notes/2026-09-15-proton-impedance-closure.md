@@ -1,7 +1,9 @@
 # Proton characteristic impedance — can the 19 % gap close without fitting?
 
 **Date:** 15 September 2026
-**Status:** NEGATIVE, derived. The "19 %" was the distance between a *scaling estimate* and the
+**Status:** NEGATIVE, derived — and extended in §5 to the whole class: no object of 27 strings
+reaches the targets; the obstacle is the mass law at `N = 27`, not the helix. The "19 %" was the
+distance between a *scaling estimate* and the
 target, not the residual of a calculation. Computed with the electron's own electrodynamics and
 the model's own closures, the 9-turn closed helix gives `Z_p/Z_e = 14` (the manuscript's
 series-capacitance reading) or `3` (the electron's self-capacitance reading) at the matching pitch;
@@ -90,5 +92,72 @@ closure; `ρ` shrinks as the pitch grows and the coil degenerates into a wavy ri
 - What would close it: a principle that fixes the coil geometry and the capacitance reading, or a
   different object for `N_DS = 27` than a 9-turn helix. Once such a principle exists, the two
   integrals of §2 give `Z_p` with no further input; the machinery is in place.
+
+## 5. Another object than the helix? — a bound on the whole class
+
+Script: `../scripts/proton_object_search.py`, 9/9 PASS. Same inputs, same integrals; the question
+is now whether *any* closed structure made of 27 strings of `ℓ₁` can reach the targets set by the
+mass law `m = κL`, i.e. `Z_p/Z_e = 22.67` and `L_p/L_e = 1836`.
+
+**A. The mass law's own object.** `m ∝ N²Z` with the wire-length closure is the statement "a flat
+coil of `N_turn = 9 × 22.67 = 204` coincident turns of radius `R_p = R₃/22.67 = 17.0 fm`" — and
+`17.0 fm = 1.64 r`: a turn radius below two tube radii, where the thin-wire idealisation the law
+rests on is void. Built physically (pitch `2.1 r`, a spring 11.5 R₃ long), that coil has
+`L_p/L_e = 5.8`.
+
+**B. Loose objects.** One 27-string ring (radius `9R₃`): `Z_p/Z_e = 1.49`. Three orthogonal
+9-string rings: `1.69`.
+
+**C. The best coherent coil — the bound.** Multilayer solenoids wound as tightly as the tube allows
+(pitch = layer spacing = `2.1 r`), scanned over inner radius and layer count:
+
+```
+  multilayer coil scan (pitch = layer spacing = 2.1 r):  a0/r  layers  turns  height/R3   L/L_e   C/C_e   Z_p/Z_e
+                                                         1.5     1    217.3     12.30      5.6    2.19     1.60
+                                                         1.5     2    129.6      3.67     12.7    1.00     3.57
+                                                         1.5     4     71.5      1.01     37.1    0.58     7.98
+                                                         1.5     8     37.7      0.27     66.4    0.60    10.49
+                                                         3.0     1    110.6      6.26      8.9    1.45     2.47
+                                                         3.0     2     82.1      2.32     20.2    0.81     4.99
+                                                         3.0     4     54.2      0.77     47.1    0.57     9.13
+                                                         3.0     8     32.2      0.23     66.8    0.64    10.25
+                                                         6.0     1     55.6      3.15     18.1    1.08     4.10
+                                                         6.0     2     47.3      1.34     36.0    0.71     7.09
+                                                         6.0     4     36.5      0.52     62.1    0.59    10.24
+                                                         6.0     8     25.0      0.18     67.2    0.71     9.72
+                                                        10.0     1     33.4      1.89     29.3    0.97     5.49
+                                                        10.0     2     30.2      0.85     51.1    0.73     8.37
+                                                        10.0     4     25.4      0.36     70.8    0.67    10.26
+                                                        10.0     8     19.2      0.14     67.2    0.81     9.09
+                                                        15.0     1     22.3      1.26     39.3    0.99     6.31
+                                                        15.0     2     20.8      0.59     60.0    0.81     8.60
+                                                        15.0     4     18.4      0.26     71.6    0.79     9.52
+                                                        15.0     8     14.9      0.11     61.5    0.95     8.03
+                                                        25.0     1     13.4      0.76     47.3    1.15     6.42
+                                                        25.0     2     12.8      0.36     61.2    1.02     7.75
+                                                        25.0     4     11.9      0.17     63.5    1.03     7.84
+                                                        25.0     8     10.3      0.07     57.8    1.18     6.99
+```
+
+Maximum `L_p/L_e = 72` (4 layers, 18 turns, a squat coil 0.26 R₃ high); maximum `Z_p/Z_e = 10.5`.
+Since a coherent tight coil maximises inductance for a given wire, and the uniform-charge
+capacitance is a lower bound (so `Z` is over-estimated), **every object of the class falls short:
+by a factor 26 in `L` and 2.2 in `Z`.**
+
+**D. Scaling.** At the packing limit `L_max ∝ W^{5/3}`: carrying `1836 L_e` as inductance needs
+`N ≈ 27 × 26^{3/5} ≈ 190` strings, seven times the catalogue's 27.
+
+**E. The other reading.** If mass is the `1/ℓ` mode energy of the loop (§5f of the Hopfion note),
+the proton loop has radius `R₃/1836 = 0.21 fm` — a factor 4 from the charge radius `0.84 fm`,
+where the inductance reading gives 17 fm (×20) and the geometric closure 3.5×10³ fm (×4000). It is
+the least inconsistent reading, but it is `E = hc/λ`: it locates the proton at its Compton scale
+and derives nothing until a closure fixes `ℓ_p/ℓ_e = 1/1836`.
+
+**Conclusion.** The obstacle is not the helix. Under the electron's own electrodynamics, **27
+strings of `ℓ₁` cannot carry the proton's mass as inductance, whatever their shape** — the mass law
+`m = κL` and the index `N_p = 27` are jointly unrealizable. Either `N_p` is of order 200, or mass
+is not the inductance of the string. Both are changes to the catalogue, not to the object.
+**Status:** NEGATIVE, derived (bound by explicit construction; thin-wire integrals accurate to
+~10 % at contact, far inside the margin).
 
 **Must respect:** `CONSTRAINTS.md` §1 (ratios only), §4 (a fit is not a derivation).

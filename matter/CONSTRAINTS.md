@@ -44,6 +44,17 @@ and the quantum of the loop's LC mode is `ℏ/√(L_eC_e) ≈ 101 keV`. Neither 
 in the model. This is consistent with §1 — and the headline phrase should eventually be
 corrected to say so.
 
+### 1c. Inductance = mass cannot reach the proton with 27 strings
+
+The mass law reads `m = κL` with `L` the inductance of the coiled string. Under the electron's
+own thin-wire electrodynamics (the regularised Neumann and Coulomb integrals that reproduce `L_e`
+and `C_e`), 27 strings of `ℓ₁` — wire length `9 × 2πR₃`, tube radius `r = R₃/37.1` — cannot be
+wound into anything with `L > ~72 L_e` or `Z > ~10.5 Z_e`, against `1836` and `22.67` required
+(`scripts/proton_object_search.py`, 9/9; `notes/2026-09-15-proton-impedance-closure.md` §5). The
+object the law itself implies — 204 coincident turns of radius `1.64 r` — is outside the thin-wire
+regime and gives `5.8 L_e` when built. **`m = κL` and `N_p = 27` are jointly unrealizable**; the
+index would have to be `~190`, or mass is not inductance. Do not look for a cleverer shape.
+
 ### 1a. Coiling a line does not raise the coupling
 
 The characteristic impedance of a **line** (`√(L/C)` of a conductor geometry) and
@@ -320,8 +331,9 @@ not forbid:
   electron's own electrodynamics and the model's closures gives `14` (series-capacitance
   reading) or `3` (self-capacitance reading), and within the validity of each reading no
   pitch reaches the target (`notes/2026-09-15-proton-impedance-closure.md`). The "19 %"
-  was an estimate's distance, not a residual. Closing it needs a principle fixing the
-  coil geometry;
+  was an estimate's distance, not a residual — and no other shape of 27 strings does
+  better (§1c: at most `10.5 Z_e`, `72 L_e`). Closing it means changing the catalogue
+  (`N_p`, or mass ≠ inductance), not the object;
 - constructing the equation of state of the `e/3` energy fluid (§2), which is
   the declared home of charge;
 - a stabilization mechanism for three-dimensional solitons that is **not** of
