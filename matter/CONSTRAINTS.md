@@ -63,6 +63,14 @@ which by itself caps `R₃/r` at 197 and `m/m_e` at `197 p`. As charge energy (�
 mass. **Under every reading the model offers, the proton is not a loop of the vacuum's string.**
 The string is sized for the electron; the axioms contain no second species and no second scale.
 
+Nor does *closure* help (`scripts/open_turn_closure.py`, 16/16;
+`notes/2026-09-15-open-turn-closure.md`). A turn closed through a gap has the exact resonance
+condition `tan(βℓ_s/2) = 1/(2ωC_gZ_e)`: the Compton mode rises from `2π` to `3π` on opening, the
+open fundamental is `π`, the transition sits at a gap of `0.04 r`, and beyond it the dependence is
+linear in the gap. Closure moves masses by factors of order 1 and makes them *insensitive* to the
+gap. The model's exponentials — `R/r = e^{ℓ}/8`, `D/r = 2cosh(πZ/Z₀)` — make geometry exponential
+in impedance, i.e. mass logarithmic in geometry: a factor 1836 in mass is `e^{100}` in geometry.
+
 ### 1a. Coiling a line does not raise the coupling
 
 The characteristic impedance of a **line** (`√(L/C)` of a conductor geometry) and

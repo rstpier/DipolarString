@@ -200,6 +200,11 @@ law runs on `p − ½`. Still undetermined: the interface part of `θ_tot`, and 
 particle. For `N_DS = 3` the contribution is `±2π[(1 − a)Lk + aWr]` on the two circular doublet
 states, `a = 0.186`, `Lk ∈ ℤ/3` (item 3, step 3b): it equals `2π/3` per third of linking only when
 the linking is carried by writhe, not twist.
+**A second, equivalent origin (15 September):** a *partially open turn* has `βℓ_s = π` at the
+fundamental — two open ends give `θ_tot = π` exactly as one half-twist does
+(`notes/2026-09-15-open-turn-closure.md`). The two readings are degenerate at the fundamental and
+differ at the second harmonic (all harmonics vs odd multiples of `π`). Closure itself moves mode
+energies by factors of order 1, algebraically; it is not a mass mechanism.
 
 ### 6. Local cell spacing `ℓ_cell`
 *Group: `cell-spacing`.* Postulated equal to `ℓ₁` at rest — the manuscript calls
