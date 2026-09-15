@@ -99,3 +99,15 @@ et son moment vaut exactement un magnéton de Bohr : trois nombres de l'électro
 Compton, μ_B) sortis d'une seule barre, sans le manuscrit. Dette inchangée et plus aiguë : une
 charge qui tourne à c₀ rayonne 3×10⁵ W classiquement (3×10⁻¹⁹ s) ; « stabilisée par Z₀ » doit
 vouloir dire « mode lié, non rayonnant », et c'est cela qu'il faut écrire.
+
+**R11 — Le rayonnement.** La vitesse c₀ annule son propre rayonnement pour un observateur
+extérieur, et s'éteint instantanément dans son référentiel.
+→ Calculé (`no_radiation.py`, 6/6) : exact sous une condition. Une charge ponctuelle au pôle
+tournant à c₀ rayonne sans limite (Larmor × γ⁴, 10⁻¹⁹ s) ; une onde de charge qui circule sur
+l'anneau est une antenne boucle résonante et se vide en dix tours ; **une charge répartie
+uniformément sur l'orbite avec un courant continu est une source stationnaire et ne rayonne
+jamais**, en gardant μ = μ_B et S = ℏ/2 (moitié de la masse sur l'anneau à c₀). Donc R11 fixe la
+lecture de R5 : à c₀ le fluide *est* toute l'orbite pour l'observateur extérieur, pas un point ;
+et R6 doit être relu pour un anneau de courant (aucun axe miroir dans le plan, un axe de rotation).
+Cohérent avec « s'éteint dans son référentiel » : un fluide guidé à c₀ n'a pas de temps propre,
+il n'émet pas, il ne peut que fuir, et une source stationnaire ne fuit rien.
