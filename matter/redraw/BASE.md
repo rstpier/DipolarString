@@ -65,3 +65,24 @@ universelle : tout soliton doit s'équilibrer à la charge q.
 Chaque énoncé précisé devient un calcul avec un script et un verdict (DÉRIVÉ / CONDITIONNEL /
 POSTULÉ / EXCLU), comme pour le reste du dossier `matter/`. Rien n'est repris du manuscrit sans
 être re-dérivé de R1–R8.
+
+---
+
+## Premier calcul sur la base : R3–R6 en mécanique (`spin_rod.py`, 8/8)
+
+Lecture adoptée, à corriger si fausse : « rotation » = rotation de la fille dans l'espace autour
+du point de brisure ; « pôle suiveur » = le bout éloigné de ce point, où la force centrifuge
+chasse le fluide. Barre rigide de longueur λ_C (trois cordes), masse m_e, fluide de charge −e.
+
+| ce que ta mécanique donne | valeur |
+|---|---|
+| rotation pour un spin ½ (pivot au point de brisure) | ω = 2,9×10¹⁹ rad/s, bout éloigné à 0,24 c |
+| force centrifuge sur le fluide / sa répulsion de Coulomb | 49 : le fluide s'accumule bien au pôle éloigné (R5) |
+| indépendance de la charge au mouvement | vraie si l'accumulation est complète (neutralité des atomes, 10⁻²¹) |
+| axes de symétrie | 1 pour la fille, 2 pour la mère (R6) |
+| **facteur g** | **3** pour une barre uniforme avec la charge au bout ; 1 si la masse est au pôle avec la charge ; **2,0023 seulement si la moitié de la masse est au pôle et l'autre au pivot** |
+| rayonnement de Larmor | 25 W : l'énergie de repos part en 3×10⁻¹⁵ s |
+
+Ce que la base doit encore fournir : pourquoi la charge en rotation ne rayonne pas (un mode
+stationnaire réactif, pas une forme), et le −1 sous un tour complet, qu'une rotation classique ne
+donne pas. La condition sur g est la première prédiction que la base peut être tenue de vérifier.
