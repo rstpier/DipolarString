@@ -316,10 +316,12 @@ not forbid:
 
 - a spectrum of **mass ratios** given the one anchor;
 - closing `Z_p/Z_e` from an internal matching condition — the toroidal-helix
-  geometry gives `N^{3/2} = 27` against `22.7` required, **19 % away**, a
-  residual of logarithmic order comparable to the `ln(8R₃/r)` corrections of the
-  electron derivation. Closing it *without fitting* would render the proton mass
-  geometric;
+  *estimate* gives `N^{3/2} = 27` against `22.7` required; the *calculation* with the
+  electron's own electrodynamics and the model's closures gives `14` (series-capacitance
+  reading) or `3` (self-capacitance reading), and within the validity of each reading no
+  pitch reaches the target (`notes/2026-09-15-proton-impedance-closure.md`). The "19 %"
+  was an estimate's distance, not a residual. Closing it needs a principle fixing the
+  coil geometry;
 - constructing the equation of state of the `e/3` energy fluid (§2), which is
   the declared home of charge;
 - a stabilization mechanism for three-dimensional solitons that is **not** of

@@ -15,14 +15,30 @@ Discussion groups for all of these exist at
 *Manuscript status: open derivation. Group: `proton-impedance`.*
 
 The mass law `m ∝ N²Z` with `m_p/m_e = 1836` and `N_p/N_e = 9` requires
-`Z_p/Z_e ≈ 22.7`. A closed toroidal-helix geometry for the `N_DS = 27` soliton
-(9 turns of 3 strings, mutual inductance `L ∝ N²`, series inter-turn capacitance
-`C ∝ 1/N`) yields `Z_p/Z_e = N^{3/2} = 27` — **within 19 %**, a residual of
-logarithmic order comparable to the `ln(8R₃/r)` corrections of the electron
-derivation.
+`Z_p/Z_e ≈ 22.7`. The manuscript's scaling estimate for the `N_DS = 27` soliton
+(closed toroidal helix, 9 turns of 3 strings, `L ∝ N²`, series `C ∝ 1/N`) gives
+`N^{3/2} = 27`, quoted as "within 19 %".
 
-**Closes when:** the gap is closed from an internal matching condition, *without
-fitting*. That would render the proton mass geometric.
+**Attempt (15 September 2026), negative:** `notes/2026-09-15-proton-impedance-closure.md`,
+`scripts/proton_impedance_closure.py`, 16/16. Computed with the electron's own
+electrodynamics (the regularised Neumann and Coulomb integrals reproduce `L_e`, `C_e`
+to 0.02 %) and only the model's closures (wire length `27ℓ₁`, 9 turns, pitch = the
+matching distance `D` or the smallest self-avoiding pitch `1.11 D`), the closed helix
+gives `L_p/L_e = 20.7` (not 81: two turns at `D` have coupling 0.19) and
+`Z_p/Z_e = 14` (series-capacitance reading) or `3` (self-capacitance reading, the
+electron's). Within the validity of each reading **no pitch reaches 22.67**: series
+`12–15` with a minimum of 12 near `p = 2.5 D`, self `1.5–3.2`; the series formula crosses
+the target only where the turns are no longer adjacent. The "19 %" was the distance
+between an estimate and the target, not the residual of a calculation; the
+calculation lands below the target by a factor 1.6 to 7. The toroidal helix also
+self-intersects at the matching pitch. A4 cannot select a pitch: it pushes toward
+`Z₀`, the wrong direction. Coincidences recorded and not used: `(N−1)^{3/2} = 22.63`,
+`27/2^{1/4} = 22.70`.
+
+**Closes when:** a principle fixes the coil geometry (turn radius, pitch, major
+radius) and the capacitance reading — or names a different object for `N_DS = 27`.
+Then the two integrals above give `Z_p` with no further input. Until then the proton
+stays *Reparametrized*.
 **Must respect:** `CONSTRAINTS.md` §1 — the target is the ratio `Z_p/Z_e`, never
 an absolute `m_p`; and §4 — a fit is not a derivation.
 **Most contribution-shaped item in the inventory:** self-contained and quantified.
