@@ -124,3 +124,13 @@ pour trois, soit des pôles de 1,2 à 1,5 e. Tension avec R11 : un anneau statio
 tient que ½LI² ≈ 2 keV ; la masse est donc dans un mode (ω ≠ 0), qui ne rayonne pas seulement
 si son champ est confiné dans un guide fermé. **La base doit dire où vit l'onde : dans une paire
 (le DQD, R9) ou sur la fille ouverte.**
+
+**R7, précisé par l'auteur — pour n = 3, deux liaisons portent la masse.**
+→ Calculé (`junction_mass.py`, 7/7) : 511/2 = 255,5 keV par jonction (260,5 × 2 = 521 keV
+dépasserait m_e c² de 2 %). Une liaison de 255 keV pôle à pôle demande des pôles de ~2,1 e. Mais
+une masse **statique** dans les jonctions ne tourne pas (S = 0, μ = 0) : cette énergie est celle
+du **mode** aux jonctions, en partie circulante. Pour un fluide sans masse, g = (1 + ρ)/(1 − ρ)
+avec ρ le rapport des puissances arrière/avant créé par les réflexions aux pôles : **g = 2 ⇔ les
+pôles réfléchissent un tiers de la puissance** (|Γ| = 0,58 en amplitude). L'ancien Γ_pole = 1/3
+en amplitude (ρ = 1/9) donnerait g = 1,25. Le rayon reste ℏ/(m_e c). Prédiction tenue par la
+base : réflectivité des pôles 1/3 en puissance.
