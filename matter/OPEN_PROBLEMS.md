@@ -55,14 +55,17 @@ solitons in 3+1 D classified by the Hopf invariant `π₃(S²) = ℤ` — a *lin
 loops* — with fermionic quantization available (Krusch–Speight 2006). DS already has two fields
 with target `RP²`: the DQD pole axis `n` (the nematic order of A7) and the string tangent `t`.
 
-**Closes when — the decisive calculation:** coarse-grain the energy of the bifilar string gas
-into a director-field energy density and read off the coefficient of the quartic term. The
-Frank constants `K₁, K₂, K₃` will appear at order `(∂n)²`; the question is whether anything
-appears at `(∂n)⁴`. Candidates: the twist of the bifilar ribbon (`Lk = Tw + Wr`) and
-string-crossing interactions. Name the field (`n` or `t`) before starting. **Settle first whether
-A5 forbids the ribbon twist as a "continuous deformation mode".** If the coefficient is non-zero,
-Hopfions exist in DS with no new term and 3D stability, a linking charge and a route to spin ½
-open together; if it is zero, the direction closes cleanly.
+**Step 1 done (15 September), negative for V2.10 as written:** quadratic rod elasticity
+coarse-grains to Frank terms only; the Faddeev term is the Maxwell term of the director's CP¹
+Berry gauge field (verified identity); it arises when a U(1) phase coupled to that gauge field is
+integrated out; and **the V2.10 telegrapher action contains no coupling between its phase `θ` and
+any orientation variable** — its only variables are `Φ` and `θ`. The direction is located, not
+closed.
+**Closes when — step 2:** derive the geometric phase of the bifilar two-conductor mode under
+transport of its frame along the line, from the two-conductor geometry and the telegrapher
+parameters. Non-zero ⟹ the `θ`–`a[n]` coupling is a consequence of the bifilar structure, the
+Faddeev term follows, and Hopfions exist in DS with a derived (not added) term. Zero ⟹ the
+direction closes for this model. Name the field (`n` or `t`) before starting.
 **Must respect:** §3, §3a, §9 — a *topologically protected* label cannot also be mixed, so a
 protected Hopf charge is a quantum number, not a mass mechanism. Any coefficient obtained must
 be confronted with the PVLAS bound before use.

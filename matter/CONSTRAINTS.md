@@ -145,8 +145,12 @@ target `RP²` and `π₃(RP²) = π₃(S²) = ℤ`, so both admit Hopf solitons 
 elasticity of `n` and bending of `t` are different energies. The question "does DS contain a
 Faddeev term" must name its field.
 
-**V2.10 contains no such term:** *bending*, *Skyrme*, *Faddeev*, *Hopf*, *knot* and *linking*
-each appear zero times. What exists is three different things, none of them a quartic gradient
+**V2.10 contains no such term, and its action cannot generate one:** *bending*, *Skyrme*,
+*Faddeev*, *Hopf*, *knot* and *linking* each appear zero times, and the telegrapher action
+`S = ½∫dt dx[C'(∂ₜΦ)² − (1/L')(∂ₓΦ)²]` is a 1+1 D scalar action whose only variables are `Φ`
+and `θ` — it carries no orientation of the string. The Faddeev term is the Maxwell term of the
+director's Berry gauge field (verified identity, `scripts/audit_s3_reconnection.py`); it would
+require a coupling between `θ` and that connection, which the action does not contain. What exists is three different things, none of them a quartic gradient
 term:
 
 - **A5**, topological rigidity of the DQD — *"possesses no continuous deformation mode"*:

@@ -191,6 +191,26 @@ def block_derrick() -> None:
           "string bending |(n.grad)n|^2 is degree 2 -> lambda^1; Faddeev is degree 4 -> lambda^-1")
 
 
+def block_cp1_identity() -> None:
+    """The Faddeev density is the Berry curvature of the director's CP^1 gauge field.
+
+    With n = (sin th cos ph, sin th sin ph, cos th) and z = (cos th/2, sin th/2 e^{i ph}),
+    the Berry connection is a_mu = sin^2(th/2) d_mu ph and its curvature satisfies
+    f_xy = (1/2) n.(d_x n x d_y n).  Hence the Faddeev term (n.(dn x dn))^2 = 4 f^2 is the
+    Maxwell term of the emergent gauge field -- the mechanism by which a quartic gradient
+    term arises when a U(1)-charged field coupled to a[n] is integrated out.
+    """
+    th, ph = sp.symbols("theta phi", real=True)
+    thx, thy, phx, phy, phxy = sp.symbols("theta_x theta_y phi_x phi_y phi_xy", real=True)
+    n = sp.Matrix([sp.sin(th) * sp.cos(ph), sp.sin(th) * sp.sin(ph), sp.cos(th)])
+    dn = lambda dth, dph: n.diff(th) * dth + n.diff(ph) * dph
+    fad = sp.simplify(n.dot(dn(thx, phx).cross(dn(thy, phy))))
+    f = sp.simplify(sp.sin(th / 2) * sp.cos(th / 2) * thx * phy + sp.sin(th / 2)**2 * phxy
+                    - (sp.sin(th / 2) * sp.cos(th / 2) * thy * phx + sp.sin(th / 2)**2 * phxy))
+    check("Faddeev density = 2 x Berry curvature", sp.simplify(f - fad / 2) == 0,
+          "f_xy = (1/2) n.(d_x n x d_y n); Faddeev term = 4 f^2 = Maxwell term of the CP^1 gauge field")
+
+
 def block_diagnostic_error() -> None:
     """How wrong the perturbative formula is where the dossier's diagnostic lands."""
     E1 = 3 * 0.51099895  # MeV; E1 = h c / ell_1 = 3 m_e c^2 from the anchor
@@ -214,6 +234,7 @@ def main() -> int:
     block_class_reduction()
     block_algebra()
     block_derrick()
+    block_cp1_identity()
     block_diagnostic_error()
 
     for status, name, detail in RESULTS:

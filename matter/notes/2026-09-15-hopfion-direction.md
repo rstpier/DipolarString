@@ -105,31 +105,57 @@ field.
 
 ---
 
-## 5. The decisive calculation (not done)
+## 5. The decisive calculation — step 1 done, result negative for V2.10 as written
 
-Coarse-grain the energy of the bifilar string gas into a director-field energy density and read
-off what appears at order `(∂n)⁴`. At `(∂n)²` the Frank constants `K₁, K₂, K₃` will appear;
-that is expected and does not stabilise. The question is the quartic coefficient. Two candidate
-sources inside DS:
+**(a) Quadratic rod elasticity gives Frank only.** A bifilar string with Kirchhoff bending and
+twist has an energy quadratic in first derivatives of its tangent and frame. Any local
+coarse-graining of a quadratic energy is quadratic in gradients at leading order: the Frank
+constants `K₁, K₂, K₃`, all `λ¹`. No quartic term. (Homogeneity; degree check in the script.)
 
-- **the twist of the bifilar ribbon.** A two-conductor line has a torsional degree of freedom
-  as well as bending. Călugăreanu–White–Fuller, `Lk = Tw + Wr`, ties local twist to the
-  writhe of the centreline — a global geometric quantity of exactly the self-linking kind the
-  S₃ dossier reached for. **First question, before anything is spent: does A5 ("no continuous
-  deformation mode") forbid the ribbon twist?** The manuscript's own particle sector needs bent
-  strings, so A5 cannot mean "no curvature of the axis"; whether it means "no twist" is
-  undecided;
-- **crossing interactions** between distinct strings, non-local in the string picture,
-  possibly local at order `(∂n)⁴` after coarse-graining.
+**(b) Where a quartic term comes from — verified.** Write `n = z†σz` with `z ∈ CP¹`. The Berry
+connection `a_μ = −i z†∂_μz` has curvature `f_μν = ½ n·(∂_μn × ∂_νn)`, so the Faddeev term is
+**exactly** `4 f_μν²`: the Maxwell term of the director's emergent gauge field. Verified
+symbolically (`scripts/audit_s3_reconnection.py`, "Faddeev density = 2 × Berry curvature"). A
+Maxwell term for that gauge field is generated when a **U(1)-charged field coupled to `a[n]`**
+is integrated out — the standard route in CP^{N−1} models.
 
-If the quartic coefficient is non-zero: Hopfions exist in DS with no new term; 3D stability,
-an integer linking charge and a route to spin ½ open together. If it is zero: the direction
-closes cleanly and the framework has no internal stabilizer, which is itself a result.
+**(c) DS has the U(1).** The compact phase `θ = qΦ/ℏ`. The mechanism therefore needs one thing:
+a coupling between `θ` and the Berry connection `a[n]` — physically, the flux phase of the line
+must advance when the ribbon's frame rotates. That is what the twist of a framed curve *is*
+(Călugăreanu–White–Fuller: `Lk = Tw + Wr`, the twist being a U(1) connection along the curve).
+
+**(d) The V2.10 action has no such coupling — and no variable that could carry it.** The
+telegrapher action is
+
+    S = ½ ∫ dt dx [ C'(∂ₜΦ)² − (1/L')(∂ₓΦ)² ]
+
+a 1+1 D scalar action along the string coordinate. Its variables are `Φ` and `θ` only: no
+tangent `t`, no director `n`, no `Π`, no `Ω`. Verified by inspection of the action block. **The
+action does not know how the string sits in space.** (The words *framing*, *twist* and
+*Kirchhoff* appear once each in the manuscript, all in unrelated senses.)
+
+**Conclusion.** The quartic term cannot arise from the V2.10 action — not because A5 forbids
+the twist, but because the action has no variable for it. The direction is not closed; it is
+**located**: it requires one addition to the action, a coupling between the existing phase `θ`
+and the existing director `n`. Not a new field — a new coupling between two fields already in
+the model, whose minimal form is dictated by the geometry of a framed curve rather than chosen.
+It is nonetheless an addition, and adding it is a physics decision, not a derivation.
+
+**What the coupling would buy, if justified.** Integrating out `θ` gives the Faddeev term (3D
+stability) as the Maxwell term of `a[n]`; the Hopf charge appears as linking; and, because the
+*charge* phase is what couples to the geometry, a first bridge between the charge sector and
+the topology — which nothing in DS currently provides.
+
+**Step 2 — the calculation that would justify it, not done.** Derive the geometric
+(Pancharatnam-type) phase acquired by the two-conductor mode of a bifilar line when its frame
+is transported along the line — from the two-conductor geometry, `D/r = 2 cosh π`, and the
+telegrapher parameters. If that phase is non-zero, the `θ`–`a[n]` coupling is a *consequence*
+of the bifilar structure and the term is derived, not added. If it vanishes, the direction
+closes for this model. **This respects NO-GO C's spirit: the term must come out of the
+geometry, or not at all.**
 
 Companion tests, cheaper and independent: the `l`-degeneracy of the Bohr-scale cavity mode
 (§1.7); the Rydberg radius by Hartree self-consistency (§1.6).
-
----
 
 ## 6. Guard-rails
 
