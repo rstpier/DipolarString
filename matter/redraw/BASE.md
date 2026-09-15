@@ -214,3 +214,17 @@ charge concordent. La fermeture est donc la première variable : une chaîne ouv
 12,8 MeV sur la loi des leptons, un anneau fermé de 5 pèse 140 MeV. La masse n'est pas une fonction
 de n seul. Deux lois à expliquer : chaînes ouvertes, m = m_e (n/3)^{2π} ; anneaux fermés, ~140 MeV,
 presque indépendants de n entre 4 et 5.
+
+**R16 — Ce qui fixe ~140 MeV pour l'anneau fermé** (demande de l'auteur).
+→ `closed_ring_scale.py`, 7/7. Dans les constantes de la base (e, ℏ, c₀, Z₀, m_e), une seule
+longueur vaut 1,4 fm : **la moitié du rayon classique de l'électron, r_e/2 = α·ℏ/(m_e c)/2 =
+1,409 fm**, dont l'énergie de mode est ℏc/(r_e/2) = **2 m_e c²/α = 140,05 MeV** : le π± à 0,34 %,
+le π⁰ à 3,6 % (coïncidence connue, m_π ≈ 2m_e/α). Deux lectures dans la base : (a) Coulomb, r_e
+est le rayon où l'énergie de champ de la charge e vaut m_e c², l'anneau fermé siège à la moitié ;
+(b) impédance, Z₀ = 2α·R_K avec R_K = h/e², donc 2/α = 4 R_K/Z₀ = 274 : la masse de l'anneau
+fermé est celle de l'électron × 4 (résistance quantique / impédance du vide), comme si l'anneau
+fermé « voyait » h/e² là où la chaîne ouverte voit Z₀. Tests : l'énergie de Coulomb propre de
+l'anneau donne le bon signe pour π± − π⁰ mais 0,36 MeV contre 4,59 mesurés (13 fois trop peu) ;
+les hadrons ne sont pas des multiples de 140 MeV (K 3,5, η 3,9, ρ 5,5, p 6,7). **Statut :
+identification de l'échelle, pas dérivation** ; le mécanisme qui épingle un anneau fermé à r_e/2
+est ce que la base doit fournir.
