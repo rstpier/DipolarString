@@ -195,6 +195,14 @@ matrix is a classical rule for voltages. Two unpaired branches are two classical
 charged conductors with no exchange phase. The belt-trick alternative needs a spinor
 carrier (`a = ½`), which DS bundles do not have (`a = 0, 0.19, 0.33, 0.43, 0.51`).
 
+**The author's mechanism (15 September, `notes/2026-09-15-spin-from-breaking.md`,
+8/8):** a closed ring of 3 DQDs (spin 1, winding 1 on 6 strings) breaking into two rings
+of 3 strings gives each daughter the mother's wavelength, i.e. winding ½ — the
+antiperiodic ring, `L_z = ½`. Exact as wave arithmetic; it fixes the electron ring at
+`R₃/2` (the open-turn note's value) and requires 0.77 MeV from outside. It does not
+supply the ℤ₂ structure on a ring of single branches, a rule that keeps `u` and `ν`
+fermionic, or the exchange sign.
+
 **Closes when:** the weave is quantized as a superposition of its flux-loop
 configurations with a sign rule, and that sign is computed — a change of foundation,
 not of shape. Until then the matter sector has produced a magnetic moment and a
