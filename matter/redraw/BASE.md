@@ -289,3 +289,26 @@ la base, doit avoir R = 0,99 fm pour donner μ_n − μ_p = −4,71 μ_N ; le ra
 concordent à 9 %, et le spin de la boucle (R·E/c < 0,02 ℏ) laisse le neutron à spin 1/2. Verdict :
 calibration = un nombre, pas une dérivation ; l'image « proton + boucle d'électron à ~0,95 fm »
 est CONDITIONNELLE et passe deux tests de taille.
+
+**R20 — « Une jonction vaut 2 MeV. Mais les quarks ne fonctionnent pas pareil : ils semblent
+ramifiés en étoile. »**
+→ `quark_star.py`, 6/6. **Le joint de 2 MeV** dans la loi de Coulomb de la base u = δ²K/s : avec
+des pôles unitaires (e) il siège à s = 0,72 fm, la taille du nucléon ; avec les pôles adaptés de
+R17 (3,73 e) à 10 fm ; avec le pôle d'une corde (e/3) à 0,08 fm. Il vaut 15,7 fois la jonction de
+l'électron (127,75 keV) : ce n'est pas cette jonction remise à l'échelle 1/s (elle serait à 10 fm),
+c'est une jonction à pôles unitaires à 0,7 fm. **L'étoile et la charge** : la règle q = (n₊ − n₋)e/3
+ne voit pas la topologie ; une étoile à k bras a les classes de charge d'une chaîne de k cordes
+(parité de k). +2/3 exige k pair, −1/3 exige k impair : une étoile à 3 bras ne peut pas être un u,
+une étoile à 4 bras ne peut pas être un d. Étoiles minimales : d = 1 corde ou 3 bras (1+, 2−) ;
+u = 2 cordes ou 4 bras (3+, 1−). **Budget de joints** : un proton dessiné comme étoile d'étoiles
+(u, u, d avec leur centre + un centre Y) a 4 joints × 2 MeV = 8 MeV, 0,9 % du proton : la masse
+n'est pas dans les joints. **Lecture de mode au rayon de charge** : ℏc/r_p = 234,7 MeV et le
+produit mesuré r_p·m_p·c/ℏ = 3,998 ± 0,002 (PDG 2024) : le proton est 4 modes de son rayon de
+charge à 0,05 %, un Y à 3 bras en fait 3 (−25 %) ; coïncidence à expliquer, pas une dérivation ;
+le fluide à c sur r_p demande une charge circulante de 0,70 e pour μ_p (2/3 e : −4,6 %). **Signe du
+confinement** : dans la base une corde deux fois plus longue est deux fois plus légère (mode et
+Coulomb en 1/L) ; la corde Y du réseau (σ ≈ 0,89 GeV/fm) est deux fois plus lourde : signes
+opposés. L'étoile de la base n'a donc pas de taille propre ; seul S = R·E/c = ℏ/2 la fixe, comme
+pour l'électron, R = ƛ/f avec f = 1/4 pour le proton. **R6 sur l'étoile** (enregistré, non testé) :
+étoile symétrique à 3 bras, 3 axes → spin 3/2 (Δ) ; un bras différent, 1 axe → spin 1/2 (N) : à
+contenu égal, l'écart Δ − N de 294 MeV serait une différence de forme.
