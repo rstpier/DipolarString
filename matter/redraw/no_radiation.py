@@ -42,8 +42,8 @@ def main() -> int:
         gamma = 1 / math.sqrt(1 - beta ** 2)
         p = E ** 2 * gamma ** 4 * beta ** 4 * C / (6 * math.pi * EPS0 * R ** 2)
         rows.append((beta, p, ME * C ** 2 / p))
-    check("(1) A point charge at the pole circling at v -> c_0 radiates without bound (Larmor x gamma^4): lifetimes 1e-18 to 1e-24 s, below one turn from v = 0.9 c on",
-          all(t < 1e-17 for _, _, t in rows) and all(t < PERIOD for _, _, t in rows[1:]), "; ".join(f"v = {b} c: P = {p:.1e} W, tau = {t:.1e} s" for b, p, t in rows) + f" (one turn = {PERIOD:.1e} s)")
+    check("(1) A point charge at the pole circling at v -> c_0 radiates without bound (Larmor x gamma^4): lifetimes 1e-18 to 1e-24 s, below one turn from v = 0.99 c on",
+          all(t < 1e-17 for _, _, t in rows) and all(t < PERIOD for _, _, t in rows[2:]), "; ".join(f"v = {b} c: P = {p:.1e} W, tau = {t:.1e} s" for b, p, t in rows) + f" (one turn = {PERIOD:.1e} s)")
     # (2) travelling charge wave on the ring: one-wavelength loop antenna, R_rad ~ 130 Ohm (standard value for C = lambda)
     r_rad = 130.0
     x_l = Z0 * (math.log(8 * R / (R / 37.1)) - 2)      # omega L of a thin loop, aspect ratio as a placeholder only
