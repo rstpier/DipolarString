@@ -1,0 +1,3 @@
+# Bytecode cache written when a script imports berry_holonomy_common.py. Never a deliverable.
+__pycache__/
+*.pyc
