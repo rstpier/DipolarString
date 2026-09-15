@@ -1,7 +1,10 @@
 # A matter topology for the DS medium — drawn from the theories that do more
 
 **Date:** 15 September 2026
-**Status:** DESIGN — everything here is POSTULATED unless marked otherwise. It reuses derived
+**Status:** CLOSED AS A MECHANISM (15 September, `2026-09-15-wen-link.md`): the DS string is a
+conductor, not a flux line, and the vacuum is a classical network, not a string condensate — Wen's
+mechanism has nothing to live in. Kept as vocabulary and as the record of what was tested. Below,
+the original design; everything in it is POSTULATED unless marked otherwise. It reuses derived
 pieces (steps 2–5, the open-turn resonance) and borrows its structure from two published
 constructions that obtain fermions from a string medium. **Step 1 done (15 September,
 `2026-09-15-string-end-charge.md`):** the DS string is a conductor carrying a charged fluid, not a

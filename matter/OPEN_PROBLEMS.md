@@ -187,9 +187,18 @@ holonomy is `2π[(1 − a)Lk + aWr]` with `a = 0.186` (item 3, step 3b): a permu
 Berry phase, neither an SO(3) angular momentum, so the `L_z ∈ ℤ + ⅓` caveat is not an
 obstruction — and not a derivation of `j = ½` either.
 
-**Closes when:** fermionic statistics emerge from the medium rather than being
-imposed. Until then the matter sector has produced a magnetic moment, not a
-fermion.
+**What fermionic statistics would need (15 September, `notes/2026-09-15-wen-link.md`):**
+the only known route from a bosonic string medium to fermions — Levin–Wen — puts the
+sign in a *quantum superposition* of the medium's loop configurations with a
+reconnection rule. DS's weave is one classical configuration; its node scattering
+matrix is a classical rule for voltages. Two unpaired branches are two classical
+charged conductors with no exchange phase. The belt-trick alternative needs a spinor
+carrier (`a = ½`), which DS bundles do not have (`a = 0, 0.19, 0.33, 0.43, 0.51`).
+
+**Closes when:** the weave is quantized as a superposition of its flux-loop
+configurations with a sign rule, and that sign is computed — a change of foundation,
+not of shape. Until then the matter sector has produced a magnetic moment and a
+half-integer `L_z` about one axis, not a fermion.
 
 ---
 
