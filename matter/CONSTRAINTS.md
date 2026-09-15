@@ -171,7 +171,14 @@ density**: the doublet's worldsheet field strength vanishes for a static string.
 needs the doublet to propagate *between* strings, which V2.10 does not contain; if it did, the
 coefficient would be `1/e² = (a²/6π²) ln(Λ/m) ≈ 5.8×10⁻⁴ ln(Λ/m)` per species, positive, hence
 Derrick-sufficient for a Hopfion of size `~1/(e√κ)` with `κ` the open director stiffness. PVLAS
-(below) is not evaluated for it. The closed-string holonomy is `2π[(1 − a)Lk + aWr]`, `Lk ∈ ℤ/3`; it is the G
+(below) is not evaluated for it. **And V2.10 has no such carrier** (`scripts/step5_carrier.py`,
+17/17): the weave's differential modes hop between neighbouring pairs (`∓1.4 %` at `ℓ_cell`; the
+model's own channel is the node scattering at the orthogonal crossings) but are exactly neutral —
+real, non-degenerate, real hoppings, phase 0 or π on any closed loop. Berry charge exists only on
+bundles of `n ≥ 3` strands (`a = 0.19, 0.33, 0.43, 0.51` for `n = 3…6`), which are the particles.
+**The local Faddeev route is closed at the carrier for V2.10 as written**; it reopens only under a
+postulate the model does not make (a weave of `N ≥ 3` bundles, or a physical crossing frame — which
+the manuscript itself calls a statistical homogenization device). The closed-string holonomy is `2π[(1 − a)Lk + aWr]`, `Lk ∈ ℤ/3`; it is the G
 conjecture's ⅓ exactly only for a triple that closes by writhe with zero twist. This section's
 conclusion — no Derrick-evading term in V2.10 — stands; what changed is that the model's own
 `N = 3` geometry contains the *field strength* such a term is built from.
@@ -323,9 +330,11 @@ not forbid:
   `n` or string tangent `t`. **Closed for the pair** (no Berry connection, ℤ₂ holonomy only).
   **For `N ≥ 3` the field strength exists** on the tangent field — the doublet's Berry curvature
   is `0.19 ×` the photon's (step 3b); the induced coefficient is computed (step 4): exact and
-  writhe-dependent on one string, `1/e² = (a²/6π²) ln(Λ/m)` in 3+1 D *if* the doublet crosses
-  between strings — the missing carrier, with `κ` and PVLAS, is what stays open. See
-  `notes/2026-09-15-hopfion-direction.md` §5c–5f.
+  writhe-dependent on one string, `1/e² = (a²/6π²) ln(Λ/m)` in 3+1 D *if* a charged doublet
+  crossed between strings — and the weave has none (step 5): its carrier is neutral, charge lives
+  only on `N ≥ 3` bundles. **The local Faddeev–Hopfion route is closed at the carrier for V2.10 as
+  written.** What stays open is the single closed bundle's stability (tension against the `1/ℓ`
+  mode energy, elastic coefficients unknown). See `notes/2026-09-15-hopfion-direction.md` §5c–5g.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.

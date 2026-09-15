@@ -43,8 +43,8 @@ creation implies exact matter–antimatter symmetry at formation.
 ### 3. Stabilization of three-dimensional solitons — the Hopfion route
 *Manuscript status: absent, tied to the muteness of the weave. Group: `chiral-closure`.
 Direction recorded 15 September 2026: `notes/2026-09-15-hopfion-direction.md`. Closed for the
-pair; for `N ≥ 3` the Faddeev field strength exists (step 3b), the induced term's coefficient is
-open.*
+pair; for `N ≥ 3` the Faddeev field strength exists (step 3b) and the induced term is computed
+(step 4); the local route is closed at the carrier (step 5): the weave has no charged excitation.*
 
 Without a Derrick-evading term the energy `E(λ) = Aλ³ + Bλ² + Cλ` is monotonic and a localized
 configuration collapses. The Dzyaloshinskii–Moriya carrier is **excluded by more than thirty
@@ -100,12 +100,21 @@ propagated between strings as a 3+1 D field, the coefficient would be
 `1/e² = (a²/6π²) ln(Λ/m) = 5.8×10⁻⁴ ln(Λ/m)` per species (charge `Q = 2a` under the CP¹
 connection; scalar one-loop), enough for Derrick — a Hopfion of size `~1/(e√κ)`. Script:
 `scripts/step4_induced_faddeev.py`, 16/16.
-**What is now open on this route:** (i) a *carrier*: a doublet excitation that crosses from string
-to string (the "crossing interaction" of `CONSTRAINTS.md` §3a) — without it there is no local
-term, whatever the coefficient; (ii) `κ`, the Frank stiffness of the weave director (the
-phase-stiffness problem), which sets the Hopfion's size and mass; (iii) the elastic coefficients
-against which the induced torque on the writhe acts; (iv) the PVLAS mapping of a term quartic in
-fluctuations; (v) whether the weave carries triple modes at all — its DQD pairs have `a = 0`. The
+**Step 5 done (15 September), the carrier:** the weave's differential modes do hop between
+neighbouring pairs (`k = ∓1.4 %` at `ℓ_cell`, exact thin-wire result; the manuscript's own channel
+is the node scattering at the orthogonal 3-DQD crossings) — but the carrier is **exactly neutral**:
+a real non-degenerate mode, real hoppings for every relative orientation, phase 0 or π around any
+closed loop. Berry charge `a(n) = ⟨L_z⟩` lives only on bundles of `n ≥ 3` strands (`0, 0.19, 0.33,
+0.43, 0.51` for `n = 2…6`), i.e. on the particles, not on the vacuum; the electron's doublet can
+leak into a neighbouring pair (`1.7 %`) but arrives neutral. **The local Faddeev–Hopfion route for
+the weave director is closed at the carrier for V2.10 as written.** Script:
+`scripts/step5_carrier.py`, 17/17.
+**What is now open — and it is no longer a Hopfion:** (i) the *single closed bundle* — its
+stability is tension against the `1/ℓ` mode energy, with the induced writhe torque (step 4) acting
+against elastic coefficients the model does not give; (ii) the two postulates that would reopen
+the local route, which V2.10 does not make: a weave of `N ≥ 3` bundles, or a physical (not merely
+regularizing) crossing frame carrying a propagating doublet; (iii) `κ` and PVLAS, moot until one
+of those is made. The
 `L_z ∈ ℤ + ⅓` caveat is reduced, not closed: neither part of the phase is an SO(3) angular
 momentum (permutation label + Berry phase; the twisted ring's conserved generator is a screw
 combination), so there is no contradiction — and no `j = ½` either.

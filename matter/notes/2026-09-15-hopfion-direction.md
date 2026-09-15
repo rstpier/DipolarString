@@ -8,7 +8,11 @@ derived; `a` is grid-calibrated). The induced term is computed (step 4, §5f): e
 string — a Casimir-type energy `−(πℏc/ℓ)B₂((1−a)Lk + aWr)`, Derrick class `λ⁻¹`, minimal at
 trivial holonomy, hence a *cost* for the half- and third-windings; no local static Faddeev density
 arises from one string; the 3+1 D coefficient `1/e² = (a²/6π²) ln(Λ/m)` is CONDITIONAL on the
-doublet propagating between strings, which V2.10 does not contain. With the
+doublet propagating between strings, which V2.10 does not contain. Step 5 (§5g) settles the
+carrier: the weave's excitation hops (1.4 % per cell) but is exactly neutral — Berry charge lives
+only on bundles of `N ≥ 3` strands, i.e. on the particles — so **the local Faddeev–Hopfion route for
+the weave director is CLOSED at the carrier for V2.10 as written**; what survives is the single
+closed bundle. With the
 author's decision that the pair is unordered: the pair's holonomy contributes `π` per half-twist
 to `θ_tot` (DERIVED); the triple's holonomy is `2π[(1 − a)Lk + aWr]` (DERIVED) and equals the G
 conjecture's ⅓ exactly only when the triple closes by writhe with zero twist. §5d's "exact ℤ₃
@@ -410,6 +414,61 @@ triple-doublet modes in the weave (its DQD pairs have `a = 0`); PVLAS not evalua
 quartic in fluctuations, hence not a linear birefringence, but the mapping to `χ_vac` is not
 done). Net: the coefficient is computed; what the Hopfion route now lacks is not a coefficient
 but a *carrier* — a doublet excitation that crosses from string to string.
+
+## 5g. Step 5 — the carrier
+
+Script: `../scripts/step5_carrier.py`, 17/17 PASS.
+
+Step 4 left the route needing a *carrier*: a Berry-charged excitation that propagates between the
+strings of the weave, so that a local `(f_ij)²` can be induced for a director field. What the weave
+offers, in thin-wire 2D electrostatics at the model's own geometry (`D/r = 2cosh π`,
+`ℓ_cell = ℓ₁ = 2πR₃/3`, `R₃/r = 37.1`, hence `ℓ_cell/D = 3.35`):
+
+**A. The weave's carrier hops.** Two parallel DQD pairs at `ℓ_cell` couple their differential
+modes with the exact coefficient `k = ln(1 ± D²/ℓ²)/(2 ln(D/r)) = ∓1.4 %` (collinear / broadside;
+zero for orthogonal neighbours; dipolar `1/ℓ²` fall-off). The manuscript's own transverse channel
+is different and stronger: the weave is a cubic lattice of three mutually orthogonal DQD families,
+and at each crossing the node scattering matrix (Theorem 4, the discrete curl) hands the mode from
+one family to another. Either way, transverse propagation exists.
+
+**B. It is neutral.** The pair's differential mode is real and non-degenerate: its Berry charge
+is exactly zero (`|a₂| < 10⁻¹²`, step 2) and every hopping matrix element is real for every
+relative orientation of the neighbours (the hopping follows the dipolar form `−cos(ψ₁ + ψ₂)` to
+10 %), so the phase around any closed hopping loop is 0 or π — checked on a plaquette of four
+rotated frames. A neutral carrier induces no Faddeev term for any director: the induced Maxwell
+term is proportional to the carrier's charge squared. This holds at the crossings too, since each
+DQD's mode is real and non-degenerate on its own line. What the continuum limit does carry is the
+photon's helicity — a Berry monopole in the space of *propagation directions* (Tomita–Chiao,
+`a = 1`) — which is a curvature in k-space, not on a material director; a Faddeev term is a
+functional of a material field.
+
+**C. Where charge lives.** Berry charge `a(n) = ⟨L_z⟩` of the E₁ doublet of an `n`-strand bundle
+(n-gon of side `D`, `ε = r`):
+
+| n | 2 | 3 | 4 | 5 | 6 | free vector |
+|---|---|---|---|---|---|---|
+| `a` | 0 | 0.186 | 0.329 | 0.432 | 0.507 | 1 |
+
+Charge needs `n ≥ 3` strands in *one* bundle. The vacuum weave is built of pairs; the bundles are
+the particles (`N_DS = 3` electron, `27` proton).
+
+**D. The electron's doublet leaks, neutrally.** The triple's doublet couples to a neighbouring
+pair's singlet with normalised coefficient `1.7 %` at `ℓ_cell`: the excitation can leave its
+bundle, but it arrives in the weave as a neutral pair mode. `a` is a property of the bundle, not
+of the excitation.
+
+**Conclusion.** V2.10's weave has a carrier and no charge. **The local Faddeev–Hopfion route for
+the weave director is closed at the carrier** — not by a coefficient, by the absence of a charged
+excitation of the vacuum. It reopens only under a postulate the model does not make: a weave of
+`N ≥ 3` bundles, or a propagating degenerate doublet of the crossing frame — and the manuscript
+itself says the 3-DQD cell is a statistical homogenization device whose continuum limit keeps
+only isotropy, so that frame is not a physical field. `κ` is moot without a carrier. What
+survives of the direction is the **single closed bundle**: its derived holonomy (§5e), its exact
+induced energy (§5f), and the loop's own stability — tension against the `1/ℓ` mode energy —
+which is a string problem, not a Hopfion problem.
+
+**Status.** A–D: DERIVED (thin-wire electrostatics; grid Berry connections). Conclusion: DERIVED
+for V2.10 as written; the two escape routes are POSTULATES the model does not make.
 
 ## 6. Guard-rails
 
