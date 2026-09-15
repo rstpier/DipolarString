@@ -157,13 +157,20 @@ connection vanishes identically, and the holonomy over a full turn of the pair a
 the pair *does* supply is a ℤ₂ holonomy — a half-turn flips the mode — physical because the pair
 is unordered (author's decision, 15 September); see `notes/2026-09-15-hopfion-direction.md` §5c.
 
-**For `N ≥ 3` the question is reopened, not answered** (`scripts/step3_triple_holonomy.py`,
-12/12): three indistinguishable conductors carry a degenerate doublet of differential modes with a
-non-zero, constant Berry connection and a ℤ₃ holonomy (rotation by 120° over the closed loop of
-the unordered triple). A non-zero connection is necessary for Berry curvature, not sufficient;
-the Faddeev term needs `f_μν ≠ 0` over the two-parameter family tangent × frame, which is step 3b
-(not done). Until then this section's conclusion stands for the pair and is *pending* for the
-triple.
+**For `N ≥ 3` the Faddeev field strength exists; the Faddeev term is not yet derived**
+(`scripts/step3_triple_holonomy.py`, 12/12; `scripts/step3b_triple_curvature.py`, 17/17). Three
+indistinguishable conductors carry a degenerate doublet of differential modes with a non-zero
+Berry connection `a J` per unit twist, `a = ⟨L_z⟩ = 0.186` (grid-calibrated; photon 1, pair 0).
+Tilting the string has no matrix element in the doublet, so on the string's frame bundle the
+curvature is exactly `a ×` the solid-angle form of the tangent: `F = 2a f_μν[t]`, the CP¹ field
+strength of the identity above, on the *tangent* field. A charged excitation of the doublet
+coupled to `F`, integrated out, would produce `(f_μν)²` — the Faddeev term — with a coefficient
+that needs the doublet's propagator and has **not** been computed; it must then face PVLAS
+(below), and the weave must actually carry triple-doublet excitations (its DQD pairs have
+`a = 0`). The closed-string holonomy is `2π[(1 − a)Lk + aWr]`, `Lk ∈ ℤ/3`; it is the G
+conjecture's ⅓ exactly only for a triple that closes by writhe with zero twist. This section's
+conclusion — no Derrick-evading term in V2.10 — stands; what changed is that the model's own
+`N = 3` geometry contains the *field strength* such a term is built from.
 
 **A5, as worded, is too strong for this.** "No continuous deformation mode" would forbid the
 frame rotation the ℤ₂ and ℤ₃ holonomies require, and already forbids the axis bending the loop
@@ -309,9 +316,10 @@ not forbid:
   in first derivatives (Faddeev) or quadratic in second derivatives. **String bending does not
   supply it** (it gives Frank `K₃`, `λ¹`). The DS-internal candidates are the twist of the
   bifilar ribbon and string-crossing interactions, and the field must be named — DQD pole axis
-  `n` or string tangent `t`. **Closed for the pair** (no Berry connection, ℤ₂ holonomy only);
-  **reopened for `N ≥ 3`** (degenerate doublet, non-zero connection, ℤ₃ holonomy) pending the
-  curvature computation of step 3b. See `notes/2026-09-15-hopfion-direction.md` §5c–5d.
+  `n` or string tangent `t`. **Closed for the pair** (no Berry connection, ℤ₂ holonomy only).
+  **For `N ≥ 3` the field strength exists** on the tangent field — the doublet's Berry curvature
+  is `0.19 ×` the photon's (step 3b) — and the induced term's coefficient, PVLAS, and whether the
+  weave carries triple modes are open. See `notes/2026-09-15-hopfion-direction.md` §5c–5e.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.

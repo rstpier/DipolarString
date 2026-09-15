@@ -43,7 +43,8 @@ creation implies exact matter–antimatter symmetry at formation.
 ### 3. Stabilization of three-dimensional solitons — the Hopfion route
 *Manuscript status: absent, tied to the muteness of the weave. Group: `chiral-closure`.
 Direction recorded 15 September 2026: `notes/2026-09-15-hopfion-direction.md`. Closed for the
-pair, reopened for `N ≥ 3` pending step 3b.*
+pair; for `N ≥ 3` the Faddeev field strength exists (step 3b), the induced term's coefficient is
+open.*
 
 Without a Derrick-evading term the energy `E(λ) = Aλ³ + Bλ² + Cλ` is monotonic and a localized
 configuration collapses. The Dzyaloshinskii–Moriya carrier is **excluded by more than thirty
@@ -76,15 +77,25 @@ conductors on an equilateral triangle carry a **degenerate doublet** of differen
 irrep of C₃v, degenerate to `10⁻⁷`) with a **non-zero, constant, antisymmetric Berry connection**
 `A_ab = ∓0.1858` — exactly the structure the pair lacked. Transport over the closed loop of the
 unordered triple (`ψ: 0 → 2π/3`) is a rotation by 120.000° of the doublet, eigenvalues
-`e^{±2πi/3}`: a **ℤ₃ holonomy, fractional winding ⅓**. Script:
-`scripts/step3_triple_holonomy.py`, 12/12. The ½ / ⅓ mismatch with the G conjecture dissolves as
-`ℤ_n → 1/n`; whether this is the *same* quantity the conjecture takes as input is not yet checked.
-**Step 3b, defined, not started:** a non-zero connection is necessary for Berry curvature, not
-sufficient. Compute the curvature of the doublet over the two-parameter family (string tangent
-`t ∈ S²` × frame angle `ψ`); Călugăreanu gives the closed-loop holonomy as `2π(Lk − Wr)` with
-`Lk ∈ ℤ/3`. Only a non-zero curvature there reopens the Faddeev term for `N ≥ 3`. Caveat to
-resolve first: `L_z ∈ ℤ + ⅓` is not a representation of SO(3) — the ℤ₃ label is internal, or
-the twist is compensated by writhe.
+`e^{±2πi/3}` — the **permutation part** of the holonomy. Script:
+`scripts/step3_triple_holonomy.py`, 12/12.
+**Step 3b done (15 September):** the connection and the permutation composed, and the curvature
+computed. `a = 0.186` is the doublet's mean angular momentum `⟨L_z⟩` about the string axis
+(photon: 1; pair: 0; grid-calibrated, `0.15–0.25` for `ε/r = 0.5–2`). Tilting the string has no
+matrix element in the doublet, so on the string's frame bundle the connection is exactly
+`a J ω_twist` and the **curvature is `a ×` the solid-angle form of the tangent — the photon's
+Berry curvature scaled by `a`, i.e. `F = 2a f_μν[t]`: the Faddeev field strength of the tangent
+field exists for the triple.** Closed-string holonomy, verified against Fuller/Călugăreanu on an
+explicit curve: `H = R(2π[(1 − a)Lk + aWr])`, `Lk ∈ ℤ/3`. A planar ring twisted by ⅓ gives
+`0.271`, not ⅓; **the G conjecture's ⅓ is reached exactly only when the triple closes by writhe
+with zero twist** (such a curve exists). Script: `scripts/step3b_triple_curvature.py`, 17/17.
+**What is now open on this route:** (i) the coefficient of the induced Faddeev *term*, which
+needs the doublet's propagator (a charged excitation of the doublet coupled to `F`, integrated
+out); (ii) its confrontation with PVLAS; (iii) whether the vacuum weave's excitations are
+triple-doublet modes at all — the weave is built of DQD pairs, for which `a = 0`. The
+`L_z ∈ ℤ + ⅓` caveat is reduced, not closed: neither part of the phase is an SO(3) angular
+momentum (permutation label + Berry phase; the twisted ring's conserved generator is a screw
+combination), so there is no contradiction — and no `j = ½` either.
 **Must respect:** §3, §3a, §9 — a *topologically protected* label cannot also be mixed, so a
 protected Hopf charge is a quantum number, not a mass mechanism. Any coefficient obtained must
 be confronted with the PVLAS bound before use.
@@ -102,7 +113,9 @@ angular momentum and double-valuedness under `2π`, the two properties spin ½ i
 (`notes/2026-09-15-hopfion-direction.md` §5c). **Not yet spin ½:** a half-integer `L_z` about one
 axis is not a `j = ½` representation of SO(3); `g = 2` and statistics are untouched. Compare
 Williamson–van der Mark (1997) before going further. For the triple (`N_DS = 3`) the analogous
-holonomy is ℤ₃, which raises the `L_z ∈ ℤ + ⅓` caveat of item 3.
+holonomy is `2π[(1 − a)Lk + aWr]` with `a = 0.186` (item 3, step 3b): a permutation label plus a
+Berry phase, neither an SO(3) angular momentum, so the `L_z ∈ ℤ + ⅓` caveat is not an
+obstruction — and not a derivation of `j = ½` either.
 
 **Closes when:** fermionic statistics emerge from the medium rather than being
 imposed. Until then the matter sector has produced a magnetic moment, not a
@@ -123,7 +136,9 @@ the nematic pair is one of the "topological phase shifts accumulated at the inte
 that `θ_tot` collects — a closed loop on which the pair axis makes `n_half` half-turns contributes
 `π·n_half`. For odd `n_half`, `2βℓ + θ_tot = 2pπ` gives `βℓ = (p − ½)π` and the resonance-radius
 law runs on `p − ½`. Still undetermined: the interface part of `θ_tot`, and `n_half` for a given
-particle. For `N_DS = 3` the corresponding contribution is `2π/3` per third-turn (item 3).
+particle. For `N_DS = 3` the contribution is `±2π[(1 − a)Lk + aWr]` on the two circular doublet
+states, `a = 0.186`, `Lk ∈ ℤ/3` (item 3, step 3b): it equals `2π/3` per third of linking only when
+the linking is carried by writhe, not twist.
 
 ### 6. Local cell spacing `ℓ_cell`
 *Group: `cell-spacing`.* Postulated equal to `ℓ₁` at rest — the manuscript calls

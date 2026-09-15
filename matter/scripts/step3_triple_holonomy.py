@@ -7,6 +7,14 @@ needs.  Checks: degeneracy, orthogonality, a non-zero antisymmetric (so(2)) conn
 constant in psi, the exact holonomy over the closed loop psi = 2pi/3 of the unordered triple,
 and the contrast with the pair.
 
+CORRECTION (step 3b, scripts/step3b_triple_curvature.py): the "holonomy over 2pi/3" measured
+here is the overlap of the doublet with itself after a third of a turn -- the PERMUTATION part
+of the holonomy (the three conductors exchanged).  The full holonomy of a closed string
+composes it with parallel transport by the connection A measured separately below; for a
+planar ring twisted by 1/3 it is (1 - a) x 120 deg = 97.7 deg, and exactly 120 deg only when the
+triple closes by writhe with zero twist.  The labels below are kept as run on 15 September;
+read "holonomy" as "permutation part".
+
 Exit status is zero only if every check passes.
 """
 
@@ -51,9 +59,9 @@ def block_z3_holonomy() -> None:
     target = np.exp(2j * math.pi / 3)
     dev = min(abs(ev[0] - target), abs(ev[1] - target))
     ang = math.degrees(math.atan2(u[1, 0], u[0, 0]))
-    check("Holonomy over the closed loop 2pi/3 is a rotation by 120 deg", abs(abs(ang) - 120) < 1e-2 and abs(np.linalg.det(u) - 1) < 1e-6,
+    check("Overlap (permutation part of the holonomy) over the closed loop 2pi/3 is a rotation by 120 deg", abs(abs(ang) - 120) < 1e-2 and abs(np.linalg.det(u) - 1) < 1e-6,
           f"rotation = {ang:+.3f} deg, det U = {np.linalg.det(u):.6f}")
-    check("Eigenvalues are exp(+/- 2 pi i / 3): fractional winding 1/3 on e+/-", dev < 1e-5,
+    check("Its eigenvalues are exp(+/- 2 pi i / 3): fractional winding 1/3 on e+/- (permutation part)", dev < 1e-5,
           f"eigenvalues {np.round(ev, 6)}; deviation from exp(2pi i/3) = {dev:.1e}")
     u1 = transport(3, 2 * math.pi)
     check("Full turn is the identity", np.allclose(u1, np.eye(2), atol=1e-6),
@@ -77,10 +85,10 @@ def main() -> int:
     block_connection()
     block_z3_holonomy()
     block_contrast()
-    return report("Conclusion (n = 3): the differential doublet carries a NON-ZERO Berry connection and an exact "
-                  "Z3 holonomy (fractional winding 1/3). Necessary, not sufficient, for a Faddeev term: the "
-                  "CURVATURE over (tangent x frame) is step 3b, not done. Whether a 1/3 phase on a propagating "
-                  "mode is an admissible angular momentum (L_z in Z + 1/3 is not an SO(3) rep) is OPEN.")
+    return report("Conclusion (n = 3): the differential doublet carries a NON-ZERO Berry connection, and the "
+                  "permutation of the conductors over 2pi/3 acts on it as an exact Z3 rotation. The two are "
+                  "composed, and the curvature computed, in step 3b (step3b_triple_curvature.py): full holonomy "
+                  "2 pi [(1 - a) Lk + a Wr], curvature a x (area form of the tangent), a = 0.186.")
 
 
 if __name__ == "__main__":

@@ -1,11 +1,15 @@
 # Direction — Hopf solitons of the director field
 
 **Date:** 15 September 2026
-**Status (15 September):** the Faddeev route is CLOSED for the *pair* (steps 1–2, derived) and
-REOPENED for `N ≥ 3` pending step 3b (curvature). With the author's decision that the pair is
-unordered: a ℤ₂ holonomy contributing `π` per half-twist to `θ_tot` is DERIVED; the triple's
-ℤ₃ holonomy (fractional winding ⅓) is DERIVED and is a candidate origin of the G conjecture's
-input. Spin, charge and 3D stability remain OPEN. The rest is POSTULATED.
+**Status (15 September, after step 3b):** the Faddeev route is CLOSED for the *pair* (steps 1–2,
+derived). For `N ≥ 3` the Faddeev *field strength* EXISTS on the tangent field of the string:
+the doublet's Berry curvature is `a ×` (solid-angle form of the tangent), `a = 0.19` (step 3b,
+derived; `a` is grid-calibrated). The coefficient of an induced Faddeev *term* is OPEN. With the
+author's decision that the pair is unordered: the pair's holonomy contributes `π` per half-twist
+to `θ_tot` (DERIVED); the triple's holonomy is `2π[(1 − a)Lk + aWr]` (DERIVED) and equals the G
+conjecture's ⅓ exactly only when the triple closes by writhe with zero twist. §5d's "exact ℤ₃
+holonomy" was the permutation part alone (corrected in §5e). Spin, charge and 3D stability remain
+OPEN. The rest is POSTULATED.
 **Origin:** a discussion thread following the S₃ audit, starting from the working postulate
 *there is no static mass value* and ending on a structure the literature already knows.
 
@@ -244,16 +248,19 @@ doublet is exactly what the pair lacked and what the fibre has. Results:
 - the non-abelian Berry connection `A_ij = ⟨E_i|∂_ψE_j⟩` is **antisymmetric, non-zero and
   constant** — `A_ab = ∓0.1858` per unit angle, an so(2) generator — where the pair's was
   identically zero;
-- the exact transport over the closed loop of the unordered triple, `ψ: 0 → 2π/3`, is a
-  **rotation by 120.000°** of the doublet, `det = 1`, eigenvalues `e^{±2πi/3}` to `10⁻¹⁵`: a
-  **ℤ₃ holonomy, fractional winding 1/3** on the circular combinations `e±`;
+- the overlap of the doublet with itself after a third of a turn, `ψ: 0 → 2π/3`, is a
+  **rotation by 120.000°**, `det = 1`, eigenvalues `e^{±2πi/3}` to `10⁻¹⁵` — **the permutation
+  part of the holonomy** (the three conductors exchanged). *Correction, step 3b:* this is not the
+  full holonomy, which composes it with parallel transport by the connection; see §5e;
 - the full turn is the identity; the common mode carries no phase.
 
-**The ½ / ⅓ mismatch dissolves:** `n` indistinguishable conductors on an `n`-gon give a `ℤ_n`
-holonomy and fractional winding `1/n`. The pair gives ½, the triple gives ⅓. **The G conjecture
-takes "three strings each with fractional winding 1/3" as an input; the ℤ₃ holonomy of the
-indistinguishable triple is a candidate derivation of it.** Whether it is the *same* quantity
-the conjecture means must be checked against that section before it is claimed.
+**The ½ / ⅓ mismatch dissolves — for the permutation part:** `n` indistinguishable conductors on
+an `n`-gon give a `ℤ_n` permutation and fractional winding `1/n`. The pair gives ½ (and, having
+`a = 0`, nothing else), the triple gives ⅓ *plus* a geometric part weighted by `a` (§5e). **The G
+conjecture takes "three strings each with fractional winding 1/3" as an input; the holonomy of the
+indistinguishable triple reproduces it exactly when the triple closes by writhe with zero twist.**
+Whether it is the *same* quantity the conjecture means must be checked against that section
+before it is claimed.
 
 **The Faddeev question is reopened for `N ≥ 3`, not answered.** A non-zero connection is
 necessary for Berry *curvature*, not sufficient. What Faddeev needs is `f_μν ≠ 0` over a
@@ -261,8 +268,8 @@ two-parameter family — the tangent direction `t ∈ S²` of the string *and* t
 — i.e. the transport of the doublet along a curve whose tangent moves on the sphere, with the
 material frame following the conductors. That is where Călugăreanu enters: the holonomy on a
 closed loop would be `2π(Lk − Wr)` with `Lk ∈ ℤ/3`, and the writhe `Wr` is the continuous
-geometric quantity whose variation is the curvature. **Step 3b: compute that curvature.** Not
-done.
+geometric quantity whose variation is the curvature. **Step 3b: compute that curvature.** Done,
+§5e.
 
 **A caveat that must not be skipped.** A phase `e^{2πi/3}` on a *propagating* mode around a
 ring would give `L_z ∈ ℤ + ⅓`, which is not a representation of SO(3) — only integer and
@@ -273,6 +280,71 @@ writhe. In two dimensions a ℤ₃ exchange phase is anyonic; in three it needs 
 
 Companion tests, cheaper and independent: the `l`-degeneracy of the Bohr-scale cavity mode
 (§1.7); the Rydberg radius by Hartree self-consistency (§1.6).
+
+## 5e. Step 3b — the curvature, and the honest holonomy
+
+Script: `../scripts/step3b_triple_curvature.py`, 17/17 PASS.
+
+**Correction to §5d.** Step 3a measured two things and never composed them: the overlap of the
+doublet with itself after a third of a turn (a rotation by 120°, which is just the permutation of
+the three conductors) and the Berry connection `A = aJ` per unit frame angle, `a = 0.1858`. The
+holonomy of a closed string is the *product* of parallel transport by the connection and that
+identification. Composed, a planar ring whose triple is twisted by one third of a turn has
+holonomy `(1 − a) × 120° = 97.70°`, not 120°. The "exact ℤ₃ holonomy" of §5d was the permutation
+part alone.
+
+**What `a` is.** `a = ⟨L_z⟩` of the circular doublet state — its mean angular momentum about the
+string axis — obtained identically by finite difference of the rigidly rotated pattern and by
+applying the rotation generator to the pattern. A pure vector (the photon's polarisation) has
+`a = 1`; a mode fully locked to the conductors has `a = 0`. The triple's doublet sits at
+`a = 0.186`: 81 % locked to the conductors, 19 % free. It is a *model* number, not a topological
+one: `a = 0.148, 0.186, 0.248` for `ε/r = 0.5, 1, 2`.
+
+**The curvature — the object step 3b was defined to compute.** On the frame bundle of the string
+(tangent `t ∈ S²` × material frame angle) the tilt generators `L_x, L_y` have *no* matrix element
+inside the doublet (`4×10⁻¹⁸` against `0.186` for the twist; exactly zero by the symmetry of the
+slab), so the connection is exactly `A = a J ω_z` with `ω_z` the twist 1-form, and by
+Maurer–Cartan the curvature is
+
+    F = −a J ω_x ∧ ω_y = a × (area form of S², pulled back by the tangent t).
+
+That is the photon's Berry curvature (Tomita–Chiao) scaled by `a`. In the language of the CP¹
+identity of the audit, `F = 2a f_μν[t]`: **the Faddeev field strength of the tangent field
+exists for the triple, with weight `a`** — and does not exist for the pair (`a = 0`, a real
+non-degenerate mode). The Faddeev *term* `(f_μν)²` would be induced by integrating out a charged
+excitation of the doublet coupled to `F`; its coefficient needs the doublet's propagator and is
+**not computed here**.
+
+**The holonomy on a closed string.** With Călugăreanu `Lk = Tw + Wr` — verified numerically:
+the parallel-transported frame returns rotated by `2πWr`, equal to the solid angle swept by the
+tangent, both to `10⁻⁶` mod `2π` — the holonomy of the doublet around a closed unordered triple
+is
+
+    H = R( 2π [ (1 − a) Lk + a Wr ] ),   Lk = Tw + Wr ∈ ℤ/3,
+
+checked on an explicit closed curve (chain 148.051° = formula 148.051°). It interpolates between
+the pure permutation `2πLk` (`a = 0`, the ℤ₃ of §5d) and the photon `2πWr` (`a = 1`).
+Consequences:
+
+- **the G conjecture's "fractional winding ⅓" is reached exactly only when the triple closes by
+  writhe with zero twist** (`Wr = Lk = ⅓`; such a curve exists — found by root-finding on a
+  wobbling-ring family, holonomy 120.000°). A planar ring twisted by ⅓ gives `0.271`, not `⅓`.
+  So if the conjecture's input is this holonomy, the electron's triple is a genuinely
+  three-dimensional curve, not a twisted planar ring — which is also what a Hopf soliton needs;
+- the pair is unchanged: `a = 0` exactly (real mode), holonomy `2πLk`, `Lk ∈ ℤ/2`: `π` per
+  half-twist regardless of how it is split between twist and writhe;
+- the contribution to `θ_tot` (§5c) for the triple is `±2π[(1 − a)Lk + aWr]` on `e±`.
+
+**The `L_z ∈ ℤ + ⅓` caveat, reduced.** The phase has two parts and neither is an SO(3) angular
+momentum of the ring: the permutation part is the internal label "which conductor" (81 %), the
+geometric part is a Berry phase (19 %). A twisted ring is not rotationally symmetric about its
+axis; the conserved generator is the screw combination (rotation about the axis + rotation of
+the material frame), whose eigenvalues are not constrained to `ℤ/2`. No contradiction with SO(3)
+— but also no `j = ½` and no `g = 2`; those remain OPEN.
+
+**Status.** Curvature of the Faddeev form for the triple's tangent field: DERIVED (form and
+weight `a`, grid-calibrated). Holonomy formula: DERIVED. Coefficient of an induced Faddeev term,
+the PVLAS bound on it, and whether the vacuum weave's excitations are triple-doublet modes: OPEN.
 
 ## 6. Guard-rails
 
