@@ -186,3 +186,17 @@ calibration ne sélectionne rien sans règle sur les comptes. **Verdict : des co
 calibrées sur l'électron n'atteignent ni le muon ni le tau avec de petites chaînes ; il faut des
 centaines d'unités, ou des masses unitaires qui varient en 1/R avec l'objet (le mode), ce qui
 n'est pas additif.**
+
+**R14 — L'échelle des leptons : e = 3, μ = 7, τ = 11 cordes ; l'électron serait spécial par sa
+spire ouverte (impact exponentiel sur la masse de spire).**
+→ `lepton_ladder.py`, 8/8. Une exponentielle en n passant par e et μ prédit le tau 12 fois trop
+lourd ; passant par μ et τ (×2,02 par corde), elle place l'électron 12,3 fois sous la loi : la
+« suppression de la spire ouverte » serait e^{−2,5}, un nombre libre. **Une loi de puissance
+m = m_e (n/3)^p** fait mieux : p ajusté sur le muon = 6,29, tau prédit à +2,2 % ; avec **p = 2π**,
+sans paramètre ajusté, muon à −0,8 % et tau à +1,0 %. Parmi tous les triplets impairs (3, n_μ, n_τ)
+avec n ≤ 15, (3, 7, 11) est celui qui prédit le mieux le tau depuis le muon ; le suivant manque
+de 29 %. Sens physique sous m ∝ 1/R : R ∝ n^{−2π}, la boucle du muon est 205 fois plus petite et
+ses cordes 480 fois plus courtes que celles de l'électron : les cordes n'ont pas de longueur
+fixe, la fermeture fixe leur échelle. Réserves : trois masses, entiers choisis, un exposant ; le
+tau à 1 % est le seul test passé ; Koide vaut 0,668 sur la loi contre 2/3 à 10⁻⁵ sur les données ;
+un n = 15 pèserait 12,6 GeV, exclu par le LEP, donc l'échelle s'arrête à 11 ou 15 n'est pas un lepton.
