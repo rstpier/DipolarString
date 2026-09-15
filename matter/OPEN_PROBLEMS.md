@@ -42,7 +42,8 @@ creation implies exact matter–antimatter symmetry at formation.
 
 ### 3. Stabilization of three-dimensional solitons — the Hopfion route
 *Manuscript status: absent, tied to the muteness of the weave. Group: `chiral-closure`.
-Direction recorded 15 September 2026: `notes/2026-09-15-hopfion-direction.md`.*
+Direction recorded 15 September 2026: `notes/2026-09-15-hopfion-direction.md`. Closed for the
+pair, reopened for `N ≥ 3` pending step 3b.*
 
 Without a Derrick-evading term the energy `E(λ) = Aλ³ + Bλ² + Cλ` is monotonic and a localized
 configuration collapses. The Dzyaloshinskii–Moriya carrier is **excluded by more than thirty
@@ -61,17 +62,29 @@ Berry gauge field (verified identity); it arises when a U(1) phase coupled to th
 integrated out; and **the V2.10 telegrapher action contains no coupling between its phase `θ` and
 any orientation variable** — its only variables are `Φ` and `θ`. The direction is located, not
 closed.
-**Step 2 done (15 September), negative:** the differential TEM mode is real, its U(1) Berry
-connection is identically zero, and the bifilar geometry supplies no continuous `θ`–`a[n]`
-coupling. **The Hopfion-via-Faddeev route is closed for V2.10.** Witness (fibre circular pair)
-confirms the method. Script: `scripts/step2_bifilar_berry_phase.py`, 6/6.
-**What remains, and it is not this route:** (i) beyond TEM — degenerate angular modes near the
-Brillouin cutoff would carry a U(1) phase, but that is an extension of the model; (ii) a **ℤ₂
-holonomy**, derived: half a turn of the ribbon flips the differential mode, so for an *unordered*
-pair (the manuscript's own nematic case) a closed loop with an odd number of half-twists makes
-the mode antiperiodic and shifts the quantization by a half-integer. Not Faddeev, not spin; a
-lead on double-valuedness, conditional on the DQD pair being unordered — which is the next
-question to settle.
+**Step 2 done (15 September), negative for the pair:** the differential TEM mode of two
+conductors is real and non-degenerate, its U(1) Berry connection is identically zero, and the
+bifilar geometry supplies no continuous `θ`–`a[n]` coupling. **The Hopfion-via-Faddeev route is
+closed for the pair.** Witness (fibre circular pair) confirms the method. Script:
+`scripts/step2_bifilar_berry_phase.py`, 7/7. What the pair *does* supply is a **ℤ₂ holonomy**,
+derived: half a turn flips the differential mode. With the author's decision that the pair is
+unordered (15 September), this is physical: a closed loop with an odd number of half-twists makes
+the mode antiperiodic, contributes `π` per half-twist to `θ_tot` (item 5) and carries
+`L_z = n + ½` about its axis (item 4).
+**Step 3a done (15 September), reopens the question for `N ≥ 3`:** three indistinguishable
+conductors on an equilateral triangle carry a **degenerate doublet** of differential modes (E
+irrep of C₃v, degenerate to `10⁻⁷`) with a **non-zero, constant, antisymmetric Berry connection**
+`A_ab = ∓0.1858` — exactly the structure the pair lacked. Transport over the closed loop of the
+unordered triple (`ψ: 0 → 2π/3`) is a rotation by 120.000° of the doublet, eigenvalues
+`e^{±2πi/3}`: a **ℤ₃ holonomy, fractional winding ⅓**. Script:
+`scripts/step3_triple_holonomy.py`, 12/12. The ½ / ⅓ mismatch with the G conjecture dissolves as
+`ℤ_n → 1/n`; whether this is the *same* quantity the conjecture takes as input is not yet checked.
+**Step 3b, defined, not started:** a non-zero connection is necessary for Berry curvature, not
+sufficient. Compute the curvature of the doublet over the two-parameter family (string tangent
+`t ∈ S²` × frame angle `ψ`); Călugăreanu gives the closed-loop holonomy as `2π(Lk − Wr)` with
+`Lk ∈ ℤ/3`. Only a non-zero curvature there reopens the Faddeev term for `N ≥ 3`. Caveat to
+resolve first: `L_z ∈ ℤ + ⅓` is not a representation of SO(3) — the ℤ₃ label is internal, or
+the twist is compensated by writhe.
 **Must respect:** §3, §3a, §9 — a *topologically protected* label cannot also be mixed, so a
 protected Hopf charge is a quantum number, not a mass mechanism. Any coefficient obtained must
 be confronted with the PVLAS bound before use.
@@ -81,6 +94,15 @@ be confronted with the PVLAS bound before use.
 
 The semi-classical magneton `μ = μ_B` is obtained; spin ½, `g = 2` and fermionic
 statistics are not.
+
+**Derived lead (15 September, conditional on the pair being unordered — decided):** an unordered
+bifilar loop with an odd number of half-twists carries an antiperiodic differential mode,
+`ψ(φ+2π) = −ψ(φ)`, hence `L_z = n + ½` about the loop axis and `e^{2πiL_z} = −1` — half-integer
+angular momentum and double-valuedness under `2π`, the two properties spin ½ is made of
+(`notes/2026-09-15-hopfion-direction.md` §5c). **Not yet spin ½:** a half-integer `L_z` about one
+axis is not a `j = ½` representation of SO(3); `g = 2` and statistics are untouched. Compare
+Williamson–van der Mark (1997) before going further. For the triple (`N_DS = 3`) the analogous
+holonomy is ℤ₃, which raises the `L_z ∈ ℤ + ⅓` caveat of item 3.
 
 **Closes when:** fermionic statistics emerge from the medium rather than being
 imposed. Until then the matter sector has produced a magnetic moment, not a
@@ -95,6 +117,13 @@ fermion.
 logarithmically on the first; the second fixes the offset of the radial mode
 ladder. Neither follows from the matching condition, which constrains `D/r` only.
 Any particle-sector result inherits their status.
+
+**`θ_tot` partly derived (15 September, given the unordered-pair decision):** the ℤ₂ holonomy of
+the nematic pair is one of the "topological phase shifts accumulated at the internal interfaces"
+that `θ_tot` collects — a closed loop on which the pair axis makes `n_half` half-turns contributes
+`π·n_half`. For odd `n_half`, `2βℓ + θ_tot = 2pπ` gives `βℓ = (p − ½)π` and the resonance-radius
+law runs on `p − ½`. Still undetermined: the interface part of `θ_tot`, and `n_half` for a given
+particle. For `N_DS = 3` the corresponding contribution is `2π/3` per third-turn (item 3).
 
 ### 6. Local cell spacing `ℓ_cell`
 *Group: `cell-spacing`.* Postulated equal to `ℓ₁` at rest — the manuscript calls

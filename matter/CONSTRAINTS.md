@@ -153,10 +153,26 @@ director's Berry gauge field (verified identity, `scripts/audit_s3_reconnection.
 require a coupling between `θ` and that connection, which the action does not contain — **and
 which the bifilar geometry does not supply**: the differential TEM mode is real, its U(1) Berry
 connection vanishes identically, and the holonomy over a full turn of the pair axis is 1
-(`scripts/step2_bifilar_berry_phase.py`). The Faddeev route is closed for V2.10. What the geometry
-*does* supply is a ℤ₂ holonomy — a half-turn flips the mode — physical only if the pair is unordered;
-see `notes/2026-09-15-hopfion-direction.md` §5. What exists is three different things, none of them a quartic gradient
-term:
+(`scripts/step2_bifilar_berry_phase.py`, 7/7). **The Faddeev route is closed for the pair.** What
+the pair *does* supply is a ℤ₂ holonomy — a half-turn flips the mode — physical because the pair
+is unordered (author's decision, 15 September); see `notes/2026-09-15-hopfion-direction.md` §5c.
+
+**For `N ≥ 3` the question is reopened, not answered** (`scripts/step3_triple_holonomy.py`,
+12/12): three indistinguishable conductors carry a degenerate doublet of differential modes with a
+non-zero, constant Berry connection and a ℤ₃ holonomy (rotation by 120° over the closed loop of
+the unordered triple). A non-zero connection is necessary for Berry curvature, not sufficient;
+the Faddeev term needs `f_μν ≠ 0` over the two-parameter family tangent × frame, which is step 3b
+(not done). Until then this section's conclusion stands for the pair and is *pending* for the
+triple.
+
+**A5, as worded, is too strong for this.** "No continuous deformation mode" would forbid the
+frame rotation the ℤ₂ and ℤ₃ holonomies require, and already forbids the axis bending the loop
+sector requires. Its own justification (pole–pole contact regularisation, `ε₀` as an orientational
+response without internal deformation) only needs **`D` fixed / no pole fusion**; that is the
+reading adopted here, and the wording should be amended in the next revision. With the pair
+unordered, the `±` poles are labels of the differential *mode*, not static properties of the
+conductors. Against this reading, what exists in V2.10 is three different things, none of them a
+quartic gradient term:
 
 - **A5**, topological rigidity of the DQD — *"possesses no continuous deformation mode"*:
   discrete, not elastic, and it serves as the short-distance regularization;
@@ -196,7 +212,10 @@ other than the mass it is meant to explain.
   which fixes the offset of the radial mode ladder.
 
 Neither follows from the matching condition, which constrains `D/r` only. Any
-result that depends on either is conditional until they are fixed.
+result that depends on either is conditional until they are fixed. Since 15 September one
+contribution to `θ_tot` is derived, given the decision that the pair is unordered: `π` per
+half-twist of the pair axis on a closed loop (`OPEN_PROBLEMS.md` item 5). The interface part
+and the number of half-twists per particle remain inputs.
 
 ---
 
@@ -204,7 +223,10 @@ result that depends on either is conditional until they are fixed.
 
 The semi-classical magneton `μ = μ_B` is obtained, but **spin ½, `g = 2` and
 fermionic statistics are absent**. A matter sector that does not produce
-fermionic statistics has not produced matter.
+fermionic statistics has not produced matter. A derived lead exists since 15 September — an
+unordered bifilar loop with an odd number of half-twists carries `L_z = n + ½` and is
+double-valued under `2π` — but a half-integer `L_z` about one axis is not a `j = ½`
+representation of SO(3); see `OPEN_PROBLEMS.md` item 4. This section stands.
 
 ---
 
@@ -287,7 +309,9 @@ not forbid:
   in first derivatives (Faddeev) or quadratic in second derivatives. **String bending does not
   supply it** (it gives Frank `K₃`, `λ¹`). The DS-internal candidates are the twist of the
   bifilar ribbon and string-crossing interactions, and the field must be named — DQD pole axis
-  `n` or string tangent `t`. See `notes/2026-09-15-hopfion-direction.md`.
+  `n` or string tangent `t`. **Closed for the pair** (no Berry connection, ℤ₂ holonomy only);
+  **reopened for `N ≥ 3`** (degenerate doublet, non-zero connection, ℤ₃ holonomy) pending the
+  curvature computation of step 3b. See `notes/2026-09-15-hopfion-direction.md` §5c–5d.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.
