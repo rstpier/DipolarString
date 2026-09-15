@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Redraw, R7 made concrete by the author: for n = 3 the daughter has 2 junctions, and the mass sits
+"""WITHDRAWN IN PART (see g_bookkeeping.py): the claim below that g = 2 <=> rho = 1/3 is wrong --
+a reflected wave reduces S and mu together, so g = m c^2 / E_mode independently of rho.  Kept as
+the record of the error; checks C and C' are relabelled as withdrawn.
+
+Redraw, R7 made concrete by the author: for n = 3 the daughter has 2 junctions, and the mass sits
 in them -- ~255 keV each (author: 260.5 keV; 2 x 260.5 = 521 keV would exceed m_e c^2 by 2 %).
 
 Consequences:
@@ -44,15 +48,15 @@ def main() -> int:
         f = (1 - rho) / (1 + rho)
         return 1 / f
     rho_g2 = (G_MEAS - 1) / (G_MEAS + 1)
-    check("C. g = 1/f with f = (1 - rho)/(1 + rho): g = 2.0023 <=> backward/forward power rho = 0.334, pole reflection |Gamma| = 0.578",
+    check("C. [WITHDRAWN -- g does not depend on rho; see g_bookkeeping.py] the arithmetic below assumed the standing part kept its charge current",
           abs(rho_g2 - 1 / 3) < 2e-3, f"rho = {rho_g2:.4f}, |Gamma| = sqrt(rho) = {math.sqrt(rho_g2):.3f}")
-    check("C'. The old manuscript's Gamma_pole = 1/3 in amplitude (rho = 1/9) would give g = 1.25, not 2: the junction must reflect a third of the POWER",
+    check("C'. [WITHDRAWN -- same error] g(rho) as computed here is not the g-factor",
           abs(g_of_rho(1 / 9) - 1.25) < 1e-12, f"g(rho = 1/9) = {g_of_rho(1/9):.3f}; g(rho = 1/3) = {g_of_rho(1/3):.3f}")
     f = (1 - 1 / 3) / (1 + 1 / 3)
     r_ring = (HBAR / 2) * C / (f * ME * C ** 2)
     check("D. With half the mode energy circulating and S = hbar/2 the ring radius is hbar / m_e c: the same object as massless_fluid.py",
           abs(r_ring / (HBAR / (ME * C)) - 1) < 1e-12, f"R = {r_ring*1e15:.1f} fm")
-    check("So the base now says: the electron's mass is the energy of a half-winding wave stored at two pole junctions (255 keV each), a third of whose power is reflected back -- that reflection is what makes g = 2",
+    check("So the base now says [corrected]: two junctions cannot hold the whole mass as a mode and give g = 2; half the rest energy must sit on the rotation axis (g_bookkeeping.py)",
           True, "a prediction the base can be held to: the pole reflectivity in power is 1/3, in amplitude 0.58")
     for status, name, detail in RESULTS:
         print(f"  [{status}] {name}: {detail}")

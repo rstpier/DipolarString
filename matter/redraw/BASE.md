@@ -159,3 +159,17 @@ Les données obéissent déjà à deux relations que toute calibration doit repr
 harmoniques du mode ½ donnent 3, 5, 7, pas 206,77. **La base doit fournir la règle de l'échelle
 entre leptons** ; le 1/α de Barut est le rapport entre l'échelle du mode ℏc/R et l'échelle de
 Coulomb αℏc/R, deux échelles que la base possède.
+
+**Correction (moi) et R13 — « Une jonction qui ne tourne pas est impossible. C'est Z_pole
+intrinsèque. »**
+→ `g_bookkeeping.py`, 9/9. **Correction :** dans `junction_mass.py` j'avais écrit que réfléchir un
+tiers de la puissance aux pôles donnait g = 2. C'est faux : une onde réfléchie réduit le courant
+de charge et le moment cinétique dans la même proportion, donc **g = m c²/E_mode, indépendant de
+la réflexion**. Les vérifications C et C' de ce script sont retirées. Ce que g = 2 exige, exactement :
+la moitié de l'énergie de repos hors du mode et **sur l'axe de rotation**, tournant sur elle-même
+sans orbiter, comme tu le dis d'une jonction. Toute énergie neutre qui orbite ajoute du moment
+cinétique sans moment magnétique et fait tomber g sous 1 (moitié de la masse en orbite : g = 0,86).
+L'image de la barre tournant autour du point de brisure a ce pivot ; l'image de l'arc a un centre
+vide et ne peut pas l'héberger. **Z_pole intrinsèque :** avec f = a (résonance sur l'arc), la
+fraction d'arc fixe l'impédance du pôle : 3/4 de spire ⇔ Z_pole = 2,22 Z_corde ; Z_pole = 2 Z_corde
+(l'ancien Γ = 1/3) ⇔ 4/5 de spire. Pour tout ρ, S = ℏ/2 et μ = μ_B tiennent à R = ℏ/(m_e c)/f.
