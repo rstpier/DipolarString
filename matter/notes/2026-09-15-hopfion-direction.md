@@ -4,7 +4,11 @@
 **Status (15 September, after step 3b):** the Faddeev route is CLOSED for the *pair* (steps 1–2,
 derived). For `N ≥ 3` the Faddeev *field strength* EXISTS on the tangent field of the string:
 the doublet's Berry curvature is `a ×` (solid-angle form of the tangent), `a = 0.19` (step 3b,
-derived; `a` is grid-calibrated). The coefficient of an induced Faddeev *term* is OPEN. With the
+derived; `a` is grid-calibrated). The induced term is computed (step 4, §5f): exact on one closed
+string — a Casimir-type energy `−(πℏc/ℓ)B₂((1−a)Lk + aWr)`, Derrick class `λ⁻¹`, minimal at
+trivial holonomy, hence a *cost* for the half- and third-windings; no local static Faddeev density
+arises from one string; the 3+1 D coefficient `1/e² = (a²/6π²) ln(Λ/m)` is CONDITIONAL on the
+doublet propagating between strings, which V2.10 does not contain. With the
 author's decision that the pair is unordered: the pair's holonomy contributes `π` per half-twist
 to `θ_tot` (DERIVED); the triple's holonomy is `2π[(1 − a)Lk + aWr]` (DERIVED) and equals the G
 conjecture's ⅓ exactly only when the triple closes by writhe with zero twist. §5d's "exact ℤ₃
@@ -345,6 +349,67 @@ the material frame), whose eigenvalues are not constrained to `ℤ/2`. No contra
 **Status.** Curvature of the Faddeev form for the triple's tangent field: DERIVED (form and
 weight `a`, grid-calibrated). Holonomy formula: DERIVED. Coefficient of an induced Faddeev term,
 the PVLAS bound on it, and whether the vacuum weave's excitations are triple-doublet modes: OPEN.
+
+## 5f. Step 4 — the coefficient of the induced Faddeev term
+
+Script: `../scripts/step4_induced_faddeev.py`, 16/16 PASS.
+
+"Integrating out" the doublet means summing its zero-point fluctuations in the presence of the
+Berry field of step 3b; the dependence of that sum on the field is the induced action, which in
+3+1 D would be the Faddeev term. The manuscript already uses zero-point energies of exactly this
+kind (`E_conf ~ πℏc₀/ℓ`, Theorem B), so the object is in the model's own language. Three results,
+in decreasing order of what the model supports.
+
+**A. On one closed string — derived, exact.** In the parallel-transported basis the doublet is one
+massless complex field on the ring with the twisted boundary condition `e^{iΦ}`,
+`Φ = 2π[(1 − a)Lk + aWr]`. Its zero-point energy is finite once the part proportional to the
+length — a renormalisation of the string tension — is removed:
+
+    E_ind(Φ) = −(2πℏc/ℓ_loop) B₂(x),   x = Φ/2π mod 1,   B₂(x) = x² − x + 1/6,
+
+i.e. `−(πℏc/ℓ) B₂(x)` in the manuscript's `ℓ` (the half-perimeter of `2βℓ + θ_tot = 2pπ`) — the
+same unit as `E_conf`. Checked against a regularised mode sum to `10⁻¹⁰`. Properties:
+
+- Derrick class `λ⁻¹` (`Lk`, `Wr` are scale-free): the class of the Faddeev term, as it should be;
+- it depends on the writhe of the *static* string. The 1+1 D shadow of the Faddeev term is an
+  Aharonov–Bohm-type energy of the closed loop, not a local density;
+- it is **minimal at trivial holonomy**, so it is a *cost* for exactly the structures §5c–5e need:
+  the pair's half-twist costs `+πℏc/(2ℓ_loop)` (¼ unit); the triple's planar third-twist sits at
+  `+0.031` and the writhe-closed triple (the exact ⅓) at `+0.056`, against `−0.167` untwisted
+  (unit `2πℏc/ℓ_loop`; with `ℓ_loop = 2πR₃` the unit is `m_ec²`). The induced term does not
+  favour the G conjecture's ⅓;
+- it exerts a static torque on the writhe: `dE_ind/dWr = +0.085` units per unit writhe at the
+  planar point, driving a `Lk = ⅓` triple toward `Wr* = −1.46` (`Tw* = +1.79`), where the
+  holonomy is trivial — against the string's own elastic resistance, whose coefficients are the
+  open stiffness problem;
+- it is not negligible: its slope in `x` is 0.46 of the resonant mode's own (item 5's `±Φ` in
+  `θ_tot`).
+
+**B. Why one string induces no local static Faddeev density — derived.** The doublet lives on
+the string's worldsheet `(s, τ)`; the field strength it sees is `F = a t·(∂_s t × ∂_τ t)`,
+identically zero for a static string. Only the holonomy `∮A` survives statically — that is A.
+A local `(f_ij)²` for the weave's director, which is what a static Hopfion needs, requires the
+doublet to **propagate between strings**. V2.10 has no such transverse dispersion; it is the
+"crossing interaction" candidate of `CONSTRAINTS.md` §3a.
+
+**C. If it did — conditional.** The doublet is a spin-`a` object under rotations of the tangent
+(curvature `a·dΩ`; photon `a = 1`, CP¹ spinor `a = ½`), i.e. a charged scalar of charge `Q = 2a`
+under the CP¹ connection. Standard one-loop scalar vacuum polarisation (checked: the
+Feynman-parameter integral `∫₀¹(1 − 2x)² dx = ⅓`; `a = ½` reproduces scalar QED):
+
+    L_ind = −(1/4e²_ind) f_μν f^μν,   1/e²_ind = (Q²/24π²) ln(Λ/m) = (a²/6π²) ln(Λ/m) = 5.8×10⁻⁴ ln(Λ/m)
+
+per doublet species, with `f = ½ n·(∂_μ n × ∂_ν n)` (divide by 4 for the `(n·∂n × ∂n)²`
+normalisation). `Λ ~ 1/ℓ_cell`, `m` the doublet's gap in the weave: unknown, so the log is
+O(1–10) and `1/e² ~ 10⁻³–10⁻²`. Weak — but Derrick only needs `D > 0`: `E = Cλ + D/λ` has its
+minimum at `λ* = √(D/C)`, a Hopfion of size `R_H ~ 1/(e√κ)`. Its size and mass need `κ`, the
+Frank stiffness of the weave director — the open phase-stiffness problem.
+
+**Status.** A: DERIVED. B: DERIVED (structural). C: CONDITIONAL on transverse propagation of
+triple-doublet modes in the weave (its DQD pairs have `a = 0`); PVLAS not evaluated (the term is
+quartic in fluctuations, hence not a linear birefringence, but the mapping to `χ_vac` is not
+done). Net: the coefficient is computed; what the Hopfion route now lacks is not a coefficient
+but a *carrier* — a doublet excitation that crosses from string to string.
 
 ## 6. Guard-rails
 

@@ -163,11 +163,15 @@ indistinguishable conductors carry a degenerate doublet of differential modes wi
 Berry connection `a J` per unit twist, `a = ⟨L_z⟩ = 0.186` (grid-calibrated; photon 1, pair 0).
 Tilting the string has no matrix element in the doublet, so on the string's frame bundle the
 curvature is exactly `a ×` the solid-angle form of the tangent: `F = 2a f_μν[t]`, the CP¹ field
-strength of the identity above, on the *tangent* field. A charged excitation of the doublet
-coupled to `F`, integrated out, would produce `(f_μν)²` — the Faddeev term — with a coefficient
-that needs the doublet's propagator and has **not** been computed; it must then face PVLAS
-(below), and the weave must actually carry triple-doublet excitations (its DQD pairs have
-`a = 0`). The closed-string holonomy is `2π[(1 − a)Lk + aWr]`, `Lk ∈ ℤ/3`; it is the G
+strength of the identity above, on the *tangent* field. Integrating the doublet out
+(`scripts/step4_induced_faddeev.py`, 16/16) gives, on one closed string, an exact Casimir-type
+energy `−(πℏc/ℓ) B₂((1 − a)Lk + aWr)` — Derrick class `λ⁻¹`, writhe-dependent, and *minimal at
+trivial holonomy*, i.e. a cost for the fractional windings — but **no local static Faddeev
+density**: the doublet's worldsheet field strength vanishes for a static string. A local term
+needs the doublet to propagate *between* strings, which V2.10 does not contain; if it did, the
+coefficient would be `1/e² = (a²/6π²) ln(Λ/m) ≈ 5.8×10⁻⁴ ln(Λ/m)` per species, positive, hence
+Derrick-sufficient for a Hopfion of size `~1/(e√κ)` with `κ` the open director stiffness. PVLAS
+(below) is not evaluated for it. The closed-string holonomy is `2π[(1 − a)Lk + aWr]`, `Lk ∈ ℤ/3`; it is the G
 conjecture's ⅓ exactly only for a triple that closes by writhe with zero twist. This section's
 conclusion — no Derrick-evading term in V2.10 — stands; what changed is that the model's own
 `N = 3` geometry contains the *field strength* such a term is built from.
@@ -318,8 +322,10 @@ not forbid:
   bifilar ribbon and string-crossing interactions, and the field must be named — DQD pole axis
   `n` or string tangent `t`. **Closed for the pair** (no Berry connection, ℤ₂ holonomy only).
   **For `N ≥ 3` the field strength exists** on the tangent field — the doublet's Berry curvature
-  is `0.19 ×` the photon's (step 3b) — and the induced term's coefficient, PVLAS, and whether the
-  weave carries triple modes are open. See `notes/2026-09-15-hopfion-direction.md` §5c–5e.
+  is `0.19 ×` the photon's (step 3b); the induced coefficient is computed (step 4): exact and
+  writhe-dependent on one string, `1/e² = (a²/6π²) ln(Λ/m)` in 3+1 D *if* the doublet crosses
+  between strings — the missing carrier, with `κ` and PVLAS, is what stays open. See
+  `notes/2026-09-15-hopfion-direction.md` §5c–5f.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.

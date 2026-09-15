@@ -89,10 +89,23 @@ field exists for the triple.** Closed-string holonomy, verified against Fuller/C
 explicit curve: `H = R(2π[(1 − a)Lk + aWr])`, `Lk ∈ ℤ/3`. A planar ring twisted by ⅓ gives
 `0.271`, not ⅓; **the G conjecture's ⅓ is reached exactly only when the triple closes by writhe
 with zero twist** (such a curve exists). Script: `scripts/step3b_triple_curvature.py`, 17/17.
-**What is now open on this route:** (i) the coefficient of the induced Faddeev *term*, which
-needs the doublet's propagator (a charged excitation of the doublet coupled to `F`, integrated
-out); (ii) its confrontation with PVLAS; (iii) whether the vacuum weave's excitations are
-triple-doublet modes at all — the weave is built of DQD pairs, for which `a = 0`. The
+**Step 4 done (15 September), the coefficient:** on one closed string the induced term is exact
+— the doublet's zero-point energy with the holonomy as twisted boundary condition,
+`E_ind = −(πℏc/ℓ) B₂((1 − a)Lk + aWr)`, `B₂(x) = x² − x + ⅙`, in the manuscript's `ℓ` and the
+unit of its `E_conf`. Derrick class `λ⁻¹`, writhe-dependent, **minimal at trivial holonomy**: a
+cost of `πℏc/(4ℓ)` for the pair's half-twist and `+0.03–0.06` units for the triple's third, and a
+static torque driving a `Lk = ⅓` triple toward `Wr ≈ −1.5`. One string induces **no local static
+Faddeev density** (its worldsheet field strength vanishes for a static string). If the doublet
+propagated between strings as a 3+1 D field, the coefficient would be
+`1/e² = (a²/6π²) ln(Λ/m) = 5.8×10⁻⁴ ln(Λ/m)` per species (charge `Q = 2a` under the CP¹
+connection; scalar one-loop), enough for Derrick — a Hopfion of size `~1/(e√κ)`. Script:
+`scripts/step4_induced_faddeev.py`, 16/16.
+**What is now open on this route:** (i) a *carrier*: a doublet excitation that crosses from string
+to string (the "crossing interaction" of `CONSTRAINTS.md` §3a) — without it there is no local
+term, whatever the coefficient; (ii) `κ`, the Frank stiffness of the weave director (the
+phase-stiffness problem), which sets the Hopfion's size and mass; (iii) the elastic coefficients
+against which the induced torque on the writhe acts; (iv) the PVLAS mapping of a term quartic in
+fluctuations; (v) whether the weave carries triple modes at all — its DQD pairs have `a = 0`. The
 `L_z ∈ ℤ + ⅓` caveat is reduced, not closed: neither part of the phase is an SO(3) angular
 momentum (permutation label + Berry phase; the twisted ring's conserved generator is a screw
 combination), so there is no contradiction — and no `j = ½` either.
