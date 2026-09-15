@@ -146,3 +146,16 @@ puissance** (|Γ| = 0,38) ; l'ancien Γ_pole = 1/3 correspondrait à un 4/5 de s
 restent en lice : P1 (toute la masse dans le mode aux jonctions, ρ = 1/3, R = ℏ/(m_e c)) et P2
 (moitié statique, arc 3/4, ρ = 1/7, R = 515 fm). Elles diffèrent par le rayon et par la
 réflectivité des pôles ; c'est là que la base doit choisir.
+
+**Calibration sur plusieurs particules (auteur : muon et tau).**
+→ Calculé (`lepton_calibration.py`, 8/8). Même objet mis à l'échelle : R = ℏ/(mc) donne 1,87 fm
+pour le muon et 0,11 fm pour le tau. **L'image P2 avec des jonctions de Coulomb à contact fixe ne
+suit pas** : la moitié statique demanderait des pôles de 22 e (muon) et 88 e (tau). Donc ce qui
+est statique doit varier en 1/R comme le mode ; ce n'est pas une liaison de contact. L'image P1
+(tout dans le mode) suit sans effort mais ne fixe aucun rapport : R est libre dans les deux.
+Les données obéissent déjà à deux relations que toute calibration doit reproduire : Koide,
+(m_e + m_μ + m_τ)/(Σ√m)² = 2/3 à 10⁻⁵ ; Barut, m_n = m_e[1 + (3/2α)Σk⁴], muon à 0,1 %, tau à
+0,6 %, un anneau avec des quanta d'excitation interne et une auto-énergie magnétique en 1/α. Les
+harmoniques du mode ½ donnent 3, 5, 7, pas 206,77. **La base doit fournir la règle de l'échelle
+entre leptons** ; le 1/α de Barut est le rapport entre l'échelle du mode ℏc/R et l'échelle de
+Coulomb αℏc/R, deux échelles que la base possède.
