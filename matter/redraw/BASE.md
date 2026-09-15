@@ -228,3 +228,25 @@ l'anneau donne le bon signe pour π± − π⁰ mais 0,36 MeV contre 4,59 mesur�
 les hadrons ne sont pas des multiples de 140 MeV (K 3,5, η 3,9, ρ 5,5, p 6,7). **Statut :
 identification de l'échelle, pas dérivation** ; le mécanisme qui épingle un anneau fermé à r_e/2
 est ce que la base doit fournir.
+
+**R17 — « La largeur de la nappe est fixée par l'impédance Z₀ de l'espace. »**
+→ `sheet_matched.py`, 8/8. Pour une nappe (guide à plaques parallèles, largeur w, écart d),
+Z = Z₀·d/w : l'adaptation à Z₀ impose **w = d, une section carrée** ; pour deux fils, le même
+principe redonne D/r = 2 cosh π = 23,2. L'adaptation fixe donc la **forme** de la section, pas sa
+taille. Conséquences sur un guide adapté à Z₀ : (1) la charge de pôle par quantum vaut
+δ = √(4ℏ/πZ₀) = **e/(π√α) = 3,73 e**, sans réglage ; (2) l'énergie de Coulomb entre deux pôles
+distants de s vaut δ²e²/(4πε₀s) = **ℏc/(π²s)** : α s'annule et une jonction a la forme d'un mode ;
+si s suit la largeur et la largeur suit l'objet, **les masses de jonction varient en 1/R comme les
+masses de mode**, ce que la calibration μ/τ exigeait et que le contact à rayon fixe ne donnait pas
+(il fallait des pôles de 22 e et 88 e ; ici les pôles restent à 3,73 e et c'est l'écart qui change).
+(3) Avec g = 2 et deux jonctions portant la moitié statique, 2ℏc/(π²w) = mc²/2 donne
+**w = 4ƛ/π² = 0,405 ƛ** : 157 fm pour l'électron, 0,76 fm pour le muon ; avec R = 4ƛ/3, le rapport
+**w/R = 3/π² = 0,30 est le même pour tous les leptons** (famille auto-similaire). (4) **Le prix :**
+une nappe de largeur w a des modes transverses à ℏcπ/w, soit 3,96 MeV pour l'électron et 819 MeV
+pour le muon ; un électron excité à 4 MeV n'est pas observé. Deux sorties : le fluide n'admet que
+le mode TEM par axiome, ou le guide de l'électron est bien plus mince que 157 fm ; mais sous
+6·10⁻³ fm (mode transverse au-delà de 100 GeV) la moitié statique des deux jonctions, ℏc/(π²w)
+chacune, dépasse la masse de l'électron d'un facteur 2·10⁴ : **la nappe ne peut pas être à la fois
+mince et porteuse de la moitié statique.** Verdict : DÉRIVÉ pour la forme carrée, δ = e/(π√α) et
+ℏc/(π²s) ; CONDITIONNEL (g = 2 + deux jonctions statiques) pour w = 0,405 ƛ ; le mode transverse
+à 4 MeV est un problème ouvert de la base.
