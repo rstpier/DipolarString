@@ -117,7 +117,7 @@ constants `K₁, K₂, K₃`, all `λ¹`. No quartic term. (Homogeneity; degree 
 **(b) Where a quartic term comes from — verified.** Write `n = z†σz` with `z ∈ CP¹`. The Berry
 connection `a_μ = −i z†∂_μz` has curvature `f_μν = ½ n·(∂_μn × ∂_νn)`, so the Faddeev term is
 **exactly** `4 f_μν²`: the Maxwell term of the director's emergent gauge field. Verified
-symbolically (`scripts/audit_s3_reconnection.py`, "Faddeev density = 2 × Berry curvature"). A
+symbolically (`../scripts/audit_s3_reconnection.py`, "Faddeev density = 2 × Berry curvature"). A
 Maxwell term for that gauge field is generated when a **U(1)-charged field coupled to `a[n]`**
 is integrated out — the standard route in CP^{N−1} models.
 
@@ -149,7 +149,7 @@ stability) as the Maxwell term of `a[n]`; the Hopf charge appears as linking; an
 the topology — which nothing in DS currently provides.
 
 **Step 2 — done. Negative for the Faddeev route; one unexpected positive.**
-Script: `scripts/step2_bifilar_berry_phase.py`, 6/6 PASS.
+Script: `../scripts/step2_bifilar_berry_phase.py`, 6/6 PASS.
 
 The differential TEM mode of two conductors at `±(D/2)m`, `D/r = 2 cosh π`, is a **real**
 field profile. For a real normalised family, `⟨E|∂_ψE⟩ = ½ ∂_ψ⟨E|E⟩ = 0`, so the U(1) Berry
