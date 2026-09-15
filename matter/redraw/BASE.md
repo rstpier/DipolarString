@@ -173,3 +173,16 @@ L'image de la barre tournant autour du point de brisure a ce pivot ; l'image de 
 vide et ne peut pas l'héberger. **Z_pole intrinsèque :** avec f = a (résonance sur l'arc), la
 fraction d'arc fixe l'impédance du pôle : 3/4 de spire ⇔ Z_pole = 2,22 Z_corde ; Z_pole = 2 Z_corde
 (l'ancien Γ = 1/3) ⇔ 4/5 de spire. Pour tout ρ, S = ℏ/2 et μ = μ_B tiennent à R = ℏ/(m_e c)/f.
+
+**Contributions de masse des spires et des jonctions** (demande de l'auteur).
+→ `mass_contributions.py`, 6/6. Ce que la base fixe : pour l'électron, g = 2 partage la masse à
+parts égales entre le mode sur la spire et le pivot ; avec 3/4 de spire et 2 jonctions, **340,7 keV
+par tour complet (85,2 keV par corde d'un quart de tour) et 127,7 keV par jonction**. Loi additive
+à un entier (n cordes, n/4 tours, n − 1 jonctions) : m(n) = 212,9 n − 127,7 keV ; les chaînes de
+4 à 7 cordes pèsent 0,72 à 1,36 MeV, cent fois sous le muon ; le muon exigerait 497 cordes, le tau
+8346. Comptes libres (spires et jonctions indépendants) : aucune solution à coefficients positifs
+tant que le muon a moins de 156 spires et moins de 414 jonctions, puis des milliers au-delà : la
+calibration ne sélectionne rien sans règle sur les comptes. **Verdict : des contributions additives
+calibrées sur l'électron n'atteignent ni le muon ni le tau avec de petites chaînes ; il faut des
+centaines d'unités, ou des masses unitaires qui varient en 1/R avec l'objet (le mode), ce qui
+n'est pas additif.**
