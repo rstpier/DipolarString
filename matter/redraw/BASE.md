@@ -134,3 +134,15 @@ avec ρ le rapport des puissances arrière/avant créé par les réflexions aux 
 pôles réfléchissent un tiers de la puissance** (|Γ| = 0,58 en amplitude). L'ancien Γ_pole = 1/3
 en amplitude (ρ = 1/9) donnerait g = 1,25. Le rayon reste ℏ/(m_e c). Prédiction tenue par la
 base : réflectivité des pôles 1/3 en puissance.
+
+**R12 — La fille est un 3/4 de spire, et il contribue.**
+→ Calculé (`three_quarter_turn.py`, 7/7), image P2 : moitié statique de la masse dans les deux
+jonctions (128 keV chacune, pôles ~1,5 e), moitié dans le mode qui vit sur l'arc et se réfléchit
+aux deux pôles. S = ℏ/2 et la résonance du fondamental sur l'arc donnent **R = (4/3)·ℏ/(m_e c)
+= 515 fm et une fraction circulante exactement 3/4** : pour un arc de fraction a, la fraction
+circulante est f = a, le 3/4 de spire contribue 3/4. μ = μ_B et g = 2 tiennent (ils ne demandent
+que f·R = ℏ/(m_e c) et la moitié statique). Les pôles doivent alors réfléchir **1/7 de la
+puissance** (|Γ| = 0,38) ; l'ancien Γ_pole = 1/3 correspondrait à un 4/5 de spire. Deux images
+restent en lice : P1 (toute la masse dans le mode aux jonctions, ρ = 1/3, R = ℏ/(m_e c)) et P2
+(moitié statique, arc 3/4, ρ = 1/7, R = 515 fm). Elles diffèrent par le rayon et par la
+réflectivité des pôles ; c'est là que la base doit choisir.
