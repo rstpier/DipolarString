@@ -68,5 +68,36 @@ confines them.
 - Level 3's confinement falls. Level 4 (statistics of two unpaired branches exchanged) is
   untouched and is the next computable step.
 
+## 6. How polarised strings assemble — end to end, not side by side
+
+Script: `../scripts/string_assembly.py`, 7/7 PASS. Question raised by the author: if the fluid is
+polarised (`+` and `−` poles, manuscript l. 91), do strings assemble along their length? Model:
+a string = net charge `q = −e/3` spread over `ℓ₁` plus pole charges `±δ` at its ends; poles touch at
+`2r`, side-by-side spacing `D₀`.
+
+```
+  binding energies (keV; negative = bound), same net charge q = -e/3 unless noted:
+   delta/q   end-to-end (pole contact)   side-by-side, opposite q (DQD)   side-by-side anti-par., same q   side-by-side parallel, same q
+    0.00          +0.25                        -0.47                          +0.47                            +0.47
+    0.25          +0.04                        -0.52                          +0.41                            +0.52
+    0.50          -0.61                        -0.70                          +0.23                            +0.70
+    0.75          -1.68                        -0.99                          -0.06                            +0.99
+    1.00          -3.19                        -1.40                          -0.47                            +1.40
+```
+
+- **End to end, pole against pole**, like-charge strings bind as soon as `δ/q > 0.28`; at `δ = q` a
+  junction binds by 3.2 keV. This is how chains and rings form.
+- **Side by side**, only opposite charges bind without poles (the DQD, −0.47 keV). Like charges
+  need `δ/q > 0.71` and bind ten times more weakly; a *parallel* like-charge pair never binds, so
+  three strings on a triangle are frustrated.
+- **Three like-charge polar strings joined end to end close into a ring** on `R₃` — bound at
+  `δ = q`, unbound without poles: the manuscript's electron, three strings end to end, is the
+  assembly the fluid prefers. A side-by-side bundle of three is not.
+
+So yes: strings assemble along their length — into chains and closed rings by their poles — and
+into a side-by-side pair only when the charges are opposite (the DQD). What the model does not
+give is the pole strength `δ`: "intrinsic poles" are stated, not quantified; `δ/q ≥ 0.3` is the
+condition for like-charge strings to chain at all.
+
 **Must respect:** `CONSTRAINTS.md` §2 (a divergence source is required: here the unpaired
 branch), §1b, §9.
