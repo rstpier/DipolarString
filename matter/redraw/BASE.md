@@ -250,3 +250,20 @@ chacune, dépasse la masse de l'électron d'un facteur 2·10⁴ : **la nappe ne 
 mince et porteuse de la moitié statique.** Verdict : DÉRIVÉ pour la forme carrée, δ = e/(π√α) et
 ℏc/(π²s) ; CONDITIONNEL (g = 2 + deux jonctions statiques) pour w = 0,405 ƛ ; le mode transverse
 à 4 MeV est un problème ouvert de la base.
+
+**R18 — « Les masses fonctionnent-elles pour le proton et le neutron ? Table de masse de la famille
+de l'électron (fermions). »** (demande de l'auteur)
+→ `fermion_table.py`, 9/9. Règle de parité : q = (n₊ − n₋)e/3 impose n impair pour ±1 et ±1/3,
+n pair pour 0 et ±2/3. **Non pour les nucléons.** Proton (charge +1, n impair) : l'échelle offre
+509 MeV (n = 9, −46 %) ou 1795 MeV (n = 11, +91 %) ; le n continu vaut 9,92, du côté pair. Neutron
+(n pair) : n = 10 donne 986 MeV (+5 %), mais p et n diffèrent de 0,14 % alors que deux barreaux
+voisins diffèrent de 82 % : la paire ne peut pas être deux chaînes. Lecture anneaux fermés : le
+proton fait 6,70 anneaux de 140 MeV, pas un entier. Lecture composite (uud = chaînes 4, 4, 5) :
+18,9 MeV, soit 2 % du proton ; 98 % de la masse du nucléon est de la liaison, dont la base n'a
+aucun mécanisme. **Table des fermions** (meilleur n de la parité imposée par la charge) : e 3
+(exact), μ 7 (−0,8 %), τ 11 (+1,0 %) ; u 4 (+44 %), d 5 (+169 %), s 7 (+12 %), c 10 (−23 %),
+b 13 (+22 %), t 22 (−19 %) : les quarks dispersent de 12 à 169 %, l'échelle est une loi de leptons.
+**Problème caché de la famille de l'électron** : q = −1 avec n impair contient aussi n = 5
+(12,7 MeV) et n = 9 (509 MeV), des leptons chargés qui n'existent pas ; la famille doit donc être
+n ≡ 3 (mod 4) : 3, 7, 11, puis 15 (12,6 GeV) et 19 (55,6 GeV), exclus par le LEP (> 102,8 GeV),
+et 23 (185 GeV), premier membre permis. Pourquoi le pas de 4 cordes est la question ouverte.
