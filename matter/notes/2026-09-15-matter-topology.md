@@ -134,6 +134,33 @@ both computable inside V2.10, neither done. The proton's mass stays where §1c l
 string), §2 (a divergence source is required — here, the string end), §9 (a protected label is
 not a mass mechanism).
 
+## 7. Rings of mixed signs — the author's proposal for the quarks (n = 5, 6)
+
+Script: `../scripts/ring_catalogue.py`, 8/8 PASS. Proposal: quarks as rings of `n = 5` (charge
+`1/3`) and `n = 6` (charge `2/3`), each string carrying `±e/3`, joined end to end by their poles
+(§6 of `2026-09-15-string-end-charge.md`).
+
+- **Charge rule, derived:** a ring of `n` strings has `q = (n₊ − n₋) e/3`, so **the parity of `n`
+  fixes the charge class**: odd rings carry odd thirds (`±1/3`, `±1`, …: `d`, `e`), even rings even
+  thirds (`0`, `±2/3`, …: `u`, neutral states). The proposal `d = 5`, `u = 6` obeys it; so would
+  `d = 3`, `u = 2` or `d = 7`, `u = 4`. Parity is derived, the value of `n` is not — it needs another
+  criterion.
+- **Stability:** every mixed ring is bound at every pole junction (arcs on `R_n = nℓ₁/2π`,
+  `δ = q`), whatever the order of the signs; the lowest-energy order alternates the signs
+  (`−+−+…`) as much as possible.
+- **Arrangements:** distinct sign orders up to rotation and reflection — `u (6: 4+2−)`: 3,
+  `d (5: 2+3−)`: 2, `d (3: 1+2−)`: 1. Three states for `u` only: the count is not colour.
+- **Masses:** the inductance scaling `(n/3)² Z_e` gives `u (6) = 2.0 MeV` (PDG 2.2) and
+  `d (5) = 1.4 MeV` (PDG 4.7), with `d` lighter than `u` — the wrong order; the mode-energy reading
+  makes both lighter than the electron. Current-quark masses are scheme-dependent and dominated
+  by binding: a weak target either way.
+- **Counting:** proton `uud` = 6 + 6 + 5 = 17 strings in three rings, neutron `udd` = 16 — not the
+  27 of the reparametrized catalogue, which §1c had already excluded as a mass carrier.
+
+**Status:** the parity rule is DERIVED from "`e/3` per string, rings end to end"; the assignment
+`5/6` is POSTULATED (parity-compatible, not selected). Colour and the quark masses are not
+reproduced.
+
 ## References
 - M. Levin, X.-G. Wen, *Fermions, strings, and gauge fields in lattice spin models*, Phys. Rev. B
   67, 245316 (2003); *String-net condensation*, Phys. Rev. B 71, 045110 (2005).
