@@ -1,8 +1,10 @@
 # Proton characteristic impedance — can the 19 % gap close without fitting?
 
 **Date:** 15 September 2026
-**Status:** NEGATIVE, derived — and extended in §5 to the whole class: no object of 27 strings
-reaches the targets; the obstacle is the mass law at `N = 27`, not the helix. The "19 %" was the
+**Status:** NEGATIVE, derived — extended in §5 to the whole class (no object of 27 strings
+reaches the targets) and in §6 to the mode-energy reading (its only closure gives the wrong
+direction; the tube radius caps a fundamental at `37 m_e`; admitting the proton loop destroys the
+electron's impedance well). The proton is not a loop of the vacuum's string under any reading. The "19 %" was the
 distance between a *scaling estimate* and the
 target, not the residual of a calculation. Computed with the electron's own electrodynamics and
 the model's own closures, the 9-turn closed helix gives `Z_p/Z_e = 14` (the manuscript's
@@ -159,5 +161,42 @@ strings of `ℓ₁` cannot carry the proton's mass as inductance, whatever their
 is not the inductance of the string. Both are changes to the catalogue, not to the object.
 **Status:** NEGATIVE, derived (bound by explicit construction; thin-wire integrals accurate to
 ~10 % at contact, far inside the margin).
+
+## 6. The mode-energy reading, tested — can `ℓ_p/ℓ_e` be fixed without fitting?
+
+Script: `../scripts/proton_mode_energy_reading.py`, 11/11 PASS.
+
+The reading: a particle is the fundamental TEM mode of a closed loop, `mc² = (p − x)·2πℏc/ℓ_loop`.
+The electron already sits there by calibration (`2πR₃ = λ_C`, `p = 1`). The proton then needs
+`ℓ_p = λ_C/1836 = 1.32 fm`, `R_p = 0.21 fm`. The model's internal conditions, one by one:
+
+- **(a) Geometric closure `ℓ = Nℓ₁`** gives `ℓ_p/ℓ_e = 9`: the fundamental makes the proton *nine
+  times lighter* than the electron — the reading inverts the catalogue's ordering (more strings,
+  longer loop, lighter). Matching 1836 on the 27-string loop needs the harmonic `p_p ≈ 16 500`
+  (`11 000–16 500` with the holonomy shifts `x_e ∈ {0, 0.27, ⅓}`), with no natural `x_p`: a fit.
+- **(b) Tube-radius floor.** A loop of a tube of radius `r` has `ℓ ≥ 2πr`, so `m/m_e ≤ p·R₃/r = 37.1 p`.
+  At `p = 1` the proton is excluded by 50, the muon by 5.6, the tau by 94. The harmonic rescue
+  needs `p_μ ≥ 6`, `p_p ≥ 50`, `p_τ ≥ 94` — integers only by fitting.
+- **(c) The `r`–`Z_e` lock.** Admitting `R_p = 0.21 fm` as a loop of the same string needs
+  `r ≤ 0.21 fm`, i.e. `R₃/r ≥ 1836`, i.e. `ln(8R₃/r) ≥ 9.6`, i.e. **`Z_e = 1.36 Z₀ > Z₀`**: the
+  electron stops being an impedance well, the manuscript's one robust derived property of the
+  electron. The impedance-well property alone caps `R₃/r` below 197 (where `Z_e = Z₀`), hence
+  `m/m_e < 197 p`: even the loosest admissible tube needs `p_p ≥ 10`.
+- **(d) Brillouin.** `m_pc²` is 1900× the lattice cutoff `ℏω_max = (3/π)m_ec²` and the loop is
+  600× smaller than the cell `ℓ₁`: the mode cannot be a collective wave of the weave; it would have
+  to be a sub-cell wave on a string thinner than the vacuum's, which nothing internal supplies.
+
+**Conclusion.** NEGATIVE, derived. The mode-energy reading fixes nothing: its only closure gives
+the wrong direction, its floor excludes the proton as a fundamental, and thinning the string to
+admit the proton destroys the electron's impedance well. It is `E = hc/λ`, no more — and with this
+string it *excludes* the proton (and the muon) as fundamentals of a loop of the vacuum's string.
+
+**Where the proton problem now stands.** Three readings of "mass", three failures for `N_p = 27`
+with the vacuum's string: inductance (max `72 L_e`, §5), charge energy (0.4 % of the mass,
+`CONSTRAINTS.md` §1b), mode energy (floor `37 m_e` per harmonic, §6). The common cause is the
+string itself — `r = R₃/37.1`, `ℓ₁ = 2πR₃/3` — which is sized for the electron and cannot be
+sized for the proton without breaking `Z_e < Z₀`. **The proton is not a loop of the vacuum's
+string under any reading the model offers.** What would change that is a second string species
+or a second scale, neither of which the axioms contain.
 
 **Must respect:** `CONSTRAINTS.md` §1 (ratios only), §4 (a fit is not a derivation).

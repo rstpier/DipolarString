@@ -47,13 +47,24 @@ inductance needs `N ≈ 190` strings (`L_max ∝ W^{5/3}`). The `1/ℓ` mode-ene
 puts the proton loop at 0.21 fm (a factor 4 from the charge radius, the least
 inconsistent reading) but is `E = hc/λ` until a closure fixes `ℓ_p/ℓ_e`.
 
-**Closes when:** the catalogue changes, not the object — either `N_p ~ 200` rather than
-27, or mass is not the inductance of the string, with a closure for `ℓ_p/ℓ_e`. Under
-the electron's own electrodynamics no shape of 27 strings can do it. Until then the
-proton stays *Reparametrized*.
+**Mode-energy reading tested (15 September), negative:** `scripts/proton_mode_energy_reading.py`,
+11/11; note §6. Its only closure, `ℓ = Nℓ₁`, makes the proton nine times *lighter* than
+the electron (harmonic `~16 500` needed: a fit); the tube radius caps a fundamental at
+`m/m_e ≤ R₃/r = 37.1` (proton excluded by 50, muon by 5.6); and admitting the 0.21 fm
+proton loop needs `R₃/r ≥ 1836`, which makes `Z_e = 1.36 Z₀` — the electron stops being
+an impedance well. Three readings of mass (inductance, charge energy, mode energy), three
+failures: **the proton is not a loop of the vacuum's string under any reading the model
+offers**; the string is sized for the electron and cannot be resized without breaking
+`Z_e < Z₀`.
+
+**Closes when:** the axioms supply a second string species or a second scale — the
+catalogue's `N_p = 27` on the vacuum's string is unrealizable under every reading. Until
+then the proton stays *Reparametrized*, and this item is no longer "the most
+contribution-shaped": it is blocked at the level of the string.
 **Must respect:** `CONSTRAINTS.md` §1 — the target is the ratio `Z_p/Z_e`, never
 an absolute `m_p`; and §4 — a fit is not a derivation.
-**Most contribution-shaped item in the inventory:** self-contained and quantified.
+**Formerly the most contribution-shaped item in the inventory;** now blocked in principle
+(see below), like the neutrino sector.
 
 ### 2. Equation of state of the `e/3` energy fluid
 *Manuscript status: unspecified. Group: `charge-chirality`.*

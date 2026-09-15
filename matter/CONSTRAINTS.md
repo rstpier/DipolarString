@@ -55,6 +55,14 @@ object the law itself implies — 204 coincident turns of radius `1.64 r` — is
 regime and gives `5.8 L_e` when built. **`m = κL` and `N_p = 27` are jointly unrealizable**; the
 index would have to be `~190`, or mass is not inductance. Do not look for a cleverer shape.
 
+Nor for another reading (`scripts/proton_mode_energy_reading.py`, 11/11; note §6). As mode
+energy, `m ∝ 1/ℓ_loop`: the closure `ℓ = Nℓ₁` makes the proton lighter than the electron; the
+tube radius caps a fundamental at `m/m_e ≤ R₃/r = 37.1`; and a tube thin enough for the 0.21 fm
+proton loop (`R₃/r ≥ 1836`) gives `Z_e = 1.36 Z₀`, destroying the electron's impedance well —
+which by itself caps `R₃/r` at 197 and `m/m_e` at `197 p`. As charge energy (§1b): 0.4 % of the
+mass. **Under every reading the model offers, the proton is not a loop of the vacuum's string.**
+The string is sized for the electron; the axioms contain no second species and no second scale.
+
 ### 1a. Coiling a line does not raise the coupling
 
 The characteristic impedance of a **line** (`√(L/C)` of a conductor geometry) and
