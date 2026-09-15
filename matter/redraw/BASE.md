@@ -267,3 +267,25 @@ b 13 (+22 %), t 22 (−19 %) : les quarks dispersent de 12 à 169 %, l'échelle 
 (12,7 MeV) et n = 9 (509 MeV), des leptons chargés qui n'existent pas ; la famille doit donc être
 n ≡ 3 (mod 4) : 3, 7, 11, puis 15 (12,6 GeV) et 19 (55,6 GeV), exclus par le LEP (> 102,8 GeV),
 et 23 (185 GeV), premier membre permis. Pourquoi le pas de 4 cordes est la question ouverte.
+
+**R19 — « Neutron et proton ont juste un joint de différence, donc on a la calibration du nœud. »**
+→ `nucleon_joint.py`, 6/6. Deux lectures. (i) Neutron = proton + une corde + un joint : mais la
+règle de charge q = (n₊ − n₋)e/3 fait varier q de 1/3 par corde, pas de 1 ; le proton + une corde
+ne peut pas être neutre. (ii) **Neutron = proton + une chaîne d'électron (0, 3) attachée par un
+joint** : charge +1 − 1 = 0 et parité (impair + 3 = pair) respectées ; c'est la lecture cohérente
+avec la base. **Calibration** : (i) m_n − m_p = 1,293 MeV ; (ii) m_n − m_p − m_e = 0,782 MeV (le Q
+de la désintégration β) ; soit 10,1 et 6,1 fois la jonction de l'électron (127,75 keV, R13).
+**Ce que la base impose en plus** : (1) sur un guide adapté (pôles 3,73 e, R17) un joint de 1,29 /
+0,78 MeV siège à s = 15,5 / 25,6 fm, 18 à 30 rayons de proton ; à l'intérieur du proton (s = r_p =
+0,84 fm) le joint adapté pèse 24 MeV : la calibration n'est pas la jonction R17, sauf pôles de
+0,87 e / 0,68 e. (2) La base porte l'énergie de Coulomb du proton (0,86 à 1,03 MeV à r_p) ou
+l'attraction p–e (−1,71 MeV à r_p) : le joint brut vaut 2,2 à 2,5 MeV, 1,29 MeV est le net (réseau
+QCD+QED : partie forte 2,52, partie EM −1,00). (3) **Le joint n'est pas un nombre unique** : dans le
+propre décompte de la base, le π⁻ (anneau de 5) est un π⁰ (anneau de 4) + une corde + un joint, et
+ce joint vaut 4,59 MeV, 3,6 fois celui du nucléon ; les paires d'isospin vont de 0,3 (B) à 8,1 MeV
+(Σ). **Ce qui passe** (lecture ii comme image) : la boucle négative ajoutée, avec le μ = −ecR/2 de
+la base, doit avoir R = 0,99 fm pour donner μ_n − μ_p = −4,71 μ_N ; le rayon de charge du neutron
+(⟨r²⟩ = −0,1155 fm², cœur +e du proton + anneau −e) donne R = 0,91 fm : deux mesures indépendantes
+concordent à 9 %, et le spin de la boucle (R·E/c < 0,02 ℏ) laisse le neutron à spin 1/2. Verdict :
+calibration = un nombre, pas une dérivation ; l'image « proton + boucle d'électron à ~0,95 fm »
+est CONDITIONNELLE et passe deux tests de taille.
