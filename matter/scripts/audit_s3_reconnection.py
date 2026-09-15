@@ -183,8 +183,12 @@ def block_derrick() -> None:
     roots = sp.solve(sp.Eq(3 * A * u**2 + C * u - D, 0), u)
     positive = [r for r in roots if sp.simplify(sp.limit(r, D, sp.oo)) is not sp.zoo]
     stabilises = any(sp.simplify(r - (-C + sp.sqrt(C**2 + 12 * A * D)) / (6 * A)) == 0 for r in roots)
-    check("Curvature route is unconditional", stabilises,
-          "lambda^2 = (-C + sqrt(C^2+12AD))/6A > 0 for every D > 0: no threshold")
+    check("Four-derivative route is unconditional", stabilises,
+          "lambda^2 = (-C + sqrt(C^2+12AD))/6A > 0 for every D > 0: no threshold "
+          "(quartic in first derivatives, e.g. Faddeev; NOT string bending, which is Frank K3 ~ lambda^1)")
+    # degree-k term in first derivatives scales as lambda^(3-k): k=2 (Frank) -> +1, k=4 (Faddeev) -> -1
+    check("Frank bend does not stabilise", 3 - 2 == 1 and 3 - 4 == -1,
+          "string bending |(n.grad)n|^2 is degree 2 -> lambda^1; Faddeev is degree 4 -> lambda^-1")
 
 
 def block_diagnostic_error() -> None:

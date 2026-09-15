@@ -40,20 +40,32 @@ established (mirror-pair creation, mechanical annihilation, P acting as C).
 **Must respect:** §2. Also carries the declared baryon-asymmetry debt: strict pair
 creation implies exact matter–antimatter symmetry at formation.
 
-### 3. Stabilization of three-dimensional solitons
-*Manuscript status: absent, tied to the muteness of the weave. Group:
-`chiral-closure`.*
+### 3. Stabilization of three-dimensional solitons — the Hopfion route
+*Manuscript status: absent, tied to the muteness of the weave. Group: `chiral-closure`.
+Direction recorded 15 September 2026: `notes/2026-09-15-hopfion-direction.md`.*
 
-Without a chiral term the energy `E(λ) = Aλ³ + Bλ² + Cλ` is monotonic and a
-localized configuration collapses (Derrick). The Dzyaloshinskii–Moriya carrier is
-**excluded by more than thirty orders of magnitude** (`CONSTRAINTS.md` §3).
+Without a Derrick-evading term the energy `E(λ) = Aλ³ + Bλ² + Cλ` is monotonic and a localized
+configuration collapses. The Dzyaloshinskii–Moriya carrier is **excluded by more than thirty
+orders of magnitude** (`CONSTRAINTS.md` §3). The class that works without threshold is a term
+quartic in first derivatives — the Faddeev term `(∂ᵢn × ∂ⱼn)²` — and **string bending does not
+supply it** (it gives Frank `K₃`, which scales as `λ¹`; `CONSTRAINTS.md` §3a).
 
-**Closes when:** a stabilization mechanism of a different kind is exhibited, or
-the absence of stable 3D solitons is accepted as structural and its consequences
-for the electron-as-quantum reading (§1) are drawn.
-**Must respect:** §3, and §9 — a *topologically protected* twist cannot also be mixed. §3a
-gives the scaling: the class that works is a four-derivative curvature term, and the one
-DS-internal candidate is a bending energy of the bifilar line at fixed `D`.
+The known theory for a unit-vector field with that term is **Faddeev–Niemi**: stable knotted
+solitons in 3+1 D classified by the Hopf invariant `π₃(S²) = ℤ` — a *linking number of closed
+loops* — with fermionic quantization available (Krusch–Speight 2006). DS already has two fields
+with target `RP²`: the DQD pole axis `n` (the nematic order of A7) and the string tangent `t`.
+
+**Closes when — the decisive calculation:** coarse-grain the energy of the bifilar string gas
+into a director-field energy density and read off the coefficient of the quartic term. The
+Frank constants `K₁, K₂, K₃` will appear at order `(∂n)²`; the question is whether anything
+appears at `(∂n)⁴`. Candidates: the twist of the bifilar ribbon (`Lk = Tw + Wr`) and
+string-crossing interactions. Name the field (`n` or `t`) before starting. **Settle first whether
+A5 forbids the ribbon twist as a "continuous deformation mode".** If the coefficient is non-zero,
+Hopfions exist in DS with no new term and 3D stability, a linking charge and a route to spin ½
+open together; if it is zero, the direction closes cleanly.
+**Must respect:** §3, §3a, §9 — a *topologically protected* label cannot also be mixed, so a
+protected Hopf charge is a quantum number, not a mass mechanism. Any coefficient obtained must
+be confronted with the PVLAS bound before use.
 
 ### 4. Spin ½, `g = 2`, fermionic statistics
 *Manuscript status: declared half-success. No dedicated group.*

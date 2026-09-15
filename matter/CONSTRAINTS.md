@@ -34,6 +34,16 @@ transparency of the vacuum.
 
 **What remains attainable: a spectrum of *ratios* given one scale.**
 
+### 1b. The mass law is a ratio law, not an energy budget
+
+"Mass is the macroscopic equivalent of the loop inductance" reads as if `m_e c²` were stored in
+the loop. It is not, and the manuscript's own numbers say so: the inductive self-energy of the
+electron loop at its own current is `½L_eI_e² = 2.19 keV` — **0.43 %** of `m_e c² = 511 keV` —
+and the quantum of the loop's LC mode is `ℏ/√(L_eC_e) ≈ 101 keV`. Neither is the rest energy.
+`m ∝ N²Z` fixes *ratios* between particles; the 511 keV is the anchor, an input stored nowhere
+in the model. This is consistent with §1 — and the headline phrase should eventually be
+corrected to say so.
+
 ### 1a. Coiling a line does not raise the coupling
 
 The characteristic impedance of a **line** (`√(L/C)` of a conductor geometry) and
@@ -99,21 +109,45 @@ exists, it is a different one.
 
 ### 3a. Which class of term could work, and what the model does not have
 
-Derrick scaling in three dimensions, where a term `∫(∂ᵏφ)² d³x` goes as `λ^(3−2k)`:
+Derrick scaling in three dimensions. Under `x → λx`, a term homogeneous of degree `k` in
+**first** derivatives of a field scales as `λ^(3−k)`; a term quadratic in **second**
+derivatives scales as `λ^(3−4) = λ⁻¹`:
 
-| term | scaling | stabilises? |
-|---|---|---|
-| potential | `λ³` | no |
-| chiral, one derivative (DM) | `λ²` | **only if `\|B\| ≥ √(3AC)`** — a threshold |
-| gradient | `λ¹` | no |
-| **curvature, four derivatives** | **`λ⁻¹`** | **yes, for every `D > 0` — no threshold** |
+| term | form | scaling | stabilises? |
+|---|---|---|---|
+| potential | `V(φ)` | `λ³` | no |
+| chiral, one derivative (DM) | `φ·(∇×φ)` | `λ²` | **only if `\|B\| ≥ √(3AC)`** — a threshold |
+| gradient, **including Frank elasticity** | `(∂n)²` | `λ¹` | **no** |
+| **quartic in first derivatives (Faddeev)** | `(∂ᵢn × ∂ⱼn)²` | **`λ⁻¹`** | **yes, for every `D > 0` — no threshold** |
+| quadratic in second derivatives | `(∂²φ)²` | `λ⁻¹` | yes |
 
-`E = Aλ³ + Cλ + D/λ` gives `λ² = (−C + √(C²+12AD))/6A`, positive for every `D > 0`. A bending
-rigidity would therefore evade Derrick *more robustly* than the excluded chiral term, and it is
-not of DM type.
+`E = Aλ³ + Cλ + D/λ` gives `λ² = (−C + √(C²+12AD))/6A`, positive for every `D > 0`. A
+four-derivative term evades Derrick *more robustly* than the excluded chiral term, and it is not
+of DM type.
 
-**But V2.10 contains no such term:** *bending* and *Skyrme* each appear zero times. What exists
-is three different things, which must not be conflated with a string bending stiffness:
+**Correction (15 September 2026).** An earlier version of this section said a *bending rigidity
+of the string* would supply such a term. **It would not.** The bending energy of a string is
+`κ² = |(n·∇)n|²` — quadratic in *first* derivatives of the tangent field. Coarse-grained over a
+gas of strings it gives a Frank *bend* constant `K₃`, which scales as `λ¹` and does not
+stabilise. The Faddeev term `(∂ᵢn × ∂ⱼn)²` is quartic in `∂n`, and string bending does not
+produce it. What could, inside DS, is an open question with two candidates:
+
+- the **twist** of the bifilar *ribbon* — a two-conductor line has a torsional degree of freedom
+  in addition to bending, and Călugăreanu–White–Fuller (`Lk = Tw + Wr`) ties twist to the writhe
+  of the centreline, a global geometric quantity; whether A5 forbids that twist as a "continuous
+  deformation mode" must be settled first;
+- **crossing interactions** between distinct strings, which are non-local in the string picture
+  and could coarse-grain to a quartic gradient term.
+
+**Two distinct vector fields.** The nematic order `Q_ij = S(n_in_j − δ_ij/3)` is built on the
+**DQD pole axis** `n` — transverse to the string — not on the string tangent `t`. Both have
+target `RP²` and `π₃(RP²) = π₃(S²) = ℤ`, so both admit Hopf solitons in principle; but Frank
+elasticity of `n` and bending of `t` are different energies. The question "does DS contain a
+Faddeev term" must name its field.
+
+**V2.10 contains no such term:** *bending*, *Skyrme*, *Faddeev*, *Hopf*, *knot* and *linking*
+each appear zero times. What exists is three different things, none of them a quartic gradient
+term:
 
 - **A5**, topological rigidity of the DQD — *"possesses no continuous deformation mode"*:
   discrete, not elastic, and it serves as the short-distance regularization;
@@ -122,10 +156,10 @@ is three different things, which must not be conflated with a string bending sti
 
 Two cautions before pursuing this. A stiffness calculation was already rejected once, for
 displacing `D` about `D₀`, as illegitimate under A5 — and it gave `χ_vac ~ 2×10⁻⁴`, eighteen
-orders above the PVLAS bound. Any bending coefficient must be confronted with that bound *before*
-being used to stabilise anything. And a free consistency check exists: the Genesis conjecture
-already assumes closed loops with a *minimum circumference* `~ ℓ₁`, which is what a bending
-rigidity would produce. A derived stiffness must reproduce it, or one of the two is wrong.
+orders above the PVLAS bound. Any new elastic coefficient must be confronted with that bound
+*before* being used to stabilise anything. And a free consistency check exists: the Genesis
+conjecture already assumes closed loops with a *minimum circumference* `~ ℓ₁`. A derived
+elasticity must reproduce it, or one of the two is wrong.
 
 ---
 
@@ -240,12 +274,11 @@ not forbid:
 - constructing the equation of state of the `e/3` energy fluid (§2), which is
   the declared home of charge;
 - a stabilization mechanism for three-dimensional solitons that is **not** of
-  Dzyaloshinskii–Moriya type (§3). The scaling in §3a says which class works: a four-derivative
-  curvature term, which stabilises without a threshold. Deriving a **bending energy for a bifilar
-  line at fixed `D`** from the telegrapher parameters is the one route that would supply it
-  without a new field — bending the axis changes `L` and `C` at order `(D/R_c)²`, and the
-  geometry is fixed, `D/r = 2 cosh π` being derived. It must be argued explicitly that bending
-  the axis at fixed `D` is not the internal deformation A5 forbids.
+  Dzyaloshinskii–Moriya type (§3). §3a gives the scaling: the class that works is a term quartic
+  in first derivatives (Faddeev) or quadratic in second derivatives. **String bending does not
+  supply it** (it gives Frank `K₃`, `λ¹`). The DS-internal candidates are the twist of the
+  bifilar ribbon and string-crossing interactions, and the field must be named — DQD pole axis
+  `n` or string tangent `t`. See `notes/2026-09-15-hopfion-direction.md`.
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.

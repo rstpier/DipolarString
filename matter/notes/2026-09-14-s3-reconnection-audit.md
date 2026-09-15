@@ -204,22 +204,25 @@ the article must not use the word.
 
 ---
 
-## 10. One opening, found while auditing
+## 10. One opening, found while auditing — corrected the next day
 
-A **bending rigidity** would be a Derrick-evading term that is *not* of Dzyaloshinskii–Moriya type
-— the escape NO-GO C leaves open. Computed scaling in 3D, where ∫(∂ᵏφ)²d³x goes as λ^(3−2k):
+A term that evades Derrick's theorem without being of Dzyaloshinskii–Moriya type is the escape
+NO-GO C leaves open. Computed scaling in 3D (a term of degree `k` in first derivatives goes as
+`λ^(3−k)`):
 
 | term | scaling | stabilises? |
 |---|---|---|
 | potential | λ³ | no |
 | chiral, one derivative (DM) | λ² | **only if \|B\| ≥ √(3AC)** — threshold |
-| gradient | λ¹ | no |
-| **curvature, four derivatives** | **λ⁻¹** | **yes, for every D > 0 — no threshold** |
+| gradient / Frank elasticity `(∂n)²` | λ¹ | no |
+| **quartic in first derivatives (Faddeev) `(∂ᵢn × ∂ⱼn)²`** | **λ⁻¹** | **yes, for every D > 0 — no threshold** |
 
 `E = Aλ³ + Cλ + D/λ` gives `λ² = (−C + √(C²+12AD))/6A`, always positive. Strictly better than the
 excluded chiral route.
 
-But V2.10 has **no** such term: *bending* and *Skyrme* both appear zero times. What exists is A5
-(topological rigidity of the DQD — discrete, not elastic), the medium's S-dependent shear modulus
-(A7, collective, not a property of one string), and the undetermined phase stiffness ρ_φ. Three
-different things, none of them a string bending stiffness. See `../CONSTRAINTS.md` §3.
+**Correction (15 September).** The first version of this section called the stabilising term a
+*bending rigidity of the string*. That was wrong: string bending is `|(n·∇)n|²`, quadratic in
+first derivatives, and coarse-grains to a Frank bend constant — `λ¹`, not stabilising. The term
+that works is quartic in `∂n`, and its DS-internal origin is open (ribbon twist, crossing
+interactions). V2.10 has no such term: *bending*, *Skyrme*, *Faddeev*, *Hopf* appear zero times.
+See `../CONSTRAINTS.md` §3a and `2026-09-15-hopfion-direction.md`.
