@@ -94,5 +94,22 @@ and keeps a chain from closing — a nonlinearity of the fluid at the pole. V2.1
 closed ring, with the consequences already recorded (`L_z = n + ½` only through a pair's
 half-twist, no exchange sign).
 
+## 6. Two further statements, tested
+
+**"The EM fluid accumulates in the trailing pole, creating the active charge"**
+(`../scripts/trailing_pole.py`, 6/6). As a motion effect it is excluded: a charge depending on
+velocity is bounded by atom neutrality (`|q_p + q_e| < 10⁻²¹ e`, electron at `v/c = α`) to
+`κ < 2×10⁻¹⁷` in `q(1 + κv²/c²)`. As an internal-flow effect it is the standing wave of the pole
+reflections (`Γ_pole = 1/3`, SWR 2): symmetric at both poles, oscillating, zero time average — no
+net charge at one pole. A net pile needs a one-way, nonlinear barrier at the pole.
+
+**"Each junction produces a binding mass generating a displacement curvature"**
+(`../scripts/junction_curvature.py`, 5/5, poles held in contact at `2r` while the angle varies).
+A pole-to-pole junction of two like-charge strings binds by 6.3 keV (1.2 % of `m_e`, the
+manuscript's `E_coh` scale) and is angle-blind to 5 %: what dependence exists prefers the straight
+chain, with a stiffness of 0.05 keV/rad². The binding mass is real; it produces no curvature. The
+author states the curvature is a simple mechanical consequence; what mass, what motion and what
+force he means was not yet stated, so this computation may not be the intended one.
+
 **Must respect:** `CONSTRAINTS.md` §1 (ratios only), §6 (the spin sector is a declared
 half-success), §9.
