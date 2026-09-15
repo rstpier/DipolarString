@@ -1,9 +1,11 @@
 # Direction — Hopf solitons of the director field
 
 **Date:** 15 September 2026
-**Status:** the Faddeev route is CLOSED for V2.10 (steps 1–2, both derived, 15 September); a ℤ₂
-holonomy of the bifilar mode is DERIVED for an unordered pair and recorded as a lead. The rest is
-POSTULATED.
+**Status (15 September):** the Faddeev route is CLOSED for the *pair* (steps 1–2, derived) and
+REOPENED for `N ≥ 3` pending step 3b (curvature). With the author's decision that the pair is
+unordered: a ℤ₂ holonomy contributing `π` per half-twist to `θ_tot` is DERIVED; the triple's
+ℤ₃ holonomy (fractional winding ⅓) is DERIVED and is a candidate origin of the G conjecture's
+input. Spin, charge and 3D stability remain OPEN. The rest is POSTULATED.
 **Origin:** a discussion thread following the S₃ audit, starting from the working postulate
 *there is no static mass value* and ending on a structure the literature already knows.
 
@@ -149,7 +151,8 @@ stability) as the Maxwell term of `a[n]`; the Hopf charge appears as linking; an
 the topology — which nothing in DS currently provides.
 
 **Step 2 — done. Negative for the Faddeev route; one unexpected positive.**
-Script: `../scripts/step2_bifilar_berry_phase.py`, 6/6 PASS.
+Script: `../scripts/step2_bifilar_berry_phase.py`, 7/7 PASS (regularised smooth fields, shared
+machinery in `../scripts/berry_holonomy_common.py`).
 
 The differential TEM mode of two conductors at `±(D/2)m`, `D/r = 2 cosh π`, is a **real**
 field profile. For a real normalised family, `⟨E|∂_ψE⟩ = ½ ∂_ψ⟨E|E⟩ = 0`, so the U(1) Berry
@@ -189,6 +192,84 @@ This is not the Faddeev term (which needs continuous Berry *curvature*), and it 
 It is a derived geometric fact about a bifilar ribbon, conditional on the pair being unordered.
 **Status: DERIVED (unordered pair) / OPEN (whether the DQD pair is unordered, and the link to
 spatial rotation).**
+
+## 5c. Decision (15 September): the pair is unordered, the string is nematic
+
+Taken by the author. It makes the ℤ₂ holonomy physical, and the following are derived from it.
+
+**A contribution to `θ_tot`, one of the two undetermined inputs.** The manuscript's
+quantization condition is `2βℓ + θ_tot = 2pπ`, where `θ_tot` "collects the topological phase
+shifts accumulated at the internal interfaces" and is listed (open problem 7) as not following
+from the matching condition. The ℤ₂ holonomy *is* such a shift: a closed loop on which the
+nematic pair axis makes `n_half` half-turns contributes `π·n_half` to `θ_tot`. For odd
+`n_half`, `βℓ = (p − ½)π`: **half-integer winding**, and the resonance-radius law
+`R = (p·ℓ₁/2π)(Z₀/Z)` runs on `p − ½`. Derived, given the decision. What remains undetermined
+in `θ_tot` is the interface part and the value of `n_half` for a given particle.
+
+**The ring chain.** A mode antiperiodic around a ring, `ψ(φ+2π) = −ψ(φ)`, is
+`e^{i(n+½)φ}`: its angular momentum about the ring axis is `L_z = n + ½`, and it changes sign
+under a `2π` rotation about that axis, `e^{2πiL_z} = −1`. Verified symbolically. So an
+unordered bifilar loop with an odd number of half-twists carries **half-integer angular
+momentum about its own axis and is double-valued under `2π`** — the two properties spin ½ is
+made of. **Not yet spin ½:** a single half-integer `L_z` about one axis is not a spin-½
+representation of SO(3) (rotations about other axes tilt the ring and must reproduce the full
+`j = ½` spectrum); `g = 2` and fermionic statistics are untouched. The literature has this
+picture — Williamson–van der Mark (1997), the electron as a photon on a Möbius-like double loop
+— and it is worth reading before going further.
+
+**A5 must be re-read.** As written, "no continuous deformation mode" forbids the frame
+rotation the decision requires — and already forbids the axis bending the loop sector requires.
+Its own justification (pole–pole contact regularisation, `ε₀` as an orientational response
+"without internal deformation") only needs **`D` fixed / no pole fusion**. That is the reading to
+adopt; the wording should be amended in the next revision.
+
+**The poles become mode labels.** If the two conductors are indistinguishable, the `+`/`−` of
+the DQD are not static labels of the conductors but the sign structure of the *differential
+mode* — an excitation, not a property. That is consistent with the working postulate that
+nothing here is static, and it reclassifies the `±` poles of A5 and of the S₃ dossier as
+properties of the mode, not of the string.
+
+**Mismatch, then resolved (§5d):** the G conjecture uses "fractional winding 1/3"; the ℤ₂
+holonomy gives ½. See below.
+
+## 5d. Step 3a — the triple (N_DS = 3) reopens what the pair closed
+
+Script: `../scripts/step3_triple_holonomy.py`, 12/12 PASS.
+
+The electron is `N_DS = 3`. Three indistinguishable conductors on an equilateral triangle have
+**two** differential modes, and they form a **degenerate doublet** (the E irrep of C₃v) —
+degenerate to `10⁻⁷`, orthogonal to `10⁻⁷`, with the common mode `2.96×` higher. A degenerate
+doublet is exactly what the pair lacked and what the fibre has. Results:
+
+- the non-abelian Berry connection `A_ij = ⟨E_i|∂_ψE_j⟩` is **antisymmetric, non-zero and
+  constant** — `A_ab = ∓0.1858` per unit angle, an so(2) generator — where the pair's was
+  identically zero;
+- the exact transport over the closed loop of the unordered triple, `ψ: 0 → 2π/3`, is a
+  **rotation by 120.000°** of the doublet, `det = 1`, eigenvalues `e^{±2πi/3}` to `10⁻¹⁵`: a
+  **ℤ₃ holonomy, fractional winding 1/3** on the circular combinations `e±`;
+- the full turn is the identity; the common mode carries no phase.
+
+**The ½ / ⅓ mismatch dissolves:** `n` indistinguishable conductors on an `n`-gon give a `ℤ_n`
+holonomy and fractional winding `1/n`. The pair gives ½, the triple gives ⅓. **The G conjecture
+takes "three strings each with fractional winding 1/3" as an input; the ℤ₃ holonomy of the
+indistinguishable triple is a candidate derivation of it.** Whether it is the *same* quantity
+the conjecture means must be checked against that section before it is claimed.
+
+**The Faddeev question is reopened for `N ≥ 3`, not answered.** A non-zero connection is
+necessary for Berry *curvature*, not sufficient. What Faddeev needs is `f_μν ≠ 0` over a
+two-parameter family — the tangent direction `t ∈ S²` of the string *and* the frame angle `ψ`
+— i.e. the transport of the doublet along a curve whose tangent moves on the sphere, with the
+material frame following the conductors. That is where Călugăreanu enters: the holonomy on a
+closed loop would be `2π(Lk − Wr)` with `Lk ∈ ℤ/3`, and the writhe `Wr` is the continuous
+geometric quantity whose variation is the curvature. **Step 3b: compute that curvature.** Not
+done.
+
+**A caveat that must not be skipped.** A phase `e^{2πi/3}` on a *propagating* mode around a
+ring would give `L_z ∈ ℤ + ⅓`, which is not a representation of SO(3) — only integer and
+half-integer angular momenta exist in three dimensions. So either the ℤ₃ label is *internal*
+(which of the two doublet states — an isospin-like charge, not an angular momentum), or a
+triple with a third-turn twist is not a rotation eigenstate, or the twist is compensated by
+writhe. In two dimensions a ℤ₃ exchange phase is anyonic; in three it needs resolving. **OPEN.**
 
 Companion tests, cheaper and independent: the `l`-degeneracy of the Bohr-scale cavity mode
 (§1.7); the Rydberg radius by Hartree self-consistency (§1.6).
