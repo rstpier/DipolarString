@@ -111,3 +111,16 @@ lecture de R5 : à c₀ le fluide *est* toute l'orbite pour l'observateur extér
 et R6 doit être relu pour un anneau de courant (aucun axe miroir dans le plan, un axe de rotation).
 Cohérent avec « s'éteint dans son référentiel » : un fluide guidé à c₀ n'a pas de temps propre,
 il n'émet pas, il ne peut que fuir, et une source stationnaire ne fuit rien.
+
+**R1, précisé — Le fluide est sans masse** (pour le moment ; problème ouvert).
+→ Calculé (`massless_fluid.py`, 8/8) : un fluide sans masse guidé à c₀ porte S = R·E_circ/c et
+μ = e·c·R/2, donc **g = 1 si toute l'énergie de repos circule avec la charge, et g = 2,0023 si et
+seulement si la moitié circule et la moitié est statique**. Alors S = ℏ/2 fixe R = ℏ/(m_e c)
+= 386 fm exactement, μ = μ_B exactement, et le quantum qui circule (m_e c²/2) est le mode
+d'enroulement ½ : l'ancrage R₃ de l'ancien manuscrit et l'anneau antipériodique sont un seul
+objet. La moitié statique n'est pas l'énergie de champ de l'anneau (0,4 à 0,9 %) ; si c'est la
+masse de liaison des jonctions (R7), il faut 128 keV par jonction pour deux jonctions ou 85 keV
+pour trois, soit des pôles de 1,2 à 1,5 e. Tension avec R11 : un anneau stationnaire (ω = 0) ne
+tient que ½LI² ≈ 2 keV ; la masse est donc dans un mode (ω ≠ 0), qui ne rayonne pas seulement
+si son champ est confiné dans un guide fermé. **La base doit dire où vit l'onde : dans une paire
+(le DQD, R9) ou sur la fille ouverte.**
