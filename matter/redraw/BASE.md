@@ -200,3 +200,17 @@ ses cordes 480 fois plus courtes que celles de l'électron : les cordes n'ont pa
 fixe, la fermeture fixe leur échelle. Réserves : trois masses, entiers choisis, un exposant ; le
 tau à 1 % est le seul test passé ; Koide vaut 0,668 sur la loi contre 2/3 à 10⁻⁵ sur les données ;
 un n = 15 pèserait 12,6 GeV, exclu par le LEP, donc l'échelle s'arrête à 11 ou 15 n'est pas un lepton.
+
+**R15 — « 1 spire doit donner environ 150 MeV ; 3/4 de spire, presque rien. »**
+→ `closure_law.py`, 9/9. Les deux ancrages : fermer le dernier quart de tour multiplie la masse par
+~290 et, sous m ∝ 1/R, rétrécit la boucle de 386 fm à 1,3 fm : l'électron est immense parce qu'il
+est ouvert. Mais « 150 MeV par spire fermée » ne construit pas μ et τ : en additionnant les spires
+fermées, μ = 150 MeV (+42 %) et τ = 300 MeV (6 fois trop léger) ; en les multipliant par 290,
+τ = 44 GeV ; une exponentielle en fraction de fermeture donne des TeV. Seule la loi de puissance
+des chaînes ouvertes, (n/3)^{2π}, atteint μ et τ (1 %). **L'objet réel « une spire fermée d'environ
+150 MeV » est le pion** : un anneau fermé de 4 cordes (2+, 2−) est neutre, c'est le π⁰ à 135,0 MeV ;
+un anneau fermé de 5 cordes (1+, 4−) a la charge −1, c'est le π⁻ à 139,6 MeV ; parité de n et
+charge concordent. La fermeture est donc la première variable : une chaîne ouverte de 5 pèserait
+12,8 MeV sur la loi des leptons, un anneau fermé de 5 pèse 140 MeV. La masse n'est pas une fonction
+de n seul. Deux lois à expliquer : chaînes ouvertes, m = m_e (n/3)^{2π} ; anneaux fermés, ~140 MeV,
+presque indépendants de n entre 4 et 5.
