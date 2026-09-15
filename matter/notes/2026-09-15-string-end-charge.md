@@ -99,5 +99,36 @@ into a side-by-side pair only when the charges are opposite (the DQD). What the 
 give is the pole strength `δ`: "intrinsic poles" are stated, not quantified; `δ/q ≥ 0.3` is the
 condition for like-charge strings to chain at all.
 
+## 7. The author's mechanism — mother, breaking, circulation, poles
+
+Script: `../scripts/pole_from_circulation.py`, 7/7 PASS. Stated by the author: *a charged particle
+always comes from a mother particle that also contained its antiparticle; the breaking gave
+opposite senses of rotation, which polarised the fluid at opposite extremities (+/−).*
+
+In the model's terms, each clause is already in place or now computed:
+
+| clause | model | status |
+|---|---|---|
+| mother containing particle and antiparticle | the DQD: forward branch and return branch, opposite circulation, `±e/3` | manuscript l. 286 |
+| the breaking | unpairing, 0.47 keV | §3, derived |
+| opposite senses of rotation give opposite signs | the chirality rule of the catalogue; at a cut, charge conservation makes the two new ends opposite | manuscript; derived |
+| circulation polarises the fluid at the ends | the standing wave of the string's own mode, `V(s) = V₀cos(πs/ℓ)`: the two ends at opposite potential — the poles | computed |
+
+**The poles, quantified.** One quantum of the fundamental on an open string of impedance `Z` has end
+charges `δ = √(4ℏ/πZ)`, i.e. `δ/e = √(2R_K/π²Z)` with `R_K = h/e² = 25.8 kΩ`. For the electron's
+string (`Z_e = 275 Ω`, one per cent of `R_K`): **`δ ≈ 4 e`** (zero-point `≈ 3 e`) — a low-impedance
+string carries *large* charge per quantum. So the poles are not the fluid's `e/3`: they are
+thirteen times larger, and `e/3` stays the fluid's net charge, a separate quantity (an end charge
+of `e/3` would need `Z ≈ 47 kΩ = 125 Z₀`). The chaining threshold of §6, `δ/q ≥ 0.28`, is met with
+a margin of 45: like-charge strings chain and close into rings easily.
+
+**Caveats.** A DC pile-up relaxes in a conductor; the poles are the antinodes of the mode, and the
+`+/−` pattern is the phase fixed at the cut. And one quantum on a *lone* open string of `ℓ₁` costs
+`πℏc/ℓ₁ = 0.77 MeV = 1.5 m_ec²`: the poles must be the junction standing waves of the closed
+3-string ring (whose mode is the anchor `ℏc/R₃`), where `Γ_pole = 1/3` sets the reflected fraction.
+
+**Status:** the mechanism is CONSISTENT with V2.10 and supplies the pole strength the manuscript
+stated without quantifying. What it does not do is fix the fluid's `e/3`.
+
 **Must respect:** `CONSTRAINTS.md` §2 (a divergence source is required: here the unpaired
 branch), §1b, §9.
