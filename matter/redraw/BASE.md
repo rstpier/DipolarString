@@ -351,3 +351,23 @@ contenu égal, l'écart Δ − N de 294 MeV serait une différence de forme.
 - Un mécanisme pour les quarks et les nucléons : 98 % de la masse est de la liaison, et les
   « 4 modes de r_p » n'ont pas d'origine.
 - Le −1 sous 2π (statistique d'échange) et la courbure de déplacement (R7).
+
+**R21 — « Un milieu avec plein de topologies, plein de familles de particules à morphologies
+différentes ? »** (question de l'auteur)
+→ Pas de nouveau calcul ; lecture de R1–R20. C'est ce que la base dit maintenant : un seul milieu
+(le DQD, avec c₀ et Z₀) et une forme par famille :
+
+| forme | famille | loi de masse trouvée | nombre propre à la forme | lien avec une autre famille |
+|---|---|---|---|---|
+| chaîne ouverte, n cordes | leptons | m_e (n/3)^{2π} | l'exposant 2π, les n = 3, 7, 11 | — |
+| anneau fermé | pions | 2m_ec²/α = 140,05 MeV | le rayon r_e/2 | m_e et α : l'anneau est pesé par l'électron |
+| étoile (Y) | quarks, nucléons | 4ℏc/r_p (coïncidence) | r_p | aucun : r_p n'est pas exprimé dans la base |
+| nappe (section) | toutes | — | w = d par Z₀ | δ = e/(π√α) commun à toutes les formes |
+| proton + boucle | neutron | joint 0,78 MeV net | — | R = 0,9–1,0 fm tenu par μ_n et ⟨r²⟩_n |
+
+C'est l'image de Wen (un condensat, les particules sont des façons de nouer la même corde) ; Wen
+non plus ne dérive pas les masses, ce sont les gaps de son hamiltonien. **Le critère** : tant que
+chaque forme a son nombre propre, c'est un catalogue ; le milieu n'explique une famille que quand
+une de ses grandeurs sort des constantes d'une autre sans nombre neuf. La base a un tel lien
+(anneau ← électron, 0,3 %), un demi-lien (boucle du neutron ← proton, 9 %), et aucun pour l'étoile :
+r_p (ou l'exposant 2π) exprimé avec m_e, α, Z₀ serait le test qui fait du milieu une théorie.
