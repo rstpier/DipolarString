@@ -401,3 +401,25 @@ cordes de l'anneau π⁺ ; neutron = (2+, 2−), les cordes de l'anneau π⁰. M
 différente : m_p/m_π⁺ = 6,72, m_n/m_π⁰ = 6,96 ; dans les deux lectures de la base (anneau à r_e/2,
 étoile à 4 modes de r_p) le rapport vaut 2r_e/r_p = 6,70, le même nombre ouvert que r_p. La
 question devient : pourquoi les mêmes cinq cordes pèsent 140 MeV en anneau et 938 MeV en étoile.
+
+**R24 — « C'est la masse de jonction : plus il y a de connexions sur une jonction, plus l'espace
+lui accorde d'inertie. »**
+→ `junction_valence.py`, 6/6. **La loi existe dans la base, mais elle est linéaire et plafonnée** :
+dans la loi de Coulomb, une jonction équilibrée à k pôles lie comme ⌊k/2⌋ paires (k = 2 et 3 : une
+paire ; 4 et 5 : deux ; 6 et 7 : trois) ; le pôle impair n'ajoute rien (frustration, R22). DÉRIVÉ.
+**Ce qu'elle exclut** : la lecture à un seul centre (proton = 5 cordes sur un nœud, neutron = 4)
+donne deux centres égaux, donc p = n + une corde + son Coulomb, le proton serait le plus lourd ;
+observé : le neutron l'est de 1,29 MeV. **Ce qu'elle permet** : u = paire (2+, une jonction k = 2),
+d = Y (1+, 2−, un centre k = 3, égal à k = 2 sous la loi) ; alors p = uud = 7 cordes (5+, 2−),
+n = udd = 8 (4+, 4−), charges et parités justes, **et les anneaux de R15 ressortent du contenu en
+quarks** : π⁺ = ud̄ = (4+, 1−), π⁻ = dū = (1+, 4−), π⁰ = uū = (2+, 2−). Le neutron a une corde de
+plus que le proton : plus lourd, bon signe ; avec la part Coulomb du proton (~1,0 MeV) la corde
+supplémentaire pèse 2,3 MeV à l'échelle du nucléon. **Ce qu'elle ne fait pas** : l'anneau du pion
+(jonctions k = 2 seulement) pèse son mode, 140 MeV ; les ~930 MeV du baryon devraient siéger dans
+son centre, alors que le centre Y du d, de même valence, pèse moins de 2,3 MeV : même k, masse 400
+fois différente. À 2 MeV la paire, la loi linéaire demanderait ~930 connexions ; une jonction de
+Coulomb n'atteint 930 MeV qu'à s = 1,5 am (pôles unitaires) ou 21 am (pôles adaptés). Et les
+mésons légers atteignent la masse du proton sans aucun centre (η′ 958, a₀ 980) ; ρ/π = 5,55 à
+contenu et topologie égaux, contre p/π⁺ = 6,72 : un facteur 5 à 7 naît dans une seule topologie,
+donc le rapport anneau/étoile ne mesure pas une jonction. **Verdict** : la valence n'est pas la
+variable, l'échelle l'est ; ce qui manque reste ce qui fixe la taille du centre.
