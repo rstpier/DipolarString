@@ -390,3 +390,14 @@ libres, nombre impair : un pôle ne s'apparie jamais ; un méson (Y + anti-Y, 6 
 complètement. **Verdict** : la tri-jonction est une bonne image de la force nucléaire (MeV), pas
 de l'interaction forte qui pèse le nucléon (centaines de MeV) ; et « n = 3 en Y » ne fait que les
 quarks de charge −1/3.
+
+**R23 — Le critère de R21 appliqué à l'étoile : r_p sort-il des constantes de la base ?**
+→ `proton_radius_search.py`, 3/3. Expressions simples les plus proches de r_p = 0,8409(4) fm :
+3r_e/10 (+0,5 %, 11 σ), 3r_e/π² (+1,9 %, le rapport d'aspect de la nappe), r_e/π (+6,7 %). Recherche
+systématique (ƛ_e ou r_e × α^k × π^j × p/q × facteur d'échelle (n/3)^{2π}, 7590 candidats) : aucun
+candidat à ±0,1 %, moins que les ~3 coups de hasard attendus. **r_p n'est pas dérivé ; l'étoile
+garde son nombre propre.** Ce que la règle de parité dit du contenu : proton = (4+, 1−), les
+cordes de l'anneau π⁺ ; neutron = (2+, 2−), les cordes de l'anneau π⁰. Mêmes cordes, forme
+différente : m_p/m_π⁺ = 6,72, m_n/m_π⁰ = 6,96 ; dans les deux lectures de la base (anneau à r_e/2,
+étoile à 4 modes de r_p) le rapport vaut 2r_e/r_p = 6,70, le même nombre ouvert que r_p. La
+question devient : pourquoi les mêmes cinq cordes pèsent 140 MeV en anneau et 938 MeV en étoile.
