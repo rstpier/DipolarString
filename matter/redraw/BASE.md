@@ -423,3 +423,18 @@ mésons légers atteignent la masse du proton sans aucun centre (η′ 958, a₀
 contenu et topologie égaux, contre p/π⁺ = 6,72 : un facteur 5 à 7 naît dans une seule topologie,
 donc le rapport anneau/étoile ne mesure pas une jonction. **Verdict** : la valence n'est pas la
 variable, l'échelle l'est ; ce qui manque reste ce qui fixe la taille du centre.
+
+**R25 — Ce qui fixe la taille du centre : le mécanisme de taille de la base (spin + moment)
+appliqué au nucléon.** (suite de R24)
+→ `nucleon_moments.py`, 5/5. Avec le fluide à c sur un anneau (S = R·E/c = ℏ/2, μ = qcR/2,
+g = mc²/E_circ) : **la charge e entière sur un anneau**, μ_p fixe R = 2,79 ƛ_p = 0,587 fm (0,70 r_p)
+et g_p = 5,586 signifie que 18 % de l'énergie du proton circule, 82 % est statique au centre
+(électron : 50/50). **Le contenu de R24 sur deux anneaux** (cordes + à R₊, cordes − à R₋, mêmes
+rayons pour p et n puisque même graphe) : μ_p et μ_n donnent R₊ = 3,75 ƛ_p = 0,789 fm (−6 % vs r_p)
+et R₋ = 5,19 ƛ_p = 1,09 fm : les cordes négatives circulent à l'extérieur, comme la peau négative
+du neutron l'exige ; deux données, deux inconnues, R₊ proche de r_p est le seul contenu. Les mêmes
+anneaux comme charge statique échouent (r_p à 0,50 fm, ⟨r²⟩_n 6,5 fois trop négatif) : les moments
+placent le fluide, pas la charge (R5 : charge aux pôles, courant sur l'arc). Le spin ℏ/2 sur
+l'anneau + fait circuler 125 MeV, 13 % du proton. **Non fixé** : les 87 % statiques (~810 MeV) du
+centre ; la moitié statique de l'électron venait de g = 2, le g du nucléon dit seulement combien
+circule. La taille du centre reste le nombre manquant.
