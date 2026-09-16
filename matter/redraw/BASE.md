@@ -312,3 +312,42 @@ opposés. L'étoile de la base n'a donc pas de taille propre ; seul S = R·E/c =
 pour l'électron, R = ƛ/f avec f = 1/4 pour le proton. **R6 sur l'étoile** (enregistré, non testé) :
 étoile symétrique à 3 bras, 3 axes → spin 3/2 (Δ) ; un bras différent, 1 axe → spin 1/2 (N) : à
 contenu égal, l'écart Δ − N de 294 MeV serait une différence de forme.
+
+---
+
+## Bilan au 16 septembre 2026 (R1–R20, 20 scripts, tous PASS)
+
+**Ce qui tient (dérivé dans la base, script à l'appui).**
+- Le fluide à c₀ sur une boucle de rayon R = ƛ/f donne S = ℏ/2 et μ = μ_B exactement ; g = mc²/E_mode,
+  donc g = 2 ⇔ la moitié de l'énergie de repos est statique (rod_z0, massless_fluid, g_bookkeeping).
+- Pas de rayonnement seulement pour un anneau stationnaire uniforme (no_radiation).
+- La charge est la branche non appariée : q = (n₊ − n₋)e/3, la parité de n fixe la classe
+  (ring_catalogue, fermion_table) ; la règle ne voit pas la topologie (quark_star).
+- L'échelle des leptons m = m_e (n/3)^{2π} pour n = 3, 7, 11 : μ à −0,8 %, τ à +1,0 %, exposant
+  non ajusté (lepton_ladder).
+- L'anneau fermé pèse 2m_ec²/α = 140,05 MeV : π± à 0,34 %, avec la bonne parité de charge
+  (closure_law, closed_ring_scale).
+- Adaptation à Z₀ : section carrée, pôle e/(π√α) = 3,73 e, jonction ℏc/(π²s), famille
+  auto-similaire w/R = 3/π² (sheet_matched).
+- Neutron = proton + chaîne d'électron + un joint : la boucle négative doit avoir R = 0,99 fm
+  pour μ_n et 0,91 fm pour le rayon de charge, deux tests indépendants à 9 % (nucleon_joint).
+- Coïncidence enregistrée : m_p c² = 4ℏc/r_p à 0,05 % (quark_star).
+
+**Ce qui ne tient pas (exclu par le calcul).**
+- Nucléons et quarks ne sont pas sur l'échelle des leptons (quarks à 12–169 %, proton à 509 ou
+  1795 MeV) ; la paire p–n (0,14 %) ne peut pas être deux barreaux (82 %).
+- Les masses additives (spires + jonctions calibrées sur l'électron) n'atteignent ni μ ni τ.
+- « Un joint = un nombre » : 1,3 MeV au nucléon, 4,6 MeV au pion, 0,3 à 8 MeV sur l'isospin.
+- La nappe adaptée ne peut pas être mince et porter la moitié statique : mode transverse à 4 MeV
+  pour l'électron, non observé.
+- La corde s'allège en s'allongeant (mode et Coulomb en 1/L) : pas de confinement, aucune taille
+  propre ; seul le spin fixe R.
+- g = 2 ⇔ ρ = 1/3 : retiré (g ne dépend pas de ρ).
+
+**Ce que la base doit encore fournir.**
+- Pourquoi l'exposant 2π, pourquoi n = 3, 7, 11 et pas 5, 9 (pas de 4 cordes, LEP exclut 15 et 19).
+- Ce qui épingle l'anneau fermé à r_e/2.
+- Où vit l'onde (R11), le fluide sans masse, où siège la moitié statique.
+- Un mécanisme pour les quarks et les nucléons : 98 % de la masse est de la liaison, et les
+  « 4 modes de r_p » n'ont pas d'origine.
+- Le −1 sous 2π (statistique d'échange) et la courbure de déplacement (R7).
