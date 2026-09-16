@@ -371,3 +371,22 @@ chaque forme a son nombre propre, c'est un catalogue ; le milieu n'explique une 
 une de ses grandeurs sort des constantes d'une autre sans nombre neuf. La base a un tel lien
 (anneau ← électron, 0,3 %), un demi-lien (boucle du neutron ← proton, 9 %), et aucun pour l'étoile :
 r_p (ou l'exposant 2π) exprimé avec m_e, α, Z₀ serait le test qui fait du milieu une théorie.
+
+**R22 — « Si les quarks sont n = 3 en Y, ça explique l'interaction forte (une tri-jonction) avec
+3 pôles libres à 1/3. »**
+→ `quark_y.py`, 5/5. **La charge d'abord** : un Y de trois cordes porte q ∈ {±1/3, ±1} ; d, s, b
+(−1/3) y tiennent, u, c, t (+2/3) n'y tiennent pas, +2/3 exige un nombre pair de cordes ; aucun
+découpage du proton (6+, 3−) en trois Y(3) ne donne (2/3, 2/3, −1/3), seulement (1/3, 1/3, 1/3),
+(1, 1/3, −1/3) ou (1, 1, −1). La proposition couvre la moitié des quarks. Ce que la parité permet :
+u = 2 cordes (2+) ou 4 (3+, 1−) ; d = 1 corde (1−) ou 3 (1+, 2−) ; proton = 5 cordes (4+, 1−) ou
+11 ; neutron = 4 (2+, 2−) ou 10. **La tri-jonction ensuite** : trois pôles en un point contiennent
+au moins une paire de même signe (frustration) ; (+,+,−) lie exactement comme une paire, −Kδ²/s,
+et (+,+,+) repousse. Une tri-jonction vaut donc une jonction : 2 MeV à 0,72 fm avec des pôles
+unitaires (R20). C'est l'échelle de la force nucléaire résiduelle (deutéron 2,22 MeV), pas du
+confinement (300 MeV par quark constituant, 0,9 GeV par fm de corde Y) : rapport 150 à 450. Avec
+des pôles libres de e/3, le lien vaut K/(9s) = 0,16 MeV à 1 fm et n'atteint 2 MeV qu'à 0,08 fm,
+14 fois trop faible pour le deutéron aux distances nucléaires. Enfin trois Y(3) exposent 9 pôles
+libres, nombre impair : un pôle ne s'apparie jamais ; un méson (Y + anti-Y, 6 pôles) s'apparie
+complètement. **Verdict** : la tri-jonction est une bonne image de la force nucléaire (MeV), pas
+de l'interaction forte qui pèse le nucléon (centaines de MeV) ; et « n = 3 en Y » ne fait que les
+quarks de charge −1/3.
