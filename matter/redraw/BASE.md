@@ -438,3 +438,23 @@ placent le fluide, pas la charge (R5 : charge aux pôles, courant sur l'arc). Le
 l'anneau + fait circuler 125 MeV, 13 % du proton. **Non fixé** : les 87 % statiques (~810 MeV) du
 centre ; la moitié statique de l'électron venait de g = 2, le g du nucléon dit seulement combien
 circule. La taille du centre reste le nombre manquant.
+
+**R26 — « Cherche ce qui fixe les 810 MeV du centre. Peut-être l'entreposage des bouts de deux
+cordes, qui empêche leur séparation. »**
+→ `centre_search.py`, 5/5. Cible : E_s = m_p − E_circ = 813 MeV (R25). **Ce que la base offre tombe
+en 1/L** : une cavité entre deux bouts entreposés (mode ℏcπ/ℓ) donne 813 MeV à ℓ = 0,763 fm = R₊
+à 3 %, c'est le mode transverse de la nappe (R17) à la largeur du nucléon ; bonne échelle, mauvais
+signe, car une énergie en 1/L baisse quand les bouts s'écartent (−461 MeV pour 1 fm) : elle ne
+peut pas empêcher la séparation. Le coût d'une coupure (deux pôles adaptés neufs, 2ℏc/(π²w)) fait
+813 MeV à w = 0,049 fm, sans rien qui fixe w. **La seule énergie qui croît avec la séparation** :
+le flux du pôle confiné dans la nappe (tube de flux). Avec le pôle adapté δ = e/(π√α), la tension
+vaut σ = δ²/(2ε₀A) = 2ℏc/(πA) ; pour un tube de rayon ƛ_p, **σ = 2(m_pc²)²/(π²ℏc) = 904 MeV/fm,
+soit √σ = (√2/π)·m_pc² = 422 MeV, dans la fourchette du réseau (420–440 MeV)** ; 813 MeV est alors
+0,90 fm de tube (σ·r_p = 760 MeV, −6,5 % ; ou un Y de trois bras de 0,30 fm) ; écarter les bouts
+de 1 fm coûte +904 MeV. CONDITIONNEL : la ligne conductrice de la base étale la charge d'un pôle le
+long d'elle (énergie en 1/L) ; garder le flux dans la nappe est une règle nouvelle (Wen,
+supraconducteur dual), et le rayon ƛ_p est la longueur propre du proton, donc σ tiré de m_p est
+une relation de cohérence, pas une dérivation de m_p. Réserve : un anneau de pion (140 MeV) paie
+0,15 fm de tube, un tube de 0,9 fm en vaut six ; il faut une règle qui interdit la rupture (en
+QCD la paire coûte ~1 GeV et la corde casse vers 1,2 fm). **L'entreposage de l'auteur, lu comme
+« le flux des deux bouts reste dans la nappe », a la bonne échelle et le bon signe.**
