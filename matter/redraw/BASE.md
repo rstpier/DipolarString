@@ -502,3 +502,22 @@ règle de parité (u pair, d impair) et l'identité « p porte les cordes du π�
 condition de spin de la base, un neutrino sous 0,8 eV mesure au moins 123 nm. **Verdict** : la
 corde neutre donne la structure (charges exactes, couleur, 9 brins pour p et n, générations en
 DQD neutres) et ne donne toujours pas les masses ; R1 doit dire ce qu'est une corde sans charge.
+
+**R29 — « Teste la règle : les brins chargés portent le mode. Qu'est-ce que le mode ? »**
+→ `mode_rule.py`, 6/6. **Le mode** : le fluide court à c le long de la corde et se réfléchit aux deux
+pôles ; l'onde stationnaire d'une demi-longueur d'onde entre les pôles est le mode, d'énergie
+E = ℏcπ/ℓ_arc. Pour l'électron (3/4 de tour à R = 4ƛ/3) l'arc vaut 2πƛ = 2426 fm et E_mode =
+m_ec²/2 exactement : la moitié qui circule (g = 2), l'autre moitié est statique aux pôles ; par
+corde, 809 fm, le ℓ₁ = 2πR₃/3 de la base. Loi d'échelle tirée de l'échelle des leptons :
+ℓ₁(n) = ℓ₁(3)(3/n)^{2π}, soit 3,94 fm au muon, 0,23 fm au tau, et ℓ₁(9) = 0,813 fm = r_p à 3 %
+(coïncidence enregistrée). **La règle** : e, μ, τ inchangés (trois brins chargés, arc 3ℓ₁(n)) ; le
+neutrino n'a pas d'arc chargé, donc pas de mode, m = 0 (< 0,8 eV). Nucléons au compte n = 9 :
+mode du proton sur 5 brins chargés = 153 MeV, du neutron sur 4 = 191 MeV ; la part de mode propre
+à la base, m/|g|, vaut 168 (p) et 246 (n) MeV : −9 %, −22 %, et l'ordre n > p est bon ; les
+~700–800 MeV statiques du centre sont hors de la règle. Pions au compte n = 6 : ℓ₁ = 10,4 fm et un
+mode de 20 MeV pour le π⁺, contre les 140 MeV de l'anneau fermé (R16) : la fermeture fixe sa
+propre échelle, la loi de compte ne vaut pas pour les anneaux. **Comme loi de masse** (chaque brin
+chargé son mode) : à n = 3, u = 0,34 et d = 0,17 MeV, mauvais ordre (il faut m_d − m_u = +2,3 MeV) ;
+à n = 9, p = 848 MeV (−10 %) et n = 678 (−28 %), mauvais ordre. **Verdict** : loi de mode à 10–20 %
+(leptons, neutrino nul, part circulante des nucléons), pas loi de masse ; ce qui pèse le hadron
+reste le centre statique.
