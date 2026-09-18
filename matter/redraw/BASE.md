@@ -481,3 +481,24 @@ et fait u = (+,+,0), d = (−,0,0), e = (−,−,−) avec trois brins ; la règ
 fluide à pôles sans charge nette) permettrait à la base de construire chaque quark comme une
 tresse à trois brins, comme BT. Verdict : l'entremêlage verrouille (réseau fermé) et lie (mode
 plus bas), il ne pèse pas ; les 813 MeV restent au tube de flux de R26.
+
+**R28 — « Teste la corde neutre : refais les quarks à 3 brins. »**
+→ `three_strand.py`, 7/7. Brins à {−1/3, 0, +1/3}, trois brins par fermion. **Ce que la corde neutre
+achète** : (1) le spectre de charge exact, {0, ±1/3, ±2/3, ±1} et rien d'autre, alors que la règle
+des chaînes autorisait ±4/3 (n = 4) et ±5/3 (n = 5), jamais observés ; (2) e⁻ = (−,−,−), ν = (0,0,0),
+u = (+,+,0), d = (−,0,0), antiparticules par changement de signe ; **la couleur = la position du
+brin impair** : u et d ont 3 arrangements, e et ν un seul ; (3) p = uud = (4+, 1−, 4×0) et
+n = udd = (2+, 2−, 5×0), **tous deux 9 brins** (même compte, ce que p ≈ n exigeait) ; π⁺ = (3+, 3×0),
+π⁻ = (3−, 3×0), π⁰ = (2+, 2−, 2×0), 6 brins ; Δ⁺⁺ = (6+, 3×0) = +2 ; un baryon est incolore quand
+ses trois brins impairs occupent trois positions différentes (6 arrangements sur 27) ; (4) l'échelle
+des leptons se relit : μ = e + 4 brins neutres (7), τ = e + 8 (11), **le pas de génération est
+quatre brins neutres, deux DQD neutres**, la mère de R3. **Ce qu'elle coûte** : le neutrino (0,0,0)
+à n = 3 pèserait m_e sous m = m_e(n/3)^{2π}, 6·10⁵ fois la limite KATRIN (0,8 eV) ; seule la règle
+« les brins chargés portent le mode, le compte total fixe l'échelle » garde ν ≈ 0 avec e, μ, τ
+inchangés (POSTULÉ). p et n ayant le même compte, l'argument de R24 (une corde de plus) tombe, et
+m_d − m_u = (m_n − m_p) + 1,0 MeV (EM) = 2,3 MeV (réseau : 2,5) exige que le d, avec un seul brin
+chargé, pèse plus que le u qui en a deux : la masse n'est pas un compte de brins. Tombent aussi la
+règle de parité (u pair, d impair) et l'identité « p porte les cordes du π⁺ » (R23). Sous la
+condition de spin de la base, un neutrino sous 0,8 eV mesure au moins 123 nm. **Verdict** : la
+corde neutre donne la structure (charges exactes, couleur, 9 brins pour p et n, générations en
+DQD neutres) et ne donne toujours pas les masses ; R1 doit dire ce qu'est une corde sans charge.
