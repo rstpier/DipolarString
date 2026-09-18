@@ -458,3 +458,26 @@ une relation de cohérence, pas une dérivation de m_p. Réserve : un anneau de 
 0,15 fm de tube, un tube de 0,9 fm en vaut six ; il faut une règle qui interdit la rupture (en
 QCD la paire coûte ~1 GeV et la corde casse vers 1,2 fm). **L'entreposage de l'auteur, lu comme
 « le flux des deux bouts reste dans la nappe », a la bonne échelle et le bon signe.**
+
+**R27 — « Entreposage = entremêlage. »** (les bouts de deux cordes sont enroulés l'un autour de
+l'autre, ce qui empêche leur séparation)
+→ `entanglement.py`, 5/5. **Topologie** : le nombre d'enlacement de deux bouts entremêlés n'est
+conservé que si les quatre bouts sont tenus (réseau fermé) ; une paire isolée se déroule par
+rotation libre. Le verrou appartient donc au réseau, pas à la paire : un quark isolé ne tient
+aucune torsade (cohérent avec « pas de quark libre »). **Énergie de mode** : pour une paire torsadée
+à longueur axiale fixe 0,90 fm (le tube de R26) et rayon d'hélice ƛ_p, la longueur d'arc croît avec
+les tours et le mode ℏcπ/s baisse (1 tour : −302 MeV ; 2 tours : −467 ; limite −690 = ℏcπ/ℓ) :
+l'enroulement est spontané et le déroulement, nécessaire pour séparer, coûte jusqu'à 690 MeV.
+Bon ordre de grandeur, mais c'est une **liaison** : la torsade tient les bouts, elle ne stocke pas
+les 813 MeV. **Dual magnétique** : le fluide enroulé est un solénoïde de conducteur parfait, son
+flux est conservé, et l'étirer à flux par tour fixe coûte σ_B = Φ₁²/(2μ₀A) ; avec un quantum h/e
+par tour dans un tube de rayon ƛ_p, σ_B = (π²/4α)·σ_E = 338 × 904 MeV/fm = 306 GeV/fm ; pour
+retrouver le réseau il faudrait un tube de 3,9 fm (plus grand que le proton) ou un flux de
+0,054 h/e. Bon signe, mauvaise échelle : c'est le tube électrique de R26 qui tombe juste, et
+σ_E = σ_B exige Φ = Z₀δ = (2√α/π)·h/e, qui n'est pas un quantum de flux. **Tresses** : trois bras
+entremêlés sont une tresse à trois brins (Bilson-Thompson) ; BT donne à ses brins {−1/3, 0, +1/3}
+et fait u = (+,+,0), d = (−,0,0), e = (−,−,−) avec trois brins ; la règle de la base (toute corde
+±1/3) ne fait pas +2/3 à trois cordes (R22). **Une corde neutre** (la question ouverte de R1 : un
+fluide à pôles sans charge nette) permettrait à la base de construire chaque quark comme une
+tresse à trois brins, comme BT. Verdict : l'entremêlage verrouille (réseau fermé) et lie (mode
+plus bas), il ne pèse pas ; les 813 MeV restent au tube de flux de R26.
