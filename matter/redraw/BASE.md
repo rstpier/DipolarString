@@ -1207,3 +1207,23 @@ fille, R4) : des poids égaux donnent 45° exactement pour tout azimut ; l'azimu
 du doublet, dynamique, et 2/9 reste à produire. **Verdict** : dans la lecture cubique le 45° devient
 « un quantum dans le singulet, un dans le doublet » (conditionnel), et les deux règles manquantes
 se réduisent à une : ce qui fixe la phase du doublet à 2/9.
+
+**R63 — « Cherche ce qui fixe la phase du doublet à 2/9. »**
+→ `doublet_phase.py`, 5/5. **L'invariant** : θ = 2/9 modulo le secteur Z₃ de 2π/3, soit 12,73°, ou
+1/(3π) du secteur ; le signe et le bras de référence sont des conventions. **Route de Berry**
+(phase A) : par pas de génération dans le canal writhe, la phase de Berry du doublet vaut a × 2π/3,
+soit 0,390 rad à a(3) = 0,186 et 0,689 à a(4) ; 2/9 demanderait a = 1/(3π) = 0,106, qu'aucun compte
+de brins ne donne (a(2) = 0, a(3) = 0,186) : exclue. **Route dynamique**, θ = E·t/ℏ sur les énergies
+et les temps de la base : deux identités exactes, (i) **l'énergie d'une jonction, m_ec²/6 (R54 :
+trois jonctions portent la moitié statique), pendant un radian d'orbite au rayon du 3/4 de tour,
+t = (4ƛ/3)/c : (1/6)(4/3) = 2/9**, l'anatomie propre de l'électron ; (ii) l'énergie de Coulomb de deux
+charges q₁q₂ à r_e pendant un temps de Compton, q₁q₂ = 2/9 pour u × d ou pour deux paires de branches
+de DQD (R60, mis de côté mais listé). Toutes deux sont des rationnels exacts par construction ;
+aucune ne vient avec une règle qui apparie cette énergie et ce temps ; le produit le plus proche
+ensuite, la moitié statique pendant la traversée du ruban w/c, manque de 9 %. **Route des
+longueurs** (un angle comme arc/rayon) : le rapport le plus proche est le rayon du 3/4 de tour sur
+la circonférence, 2/(3π) = 0,212 (−4,5 %) ; rien à moins de 4 % : exclue. **Verdict** : la base peut
+écrire 2/9 exactement comme « l'énergie d'une jonction pendant un radian de l'orbite du fluide »
+ou comme un produit de charges ; elle n'a pas de règle qui fasse de l'une ou l'autre la phase du
+doublet. La prochaine règle à trouver : pourquoi la phase du doublet est la phase dynamique d'une
+jonction sur un radian.
