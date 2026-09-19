@@ -521,3 +521,23 @@ chargé son mode) : à n = 3, u = 0,34 et d = 0,17 MeV, mauvais ordre (il faut m
 à n = 9, p = 848 MeV (−10 %) et n = 678 (−28 %), mauvais ordre. **Verdict** : loi de mode à 10–20 %
 (leptons, neutrino nul, part circulante des nucléons), pas loi de masse ; ce qui pèse le hadron
 reste le centre statique.
+
+**R30 — Creuser R1 : que fait le champ du pôle dans la nappe ? Le tube de flux de R26 est-il dans la
+base ?** (suite de « Oui »)
+→ `r1_field.py`, 5/5. **Ce que la base confine déjà** : la ligne bifilaire (D/r = 2 cosh π) garde
+92 % de l'énergie de son champ transverse dans un rayon D et 99 % dans 3D, densité en 1/ρ⁴ au-delà :
+le champ du fluide polarisé reste sur la ligne sans règle nouvelle, la ligne est sa propre nappe.
+**Mais ce champ confiné ne donne une tension que si la charge par unité de longueur est fixe** :
+avec e/3 par corde et une longueur libre, U = (e/3)²/(ε₀ℓ) = 4πK/(9ℓ) tombe en 1/ℓ, pas de
+tension ; à la longueur fixée ℓ₁(9) = 0,81 fm, chaque corde stocke 2,47 MeV (la « corde de plus »
+de R24/R29 à 2,3 MeV, +8 %), soit une tension de 3,0 MeV/fm, 300 fois sous le réseau. **Le pôle** :
+un monopôle dans un tube conducteur de rayon ƛ_p est écranté, pas canalisé ; son champ décroît en
+exp(−2,405 z/a), éteint en 0,09 fm, énergie locale ~Kδ²/a ≈ 95 MeV ; le flux ne parcourt jamais les
+0,9 fm du tube de R26. **Ce qu'exigerait la tension du réseau** : une charge linéique fixe de
+7,1 e/fm, c'est-à-dire des cordes de e/3 longues de 0,047 fm (19 par 0,9 fm), que l'échelle place à
+n = 14 brins et non 9 ; ou un courant fixe de 4,8·10⁵ A, 13 fois le e·c/(2πƛ_p) de la base.
+**Verdict** : la base ne peut pas tenir à la fois « e/3 par corde de longueur libre » et une
+tension de tube de flux ; un fluide conducteur écrante le pôle au lieu de le canaliser ; R26 n'est
+pas un mécanisme de la base telle qu'écrite. Les ~800 MeV du centre restent sans mécanisme ; la
+seule piste chiffrée est une charge linéique fixe (R1 : le fluide aurait une densité de charge
+propre, pas une charge par corde).
