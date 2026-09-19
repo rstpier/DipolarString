@@ -1123,3 +1123,22 @@ l'analogue à trois leptons du « moitié circulante, moitié immobile » de g =
 dérivation. **Verdict** : 2/9 est exact et égal au produit des charges u et d, mais aucune règle de
 la base ne transforme un produit de charges en azimut du cercle des générations ; le mécanisme
 cherché doit produire à la fois le 45° et le 2/9.
+
+**R59 — « Cherche ce qui produit le 45° et le 2/9. »**
+→ `koide_mechanism.py`, 5/5. **Le 45° traduit en inclinaison physique** : si un vecteur L incliné
+de β par rapport à l'axe ternaire donne √m_k = L[cos β + sin β·cos(θ + 2πk/3)] (sa part axiale plus
+sa projection sur le bras k), le vecteur des racines de masse fait avec la diagonale un angle de
+tangente tan β/√2 ; le 45° de Koide est donc tan β = √2, **β = 54,74°, l'angle entre la diagonale
+d'un cube et son arête** (cos β = 1/√3). La section de la base est un carré (w = d, R17) :
+l'inclinaison « diagonale du cube » est native de sa géométrie. **Les azimuts** des trois leptons sur
+le cercle de Koide : le tau à 12,73° = 2/9 rad du bras de référence, le muon à +120°, l'électron à
++240° : le lepton le plus lourd est décalé de 2/9 rad d'un bras. **2/9 rad n'est pas un angle
+géométrique** : aucun arctan, arcsin ou multiple rationnel de π de petits entiers n'y tombe
+(arctan(2/9) à −1,6 %, arcsin(2/9) +0,8 %, π/14 +1 %) alors que les données le fixent à 10⁻⁵ ; un
+nombre rationnel de radians est une phase, dynamique, pas une forme. **Ce que la base offre pour la
+phase** : |q_u·q_d| = (2/3)(1/3) = 2/9 exactement ; l'échelle (3, 7, 11, 2π) donne 0,2200 rad (1 %) ;
+rien d'autre. Une phase égale à un produit de charges se lirait « l'angle accumulé par un tour d'une
+charge 1/3 entraînée par une charge 2/3 » : une phrase, pas une règle. **Verdict** : le 45° a un
+logement dans la base (un vecteur le long de la diagonale du cube du milieu à section carrée) ; le
+2/9 est une phase dynamique que la base ne produit pas encore, numériquement le produit u × d.
+Il manque deux règles, pas une : ce qui est incliné à la diagonale, et ce qui accumule 2/9 rad.
