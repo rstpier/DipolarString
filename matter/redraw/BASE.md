@@ -676,3 +676,18 @@ l'identification D ou D/2 près, soit ±15 % sur σ. **Forme fermée** avec ln(b
 440, −8 à −12 %) ; avec b = D/2, 439 MeV. La tension forte s'écrit avec m_e et l'exposant 2π seuls,
 sans α ni Z₀ (ils s'annulent entre δ et l'adaptation). Verdict : DÉRIVÉ à 15 % près ; ce qui reste
 est de dire si la charge enroulée voit sa partenaire à D ou à D/2.
+
+**R37 — « Cherche si la charge enroulée voit sa partenaire à D ou à D/2. »**
+→ `partner_distance.py`, 5/5. Tranché par l'électrostatique de la paire elle-même : deux fils ±λ de
+rayon r à l'écartement D stockent (λ²/2πε₀)·arccosh(D/2r) par unité de longueur, soit par fil
+(λ²/4πε₀)·arccosh(D/2r), la formule du cylindre seul avec ln(b/r) = arccosh(D/2r) = ln(D/r) à 0,06 %
+près (D/2 serait 22 % à côté) ; la lecture par plan de symétrie donne la même chose, l'image d'un
+fil à D/2 du plan est à D. **La coupure est D, sans ambiguïté.** Donc ln(b/a) = arccosh(D/2r) = π
+exactement par l'adaptation (R10), gain 2, **σ = 8ℏc/(πℓ₁(9)²) = 761 MeV/fm, √σ = 388 MeV** ; le
+réseau (420 à 440 MeV) est 8 à 12 % au-dessus en √σ, 16 % en σ. Le résidu n'est pas dans les
+entrées : bande du réseau ±2,3 % ; l'exposant ajusté sur le muon (6,292 au lieu de 2π) déplace
+ℓ₁(9) de 1,0 % (2 % sur σ) ; l'ancrage du muon 0,8 % ; le manque de 15 % est réel, le terme suivant
+est l'écart entre l'hélice et un cylindre lisse (non calculé). L'adaptation de la double hélice
+(coax + solénoïde), y = ln(b/a)/2π = 1/2, donne le terme solénoïde G′ = 1,5 et na = 0,69 tour par
+rayon de cœur, cohérent avec R34. **Verdict** : DÉRIVÉ, la charge enroulée voit sa partenaire à D ;
+la tension forte de la base est 8ℏc/(πℓ₁²), 15 % sous le réseau.
