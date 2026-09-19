@@ -2061,3 +2061,30 @@ l'anneau finisse en ±â plutôt que de précesser), et la conservation prise en
 l'ensemble. C'est le même argument que R93 (flux + quantum indivisible), transporté sur la seule
 variable qui transforme avec le demi-angle, l'orientation (R95), et il n'a plus besoin d'un
 analyseur de motif.
+
+**R99 — L'atome de la base avec l'anneau : le test qui peut tuer la structure** (« Et on fait
+quoi » : arrêter d'ajouter des mécanismes, faire le test que la base permet déjà).
+→ `hydrogen_ring.py`, 4/4. L'atome de la base est l'orbite de Bohr fermée par de Broglie (R75),
+avec la cinématique relativiste de l'éther de Lorentz ; l'électron est l'anneau R = ƛ (R53, R84).
+**(A) Sommerfeld = Dirac** : l'orbite relativiste donne E(n, k) = mc²[1 + α²/(n − k +
+√(k² − α²))²]^{−1/2}, identique à Dirac pour k = j + ½ (1S, 2S/2P½, 2P3/2, 3D5/2 à 10⁻⁹ eV) ;
+structure fine 2P3/2 − 2P½ = 10,950 GHz contre 10,969 mesuré (−0,18 % : la part QED, g − 2 et
+Lamb, absente de Dirac aussi). **La base a la structure fine de l'hydrogène sans l'anneau**, par la
+seule cinématique. C'est l'identité connue de 1916/1928 et elle reste une coïncidence dans la
+base : k y est le nombre azimutal de l'orbite, pas j + ½, et rien n'explique pourquoi le spin de
+l'anneau ne change rien. **(B) Anneau rigide à axe fixe dans l'orbite n = 1** : quadrupôle
+U₂ = K R² P₂(cos χ)/(2a₀³), χ = angle entre l'axe de l'anneau et le proton : +0,725 meV (axe vers
+le proton) à −0,362 meV (axe perpendiculaire), un dédoublement d'orientation du 1S de 1,09 meV
+= 263 GHz. Le 1S n'a que le doublet hyperfin de 1,420 GHz : **exclu par un facteur 1,9·10²**.
+**(C) La sortie** : un spin ½ n'a aucun moment de rang 2 ; la distribution de charge de l'anneau
+dans tout état doit être sa moyenne d'orientation, sphérique (⟨P₂⟩ = 0), et le théorème de la
+coquille ne laisse alors aucune correction dans l'orbite (a₀ ≫ R). L'orientation de l'anneau est
+une variable de Bloch (R83), pas un axe classique : imposé ici par la spectroscopie, pas seulement
+par l'absence de toupie. **(D) Ce qui reste de la taille** : la pénétration des états S (R89),
+⟨r²⟩ = ¾ƛ² requis (334 fm) ; coquille sphérique R = ƛ : +33 % ; distribution R84 : +18 %.
+**Verdict** : (A) IDENTITÉ (Sommerfeld–Dirac, connue ; coïncidence pour la base) ; (B) EXCLU ;
+(C) CONDITIONNEL (orientation quantique imposée) ; (D) inchangé. La structure survit au test de
+l'orbite et pas encore à celui de la pénétration : 334 fm requis, 363 à 386 fm obtenus. C'est le
+point où couper ou consolider : ou bien la charge de l'anneau est plus concentrée que R84 (⟨r²⟩ à
+réduire de 15 %), ou bien l'électron n'est pas cet anneau. Aucun mécanisme nouveau n'est à
+ajouter avant d'avoir tranché ce point.

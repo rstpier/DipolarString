@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R98)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R99)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R98).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R99).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -98,8 +98,13 @@ Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un deven
 
 Une prédiction sans nombre libre, qui mord (R89) : si l'électron est l'anneau, sa taille doit
 reproduire le terme de Darwin de l'hydrogène, r_rms = (√3/2)ƛ = 334 fm ; la charge de R84 donne
-363 fm (+18 % en ⟨r²⟩, +31 GHz sur le 1S, mesuré au kHz). Il faut un calcul atomique propre à la
-base ; il tranchera. La matière noire, elle, n'est pas prédite : un défaut neutre verrouillé a
+363 fm (+18 % en ⟨r²⟩, +31 GHz sur le 1S, mesuré au kHz). L'atome de la base a été fait (R99) :
+l'orbite relativiste de Bohr donne exactement Dirac (structure fine à 0,18 %, la part QED), donc
+la base a la structure fine sans l'anneau (identité connue, le spin n'y joue aucun rôle) ; un
+anneau rigide à axe fixe est exclu par le 1S (dédoublement d'orientation de 263 GHz, 190 fois
+l'hyperfin), l'orientation doit être une variable de Bloch sans quadrupôle ; ce qui reste de la
+taille est le seul test R89, non satisfait : 334 fm requis, 363 à 386 fm obtenus. C'est le point
+où couper ou consolider, avant tout mécanisme nouveau. La matière noire, elle, n'est pas prédite : un défaut neutre verrouillé a
 E = C/R sans minimum (aucune taille pour un objet sans charge), et épinglé au vide il pèse
 ~1 MeV, exclu par le BBN (R90) ; le secteur sombre de la base, ce sont les neutrinos, dont elle
 ne fixe pas la taille. L'intrication : la base n'a pas de loi de mesure, et toute loi locale à
@@ -185,9 +190,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R98 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R99 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 93 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 94 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
