@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R101)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R102)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R101).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R102).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -98,8 +98,12 @@ axiale, l'instantané exige des états excités absents). **La représentation d
 charge e portée par l'anneau de 386 fm s'arrête.** L'hydrogène de la base est aveugle (périhélie
 à 68 R, coquille) ; avec la fonction d'onde importée l'anneau déplace le 1S de 200–230 GHz contre
 8 GHz d'excès mesuré. Ce qui ne dépend pas de la position de la charge tient : spectre de charge
-des brins, masses par circulation d'énergie, nucléon, chaîne d'orientation. À décider par
-l'auteur : où est la charge, et d'où vient alors μ_B.
+des brins, masses par circulation d'énergie, nucléon, chaîne d'orientation. **Et μ_B n'a plus de
+source (R102)** : un moment de Bohr par boucle de charge e exige R ≥ ƛ à v ≤ c (borne de Lorentz,
+exacte), la diffusion exige R < 0,05 fm ; le facteur de forme magnétique de la boucle à ƛ vaut
+7·10⁻⁷ à 1 GeV/c contre 1 mesuré ; l'électron de Dirac a G_E = G_M = 1 exactement, charge et
+moment ponctuels, taille ƛ cinématique. À décider par l'auteur : un moment sans courant de charge,
+ou la structure de Dirac. C'est le point exact où la base et l'électron de Dirac se séparent.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -205,9 +209,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R101 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R102 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 96 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 97 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

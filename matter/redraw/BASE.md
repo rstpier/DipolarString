@@ -2143,3 +2143,23 @@ est hors des deux. Ce qui survit de R99 : (A) Sommerfeld = Dirac, la base a la s
 la seule cinématique. **Verdict** : l'hydrogène ne tranche qu'en important la mécanique quantique ;
 R100 tranche sans elle, et dans le même sens : la charge électromagnétique de l'électron n'est pas
 étalée sur 386 fm.
+
+**R102 — D'où vient alors μ_B ? Le moment de Bohr comme boucle de charge, contre la diffusion.**
+→ `moment_without_loop.py`, 3/3. La base n'a qu'une source de moment magnétique, le courant de
+charge qui tourne (R53 : μ = qcR/2 = μ_B pour qR = eƛ). **(A) La borne de Lorentz, exacte** :
+μ = qvR/2 et μ_B = ecƛ/2 ⇒ (q/e)(v/c)R = ƛ ; pour la charge e à v ≤ c, **R ≥ ƛ = 386 fm**, quelle que
+soit la boucle. R100 exige R < 0,048 fm (F = 1 à 1 % jusqu'à 1 GeV/c) et < 5·10⁻⁴ fm (LEP) : une
+boucle de charge e portant μ_B à cette taille tournerait à v/c = 8·10³ à 8·10⁵. **(B) Le facteur de
+forme magnétique de la boucle à ƛ** : F_M = 2J₁(qR)/(qR) pour q ⊥ axe, partie de rang 1 (la seule
+d'un spin ½) par moyenne sur les directions de q : 0,72 à 1 MeV/c, 7·10⁻⁷ à 1 GeV/c, contre G_M = 1
+au % dans la section de Rosenbluth e–p à Q² = 1 GeV² (tenseur leptonique d'un point). **(C) La
+référence** : Dirac ponctuel dans le repère de Breit, u(p′)†α⃗u(p) = i(σ⃗ × q⃗) exactement à tout Q²
+(vérifié de 10⁻⁴ à 10⁶ MeV²) : G_M = 1, le moment μ_B **sans boucle**, porté par la structure
+spinorielle (Gordon : aimantation (e/2m)ψ̄Σψ, d'étendue le paquet, pas ƛ), et g = 2 avec. **(D)**
+μ_B et G_E = G_M = 1 ensemble exigent un moment qui n'est pas un courant de charge spatial ; la
+base n'en a pas. **Verdict** : EXCLU, μ_B par une boucle de charge, pour toute taille de boucle.
+L'électron mesuré a charge et moment ponctuels (< 10⁻³ fm) et sa taille ƛ est cinématique (m/E
+pour la charge, σ × q pour le moment). La circulation d'énergie à ƛ (masses R39–R45, spin R53)
+n'est pas touchée si elle est neutre ; **le moment n'a plus de source dans la base** : ou bien elle
+fournit un moment sans courant de charge, ou bien elle adopte la structure de Dirac. Décision de
+l'auteur ; c'est le point exact où la base et l'électron de Dirac se séparent.
