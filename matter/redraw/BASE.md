@@ -793,3 +793,23 @@ part forte de n − p, contre 2,52 ± 0,29 sur réseau ; moins l'énergie de Cou
 +25 %**, sans nombre libre (α, m_e, 2π, le compte 9). La même règle sur les pions rate (1,9 MeV
 contre 4,59 avec uū, mauvais signe avec dd̄) : l'anneau du pion n'est pas fait de circuits. Le
 résidu de 11 à 25 % est dans le terme de Coulomb du proton, dont la géométrie n'est pas fixée.
+
+**R43 — « Cherche ce qui fixe la géométrie du terme de Coulomb du proton. »**
+→ `coulomb_geometry.py`, 5/5. Avec les charges de quark q_i = (2/3, 2/3, −1/3) pour p et
+(2/3, −1/3, −1/3) pour n, E_C = S·Σq_i² + M·Σq_iq_j (S : une charge unité dans la géométrie d'un
+quark ; M : deux charges unité à l'écartement des quarks). **Ce qu'il faut** : E_C(p) − E_C(n) =
+2,474 − 1,293 = 1,18 MeV ; Σq² = 1 (p), 2/3 (n) ; Σq_iq_j = 0 (p), −1/3 (n) ; donc S + M = 3,54 MeV.
+**Le terme mutuel est sans paramètre dans la base** : charge aux pôles (R5), bras à 120° dont les
+bouts sont à ℓ₁(9) du centre, écartement √3·ℓ₁ = 1,41 fm : M = K/(√3ℓ₁) = 1,02 MeV ; le Coulomb
+inter-quarks du proton s'annule exactement, celui du neutron vaut −0,34 MeV. **Le terme propre
+demande la taille de la charge** : étalée le long du brin (barreau de 0,81 fm) avec pour épaisseur
+la largeur de nappe de l'électron ramenée à l'échelle, w₉ = (4ƛ_e/π²)·3^{−2π} = 0,157 fm (R17) :
+S = (K/ℓ₁)(ln(2ℓ₁/w) − 1) = 2,37 MeV, S + M = 3,39 MeV, **m_n − m_p = 1,34 MeV (+3,8 %)** ; la
+constante du logarithme et l'écartement font varier le résultat entre 1,09 et 1,34 MeV (−16 à
++4 %) : la base fixe la géométrie à ±10 % près. La même géométrie donne le rayon de charge du
+proton : charges à ℓ₁(9) du centre, √⟨r²⟩_p = ℓ₁(9) = 0,813 fm (−3,4 % contre 0,841) ; ⟨r²⟩_n = 0
+contre −0,116 fm² (la peau négative demande la boucle extérieure de R19/R25). Sans l'épaisseur de
+la base, les alternatives sont des ajustements : pôles ponctuels de rayon 0,29 à 0,34 fm, sphères
+tangentes de 0,45 fm (d = 0,89 fm), sphère uniforme au r_p mesuré (+12 %). **Verdict** : le mutuel
+est dérivé (0 pour p, −0,34 pour n), le propre l'est à ±10 % avec la nappe de R17 comme épaisseur ;
+l'écart p–n sort à +4 % (1,34 MeV) avec α, m_e, 2π, le compte 9 et la largeur de nappe.
