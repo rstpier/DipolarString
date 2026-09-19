@@ -691,3 +691,23 @@ est l'écart entre l'hélice et un cylindre lisse (non calculé). L'adaptation d
 (coax + solénoïde), y = ln(b/a)/2π = 1/2, donne le terme solénoïde G′ = 1,5 et na = 0,69 tour par
 rayon de cœur, cohérent avec R34. **Verdict** : DÉRIVÉ, la charge enroulée voit sa partenaire à D ;
 la tension forte de la base est 8ℏc/(πℓ₁²), 15 % sous le réseau.
+
+**R38 — « Calcule l'écart entre l'hélice réelle et le cylindre lisse. »**
+→ `helix_vs_cylinder.py`, 5/5. Le modèle lisse (R34–R37) étalait la charge du brin enroulé le long
+de l'axe à sa densité de trajet ; l'hélice réelle à n tours par unité de longueur sur un rayon a
+met γ = √(1 + (2πna)²) unités de trajet, donc de charge, par unité d'axe : le fluide court à c le
+long du fil, la densité axiale est γλ et la vitesse de phase axiale c/γ (ligne à onde lente). Au
+pas adapté du modèle lisse (na = 0,69 à 0,80), γ = 4,45 à 5,1. **La correction est grande, pas
+15 %** : pour une ligne adaptée le long de son trajet (Z = Z₀, R10), l'énergie par fm de trajet
+vaut 4πKλ² = 380 MeV quel que soit l'enroulement ; par fm d'axe, γ fois plus. Au pas du modèle
+lisse la tension réelle est donc 1690 à 1950 MeV/fm, et non 761 : le modèle lisse sous-comptait
+d'un facteur 2,2 à 2,6 (+120 à +155 %) ; **le résidu de 15 % de R37 était un artefact du modèle**.
+La tension s'écrit maintenant **σ = 4πKλ²·γ**, et le réseau (894 à 981, centre 904) exige
+γ = 2,35 à 2,58 (2,376) : na = 0,34 à 0,38, angle de pas 25°, 2,4 fm de brin par fm d'axe ; avec
+a = ƛ_p, 1,6 tour par fm et 1,5 tour dans le centre de 0,9 fm. L'adaptation « grossière » de R34
+(L′ solénoïde + C′ coaxial), rendue cohérente avec l'onde lente (L′ = μ₀γ), donne na = 1,78,
+γ = 11,2 et σ = 4270 MeV/fm, 4,7 fois le réseau : ce n'est pas un calcul d'hélice valable ; il
+faut la théorie de l'hélice-gaine (Pierce) pour le pas, non faite. **Ce qui fixe le pas est
+rouvert.** L'électron, non enroulé (3/4 de tour, γ = 1), n'est pas touché. Verdict : la tension
+forte de la base est l'énergie de la ligne adaptée par unité de trajet (380 MeV/fm à la densité δ/ℓ₁)
+multipliée par le rapport d'enroulement ; il manque la règle qui fixe γ ≈ 2,4.
