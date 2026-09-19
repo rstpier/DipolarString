@@ -1300,3 +1300,23 @@ l'énergie entre les trois corps est ce que la base n'a pas. **Verdict** : CONDI
 donne la forme (Z pair en I ⇒ m⁵) et deux règles nécessaires (état fondamental ; c'est le mode
 qui part qui est désadapté), mais ni le courant critique I_c ≈ 3·10⁸ A ni le partage à trois
 corps. La règle à trouver : ce qui, dans le milieu, sature à I_c.
+
+**R67 — « Peut-être aussi des effets relativistes, on est dans une réalité ralentie. »**
+→ `slowed_reality.py`, 5/5. Le manuscrit est de type éther de Lorentz : l'horloge interne d'une
+particule est l'onde à c₀ qui ferme sa boucle, et elle bat à ω' = ω₀/γ en mouvement. Trois
+lectures d'un ralentissement. **(1) Un γ global** (toute notre réalité ralentie, y compris le
+Z(r) = Z₀ exp(2GM/rc₀²) du manuscrit : Terre 10⁻⁹, Soleil 2·10⁻⁸, Galaxie 2·10⁻⁶) : une durée de vie
+se mesure avec nos horloges, ralenties du même facteur, qui s'annule ; les 26 ordres entre le Δ et
+le neutron sont un rapport, invariant. **(2) Le γ de translation**, celui de la base : le muon de
+l'anneau de stockage du CERN (γ = 29,33) vit 64,38 μs, la loi donne 64,44 (+0,09 %) ; l'effet
+relativiste que la base contient est le standard, et au repos γ = 1, 2,197 μs est la durée propre :
+la dilatation n'y ajoute rien. **(3) Un γ interne** (le fluide tourne à v < c₀ et se défait en un
+tour propre) : γ_int = nombre de tours, 5,6·10¹⁶ (μ), 7·10¹¹ (τ), 4·10²⁵ (n), soit v = c₀ à 10⁻³⁴,
+10⁻²⁴, 10⁻⁵² près ; γ_int doit suivre m⁻³·⁹⁹ de μ à τ, c'est-à-dire γ = (M/m)⁴ avec M = 1,62 TeV,
+exactement l'échelle de R64 : la fuite réécrite en vitesse, et rien dans la base ne fixe une
+vitesse à 10⁻³⁴ de c₀. **(4)** Le fluide à c₀ n'a pas de temps propre (R47) ; ce qui déclenche la
+chute bat au repos, la moitié statique (R54), dont le tic ℓ₁(n)/c est la même horloge que le
+tour : aucune puissance de m supplémentaire. **Verdict** : EXCLU comme source de la durée de
+vie ; la relativité de la base est le standard (vérifié sur le muon en vol), un ralentissement
+global est invisible, et un ralentissement interne est le mur du TeV de R64 sous un troisième
+nom (défaut fixe R64, courant critique R66, vitesse à 10⁻³⁴ de c₀ ici).
