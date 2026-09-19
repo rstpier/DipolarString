@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R80)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R82)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R80).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R82).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -101,8 +101,10 @@ Ce qui reste vraiment :
 1. **Le −1 sous un tour complet** (Pauli) : la base a l'attache au milieu (tour de ceinture) mais
    pas de mode antipériodique sur un anneau de trois branches simples (R74). Candidat : le triple
    (Z₃) n'a pas d'élément d'ordre 2, la section carrée (Z₄) en a un ; une demi-torsion de section
-   par circuit rendrait un mode impair antipériodique, à coût 0,5 % (R78) ; reste à exhiber ce
-   mode. Sans lui, pas d'atome à plusieurs électrons.
+   par circuit rendrait un mode impair antipériodique, à coût 0,5 % (R78) ; ce mode est construit :
+   le motif dipolaire (cœur de la circulation hors du centre de la section), irrep E de Z₄, −1
+   exactement sous une demi-torsion, +i sous un quart (R82). Reste : que l'électron porte ce
+   motif, le passage L_z = ½ → j = ½, et l'échange. Sans cela, pas d'atome à plusieurs électrons.
 2. **Le mécanisme de Koide** : les masses sont les carrés des trois valeurs propres d'un opérateur
    de racine de masse C₃ (circulant), et Koide est la règle a² = 2|b|² (le 45°) avec la phase
    φ = 2/9, toutes deux posées (R76). Le 45° équivaut exactement à « normes isotrope et
@@ -113,7 +115,10 @@ Ce qui reste vraiment :
    dans l'anneau dessiné (trois brins en série) le doublet n'a même pas de circuit, et dans la
    seule topologie où il en a un (trois boucles coaxiales, compatible avec R53/R54) ni le couplage
    statique (M/L = 0,3–0,6 contre 0,71) ni un quantum égal par circuit ne donnent le 45° (R80).
-   Le pas de génération
+   Mais le 45° est le « moitié-moitié » de g = 2 lu dans la base des positions : si l'opérateur
+   de racine de masse est la matrice d'amplitudes du réseau (jonction = nœud = poids sur site,
+   circulation = lien = poids de saut, masse = poids total), alors g = 2 ⇒ a² = 2|b|² sans √2 posé,
+   au niveau de la famille (R81). Le pas de génération
    est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I).
    La liaison des paires est un verrou topologique (Lk = Tw + Wr conservé, forme gelée, R77),
    mais ce verrou tient aussi une troisième paire (Wr = 1 à r₀ = 0,376) : l'absence de quatrième
@@ -131,9 +136,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R80 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R82 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 75 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 77 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

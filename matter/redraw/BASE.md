@@ -1575,3 +1575,47 @@ d'énergies de circuits. **Verdict** : EXCLU que le 45° vienne de R47 appliqué
 l'anneau, dans les deux topologies ; CONDITIONNEL que l'électron soit trois boucles coaxiales
 (seule topologie où les canaux sont des circuits, sans rien casser de R53/R54). La règle « un
 quantum par canal irréductible » reste à inventer, ou le 45° vient d'ailleurs.
+
+**R81 — Le 45° comme conservation : X_singulet = X_doublet (relecture de l'auteur : « chercher
+une quantité X conservée lors de la formation du fermion, un quantum par représentation
+irréductible ; si cela sort de la rupture du DQD mère ou du partage circulation/jonctions déjà
+utilisé pour g = 2, Koide commencerait à être dérivé »).**
+→ `koide_from_g2.py`, 5/5. **X est l'énergie, et le partage est celui de g = 2.** (A) Pour un
+circulant (diagonale constante), ‖C_iso‖² = Σ_i|C_ii|², le poids **sur site**, et ‖C_dev‖² =
+Σ_{i≠j}|C_ij|², le poids **de saut** : le canal singulet est ce qui reste sur une position, le canal
+doublet ce qui passe d'une position à l'autre ; exact. (B) tr C² = m_e + m_μ + m_τ : la masse de la
+famille est le poids total du réseau ; exact. (C) g = 2 pour chaque lepton (R53, R54 : moitié
+statique aux jonctions, moitié en circulation ; g_e = 2,00232, g_μ = 2,00233) sommé sur la
+famille : E_stat = E_circ = Σm/2 = 941,51 MeV. (D) **Appariement** : statique ↔ sur site (les
+jonctions sont aux positions), circulant ↔ saut (la circulation passe entre positions). Alors
+a² = E_stat/3 = 313,84 MeV et |b|² = E_circ/6 = 156,92 MeV, soit **a² = 2|b|² par g = 2**, sans √2
+posé ; le a² de Koide + 2/9 + m_e (R76) vaut 313,86 (−0,007 %, c'est Koide à 10⁻⁵ restaté). (E)
+**Portée** : l'appariement est familial, pas par particule (m_e/2 = 0,26 MeV contre a² = 314 : la
+partie sur site contribue a² à chaque génération, alors que g = 2 donne m_k/2 ; seule la somme sur
+la famille s'accorde) ; il ne touche pas φ = 2/9 ; pour une fraction statique f quelconque il
+donne Q = 1/(3f) (f = 1/2 : 2/3 ; f = 0,81, le partage du nucléon R72 : 0,41). **Verdict** :
+CONDITIONNEL, et c'est un vrai pas : le 45° de Koide est le « moitié-moitié » de g = 2 lu dans la
+base des positions, à une condition près, que l'opérateur de racine de masse soit la matrice
+d'amplitudes du réseau à trois positions (jonction = nœud, circulation = lien, masse = poids
+total). R80 lisait les canaux comme deux circuits : mauvaise lecture ; les canaux sont nœud contre
+lien, et le doublet **est** la circulation de l'anneau.
+
+**R82 — Le mode impair de la section carrée, construit explicitement (suite de R78, relecture de
+l'auteur).**
+→ `square_odd_mode.py`, 5/5. (A) Modes de Dirichlet du carré, ψ_mn = sin(mπx/w) sin(nπy/w) : le
+fondamental (1,1) est pair sous toute rotation du carré (+1 à 90°) ; la paire (1,2), (2,1) porte la
+représentation E de Z₄ : la rotation de 90° est la matrice [[0, 1], [−1, 0]], celle de 180° est −1
+(caractère −2). Physiquement c'est **le déplacement du cœur de la circulation hors du centre de la
+section** (motif dipolaire), l'analogue du mode différentiel de la paire (phase A). (B) Transport le
+long du circuit avec une torsion de section t par tour : l'amplitude du motif dipolaire revient
+multipliée par la rotation de 2πt : t = 1/2 donne exactement **−1** (ψ(φ + 2π) = −ψ, ψ(φ + 4π) = +ψ,
+L_z ∈ Z + ½) ; t = 1/4 donne ±i (quart de période, anyonique, exclu comme signe de Pauli) ; t = 0, 1
+donnent +1 : la base doit choisir t = 1/2. (C) Le fondamental reste +1 pour toute torsion : le −1
+n'existe que si la circulation porte le motif dipolaire. (D) Coût : en lecture onde ce serait un
+mode transverse excité ((1,2)/(1,1) = 2,5 fois la coupure, exclu par R47) ; en lecture vortex c'est
+un cœur déplacé de w/4 tournant d'un demi-tour par circuit, trajet allongé de 0,13 %, sans mode ni
+coupure : compatible avec R47 et R53 dans la lecture vortex seulement. **Verdict** : DÉRIVÉ qu'un
+mode impair sous 180° existe sur la section carrée et qu'une demi-torsion de section le rend
+antipériodique ; CONDITIONNEL que la circulation de l'électron porte ce motif (cœur hors centre)
+plutôt que le fondamental centré ; restent le passage de L_z = ½ à j = ½ et l'échange par le tour
+de ceinture (R74 D2). C'est la première route explicite du dépôt vers le spineur.
