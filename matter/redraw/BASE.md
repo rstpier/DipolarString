@@ -1692,3 +1692,27 @@ porte l'enroulement ½). **Verdict** : DÉRIVÉ que le mode déplacé seul a |c�
 a c₁ = 1 ; le test de Chern ne fait pas émerger t = ½, il le mesure. **Le prochain test décisif** :
 que l'enroulement 1 de la mère se partage à la brisure en deux demi-torsions de **section** (une
 par fille), et non en deux demi-enroulements du triple ; si oui, t = ½ est hérité, pas posé.
+
+**R86 — Le demi-tour est déjà dans la base : le quantum de circulation est une demi-onde.**
+(« Alors ?? », après R85)
+→ `half_wave_quantum.py`, 5/5. **(A)** Le quantum de circulation de la base (R32, R47, R53) vaut
+E_circ = 4πKq²/trajet = πℏc/trajet = (hc/2)/trajet = 0,25550 MeV pour l'anneau de rayon ƛ, soit
+exactement m_e/2 : c'est l'énergie d'un mode de longueur d'onde λ = 2 × trajet, **une demi-onde sur
+l'anneau** (R47 le notait sans le lire : « l'énergie de circuit égale l'énergie du mode en
+demi-onde pour tout trajet ») ; l'onde entière donnerait 0,511 MeV. **(B)** Une demi-onde ne se
+referme sur un anneau que si le mode est antipériodique : avance de phase k × trajet = π par tour,
+ψ(φ + 2π) = −ψ, ψ(φ + 4π) = +ψ ; enroulement ½ ⇒ L_z = ℏ/2 = R·E_circ/c : **le spin mécanique de R53 et
+l'antipériodicité sont le même énoncé.** **(C) g tranche** : anneau antipériodique (E_circ = m/2,
+S = ℏ/2, μ = μ_B) ⇒ g = 2 ; anneau périodique (onde entière, E_circ = m, S = ℏ) ⇒ g = 1, exclu par
+g = 2,00232. **Donc t = 0 est exclu et t = ½ est requis par g = 2 via le quantum de la base : il
+n'est plus posé.** **(D)** Le porteur de l'antipériodicité sur trois branches simples est le motif
+dipolaire avec demi-tour de section (R82, holonomie exactement −1 = e^{iπ} de la demi-onde ; la
+paire de la phase A n'est pas disponible pour l'électron) ; avec la charge axiale ½, c₁ = 1 (R85),
+le fibré de spin ½. **(E)** Origine : la brisure R4 donne aux filles la longueur d'onde de la mère,
+enroulement ½ (`spin_from_breaking.py`, phase A, 8/8). **Verdict** : DÉRIVÉ, à partir du quantum de
+la base et de g = 2, que l'anneau de l'électron est antipériodique et que le demi-tour de section
+est requis, non choisi. La chaîne vers Pauli : quantum demi-onde (R32) + g = 2 (R53) ⇒ Ψ(2π) = −Ψ
+(R86) ; porteur géométrique (R82) avec amplitude dérivée (R84) ; pas de toupie (R83) ; c₁ = 1 (R85) ;
+attache et tour de ceinture (R74, R83) ⇒ −1 d'échange. **Reste posé** : l'absence d'inertie
+d'orientation (R83 ii), et le quantum lui-même, 4πKq² = πℏc (R32), qui est la définition de la
+charge de vortex.
