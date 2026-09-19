@@ -1500,3 +1500,23 @@ n = 15 serait un état verrouillé lui aussi, et son absence doit venir de l'op�
 (trois valeurs propres, R76) ou d'une règle que la base n'a pas (un writhe maximal, ou une
 reconnexion propre des paires neutres). La question ouverte se déplace : non plus « pourquoi les
 paires tiennent », mais « pourquoi le spectre n'a que trois états quand le verrou en admet plus ».
+
+**R78 — Le Z₂ sur trois branches simples : la section carrée comme porteuse.** (suite de R74)
+→ `square_section_z2.py`, 5/5. R74 avait réduit Pauli à : qu'est-ce qui rend antipériodique un
+anneau de trois branches simples ? La phase A obtient le −1 pour une **paire** (mode différentiel
+impair sous l'échange des deux conducteurs, un élément d'ordre 2, plus une demi-torsion par tour).
+**Candidat** : le triple n'a que Z₃ (ordres 1, 3 : aucun élément d'ordre 2, il ne peut pas porter
+l'antipériodicité) ; mais chaque brin a une section carrée (w = d, R17), de symétrie Z₄ (ordres
+1, 2, 4), dont la rotation de 180° est d'ordre 2. Un mode de section impair sous cette rotation,
+avec une demi-torsion de section par circuit (t = ±1/2 parmi les torsions fermées k/4), est
+antipériodique, ψ(φ + 2π) = −ψ, L_z ∈ Z + ½ : l'arithmétique de la phase A transposée à un brin.
+**Jonctions** : trois brins à torsions k/4 sommant à 1/2 : 30 répartitions, 12 minimales (deux
+jonctions tournées de 90°, une droite). **Coût** : inclinaison des faces atan(1/π²) = 5,8°,
+variation de C' au second ordre 0,5 % : compatible avec Z₀ (R71). **Deux repères** : celui du
+triple (Tw = 0, canal writhe des générations, R61) et celui de la section de chaque brin sont
+indépendants ; muon et tau gardent les deux. **Ce qui manque** : montrer qu'un brin simple à
+section carrée porte un mode impair sous 180° (pour la paire c'était un champ réel, le mode
+différentiel) : un motif de circulation quadrupolaire dans la section, non calculé ; puis
+l'échange par le tour de ceinture (R74 D2). **Verdict** : CONDITIONNEL ; le candidat est cohérent
+avec la base (section carrée, adaptation, jonctions) et vide tant que le mode impair n'est pas
+exhibé.

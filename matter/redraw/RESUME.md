@@ -98,8 +98,10 @@ Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un deven
 Ce qui reste vraiment :
 
 1. **Le −1 sous un tour complet** (Pauli) : la base a l'attache au milieu (tour de ceinture) mais
-   pas de mode antipériodique sur un anneau de trois branches simples (R74). Sans lui, pas d'atome
-   à plusieurs électrons.
+   pas de mode antipériodique sur un anneau de trois branches simples (R74). Candidat : le triple
+   (Z₃) n'a pas d'élément d'ordre 2, la section carrée (Z₄) en a un ; une demi-torsion de section
+   par circuit rendrait un mode impair antipériodique, à coût 0,5 % (R78) ; reste à exhiber ce
+   mode. Sans lui, pas d'atome à plusieurs électrons.
 2. **Le mécanisme de Koide** : les masses sont les trois valeurs propres d'un opérateur C₃
    (circulant), et Koide est la règle a² = 2|b|² (terme propre² = somme des sauts², le 45°) avec
    la phase φ = 2/9 (R76) ; ni l'une ni l'autre n'a de dynamique (R62, R63). Le pas de génération
@@ -121,7 +123,7 @@ Ce qui reste vraiment :
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 72 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 73 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
