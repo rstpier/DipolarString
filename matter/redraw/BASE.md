@@ -1812,3 +1812,19 @@ neutre verrouillé n'a pas de masse dans la base ; épinglé au vide il pèse ~1
 l'exclut. Le secteur sombre de la base, ce sont les neutrinos, dont elle ne fixe pas la taille.
 Une prédiction de matière noire demanderait une constante nouvelle fixant la taille des boucles
 neutres, ce que R28 réclamait déjà (« ce qu'est une corde sans charge »).
+
+**R91 — « Prédiction sur l'intrication ? »**
+→ `bell_pair.py`, 5/5. La base n'a pas d'espace d'états : une configuration à la fois (éther de
+Lorentz), pas de superposition, pas de règle de Born ; le manuscrit v2.9.2 a lui-même retiré son
+mécanisme d'intrication faute d'équation (lignes 1164, 1212). **Ce qu'elle prédit malgré elle**,
+comme modèle local à configurations définies, se calcule. **(A)** La paire de la brisure (R87) : deux
+anneaux de circulations opposées, S₊ = −S₋ le long de l'axe de la mère, axe aléatoire : le singulet
+classique. **(B)** Corrélation de spin E(a,b) : (i) projection de signe, E = −(1 − 2θ/π), CHSH = 2
+(Monte-Carlo à 1 %) ; (ii) réponse de Malus sur la sphère de Bloch de R83/R85, E = −(a·b)/3, CHSH =
+2√2/3 = 1,886 ; mécanique quantique E = −a·b, CHSH = 2√2 = 2,828. **(C)** Expériences sans faille :
+Hensen 2015 (spins NV à 1,3 km) S = 2,42 ± 0,20, photons ~2,70 ± 0,05 : la borne locale 2 est
+dépassée. **Verdict** : la base prédit CHSH ≤ 2 (1,89 avec sa propre mesure de Bloch) : **EXCLU
+comme modèle local.** Une extension viable doit être non locale par le milieu (le repère
+privilégié de l'éther le permet en principe, comme l'onde pilote) ou porter des superpositions
+de configurations ; aucune équation dans la base. C'est, avec R89, la seconde prédiction qui mord,
+et celle-ci mord déjà.
