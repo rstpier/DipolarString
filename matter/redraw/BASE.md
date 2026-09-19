@@ -1273,3 +1273,30 @@ moins de cent tours, et dès que l'écart est assez petit pour vivre, il est le 
 Le cas probable reste donc le seul : un circuit adapté à Z₀, une fuite ∝ m⁴ par un défaut fixe à
 l'échelle du TeV. Gain de consistance : l'électron doit être adapté exactement, ce qui ferme
 définitivement la lecture « Z_e = 0,73 Z₀ » de v2.9.
+
+**R66 — « Respiration plutôt sur le courant qui circule, qui fait osciller l'impédance
+intrinsèque. »**
+→ `current_breathing.py`, 6/6. **Lecture testée** : Z n'est pas une constante du milieu mais suit
+le courant du circuit, Z(I) ; sur l'échelle, I = qc/(3ℓ₁(n)) est proportionnel à la masse (116 A
+pour l'électron, 2,4·10⁴ A pour le muon, 4,1·10⁵ A pour le tau, 1,2·10⁵ A pour le circuit de
+quark). **L'exposant est forcé** : μ et τ (canal e) donnent ΔZ/Z₀ ∝ I^p avec p = 1,985 ; une réponse
+linéaire (p = 1) mettrait τ → e à 4,6·10⁻¹⁰ s, faux de 284. Donc **Z(I) = Z₀[1 + (I/I_c)²]**, la
+première correction paire, celle qu'impose un milieu sans sens de circulation privilégié (R3) ;
+la fuite par tour (I/I_c)⁴/4 et l'horloge ∝ m donnent le taux ∝ m⁵ : la forme de la loi de
+Sargent est dérivée de la parité du milieu. **L'échelle ne l'est pas** : I_c = 2,6·10⁸ A (M = 1,15
+TeV, l'échelle de R64 à un facteur √2 de convention), 635 fois le plus grand courant de la base.
+**L'électron sous la même règle** : fuite 10⁻²⁶ par tour, τ_e = 9 jours contre > 10²⁸ ans : la
+désadaptation seule ne fait pas décroître ; il faut un barreau plus bas où tomber, et n = 3 n'a
+pas de paire de DQD à lâcher (règle d'état fondamental, requise ; elle rend l'électron immunisé
+quelle que soit son adaptation, ce qui corrige la lecture (3) de R65 : Z_e = 0,73 Z₀ n'est pas tué
+par la durée de vie mais par R10). **Le neutron** : le courant du parent (boucle à 0,95 fm,
+4,7·10⁴ A) donne 7·10⁻⁸ s, faux de 10¹⁰ ; l'énergie libérée Q à la puissance 5 donne 8000 s
+(facteur 9, R64) : le courant qui compte est celui de ce qui part, pas celui du parent.
+**τ → μ contre τ → e** (une paire de DQD lâchée, 11 → 7, contre deux, 11 → 3) : mesuré 0,976 ;
+lâcher paire par paire ferait e ≪ μ, exclu ; l'énergie libérée à la puissance 5 donne 0,737
+(−24 %) ; le courant du parent seul avec le partage à trois corps donne 0,9726 (−0,3 %). Donc un
+seul effondrement vers n'importe quel barreau inférieur, au taux du parent, et le partage de
+l'énergie entre les trois corps est ce que la base n'a pas. **Verdict** : CONDITIONNEL ; la lecture
+donne la forme (Z pair en I ⇒ m⁵) et deux règles nécessaires (état fondamental ; c'est le mode
+qui part qui est désadapté), mais ni le courant critique I_c ≈ 3·10⁸ A ni le partage à trois
+corps. La règle à trouver : ce qui, dans le milieu, sature à I_c.
