@@ -711,3 +711,24 @@ faut la théorie de l'hélice-gaine (Pierce) pour le pas, non faite. **Ce qui fi
 rouvert.** L'électron, non enroulé (3/4 de tour, γ = 1), n'est pas touché. Verdict : la tension
 forte de la base est l'énergie de la ligne adaptée par unité de trajet (380 MeV/fm à la densité δ/ℓ₁)
 multipliée par le rapport d'enroulement ; il manque la règle qui fixe γ ≈ 2,4.
+
+**R39 — « Cherche ce qui fixe le pas γ ≈ 2,4. »**
+→ `pitch_search.py`, 5/5. **Correction à R38 d'abord** : la force n'est pas l'énergie par longueur
+d'axe. Une ligne adaptée enroulée stocke E = u_trajet × s avec s = √(L² + (2πa·Tw)²) ; à Tw et cœur
+fixes, dE/dL = u_trajet/γ ≤ u_trajet ; à trajet fixe, dE/dL = 0. L'enroulement ne peut pas fournir
+une force au-delà de u_trajet = 380 MeV/fm (à λ = δ/ℓ₁(9)) ; le σ = 380γ de R38 est une énergie par
+fm d'axe, pas une tension. Le 904 MeV/fm du réseau comme force exige u_trajet lui-même :
+**« γ = 2,376 » est le rapport 904/380, pas un pas.** Aucune règle de la base ne fixe un pas de
+toute façon (énergie plate en γ à trajet fixe, adaptation grossière qui surestime ; les
+coïncidences tan ψ = 1/2, na = 1/3, 3π/4 ne viennent d'aucun mécanisme). **Ce qui ferme le facteur
+sans enroulement** : l'autre charge de la base, la charge de vortex q = e/(2√α) = 5,85 e (R32, celle
+qui porte l'énergie du spin ½) : (q/δ)² = (π/2)² = 2,467, à 3,8 % du 2,376 requis. Avec q par brin,
+**u_trajet = 4πKq²/ℓ₁(9)² = πℏc/ℓ₁(9)² = 939 MeV/fm, √σ = 430 MeV, le centre de la bande du réseau
+(420–440)** ; forme fermée √σ = (3/(2√π))·3^{2π}·m_ec², α et Z₀ s'annulant. **Le prix** : q par
+brin sur les trois cordes de l'électron stocke 3πℏc/ℓ₁(3) = 2,30 MeV = 4,5 m_e ; dans l'électron, q
+est la charge de l'anneau entier (2Kq²/ƛ = m_ec²/2 exactement) ; le nucléon en aurait besoin par
+brin. Côte à côte : δ par brin → électron 0,91 m_e (×1,8 la moitié statique), nucléon 380 MeV/fm
+(2,4 fois trop peu) ; q par brin → nucléon 939 (réseau), électron 4,5 m_e ; q par objet → spin ½
+de l'électron, anneau du proton à 125 MeV, centre non couvert. **Verdict** : la base a le nombre
+(πℏc/ℓ₁², √σ = 430 MeV) mais pas la règle qui dit quel brin porte la charge de vortex ; la route de
+l'enroulement (R33–R38) se ferme comme mécanisme de force.
