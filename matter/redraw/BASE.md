@@ -493,13 +493,13 @@ n = udd = (2+, 2−, 5×0), **tous deux 9 brins** (même compte, ce que p ≈ n 
 ses trois brins impairs occupent trois positions différentes (6 arrangements sur 27) ; (4) l'échelle
 des leptons se relit : μ = e + 4 brins neutres (7), τ = e + 8 (11), **le pas de génération est
 quatre brins neutres, deux DQD neutres**, la mère de R3. **Ce qu'elle coûte** : le neutrino (0,0,0)
-à n = 3 pèserait m_e sous m = m_e(n/3)^{2π}, 6·10⁵ fois la limite KATRIN (0,8 eV) ; seule la règle
+à n = 3 pèserait m_e sous m = m_e(n/3)^{2π}, 10⁶ fois la limite KATRIN (0,45 eV, avril 2025 ; corrigé de 0,8 eV) ; seule la règle
 « les brins chargés portent le mode, le compte total fixe l'échelle » garde ν ≈ 0 avec e, μ, τ
 inchangés (POSTULÉ). p et n ayant le même compte, l'argument de R24 (une corde de plus) tombe, et
 m_d − m_u = (m_n − m_p) + 1,0 MeV (EM) = 2,3 MeV (réseau : 2,5) exige que le d, avec un seul brin
 chargé, pèse plus que le u qui en a deux : la masse n'est pas un compte de brins. Tombent aussi la
 règle de parité (u pair, d impair) et l'identité « p porte les cordes du π⁺ » (R23). Sous la
-condition de spin de la base, un neutrino sous 0,8 eV mesure au moins 123 nm. **Verdict** : la
+condition de spin de la base, un neutrino sous 0,45 eV mesure au moins 219 nm (corrigé de 123 nm). **Verdict** : la
 corde neutre donne la structure (charges exactes, couleur, 9 brins pour p et n, générations en
 DQD neutres) et ne donne toujours pas les masses ; R1 doit dire ce qu'est une corde sans charge.
 
@@ -511,7 +511,7 @@ m_ec²/2 exactement : la moitié qui circule (g = 2), l'autre moitié est statiq
 corde, 809 fm, le ℓ₁ = 2πR₃/3 de la base. Loi d'échelle tirée de l'échelle des leptons :
 ℓ₁(n) = ℓ₁(3)(3/n)^{2π}, soit 3,94 fm au muon, 0,23 fm au tau, et ℓ₁(9) = 0,813 fm = r_p à 3 %
 (coïncidence enregistrée). **La règle** : e, μ, τ inchangés (trois brins chargés, arc 3ℓ₁(n)) ; le
-neutrino n'a pas d'arc chargé, donc pas de mode, m = 0 (< 0,8 eV). Nucléons au compte n = 9 :
+neutrino n'a pas d'arc chargé, donc pas de mode, m = 0 (< 0,45 eV, KATRIN 2025). Nucléons au compte n = 9 :
 mode du proton sur 5 brins chargés = 153 MeV, du neutron sur 4 = 191 MeV ; la part de mode propre
 à la base, m/|g|, vaut 168 (p) et 246 (n) MeV : −9 %, −22 %, et l'ordre n > p est bon ; les
 ~700–800 MeV statiques du centre sont hors de la règle. Pions au compte n = 6 : ℓ₁ = 10,4 fm et un

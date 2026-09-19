@@ -12,7 +12,7 @@ Checks:
   B. scale law from the ladder: l_1(n) = l_1(3) (3/n)^(2 pi): mu 3.94 fm, tau 0.23 fm; l_1(9) =
      0.813 fm = r_p (-3 %) (recorded coincidence).
   C. leptons and neutrino under the rule: e, mu, tau unchanged (three charged strands, arc 3 l_1(n));
-     nu has no charged arc, no mode, m = 0 (< 0.8 eV).
+     nu has no charged arc, no mode, m = 0 (< 0.45 eV, KATRIN 2025).
   D. nucleons' mode part under the rule at the nucleon's count n = 9: proton arc 5 l_1 = 4.06 fm
      -> 153 MeV; neutron arc 4 l_1 = 3.25 fm -> 191 MeV.  The base's own mode part m/|g|
      (g_bookkeeping): 168 MeV (p), 246 MeV (n): -9 %, -22 %, and the ordering n > p is right.
@@ -68,7 +68,7 @@ def main() -> int:
 
     # C. leptons and neutrino
     m_lep = {n: 2 * mode(3 * l1(n)) for n in (3, 7, 11)}
-    check("C. Under the rule e, mu, tau are unchanged (three charged strands, arc 3 l_1(n), m = 2 E_mode): mu -0.8 %, tau +1.0 %; the neutrino has no charged arc, hence no mode: m = 0 (< 0.8 eV)",
+    check("C. Under the rule e, mu, tau are unchanged (three charged strands, arc 3 l_1(n), m = 2 E_mode): mu -0.8 %, tau +1.0 %; the neutrino has no charged arc, hence no mode: m = 0 (< 0.45 eV, KATRIN 2025)",
           abs(m_lep[3] / ME - 1) < 1e-12 and abs(m_lep[7] / MMU - 1) < 0.011 and abs(m_lep[11] / MTAU - 1) < 0.011,
           f"e {m_lep[3]:.4f}, mu {m_lep[7]:.1f} ({m_lep[7]/MMU-1:+.1%}), tau {m_lep[11]:.0f} ({m_lep[11]/MTAU-1:+.1%}) MeV; nu: no arc")
 

@@ -14,12 +14,12 @@ Checks:
      positions: 6 of 27 arrangements.
   D. ladder: mu = (-,-,-) + 4 neutral = 7 strands, tau = + 8 = 11: the generation step is four
      neutral strands, two neutral DQDs (R3's mother).  The neutrino (0,0,0) at n = 3 would weigh m_e
-     under m = m_e (n/3)^(2 pi); KATRIN: < 0.8 eV.  Only the rule 'charged strands carry the mode,
+     under m = m_e (n/3)^(2 pi); KATRIN (2025): < 0.45 eV.  Only the rule 'charged strands carry the mode,
      the total count sets the scale' keeps nu = 0 with e, mu, tau unchanged (POSTULATED).
   E. p - n: same strand count, so R24's 'one more string' is void; m_n - m_p = (m_d - m_u) - 1.0 (EM)
      gives m_d - m_u = 2.3 MeV (lattice 2.5): the d, with ONE charged strand, must outweigh the u
      with two: mass is not a strand count.
-  F. neutrino size under the base's spin condition S = R E/c = hbar/2: R >= 123 nm for m < 0.8 eV.
+  F. neutrino size under the base's spin condition S = R E/c = hbar/2: R >= 219 nm for m < 0.45 eV.
   G. what the neutral string voids: the parity rule (u even, d odd, p odd, n even), the identity
      'p carries the pi+ ring's strings' (R23), and the R24 count argument.
 Exit status is zero only if every check passes.
@@ -35,7 +35,7 @@ from fractions import Fraction as F
 HBARC = 197.3269804
 ME, MMU, MTAU = 0.51099895, 105.6583755, 1776.93
 MP, MN = 938.27209, 939.56542
-NU_LIMIT_EV = 0.8
+NU_LIMIT_EV = 0.45      # KATRIN 2025 (90 % CL)
 RESULTS = []
 
 
@@ -87,8 +87,8 @@ def main() -> int:
     P = 2 * math.pi
     mu_pred, tau_pred = ME * (7 / 3) ** P, ME * (11 / 3) ** P
     nu_naive = ME * (3 / 3) ** P
-    check("D. mu = e + 4 neutral (7), tau = e + 8 neutral (11): the generation step is two neutral DQDs; the ladder keeps mu -0.8 %, tau +1.0 % if the total count sets the scale, but then nu (0,0,0) at n = 3 weighs m_e vs < 0.8 eV: only 'charged strands carry the mode' saves it (POSTULATED)",
-          abs(mu_pred / MMU - 1) < 0.011 and abs(tau_pred / MTAU - 1) < 0.011 and nu_naive / (NU_LIMIT_EV * 1e-6) > 6e5,
+    check("D. mu = e + 4 neutral (7), tau = e + 8 neutral (11): the generation step is two neutral DQDs; the ladder keeps mu -0.8 %, tau +1.0 % if the total count sets the scale, but then nu (0,0,0) at n = 3 weighs m_e vs < 0.45 eV (KATRIN 2025): only 'charged strands carry the mode' saves it (POSTULATED)",
+          abs(mu_pred / MMU - 1) < 0.011 and abs(tau_pred / MTAU - 1) < 0.011 and nu_naive / (NU_LIMIT_EV * 1e-6) > 1e6,
           f"mu {mu_pred/MMU-1:+.1%}, tau {tau_pred/MTAU-1:+.1%}; naive nu = {nu_naive:.3f} MeV = {nu_naive/(NU_LIMIT_EV*1e-6):.0e} x the KATRIN limit")
 
     # E. p - n
@@ -99,8 +99,8 @@ def main() -> int:
 
     # F. neutrino size
     R_nu = HBARC / (2 * NU_LIMIT_EV * 1e-6) * 1e-15 * 1e9   # fm -> nm
-    check("F. Base spin condition S = R E/c = hbar/2 for a neutrino lighter than 0.8 eV: R >= 123 nm -- a light object is huge, consistent, no prediction",
-          abs(R_nu - 123) < 1, f"R >= {R_nu:.0f} nm")
+    check("F. Base spin condition S = R E/c = hbar/2 for a neutrino lighter than 0.45 eV (KATRIN 2025): R >= 219 nm -- a light object is huge, consistent, no prediction",
+          abs(R_nu - 219) < 1, f"R >= {R_nu:.0f} nm")
 
     # G. what is voided
     parity_rule_holds = (sum(u) == F(2, 3) and len(u) % 2 == 0)      # old rule: +2/3 needs even n
