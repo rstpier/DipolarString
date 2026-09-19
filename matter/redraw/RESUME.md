@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R91)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R92)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R91).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R92).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -102,9 +102,13 @@ reproduire le terme de Darwin de l'hydrogène, r_rms = (√3/2)ƛ = 334 fm ; la 
 base ; il tranchera. La matière noire, elle, n'est pas prédite : un défaut neutre verrouillé a
 E = C/R sans minimum (aucune taille pour un objet sans charge), et épinglé au vide il pèse
 ~1 MeV, exclu par le BBN (R90) ; le secteur sombre de la base, ce sont les neutrinos, dont elle
-ne fixe pas la taille. L'intrication : la base, modèle local à configurations définies, prédit
-CHSH ≤ 2 (0,94 avec sa mesure de Bloch) contre 2,83 mesuré ; exclue comme modèle local, elle
-exige une extension non locale par le milieu ou des superpositions, sans équation (R91).
+ne fixe pas la taille. L'intrication : la base n'a pas de loi de mesure, et toute loi locale à
+variables définies donne |S| ≤ 2 contre 2,83 mesuré (R91) : exclue comme théorie locale, pas
+comme modèle entier. Ce qu'elle a déjà de non local, le quantum partagé de la paire (contrainte
+globale) et la sphère de Bloch, ne suffit pas : sans la règle de Born (unique réponse donnant
+−cos θ) la contrainte surchoote à S = 4, et l'onde du milieu (c₀ = c) est trop lente pour être le
+canal (> 10⁴ c requis) ; aucune correction nouvelle ne sort (R92). Diagnostic : la base a la
+cinématique quantique (S = ℏ/2, g = 2, c₁ = 1, ψ(2π) = −ψ) sans la dynamique quantique.
 
 Ce qui reste vraiment :
 
@@ -162,9 +166,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R91 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R92 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 86 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 87 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

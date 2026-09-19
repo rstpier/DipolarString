@@ -7,8 +7,14 @@ lui-meme retire son mecanisme d'intrication faute d'equation).  Ce qu'elle
 predit malgre elle, comme modele local a configurations definies, se calcule :
 
   A. la paire de la brisure (R87) : deux anneaux de circulations opposees,
-     S+ = -S- le long de l'axe de la mere, axe aleatoire : le singulet classique.
-  B. correlation de spin E(a, b) pour deux modeles de mesure :
+     S+ = -S- le long de l'axe de la mere, axe aleatoire : un ensemble
+     isotrope de paires anti-alignees a axe cache n (PAS le singulet, qui est
+     l'etat quantique (|ud> - |du>)/sqrt2 ; Bell est l'experience qui les
+     distingue).
+  B. LE RESULTAT GENERAL (relecture de l'auteur) : la base n'a aucune loi de
+     mesure ; pour toute loi locale A(a, lambda), B(b, lambda) a variables
+     definies, Bell impose |S| <= 2.  Les deux lois ci-dessous sont des
+     realisations illustratives, pas des predictions uniques :
      (i)  projection de signe, sortie sign(a.n) : E = -(1 - 2 theta/pi), CHSH max = 2 ;
      (ii) reponse de Malus sur la sphere de Bloch (R83/R85), sortie +-1 avec
           probabilite cos^2(theta/2) : E = -(a.b)/3, CHSH max = 2 sqrt2 / 3 = 0,943.
@@ -57,7 +63,10 @@ def monte_carlo_sign(n=200000, seed=3):
 def main():
     print("R91 -- intrication : ce que la base predit malgre elle\n")
 
-    print("A. La paire de la brisure : S+ = -S- le long d'un axe aleatoire (singulet classique)\n")
+    print("A. La paire de la brisure : S+ = -S- le long d'un axe aleatoire : ensemble isotrope de paires")
+    print("   anti-alignees a axe cache (pas le singulet quantique).\n")
+    print("   Resultat general : toute loi de mesure locale a variables definies donne |S| <= 2 (Bell).")
+    print("   Les deux lois ci-dessous sont des illustrations, pas des predictions uniques.\n")
     print("B. Correlations et CHSH")
     mc = monte_carlo_sign()
     for th, e in mc.items():
@@ -79,11 +88,11 @@ def main():
     print("  -> les deux modeles locaux de la base sont exclus ; la MQ tient.\n")
     check("les experiences depassent la borne locale 2 (> 2 sigma)", all((s - 2) / ds > 2 for s, ds in exps.values()), "Bell viole")
 
-    print("D. Verdict : la base predit CHSH <= 2 (0,94 avec sa propre mesure de Bloch), faux. Elle n'a")
-    print("   ni superposition ni regle de Born ; le manuscrit v2.9.2 a retire son mecanisme faute")
-    print("   d'equation. Une extension viable doit etre non locale par le milieu (repere privilegie de")
-    print("   l'ether, permis en principe) ou porter des superpositions de configurations : a construire.\n")
-    check("statut : EXCLU comme modele local ; extension quantique a construire", True, "manuscrit 1164, 1212")
+    print("D. Verdict : EXCLU comme theorie locale a variables definies (|S| <= 2 quelle que soit la loi")
+    print("   de mesure), pas 'DS entier exclu'. La base n'a ni superposition ni regle de Born ; le")
+    print("   manuscrit v2.9.2 a retire son mecanisme faute d'equation. La seule porte est non locale")
+    print("   ou reellement quantique : R92 teste si elle existe deja dans le substrat.\n")
+    check("statut : EXCLU comme theorie locale a variables definies", True, "manuscrit 1164, 1212")
 
     print("Bilan :")
     for status, name, detail in RESULTS:

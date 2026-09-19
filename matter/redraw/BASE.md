@@ -1828,3 +1828,35 @@ comme modèle local.** Une extension viable doit être non locale par le milieu 
 privilégié de l'éther le permet en principe, comme l'onde pilote) ou porter des superpositions
 de configurations ; aucune équation dans la base. C'est, avec R89, la seconde prédiction qui mord,
 et celle-ci mord déjà.
+
+**Reformulation de R91 (relecture de l'auteur).** La base n'a aucune loi de mesure ; le vrai
+résultat est général : **pour toute loi locale A(a,λ), B(b,λ) à variables définies, Bell impose
+|S| ≤ 2**. Les valeurs 2 (projection de signe) et 0,943 (réponse de Malus) sont deux réalisations
+illustratives, pas des prédictions uniques. La paire de la brisure n'est pas un « singulet
+classique » (le singulet est l'état quantique (|↑↓⟩ − |↓↑⟩)/√2) mais un **ensemble isotrope de
+paires anti-alignées à axe caché n̂** ; Bell est l'expérience qui les distingue. Statut : **EXCLU
+comme théorie locale à variables définies**, pas « DS entier exclu ». `bell_pair.py` réécrit en
+conséquence (5/5).
+
+**R92 — Peut-on dériver E(a,b) = −cos(a − b) avec ce que le milieu a déjà, sans le mettre en
+entrée ?** (cinq contraintes de l'auteur : marges ½, E = −a·b, S_max = 2√2, pas de signalisation,
+pas de dépendance observable au repère de l'éther)
+→ `bell_nonlocal.py`, 5/5. **(A) Lois locales** : scan de P(+|a,n̂) = f(a·n̂) (signe 1,999 ; Malus
+0,943 ; rampes 1,92 et 2,00 ; cubique 0,32) : max S = 2 au signe, |S| ≤ 2 pour toute f. **(B) Ce que le
+milieu a déjà de non local** : le quantum partagé (R47, R87 : les deux filles portent les deux
+moitiés d'un seul quantum, une contrainte globale de conservation) et la sphère de Bloch comme
+espace d'états (R83, R85). Si la mesure de A réoriente l'axe partagé vers ±a (contrainte globale,
+instantanée dans le repère de l'éther) : avec la réponse signe, E = −sign(cos θ), **S = 4**,
+super-quantique, exclu par l'expérience ; avec une réponse p(θ), E = −(2p − 1), et **E = −cos θ ⇔
+p = cos²(θ/2), la règle de Born sur la sphère de Bloch, unique**. La base a la sphère et la
+contrainte globale, pas la mesure : **−cos θ n'est pas dérivé**, et sans Born la contrainte globale
+surchoote. **(C) Vitesse du canal** : la seule vitesse du milieu est c₀ = c ; Salart et al. 2008
+(18 km, repères balayés sur 24 h) bornent le canal à > 10⁴ c : une onde sur le milieu est exclue
+comme canal, seule une contrainte globale instantanée convient. **(D) Signature de repère** :
+contrainte instantanée ⇒ les statistiques ne dépendent pas de l'ordre des mesures, δE = 0, aucune
+prédiction nouvelle ; canal à vitesse finie ⇒ chute vers |S| ≤ 2 pour des détections simultanées
+à L/v près, non observée, déjà bornée. **Verdict** : sortie honnête n° 1 du test : **−cos θ n'est
+pas dérivé ; secteur quantique absent, squelette présent** (une contrainte globale, le quantum
+partagé ; un espace d'états, la sphère de Bloch) ; la règle de Born, unique réponse compatible,
+doit être ajoutée ; aucun δE ne sort. La base a construit de la cinématique quantique (S = ℏ/2,
+g = 2, c₁ = 1, ψ(2π) = −ψ) sans la dynamique quantique (superposition, Born, états joints).
