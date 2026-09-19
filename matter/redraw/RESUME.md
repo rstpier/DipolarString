@@ -82,17 +82,22 @@ de l'exposant.
 
 ## 6. Ce qui reste à fournir
 
-1. La règle qui produit Koide, c'est-à-dire à la fois le 45° et la rotation 2/9 (et donc
-   l'exposant 2π à 1 %) ; et pourquoi 3, 7, 11 (pas de 4 brins neutres, deux DQD).
-2. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
-3. Ce qui épingle l'anneau du pion à r_e/2.
-4. Le spin : un seul compte (circuits ou anneau), et le neutron trop lourd de quelques %.
-5. Le −1 sous un tour complet (statistique d'échange), non abordé.
+1. La règle qui produit Koide : le 45° a un candidat (un quantum de circulation dans le canal
+   commun, un dans le canal des différences, R62) ; la phase du doublet 2/9 n'a aucun mécanisme
+   (les identités trouvées à R63 sont des rationnels par construction). Et pourquoi 3, 7, 11
+   (les DQD neutres s'ajoutent par paires, jamais un seul).
+2. Une dynamique : aucun processus n'est calculé. La durée de vie comme « respiration de Z » (R64)
+   exige une désadaptation en m² sur une échelle fixe de ~1 TeV que la base n'a pas.
+3. La largeur du ruban, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions (R54).
+4. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
+5. Ce qui épingle l'anneau du pion à r_e/2.
+6. Le spin : un seul compte (circuits ou anneau), et le neutron trop lourd de quelques %.
+7. Le −1 sous un tour complet (statistique d'échange), non abordé.
 
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 53 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 59 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

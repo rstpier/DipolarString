@@ -1227,3 +1227,28 @@ la circonférence, 2/(3π) = 0,212 (−4,5 %) ; rien à moins de 4 % : exclue. *
 ou comme un produit de charges ; elle n'a pas de règle qui fasse de l'une ou l'autre la phase du
 doublet. La prochaine règle à trouver : pourquoi la phase du doublet est la phase dynamique d'une
 jonction sur un radian.
+
+**R64 — « La durée de vie est sûrement la respiration du Z de la particule : elle devrait être
+adaptée et, si elle respire, elle se disperse. »**
+→ `breathing_lifetime.py`, 7/7. **Lecture testée** : un circuit fermé adapté à Z₀ ne perd rien ;
+si son impédance respire, une fraction (ΔZ/2Z₀)² de l'énergie fuit à chaque tour, et τ = T/fuite
+avec T = trajet/c. **Ce que les données demandent** (trajets du redessin) : fuite par tour de
+2,5 (Δ), 3,5·10⁻⁷ (π⁰), 10⁻¹⁵ (π±), 8·10⁻¹² (τ), 1,8·10⁻¹⁷ (μ), 2·10⁻²⁶ (n) — 26 ordres de grandeur
+pour une seule « respiration », soit ΔZ/Z₀ de 10⁻³ (π⁰) à 3·10⁻¹³ (n). **Le Δ se défait en moins
+d'un tour** (0,4 tour) : ce n'est pas une fuite lente mais un anneau qui ne tient pas deux quanta
+(R49). **Respiration semblable à elle-même** (tout suit ℓ₁(n)) : même fuite par tour pour μ et τ,
+donc τ ∝ 1/m, ce qui met τ → eνν à 1,3·10⁻⁷ s contre 1,6·10⁻¹² mesuré : **faux de 5 ordres,
+exclue.** Ce que μ et τ imposent : Γ ∝ m⁵ (à 0,3 %), donc avec T ∝ 1/m une fuite par tour ∝ m⁴ et
+une désadaptation ΔZ/Z₀ ∝ m² (281 contre 283). **Cela exige une échelle fixe** : fuite = (m/M)⁴
+avec M = 1,6 TeV, soit L = ℏc/M = 1,2·10⁻⁴ fm ; la plus petite longueur de la base (w₉ = 0,157 fm)
+est 1300 fois plus grande, l'échelle ℓ₁(n) demanderait n ≈ 37 (objet sans rôle) ; m_e/α³ = 1,3 TeV
+tombe à 19 % avec un préfacteur inconnu : coïncidence, pas un mécanisme. **Le neutron tranche
+entre taille et énergie** : la même loi avec la taille de sa boucle (6 fm) donne 10⁻⁴ s (faux de
+10⁷) ; avec l'énergie libérée Q = 1,29 MeV, 8000 s contre 878 (facteur 9, que le modèle standard
+loge dans g_A et l'espace des phases) : c'est l'énergie libérée qui compte, pas la géométrie.
+Les pions ne suivent pas (π± : facteur 21, l'anneau n'est pas un circuit de lepton, R42 ; π⁰ :
+10¹⁰, fuite électromagnétique, autre mécanisme). **Verdict** : EXCLU tel qu'énoncé (une
+respiration à l'échelle de la particule donne τ ∝ 1/m) ; CONDITIONNEL si la désadaptation croît
+comme m² par rapport à une échelle fixe de ~1 TeV, que la base n'a pas : c'est la constante de
+Fermi sous un autre nom. La règle à trouver : quel défaut fixe, mille fois plus petit que le ruban
+du quark, désadapte un circuit en (L/ℓ₁)².
