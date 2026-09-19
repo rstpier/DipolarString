@@ -1821,9 +1821,9 @@ comme modèle local à configurations définies, se calcule. **(A)** La paire de
 anneaux de circulations opposées, S₊ = −S₋ le long de l'axe de la mère, axe aléatoire : le singulet
 classique. **(B)** Corrélation de spin E(a,b) : (i) projection de signe, E = −(1 − 2θ/π), CHSH = 2
 (Monte-Carlo à 1 %) ; (ii) réponse de Malus sur la sphère de Bloch de R83/R85, E = −(a·b)/3, CHSH =
-2√2/3 = 1,886 ; mécanique quantique E = −a·b, CHSH = 2√2 = 2,828. **(C)** Expériences sans faille :
+2√2/3 = 0,943 ; mécanique quantique E = −a·b, CHSH = 2√2 = 2,828. **(C)** Expériences sans faille :
 Hensen 2015 (spins NV à 1,3 km) S = 2,42 ± 0,20, photons ~2,70 ± 0,05 : la borne locale 2 est
-dépassée. **Verdict** : la base prédit CHSH ≤ 2 (1,89 avec sa propre mesure de Bloch) : **EXCLU
+dépassée. **Verdict** : la base prédit CHSH ≤ 2 (0,94 avec sa propre mesure de Bloch) : **EXCLU
 comme modèle local.** Une extension viable doit être non locale par le milieu (le repère
 privilégié de l'éther le permet en principe, comme l'onde pilote) ou porter des superpositions
 de configurations ; aucune équation dans la base. C'est, avec R89, la seconde prédiction qui mord,

@@ -11,7 +11,7 @@ predit malgre elle, comme modele local a configurations definies, se calcule :
   B. correlation de spin E(a, b) pour deux modeles de mesure :
      (i)  projection de signe, sortie sign(a.n) : E = -(1 - 2 theta/pi), CHSH max = 2 ;
      (ii) reponse de Malus sur la sphere de Bloch (R83/R85), sortie +-1 avec
-          probabilite cos^2(theta/2) : E = -(a.b)/3, CHSH max = 2 sqrt2 / 3 = 1,886.
+          probabilite cos^2(theta/2) : E = -(a.b)/3, CHSH max = 2 sqrt2 / 3 = 0,943.
      Mecanique quantique : E = -a.b, CHSH = 2 sqrt2 = 2,828.
   C. experiences sans faille (Hensen 2015 : S = 2,42 +- 0,20 ; photons : 2,70 +-
      0,05 typ.) : > 2.  Les deux modeles locaux sont exclus.
@@ -69,7 +69,7 @@ def main():
     print()
     check("modele (i) : E lineaire en theta (MC a 1 %), CHSH = 2",
           all(abs(mc[th] - E_sign(th)) < 0.01 for th in mc) and abs(S["projection de signe (i)"] - 2) < 1e-9, "2.000")
-    check("modele (ii) : CHSH = 2 sqrt2 / 3 = 1,886", abs(S["Malus / Bloch (ii)"] - 2 * math.sqrt(2) / 3) < 1e-9, "1.886")
+    check("modele (ii) : CHSH = 2 sqrt2 / 3 = 0,943", abs(S["Malus / Bloch (ii)"] - 2 * math.sqrt(2) / 3) < 1e-9, "0.943")
     check("MQ : CHSH = 2 sqrt2", abs(S["mecanique quantique"] - 2 * math.sqrt(2)) < 1e-9, "2.828")
 
     print("C. Experiences sans faille")
@@ -79,7 +79,7 @@ def main():
     print("  -> les deux modeles locaux de la base sont exclus ; la MQ tient.\n")
     check("les experiences depassent la borne locale 2 (> 2 sigma)", all((s - 2) / ds > 2 for s, ds in exps.values()), "Bell viole")
 
-    print("D. Verdict : la base predit CHSH <= 2 (1,89 avec sa propre mesure de Bloch), faux. Elle n'a")
+    print("D. Verdict : la base predit CHSH <= 2 (0,94 avec sa propre mesure de Bloch), faux. Elle n'a")
     print("   ni superposition ni regle de Born ; le manuscrit v2.9.2 a retire son mecanisme faute")
     print("   d'equation. Une extension viable doit etre non locale par le milieu (repere privilegie de")
     print("   l'ether, permis en principe) ou porter des superpositions de configurations : a construire.\n")

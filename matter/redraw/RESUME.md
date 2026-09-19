@@ -103,7 +103,7 @@ base ; il tranchera. La matière noire, elle, n'est pas prédite : un défaut ne
 E = C/R sans minimum (aucune taille pour un objet sans charge), et épinglé au vide il pèse
 ~1 MeV, exclu par le BBN (R90) ; le secteur sombre de la base, ce sont les neutrinos, dont elle
 ne fixe pas la taille. L'intrication : la base, modèle local à configurations définies, prédit
-CHSH ≤ 2 (1,89 avec sa mesure de Bloch) contre 2,83 mesuré ; exclue comme modèle local, elle
+CHSH ≤ 2 (0,94 avec sa mesure de Bloch) contre 2,83 mesuré ; exclue comme modèle local, elle
 exige une extension non locale par le milieu ou des superpositions, sans équation (R91).
 
 Ce qui reste vraiment :
