@@ -1555,3 +1555,23 @@ par circuit fermé, si chaque canal est un circuit fermé, non démontré ; (3) 
 φ = 2/9 (le dédoublement), sans mécanisme (R63). **Verdict** : NON DÉRIVÉ ; le √2 n'est pas mis à
 la main, il est montré équivalent à (2) ; (2) et (3) restent les deux règles à produire, et elles
 sont indépendantes (la phase ne touche pas les normes).
+
+**R80 — « Chaque canal C₃ (singulet, doublet) est-il un circuit fermé portant un quantum ? »**
+(le point à démontrer laissé par R79)
+→ `channel_circuits.py`, 4/4. **(A) La topologie dessinée** (R42, R54 : un anneau fermé de trois
+brins en série, trois jonctions) est un triangle : espace des cycles de dimension 1, invariant sous
+Z₃ : **un seul circuit fermé, le singulet ; le doublet n'a pas de circuit**, et R47 (« un quantum
+par circuit fermé ») ne peut rien lui donner. Dans cette topologie l'énoncé est impossible.
+**(B) La topologie où il a un sens** : trois boucles fermées coaxiales (une par brin), chacune
+refermée sur sa propre jonction pôle à pôle : espace des cycles de dimension 3, caractère (3, 0, 0)
+= singulet + doublet ; trois boucles de −e/3 à c sur R = ƛ donnent μ = μ_B et S = ℏ/2, et les trois
+jonctions de R54 (la moitié statique) sont conservées : compatible avec R53 et R54. **(C) Même
+alors**, le couplage magnétique statique des trois boucles, L = ln(8R/r_g) − 2, M = ln(8R/d) − 2,
+donne M/L = 0,55 (brins qui se touchent), 0,32 (écart de jonction), 0,16 (d = 2w) contre 1/√2
+requis ; 1/√2 demanderait d = 0,75 w, des brins qui se recouvrent. **(D)** Un quantum égal par
+circuit donne E_s/E_d = (L + 2M)/(L − M) = 2,4 à 4,7, jamais 1 : la conservation « un quantum par
+canal » de R79 n'est **pas** celle de R47, et l'égalité des normes n'est pas une égalité
+d'énergies de circuits. **Verdict** : EXCLU que le 45° vienne de R47 appliqué aux circuits de
+l'anneau, dans les deux topologies ; CONDITIONNEL que l'électron soit trois boucles coaxiales
+(seule topologie où les canaux sont des circuits, sans rien casser de R53/R54). La règle « un
+quantum par canal irréductible » reste à inventer, ou le 45° vient d'ailleurs.

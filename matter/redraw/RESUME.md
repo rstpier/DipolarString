@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R79)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R80)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R79).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R80).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -109,7 +109,11 @@ Ce qui reste vraiment :
    déviatorique égales » = un quantum par canal irréductible (pas par degré de liberté, qui
    donnerait deux leptons sans masse) ; aucun extremum ne le sélectionne, il faut une
    conservation ; la statique des trois brins donne la forme mais un doublet dégénéré, la phase
-   est une holonomie indépendante des normes (R79). Le pas de génération
+   est une holonomie indépendante des normes (R79). Ce quantum par canal n'est pas celui de R47 :
+   dans l'anneau dessiné (trois brins en série) le doublet n'a même pas de circuit, et dans la
+   seule topologie où il en a un (trois boucles coaxiales, compatible avec R53/R54) ni le couplage
+   statique (M/L = 0,3–0,6 contre 0,71) ni un quantum égal par circuit ne donnent le 45° (R80).
+   Le pas de génération
    est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I).
    La liaison des paires est un verrou topologique (Lk = Tw + Wr conservé, forme gelée, R77),
    mais ce verrou tient aussi une troisième paire (Wr = 1 à r₀ = 0,376) : l'absence de quatrième
@@ -127,9 +131,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R79 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R80 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 74 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 75 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
