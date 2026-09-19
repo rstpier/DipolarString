@@ -1186,3 +1186,24 @@ efficacité de moment 2A_z/s = 0,89 de la valeur plane ; g = 2 inchangé (μ et 
 **Verdict** : le writhe est exigé par les 120° de Koide et permis par l'énergie ; la base en donne
 la raison par un verrouillage du repère sur le milieu (postulat cohérent avec R9/R10/R17), pas par
 une préférence calculée.
+
+**R62 — Suite de R59 (le message R60 de l'auteur mis de côté à sa demande) : ce qui est incliné à
+la diagonale du cube, ce qui accumule 2/9 rad.**
+→ `cube_direction.py`, 5/5. **La lecture cubique** : la forme de Koide dit que les trois racines de
+masse sont les trois composantes, sur trois axes orthogonaux, d'une seule direction unitaire u à
+45° de la diagonale (1,1,1), d'azimut θ autour d'elle. Dans un milieu cubique (section carrée
+w = d de R17, bouchon cubique de R51) les trois axes sont les arêtes de la cellule : les générations
+seraient les composantes au carré d'une direction du milieu. La direction des données :
+u = (0,0165, 0,237, 0,971), à 13,7° de l'axe τ, 76,3° de l'axe μ, 89,06° de l'axe e, et à 45,000° de
+la diagonale. **Le 45°** est l'égalité des deux canaux Z₃ d'un système à trois brins (phase A : le
+singulet A le long de (1,1,1), le doublet E₁ dans le plan) : |u_singulet| = |u_doublet|, la somme
+des masses de la famille se partage à égalité entre le canal commun et le canal des différences.
+**Aucune direction cristallographique** (h, k, l) avec |h|,|k|,|l| ≤ 8 n'est à 45° de la diagonale
+(2(h+k+l)² = 3(h²+k²+l²) n'a pas de petite solution) : la direction n'est pas un vecteur du réseau ;
+le 45° doit venir d'une règle sur les canaux, pas de la géométrie de la cellule. **La règle que la
+base pourrait fournir** : un quantum de circulation dans chaque canal, le singulet et le doublet
+portant chacun une unité (comme le DQD du vide en porte deux, R57 A, et en donne une à chaque
+fille, R4) : des poids égaux donnent 45° exactement pour tout azimut ; l'azimut est alors la phase
+du doublet, dynamique, et 2/9 reste à produire. **Verdict** : dans la lecture cubique le 45° devient
+« un quantum dans le singulet, un dans le doublet » (conditionnel), et les deux règles manquantes
+se réduisent à une : ce qui fixe la phase du doublet à 2/9.
