@@ -1067,3 +1067,22 @@ des comptes (une pente log-log d'un tour), mais aucune règle ne relie encore le
 **Verdict** : 2π est épinglé à 0,15 %, unique parmi les constantes simples, mais la structure exacte
 est celle de Koide ; non dérivé ; la cible suivante est une règle qui fasse « un tour par e-fold du
 compte de brins » et retombe sur Koide.
+
+**R56 — « 2π, c'est un cercle ou une sphère : donc une forme sphérique imparfaite (déformation,
+respiration). »** (l'auteur, après R55)
+→ `sphere_breathing.py`, 5/5. Lu comme « exposant = périmètre/rayon » : 2π est un cercle fermé, le
+ring fermé de R53 ; un 3/4 de tour ouvert donnerait 3π/2 = 4,71 et mettrait le muon à 54 m_e
+(mesuré 207) : le 2π de l'échelle est la signature du ring fermé. **Déformation** : toute
+déformation plane à rayon moyen fixe augmente périmètre/rayon au-dessus de 2π (ellipse d'ellipticité
+d : +3d²/4) ; le +0,15 % du muon serait une ellipticité de 4,5 %, mais le −0,12 % du tau ne peut pas
+être une déformation : la lecture échoue sur le signe. **Respiration** : une respiration purement
+radiale garde périmètre/rayon = 2π à chaque instant, elle ne déplace rien. **Sphère** : un anneau
+classique de rayon ƛ porte un quadrupôle eR²/2 = 7,5·10⁴ e·fm², un spin ½ n'en a pas ; un anneau
+culbuté sur toutes les orientations n'a plus de quadrupôle mais plus de moment non plus (il faut
+μ_B) : la sphère n'est pas atteignable classiquement, le quadrupôle s'annule par l'algèbre du spin,
+pas par la forme. **Où vit le cercle de l'auteur** : dans la forme exacte de Koide,
+√m_k = A[1 + √2·cos(θ + 2πk/3)], les trois leptons sont trois points sur un cercle à 120° (en √m),
+tourné d'un angle θ = 2/9 rad (Brannen) retrouvé ici à 0,002 % : un cercle imparfait par une petite
+rotation fixe, exact à 10⁻⁵, là où la loi de puissance n'est qu'une approximation à 1 % (R55).
+**Verdict** : l'idée du cercle est juste mais pas dans l'exposant ; elle est dans le cercle de Koide
+et sa rotation de 2/9, que la base doit maintenant produire.
