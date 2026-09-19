@@ -768,3 +768,28 @@ donnent ℏ/2 (↑↑↓), l'anneau + de R25 ne peut pas en porter un autre, il 
 collective des circuits (ouvert). **Verdict** : les brins se ferment par quark, trois circuits de
 trois ; la masse du nucléon en sort à 1 à 3 % (p) et 1,5 à 7 % (n) avec une règle et l'échelle des
 leptons, sans nombre libre ; le quark constituant est un électron à l'échelle 9.
+
+**R42 — « Résume la topologie finale. Cherche ce qui fixe l'écart p–n. »**
+→ `pn_splitting.py`, 5/5. **Topologie finale (R28 à R41), en clair** : l'espace est un milieu de
+cordes dipolaires neutres (DQD) adaptées à Z₀ ; tout fermion est trois brins portant chacun −1/3,
+0 ou +1/3 (e = −−−, ν = 000, u = ++0, d = −00), la couleur étant la position du brin impair ; le
+fluide de chaque brin est un vortex, pas une onde ; les trois brins d'un lepton forment un seul
+circuit fermé (3/4 de tour) portant un quantum de circulation q = e/(2√α), dont l'énergie de ligne
+πℏc/(3ℓ₁) est la moitié de la masse, l'autre moitié étant immobile aux deux pôles, avec l'échelle
+ℓ₁(n) = ℓ₁(3)(3/n)^{2π} et n = 3, 7, 11 (chaque génération ajoute deux DQD neutres) ; un quark est
+le même circuit à trois brins à l'échelle ℓ₁(9) = 0,81 fm (254 MeV), attaché en étoile ; un baryon
+est trois circuits de quark (9 brins, 763 MeV immobiles) plus une circulation d'anneau à 0,8–1 fm
+(125 à 170 MeV) qui porte le spin et le moment ; un méson est un anneau fermé de 4 à 6 brins à
+r_e/2 (140 MeV) ; le neutron est un proton avec une boucle négative de type électron à 0,9–1,0 fm
+accrochée par un joint ; la force nucléaire est la jonction pôle à pôle, 2 MeV à 0,7 fm ; la tension
+forte est l'énergie de la ligne adaptée par unité de trajet, πℏc/ℓ₁(9)² = 939 MeV/fm (√σ = 430 MeV).
+**L'écart p–n** : p = uud et n = udd sont les mêmes trois circuits et le même graphe de jonctions,
+donc les 763 MeV immobiles et les joints s'annulent dans n − p ; ce qui diffère est le contenu des
+brins, le neutron ayant un brin neutre de plus (5 contre 4) et un brin chargé de moins. Si le brin
+neutre est un DQD complet (deux branches ±e/3, l'unité de l'espace, R9), son énergie bifilaire à
+l'échelle du nucléon vaut (e/3)²/(ε₀ℓ₁(9)) = 4πK/(9ℓ₁) = **2,47 MeV = (2α/3)·3^{2π}·m_ec²**, la
+part forte de n − p, contre 2,52 ± 0,29 sur réseau ; moins l'énergie de Coulomb du proton (0,86 à
+1,03 MeV à r_p ; réseau 1,00 ± 0,16), **m_n − m_p = 1,44 à 1,61 MeV contre 1,293 : bon signe, +11 à
++25 %**, sans nombre libre (α, m_e, 2π, le compte 9). La même règle sur les pions rate (1,9 MeV
+contre 4,59 avec uū, mauvais signe avec dd̄) : l'anneau du pion n'est pas fait de circuits. Le
+résidu de 11 à 25 % est dans le terme de Coulomb du proton, dont la géométrie n'est pas fixée.
