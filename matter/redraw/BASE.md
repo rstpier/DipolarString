@@ -1086,3 +1086,23 @@ tourné d'un angle θ = 2/9 rad (Brannen) retrouvé ici à 0,002 % : un cercle i
 rotation fixe, exact à 10⁻⁵, là où la loi de puissance n'est qu'une approximation à 1 % (R55).
 **Verdict** : l'idée du cercle est juste mais pas dans l'exposant ; elle est dans le cercle de Koide
 et sa rotation de 2/9, que la base doit maintenant produire.
+
+**R57 — « Dynamisme de l'espace. »** (énoncé de l'auteur, lu comme : les DQD du vide ne sont pas
+statiques)
+→ `space_dynamics.py`, 5/5. Trois lectures chiffrées. **Vide en circulation** : un DQD de spin 1 (R3)
+porte deux quanta de circulation sur son trajet fermé 2ℓ₁(3) = 1618 fm, E = 2πℏc/trajet = 0,77 MeV
+= 1,5 m_e ; brisé en deux filles de spin ½ (R4), il donne à chacune son quantum : la circulation de
+l'électron est héritée, pas créée, un mécanisme pour « un quantum par circuit » (R40). **Son prix** :
+un tel DQD par cellule ℓ₁ × D₀² (D₀ = 235 fm, R54) fait une densité d'énergie de 1,7·10⁻⁸ MeV/fm³
+= 2,8·10²⁴ J/m³, 5·10³³ fois l'énergie du vide observée (5,4·10⁻¹⁰ J/m³) : un milieu en circulation
+ne doit pas graviter comme une énergie ordinaire, ou bien ses DQD sont statiques et le dynamisme
+n'est que leur capacité à être excités. **Milieu en expansion** : si l'écart D₀ suivait l'expansion
+cosmique (H₀ = 7·10⁻¹¹ par an) à taille de particule fixe, la moitié statique de l'électron (trois
+jonctions à D₀, R54) et donc g dériveraient à 10⁻¹⁰ par an, contre une stabilité de 3·10⁻¹⁴ : exclu
+de 4 ordres ; si tout co-expand, les rapports de la base sont invariants d'échelle (R17 A) et rien
+ne change localement, mais toutes les masses dérivent à H₀ par rapport à G, contre Ġ/G < 10⁻¹³ :
+exclu de 3 ordres. **Milieu superfluide** : une tension de ligne de vortex σ = ρΓ²ln(R/a)/(4πc²)
+avec la densité ci-dessus et un cœur de ƛ_p vaut 3·10⁻⁹ MeV/fm, 3·10¹¹ fois trop peu : la
+circulation propre du milieu est bien trop diluée pour confiner. **Verdict** : ce qui survit est le
+mécanisme d'héritage du quantum (si l'énergie du milieu ne gravite pas) ; l'expansion du milieu
+et le confinement par le milieu sont exclus. À préciser par l'auteur : quel dynamisme ?
