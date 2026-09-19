@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R102)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R103)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R102).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R103).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -29,7 +29,10 @@ pour la tension de corde et l'écart proton–neutron.
   immobile retrouve l'écart propre du DQD (le « 37,1 » du manuscrit) à 3 %. **Arrêté en R100
   pour la charge** : si la charge e suit l'anneau, son facteur de forme est j₀(qR) et l'électron
   mesuré a G_E = 1 (Compton, e–p, LEP) ; la circulation d'énergie tient, la charge étalée à 386 fm
-  non, et μ_B = ecƛ/2 est à refaire.
+  non. **Décision R103 : l'électron électromagnétique est celui de Dirac** (point, G_E = G_M = 1,
+  μ_B et g = 2 par la structure spinorielle) ; les nombres de l'anneau (S = ℏ/2, μ_B, g = 2) sont
+  des identités de Compton ajustées à Dirac, et le demi-quantum πℏ par tour est l'action du
+  Zitterbewegung. L'anneau reste une circulation d'énergie neutre (horloge de de Broglie).
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -53,7 +56,6 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 | résultat | valeur | mesuré / réseau | écart |
 |---|---|---|---|
 | spectre de charge des fermions | {0, ±1/3, ±2/3, ±1} | idem | exact |
-| moment magnétique de l'électron (μ_B = ecƛ/2 : suspendu par R100, la charge n'est pas étalée à ƛ) | μ_B, g = 2 | 2,0023 | 0,1 % |
 | masse du muon, du tau : forme C₃ (Koide) avec a² = 2\|b\|² et φ = 2/9 **posés** (R76) | 105,66 ; 1777,0 MeV | 105,66 ; 1776,9 | 10⁻⁵ ; 7·10⁻⁵ |
 | (l'échelle (n/3)^{2π} n'est plus une loi de masse : approximation à 1 %, exclue par l'absence de 4e génération, R73/R76) | 104,8 ; 1794 | | −0,8 % ; +1,0 % |
 | pion (anneau fermé) | 2m_ec²/α = 140,05 MeV | 139,57 | +0,3 % |
@@ -63,9 +65,13 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 | rayon de charge du proton (charges aux bouts des bras) | 0,81 fm | 0,84 | −3 % |
 | Δ − N (trois fois la circulation d'anneau) | 250 à 336 MeV | 294 | ±15 % |
 | force nucléaire (tri-jonction) | 2 MeV | deutéron 2,2 | 10 % |
-| écart du DQD depuis g = 2 | ƛ/38,1 | manuscrit ƛ/37,1 | 2,7 % |
 
 ## 4. Ce qui est conditionnel ou coïncidence
+
+- L'électron (R103) : μ_B, S = ℏ/2 et g = 2 sont des identités du choix (R = ƛ, E_circ = m/2,
+  q = e), pas des sorties ; g = 2 est une entrée (Dirac). La moitié statique en trois jonctions
+  (R54) est une identité qui définit D = 6ƛ/π² ; l'accord avec le « 37,1 » du manuscrit (2,8 %)
+  est une coïncidence.
 
 - La largeur du ruban (w = 6ƛ/π² depuis les trois jonctions) : l'écart p–n n'y est sensible qu'à
   un facteur 2 près (±11 %) ; la forme du pôle (bouchon) vient du mécanisme d'entassement pris
@@ -104,6 +110,10 @@ exacte), la diffusion exige R < 0,05 fm ; le facteur de forme magnétique de la 
 7·10⁻⁷ à 1 GeV/c contre 1 mesuré ; l'électron de Dirac a G_E = G_M = 1 exactement, charge et
 moment ponctuels, taille ƛ cinématique. À décider par l'auteur : un moment sans courant de charge,
 ou la structure de Dirac. C'est le point exact où la base et l'électron de Dirac se séparent.
+**Décidé (R103) : la structure de Dirac.** Le secteur électron de la base est une reformulation
+de Dirac avec une boucle que la diffusion exclut ; ce qui reste à la base est ailleurs : brins,
+générations (Koide, conditionnel), quarks et nucléon, tension forte, force nucléaire, loi de fuite
+(identité avec G_F). La consolidation doit porter là.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -209,9 +219,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R102 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R103 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 97 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 98 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

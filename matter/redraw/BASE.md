@@ -2163,3 +2163,29 @@ pour la charge, σ × q pour le moment). La circulation d'énergie à ƛ (masses
 n'est pas touchée si elle est neutre ; **le moment n'a plus de source dans la base** : ou bien elle
 fournit un moment sans courant de charge, ou bien elle adopte la structure de Dirac. Décision de
 l'auteur ; c'est le point exact où la base et l'électron de Dirac se séparent.
+
+**R103 — Décision : l'électron électromagnétique est celui de Dirac** (« Ouf ! Décide ! »).
+→ `electron_is_dirac.py`, 3/3. Deux issues après R100–R102 : (a) inventer un moment sans courant
+de charge, un mécanisme nouveau, interdit par le critère de R100 ; (b) donner l'électron
+électromagnétique à Dirac (point, G_E = G_M = 1, μ_B et g = 2 par la structure spinorielle, Darwin
+= m/E) et ne garder de la base que ce qui ne dépend pas de la position de la charge. **Décision :
+(b).** Ce que (b) coûte, calculé : **(A)** les nombres de l'électron dans la base sont des identités
+de Compton ajustées à Dirac : S = R·E_circ/c = ℏ/2 et μ = qcR/2 = μ_B sortent du seul choix (R = ƛ,
+E_circ = m/2, q = e) de R53 ; toute la masse en circulation à ƛ donne g = 1, le rayon du
+Zitterbewegung ƛ/2 avec toute la masse donne μ_B/2 : **g = 2 est le partage moitié-moitié posé,
+pas une sortie** ; R53 passe à IDENTITÉ par construction, g = 2 devient une entrée (Dirac). **(B)**
+Zitterbewegung de Dirac au repos, calculé (α(t) = e^{iHt}αe^{−iHt}) : v = c, amplitude ƛ/2,
+ω = 2mc²/ℏ, action par période E·T = πℏ ; la base : R = ƛ, ω = mc²/ℏ (l'horloge de de Broglie),
+E_circ·T = πℏ. Même vitesse, même action : **le demi-quantum πℏ de R86–R87 est l'action du
+Zitterbewegung**, rayon et fréquence à un facteur 2 près (m/2 à ƛ contre m à ƛ/2). **(C)** R54
+(moitié statique = trois jonctions) : 3ℏc/(π²D) = m/2 est une identité qui *définit* D = 6ƛ/π² ;
+son seul contenu est 6/π² = 0,608 contre 2cosh(π)/37,1 = 0,625 (+2,8 %) : DÉRIVÉ → COÏNCIDENCE.
+R84–R85 : sans objet pour la charge (l'orientation de R82–R83 et R95–R98 reste) ; R89 : retiré ;
+R99 A tient (la base a la structure fine par Sommerfeld). **(D)** Ce qui reste à la base, hors de
+Dirac : le spectre de charge des brins (R1–R16), la structure des générations (Koide,
+conditionnelle, R76–R81), l'échelle des quarks et le nucléon (R21–R31), la tension forte, la force
+nucléaire, la loi de fuite (identité avec G_F, R68–R69). L'anneau à ƛ reste comme circulation
+d'énergie neutre, sans charge dessus, et ne prédit rien au-delà de Dirac pour l'électron.
+**Verdict** : DÉCISION (b). Le secteur électron de la base est une reformulation de Dirac, avec
+une boucle que la diffusion exclut ; le contenu propre de la base est ailleurs (brins, générations,
+hadrons). C'est là que la consolidation doit porter.
