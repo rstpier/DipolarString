@@ -2038,3 +2038,26 @@ reste un pont spinoriel conditionnel. Le verrou suivant : **dériver une dynamiq
 réorientation de l'anneau dans l'analyseur**, une interaction qui couple l'orientation interne du
 défaut à l'axe de l'analyseur et engendre réellement la transformation SU(2), et non plus un
 séparateur biréfringent passif.
+
+**R98 — La dynamique de réorientation de l'anneau dans l'analyseur, à partir du seul couplage
+de la base** (« Je ne comprends rien, choisis » : choix fait, le moment μ_B dans un champ, R53).
+→ `reorientation.py`, 5/5. Entrées : μ = μ_B n̂ dans un champ B le long de â (R53), S = (ℏ/2) n̂
+(R53), pas d'inertie d'orientation (R83). **(A) Le couplage seul** : dS/dt = μ × B, précession de
+Larmor à ω_L = 2μ_B B/ℏ = eB/m_e (g = 2 retrouvé) ; l'angle θ entre n̂ et â est conservé exactement
+(le couple est ⊥ â) : **S·â est conservé** ; le couplage ne réoriente pas, il fait précesser. **(B)
+Stern–Gerlach classique** : force μ_B cos θ ∂B/∂z, distribution des déflexions continue et plate
+(dix classes à 0,10) ; l'expérience de 1922 montre deux taches : exclu. **(C) Précession amortie**
+(dissipation) : n̂ → +â quel que soit θ (cos final = 1,0000 de 30° à 150°), P(+) = 1 ; l'expérience
+donne ½ à 90° : exclu. **(D) Deux sorties seulement** (le quantum est indivisible, R47 : l'anneau
+finit en +â ou −â) **et conservation en moyenne de ce que le couplage conserve exactement, S·â**
+(équivalent : l'énergie −μ·B) : (ℏ/2)cos θ = (ℏ/2)[p − (1 − p)] ⇒ **p = (1 + cos θ)/2 = cos²(θ/2)**,
+Born, unique, sans |ψ|² en entrée ; vérifié de 0° à 180°, énergie moyenne conservée. **(E)
+Lecture** : l'analyseur agit sur l'orientation par le moment, pas sur le motif de champ (d'où les
+échecs de R94a et R97) ; les deux canaux sont ±â ; le champ est le 2-port. **Verdict** :
+CONDITIONNEL ; Born pour un anneau sort du couplage de la base, qui conserve S·â trajectoire par
+trajectoire, et de deux sorties ; les alternatives continue (déflexion classique) et déterministe
+(alignement amorti) sont exclues par l'expérience. **Non dérivé : le saut discret lui-même** (que
+l'anneau finisse en ±â plutôt que de précesser), et la conservation prise en moyenne sur
+l'ensemble. C'est le même argument que R93 (flux + quantum indivisible), transporté sur la seule
+variable qui transforme avec le demi-angle, l'orientation (R95), et il n'a plus besoin d'un
+analyseur de motif.

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R97)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R98)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R97).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R98).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -123,9 +123,11 @@ construits par projection du champ, avec ou sans la phase de circulation, et mê
 orthonormalisation des canaux, ne portent pas le demi-angle (écart 0,25 à 0,44 à cos²(θ/2),
 jusqu'à 75 % de la norme hors des deux canaux) : le e^{±iθ/2} est une propriété de la
 transformation de l'orientation, pas des recouvrements de champs (R97 ; pas un théorème
-d'inexistence). Le blocage est unique et précis : une dynamique de réorientation de l'anneau
-dans l'analyseur, couplant l'orientation interne à l'axe de mesure et engendrant SU(2), qui
-devrait reproduire cos²(θ/2) ; puis l'état joint (R94b) ; et le verrou N = 1, non dérivé.
+d'inexistence). La réorientation par le seul couplage de la base, μ_B dans un champ : le
+couplage conserve S·â exactement (précession, g = 2), la déflexion classique continue et
+l'alignement amorti sont exclus par l'expérience, et deux sorties ±â avec conservation en
+moyenne de S·â donnent p = cos²(θ/2), Born, sans |ψ|² (R98). Non dérivé : le saut discret
+lui-même. Puis l'état joint (R94b) ; et le verrou N = 1.
 
 Ce qui reste vraiment :
 
@@ -183,9 +185,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R97 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R98 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 92 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 93 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
