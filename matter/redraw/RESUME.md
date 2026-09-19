@@ -42,7 +42,10 @@ pour la tension de corde et l'écart proton–neutron.
   deutéron) ; la tension forte est l'énergie d'un quantum de circulation par unité de trajet,
   πℏc/ℓ₁(9)² = 939 MeV/fm, soit √σ = 430 MeV, au centre de la valeur du réseau (420–440).
 
-## 3. Ce qui est dérivé (entrées : α, m_e, l'exposant 2π, le compte 9, la section du ruban)
+## 3. Ce qui est dérivé
+
+Sans paramètre supplémentaire ajusté, conditionnellement aux entrées α, m_e, l'exposant 2π,
+le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées structurelles non dérivées.
 
 | résultat | valeur | mesuré / réseau | écart |
 |---|---|---|---|
@@ -97,12 +100,15 @@ Ce qui reste vraiment :
 1. **Le −1 sous un tour complet** (Pauli) : la base a l'attache au milieu (tour de ceinture) mais
    pas de mode antipériodique sur un anneau de trois branches simples (R74). Sans lui, pas d'atome
    à plusieurs électrons.
-2. **Le mécanisme de Koide** : le 45° a un candidat (un quantum par canal, R62), la phase 2/9 du
-   doublet n'en a pas (R63). Et pourquoi 13 et 15 sont absents (le spin interdit seulement n = 5,
-   R70).
-3. **Le mur des durées de vie** : M = (96π²)^{1/4}/√G_F = 1,625 TeV est celui du champ faible
-   (R68) ; avec lui, τ(n) = T(n)(M/m)⁴/C(n) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la
-   correction forte), l'électron stable (R69). La base ne fabrique ni M ni l'angle de mélange.
+2. **Le mécanisme de Koide** : les masses sont les trois valeurs propres d'un opérateur C₃
+   (circulant), et Koide est la règle a² = 2|b|² (terme propre² = somme des sauts², le 45°) avec
+   la phase φ = 2/9 (R76) ; ni l'une ni l'autre n'a de dynamique (R62, R63). Le pas de génération
+   est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I) ;
+   reste à montrer que six DQD sans holonomie se détachent (liaison par holonomie, R76).
+3. **Le mur des durées de vie** : M = (96π²)^{1/4}/√G_F = 1,625 TeV par identité (R68, corrigé
+   R76) : la loi de fuite a la structure dimensionnelle du faible, mais G_F reste une entrée ;
+   avec elle, τ(n) = T(n)(M/m)⁴/C(n) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la
+   correction forte), l'électron stable (R69). La base ne fabrique ni G_F, ni M_W, ni l'angle.
 4. **La largeur du ruban**, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions
    (R54) ; et le partage 2/3, 2/3, −1/3 de la circulation du nucléon (R72), posé.
 5. **L'amplitude d'un saut** (émission, désintégration) : la base a les états et les horloges, pas
@@ -113,7 +119,7 @@ Ce qui reste vraiment :
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 70 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 71 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

@@ -1443,3 +1443,38 @@ horloge) ; CONDITIONNEL pour l'amplitude du saut, qui reste celle de la mécaniq
 **Bilan de la passe** : fermés, 1 (brique sans taille), 3 (compte unique, neutron à −1,8 %),
 5 (deux courants, une horloge) ; devenu une décision, 2 (masses = Koide) ; ouvert, 4 (le Z₂ sur
 trois branches simples).
+
+**Correction de R68 (commentaire de l'auteur).** M = (96π²)^{1/4}/√G_F n'est pas une dérivation :
+avec T = 2πℏ/m et Γ_μ = G_F²m⁵/(192π³), ΓT = G_F²m⁴/(96π²) = (m/M)⁴ est une identité, et le
+« 0,3 % » de R68 compare deux fois le même datum (R64 avait ajusté M sur τ_μ, qui définit G_F).
+Ce que R68 montre réellement : **la loi de fuite par tour a exactement la structure
+dimensionnelle du faible** ; pour dire que la base dérive le faible, il faut obtenir
+indépendamment G_F ou une excitation à M_W = 80,37 GeV, M_Z = 91,19 GeV. Le verdict de R68 passe
+de DÉRIVÉ à IDENTITÉ ; l'EXCLU (aucun barreau, aucune excitation neutre de spin 1 à 10² GeV) tient.
+**Reformulation** de « sans nombre libre », partout où il apparaît : *sans paramètre supplémentaire
+ajusté, conditionnellement aux entrées α, m_e, l'exposant 2π et le compte nucléonique 9* ; 2π et 9
+sont des entrées structurelles non dérivées.
+
+**R76 — Fermeture C₃ des générations à partir des paires de DQD (fusion de R60, R61, R70, sur
+commentaire de l'auteur).** Le test n'est plus « pourquoi 3, 7, 11 ? » mais U_pair³ = I, U_pair ≠ I,
+U_pair² ≠ I, avec U_pair l'ajout de deux DQD (4 brins ≡ 1 mod 3, un tiers de tour dans le canal
+writhe, R61 ; le plus petit ajout neutre qui garde le spin ½, R70).
+→ `c3_closure.py`, 6/6. **(A)** U_pair comme décalage cyclique des trois positions : U ≠ I, U² ≠ I,
+U³ = I, U⁴ = U ; dans le canal writhe R(2π/3)³ = I. **(B)** Un opérateur de masse Z₃-symétrique,
+le circulant hermitien C = aI + bU + b̄U², a **exactement trois** valeurs propres a + 2|b|cos(φ +
+2πk/3) : c'est la forme de Koide–Brannen ; Koide (45°) ⇔ a = √2|b| ⇔ |singulet| = |doublet| (30,685
+= 30,685) ⇔ **a² = |b|² + |b|²**, le terme propre au carré égale la somme des deux sauts au carré :
+c'est la règle que la dynamique doit produire ; avec φ = 2/9 et m_e : m_μ à +0,001 %, m_τ à
++0,007 %. **(C)** Quatrième application : U⁴ = U, le quatrième état est le premier, aucune valeur
+propre nouvelle. Sur l'échelle (n/3)^{2π}, n = 15 serait un lepton chargé de 12,6 GeV vivant
+10⁻¹⁷ s (R69), sous la borne du LEP (100,8 GeV) : **l'échelle comme loi de masse est exclue par
+l'absence de quatrième génération**, ce qui force la décision de R73 ; le circulant la prédit
+absente. **(D)** Trois secteurs : N_ν = 2,9963 ± 0,0074. **Ce qui manque** (le point dur) : U³ = I sur
+le spectre ne dit pas encore que six DQD à holonomie nulle ne se lient pas. Lecture candidate :
+six DQD fermés sans tiers de tour sont un morceau de vide (R3), ils ne portent rien et se
+détachent à coût nul ; deux DQD portent un tiers de tour qui les verrouille, et la
+désintégration est le défaire ((m/M)⁴ par tour, R69). Cela demande une énergie de liaison par
+holonomie, non calculée. **Verdict** : DÉRIVÉ que le pas est 4 (R70) et que le spectre d'un
+opérateur C₃ a trois états (le quatrième est le premier) ; CONDITIONNEL que n = 15 relaxe vers
+n = 3 (liaison par holonomie à écrire). Les deux travaux les plus rentables restent : cette
+liaison, et une dynamique qui donne à la fois a² = 2|b|² (45°) et φ = 2/9.
