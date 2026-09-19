@@ -1664,3 +1664,31 @@ tour dans le repère de la section : c'est le motif dipolaire antipériodique, d
 sans qu'on le choisisse, avec une amplitude de 22 % de la section) ; reste posé le demi-tour de
 section par circuit (t = ½, R78), qui fait le signe. La chaîne vers Pauli n'a plus qu'un maillon
 posé de ce côté, plus l'absence d'inertie d'orientation (R83 ii).
+
+**Corrections sur R84 (relecture de l'auteur).** (i) La robustesse au rayon effectif des filaments
+(h/2, h/4, h/8) était annoncée dans le texte mais non calculée dans le PASS : elle est désormais
+calculée et vérifiée (34,20 ; 33,94 ; 33,69 fm, écart 1,5 %, `core_displacement.py` 6/6). (ii)
+« Conducteur parfait ⇒ flux exclu » confondait conducteur parfait et effet Meissner ; le modèle
+est reformulé comme **condition constitutive posée pour le DQD** : ligne sans perte, courant sur
+la surface du brin, flux poloïdal interne contraint (ψ = rA_φ constant sur la surface). Le mot
+« dérivé » de R84 porte cet astérisque : dérivé de cette condition constitutive.
+
+**R85 — Le nombre de Chern du mode transverse sur la sphère des orientations (test proposé par
+l'auteur : A = i⟨ψ|dψ⟩, F = dA, c₁ = (1/2π)∫F ; si le mode déplacé de R84 donne |c₁| = 1, le −1
+sous 2π est une propriété globale du fibré, pas une règle de torsion choisie).**
+→ `chern_number.py`, 4/4. **Méthode** : états sur S² par rotation rigide de l'anneau, ψ(n̂) =
+D(R_n̂)ψ₀ avec ψ₀ de charge axiale k (e^{ikα} sous la rotation de l'anneau autour de son axe) ;
+courbure de Berry par plaquettes (Fukui–Hatsugai–Suzuki), invariante de jauge, sommée sur la
+sphère (60 × 120). **(A)** k = 0, ½, 1 (matrices de Wigner) : c₁ = 0,0000, +1,0000, +2,0000 :
+**c₁ = 2k**. **(B) Le cœur déplacé de R84**, un vecteur du plan ⊥ n̂ tournant avec la circulation à
+sens unique (R53), calculé directement sur le champ (polarisation circulaire) : c₁ = +2 (hélicité
++1) ou −2 (hélicité −1) : **le cœur déplacé seul est un objet d'hélicité 1, pas un spineur.**
+**(C)** Avec le demi-tour de section par circuit (t = ½), le mode a la charge axiale ½ dans le repère
+de section : c₁ = 1, le fibré de spin ½, et le −1 devient global. **(D)** Donc c₁ = 2t' mesure la
+charge axiale du mode, il ne la dérive pas ; le −1 exige t = ½. **Le candidat de la base pour
+t = ½** : la brisure R4 (`spin_from_breaking.py`, phase A, re-exécuté, 8/8 : « spin 1 broken in
+two » est exact comme arithmétique d'ondes, une fille de trois brins à la fréquence de la mère
+porte l'enroulement ½). **Verdict** : DÉRIVÉ que le mode déplacé seul a |c₁| = 2 et qu'avec t = ½ il
+a c₁ = 1 ; le test de Chern ne fait pas émerger t = ½, il le mesure. **Le prochain test décisif** :
+que l'enroulement 1 de la mère se partage à la brisure en deux demi-torsions de **section** (une
+par fille), et non en deux demi-enroulements du triple ; si oui, t = ½ est hérité, pas posé.

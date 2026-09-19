@@ -2,21 +2,23 @@
 """R84 -- Le coeur de la circulation est-il hors du centre de la section ?  (le
 maillon (i) de R83 : que l'electron porte le motif dipolaire)
 
-Modele : l'anneau de l'electron comme conducteur parfait (ligne adaptee sans
-perte, flux exclu) de rayon R = lambda-bar et de section carree de cote
-w = 4 lambda-bar/pi^2 (w/R = 0,405), portant le courant total I le long de
-l'anneau.  Le courant de surface se repartit sur le perimetre de la section
-pour rendre le flux poloidal psi = r A_phi constant sur la surface.
+Modele : l'anneau de l'electron comme ligne adaptee sans perte de rayon
+R = lambda-bar et de section carree de cote w = 4 lambda-bar/pi^2 (w/R = 0,405),
+portant le courant total I le long de l'anneau, avec la CONDITION
+CONSTITUTIVE posee pour le DQD : le courant vit sur la surface du brin et
+le flux poloidal interne est contraint, psi = r A_phi constant sur la surface
+(ce n'est pas "conducteur parfait => flux exclu", qui confond conducteur
+parfait et effet Meissner ; c'est une condition sur le brin, posee).
 Discretisation en filaments circulaires coaxiaux (inductances mutuelles par
 integrales elliptiques), psi_i = sum_j M_ij I_j = const, sum I_j = I.
 Sortie : le centroide du courant r_c et son deplacement delta = R - r_c.
 
   A. delta pour w/R = 0,405 : le coeur est-il deplace, de combien ?
   B. loi d'echelle : l'estimation K ~ 1/r donne delta ~ w^2/(12 R) ; le flux
-     exclu concentre bien plus le courant sur la face interne (rapport 4 a
+     contraint concentre bien plus le courant sur la face interne (rapport 4 a
      w/R = 0,405), delta est 6 fois plus grand, avec un exposant en w un peu
-     sous 2 (correction logarithmique ln(8R/w)) ; robuste au rayon effectif des
-     filaments a 1 %.
+     sous 2 (correction logarithmique ln(8R/w)) ; robustesse au rayon effectif
+     des filaments (h/2, h/4, h/8) calculee et verifiee.
   C. sens : vers l'interieur (le chemin court), direction radiale fixe.
   D. courant uniforme (fil resistif) : delta = 0 ; le deplacement est propre a
      la ligne sans perte.
@@ -39,9 +41,9 @@ def mutual(r1, z1, r2, z2):
     k = math.sqrt(k2)
     return math.sqrt(r1 * r2) * ((2 / k - k) * ellipk(k2) - (2 / k) * ellipe(k2))
 
-def self_ind(r, h):
-    """auto-inductance d'un filament representant une bande de largeur h (rayon effectif h/4)"""
-    return r * (math.log(8 * r / (h / 4)) - 2)
+def self_ind(r, h, cut=4.0):
+    """auto-inductance d'un filament representant une bande de largeur h (rayon effectif h/cut)"""
+    return r * (math.log(8 * r / (h / cut)) - 2)
 
 def perimeter_filaments(R, w, n_side):
     h = w / n_side
@@ -51,13 +53,13 @@ def perimeter_filaments(R, w, n_side):
         pts += [(R - w / 2, s), (R + w / 2, s), (R + s, -w / 2), (R + s, w / 2)]
     return np.array(pts), h
 
-def centroid(R, w, n_side=40):
+def centroid(R, w, n_side=40, cut=4.0):
     pts, h = perimeter_filaments(R, w, n_side)
     N = len(pts)
     M = np.zeros((N, N))
     for i in range(N):
         for j in range(N):
-            M[i, j] = self_ind(pts[i, 0], h) if i == j else mutual(pts[i, 0], pts[i, 1], pts[j, 0], pts[j, 1])
+            M[i, j] = self_ind(pts[i, 0], h, cut) if i == j else mutual(pts[i, 0], pts[i, 1], pts[j, 0], pts[j, 1])
     # psi_i = const = c ; inconnues I_j et c ; contrainte sum I_j = 1
     A = np.zeros((N + 1, N + 1))
     A[:N, :N] = M
@@ -108,10 +110,20 @@ def main():
     rc02, *_ = centroid(R, 0.2 * R, 30)
     exponent = math.log((R - rc02) / (R - rc01)) / math.log(2)
     print(f"  exposant en w entre 0,1 et 0,2 : {exponent:.2f} (w^2 corrige par ln(8R/w)) ;")
-    print("  le flux exclu concentre le courant sur la face interne bien plus que 1/r : delta est ~6 fois")
-    print("  l'estimation, robuste au rayon effectif des filaments (h/2, h/4, h/8 : 34,2 ; 33,9 ; 33,7 fm).\n")
+    print("  le flux contraint concentre le courant sur la face interne bien plus que 1/r : delta est ~6 fois")
+    print("  l'estimation.")
+    deltas_cut = {}
+    for cut in (2.0, 4.0, 8.0):
+        rc_cut, *_ = centroid(R, w, 40, cut)
+        deltas_cut[cut] = R - rc_cut
+    print("  robustesse au rayon effectif des filaments (calculee) : "
+          + ", ".join(f"h/{int(c)} : {d:.2f} fm" for c, d in deltas_cut.items()))
+    spread_cut = (max(deltas_cut.values()) - min(deltas_cut.values())) / delta
+    print(f"  ecart relatif {100*spread_cut:.1f} %\n")
     check("delta croit comme w^2 a une correction logarithmique pres (exposant 1,5-2,2)",
           1.5 < exponent < 2.2, f"{exponent:.2f}")
+    check("robuste au rayon effectif des filaments h/2, h/4, h/8 (ecart < 3 %)", spread_cut < 0.03,
+          f"{100*spread_cut:.1f} %")
 
     # C. sens et direction
     print("C. Direction")
@@ -124,7 +136,7 @@ def main():
     print("D. Fil resistif (courant uniforme sur la section) : delta = 0")
     pts, _ = perimeter_filaments(R, w, 40)
     print(f"  centroide geometrique = R : delta = {R - pts[:,0].mean():.1e} fm")
-    print("  -> le deplacement est propre a la ligne sans perte (flux exclu), la lecture de la base.\n")
+    print("  -> le deplacement est propre a la condition constitutive (courant de surface, flux contraint).\n")
     check("courant uniforme : delta = 0", abs(R - pts[:, 0].mean()) < 1e-9, "symetrie")
 
     print(f"Verdict : la courbure de l'anneau met le coeur a {delta:.1f} fm du centre de la section")
