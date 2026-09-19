@@ -1030,3 +1030,21 @@ R50 et R52 tombent, et avec eux la dérivation de la largeur par deux jonctions 
 **w = 4ƛ/π² est désormais un nombre sans dérivation** ; l'écart p–n garde sa sensibilité de ±11 %
 par facteur 2 sur w (R46). **Rouvert** : ce qui fixe la moitié statique, « sur l'axe de rotation »
 selon R13, le centre de l'anneau, où la base n'a pas encore d'énergie.
+
+**R54 — « Cherche ce qui fixe la moitié statique au centre de l'anneau. »**
+→ `static_half_centre.py`, 4/4. La moitié doit ne porter ni courant (pas de μ), ni moment cinétique
+(pas de S), et valoir m_ec²/2 (g = 2). L'énergie de champ propre de l'anneau, (1/2)LI², fait 0,6 keV,
+0,1 % de la moitié : exclue. Une seconde circulation au centre (« tournant sur elle-même », R13)
+porte ℏ/2 par quantum (R40 D) et doublerait ou annulerait le spin ; seule une paire
+contra-rotative (S = 0) survit, sans règle pour sa taille : non fixée. **Les jonctions de
+l'anneau** : un anneau fermé de trois brins a trois jonctions ; une jonction est statique (pas de
+courant, pas de S, pas de μ) et porte l'énergie pôle à pôle Kδ²/D = ℏc/(π²D), avec δ = e/(π√α) et
+D l'écart des brins (R17 C, R24). **Trois jonctions valent m_ec²/2 pour D = 6ƛ/π² = 0,608 ƛ =
+235 fm** ; l'écart propre du DQD de la base, D₀ = 2cosh π × ƛ/37,1 (manuscrit) = 241 fm, donne
+0,487 m_e, à 2,7 % : la moitié statique est les trois jonctions à l'écart du DQD, ce qui fixe le
+rayon de tube à ƛ/38,1 (manuscrit : 37,1). Ceci remplace la largeur à deux jonctions de R17
+(4ƛ/π²) par l'écart à trois jonctions 6ƛ/π² (×1,5), et la lecture n'est plus « au centre » mais
+« aux points immobiles de l'anneau ». Conséquences : g = 2 conservé sur l'échelle (énergie de
+jonction en 1/D ∝ 1/ℓ₁) ; à l'échelle du nucléon l'écart vaut 0,236 fm et m_n − m_p passe à
+1,35 MeV (+4,5 %, pôle bouchon) ou 1,40 MeV (+8 %, pôle sphère). **Verdict** : DÉRIVÉ à 2,7 % près,
+et la géométrie du DQD (le 37,1 du manuscrit) est retrouvée depuis g = 2.
