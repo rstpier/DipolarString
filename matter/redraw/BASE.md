@@ -1166,3 +1166,23 @@ R(2π/3) par paire de DQD est exact dans le canal writhe avec la règle mod 3 ; 
 reproduit μ et τ ; le 2/9 est une identité de phase de Coulomb à r_e. Il manque : pourquoi le
 tiers de tour est du writhe et non de la torsion, pourquoi les DQD viennent par paires, le statut
 global ou par pas du 2/9, et le 45°.
+
+**R61 — « Cherche pourquoi le tiers de tour est du writhe. »**
+→ `writhe_or_twist.py`, 5/5. **Ce que les données exigent** : la forme de Koide place les trois
+générations à exactement 120° sur le cercle (un ajustement à deux paramètres de trois masses,
+résidu 10⁻⁵). Dans l'holonomie de la phase A, H = R(2π[Lk − a·Tw]), une fraction x du tiers de tour
+portée par la torsion réduit l'espacement de 22,3·x degrés (a = 0,186) : le canal torsion (x = 1)
+donne 97,7°, incompatible avec les 120° de Koide ; le canal writhe donne 120° exactement. **L'énergie
+ne tranche pas** : sur une ligne adaptée l'énergie vaut u_trajet × trajet (R39 A), la même pour
+toute répartition du tiers de tour entre torsion et writhe à trajet fixe. **Ce qui force Tw = 0 dans
+la base** : l'arrangement des brins est celui du milieu, l'écart bifilaire D/r = 2cosh π est une
+géométrie adaptée rigide (R10, R17) et les DQD du vide définissent le repère (R9), donc le repère
+matériel ne tourne pas autour du trajet ; et les DQD neutres ajoutés sont hors du circuit chargé
+(R29), qui doit s'enrouler autour d'eux : le lien va dans l'enroulement du trajet, le writhe. Une
+règle de la base, pas une dérivation. **La forme que cela implique** (famille de courbes de la phase A,
+Wr = 1/3 par recherche de racine) : une boucle à trois lobes avec r₀* = 0,18 du rayon moyen, un
+trajet 14 % plus long que le cercle plan, une aire vectorielle de 102 % de celle du cercle, une
+efficacité de moment 2A_z/s = 0,89 de la valeur plane ; g = 2 inchangé (μ et S varient ensemble).
+**Verdict** : le writhe est exigé par les 120° de Koide et permis par l'énergie ; la base en donne
+la raison par un verrouillage du repère sur le milieu (postulat cohérent avec R9/R10/R17), pas par
+une préférence calculée.
