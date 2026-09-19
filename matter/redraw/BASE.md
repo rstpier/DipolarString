@@ -642,3 +642,22 @@ adapté exige une densité de trajet de 3,3 à 5,4 e/fm, des brins de e/3 longs 
 son enroulement adapté sur son tube de 10,4 fm ajoute 0,03 MeV à 511 keV. Verdict : Tw est fixé
 par l'adaptation à Z₀ à ~1 tour par rayon de cœur (DÉRIVÉ sous R10/R17) puis conservé ; ce qui
 reste libre est la charge par unité de longueur de trajet du fluide.
+
+**R35 — « Cherche ce qui fixe la densité de charge du fluide. »**
+→ `density_search.py`, 5/5. Fenêtre à atteindre (R34) : 3,3 à 5,4 e par fm de trajet. **Ce qui rate** :
+la règle d'anneau avec l'échelle, λ = (e/3)/ℓ₁(9) = 0,41 e/fm, 11 fois trop peu ; la densité propre
+de la boucle, e/(2πR₊) = 0,20 e/fm, 20 fois trop peu. **Ce qui tombe dans la fenêtre** : la charge
+de pôle adaptée (R17, δ = e/(π√α) = 3,73 e) prise comme charge du fluide par brin, λ = δ/ℓ₁(9) =
+**4,6 e/fm**. La tension du brin enroulé vaut alors 4πKλ² × gain, 660 à 1720 MeV/fm pour le pas
+adapté avec une coupure b/a de 37 à 4 (0,7 à 1,9 fois le réseau), et exactement le réseau à
+b/a = 14 : **aucun nombre posé à la main, δ vient de Z₀, ℓ₁ de l'échelle des leptons, le pas de Z₀.**
+**Le test de cohérence sur l'électron** : la même règle donne à ses trois cordes de 809 fm une
+énergie de ligne statique 3 × 2πKδ²/ℓ₁ = (9/π²)·m_ec² = 0,91 m_ec² (α s'annule) ; mais la base paie
+déjà m_e avec mode + jonctions (R13), la règle surcompte de 466 keV, sauf si la moitié statique
+(255 keV) est cette énergie de ligne, qu'elle manque d'un facteur 1,8 : CONDITIONNEL. **Sur les
+nucléons** (enregistré, non revendiqué) : la même énergie de ligne par brin chargé à ℓ₁(9),
+2ℏc/(πℓ₁) = 155 MeV, donne p = 5 × 155 + 153 (mode) = 926 MeV (−1,3 %) et n = 4 × 155 + 191 =
+809 MeV (−14 %), mauvais ordre. **Verdict** : la densité est fixée si le fluide de chaque brin porte
+la charge de pôle adaptée δ ; c'est la première fois que la tension du réseau sort des règles de
+la base sans nombre libre, au prix d'un facteur 1,8 sur la moitié statique de l'électron et d'un
+neutron trop léger de 14 %.
