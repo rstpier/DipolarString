@@ -1460,7 +1460,7 @@ commentaire de l'auteur).** Le test n'est plus « pourquoi 3, 7, 11 ? » mais U_
 U_pair² ≠ I, avec U_pair l'ajout de deux DQD (4 brins ≡ 1 mod 3, un tiers de tour dans le canal
 writhe, R61 ; le plus petit ajout neutre qui garde le spin ½, R70).
 → `c3_closure.py`, 6/6. **(A)** U_pair comme décalage cyclique des trois positions : U ≠ I, U² ≠ I,
-U³ = I, U⁴ = U ; dans le canal writhe R(2π/3)³ = I. **(B)** Un opérateur de masse Z₃-symétrique,
+U³ = I, U⁴ = U ; dans le canal writhe R(2π/3)³ = I. **(B)** Un opérateur de **racine de masse** Z₃-symétrique (λ_k = √m_k),
 le circulant hermitien C = aI + bU + b̄U², a **exactement trois** valeurs propres a + 2|b|cos(φ +
 2πk/3) : c'est la forme de Koide–Brannen ; Koide (45°) ⇔ a = √2|b| ⇔ |singulet| = |doublet| (30,685
 = 30,685) ⇔ **a² = |b|² + |b|²**, le terme propre au carré égale la somme des deux sauts au carré :
@@ -1496,7 +1496,7 @@ s'enroule et se verrouille comme les autres ; et une traversée mène de Wr = 1 
 « six DQD = morceau de vide » de R76 E est exclue.** Avec plus de lobes (q = 6, 9) le writhe
 disponible croît encore (jusqu'à 4,9 et 7,9). **Verdict** : DÉRIVÉ que la liaison des paires est
 un verrou topologique (Lk conservé, forme gelée) ; EXCLU que ce verrou ferme les générations :
-n = 15 serait un état verrouillé lui aussi, et son absence doit venir de l'opérateur de masse
+n = 15 serait un état verrouillé lui aussi, et son absence doit venir de l'opérateur de racine de masse
 (trois valeurs propres, R76) ou d'une règle que la base n'a pas (un writhe maximal, ou une
 reconnexion propre des paires neutres). La question ouverte se déplace : non plus « pourquoi les
 paires tiennent », mais « pourquoi le spectre n'a que trois états quand le verrou en admet plus ».
@@ -1520,3 +1520,38 @@ différentiel) : un motif de circulation quadrupolaire dans la section, non calc
 l'échange par le tour de ceinture (R74 D2). **Verdict** : CONDITIONNEL ; le candidat est cohérent
 avec la base (section carrée, adaptation, jonctions) et vide tant que le mode impair n'est pas
 exhibé.
+
+**Corrections sur R76 (relecture de l'auteur).** (i) C est un opérateur de **racine de masse**
+(λ_k = √m_k), pas de masse. (ii) R76 ne dérive pas Koide : la symétrie C₃ donne la forme
+λ_k = a + 2|b|cos(φ + 2πk/3) ; **a² = 2|b|² et φ = 2/9 sont posés**. (iii) « Ajouter deux DQD ⇒ U »
+est une **définition** de U (le décalage cyclique), pas une dérivation ; U³ = I est démontré
+pour cette définition. (iv) RESUME.md était incohérent (en-tête à R58, BASE à R56, masses μ, τ
+encore à l'échelle 2π) : nettoyé, les masses y sont désormais la forme C₃ avec ses deux entrées
+posées, et l'échelle reléguée en approximation. R74 et R75 gardent leur portée exacte (Pauli non
+résolu ; l'amplitude 2p → 1s est celle de la mécanique quantique).
+
+**R79 — L'hamiltonien qui produirait a² = 2|b|² (relecture de l'auteur : « construire l'hamiltonien
+physique qui produit a² = 2|b|² à partir des énergies du canal commun et du doublet différentiel
+déjà présents dans la géométrie à trois brins ; si l'égalité des normes sort d'une minimisation
+ou d'une conservation sans mettre √2 à la main, le 45° est dérivé »).**
+→ `koide_hamiltonian.py`, 6/6. **Ce script ne dérive pas le 45°** ; il établit ce qu'un hamiltonien
+doit satisfaire et ce qui est exclu. **(A) Identité** : pour tout opérateur de racine de masse C
+hermitien 3 × 3, Q = 1/3 + (‖C_dev‖/‖C_iso‖)²/3 (partie isotrope (trC/3)I, partie déviatorique le
+reste ; vérifié sur 200 matrices aléatoires à 10⁻¹⁶) ; donc **Koide ⇔ ‖C_iso‖ = ‖C_dev‖** (masses
+mesurées : rapport 0,999991). **(B) Équipartition** : par degré de liberté (le doublet en a deux)
+E_dev = 2E_iso donne Q = 1, le rang 1, deux leptons sans masse : exclu ; par **canal irréductible**
+(singulet, doublet) E_dev = E_iso donne Q = 2/3 : chaque canal porte alors ‖·‖² = 941,5 MeV =
+(m_e + m_μ + m_τ)/2, la moitié de la masse de la famille. **(C) Aucun extremum** : la fraction
+isotrope s = 1/(1 + 2|b|²/a²) décroît strictement de 1 (masses égales) à 0 (rang 1), Koide est à
+s = 1/2 sans point stationnaire : ni minimum ni maximum ne le sélectionne ; l'égalité doit être une
+**contrainte de conservation**, pas un extremum. **(D) La forme quadratique statique des trois
+brins** K = LI + M(U + U²) (M réel) est bien C₃-circulante et donne a² = 2|b|² pour M/L = 1/√2, mais
+son doublet est dégénéré (m_e = m_μ, m_s/m_d = 67,9) : le dédoublement e/μ exige une phase de saut
+complexe, φ = 2/9, qui donne 206,8 et 3477 sans changer les normes (rapport 1,000000) : la phase
+est une holonomie, indépendante de l'égalité des normes. **Ce que l'hamiltonien doit satisfaire,
+exactement** : (1) une symétrie C₃ (la forme) ; (2) une conservation « un quantum par canal
+irréductible », pas par degré de liberté (le 45°) : le candidat de la base est R47, un quantum
+par circuit fermé, si chaque canal est un circuit fermé, non démontré ; (3) une holonomie de saut
+φ = 2/9 (le dédoublement), sans mécanisme (R63). **Verdict** : NON DÉRIVÉ ; le √2 n'est pas mis à
+la main, il est montré équivalent à (2) ; (2) et (3) restent les deux règles à produire, et elles
+sont indépendantes (la phase ne touche pas les normes).

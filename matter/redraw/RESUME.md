@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R58)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R79)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R56).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R79).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -51,7 +51,8 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 |---|---|---|---|
 | spectre de charge des fermions | {0, ±1/3, ±2/3, ±1} | idem | exact |
 | moment magnétique de l'électron | μ_B, g = 2 | 2,0023 | 0,1 % |
-| masse du muon, du tau (échelle 3, 7, 11) | 104,8 ; 1794 MeV | 105,7 ; 1777 | −0,8 % ; +1,0 % |
+| masse du muon, du tau : forme C₃ (Koide) avec a² = 2\|b\|² et φ = 2/9 **posés** (R76) | 105,66 ; 1777,0 MeV | 105,66 ; 1776,9 | 10⁻⁵ ; 7·10⁻⁵ |
+| (l'échelle (n/3)^{2π} n'est plus une loi de masse : approximation à 1 %, exclue par l'absence de 4e génération, R73/R76) | 104,8 ; 1794 | | −0,8 % ; +1,0 % |
 | pion (anneau fermé) | 2m_ec²/α = 140,05 MeV | 139,57 | +0,3 % |
 | tension forte √σ | 430 MeV | 420–440 | centre |
 | écart neutron–proton, part forte | 2,47 MeV | 2,52 ± 0,29 | dans l'erreur |
@@ -102,9 +103,13 @@ Ce qui reste vraiment :
    (Z₃) n'a pas d'élément d'ordre 2, la section carrée (Z₄) en a un ; une demi-torsion de section
    par circuit rendrait un mode impair antipériodique, à coût 0,5 % (R78) ; reste à exhiber ce
    mode. Sans lui, pas d'atome à plusieurs électrons.
-2. **Le mécanisme de Koide** : les masses sont les trois valeurs propres d'un opérateur C₃
-   (circulant), et Koide est la règle a² = 2|b|² (terme propre² = somme des sauts², le 45°) avec
-   la phase φ = 2/9 (R76) ; ni l'une ni l'autre n'a de dynamique (R62, R63). Le pas de génération
+2. **Le mécanisme de Koide** : les masses sont les carrés des trois valeurs propres d'un opérateur
+   de racine de masse C₃ (circulant), et Koide est la règle a² = 2|b|² (le 45°) avec la phase
+   φ = 2/9, toutes deux posées (R76). Le 45° équivaut exactement à « normes isotrope et
+   déviatorique égales » = un quantum par canal irréductible (pas par degré de liberté, qui
+   donnerait deux leptons sans masse) ; aucun extremum ne le sélectionne, il faut une
+   conservation ; la statique des trois brins donne la forme mais un doublet dégénéré, la phase
+   est une holonomie indépendante des normes (R79). Le pas de génération
    est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I).
    La liaison des paires est un verrou topologique (Lk = Tw + Wr conservé, forme gelée, R77),
    mais ce verrou tient aussi une troisième paire (Wr = 1 à r₀ = 0,376) : l'absence de quatrième
@@ -122,8 +127,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 73 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/BASE.md` : les énoncés R1–R79 et leurs conséquences calculées, avec trois bilans
+  (R20, R31, R49) et la passe de cohérence R71–R75.
+- `matter/redraw/*.py` : 74 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

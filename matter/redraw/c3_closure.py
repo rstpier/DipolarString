@@ -10,10 +10,12 @@ ajout neutre qui garde le spin 1/2, R70).  Puis : n = 15 est-il une quatrieme
 particule ou le retour dans le secteur de n = 3 ?
 
   A. U_pair comme decalage cyclique des trois positions : U^3 = I, U, U^2 != I.
-  B. un operateur de masse Z3-symetrique (circulant hermitien C = aI + bU + b*U^2)
-     a exactement trois valeurs propres, a + 2|b| cos(phi + 2 pi k/3) : c'est
-     la forme de Koide-Brannen ; Koide (45 deg) <=> a = sqrt2 |b| <=> normes
-     singulet = doublet ; avec phi = 2/9 et m_e : m_mu, m_tau a 0,01 %.
+  B. un operateur de RACINE de masse Z3-symetrique (circulant hermitien
+     C = aI + bU + b*U^2, valeurs propres lambda_k = sqrt(m_k)) a exactement
+     trois valeurs propres, a + 2|b| cos(phi + 2 pi k/3) : la forme de
+     Koide-Brannen sort de la symetrie C3 seule ; a^2 = 2|b|^2 (Koide, 45 deg)
+     et phi = 2/9 sont POSES, pas derives ; et 'ajouter deux DQD => U' est une
+     DEFINITION de U, pas une derivation.  Avec ces entrees : m_mu, m_tau a 0,01 %.
   C. la quatrieme application : U^4 = U, pas de quatrieme valeur propre ; sur
      l'echelle (n/3)^(2 pi), n = 15 serait un lepton charge de 12,6 GeV vivant
      1e-17 s (R69), exclu par le LEP (> 100,8 GeV) : l'echelle comme loi de
@@ -49,7 +51,8 @@ def main():
           "ordre 3 exactement")
 
     # B. le circulant de masse
-    print("B. Operateur de masse Z3-symetrique : C = a I + b U + conj(b) U^2")
+    print("B. Operateur de racine de masse Z3-symetrique : C = a I + b U + conj(b) U^2, lambda_k = sqrt(m_k)")
+    print("   (entrees posees : a^2 = 2|b|^2 et phi = 2/9 ; la symetrie C3 ne donne que la forme)")
     phi = 2 / 9
     # Koide : a = sqrt2 |b| ; a fixe par m_e via la plus petite valeur propre
     f = np.array([1 + math.sqrt(2) * math.cos(phi + TWO_PI * k / 3) for k in range(3)])
