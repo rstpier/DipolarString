@@ -1048,3 +1048,22 @@ rayon de tube à ƛ/38,1 (manuscrit : 37,1). Ceci remplace la largeur à deux jo
 jonction en 1/D ∝ 1/ℓ₁) ; à l'échelle du nucléon l'écart vaut 0,236 fm et m_n − m_p passe à
 1,35 MeV (+4,5 %, pôle bouchon) ou 1,40 MeV (+8 %, pôle sphère). **Verdict** : DÉRIVÉ à 2,7 % près,
 et la géométrie du DQD (le 37,1 du manuscrit) est retrouvée depuis g = 2.
+
+**R55 — « Cherche ce qui fixe l'exposant 2π. »**
+→ `exponent_2pi.py`, 5/5. **Ce que les données disent** : avec (e, μ) seuls l'exposant vaut 6,2926,
+avec (e, τ) seuls 6,2758 ; 2π = 6,2832 est entre les deux, à 0,016 % de leur milieu : p est fixé à
+±0,15 % et 2π est dedans. Parmi ~1000 constantes simples à deux facteurs (entiers, fractions, π, e,
+√2, √3, leurs produits, quotients et sommes), **seul 2π** tombe à 0,15 % du milieu ; les suivantes
+sont à 0,8 % ou plus. **Koide** : l'échelle à 2π donne Q = Σm/(Σ√m)² = 0,6683 contre 2/3 mesuré à
+10⁻⁵ (+0,25 %) ; l'exposant qui rendrait l'échelle exactement Koide avec (3, 7, 11) est 6,25, à
+0,5 % sous 2π et hors de la fenêtre des données : **la loi de puissance et Koide ne sont pas le même
+énoncé** ; Koide (exact à 10⁻⁵) est la structure la plus forte et l'échelle en est l'approximation
+à 1 %, donc ce qui fixe « 2π » doit en fait produire Koide, dont la forme propre (√m_k = √m₀[1 +
+√2·cos(θ + 2πk/3)], θ = 2/9) porte un 2π/3 et une structure à trois. **Ce que la base offre** :
+rien qui le dérive. Ses deux exponentielles natives de π, l'adaptation D/r = 2cosh π = e^π (0,2 % ;
+0,06 % sur le logarithme) et les énergies logarithmiques du vortex, rendent naturelle la forme
+« exp(2π × log) » : l'échelle dit que le log du rapport des tailles vaut 2π fois le log du rapport
+des comptes (une pente log-log d'un tour), mais aucune règle ne relie encore le compte à un tour.
+**Verdict** : 2π est épinglé à 0,15 %, unique parmi les constantes simples, mais la structure exacte
+est celle de Koide ; non dérivé ; la cible suivante est une règle qui fasse « un tour par e-fold du
+compte de brins » et retombe sur Koide.
