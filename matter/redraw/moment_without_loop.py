@@ -41,7 +41,7 @@ def FM_rank1(q_mev, R_fm):
     x0 = q_mev * R_fm / HBARC
     th = np.linspace(0, math.pi, 200001)                      # grille fine : l'integrande oscille (x0 ~ 2000 a 1 GeV/c)
     f = np.array([FM_perp(x0 * math.sin(t)) for t in th]) * np.sin(th) / 2
-    return float(np.trapz(f, th))
+    return float(np.trapezoid(f, th))
 
 def dirac_spinor(p, m, chi):
     E = math.sqrt(m * m + np.dot(p, p))
