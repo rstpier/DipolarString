@@ -1751,3 +1751,21 @@ création de paire), ce que la base ne dit pas encore. **Verdict** : CONDITIONNE
 physiques nommées ; si elles tiennent, 4πKq² = πℏc n'est plus une calibration mais la moitié du
 quantum d'une boucle neutre, et E_circ = m/2, S = ℏ/2, g = 2 en découlent ; alors toute la chaîne
 R82 → R86 change de statut, comme demandé.
+
+**R88 — Pourquoi la mère à un quantum n'est pas un état libre (le caveat de R87).**
+→ `mother_transient.py`, 5/5. **La mère** : boucle neutre périodique à un quantum entier,
+E_m = hc/L_m = 0,2555 MeV, p = h/L_m : exactement les relations d'un photon de longueur d'onde
+L_m = 4πƛ ; aucun verrou (charge 0, Lk = Tw + Wr = 0 : boucle plane à repère fixe, R77 ne
+verrouille que Lk ≠ 0) ; sous le seuil de paire (E_m < 2m_e), elle ne peut pas se briser seule ;
+sans verrou, elle se rouvre. **La mère est la forme fermée, transitoire, d'un photon sur un
+anneau ; pas un boson neutre de 0,26 MeV libre**, cohérent avec l'absence d'un tel boson. **Les
+filles** : action h/2 ; en onde libre ce quantum aurait λ = h/p = 2L_d, il ne tient pas sur la boucle
+L_d, et un demi-quantum n'a pas de forme libre (un photon porte h par longueur d'onde) ; plus la
+charge ±e conservée : verrouillées deux fois. **Annihilation** : e⁺e⁻ → 2γ de 0,511 MeV, λ_γ =
+hc/m_ec² = 2πƛ = L_d exactement ; les deux demi-quanta et les deux moitiés statiques redonnent deux
+quanta entiers, un par photon (2 × (0,2555 + 0,2555) = 2 × 0,511). **Spin** : 1 → ½ + ½, puis ½ + ½ →
+deux photons. C'est la version de la base de « le photon est libre et sans masse, l'électron massif
+et stable » : boson = action entière, fermion = action demi-entière avec verrou de charge.
+**Verdict** : CONDITIONNEL ; le caveat de R87 est levé au niveau des règles (pas de verrou ⇒
+transitoire) ; restent la géométrie de la fermeture (où un photon se ferme sur trois DQD) et la
+cinématique réelle de la création de paire (noyau, seuil 1,022 MeV).

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R87)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R88)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R87).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R88).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -115,9 +115,12 @@ Ce qui reste vraiment :
    de demi-tour, ∮p dl = πℏ (R86, corrigé : conditionnel, la lecture onde et l'appel à g = 2
    étaient circulaires). Ce quantum se dérive sans g comme la moitié du quantum entier d'une
    boucle neutre périodique brisée symétriquement en deux (R87) ; alors E_circ = m/2, S = ℏ/2 et
-   g = 2 sont des sorties. Restent posés : les trois entrées de R87 (n = 1 sur la mère, p′ conservé
-   à la brisure, partage C-symétrique), que la phase physique soit e^{iS/ℏ}, et l'absence
-   d'inertie d'orientation (éther de Lorentz).
+   g = 2 sont des sorties. La mère est transitoire parce qu'elle n'a aucun verrou (charge 0,
+   Lk = 0) et qu'elle est un photon fermé (E = hc/L_m, p = h/L_m) ; les filles sont verrouillées par
+   leur charge et par leur demi-quantum, sans forme libre ; l'annihilation redonne deux quanta
+   entiers de λ = L_d exactement (R88). Restent posés : les trois entrées de R87 (n = 1 sur la
+   mère, p′ conservé à la brisure, partage C-symétrique), que la phase physique soit e^{iS/ℏ},
+   la géométrie de la fermeture du photon sur trois DQD, et l'absence d'inertie d'orientation.
 2. **Le mécanisme de Koide** : les masses sont les carrés des trois valeurs propres d'un opérateur
    de racine de masse C₃ (circulant), et Koide est la règle a² = 2|b|² (le 45°) avec la phase
    φ = 2/9, toutes deux posées (R76). Le 45° équivaut exactement à « normes isotrope et
@@ -149,9 +152,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R87 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R88 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 82 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 83 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
