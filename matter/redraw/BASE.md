@@ -974,3 +974,18 @@ de rayon w/2 donnent π/2 de plus (0,40 MeV, 0,79 m_e), le rayon de bande w/4 do
 deux parts vont en 1/ℓ₁, donc μ et τ gardent g = 2 sur l'échelle. **Verdict** : point fermé ; la
 moitié statique est l'énergie propre des deux pôles, avec la même ambiguïté géométrique (sphère,
 disque, bande : facteurs π/2 et 2) que celle de R44.
+
+**R51 — « Cherche ce qui fixe la forme du pôle. »**
+→ `pole_shape.py`, 5/5. L'énergie propre du pôle vaut U = F·Kδ²/w avec F fixé par la forme de la
+charge au bout du ruban à section carrée (R17, w × w) ; la moitié statique exige F = 1 (une sphère
+de rayon w/2) à w = 4ƛ/π², toute autre forme rééchelonne w par F. Méthode des moments en 3D
+(panneaux carrés, conducteur équipotentiel), validée : sphère c = 0,50 (F = 1,00), cube c = 0,659
+(littérature 0,6607, F = 0,76), plaque carrée c = 0,362 (littérature 0,3667, F = 1,38), disque F = π/2.
+**Le pôle propre à la base** : le fluide entassé au bout du tube par la force centrifuge (R5)
+remplit la section carrée sur une longueur ~w, un **bouchon = cube de côté w, F = 0,76** ; des
+bouchons plus longs (2w, 4w) donnent 0,58 et 0,42 ; la sphère n'est pas une forme de la base.
+Conséquence : w = F × 4ƛ/π², soit pour le bouchon w_e = 118 fm (0,307 ƛ) et w₉ = 0,119 fm. Sur la
+seule observable touchée, m_n − m_p (règle de R44) : bouchon 1,27 MeV (−1,8 %), sphère 1,32 (+2,4 %),
+plaque 1,39 (+7 %), disque 1,41 (+9 %) : toute forme reste à 10 %, le bouchon fait le mieux.
+**Verdict** : la forme est fixée par R5 (un bouchon qui remplit la section), pas par l'énergie (un
+brin conducteur étalerait la charge, R30) ; elle ramène w à 0,76 de sa valeur et l'écart p–n à −1,8 %.
