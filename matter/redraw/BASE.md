@@ -833,3 +833,21 @@ section carrée donnent 1,03 (−20 %) et 1,49 (+15 %). La fermeture en anneau (
 plaque partenaire n'est pas calculé. **Verdict** : avec la section de R17 et le contenu de R28, la
 constante est fixée et l'écart p–n sort à +2,4 % ; entrées : α, m_e, 2π, le compte 9, la largeur
 de nappe (elle-même de g = 2 et Z₀).
+
+**R45 — « Calcule l'écran de la plaque partenaire. »**
+→ `partner_screening.py`, 4/4. **Comptabilité d'abord** (R42/R44) : un brin chargé est une branche
+seule portant e/3 (« la charge est la branche non appariée »), un brin neutre un DQD complet, deux
+plaques conductrices flottantes ±e/3 à l'écart d = w. Un brin chargé n'a donc pas de plaque
+partenaire propre ; ce qui l'écrante, ce sont les DQD neutres du même quark : un pour u = (+,+,0),
+deux pour d = (−,0,0). Une plaque partenaire portant la polarisation ±δ ajouterait un terme croisé
+2πKqδ/ℓ = 14 MeV par brin chargé et déplacerait m_n − m_p de ∓14 MeV : exclu, la comptabilité
+« branche seule » est forcée. **Calcul** : méthode des moments en 2D sur la section ; bandes
+conductrices de largeur w, la bande chargée porte λ, chaque plaque neutre porte zéro et flotte à
+son potentiel ; le champ lointain étant le même avec ou sans voisins, les voisins ne changent que
+le rayon effectif a_eff de la bande chargée. Validation : bande isolée, a_eff = w/4 à 0,2 %. **Résultat** :
+à l'écartement de centres s = w (bandes qui se touchent), a_eff croît de 1,47 (u, un DQD) et 1,98
+(d, deux DQD) ; à s = 2w, 1,05 et 1,10 ; à 3w, 1,02 et 1,05 : plus fort pour le d, grand seulement au
+contact. **Sur m_n − m_p, les écrans de u et de d se compensent presque** dans (4/9)S_u − (1/9)S_d :
+1,324 → 1,342 MeV au contact (+1,4 %), inchangé au-delà de 1,5w. L'écran change le résultat de
+moins de 1,5 % ; **le +2,4 % de R44 tient.** Verdict : DÉRIVÉ ; le terme de Coulomb du proton est
+fixé par la section de R17, le contenu de R28 et la géométrie en étoile, écran compris.
