@@ -1010,3 +1010,23 @@ pour garder g = 2, ramenant m_n − m_p à 1,07 MeV (−17 %). **Verdict** : le 
 dans la lecture onde (réflexion au bout ouvert, δ tiré de ℏ et Z₀) et pas dans la lecture vortex
 (dipôle de coude de 0,6 δ, sans charge nette) ; la base doit dire si le circuit de l'électron est
 ouvert (deux bouts réfléchissants) ou fermé (une épingle) : R40 et R50 ont utilisé les deux.
+
+**R53 — « Cherche si le circuit de l'électron est ouvert ou fermé. »**
+→ `open_or_closed.py`, 5/5. Tranché par les quatre choses que la base revendique pour l'électron :
+μ = μ_B (g = 2,0023), S = ℏ/2, pas de rayonnement (R11), pas d'état excité (R47). **Arc ouvert avec
+onde stationnaire** (les pôles réfléchissants de R17) : une onde stationnaire est deux ondes qui se
+croisent, courant net nul, donc μ = 0 ; ses charges de bout oscillent à 255 keV/ℏ = 3,9·10²⁰ rad/s
+et rayonnent ; elle a des harmoniques : exclu trois fois. **Épingle fermée** (aller sur une branche,
+retour sur l'autre, écart w = 0,30 R le long des 3/4 de tour) : les deux courants s'annulent sauf
+sur la bande entre les branches, μ = (w/R)·μ_B = 0,30 μ_B : exclu par le moment. **Anneau fermé à
+sens unique** : μ = qcR/2 = μ_B pour qR = eƛ (e à ƛ, ou les 3e/4 circulants de R12 à 4ƛ/3) ;
+S = R·E_circ/c = ℏ/2 avec E_circ = m/2 (3m/8 à 4ƛ/3) ; stationnaire, pas de rayonnement ; vortex,
+pas d'harmonique : la seule lecture qui passe les quatre. **Le circuit est fermé et à sens unique.**
+Conséquences : (i) la charge qui circule est e (ou 3e/4), pas e/(2√α) = 5,85 e, qui donnerait
+μ = 5,85 μ_B ; la « charge de vortex » de R32 est l'identité 4πKq² = πℏc, pas une charge, et
+l'énergie de circuit πℏc/trajet est l'énergie de spin ½, ℏc/(2R), d'un quantum : les nombres de
+R39–R45 tiennent tels quels ; (ii) pas de pôles libres : la moitié statique n'est pas aux pôles,
+R50 et R52 tombent, et avec eux la dérivation de la largeur par deux jonctions de pôles (R17 D) :
+**w = 4ƛ/π² est désormais un nombre sans dérivation** ; l'écart p–n garde sa sensibilité de ±11 %
+par facteur 2 sur w (R46). **Rouvert** : ce qui fixe la moitié statique, « sur l'axe de rotation »
+selon R13, le centre de l'anneau, où la base n'a pas encore d'énergie.
