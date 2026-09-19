@@ -1366,3 +1366,19 @@ inférieurs (électron stable, muon à 0,4 %, tau à 13 % par simple compte, 0,5
 correction forte, branchements à 10 %) ; CONDITIONNEL au mur M, emprunté à G_F (R68) ; EXCLU que
 la lenteur soit une dilatation relativiste. Restent au modèle standard : la correction forte
 1,2, le g_A du neutron, et M lui-même.
+
+**R70 — « Les DQD sont les briques naturelles fondamentales : les brins solitaires chargés se
+trouvent, s'orientent et s'assemblent. »** (énoncé de principe ; l'auteur demande s'il fallait le
+tester)
+→ `brick_assembly.py`, 5/5. Trois des quatre verbes ne font que redire l'acquis : la brique à
+branches de e/3 prise par trois est la seule (b, N) qui donne le spectre exact (N = 2 n'a pas de
+charge 1, N = 4 a 4/3) ; « se trouvent » n'est pas Coulomb (0,2 keV entre brins solitaires, 431 fois
+sous la jonction de 85 keV : c'est la fermeture qui assemble, et les trois brins naissent voisins,
+R4) ; « s'orientent » est géométrique (le coût électrique de 120° contre 180° libre est 0,1 % du
+circuit) ; « s'assemblent » : seul l'anneau fermé de trois est stationnaire et donne μ_B (R47, R53).
+**Le seul point neuf** : un DQD est de spin 1 (R3) ; ajouté à un anneau de spin ½, il ne peut pas
+garder ce spin seul (1 ne se réduit pas à 0), deux le peuvent (1 ⊗ 1 ∋ 0), trois aussi. **Donc
+n = 5 est interdit** (12,7 MeV, absent), 7 (μ), 9 (quark, classe 0) et 11 (τ) sont permis ; 13 et
+15 ne sont pas interdits par le spin, il faut encore la règle de classe mod 3 (R61). **Verdict** :
+DÉRIVÉ pour la brique et l'assemblage par fermeture ; CONDITIONNEL pour les paires (le spin
+explique l'absence de n = 5, pas celle de 13 et 15).
