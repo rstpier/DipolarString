@@ -1963,3 +1963,27 @@ le double revêtement et que sa connexion a la courbure Ω/2, c₁ = 1 ; CONDITI
 groupe (une consistance, pas une dynamique) et à la réalité des deux quadratures. La structure
 spinorielle de R85 n'est plus seulement mathématique : elle suit du demi-tour et de la composition
 des rotations.
+
+**R96 — La réalité des deux quadratures : que sont physiquement les deux composantes complexes du
+spineur ?** (le reste (i) de R95)
+→ `two_quadratures.py`, 5/5. **Candidat** : les deux polarisations circulaires (hélicités) du motif
+E porté par le quantum de circulation, dans le repère de section à demi-tour. **(A) Identité** : vu
+par le fluide qui circule à c, le repère de section tourne à ω_⊥ = ω_circ/2 ; un quantum de cette
+rotation vaut ℏω_⊥ = ℏc/(2R) = πℏc/L = E_circ = m_e/2 pour R = ƛ (0,25550 MeV, exact) : **le quantum
+indivisible de la circulation (R47, R87) est un quantum de la quadrature circulaire à
+demi-fréquence.** **(B) Lecture mécanique exclue** : un oscillateur transverse du cœur de masse m/2
+à ω_⊥ aurait une amplitude à un quantum √(ℏ/(m_circ ω_⊥)) = 2ƛ = 772 fm = 4,9 w, plus grande que
+l'anneau ; et l'énergie classique du cœur déplacé de 34 fm tournant à ω_⊥ vaut 246 eV, mille fois
+sous le quantum : les quadratures ne sont pas un déplacement mécanique mais **les deux hélicités
+du quantum lui-même**, comme les polarisations d'un photon ; R47 (aucun mode transverse) tient.
+**(C) Un quantum partagé** entre les deux hélicités, (a₊, a₋) avec |a₊|² + |a₋|² = 1 : espace des états
+de dimension 2 ; l'application de Hopf (sans Pauli) l'envoie sur la sphère des orientations de
+l'anneau (R83) : tout en a₊ → n̂ = +ẑ, tout en a₋ → −ẑ, partage égal → équateur ; |n̂| = 1 et
+l'équivariance axiale (e^{∓iα/2} sur a± ⇔ n̂ tourné de α) vérifiées sur 200 tirages ; la phase
+globale est la fibre, celle qui porte le −1 de R95 ; **quantum en a₊ = spin +½ sur l'axe.** **(D)**
+N = 2 quanta donnerait trois états (spin 1) à E_stat + 2E_circ = 1,5 m_e : aucun électron excité ;
+N est verrouillé à 1 (R47), non dérivé. **(E) Conséquence pour R94a** : l'analyseur doit coupler à
+l'hélicité du quantum (un élément de ligne adaptée anisotrope, biréfringent), pas au déplacement
+statique du cœur ; c'est pourquoi les trois constructions réelles échouaient. **Verdict** :
+CONDITIONNEL ; les deux quadratures sont identifiées et leur quantum vaut exactement E_circ ; restent
+posés que l'hélicité du quantum soit un degré de liberté physique du fluide, et le verrou N = 1.

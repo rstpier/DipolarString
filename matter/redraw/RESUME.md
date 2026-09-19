@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R95)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R96)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R95).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R96).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -115,8 +115,13 @@ analyseur géométrique réel du doublet E ne donne le demi-angle (toutes les co
 donnent 1/2 à θ = 0 ou le mauvais angle, R94a) : le cos(θ/2) exige la coordonnée complexe du
 fibré. Le relèvement SU(2) lui-même est dérivé : le mode antipériodique donne U(2π) = −1 sur
 l'axe, et la loi de groupe des rotations force −1 pour tout axe, avec la connexion de courbure
-Ω/2 et c₁ = 1 retrouvé sans Wigner (R95). Restent : la réalité physique des deux quadratures
-(doublet E × phase de circulation), l'analyseur qui y couple (R94a), l'état joint (R94b).
+Ω/2 et c₁ = 1 retrouvé sans Wigner (R95). Les deux quadratures sont les deux hélicités du
+quantum de circulation dans le repère à demi-tour : un quantum de la rotation de section à
+ω_circ/2 vaut exactement E_circ = m_e/2, la lecture mécanique du cœur est exclue (amplitude à un
+quantum 2ƛ), un quantum partagé entre les deux hélicités a pour espace d'états la sphère des
+orientations par l'application de Hopf, et N = 2 donnerait un électron à 1,5 m_e, inexistant
+(R96). Restent : que l'hélicité du quantum soit un degré de liberté physique du fluide, le
+verrou N = 1, l'analyseur biréfringent qui couple à l'hélicité (R94a), l'état joint (R94b).
 
 Ce qui reste vraiment :
 
@@ -174,9 +179,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R95 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R96 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 90 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 91 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
