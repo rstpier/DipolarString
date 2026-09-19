@@ -2088,3 +2088,58 @@ l'orbite et pas encore à celui de la pénétration : 334 fm requis, 363 à 386 
 point où couper ou consolider : ou bien la charge de l'anneau est plus concentrée que R84 (⟨r²⟩ à
 réduire de 15 %), ou bien l'électron n'est pas cet anneau. Aucun mécanisme nouveau n'est à
 ajouter avant d'avoir tranché ce point.
+
+**R100 — Le facteur de forme électromagnétique de l'anneau** (critère de l'auteur : partir de la
+seule charge qui existe déjà dans le modèle, calculer F(q) = (1/e)∫ρ e^{iq·r} d³r et ⟨r²⟩ = −6 dF/dq²
+en 0 ; PASS seulement si la théorie existante produit F(q²) ≈ 1 malgré l'anneau de 386 fm, sans
+mécanisme ajouté pour sauver le résultat).
+→ `ring_form_factor.py`, **4/5 : le critère échoue, et l'échec est le résultat.** Trois lectures de
+la charge dans la base : (1) e sur l'anneau fin R = ƛ (R53 : c'est e qui circule) ; (2) charge =
+courant de surface de la ligne adaptée, section carrée, cœur déplacé (R84) ; (3) e/3 aux trois
+jonctions à r_J = 136 fm (R5, R25, lecture ancienne). **(A)** F(q) = ⟨j₀(qρ)⟩ (moyenne d'orientation) ;
+⟨r²⟩ = −6 dF/dq² = second moment à 10⁻⁴ : 1,00 ƛ² (386 fm), 0,883 ƛ² (363 fm), 0,12 ƛ² (136 fm) ;
+F = 0,47 ; 0,53 ; 0,92 à q = 1 MeV/c, ~10⁻⁴ à 1 GeV/c. **(B) L'orientation** : l'anneau fin est
+ponctuel pour q le long de son axe (F = 1 exactement, la charge est dans le plan ⊥ q) et vaut
+J₀(qR) = 0,25 pour q dans le plan ; mais l'orientation est une variable de Bloch de spin ½ sans
+moment de rang 2 (R99 C), la densité de charge de tout état est sa moyenne d'orientation, F = j₀(qR)
+= 0,47 : la seule lecture où F = 1 exige un axe classique fixe, que R99 a exclu ; **la sortie est
+fermée par la base elle-même.** **(C) La référence** : l'électron de Dirac ponctuel ; dans le repère
+de Breit u(p′)†u(p) = 2m exactement à tout Q² (vérifié de 10⁻⁴ à 10⁶ MeV²) : G_E = 1 ; le terme de
+Darwin de l'hydrogène, ¾ƛ², est le facteur de normalisation m/E = (1 + Q²/4m²)^{−1/2} (−6 d/dQ² =
+0,7499 ƛ²), une cinématique, pas une distribution. **La cible de R89 (334 fm) n'était pas un rayon
+de charge ; la cible est G_E = 1.** **(D) Les sondes** : Compton 1 MeV à 90° (q = 1,06 MeV/c) :
+|F|² = 0,18 ; 0,24 ; 0,84 contre Klein–Nishina vérifié au % ; e–p élastique à Q² = 1 GeV² : |F|² =
+2·10⁻⁸ ; 2·10⁻⁹ ; 2·10⁻⁶, l'électron y est un point au % ; LEP : r_e < 10⁻³ fm, rapport 4·10⁵ en
+rayon. **(E) L'échappatoire de l'instantané** : au GeV le temps d'interaction (7·10⁻²⁵ s) est 10⁴
+fois plus court que le tour (8·10⁻²¹ s), la sonde voit une charge ponctuelle quelque part sur
+l'anneau ; l'amplitude élastique reste la moyenne ⟨e^{iq·r}⟩ = F(q), et le complément 1 − |F|² irait
+dans des états internes excités de l'anneau, que l'électron n'a pas (R47) et que e–p au GeV comme
+Bhabha au LEP ne montrent pas : pas de sortie sans mécanisme nouveau. **(F) Le critère** : |F − 1|
+< 1 % jusqu'à 1 GeV/c : aucune lecture ; F quitte le % dès q = 0,13 MeV/c (0,36 pour les jonctions).
+**Verdict** : EXCLU. La charge du modèle suit l'anneau dans toutes ses lectures, et l'électron
+mesuré a G_E = 1. Rien dans la base ne rend la charge ponctuelle : **cette représentation de
+l'électron, la charge e portée par l'anneau de 386 fm, s'arrête ici** (décision de l'auteur, posée
+avant le calcul). Ce qui tombe avec elle : R53 tel que dérivé (μ_B = ecƛ/2 exige e circulant à ƛ),
+le motif de charge de R84 et ce qui le lit comme charge (R85, R89, R99 B) ; ce qui ne dépend pas de
+la position de la charge : le spectre de charge des brins (R1–R16), les masses par circulation
+d'énergie (R39–R45, R87), le nucléon (R21–R31), la chaîne d'orientation (R82–R83, R95, R98) ;
+ce qui est à décider par l'auteur : où est la charge, et d'où vient alors μ_B.
+
+**R101 — L'hydrogène repris avec le facteur de forme de R100.**
+→ `hydrogen_form_factor.py`, 3/3. **(A) L'atome de la base** (orbite de Bohr–Sommerfeld, R75,
+R99) : le périhélie de l'orbite (n, k) vaut n a₀(n − √(n² − k²)) ; le plus petit sur tous les états
+est a₀/2 = 26 459 fm = 68 R (k = 1, n → ∞ ; 52 918 fm pour le 1S, un cercle). Théorème de la
+coquille : le potentiel de la moyenne d'orientation (R99 C) est exactement −K/r hors d'elle
+(vérifié à 10⁻¹⁵ pour les trois lectures) : **l'atome de la base ne voit pas l'anneau, décalage
+nul pour toute lecture.** L'hydrogène n'est pas le test dans la base ; R100 l'est. **(B) Avec la
+fonction d'onde 1S importée** (le caveat de R89) : décalage exact ∫|ψ|²(V_ρ − V_point) = +231,9 ;
++204,8 ; +28,7 GHz (développement en ⟨r²⟩ : 233,6 ; 206,3 ; 28,8, à 1 %) ; ce que l'expérience laisse
+au-dessus de Dirac sur le 1S est le déplacement de Lamb, 8,17 GHz, que la base n'a pas non plus :
+même en lui attribuant tout le Lamb, l'anneau déplace le 1S 25 à 28 fois trop, les jonctions 3,5
+fois. **(C) La cible de R89 est retirée** : le terme de Darwin est la normalisation m/E d'un point
+(R100 C), pas une taille ; l'écart de 15–18 % entre 334 et 363–386 fm n'était pas la question. Bornes :
+hydrogène, si tout le Lamb était une taille, r_rms ≤ 72 fm ; diffusion (R100), 10⁻³ fm ; l'anneau
+est hors des deux. Ce qui survit de R99 : (A) Sommerfeld = Dirac, la base a la structure fine par
+la seule cinématique. **Verdict** : l'hydrogène ne tranche qu'en important la mécanique quantique ;
+R100 tranche sans elle, et dans le même sens : la charge électromagnétique de l'électron n'est pas
+étalée sur 386 fm.

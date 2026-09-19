@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R99)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R101)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R99).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R101).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -26,7 +26,10 @@ pour la tension de corde et l'écart proton–neutron.
 - **L'électron.** Un anneau fermé où le fluide tourne dans un sens (moment magnétique μ_B, spin ½,
   pas de rayonnement, pas d'état excité) ; la moitié de sa masse est dans la circulation
   (πℏc/trajet), l'autre moitié immobile dans les trois jonctions de l'anneau. Cette moitié
-  immobile retrouve l'écart propre du DQD (le « 37,1 » du manuscrit) à 3 %.
+  immobile retrouve l'écart propre du DQD (le « 37,1 » du manuscrit) à 3 %. **Arrêté en R100
+  pour la charge** : si la charge e suit l'anneau, son facteur de forme est j₀(qR) et l'électron
+  mesuré a G_E = 1 (Compton, e–p, LEP) ; la circulation d'énergie tient, la charge étalée à 386 fm
+  non, et μ_B = ecƛ/2 est à refaire.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -50,7 +53,7 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 | résultat | valeur | mesuré / réseau | écart |
 |---|---|---|---|
 | spectre de charge des fermions | {0, ±1/3, ±2/3, ±1} | idem | exact |
-| moment magnétique de l'électron | μ_B, g = 2 | 2,0023 | 0,1 % |
+| moment magnétique de l'électron (μ_B = ecƛ/2 : suspendu par R100, la charge n'est pas étalée à ƛ) | μ_B, g = 2 | 2,0023 | 0,1 % |
 | masse du muon, du tau : forme C₃ (Koide) avec a² = 2\|b\|² et φ = 2/9 **posés** (R76) | 105,66 ; 1777,0 MeV | 105,66 ; 1776,9 | 10⁻⁵ ; 7·10⁻⁵ |
 | (l'échelle (n/3)^{2π} n'est plus une loi de masse : approximation à 1 %, exclue par l'absence de 4e génération, R73/R76) | 104,8 ; 1794 | | −0,8 % ; +1,0 % |
 | pion (anneau fermé) | 2m_ec²/α = 140,05 MeV | 139,57 | +0,3 % |
@@ -82,9 +85,21 @@ nombre » ; l'enroulement comme mécanisme de force ; le tube de flux dans la ba
 une densité de charge fixe du fluide ; la charge de vortex 5,85 e comme charge qui circule ; les
 pôles libres et l'onde stationnaire (pas de moment, rayonne, harmoniques) ; l'épingle fermée (30 %
 du moment) ; le mode transverse à 4 MeV (artefact de la lecture onde) ; la lecture « déformation »
-de l'exposant.
+de l'exposant ; **la charge e portée par l'anneau de 386 fm** (R100 : F = j₀(qR), G_E = 1 mesuré).
 
 ## 6. Ce qui reste à fournir
+
+**Verdict R100–R101 (critère posé par l'auteur avant le calcul).** Le facteur de forme de la charge
+du modèle est j₀(qR) dans ses trois lectures (⟨r²⟩ = 0,12 à 1,0 ƛ²) ; l'électron mesuré a G_E = 1
+(Compton au %, e–p au %, LEP < 10⁻³ fm), et son terme de Darwin ¾ƛ² est la normalisation m/E d'un
+point, pas une taille : la cible de R89 (334 fm) est retirée, les 15 % manquants n'étaient pas la
+question. Rien dans la base ne rend la charge ponctuelle (l'orientation de Bloch ferme la direction
+axiale, l'instantané exige des états excités absents). **La représentation de l'électron comme
+charge e portée par l'anneau de 386 fm s'arrête.** L'hydrogène de la base est aveugle (périhélie
+à 68 R, coquille) ; avec la fonction d'onde importée l'anneau déplace le 1S de 200–230 GHz contre
+8 GHz d'excès mesuré. Ce qui ne dépend pas de la position de la charge tient : spectre de charge
+des brins, masses par circulation d'énergie, nucléon, chaîne d'orientation. À décider par
+l'auteur : où est la charge, et d'où vient alors μ_B.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -190,9 +205,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R99 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R101 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 94 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 96 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
