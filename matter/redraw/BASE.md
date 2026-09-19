@@ -851,3 +851,19 @@ contact. **Sur m_n − m_p, les écrans de u et de d se compensent presque** dan
 1,324 → 1,342 MeV au contact (+1,4 %), inchangé au-delà de 1,5w. L'écran change le résultat de
 moins de 1,5 % ; **le +2,4 % de R44 tient.** Verdict : DÉRIVÉ ; le terme de Coulomb du proton est
 fixé par la section de R17, le contenu de R28 et la géométrie en étoile, écran compris.
+
+**R46 — « Cherche ce qui fixe la largeur du ruban. »**
+→ `ribbon_width.py`, 5/5. L'adaptation à Z₀ ne fixe que la forme (Z = Z₀·d/w = Z₀ ⇔ w = d, à toute
+taille, R17 A). **La taille vient de g = 2** : les deux jonctions de pôles adaptés, ℏc/(π²w) chacune,
+portent la moitié statique de la masse (R13, R17 D) : 2ℏc/(π²w) = mc²/2, donc w = 4ƛ/π² = 0,405 ƛ,
+156,5 fm pour l'électron ; le rapport w/ℓ₁ = 6/π³ = 0,19 est le même à toute échelle, d'où
+w₉ = w_e·3^{−2π} = 0,157 fm. Entrées : g = 2 (mesuré 2,0023), δ tiré de Z₀, et la lecture « écart
+des pôles = largeur » (R17 C). **Rien de plus fondamental ne la fixe** : w/r = 15,0 (rayon de tube du
+manuscrit), w/D₀ = 0,65 (écartement des fils), w/ℓ₁ = 0,19, w/ƛ = 0,405 sont des rapports sans
+règle derrière. **L'écart p–n n'est qu'un test faible de w** : il y entre par un logarithme qui se
+compense presque entre u et d ; w/2 donne −11 %, 2w +11 %, +10 % sur w +1,5 % : le +2,4 % de R44
+fixe w à un facteur 2 près, pas mieux. **Le vrai test** reste le mode transverse de la nappe,
+ℏcπ/w = (π³/4)·m_ec² = 3,96 MeV pour l'électron (R17 E), jamais observé ; la sortie « fluide TEM
+seulement » reste un postulat. Verdict : w est fixée par le moment magnétique de l'électron (g = 2)
+via l'énergie de jonction, CONDITIONNEL à la lecture des pôles ; c'est le nombre le moins testé
+de la chaîne, et son test est un électron excité à 4 MeV qui n'existe pas.
