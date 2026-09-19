@@ -1,4 +1,4 @@
-# Travaux « matière » — résumé (au 19 septembre 2026)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R58)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
 des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R56).
@@ -28,8 +28,11 @@ pour la tension de corde et l'écart proton–neutron.
   (πℏc/trajet), l'autre moitié immobile dans les trois jonctions de l'anneau. Cette moitié
   immobile retrouve l'écart propre du DQD (le « 37,1 » du manuscrit) à 3 %.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
-  m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %), mais la structure exacte
-  est celle de Koide (trois points sur un cercle en √m, tournés de 2/9 rad, exact à 10⁻⁵).
+  m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
+  simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
+  45° avec la diagonale (moitié commune, moitié dans les différences) et tourne de 2/9 rad,
+  exact à 10⁻⁵ ; la loi de puissance donne déjà 0,220 rad (1 %). Le 2/9 est aussi le produit
+  des charges u et d, sans mécanisme qui en fasse un angle.
 - **Les quarks et les nucléons.** Un quark est le même anneau à trois brins, à l'échelle
   ℓ₁(9) = 0,81 fm : 254 MeV chacun ; un nucléon en a trois (763 MeV immobiles, la seule partition
   des 9 brins qui marche) plus une circulation d'anneau qui porte le spin et le moment. Le neutron
@@ -64,6 +67,9 @@ pour la tension de corde et l'écart proton–neutron.
   l'enveloppe de trois circuits tangents vaut r_p à 0,6 % ; sans mécanisme.
 - m_p = 4ℏc/r_p à 0,05 % ; le muon à 0,79 fm et 1,09 fm pour les brins + et − ; μ(Δ⁺⁺) = 6,4 μ_N.
 - Le neutron sort 1,5 à 7 % trop lourd ; le spin est compté à la fois par circuits et par anneau.
+- « Dynamisme de l'espace » (R57) : des DQD du vide qui circulent donneraient à l'électron son
+  quantum par héritage, au prix d'une énergie du vide 10³³ fois la cosmologique ; l'expansion du
+  milieu et le confinement par le milieu sont exclus.
 
 ## 5. Ce qui a été exclu en route
 
@@ -76,8 +82,8 @@ de l'exposant.
 
 ## 6. Ce qui reste à fournir
 
-1. La règle qui produit Koide (et donc l'exposant 2π à 1 %) : « un tour par e-fold du compte de
-   brins », et pourquoi 3, 7, 11 (pas de 4 brins neutres, deux DQD).
+1. La règle qui produit Koide, c'est-à-dire à la fois le 45° et la rotation 2/9 (et donc
+   l'exposant 2π à 1 %) ; et pourquoi 3, 7, 11 (pas de 4 brins neutres, deux DQD).
 2. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
 3. Ce qui épingle l'anneau du pion à r_e/2.
 4. Le spin : un seul compte (circuits ou anneau), et le neutron trop lourd de quelques %.
@@ -86,7 +92,7 @@ de l'exposant.
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 51 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 53 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
