@@ -1320,3 +1320,23 @@ tour : aucune puissance de m supplémentaire. **Verdict** : EXCLU comme source d
 vie ; la relativité de la base est le standard (vérifié sur le muon en vol), un ralentissement
 global est invisible, et un ralentissement interne est le mur du TeV de R64 sous un troisième
 nom (défaut fixe R64, courant critique R66, vitesse à 10⁻³⁴ de c₀ ici).
+
+**R68 — « Le champ Z ? »**
+→ `z_field.py`, 5/5. Deux sens, le boson Z⁰ (91 GeV, quantum du champ faible neutre) et le champ
+d'impédance Z de la base. **Le tour est la période de Compton** : 3ℓ₁(n) = 2πƛ_e·m_e/m(n), donc
+T = 2πℏ/(mc²) exactement sur l'échelle (0,8 % d'écart avec la vraie masse du muon, l'écart de
+l'échelle à Koide, R59). **L'échelle manquante est la constante de Fermi** : avec Γ_μ =
+G_F²m⁵/(192π³), la fuite par tour vaut ΓT = G_F²m⁴/(96π²) = (m/M)⁴ avec M = (96π²)^{1/4}/√G_F =
+1,625 TeV ; R64 avait ajusté 1,62 (−0,3 %). Donc oui : l'objet qui manque à R64–R67 est le champ
+faible, sans autre nombre que G_F. **Ce que ce champ demande en plus de α** : G_F = πα/(√2 M_W²
+sin²θ_W) (−0,3 % avec α(M_Z), −7 % avec α), M_W/M_Z = cos θ_W : une masse (80–91 GeV) et un angle
+(sin²θ_W = 0,231), deux nombres que la base n'a pas. **Aucun barreau de l'échelle** au W ou au Z :
+n = 20 donne 76,8 GeV (W −4,5 %), n = 21 donne 104 GeV (Z +14 %), n exact 20,15 (W) et 20,56 (Z),
+entre les barreaux appareillés 19 et 23 : le W et le Z ne sont pas des leptons lourds. **Le seul
+objet neutre de spin 1 de la base est le DQD** (R3, R9) : son énergie bifilaire vaut 8 keV à l'écart
+du vide (241 fm) et 2,47 MeV à ℓ₁(9) ; 91 GeV demanderait un écart de 2·10⁻⁵ fm, 37 000 fois sous
+le quark ; la plus grande énergie de la base, ℏc/w₉ = 1,26 GeV, est 70 fois sous M_Z. **Verdict** :
+DÉRIVÉ que l'échelle manquante est celle du champ faible (M = (96π²)^{1/4}/√G_F à 0,3 %) ; EXCLU
+que la base la contienne (aucun barreau, aucune excitation neutre de spin 1 à 10² GeV). Le « champ
+Z » de la base (l'impédance) et le Z faible ne coïncident que si l'impédance sature à I_c (R66) ;
+ce qu'il faudrait dessiner : une excitation neutre de spin 1 du milieu à ~90 GeV, et un angle.
