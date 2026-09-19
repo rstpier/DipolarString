@@ -867,3 +867,21 @@ fixe w à un facteur 2 près, pas mieux. **Le vrai test** reste le mode transver
 seulement » reste un postulat. Verdict : w est fixée par le moment magnétique de l'électron (g = 2)
 via l'énergie de jonction, CONDITIONNEL à la lecture des pôles ; c'est le nombre le moins testé
 de la chaîne, et son test est un électron excité à 4 MeV qui n'existe pas.
+
+**R47 — « Cherche ce qui interdit le mode transverse à 4 MeV. »**
+→ `transverse_mode.py`, 5/5. Le 3,96 MeV est la coupure TE₁ du guide de l'électron, ℏcπ/w avec
+w = 156,5 fm : une notion d'**onde**. Dans la lecture « onde » (R29) rien ne l'interdit, et rien
+n'interdit non plus les harmoniques du mode d'arc : des électrons excités à 0,766 et 1,02 MeV
+(harmoniques) et à 4,47 MeV (transverse), tous exclus par l'expérience (aucune résonance dans la
+diffusion Compton au MeV, échelle de compositeness au-delà de 10 TeV). **Dans la lecture
+« vortex » (R32, R40) il n'y a pas d'onde** : le fluide est une circulation stationnaire portant un
+seul quantum conservé q = e/(2√α), d'énergie πℏc/trajet fixée par le quantum et le trajet ; il
+n'y a ni harmonique (un écoulement stationnaire n'a pas de n-ième harmonique) ni mode transverse
+(pas d'onde, pas de coupure). Un second quantum doublerait la charge circulante (11,7 e) et
+quadruplerait l'énergie (1,02 MeV) : un autre objet, pas un électron excité. **Les nombres ne
+changent pas** : 4πKq² = πℏc exactement, donc l'énergie de circuit égale l'énergie du mode en
+demi-onde pour tout trajet ; tout R29–R45 tient avec « mode » lu comme « circuit ». Ce qui reste
+excitable, ce sont les formes et les topologies, pas les modes : les hadrons en ont (Δ − N = 294 MeV
+contre un circuit de quark à 254 MeV, +16 %), les leptons n'ont qu'une forme. **Verdict** : le mode
+à 4 MeV n'est pas interdit par une règle, il est absent ; c'était un artefact de la lecture en onde,
+et R32 le supprime en même temps que les harmoniques de l'électron.
