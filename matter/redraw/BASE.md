@@ -1142,3 +1142,27 @@ charge 1/3 entraînée par une charge 2/3 » : une phrase, pas une règle. **Ver
 logement dans la base (un vecteur le long de la diagonale du cube du milieu à section carrée) ; le
 2/9 est une phase dynamique que la base ne produit pas encore, numériquement le produit u × d.
 Il manque deux règles, pas une : ce qui est incliné à la diagonale, et ce qui accumule 2/9 rad.
+
+**R60 — Stratégie de l'auteur : Koide loi principale, la puissance n^{2π} son approximation ;
+2/9 comme phase de Coulomb ; n_k = 3 + 4k ; cible « 2 DQD neutres ajoutés ⇒ U_génération =
+R(2π/3) sans ajustement géométrique ».**
+→ `generation_holonomy.py`, 6/6. **La règle de compte** : n_k = 3 + 4k donne n mod 3 = k ; ajouter
+4 brins décale la position cyclique du triplet d'une unité (4 ≡ 1 mod 3), un tiers de tour par
+génération ; le quatrième pas (n = 15, 12,6 GeV, exclu par le LEP) revient à la classe de
+l'électron : exactement trois générations. **L'holonomie de la phase A** (step3b, vérifiée
+numériquement) : H = R(2π[(1 − a)Lk + a·Wr]) avec Lk ∈ Z/3 ; un tiers de tour porté par le
+**writhe** (Wr = Lk = 1/3) donne exactement R(2π/3) quel que soit a, sans ajustement ; porté par
+la **torsion** (Tw = 1/3, Wr = 0) il donne (1 − a) × 120° = 97,7° à a(3) = 0,186. **La cible passe
+dans le canal writhe seulement.** **Koide + θ = 2/9 + m_e** : √m_k = A[1 + √2·cos(2/9 + 2πk/3)] avec
+(τ, e, μ) en k = (0, 1, 2) donne m_μ = 105,6594 MeV (+10⁻⁵ contre 105,6584) et m_τ = 1776,985 MeV
+(+0,6 σ contre 1776,93 ± 0,09) : les nombres de l'auteur tiennent. **Le 2/9 comme phase de
+Coulomb sur un temps de Compton** : θ = U·τ_e/ℏ avec τ_e = ℏ/(m_ec²) et U = q₁q₂·e²/(4πε₀r_e) =
+q₁q₂·m_ec² (définition de r_e) : le u × d de l'auteur donne 2/9 ; **les deux DQD neutres ajoutés,
+deux paires de branches (1/3)(1/3), donnent aussi 2/9**, avec des objets réellement présents dans
+le lepton. Exact par construction ; le contenu est l'affirmation. Ouvert : le θ de Koide est un
+décalage global unique, alors qu'une phase par pas s'accumulerait en (2/9)·k. Le 45° reste
+l'inclinaison « diagonale du cube » de R59, l'égalité singulet/doublet à dériver. **Verdict** :
+R(2π/3) par paire de DQD est exact dans le canal writhe avec la règle mod 3 ; Koide + 2/9 + m_e
+reproduit μ et τ ; le 2/9 est une identité de phase de Coulomb à r_e. Il manque : pourquoi le
+tiers de tour est du writhe et non de la torsion, pourquoi les DQD viennent par paires, le statut
+global ou par pas du 2/9, et le 45°.
