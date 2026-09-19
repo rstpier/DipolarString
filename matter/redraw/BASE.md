@@ -1924,10 +1924,42 @@ recouvrements **réels** : **(i)** projection du déplacement sur â moyennée l
 P = 0,50 ; 0,53 ; 0,25 ; 0,10 ; 0,50 à θ = 0, 60, 90, 120, 180° (Born : 1 ; 0,75 ; 0,5 ; 0,25 ; 0) ;
 **(ii)** recouvrement des champs après rotation rigide : (1 + 3cos θ)/4, négatif au-delà de 109°, ni
 cos(θ/2) ni une puissance ; **(iii)** projection dans le plan de section au point de couplage sur â
-projeté : 0,50 ; 0,79 ; 0,50 ; 0,21 ; 0,50. **Toutes donnent 1/2 à θ = 0 au lieu de 1 : aucune ne
-porte le demi-angle de l'axe.** **Ce que l'échec dit** : le cos(θ/2) est le recouvrement de deux
+projeté : 0,50 ; 0,79 ; 0,50 ; 0,21 ; 0,50. **(i) et (iii) donnent 1/2 à θ = 0 au lieu de 1 ; (ii)
+donne 1 à θ = 0 mais le mauvais recouvrement angulaire : aucune ne porte le demi-angle de
+l'axe.** **Ce que l'échec dit** : le cos(θ/2) est le recouvrement de deux
 états du fibré c₁ = 1 (R85), qui exige la structure **complexe** : le doublet E combiné à la phase
 de circulation (A = d_x + i d_y co-tournant, R53) et transporté avec la connexion du fibré ; un
 analyseur qui ne voit que le déplacement réel ne peut pas donner Born ; il doit être sensible à
-la phase de circulation. Non dessiné. **Verdict** : EXCLU pour tout analyseur géométrique réel ;
-R94a se réduit à : quel élément du réseau couple à la phase de circulation du doublet E ?
+la phase de circulation. Non dessiné. **Verdict** (corrigé sur relecture) : **les trois
+analyseurs réels naturels testés échouent** ; pas « tout analyseur réel ». Le no-go général est
+représentationnel : un doublet réel à deux composantes qui transforme linéairement sous SO(3) a
+D(2π) = I, alors que le spineur exige U(2π) = −I, donc le relèvement SU(2) ; nuance, le demi-angle
+planaire peut être réel (cos θ/2, sin θ/2), c'est la totalité des rotations 3D qui exige SU(2)
+(deux composantes complexes) ; et c₁ = 1 (R85) est déjà une donnée de fibré complexe. R94a se
+réduit à : d'où vient physiquement la coordonnée complexe du fibré, et quel élément du réseau y
+couple ? (R95.)
+
+**R95 — Dériver le relèvement SU(2) depuis la phase de circulation, sans Pauli ni Wigner.** (test
+de l'auteur : Ψ(n̂) → Ψ(Rn̂), vérifier U(R₁R₂) = U(R₁)U(R₂), U(2π) = −I, U(4π) = I)
+→ `su2_lift.py`, 6/6. **Entrées** : (1) le mode antipériodique de l'anneau (demi-tour de section,
+R82 ; action πℏ, R86/R87) ; (2) les rotations physiques composent (loi de groupe) ; rien d'autre :
+les rotations sont des matrices 3 × 3 réelles, suivies par continuité le long d'un chemin avec des
+quaternions de Hamilton construits pas à pas depuis les matrices. **(A) Axial** : la rotation de α
+autour de l'axe agit sur la section antipériodique par tirée en arrière, A(φ − α) = e^{−iα/2}A(φ)
+pour la composante co-tournante (calculé sur le champ : α = π/2, π, 2π, 4π) : **U(2π) = −1,
+U(4π) = +1**, une action qui n'est pas celle de SO(3), où 2π est l'identité. **(B) Suivi par
+continuité** : tout tour complet, quel que soit l'axe (z, x, (1,1,1)/√3, π puis π autour de x),
+ramène q = −1 ; deux tours, +1 ; les suivis composent (|q(g₂g₁) − q(g₂)q(g₁)| = 6·10⁻¹⁴). Donc une
+loi de transformation qui compose (entrée 2) et vaut −1 sur le tour axial (entrée 1) est une
+représentation du double revêtement : **U(2π) = −1 pour tout axe ; le −1 transverse est forcé,
+pas choisi.** **(C) La connexion** : pour un lacet d'orientations de l'axe, le suivi rend une
+rotation de retour d'angle égal à l'angle solide enclos et le mode de charge ½ prend e^{iΩ/2} ;
+octant : angle de retour 1,5708 = π/2, w = cos(Ω/2) = 0,7071 ; grand cercle (Ω = 2π) : −1 ; intégrée
+sur la sphère, (1/2π)(4π/2) = 1 = c₁ : **R85 retrouvé sans état de Wigner.** **(D) Ce qui reste** :
+(i) la réalité des deux quadratures (doublet E × phase de circulation ; l'entrée 1 fixe la charge
+½, pas l'existence physique des deux quadratures) ; (ii) l'analyseur couplé à cette amplitude
+(R94a) ; (iii) l'état joint (R94b). **Verdict** : DÉRIVÉ que le mode antipériodique transforme sous
+le double revêtement et que sa connexion a la courbure Ω/2, c₁ = 1 ; CONDITIONNEL à la loi de
+groupe (une consistance, pas une dynamique) et à la réalité des deux quadratures. La structure
+spinorielle de R85 n'est plus seulement mathématique : elle suit du demi-tour et de la composition
+des rotations.

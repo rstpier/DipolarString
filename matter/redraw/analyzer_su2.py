@@ -91,8 +91,9 @@ def main():
     print("le doublet E combine a la phase de circulation (A = d_x + i d_y co-tournant, R53) et")
     print("transporte avec la connexion du fibre. Un analyseur qui ne voit que le deplacement reel ne")
     print("peut pas donner Born ; il doit etre sensible a la phase de circulation. Non dessine.\n")
-    check("aucune construction reelle ne donne cos^2(theta/2) a theta = 0 (toutes donnent 1/2)",
-          all(abs(p - 0.5) < 1e-6 for p in (P1[0], P3[0])), "verrou nomme : la phase complexe")
+    check("les trois constructions testees echouent : (i), (iii) donnent 1/2 a theta = 0, (ii) le mauvais angle",
+          all(abs(p - 0.5) < 1e-6 for p in (P1[0], P3[0])) and abs(P2[1] - math.cos(math.pi / 6)) > 0.1,
+          "verrou nomme : la coordonnee complexe du fibre")
 
     print("Bilan :")
     for status, name, detail in RESULTS:

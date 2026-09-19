@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R94a)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R95)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R94a).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R95).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -112,9 +112,11 @@ se réduit à la dynamique de l'analyseur : si un 2-port linéaire sans perte r�
 SU(2), flux quadratique + quantum indivisible ⇒ P(+) = |A₊|² (R93, conditionnel ; Tsirelson y
 est une vérification avec le produit tensoriel importé, pas une dérivation). Mais aucun
 analyseur géométrique réel du doublet E ne donne le demi-angle (toutes les constructions
-donnent 1/2 à θ = 0, R94a) : le cos(θ/2) exige la phase complexe de circulation, et l'élément du
-réseau qui y couple n'est pas dessiné. Deux trous nommés : R94a (l'analyseur couplé à la phase)
-et R94b (l'espace d'états conjoint).
+donnent 1/2 à θ = 0 ou le mauvais angle, R94a) : le cos(θ/2) exige la coordonnée complexe du
+fibré. Le relèvement SU(2) lui-même est dérivé : le mode antipériodique donne U(2π) = −1 sur
+l'axe, et la loi de groupe des rotations force −1 pour tout axe, avec la connexion de courbure
+Ω/2 et c₁ = 1 retrouvé sans Wigner (R95). Restent : la réalité physique des deux quadratures
+(doublet E × phase de circulation), l'analyseur qui y couple (R94a), l'état joint (R94b).
 
 Ce qui reste vraiment :
 
@@ -172,9 +174,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R94a et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R95 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 89 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 90 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
