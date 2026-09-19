@@ -2,8 +2,24 @@
 """R96 -- La realite des deux quadratures : que sont physiquement les deux
 composantes complexes du spineur ?  (le reste (i) de R95)
 
-Candidat : les deux polarisations circulaires (helicites) du motif E porte par
-le quantum de circulation, dans le repere de section a demi-tour.
+Candidat : deux composantes circulaires de charge axiale +-1/2 du motif E porte
+par le quantum de circulation, dans le repere de section a demi-tour.
+
+CORRECTIONS (relecture de l'auteur) : (1) l'egalite hbar omega_perp = E_circ
+n'est pas une prediction independante (omega_perp = c/(2R) et E_circ = pi hbar c/L
+sont le meme nombre) : c'est une COMPATIBILITE remarquable entre le demi-tour
+geometrique et le quantum R87, pas une identification ; (2) le mot "helicite"
+est impropre : une polarisation de photon transforme en e^{-+ i alpha}, ici on
+utilise e^{-+ i alpha/2}, qui est deja une representation de spin +-1/2 ; le
+facteur 1/2 est precisement ce qui reste a faire sortir des equations du
+fluide ; (3) la carte de Hopf montre la compatibilite avec un spin 1/2, pas que
+le fluide DQD possede naturellement ce C^2 : supposer un doublet complexe
+normalise, c'est deja l'espace d'etats d'un spineur ; (4) l'exclusion de
+l'oscillateur mecanique est un controle d'ordre de grandeur (facteurs d'ordre
+unite, masse efficace lue), pas un theoreme ; (5) l'absence d'un etat a 1,5 m_e
+ne verrouille pas N = 1 : il faut une regle dynamique ou topologique.
+Le verrou central : pourquoi le quantum DQD a-t-il exactement deux amplitudes
+complexes independantes, transformant en e^{-+ i alpha/2} et non e^{-+ i alpha} ?
 
   A. vu par le fluide qui circule a c, le repere de section tourne a
      omega_perp = omega_circ/2 (demi-tour par tour) ; un quantum de cette
@@ -60,8 +76,9 @@ def main():
     E_circ = math.pi * HBARC / L
     print(f"  omega_perp = omega_circ/2 (demi-tour par tour) ; hbar omega_perp = hbar c/(2R) = {E_perp:.5f} MeV ;")
     print(f"  E_circ = pi hbar c / L = {E_circ:.5f} MeV = m_e/2 = {ME/2:.5f} MeV")
-    print("  -> le quantum indivisible de la circulation est un quantum de la quadrature circulaire.\n")
-    check("hbar omega_perp = E_circ = m_e/2 (exact pour R = lambda-bar)", abs(E_perp / E_circ - 1) < 1e-12 and abs(E_perp / (ME / 2) - 1) < 1e-12, f"{E_perp:.5f} MeV")
+    print("  -> compatibilite exacte entre le demi-tour geometrique et le quantum R87 (meme nombre, pas une")
+    print("     prediction independante).\n")
+    check("hbar omega_perp = E_circ = m_e/2 (compatibilite exacte, non independante)", abs(E_perp / E_circ - 1) < 1e-12 and abs(E_perp / (ME / 2) - 1) < 1e-12, f"{E_perp:.5f} MeV")
 
     # B. lecture mecanique exclue
     print("B. Lecture 'oscillateur mecanique du coeur'")
@@ -70,9 +87,9 @@ def main():
     E_class = 0.5 * m_circ * (DELTA_84 * omega_perp) ** 2  # (1/2) m (delta omega)^2, MeV
     print(f"  amplitude a un quantum sqrt(hbar/(m_circ omega_perp)) = {delta_q:.0f} fm = {delta_q/LAMBDA_BAR:.1f} lambda-bar = {delta_q/W_E:.1f} w")
     print(f"  energie classique du coeur deplace de {DELTA_84} fm tournant a omega_perp : {E_class*1e6:.0f} eV (quantum : {E_circ*1e3:.0f} keV)")
-    print("  -> exclue : les quadratures ne sont pas un deplacement mecanique du coeur mais les deux")
-    print("     helicites du quantum lui-meme ; R47 (aucun mode transverse) tient.\n")
-    check("oscillateur mecanique exclu : amplitude a un quantum > anneau, energie classique < 1e-3 quantum",
+    print("  -> controle d'ordre de grandeur (facteurs d'ordre unite, masse efficace lue) : la lecture")
+    print("     mecanique est peu seduisante ; les composantes candidates sont celles du quantum lui-meme.\n")
+    check("lecture mecanique peu seduisante (ordre de grandeur) : amplitude a un quantum > anneau, energie classique < 1e-3 quantum",
           delta_q > LAMBDA_BAR and E_class / E_circ < 1e-3, f"{delta_q/LAMBDA_BAR:.1f} lambda-bar ; {E_class/E_circ:.1e}")
 
     # C. un quantum partage : Hopf et equivariance
@@ -95,16 +112,17 @@ def main():
                     ("partage egal, phase pi/2", (1 / math.sqrt(2), 1j / math.sqrt(2)))):
         print(f"    {name:26s} -> axe n = {np.round(hopf(*v), 3)}")
     print(f"  norme |n| = 1 : {ok_norm} ; rotation axiale e^(-+ i alpha/2) sur a_+- <-> n tourne de alpha : {ok_equiv}")
-    print("  -> l'espace des etats du quantum partage est la sphere des orientations (R83), a une phase pres :")
-    print("     la phase globale est la fibre, celle qui porte le -1 de R95. Quantum en a_+ = spin +1/2 sur l'axe.\n")
-    check("Hopf : |n| = 1 et equivariance axiale (200 tirages)", ok_norm and ok_equiv, "sans Pauli")
+    print("  -> COMPATIBLE avec un spin 1/2 (sphere des orientations, R83, phase = fibre du -1 de R95) ;")
+    print("     ne demontre pas que le fluide possede ce C^2 : le doublet normalise est deja l'espace d'un spineur.\n")
+    check("Hopf : |n| = 1 et equivariance axiale (200 tirages) ; compatibilite, pas derivation", ok_norm and ok_equiv, "sans Pauli")
 
     # D. N = 2
     print("D. Deux quanta ?")
     E_N2 = ME / 2 + 2 * E_circ
-    print(f"  N = 2 : trois etats (spin 1), energie statique + 2 E_circ = {E_N2:.3f} MeV = {E_N2/ME:.2f} m_e : aucun electron excite ;")
-    print("  N est verrouille a 1 (R47 : un quantum par circuit), non derive.\n")
-    check("N = 2 donnerait un etat a 1,5 m_e, inexistant : N = 1 verrouille (R47)", abs(E_N2 / ME - 1.5) < 1e-9, "1.5 m_e")
+    print(f"  N = 2 : trois etats (spin 1), energie statique + 2 E_circ = {E_N2:.3f} MeV = {E_N2/ME:.2f} m_e.")
+    print("  Son absence ne verrouille PAS N = 1 (il pourrait etre instable, inaccessible ou interdit) :")
+    print("  le verrou N = 1 exige une regle dynamique ou topologique, non derivee.\n")
+    check("N = 2 serait un spin 1 a 1,5 m_e ; N = 1 non derive", abs(E_N2 / ME - 1.5) < 1e-9, "1.5 m_e")
 
     # E. consequence pour l'analyseur
     print("E. Consequence pour R94a")
@@ -112,10 +130,10 @@ def main():
     print("  pas au deplacement statique du coeur : c'est pourquoi (i), (ii), (iii) echouaient.\n")
     check("cible de R94a redefinie : coupleur d'helicite", True, "birefringence de ligne")
 
-    print("Verdict : CONDITIONNEL. Les deux quadratures sont les deux helicites du quantum de circulation")
-    print("dans le repere a demi-tour ; un quantum de cette quadrature vaut exactement E_circ ; leur")
-    print("partage est la sphere des orientations ; la lecture mecanique est exclue. Restent poses : que")
-    print("l'helicite du quantum soit un degre de liberte physique du fluide, et le verrou N = 1.\n")
+    print("Verdict (corrige) : pont mathematique conditionnel, pas identification physique. Deux composantes")
+    print("circulaires candidates de charge axiale +-1/2 ; compatibilite exacte avec le quantum R87 ; carte de")
+    print("Hopf compatible avec un spin 1/2. Reste a faire sortir des equations du fluide : deux amplitudes")
+    print("complexes independantes, et le e^(-+ i alpha/2) au lieu de e^(-+ i alpha). Et le verrou N = 1.\n")
 
     print("Bilan :")
     for status, name, detail in RESULTS:

@@ -1987,3 +1987,38 @@ l'hélicité du quantum (un élément de ligne adaptée anisotrope, biréfringen
 statique du cœur ; c'est pourquoi les trois constructions réelles échouaient. **Verdict** :
 CONDITIONNEL ; les deux quadratures sont identifiées et leur quantum vaut exactement E_circ ; restent
 posés que l'hélicité du quantum soit un degré de liberté physique du fluide, et le verrou N = 1.
+
+**Corrections de R96 (relecture de l'auteur).** (1) ℏω_⊥ = E_circ n'est pas une prédiction
+indépendante (même nombre que R87) : une **compatibilité** exacte entre le demi-tour géométrique et
+le quantum, pas une identification. (2) « Hélicité » est impropre : une polarisation transforme en
+e^{∓iα}, ici e^{∓iα/2}, déjà du spin ±½ ; on dit **deux composantes circulaires candidates de charge
+axiale ±½**, tant que ce ½ ne sort pas des équations du fluide. (3) La carte de Hopf montre la
+compatibilité avec un spin ½, pas que le fluide possède ce C² : un doublet complexe normalisé est
+déjà l'espace d'un spineur. (4) L'exclusion de l'oscillateur mécanique est un contrôle d'ordre de
+grandeur, pas un théorème. (5) L'absence d'un état à 1,5 m_e ne verrouille pas N = 1 ; il faut une
+règle dynamique ou topologique. Verdict de R96 corrigé : **pont mathématique conditionnel, pas
+identification physique.** Verrou central : pourquoi le quantum DQD a-t-il exactement deux
+amplitudes complexes indépendantes, transformant en e^{∓iα/2} et non e^{∓iα} ? Inscrites dans
+`two_quadratures.py` (5/5).
+
+**R97 — Un séparateur de modes réel, sans poser SU(2) ni θ/2** (barre de l'auteur : S†S = I,
+composition, |A₁|² = cos²(θ/2))
+→ `mode_separator.py`, 4/4. Le seul objet physique disponible pour définir des canaux est le champ
+du mode sur l'anneau ; un séparateur projette le champ entrant sur ses deux modes propres, les
+champs des anneaux d'axes ±â, la seule identification entre anneaux distincts étant la tirée en
+arrière par rotation rigide. Quatre champs testés : (a) le motif réel à demi-tour (R84) ; (b) le
+même × la phase de circulation e^{iφ/2} (R86) ; (c) un motif circulaire complexe local ; (d) un
+témoin de charge 1. **Résultats** : (a) = (b) = (c) : |A₁|² = 1 ; 0,39 ; 0,06 ; 0,02 ; 0,25 à θ = 0, 60, 90,
+120, 180° (Born : 1 ; 0,75 ; 0,5 ; 0,25 ; 0), somme des puissances 1,25 → 0,125 → 1,25 : **écart à
+cos²(θ/2) de 0,44 et pertes de 0,88** ; (d) suit cos θ (écart 0,36). La phase de circulation commune
+s'annule dans tout recouvrement ; aucun champ ne donne cos²(θ/2), aucun n'est un 2-port sans
+perte. **Ce que l'échec dit** : un séparateur qui agit sur le champ ne porte jamais le demi-angle ;
+le e^{±iθ/2} de R95 est une propriété de la loi de transformation de l'**orientation** (loi de
+groupe + demi-tour), pas des recouvrements de champs. **R96 était une reformulation spinorielle,
+comme le soupçonnait l'auteur : le C² n'est pas encore une paire d'amplitudes de fluide.** Un
+analyseur qui donne Born doit agir sur l'orientation elle-même (réorientation vers ±â) avec une
+dynamique qui reproduit cos²(θ/2) ; cette dynamique n'est pas dans la base. **Verdict** : EXCLU
+pour les séparateurs sur le champ ; R95 tient (transformation de l'orientation) ; la chaîne
+« topologie → double revêtement → C² → analyseur → |A|² → Born » est établie jusqu'au double
+revêtement et bloquée à l'analyseur. Le point de blocage est maintenant unique et précis : la
+dynamique de réorientation d'un anneau dans un analyseur.
