@@ -749,3 +749,22 @@ baryons (9) impairs, mésons (6) pairs ; cohérent, sans prédiction. **Verdict*
 circuits réconcilie la moitié de l'électron et la tension du réseau sans nombre libre ; elle ne
 donne la masse du proton que si son centre est un seul circuit, contre le contenu à trois brins
 (cinq bras chargés). Ouvert : quels brins se ferment en circuits.
+
+**R41 — « Cherche quels brins se ferment en circuits. »**
+→ `circuit_partition.py`, 6/6. Sous la règle des circuits, un circuit de k brins en série a un
+trajet kℓ₁ et une énergie πℏc/(kℓ₁) ; la part statique du proton (770 à 813 MeV, R25) doit être la
+somme sur ses circuits, soit Σ1/k_i = 1,01 à 1,07 en unités de 1/ℓ₁(9), avec πℏc/ℓ₁(9) = 763 MeV.
+**Des 30 partitions des 9 brins, une seule a Σ1/k = 1 : {3, 3, 3}, trois circuits de trois brins,
+les trois quarks, chacun un circuit à trois brins comme un lepton** ; elle donne 763 MeV (−1 % sous
+770, −6 % sous 813). La bande est encadrée par {3, 3, 3} et {4, 3, 2} (13/12, 826 MeV, qui mélange
+des brins de quarks différents et n'a pas de lecture) ; {8, 1} donne 858 ; tout le reste manque de
+plus de 12 %. **Chaque circuit de quark stocke πℏc/(3ℓ₁(9)) = 254 MeV**, l'échelle du quark
+constituant (m_p/3 = 313, −19 %) ; le quark est l'objet de l'électron (un circuit à trois brins) à
+l'échelle ℓ₁(9), rapport d'énergie 3^{2π} = 996 exactement. Avec les parts circulantes (règle de
+R29 153/191, base m/|g| 168/246) : p = 916 à 931 MeV (−2,4 à −0,8 %), n = 954 à 1009 (+1,5 à +7,4 %) :
+bon ordre, écart p–n 30 à 60 fois trop grand. Le pion en deux circuits de trois brins fait 40 MeV à
+ℓ₁(6) ou 508 à ℓ₁(9), jamais 140 : il reste l'anneau fermé de R16. Spin : trois circuits à ℏ/2
+donnent ℏ/2 (↑↑↓), l'anneau + de R25 ne peut pas en porter un autre, il doit être la circulation
+collective des circuits (ouvert). **Verdict** : les brins se ferment par quark, trois circuits de
+trois ; la masse du nucléon en sort à 1 à 3 % (p) et 1,5 à 7 % (n) avec une règle et l'échelle des
+leptons, sans nombre libre ; le quark constituant est un électron à l'échelle 9.
