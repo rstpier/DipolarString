@@ -581,3 +581,24 @@ les leptons ; elle ne pèse aucun hadron : les ~800 MeV du centre n'ont pas de m
 toutes les routes électromagnétiques essayées manquent d'un facteur 100 à 300. Le fluide TEM à
 c n'a pas de tension ; il faut soit un ingrédient non électromagnétique, soit un fluide qui n'est
 pas une onde sur une ligne conductrice.
+
+**R32 — « Le fluide n'est pas une onde, c'est un vortex. »** (redessin de R1)
+→ `vortex.py`, 5/5. **Ce que le vortex apporte** : sa circulation est un quantum conservé, pas une
+charge libre de s'étaler ; un courant I stationnaire sur la ligne adaptée stocke Z₀I²/c par unité
+de longueur, constant le long de la ligne, donc l'énergie croît avec la longueur : **le signe que
+le centre exigeait (R26), sans règle nouvelle**. Deux lectures sur l'anneau de l'électron : l'anneau
+de fumée (tourbillon poloïdal à c autour d'un cœur de rayon a, R/a = 37,1) s'auto-propulse à
+0,073 c, ce n'est pas une particule au repos ; la boucle de courant (écoulement le long de
+l'anneau, le R2/R4 de la base) est stationnaire et garde spin ℏ/2, μ_B et l'absence de rayonnement
+(R11), mieux qu'une onde stationnaire : **le vortex, c'est la boucle de courant**. **Ce qu'il
+coûte** : l'énergie d'écoulement d'une charge q à c sur un rayon R vaut 2Kq²/R ; pour q = e sur
+l'anneau de l'électron, 7,5 keV, 1,5 % de m_e ; l'écoulement ne porte la moitié circulante
+m_ec²/2 que si q = e/(2√α) = 5,85 e (la condition de spin réécrite en charge), le pôle adapté
+3,73 e en porte 40 % ; la lecture « mode » de R29 est perdue. **L'échelle** : la tension de ce
+vortex au rayon ƛ_p vaut ℏc/(4πR²) = 355 MeV/fm (réseau/2,5), le tube électrique de R26 donnait
+904 ; les deux vont en m_p², le nombre est la longueur de Compton du proton, circulaire tant que R
+n'est pas dérivé. **En plus** : deux lignes de vortex antiparallèles interagissent en
+(μ₀I²/2π)·ln d par unité de longueur, potentiel logarithmique, force en 1/d, un confinement doux
+entre lignes que l'onde n'avait pas ; au courant du réseau (3,4·10⁵ A), passer de 0,1 à 1 fm coûte
+331 MeV par fm de ligne. **Verdict** : le vortex donne le signe (tension) et garde spin, moment,
+non-rayonnement ; il perd la masse par mode et ne fixe toujours pas le nombre, qui reste ƛ_p.
