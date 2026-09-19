@@ -959,3 +959,18 @@ les comptes de brins comme masses (R28, R29).
 **Ce qui reste.** La règle qui dit sur quel cercle tourne la circulation collective des trois
 circuits (le 0,67 fm) ; ce qui fixe le pion à r_e/2 ; pourquoi 2π et 3, 7, 11 ; où se range la
 moitié statique de l'électron quand le fluide est un vortex ; le −1 sous 2π.
+
+**R50 — Où se range la moitié statique de l'électron quand le fluide est un vortex** (point ouvert
+du bilan R32–R49).
+→ `static_half_vortex.py`, 3/3. Le circuit donne la moitié circulante exactement (R40 A) ; g = 2
+exige l'autre moitié immobile et hors du circuit (R13). **Elle est aux deux pôles libres** du 3/4 de
+tour, qui portent la charge adaptée δ = e/(π√α) (R17) : Kδ² = ℏc/π² exactement (α s'annule), et deux
+pôles sphériques de rayon w/2 ont une énergie propre 2Kδ²/w = 2ℏc/(π²w) = m_ec²/2 exactement à
+w = 4ƛ/π² : c'est le champ propre des pôles à la demi-largeur du ruban, identique à la lecture
+« jonction à l'écart w » de R17 ; le vortex n'y change rien. La lecture n'est pas libre : des disques
+de rayon w/2 donnent π/2 de plus (0,40 MeV, 0,79 m_e), le rayon de bande w/4 donne le double
+(0,51 MeV, toute la masse) ; seule la sphère de rayon w/2 tombe sur la moitié. Total : circuit
+255,5 keV + deux pôles 255,5 keV = m_ec² exactement, le partage 1/2 : 1/2 qu'exige g = 2, et les
+deux parts vont en 1/ℓ₁, donc μ et τ gardent g = 2 sur l'échelle. **Verdict** : point fermé ; la
+moitié statique est l'énergie propre des deux pôles, avec la même ambiguïté géométrique (sphère,
+disque, bande : facteurs π/2 et 2) que celle de R44.
