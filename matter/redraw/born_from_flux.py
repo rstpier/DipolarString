@@ -32,6 +32,23 @@ indivisible (R47, R87).
      l'orientation n'entre que par l'axe de preparation (physique, pas ether).
 Ce qui reste : l'etat joint de deux anneaux n'est pas une paire de
 configurations ; la superposition a deux corps est le trou.
+
+CORRECTIONS (relecture de l'auteur) : (1) le demi-angle psi = theta/2 de A est
+IMPOSE, pas derive : R85 verifie c_1 = 1 avec un etat de Wigner j = k = 1/2 en
+main ; que la rotation physique du DQD agisse comme exp(-i theta sigma/2)
+n'est pas montre (R94a : les constructions reelles echouent).  (2) Born n'est
+etabli que SI l'analyseur DQD realise le melange SU(2) (energies moyennes
+E_+- ~ |A_+-|^2 avant discretisation) ; le noeud de Johns est un noeud de
+reseau, pas un analyseur derive pour le doublet E ; la conservation totale
+seule ne donne que P_+ + P_- = 1.  (3) C importe sigma, kron et le singulet :
+c'est une verification de coherence (si DS a le produit tensoriel et le
+singulet, Born donne Tsirelson), pas une derivation de Tsirelson par la
+linearite DQD.  (4) mere de spin 1 =/=> triplet m = 0 automatiquement : deux
+spins opposes le long de n peuvent etre |ud>, (|ud>+|du>)/sqrt2 ou le
+singulet selon la coherence et la phase ; le moment orbital et l'environnement
+de creation portent aussi du moment angulaire ; D illustre un cas, ne le
+derive pas.  (5) E verifie l'ordre-independance de la MQ importee (projecteurs
+sur des facteurs differents commutent), pas celle d'une dynamique d'ether.
 """
 import math
 import numpy as np

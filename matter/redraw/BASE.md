@@ -1898,3 +1898,36 @@ triplet à axe aléatoire, sans violation, et **l'état joint de deux anneaux n'
 configurations : la superposition à deux corps reste le trou.** Ce que la base a gagné : pour un
 seul anneau, l'espace des configurations (S²) est exactement l'espace des états purs d'un spin ½,
 et la règle de comptage du détecteur découle de l'énergie ; ce qu'il lui manque : les états joints.
+
+**Corrections de R93 (relecture de l'auteur).** (1) Le demi-angle ψ = θ/2 était **imposé**, pas
+dérivé : R85 vérifie c₁ = 1 avec un état de Wigner j = k = ½ en main ; que la rotation physique du
+DQD agisse comme e^{−iθσ/2} n'est pas montré. (2) Born n'est établi que **si** l'analyseur DQD réalise
+le mélange SU(2) (énergies moyennes Ē± ∝ |A±|² avant discrétisation) ; le nœud de Johns est un nœud
+de réseau, pas un analyseur dérivé pour le doublet E ; la conservation totale seule ne donne que
+P₊ + P₋ = 1. (3) La section C importe σ, ⊗ et le singulet : vérification de cohérence, pas
+dérivation de Tsirelson par la linéarité DQD. (4) Mère de spin 1 ⇏ triplet m = 0 : deux spins
+opposés le long de n̂ peuvent être |↑↓⟩, (|↑↓⟩ + |↓↑⟩)/√2 ou le singulet selon la cohérence et la
+phase ; le moment orbital et l'environnement de création portent aussi du moment angulaire. (5) La
+section E vérifie l'ordre-indépendance de la MQ importée, pas celle d'une dynamique d'éther.
+Inscrites dans `born_from_flux.py`. Acquis nets : c₁ = 1 donne une structure spinorielle
+candidate ; flux ∝ |A|² vient de la ligne linéaire ; le quantum indivisible transforme une fraction
+d'énergie en fréquence d'événements ; Born est réduite à la dynamique de l'analyseur. Deux trous
+distincts : R94a (l'analyseur SU(2) du Johns/DQD), R94b (l'espace d'états conjoint).
+
+**R94a — Dériver le vrai analyseur SU(2) du doublet E, sans matrice de Pauli.** (test de l'auteur :
+le doublet E de R82/R84, une géométrie d'analyseur tournée de θ, les deux puissances doivent sortir
+en cos²(θ/2), sin²(θ/2))
+→ `analyzer_su2.py`, 4/4. Le champ E de l'anneau d'axe ẑ : d(φ) = cos(φ/2) r̂(φ) + sin(φ/2) ẑ
+(demi-tour de section, d(2π) = −d(0)) ; un anneau d'axe n̂ = Rẑ porte Rd(φ). Trois constructions
+d'analyseur selon â = ẑ, l'anneau incliné de θ, puissances = carrés de projections ou de
+recouvrements **réels** : **(i)** projection du déplacement sur â moyennée le long de l'anneau :
+P = 0,50 ; 0,53 ; 0,25 ; 0,10 ; 0,50 à θ = 0, 60, 90, 120, 180° (Born : 1 ; 0,75 ; 0,5 ; 0,25 ; 0) ;
+**(ii)** recouvrement des champs après rotation rigide : (1 + 3cos θ)/4, négatif au-delà de 109°, ni
+cos(θ/2) ni une puissance ; **(iii)** projection dans le plan de section au point de couplage sur â
+projeté : 0,50 ; 0,79 ; 0,50 ; 0,21 ; 0,50. **Toutes donnent 1/2 à θ = 0 au lieu de 1 : aucune ne
+porte le demi-angle de l'axe.** **Ce que l'échec dit** : le cos(θ/2) est le recouvrement de deux
+états du fibré c₁ = 1 (R85), qui exige la structure **complexe** : le doublet E combiné à la phase
+de circulation (A = d_x + i d_y co-tournant, R53) et transporté avec la connexion du fibré ; un
+analyseur qui ne voit que le déplacement réel ne peut pas donner Born ; il doit être sensible à
+la phase de circulation. Non dessiné. **Verdict** : EXCLU pour tout analyseur géométrique réel ;
+R94a se réduit à : quel élément du réseau couple à la phase de circulation du doublet E ?
