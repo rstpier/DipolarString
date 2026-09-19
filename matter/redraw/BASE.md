@@ -541,3 +541,43 @@ tension de tube de flux ; un fluide conducteur écrante le pôle au lieu de le c
 pas un mécanisme de la base telle qu'écrite. Les ~800 MeV du centre restent sans mécanisme ; la
 seule piste chiffrée est une charge linéique fixe (R1 : le fluide aurait une densité de charge
 propre, pas une charge par corde).
+
+**R31 — La dernière piste chiffrée de R30 : un fluide à densité de charge linéique fixe.**
+→ `fixed_density.py`, 4/4. La tension du réseau exige λ = 7,07 e/fm ; les cordes de l'électron
+portent e/3 sur 809 fm, λ_e = 4·10⁻⁴ e/fm, 17 000 fois moins (tension 3·10⁻⁶ MeV/fm) : un seul
+fluide ne peut pas avoir les deux densités, **la densité fixe est exclue par l'électron**. Une
+densité qui suit l'échelle, λ = (e/3)/ℓ₁(n), donne σ = 4πK/(9ℓ₁²) = 3,0 MeV/fm au nucléon, 300 fois
+trop peu, et n'atteint le réseau qu'à ℓ₁ = 0,047 fm, le n = 14 de l'échelle et non le 9 du proton.
+Avec e/3 par corde et λ fixe, les longueurs seraient quantifiées à 0,047 fm : l'électron (3 cordes)
+ferait 0,14 fm contre son arc de 2426 fm. **Verdict** : jonction de Coulomb (R24), mode (R29),
+valence (R24), entremêlage (R27), tube de flux (R26/R30), densité fixe (ici) manquent tous les
+~800 MeV du centre d'un facteur 100 à 300 ou par le signe : **le fluide de la base, une onde TEM à
+c sur une ligne adaptée, n'a pas de tension.** L'interaction forte n'est pas dans l'électromagnétisme
+de la base.
+
+---
+
+## Bilan au 19 septembre 2026 (R21–R31, ajouts au bilan du 16)
+
+**Ce qui s'est ajouté au solide.**
+- Trois brins à {−1/3, 0, +1/3} donnent exactement le spectre de charge observé et rien d'autre ;
+  la couleur est la position du brin impair ; p et n ont 9 brins, les pions 6 ; les générations
+  sont e + 4 ou 8 brins neutres (R28).
+- Le mode est l'onde stationnaire entre les deux pôles, E = ℏcπ/ℓ_arc ; pour l'électron,
+  m_ec²/2 exactement ; la règle « les brins chargés portent le mode » tient comme loi de mode
+  (leptons, neutrino nul, part circulante des nucléons à 10–20 %) (R29).
+- Une jonction à k pôles lie comme ⌊k/2⌋ paires ; la tri-jonction à 2 MeV est l'échelle de la
+  force nucléaire (R22, R24) ; μ_p et μ_n placent le fluide à 0,79 fm (+) et 1,09 fm (−) (R25).
+- Le champ du fluide polarisé reste sur la ligne bifilaire par géométrie (R30).
+
+**Ce qui s'est fermé.**
+- r_p ne sort pas des constantes de la base (R23) ; la valence ne fait pas le GeV (R24) ;
+  l'entremêlage verrouille et lie mais ne pèse pas (R27) ; le tube de flux n'est pas un mécanisme
+  de la base, un fluide conducteur écrante le pôle (R30) ; une densité fixe est exclue par
+  l'électron (R31) ; les comptes de brins ne sont pas des masses (R28, R29).
+
+**Où on en est.** La base décrit charges, couleur, spin, moments, tailles, la force nucléaire et
+les leptons ; elle ne pèse aucun hadron : les ~800 MeV du centre n'ont pas de mécanisme, et
+toutes les routes électromagnétiques essayées manquent d'un facteur 100 à 300. Le fluide TEM à
+c n'a pas de tension ; il faut soit un ingrédient non électromagnétique, soit un fluide qui n'est
+pas une onde sur une ligne conductrice.
