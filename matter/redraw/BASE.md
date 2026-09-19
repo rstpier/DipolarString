@@ -922,3 +922,40 @@ N = 910 MeV (−3 %), Δ = 1204 (−2,3 %), μ(Δ⁺⁺) = 6,4 μ_N, r_p = 0,836
 coïncidences géométriques de la même étoile de circuits (0,672 et 0,836 fm) ; le rayon de
 l'anneau n'est pas dérivé, il manque la règle qui dit sur quel cercle la circulation collective
 des trois circuits tourne.
+
+---
+
+## Bilan au 19 septembre 2026, suite (R32–R49 ; 44 scripts, tous PASS)
+
+**Le redessin qui a tout débloqué : le fluide est un vortex, pas une onde (R32).** Un courant
+stationnaire portant un quantum de circulation par circuit fermé, de charge q = e/(2√α), dont
+l'énergie 4πKq²/trajet = πℏc/trajet est identique à l'ancienne « note » en demi-onde (R47) : les
+nombres de R29–R45 tiennent, les harmoniques et le mode transverse à 4 MeV disparaissent.
+
+**Ce qui est dérivé (avec α, m_e, l'exposant 2π, le compte 9 et la largeur de nappe).**
+- Le quark est l'objet de l'électron, un circuit de trois brins, à l'échelle ℓ₁(9) = 0,81 fm :
+  254 MeV chacun ; le nucléon en a trois (763 MeV immobiles), partition unique des 9 brins (R40, R41).
+- La tension forte : πℏc/ℓ₁(9)² = 939 MeV/fm, √σ = 430 MeV, au centre de la bande du réseau
+  (420–440), α et Z₀ s'annulant (R39, R40).
+- L'écart neutron–proton : le brin neutre de plus est un DQD dont l'énergie bifilaire vaut
+  (2α/3)·3^{2π}·m_ec² = 2,47 MeV (réseau 2,52 ± 0,29), moins le Coulomb du proton fixé par la
+  section de R17 (plaque, a = w/4) et le contenu de R28 (charge sur les brins chargés) : 1,32 MeV
+  contre 1,293, +2,4 %, écran des voisins compris (R42–R45).
+- Le Δ est le nucléon avec trois fois sa circulation d'anneau : ±15 % avec les rayons de R25 (R48).
+- La tri-jonction à 2 MeV (force nucléaire), la loi ⌊k/2⌋ des jonctions (R22, R24).
+
+**Ce qui est conditionnel ou coïncidence.**
+- La largeur de nappe w = 4ƛ/π² vient de g = 2 via la lecture « écart des pôles = largeur » ;
+  l'écart p–n n'y est sensible qu'à un facteur 2 près (R46).
+- Le rayon de l'anneau du nucléon, 0,67 fm : égal à √3 fois le rayon de circuit à 0,1 %, et
+  l'enveloppe de trois circuits tangents vaut r_p à 0,6 % ; sans mécanisme (R49).
+- Le neutron à +1,5 à +7 % (R41), μ_p exigeant 0,87 e en circulation (R49), le spin compté par
+  circuits et par anneau (R41 F).
+
+**Ce qui est fermé.** L'enroulement comme mécanisme de force (R39), le pas d'hélice comme
+variable (R38–R39), le tube de flux dans la base telle qu'écrite (R30), la densité fixe (R31),
+les comptes de brins comme masses (R28, R29).
+
+**Ce qui reste.** La règle qui dit sur quel cercle tourne la circulation collective des trois
+circuits (le 0,67 fm) ; ce qui fixe le pion à r_e/2 ; pourquoi 2π et 3, 7, 11 ; où se range la
+moitié statique de l'électron quand le fluide est un vortex ; le −1 sous 2π.
