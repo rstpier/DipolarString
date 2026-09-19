@@ -602,3 +602,24 @@ n'est pas dérivé. **En plus** : deux lignes de vortex antiparallèles interagi
 entre lignes que l'onde n'avait pas ; au courant du réseau (3,4·10⁵ A), passer de 0,1 à 1 fm coûte
 331 MeV par fm de ligne. **Verdict** : le vortex donne le signe (tension) et garde spin, moment,
 non-rayonnement ; il perd la masse par mode et ne fixe toujours pas le nombre, qui reste ƛ_p.
+
+**R33 — « Il ne peut pas y avoir un effet inductif amplificateur à chaque tour ? »**
+→ `inductive_winding.py`, 5/5. **Oui, et il est quadratique** : un brin chargé enroulé en hélice
+(n tours par unité de longueur, cœur de rayon a) est un solénoïde, son champ vaut μ₀nI et son
+énergie par unité de longueur est amplifiée de π(na)² par rapport au brin droit (10 tours/fm sur
+ƛ_p : ×14). **La condition** : la charge par unité de longueur de trajet doit être fixe, chaque tour
+portant son propre courant ; avec une charge totale e fixe, le courant par tour tombe quand le
+trajet s'allonge et le gain s'annule exactement (u = K/(2ℓ²) = 0,9 MeV/fm quel que soit n). C'est
+la circulation conservée du vortex (R32) qui autorise le gain. **Les nombres** : à la densité de
+brin du nucléon (e/3 par 0,81 fm, brin droit 3,0 MeV/fm), la tension du réseau demande un gain de
+297, soit na = 9,7 : 46 tours par fm sur ƛ_p, 42 tours dans le centre de 0,9 fm, 55 fm de corde,
+68 brins de 0,81 fm et non 9. À la densité de l'électron (4·10⁻⁴ e/fm), la même tension demande
+46 000 tours par fm, 54 000 fm de corde, 68 cordes d'électron : **l'exclusion de R31 tombe si le
+nombre d'enroulement est libre, un seul fluide, enroulé ou non.** Seul le brin non apparié
+s'enroule en solénoïde : torsader une paire bifilaire à courants opposés annule la composante
+azimutale, les brins neutres sont inductivement inertes (cohérent avec R29). Le nombre
+d'enroulement est la torsion Tw du brin (Lk = Tw + Wr, R27), un entier que la base possède ; la
+valeur requise (~40 par nucléon à la densité de brin) n'est pas dérivée ; l'énergie électrique de
+la charge enroulée (cylindre chargé écranté à r_p) ajoute un terme du même ordre ou plus grand et
+abaisse les tours nécessaires à quelques dizaines par fm. **Verdict** : mécanisme réel, signe et
+échelle atteignables avec le fluide de l'électron ; le nombre (la torsion) reste à fixer.
