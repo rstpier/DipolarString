@@ -27,6 +27,16 @@ observable au repere de l'ether.)
 Sorties honnetes : -cos theta n'est pas derive (il manque la mesure de Born) ;
 pas de delta E nouveau ; ce que la base possede est le squelette (contrainte
 globale + sphere), pas la dynamique.
+
+CORRECTIONS (relecture de l'auteur, R93) : (1) le quantum partage de R47/R87
+est une cause commune de preparation, ce que Bell autorise ; ce n'est pas une
+non-localite ; la "reorientation globale" de B est une dynamique nouvelle, pas
+une propriete demontree ; (2) "Born est unique" ne vaut que dans l'ansatz
+E = -(2p - 1) ; Bell + non-localite + non-signalisation ne selectionnent pas
+Born (les boites PR existent, S = 4 en est l'exemple) : c'est la linearite des
+amplitudes qui selectionne Tsirelson (R93 C) ; (3) "instantane => delta E = 0"
+n'est pas automatique, il faut montrer que les dependances a l'ordre et a
+l'orientation s'annulent (R93 E).
 """
 import math
 import numpy as np

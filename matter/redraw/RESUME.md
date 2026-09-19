@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R92)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R93)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R92).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R93).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -107,8 +107,13 @@ variables définies donne |S| ≤ 2 contre 2,83 mesuré (R91) : exclue comme th�
 comme modèle entier. Ce qu'elle a déjà de non local, le quantum partagé de la paire (contrainte
 globale) et la sphère de Bloch, ne suffit pas : sans la règle de Born (unique réponse donnant
 −cos θ) la contrainte surchoote à S = 4, et l'onde du milieu (c₀ = c) est trop lente pour être le
-canal (> 10⁴ c requis) ; aucune correction nouvelle ne sort (R92). Diagnostic : la base a la
-cinématique quantique (S = ℏ/2, g = 2, c₁ = 1, ψ(2π) = −ψ) sans la dynamique quantique.
+canal (> 10⁴ c requis) ; aucune correction nouvelle ne sort (R92). Pour un seul anneau, la règle
+de Born sort du flux quadratique (spineur physique, 2-port linéaire sans perte, énergie
+quadratique, quantum indivisible, conservation moyenne) et Tsirelson de la linéarité (R93) ; mais
+la paire de la brisure est un triplet à axe aléatoire (S = 0,94, pas de violation, comme en
+photoconversion), un test de Bell exige une préparation J = 0, et l'état joint de deux anneaux
+n'est pas une paire de configurations. Diagnostic : la base a la cinématique quantique et,
+pour un corps, la règle de comptage ; il lui manque les états joints (superposition à deux corps).
 
 Ce qui reste vraiment :
 
@@ -166,9 +171,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R92 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R93 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 87 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 88 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

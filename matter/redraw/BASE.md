@@ -1860,3 +1860,41 @@ pas dérivé ; secteur quantique absent, squelette présent** (une contrainte gl
 partagé ; un espace d'états, la sphère de Bloch) ; la règle de Born, unique réponse compatible,
 doit être ajoutée ; aucun δE ne sort. La base a construit de la cinématique quantique (S = ℏ/2,
 g = 2, c₁ = 1, ψ(2π) = −ψ) sans la dynamique quantique (superposition, Born, états joints).
+
+**Corrections de R92 (relecture de l'auteur).** (1) Le quantum partagé de R47/R87 est une cause
+commune de préparation, ce que Bell autorise ; ce n'est pas une non-localité ; la « réorientation
+globale » de R92 B est une dynamique nouvelle, pas une propriété démontrée du quantum partagé. (2)
+« Born est unique » ne vaut que dans l'ansatz E = −(2p − 1) ; Bell + non-localité + non-signalisation
+ne sélectionnent pas Born (les boîtes PR existent, S = 4 en est l'exemple) : c'est la linéarité des
+amplitudes qui sélectionne Tsirelson. (3) « Instantané ⇒ δE = 0 » n'est pas automatique ; il faut
+montrer que les dépendances à l'ordre et à l'orientation s'annulent. Inscrites dans
+`bell_nonlocal.py`.
+
+**R93 — Born peut-elle émerger du flux quadratique d'un spineur DQD ?** (test de l'auteur : spineur
+physique + linéarité SU(2) + énergie quadratique + quantum indivisible, sans |ψ|² en entrée)
+→ `born_from_flux.py`, 5/5. **Ingrédients déjà présents** : c₁ = 1 (R85) ⇒ un état local est un
+spineur à deux composantes ; le doublet E de la section (R82) fournit deux amplitudes ; le
+demi-tour de section par circuit (R82, R86) fait que tourner l'anneau de θ tourne le vecteur E de
+θ/2 ; le réseau est linéaire et sans perte (théorème 4, nœud de Johns, diffusion unitaire) ;
+l'énergie de ligne est quadratique ; le quantum est indivisible (R47, R87). **(A) Demi-angle** :
+θ = 60° → E tourne de 30° ; θ = 2π → E → −E. **(B) Analyseur selon a = 2-port linéaire sans perte** :
+puissances dans les canaux ±a = cos²(θ/2) et sin²(θ/2), somme 1 ; avec un quantum indivisible, la
+conservation de l'énergie **en moyenne** sur un ensemble impose P(+) = |A₊|²/(|A₊|² + |A₋|²) =
+cos²(θ/2) : **Born, sans postulat probabiliste** ; toute autre règle P ∝ |A|^{2k} (k = ½ : écart
+0,116 ; k = 2 : 0,150) viole la conservation canal par canal ; entrées nommées : spineur physique,
+2-port linéaire sans perte, énergie quadratique, quantum indivisible, conservation moyenne.
+**(C) Tsirelson** : avec des amplitudes linéaires et Born, S ≤ 2√2 (singulet : 2,8284) ; le S = 4 de
+R92 est exclu par la structure linéaire, pas par la non-localité. **(D) La paire de R87** (mère de
+spin 1, circulations opposées le long d'un axe aléatoire n̂) est l'état triplet m = 0 le long de n̂ :
+E = a·b − 2(a·n̂)(b·n̂) (vérifié sur l'état), moyenne sur n̂ = (a·b)/3, **S = 0,94 : pas de violation,
+même quantique**. Le spin 1 de la mère va dans la paire (J = 1), comme en photoconversion ; un test
+de Bell exige une préparation J = 0 (singulet), que la base n'a pas dessinée. Le caveat de
+l'auteur est confirmé et chiffré. **(E) Ordre des mesures** : pour le singulet et le triplet, la loi
+jointe est identique dans les deux ordres (écart 0) : aucune dépendance à l'ordre privilégié ;
+l'orientation n'entre que par l'axe de préparation ; ce qui n'est pas montré, c'est une dynamique
+d'éther qui réalise ces projections. **Verdict** : CONDITIONNEL ; Born sort du flux quadratique
+avec quatre entrées nommées et Tsirelson suit de la linéarité ; mais la paire de la base est un
+triplet à axe aléatoire, sans violation, et **l'état joint de deux anneaux n'est pas une paire de
+configurations : la superposition à deux corps reste le trou.** Ce que la base a gagné : pour un
+seul anneau, l'espace des configurations (S²) est exactement l'espace des états purs d'un spin ½,
+et la règle de comptage du détecteur découle de l'énergie ; ce qu'il lui manque : les états joints.
