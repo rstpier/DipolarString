@@ -1769,3 +1769,22 @@ et stable » : boson = action entière, fermion = action demi-entière avec verr
 **Verdict** : CONDITIONNEL ; le caveat de R87 est levé au niveau des règles (pas de verrou ⇒
 transitoire) ; restent la géométrie de la fermeture (où un photon se ferme sur trois DQD) et la
 cinématique réelle de la création de paire (noyau, seuil 1,022 MeV).
+
+**R89 — « Vois-tu une prédiction ? Matière noire = DQD ? »** Matière noire : non, pas comme le milieu
+(le DQD est l'espace, uniforme ; la matière noire s'agglomère) et pas comme objet, la structure ne
+fixant la taille d'aucun objet neutre (R28, R88 : seuls les anneaux verrouillés sont stables, les
+neutres verrouillés sont les neutrinos, légers). **Mais une prédiction existe, et elle mord** :
+→ `hydrogen_darwin.py`, 5/5. Un électron étendu déplace le 1S de l'hydrogène comme un noyau
+étendu, δE = (2π/3)αℏc⟨r²⟩|ψ(0)|² ; dans Dirac le terme de Darwin (mesuré, structure fine) vaut
+(π/2)αℏc ƛ²|ψ(0)|². Si l'électron **est** l'anneau, sa taille doit reproduire Darwin : **⟨r²⟩ = (3/4)ƛ²,
+r_rms = (√3/2)ƛ = 334,4 fm**, sans nombre libre. Les lectures actuelles de la charge : anneau fin à
+R = ƛ (R53) : ⟨r²⟩ = 1,00 ƛ² (+33 %) ; distribution de R84 (charge = courant, section carrée,
+concentrée vers l'intérieur) : **0,883 ƛ² (+18 %), soit +31 GHz sur le 1S** ; trois charges aux
+jonctions à r_J = D/√3 = 136 fm (R5, R25) : 0,12 ƛ² (−84 %). Le 1S est connu à ~10 kHz : l'écart de
+R84 est exclu par 3·10⁶ ; pour tenir, ⟨r²⟩/(¾ƛ²) = 1 à 6·10⁻⁸ près. **Caveat** : |ψ(0)|² est celui de la
+mécanique quantique, et l'atome de la base est une orbite de Bohr (R75) ; la base doit produire
+son propre calcul atomique. L'ordre de grandeur ne dépend pas de la lecture : une taille de 10² fm
+se voit au meV, l'hydrogène est mesuré au neV. **Verdict** : PRÉDICTION (r_rms = 334 fm) et
+TENSION (363 fm pour R84, +8,5 % en rayon) ; premier test qui mord ; il exige un calcul atomique
+propre à la base et il tranchera. Même remarque pour la diffusion Møller au MeV, où un anneau de
+charge répartie aurait un facteur de forme que le point de Dirac n'a pas.
