@@ -82,31 +82,38 @@ de l'exposant.
 
 ## 6. Ce qui reste à fournir
 
-1. La règle qui produit Koide : le 45° a un candidat (un quantum de circulation dans le canal
-   commun, un dans le canal des différences, R62) ; la phase du doublet 2/9 n'a aucun mécanisme
-   (les identités trouvées à R63 sont des rationnels par construction). Et pourquoi 3, 7, 11 :
-   le spin 1 du DQD interdit d'en ajouter un seul (n = 5), pas 13 ni 15 (R70).
-2. Une dynamique : aucun processus n'est calculé. La durée de vie comme « respiration de Z » (R64)
-   exige une désadaptation en m² sur une échelle fixe de ~1 TeV que la base n'a pas ; une
-   résonance à Z ≠ Z₀ est exclue (R65 : elle meurt en moins de cent tours) ; une impédance qui
-   suit le courant, Z = Z₀[1 + (I/I_c)²], donne la forme m⁵ par parité du milieu (R66), mais
-   ni le courant critique I_c ≈ 3·10⁸ A ni le partage de l'énergie à trois corps ; un
-   ralentissement relativiste (global ou interne) n'y change rien (R67). L'échelle manquante
-   est celle du champ faible, M = (96π²)^{1/4}/√G_F = 1,625 TeV à 0,3 % (R68) : il faudrait
-   une excitation neutre de spin 1 du milieu à ~90 GeV et un angle de mélange. Avec M
-   emprunté, la loi τ(n) = T(n)(M/m)⁴/C(n) (un tour = période de Compton, C = barreaux
-   inférieurs, couleur × 3) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la correction
-   forte), l'électron stable (R69).
-3. La largeur du ruban, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions (R54).
-4. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
-5. Ce qui épingle l'anneau du pion à r_e/2.
-6. Le spin : un seul compte (circuits ou anneau), et le neutron trop lourd de quelques %.
-7. Le −1 sous un tour complet (statistique d'échange), non abordé.
+Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
+
+- Fermés : la brique n'a pas de taille (Z et l'énergie par longueur d'une ligne bifilaire sont
+  invariantes d'échelle, R71) ; le nucléon a un seul compte de spin (l'anneau) et un seul nombre
+  pour le neutron, −1,8 % avec le pôle de plus basse énergie (R72) ; l'anneau stable et l'émission
+  de photons ne se contredisent pas, l'orbite stationnaire venant de la même horloge que le tour
+  (de Broglie, R75).
+- Décision : les masses des leptons sont Koide (à 10⁻⁵), n est une étiquette, 2π l'approximation
+  à 1 % ; aucune correction à un paramètre ne fait mieux (R73).
+
+Ce qui reste vraiment :
+
+1. **Le −1 sous un tour complet** (Pauli) : la base a l'attache au milieu (tour de ceinture) mais
+   pas de mode antipériodique sur un anneau de trois branches simples (R74). Sans lui, pas d'atome
+   à plusieurs électrons.
+2. **Le mécanisme de Koide** : le 45° a un candidat (un quantum par canal, R62), la phase 2/9 du
+   doublet n'en a pas (R63). Et pourquoi 13 et 15 sont absents (le spin interdit seulement n = 5,
+   R70).
+3. **Le mur des durées de vie** : M = (96π²)^{1/4}/√G_F = 1,625 TeV est celui du champ faible
+   (R68) ; avec lui, τ(n) = T(n)(M/m)⁴/C(n) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la
+   correction forte), l'électron stable (R69). La base ne fabrique ni M ni l'angle de mélange.
+4. **La largeur du ruban**, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions
+   (R54) ; et le partage 2/3, 2/3, −1/3 de la circulation du nucléon (R72), posé.
+5. **L'amplitude d'un saut** (émission, désintégration) : la base a les états et les horloges, pas
+   les amplitudes.
+6. Trois coïncidences à 1 % sans mécanisme : l'anneau du nucléon à 0,67 fm (√3 × R_c), le pion à
+   r_e/2, m_p = 4ℏc/r_p.
 
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 65 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 70 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

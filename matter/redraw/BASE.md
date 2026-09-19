@@ -1382,3 +1382,64 @@ n = 5 est interdit** (12,7 MeV, absent), 7 (μ), 9 (quark, classe 0) et 11 (τ) 
 15 ne sont pas interdits par le spin, il faut encore la règle de classe mod 3 (R61). **Verdict** :
 DÉRIVÉ pour la brique et l'assemblage par fermeture ; CONDITIONNEL pour les paires (le spin
 explique l'absence de n = 5, pas celle de 13 et 15).
+
+**Passe automatique de cohérence (R71–R75)** — « que manque-t-il de concret au secteur matière
+pour être cohérent ? » : cinq points, cinq scripts.
+
+**R71 — Point 1, une brique, une seule taille.** → `brick_scale.py`, 4/4. Le DQD du vide (écart
+241 fm, ruban 156 fm) et les brins du quark (0,16 fm) sont-ils la même brique ? **Oui, parce que
+la brique n'a pas de taille** : par la méthode des moments 2D, la capacité par longueur de deux
+conducteurs carrés (w, d) est identique à (100w, 100d) à 10⁻⁹ et ne dépend que de d/w ; donc Z et
+l'énergie par longueur d'une ligne bifilaire sont invariantes d'échelle, et comprimer une branche
+mille fois ne coûte rien. Les tailles appartiennent aux circuits : w/ℓ₁ = 6/π³ à tout barreau,
+D₀ = 241 fm depuis g = 2 (R54), tout pend à l'ancre ƛ_e. L'électron enjambe 3,2 cellules du vide,
+le quark tient dans 1/300 de cellule. **Verdict** : DÉRIVÉ, le point 1 est fermé.
+
+**R72 — Point 3, un nucléon avec un seul compte.** → `nucleon_single_count.py`, 5/5. Les trois
+circuits de quark sont statiques (πℏc/ℓ₁(9) = 763 MeV, R42) et un seul anneau porte le reste,
+175 MeV (18,7 % de m_p, R25 disait 18 %) ; avec S = R·E/c = ℏ/2 pour l'anneau seul, R = 0,562 fm
+(R25 : 0,587 par μ_p, 4 %). **Le spin est compté une fois.** Les moments demandent alors
+Q_p = +1,045 e et Q_n = −0,716 e en circulation : la règle « la circulation se partage comme la
+charge, 2/3 pour chaque quark de la paire, −1/3 pour l'impair » donne Q_p = 1 (+5 %), Q_n = −2/3
+(+7 %) et μ_p/μ_n = −3/2 (mesuré −1,460, 2,7 %) ; « toutes les charges circulent » donne μ_n = 0,
+« impair à contre-sens à égalité » donne −1,25 : exclus. **Le neutron n'a plus qu'un nombre** : la
+forme du pôle est celle de plus basse énergie dans la section w × w (capacité maximale), le
+bouchon (c = 0,661, contre 0,500 sphère, 0,367 plaque, 0,318 disque), la même que R5 : m_n − m_p =
+1,270 MeV (−1,8 %). **Verdict** : DÉRIVÉ pour le compte unique et le nombre unique ; le partage
+2/3, 2/3, −1/3 est une règle posée (celle de SU(6)), CONDITIONNELLE.
+
+**R73 — Point 2, une seule échelle de masse.** → `ladder_vs_koide.py`, 3/3. L'échelle (n/3)^{2π}
+donne μ à −0,8 % et τ à +1,0 % ; un décalage n → n + δ ajusté sur le muon met τ à +2,0 %, un
+exposant p = 6,2925 ajusté sur le muon à +2,2 % : **un nombre de plus fait pire**, l'échelle n'est
+pas une loi à corriger mais une approximation (Q = 0,6683 contre 2/3). Koide + 2/9 + m_e prédit μ
+à +0,001 % et τ à +0,007 %. **Décision de cohérence** : les masses des leptons sont Koide ; n est une
+étiquette ; 2π est l'approximation à 1 % ; le barreau des quarks garde l'échelle (3^{−2π}), dont le
+1 % est sous les incertitudes du réseau (σ : 2 %, n − p fort : 12 %). Reste ouvert le mécanisme
+de 2/9 (R63). **Verdict** : DÉRIVÉ que l'échelle ne se corrige pas ; le point 2 devient une
+décision, plus une incohérence.
+
+**R74 — Point 4, le −1 sous un tour complet.** → `exchange_sign.py`, 4/4. Ce que la base a : le
+Z₂ de la phase A (step2, re-exécuté, passe) pour une **paire** de branches avec un nombre impair de
+demi-torsions (mode différentiel antipériodique) ; le spin ½ du redessin, S = ƛ·(m_e/2)/c = ℏ/2
+exactement, mais mécanique, muet sur le signe ; l'holonomie Z₃ du triple, 0, 2π/3, 4π/3 pour n = 3,
+7, 11, jamais π : une étiquette de génération, pas le signe d'échange ; l'attache au milieu (trois
+jonctions, R54), qui rend le tour de ceinture applicable (tourner de 2π tord les attaches, 4π se
+défait, l'échange est une rotation de 2π). Ce qui manque : un mode antipériodique sur un anneau
+de **trois branches simples**, que la phase A ne fournit que pour une paire. **Verdict** : OUVERT,
+réduit à une question : qu'est-ce qui rend antipériodique un anneau de trois branches simples ?
+
+**R75 — Point 5, ne pas rayonner et pourtant émettre.** → `photon_emission.py`, 6/6. Le courant
+interne de l'anneau est stationnaire : puissance rayonnée nulle (R53). L'anneau en orbite, lu
+classiquement, tombe sur le proton en a₀³/(4r_e²c) = 1,6·10⁻¹¹ s : il faut une règle d'orbite.
+**La base l'a** : l'horloge interne est la période de Compton (R68) et bat à ω₀/γ en mouvement
+(manuscrit, éther de Lorentz) ; vue du laboratoire c'est l'onde de phase de de Broglie, λ = h/(γmv),
+et la fermeture de la phase sur l'orbite (2πa₀/λ = 1,000027) donne mvr = nℏ, Bohr, E₁ = −13,606 eV.
+L'émission 2p → 1s : le photon (121,6 nm) voit l'anneau (7,7·10⁻⁴ nm) comme un dipôle ponctuel
+(6·10⁻⁶) ; ce qui rayonne est le dipôle orbital pendant le saut, pas le courant interne ; avec
+l'élément de matrice standard le taux vaut 6,26·10⁸ /s (mesuré 6,27). **Verdict** : DÉRIVÉ que
+l'anneau stable et l'émission ne se contredisent pas (deux courants différents, une seule
+horloge) ; CONDITIONNEL pour l'amplitude du saut, qui reste celle de la mécanique quantique.
+
+**Bilan de la passe** : fermés, 1 (brique sans taille), 3 (compte unique, neutron à −1,8 %),
+5 (deux courants, une horloge) ; devenu une décision, 2 (masses = Koide) ; ouvert, 4 (le Z₂ sur
+trois branches simples).
