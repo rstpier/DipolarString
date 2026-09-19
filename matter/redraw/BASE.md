@@ -885,3 +885,21 @@ excitable, ce sont les formes et les topologies, pas les modes : les hadrons en 
 contre un circuit de quark à 254 MeV, +16 %), les leptons n'ont qu'une forme. **Verdict** : le mode
 à 4 MeV n'est pas interdit par une règle, il est absent ; c'était un artefact de la lecture en onde,
 et R32 le supprime en même temps que les harmoniques de l'électron.
+
+**R48 — « Cherche ce qui fixe la forme excitée Δ à +294 MeV. »**
+→ `delta_shape.py`, 6/6. Le Δ(1232) a le contenu du nucléon (Δ⁺ = uud) et le spin 3/2 ; R6 le lit
+comme l'étoile symétrique (trois axes → 3/2) contre l'étoile asymétrique du nucléon (un axe → 1/2).
+Dans l'image des circuits, les trois circuits de quark sont identiques dans les deux (763 MeV
+immobiles) ; ce qui diffère est la circulation d'anneau qui porte le spin, S = R·E_circ/c (R25) :
+**le nucléon a besoin de ℏ/2, le Δ de 3ℏ/2, donc E_circ(Δ) = 3·E_circ(N) au même rayon et
+Δ − N = 2·E_circ(N)** : les circulations des trois circuits alignées (R41 F) au lieu de deux contre
+une. Avec les deux lectures de l'anneau de R25 : 125 MeV (brins + à R₊ = 0,79 fm) → 250 MeV (−15 %) ;
+168 MeV (e sur un anneau à 0,59 fm) → 336 MeV (+14 %) : **elles encadrent les 294 MeV mesurés.**
+En inversant : E_circ(N) = 147 MeV, rayon d'anneau 0,671 fm (entre les deux rayons de R25) ; alors
+N = 763 + 147 = 910 MeV (−3,0 %) et Δ = 763 + 441 = 1204 MeV (−2,3 %), tous deux à 3 % avec un seul
+rayon. Test de ce rayon : le Δ⁺⁺ (uuu, charge 2e) avec toute sa charge à 0,671 fm a μ = 2(R/ƛ_p)·μ_N
+= 6,4 μ_N, dans la fourchette mesurée 3,7 à 7,5 (enregistré). Une interaction spin-spin
+électromagnétique entre circuits (l'analogue de l'hyperfin du modèle des quarks) vaut ~0,02 MeV :
+exclue comme mécanisme ; l'écart est de la circulation, pas du magnétisme. **Verdict** : le Δ est
+le nucléon avec trois fois sa circulation d'anneau ; DÉRIVÉ à ±15 % avec les rayons de R25 ; le
+rayon exact (0,67 fm) n'est pas fixé par la base.
