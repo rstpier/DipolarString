@@ -813,3 +813,23 @@ la base, les alternatives sont des ajustements : pôles ponctuels de rayon 0,29 
 tangentes de 0,45 fm (d = 0,89 fm), sphère uniforme au r_p mesuré (+12 %). **Verdict** : le mutuel
 est dérivé (0 pour p, −0,34 pour n), le propre l'est à ±10 % avec la nappe de R17 comme épaisseur ;
 l'écart p–n sort à +4 % (1,34 MeV) avec α, m_e, 2π, le compte 9 et la largeur de nappe.
+
+**R44 — « Cherche ce qui fixe la constante du logarithme. »**
+→ `log_constant.py`, 5/5. L'énergie propre d'une charge q étalée sur une longueur ℓ avec une taille
+transverse a vaut (Kq²/ℓ)[ln(2ℓ/a) + c] : il y a la constante c et la coupure a à fixer. **Le −1 est
+dérivé** : pour une charge linéique uniforme de longueur ℓ, potentiel pris à la distance a de la
+ligne, c = −1 exactement (vérifié par intégration directe) ; pour un anneau fermé de même
+longueur, c = −1 − ln(π/2) = −1,45 ; l'arc d'un circuit fermé est entre les deux. **La coupure est
+la section** : le brin de la base est une plaque de largeur w (R17, w = d) ; une bande mince de
+largeur w a la capacité d'un cylindre de rayon w/4 (classique), donc a = w/4 = 0,039 fm à
+w₉ = 0,157 fm ; un carré plein de côté w donnerait 0,59w, un cylindre inscrit w/2 ; **le a = w de
+R43 était un cylindre plus large que la nappe, pas une section de la base.** **La longueur** : la
+charge d'un quark s'étale sur ses brins chargés (R28), deux pour u (2ℓ₁), un pour d (ℓ₁), donc
+S_u ≠ S_d ; R43 prenait un barreau de ℓ₁ par quark. Les huit combinaisons vont de 0,52 à 1,60 MeV ;
+**la paire propre à la base, plaque (a = w/4) et brins chargés, donne m_n − m_p = 1,32 MeV
+(+2,4 %)** ; le 1,34 de R43 venait de deux choix hors base (a = w, un barreau) ; les variantes à
+section carrée donnent 1,03 (−20 %) et 1,49 (+15 %). La fermeture en anneau (c = −1,45) donnerait
+1,41 MeV (+9 %) : le reste est la lecture ouverte ou fermée de l'arc chargé du quark ; l'écran de la
+plaque partenaire n'est pas calculé. **Verdict** : avec la section de R17 et le contenu de R28, la
+constante est fixée et l'écart p–n sort à +2,4 % ; entrées : α, m_e, 2π, le compte 9, la largeur
+de nappe (elle-même de g = 2 et Z₀).
