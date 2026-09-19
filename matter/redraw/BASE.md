@@ -2022,3 +2022,19 @@ pour les séparateurs sur le champ ; R95 tient (transformation de l'orientation)
 « topologie → double revêtement → C² → analyseur → |A|² → Born » est établie jusqu'au double
 revêtement et bloquée à l'analyseur. Le point de blocage est maintenant unique et précis : la
 dynamique de réorientation d'un anneau dans un analyseur.
+
+**Correction de R97 (relecture de l'auteur ; sa mise à jour n'a pas pu être poussée, 403).** Les
+canaux +â et −â ne sont pas orthogonaux, donc « somme des puissances ≠ 1 » ne suffisait pas à
+conclure « pas de 2-port unitaire ». Contrôle ajouté à `mode_separator.py` (5/5) :
+orthonormalisation de Gram–Schmidt des deux canaux, puis part de puissance dans le sous-espace
+et fuite hors du sous-espace. Résultat : pour les trois motifs à demi-tour, la part renormalisée
+dans le sous-espace s'écarte de cos²(θ/2) de 0,25 au maximum (0,44 sur les puissances brutes), et
+**jusqu'à 75 % de la norme sort du sous-espace à deux canaux** (63 % pour le témoin de charge 1) :
+même résultat qualitatif, l'échec n'est pas un artefact de références non orthogonales. **Verdict
+reformulé** : *les séparateurs naturels construits par projection du champ DQD échouent* ; ce n'est
+pas le théorème « aucun analyseur linéaire DQD n'existe », qui serait trop fort. Le demi-angle de
+R95 appartient à la loi de transformation de l'orientation, pas aux recouvrements de champs ; R96
+reste un pont spinoriel conditionnel. Le verrou suivant : **dériver une dynamique de
+réorientation de l'anneau dans l'analyseur**, une interaction qui couple l'orientation interne du
+défaut à l'axe de l'analyseur et engendre réellement la transformation SU(2), et non plus un
+séparateur biréfringent passif.

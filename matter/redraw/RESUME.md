@@ -118,12 +118,14 @@ l'axe, et la loi de groupe des rotations force −1 pour tout axe, avec la conne
 Ω/2 et c₁ = 1 retrouvé sans Wigner (R95). Deux composantes circulaires candidates de charge
 axiale ±½ sont compatibles avec le quantum R87 (un quantum de la rotation de section à ω_circ/2
 vaut exactement E_circ) et avec un spin ½ par la carte de Hopf, mais ce n'est qu'un pont
-mathématique : le fluide n'a pas encore ce C² (R96, corrigé). Un séparateur de modes agissant sur
-le champ, avec ou sans la phase de circulation, ne porte jamais le demi-angle (écart 0,44 à
-cos²(θ/2), pertes 0,88) : le e^{±iθ/2} est une propriété de la transformation de l'orientation,
-pas des recouvrements de champs (R97). Le blocage est unique et précis : la dynamique de
-réorientation d'un anneau dans un analyseur, qui devrait reproduire cos²(θ/2) ; puis l'état
-joint (R94b) ; et le verrou N = 1, non dérivé.
+mathématique : le fluide n'a pas encore ce C² (R96, corrigé). Les séparateurs de modes naturels
+construits par projection du champ, avec ou sans la phase de circulation, et même après
+orthonormalisation des canaux, ne portent pas le demi-angle (écart 0,25 à 0,44 à cos²(θ/2),
+jusqu'à 75 % de la norme hors des deux canaux) : le e^{±iθ/2} est une propriété de la
+transformation de l'orientation, pas des recouvrements de champs (R97 ; pas un théorème
+d'inexistence). Le blocage est unique et précis : une dynamique de réorientation de l'anneau
+dans l'analyseur, couplant l'orientation interne à l'axe de mesure et engendrant SU(2), qui
+devrait reproduire cos²(θ/2) ; puis l'état joint (R94b) ; et le verrou N = 1, non dérivé.
 
 Ce qui reste vraiment :
 

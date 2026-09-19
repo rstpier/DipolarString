@@ -16,6 +16,14 @@ par rotation rigide.  On teste quatre champs :
   (d) temoin de charge 1 (periodique) : cos(phi) r + sin(phi) z.
 Pour chacun : A_1 = <Psi_{+a}|Psi_n>, A_2 = <Psi_{-a}|Psi_n>, puissances,
 somme des puissances (pertes), et comparaison a cos^2(theta/2).
+
+CONTROLE AJOUTE (relecture de l'auteur) : les canaux +a et -a ne sont pas
+orthogonaux, donc "somme != 1" ne suffisait pas a conclure "pas de 2-port
+unitaire".  On refait le calcul apres orthonormalisation de Gram-Schmidt des
+deux canaux : ecart a Born et fraction de la norme qui sort du sous-espace a
+deux canaux.  Meme resultat qualitatif.  Conclusion retenue : les separateurs
+naturels construits par projection du champ echouent ; ce n'est PAS le
+theoreme "aucun analyseur lineaire DQD n'existe".
 """
 import math
 import numpy as np
@@ -83,6 +91,33 @@ def main():
     check("aucun n'est un 2-port sans perte (somme des puissances != 1)", all(v[1] > 0.05 for v in fails.values()),
           ", ".join(f"{k}: {v[1]:.2f}" for k, v in fails.items()))
 
+    # --- controle : orthonormalisation de Gram-Schmidt des deux canaux ---
+    print("Controle (relecture) : canaux +a, -a orthonormalises par Gram-Schmidt")
+    gs = {}
+    for kind in ("a", "b", "c", "d"):
+        F0 = field(kind, phi)
+        u1 = F0.reshape(-1)
+        u2 = (F0 @ rot_x(math.pi).T).reshape(-1)
+        e1 = u1 / np.linalg.norm(u1)
+        r2 = u2 - np.vdot(e1, u2) * e1
+        e2 = r2 / np.linalg.norm(r2)
+        devs, outs = [], []
+        for t, b in zip(thetas, born):
+            psi = (F0 @ rot_x(t).T).reshape(-1)
+            psi = psi / np.linalg.norm(psi)
+            p1, p2 = abs(np.vdot(e1, psi)) ** 2, abs(np.vdot(e2, psi)) ** 2
+            inside = p1 + p2
+            share = p1 / inside if inside > 1e-12 else float("nan")
+            devs.append(abs(share - b))
+            outs.append(1 - inside)
+        gs[kind] = (max(devs), max(outs))
+        print(f"    ({kind}) ecart max a cos^2(theta/2) dans le sous-espace : {max(devs):.3f} ; "
+              f"fraction max de la norme hors des deux canaux : {100*max(outs):.0f} %")
+    print("  -> meme resultat qualitatif : l'echec n'est pas un artefact de canaux non orthogonaux.\n")
+    check("apres Gram-Schmidt : ecart a Born > 0,2 et fuite hors sous-espace > 50 % pour les motifs a demi-tour",
+          all(gs[k][0] > 0.2 and gs[k][1] > 0.5 for k in ("a", "b", "c")),
+          ", ".join(f"{k}: {v[0]:.3f} / {100*v[1]:.0f} %" for k, v in gs.items()))
+
     print("Ce que l'echec dit : un separateur qui agit sur le champ (recouvrements de motifs, tiree en")
     print("arriere par rotation rigide) ne porte jamais le demi-angle ; le e^(+- i theta/2) de R95 est")
     print("une propriete de la loi de transformation de l'ORIENTATION (loi de groupe + demi-tour), pas des")
@@ -90,7 +125,7 @@ def main():
     print("l'auteur : le C^2 n'est pas (encore) une paire d'amplitudes de fluide. Un analyseur qui donne")
     print("Born doit agir sur l'orientation elle-meme (reorientation vers +-a) avec une dynamique qui")
     print("reproduit cos^2(theta/2) : cette dynamique n'est pas dans la base.\n")
-    check("statut : EXCLU pour les separateurs sur le champ ; la mixing SU(2) n'est pas dans les motifs", True, "R95 tient, R96 reformulation")
+    check("statut : les separateurs naturels par projection du champ echouent (pas un theoreme d'inexistence)", True, "R95 tient, R96 reformulation")
 
     print("Bilan :")
     for status, name, detail in RESULTS:
