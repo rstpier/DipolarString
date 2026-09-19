@@ -1,6 +1,13 @@
 # Matter sector — working directory
 
-**Status: empty research front. Nothing here is part of any released version.**
+**Status: research front with a first draft. Nothing here is part of any released version.**
+
+Since 14–19 September 2026 the sector has been redrawn from the author's constitutive
+statements in [`redraw/`](redraw/) (`BASE.md`, R1–R103, 98 scripts with PASS/FAIL checks;
+`RESUME.md` for the summary) and consolidated into the article draft
+[`paper/DS_matter_sector.tex`](paper/DS_matter_sector.tex). The draft's Section 7 files every
+claim at one of the six maturity levels; its firmest result is the exclusion of an extended
+electron (R100–R103).
 
 The Dipolar Strings model is, in its own words, *a theory of the medium, not of
 matter*. The vacuum, light and collective gravitation are in scope; the weak and

@@ -225,3 +225,7 @@ Ce qui reste vraiment :
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
+- `matter/paper/DS_matter_sector.tex` : la consolidation de R1 à R103 en article (anglais,
+  12 pages, `latexmk -pdf`), avec le registre à six niveaux de chaque affirmation, la section
+  « électron » comme exclusion, et la divulgation méthodologique (calcul par un second système
+  d'IA sur les énoncés de l'auteur ; pas une vérification indépendante).

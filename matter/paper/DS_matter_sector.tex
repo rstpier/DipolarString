@@ -59,148 +59,681 @@
 }
 
 % --- 7. Document metadata ---
-\title{\textbf{The Matter Sector of the Dipolar String Model:}\\ \large \textsc{[subtitle to fill]}}
+\title{\textbf{The Matter Sector of the Dipolar String Model:}\\ \large \textsc{a redraw from the author's constitutive statements, with its exclusions}}
 \author{R. St-Pierre\thanks{Independent researcher, Qu\'ebec, Canada. This research received no external funding. The author declares no conflict of interest.}}
-\date{[month] 2026 --- admin@dipolarstrings.org --- draft, not deposited}
+\date{September 2026 --- admin@dipolarstrings.org --- draft, not deposited}
 
 % --- 8. Custom macros ---
 \newcommand{\dqd}{\ensuremath{\ooalign{$\bigcirc$\cr\hfil\scalebox{0.7}{$=$}\hfil}}}
 \newcommand{\Ncd}{\ensuremath{N_{\mathrm{DS}}}}
+\newcommand{\lb}{\ensuremath{\bar\lambda_e}}
+\newcommand{\lone}{\ensuremath{\ell_1}}
+\newcommand{\R}[1]{R#1}
 
 % Every claim carries its maturity level.  Six levels, as in the main manuscript:
 % Derived, Conditionally derived, Calibrated, Postulated, Reparametrized, Closed.
 % A ratio obtained by fitting a measured mass is Reparametrized, not Derived.
 \newcommand{\status}[1]{\medskip\noindent\textbf{Status: #1.}\ }
+\setlength{\emergencystretch}{2.5em}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-\noindent\textbf{Background.} % What the main framework establishes, and that it is a
-% theory of the medium.  State here that the matter sector was previously out of scope.
+\noindent\textbf{Background.} The Dipolar String (DS) framework is a theory of the medium. An
+impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
+an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
+redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
+statement imposes and what it breaks; the record is 103 steps (R1--R103) backed by 98 scripts.
 
-\noindent\textbf{Methods.} % What was actually computed, and by whom/with what.
+\noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
+a verdict (derived, conditional, coincidence, identity, excluded), recorded in
+\texttt{matter/redraw/BASE.md}. Inputs: $\alpha$, $m_e$, the exponent $2\pi$ (pinned by the muon
+and tau masses to $0.15\,\%$), the nucleon strand count 9, and the section of the ribbon. The
+computation was performed by a second AI system working from the author's statements; it is not
+independent verification (see the Disclosure).
 
-\noindent\textbf{Results.} % Ratios, never absolute masses.  Each with its level.
+\noindent\textbf{Results.} Three strands carrying $-1/3$, $0$, $+1/3$ give exactly the observed
+charge spectrum and a colour label. A circulation quantum $\pi\hbar c$ per closed path, with the
+path scale $\lone(n) = (2\pi\lb/3)(3/n)^{2\pi}$, gives the quark as an electron-type circuit at
+$\lone(9) = 0.81$~fm (254~MeV), the nucleon as three static circuits (763~MeV) plus a spin-carrying
+ring, the string tension $\sqrt\sigma = 430$~MeV (lattice 420--440), the neutron--proton splitting
+1.27--1.34~MeV (measured 1.293) and the $\Delta$--$N$ gap within $15\,\%$. The lepton masses are the
+Koide form of a $C_3$ mass-root operator whose $45^\circ$ is the half-and-half partition of
+$g = 2$; the phase $2/9$ is posed. The lifetime law $\tau = T\,(M/m)^4/C(n)$ reproduces the muon and
+the tau, with $M = (96\pi^2)^{1/4}/\sqrt{G_F}$ an identity, not a derivation. The electron itself
+does not survive: any charge carried by a 386~fm ring has the form factor $j_0(qR)$, excluded by
+Compton, $e$--$p$ and LEP data; a Bohr magneton carried by a charge loop needs $R \ge \lb$ at
+$v \le c$; the ring's numbers are Compton identities fitted to Dirac. Decision: the
+electromagnetic electron is Dirac's.
 
-\noindent\textbf{Conclusions.} % What is now attainable that was not, and what stays closed.
+\noindent\textbf{Conclusions.} What the framework can now claim is a set of hadronic and
+generational ratios given one anchor, each at its stated level. What it cannot claim is an
+extended electron, a mechanism for the phase $2/9$, the weak scale, fermionic statistics, or a
+local account of Bell correlations.
 \end{abstract}
 
 %==============================================================================
 \section{Scope, and what this paper does not claim}
 %==============================================================================
-% THIS SECTION COMES FIRST AND IS NOT OPTIONAL.
-% The main manuscript withdrew its muon, tau, W, Z and H entries as
-% "reverse-engineered mass fits without predictive content".  A matter-sector
-% paper that does not open by delimiting itself repeats that failure.
-%
-% State plainly, before any result:
-%   - the framework is a theory of the medium; this paper attempts one sector of matter;
-%   - a vacuum that is purely electromagnetic and impedance-matched is conformally
-%     invariant and has no intrinsic scale, so m_e is structurally an INPUT;
-%   - what is attainable is a spectrum of RATIOS given the one anchor R_3 = hbar/m_e c_0;
-%   - any table entry whose index was chosen to reproduce the mass it explains is a
-%     parametrization, and is labelled as such.
+
+The main manuscript \cite{dsmodel} is a theory of the medium. It withdrew its muon, tau, $W$,
+$Z$ and $H$ table entries as reverse-engineered mass fits without predictive content, and it
+establishes that a purely electromagnetic, impedance-matched vacuum is conformally invariant:
+there is no intrinsic scale, $m_e$ is structurally an input, and what is attainable is a spectrum
+of \emph{ratios} given the single anchor $\lb = \hbar/m_e c_0 = 386.16$~fm. This paper accepts
+that boundary and attempts one sector of matter inside it.
+
+Four things are stated before any result.
+
+\begin{enumerate}[nosep]
+\item Every number below is a ratio to $m_e$ or a length in units of $\lb$. No absolute mass is
+claimed. Where an index was chosen to reproduce the mass it explains, the entry is labelled
+\emph{Reparametrized} and is not counted as a result.
+\item The inputs are five: $\alpha$, $m_e$, the exponent $2\pi$ of the path-scale ladder, the
+strand count 9 of the nucleon, and the square section of the ribbon. The exponent and the count
+are structural inputs that are not derived; this is stated wherever a result depends on them.
+\item The electron is \emph{not} a result of this paper. Steps R99--R103 show that the electron
+representation the redraw had built, a closed ring of radius $\lb$ carrying the charge $e$, is
+excluded by the measured electromagnetic form factors, and that its numbers ($S = \hbar/2$,
+$\mu_B$, $g = 2$) are identities of the choice $R = \lb$, $E_{\rm circ} = m/2$, $q = e$ rather than
+outputs. The decision taken (R103) is that the electromagnetic electron is Dirac's point particle.
+The sector's claims are therefore hadronic and generational.
+\item The computation was done by a second AI system on the author's statements, with the
+repository's constraints in view. This is a shared prior, not independent replication
+(Section~\ref{sec:disclosure}).
+\end{enumerate}
 
 %==============================================================================
 \section{Inherited framework}\label{sec:inherited}
 %==============================================================================
-% Anchor R_3 = hbar/(m_e c_0), hence ell_1 = 2 pi R_3 / 3.
-% Mass law m propto Ncd^2 Z_{Ncd}.  Resonance radius R_{Ncd} = (p ell_1/2pi)(Z_0/Z_{Ncd}).
-% Z_e ~ 0.73 Z_0 ~ 275 Ohm, filed Calibrated: it depends on the undetermined
-% aspect ratio R_3/r ~ 37.1.  The model counts two inputs, not one.
-% States in scope in the current catalogue: photon (Ncd=1), DQD (Ncd=2), electron (Ncd=3).
+
+From the manuscript: the anchor $R_3 = \hbar/m_e c_0 = \lb$, hence $\lone = 2\pi R_3/3 = 808.8$~fm
+for the electron's three strings; the vacuum is a weave of neutral dipolar strings (DQD, \dqd),
+bifilar lines matched to the impedance of free space $Z_0$, with the matched pair separation
+$D/r = 2\cosh\pi$; the states in scope were the photon ($\Ncd = 1$), the DQD ($\Ncd = 2$) and the
+electron ($\Ncd = 3$). The electron impedance $Z_e \approx 0.73\,Z_0$ was filed \emph{Calibrated}
+because it depends on the undetermined aspect ratio $R_3/r \approx 37.1$.
+
+Three of these are modified by the redraw, each by computation and each recorded.
+
+\begin{itemize}[nosep]
+\item \textbf{The mass law.} ``Mass is inductance'' is not used. The repository's own audit
+(\texttt{CONSTRAINTS.md}~\S1b--1c) had shown that the inductive self-energy of the electron loop is
+$0.4\,\%$ of $m_e c^2$ and that no coil of 27 strings reaches the proton. The redraw's mass is the
+energy of a circulation quantum per closed path, $E = \pi\hbar c/\ell_{\rm path}$ (R32, R40, R47),
+with the path scale set by a ladder in the strand count (Section~\ref{sec:ladder}).
+\item \textbf{The tube radius.} The manuscript's fixed $r = R_3/37.1$ capped a mode energy at
+$m/m_e \le 37$. The redraw finds the brick has no size: by the two-dimensional method of moments,
+the capacitance per length of two square conductors depends on the aspect ratio only (identical at
+$\times 100$ to $10^{-9}$), so $Z$ and the energy per length of a bifilar line are scale
+invariant and the section follows the circuit, $w/\lone = 6/\pi^3$ at every rung (R71,
+\texttt{brick\_scale.py}). The cap does not apply; matching fixes the \emph{shape} of the section
+(square, R17), not its size.
+\item \textbf{$Z_e = 0.73\,Z_0$.} Read as the impedance of the electron's circuit it would leak
+$2.4\,\%$ per turn and the electron would live $3\times10^{-19}$~s (R65). The electron's circuit is
+matched to $Z_0$ to better than $10^{-28}$; the calibrated number is not the circuit impedance.
+\end{itemize}
+
+The repository's other constraints are respected as written: charge is not carried by the
+connectivity of the network but by an unpaired branch of the $\pm e/3$ fluid (\S2, and R28
+below); no Dzyaloshinskii--Moriya stabilization is invoked (\S3); neutrino masses are not
+attempted (\S7).
 
 %==============================================================================
 \section{The obstruction, and what remains attainable}\label{sec:obstruction}
 %==============================================================================
-% Four independent analyses converge on the absence of an intrinsic scale.
-% Give them, then state the corollary that governs everything below:
-% ratios yes, absolute masses no; and coiling a line does not raise the coupling,
-% so no confinement-type strong-coupling regime is reachable by winding.
+
+Four independent analyses in the manuscript converge on the absence of an intrinsic scale: the
+equation of state $P = u/3$, the single-velocity character of the linear lattice, the pure
+ultraviolet character of the zero-point sum over the braided defect, and the fact that a
+transmission line's soliton-to-quantum mass ratio is fixed by its impedance alone, so that a
+matched line carries the coupling $2\pi\alpha$ and every soliton weighs $O(1/\alpha)$ quanta.
+Coiling a line does not raise the coupling. The corollary governs everything below: ratios yes,
+absolute masses no, and no confinement-type regime reachable by winding.
+
+The redraw confirms the corollary from inside. Winding a charged strand into a solenoid does
+amplify the energy per length quadratically in the turns per core radius (R33), but the force
+along the axis never exceeds the energy per unit \emph{path}, $dE/dL = u_{\rm path}/\gamma \le
+u_{\rm path}$ (R39): the winding route to the string tension closes, and what remains is the
+energy per path of the matched line itself, which is where the tension of
+Section~\ref{sec:tension} comes from. Likewise a fixed linear charge density is excluded by the
+electron (its strands carry $4\times10^{-4}\,e$/fm against the $7\,e$/fm a lattice-strength tension
+would need, R31), and a flux tube is not a mechanism of the base as written, since a conducting
+fluid screens a pole instead of channelling it (R30).
+
+What is attainable, and what this paper reports, is the following: a charge spectrum; a ladder of
+path scales in the strand count; hadronic ratios (quark, nucleon, $\Delta$, $n$--$p$, tension,
+nuclear force) given the count 9; the $C_3$ structure of the lepton masses; a lifetime law; and a
+set of exclusions, the largest of which is the extended electron.
 
 %==============================================================================
 \section{Results}\label{sec:results}
 %==============================================================================
-% One subsection per target.  Each ends with \status{...}.
-% Delete the subsections that the imported work does not address --- an empty
-% subsection reads as a claim.
 
-\subsection{Proton characteristic impedance}\label{sec:proton}
-% Required: Z_p/Z_e ~ 22.7 from m_p/m_e = 1836 and N_p/N_e = 9.
-% The toroidal-helix SCALING gives N^{3/2} = 27 ("within 19 %"); the CALCULATION
-% with the electron's own electrodynamics and the model's closures gives 14
-% (series-C reading) or 3 (self-C reading), and within the validity of each
-% reading no pitch reaches the target (notes/2026-09-15-proton-impedance-closure.md,
-% 16/16).  Closing it needs a principle fixing the coil geometry.  Until then:
-% Reparametrized.
-\status{[level]}
+Each subsection names the steps of \texttt{matter/redraw/BASE.md} and the scripts of
+\texttt{matter/redraw/} that produce its numbers; every script prints a \texttt{RESULT: n/m PASS}
+line and exits non-zero on any failure. Verdicts in the record are \emph{derived},
+\emph{conditional}, \emph{coincidence}, \emph{identity} and \emph{excluded}; they are mapped to
+the six levels of the manuscript at the end of each subsection.
 
-\subsection{Equation of state of the $e/3$ energy fluid}\label{sec:efluid}
-% Charge is not carried by the connectivity of the network: a stationary state
-% bearing net flux through a closed surface needs a genuine divergence source,
-% and the braided defect provides none with either handedness, at equal cost.
-% Any charge construction lives here.
-\status{[level]}
+%------------------------------------------------------------------------------
+\subsection{Charge: three strands and the unpaired branch}\label{sec:charge}
+%------------------------------------------------------------------------------
 
+The author's statements R1--R8 place the charge in the polarized fluid of the string, with a pole
+at each end. The repository's note of 15 September had already established the divergence source:
+a complete DQD is neutral, an unpaired branch is a free charge $e/3$. Chains of charged strings,
+with $q = (n_+ - n_-)e/3$, allow charges $\pm 4/3$ and $\pm 5/3$ that are never observed (R18), and
+a star of three charged strings cannot carry $+2/3$ (R22). The repair is the \emph{neutral
+strand} (R28, \texttt{three\_strand.py}): every fermion is three strands, each carrying $-1/3$,
+$0$ or $+1/3$:
+\[
+e^- = (-,-,-),\quad \nu = (0,0,0),\quad u = (+,+,0),\quad d = (-,0,0),
+\]
+antiparticles by sign reversal. This gives the observed spectrum $\{0, \pm1/3, \pm2/3, \pm1\}$
+exactly and nothing else; colour is the position of the odd strand (three arrangements for $u$ and
+$d$, one for $e$ and $\nu$; a baryon is colourless when its three odd strands occupy three
+different positions); $p = uud$ and $n = udd$ both have nine strands, which is what
+$m_p \approx m_n$ required; the pions have six. A neutral strand is a complete DQD, the unit of the
+medium. The rule ``charged strands carry the mode, the total count sets the scale'' keeps
+$m_\nu = 0$ (KATRIN bound $0.45$~eV \cite{katrin}) with $e$, $\mu$, $\tau$ unchanged; it is posed.
+
+The same assignment is that of the three-strand braid model of Bilson-Thompson
+\cite{bilsonthompson}; the redraw reaches it from the charge spectrum alone and does not adopt the
+braid dynamics.
+
+\status{Derived, given the postulated strand charges $\{-1/3, 0, +1/3\}$; the neutrino rule is
+Postulated}
+
+%------------------------------------------------------------------------------
+\subsection{The circulation quantum and the ladder of path scales}\label{sec:ladder}
+%------------------------------------------------------------------------------
+
+\paragraph{The fluid is a vortex, not a wave.} A standing wave on a guide has harmonics and a
+transverse cut-off; for the electron's ribbon ($w = 4\lb/\pi^2 = 156.5$~fm) the transverse mode
+sits at $\hbar c\pi/w = 3.96$~MeV, and the arc harmonics at 0.77 and 1.02~MeV, none observed (R17,
+R47). Read as a stationary circulation carrying one conserved quantum per closed circuit, the
+fluid has neither: the energy of the circuit is $E = \pi\hbar c/\ell_{\rm path}$, and the identity
+$4\pi K q^2 = \pi\hbar c$ with $K = \alpha\hbar c$ and $q = e/(2\sqrt\alpha) = 5.85\,e$ makes it
+equal to the half-wave energy for every path, so every number obtained in the wave reading is
+kept (R32, R40, R47; \texttt{vortex.py}, \texttt{circuit\_rule.py}, \texttt{transverse\_mode.py}).
+The ``vortex charge'' $q$ is not a charge that circulates (R53); it is the coefficient of this
+identity. The quantum $\pi\hbar c$ per path is an action of half a turn, $\oint p\,dl = \pi\hbar$
+(R86), and can be obtained as half the whole quantum $h$ of a periodic neutral mother loop broken
+symmetrically into two locked daughters (R87--R88), under three named inputs (one quantum on the
+mother, momentum conserved at the break, C-symmetric sharing).
+
+\paragraph{The ladder.} With the mode on the three charged strands of a lepton, the path is
+$3\lone(n)$ and the masses require $\lone(n) = \lone(3)(3/n)^{2\pi}$ for $n = 3, 7, 11$
+(\texttt{lepton\_ladder.py}, \texttt{exponent\_2pi.py}). The exponent is pinned by the data:
+$(e,\mu)$ alone give $6.2926$, $(e,\tau)$ alone $6.2758$, and $2\pi = 6.2832$ lies at $0.016\,\%$
+of their midpoint; among about a thousand simple two-factor constants it is the only one within
+$0.15\,\%$ (R55). It is \emph{not} derived, and it is not the exact law: the ladder gives the muon
+at $-0.8\,\%$ and the tau at $+1.0\,\%$, while the measured masses obey Koide's relation to
+$10^{-5}$; the exponent that would make the ladder exactly Koide, $6.25$, is outside the data
+window. Any added parameter makes the ladder worse (R73). The ladder is therefore an
+approximation at the percent level, the exact structure being that of Section~\ref{sec:koide}.
+The indices $3, 7, 11$ follow from the neutral strand: a generation adds four neutral strands, two
+DQD (R28); a single DQD, of spin 1, cannot be added to a spin-$\tfrac12$ ring and keep its spin,
+two can (R70), so $n = 5$ (12.7~MeV, absent) is forbidden. The next rung $n = 15$ would be a
+12.6~GeV charged lepton living $10^{-17}$~s, below the LEP bound of 100.8~GeV \cite{pdg}: the
+ladder \emph{as a mass law} is excluded by the absence of a fourth generation (R76), which is what
+forces the reading above.
+
+\status{Postulated (one quantum per circuit; R87 conditionally derives it); Reparametrized for the
+exponent $2\pi$; Derived for the step of four neutral strands and the exclusion of $n = 5$}
+
+%------------------------------------------------------------------------------
+\subsection{Leptons: the Koide form as a $C_3$ mass-root operator}\label{sec:koide}
+%------------------------------------------------------------------------------
+
+Koide's relation \cite{koide}, $Q = \sum m/(\sum\sqrt m)^2 = 2/3$, holds for $(e, \mu, \tau)$ to
+$10^{-5}$ and means that the vector $(\sqrt{m_e}, \sqrt{m_\mu}, \sqrt{m_\tau})$ makes exactly
+$45^\circ$ with the diagonal $(1,1,1)$ \cite{foot}; with the Brannen phase $2/9$ \cite{brannen} it
+reproduces $m_\mu$ from $m_e$ to $+0.001\,\%$ and $m_\tau$ to $+0.007\,\%$ (R60,
+\texttt{generation\_holonomy.py}).
+
+The redraw's structure (R76--R81; \texttt{c3\_closure.py}, \texttt{koide\_hamiltonian.py},
+\texttt{koide\_from\_g2.py}):
+
+\begin{itemize}[nosep]
+\item Adding two DQD is the cyclic shift $U$ of the three strand positions ($4 \equiv 1 \bmod 3$);
+$U^3 = I$, $U \ne I$, $U^2 \ne I$, so a $Z_3$-symmetric hermitian \emph{mass-root} operator
+$C = aI + bU + \bar b U^2$ (eigenvalues $\lambda_k = \sqrt{m_k}$) has exactly three eigenvalues
+$a + 2|b|\cos(\varphi + 2\pi k/3)$, the Koide--Brannen form, and the fourth application is the
+first. Koide's $45^\circ$ is $a^2 = 2|b|^2$.
+\item For any hermitian $3\times3$ operator, $Q = 1/3 + (\|C_{\rm dev}\|/\|C_{\rm iso}\|)^2/3$;
+Koide is the equality of the isotropic and deviatoric norms (measured ratio $0.999991$). The
+equality is not selected by any extremum (the isotropic fraction decreases monotonically from
+equal masses to rank one); it must be a conservation, one quantum per irreducible channel, not per
+degree of freedom (which would give $Q = 1$ and two massless leptons).
+\item For a circulant, $\|C_{\rm iso}\|^2$ is the on-site weight and $\|C_{\rm dev}\|^2$ the
+hopping weight, and ${\rm tr}\,C^2$ is the family's total mass. If the mass-root operator is the
+amplitude matrix of the three-position network (junction = node, circulation = link), then the
+half-static, half-circulating partition that gives $g = 2$ for each lepton (R53--R54), summed
+over the family, gives $a^2 = E_{\rm stat}/3 = 313.84$~MeV and $|b|^2 = E_{\rm circ}/6$, i.e.
+$a^2 = 2|b|^2$ without a $\sqrt2$ put by hand ($a^2$ from Koide $+2/9+m_e$: 313.86~MeV). The
+pairing holds at the family level only; it does not touch $\varphi$.
+\item The phase $\varphi = 2/9$ is posed. The base can write it exactly as the energy of one
+junction ($m_e c^2/6$) during one radian of the fluid's orbit at the radius of the three-quarter
+turn, or as the product of charges $|q_u q_d|$, but has no rule making either the phase of the
+doublet (R58--R63). A Berry-phase route gives $a\cdot 2\pi/3 = 0.39$~rad, excluded.
+\item The topological lock that binds a pair of DQD is real ($Lk = Tw + Wr$ conserved with the
+frame locked to the medium, writhe $1/3$ at $r_0 = 0.1785$, R61, R77), but it binds a third pair
+too (writhe $1$ at $r_0 = 0.376$): the absence of a fourth generation comes from the spectrum of
+$C$, not from the lock. $N_\nu = 2.9963 \pm 0.0074$ \cite{pdg} is the three-sector count.
+\end{itemize}
+
+\status{Conditionally derived for the form and the $45^\circ$ (on the identification of the
+mass-root operator with the network amplitude matrix); Postulated for $\varphi = 2/9$;
+Derived that the ladder cannot be corrected into Koide}
+
+%------------------------------------------------------------------------------
+\subsection{Quarks and nucleons}\label{sec:nucleon}
+%------------------------------------------------------------------------------
+
+Under the rule of one quantum per closed circuit, a circuit of $k$ strands in series at the
+nucleon rung has the energy $\pi\hbar c/(k\,\lone(9))$ with $\lone(9) = 0.8126$~fm and
+$\pi\hbar c/\lone(9) = 763$~MeV. The static part of the proton required by its magnetic moment
+(770--813~MeV, R25) must be the sum over its circuits; of the 30 partitions of nine strands, only
+$\{3,3,3\}$ has $\sum 1/k_i = 1$ (R41, \texttt{circuit\_partition.py}): \textbf{three circuits of
+three strands, one per quark, each the electron's object at the scale $\lone(9)$}, 254~MeV each,
+the energy ratio to the electron being $3^{2\pi} = 996$ exactly. The remainder is a single ring
+that carries the spin and the moment (R72, \texttt{nucleon\_single\_count.py}); with
+$S = R\,E_{\rm circ}/c = \hbar/2$ its radius is $0.56$--$0.59$~fm from $\mu_p$, and the
+$\Delta$--$N$ gap, read as the same ring with three times the circulation ($3\hbar/2$), is
+$2E_{\rm circ}(N) = 250$--$336$~MeV against 294 measured (R48, \texttt{delta\_shape.py}).
+Inverting, $E_{\rm circ}(N) = 147$~MeV at $R = 0.671$~fm gives $N = 910$~MeV ($-3.0\,\%$) and
+$\Delta = 1204$~MeV ($-2.3\,\%$) with one radius; that radius equals $\sqrt3$ times the circuit
+radius $3\lone/2\pi$ to $0.1\,\%$, and the envelope of three tangent circuits is $0.836$~fm, the
+proton charge radius to $0.6\,\%$, both coincidences without a selecting mechanism (R49).
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lccl}
+\toprule
+quantity & this work & measured / lattice & inputs and level \\
+\midrule
+quark circuit & 254 MeV & constituent $\sim 313$ & $2\pi$, 9; Conditionally derived \\
+nucleon, static part & 763 MeV & --- & partition $\{3,3,3\}$; Derived given the rule \\
+nucleon, total & 910--938 MeV & 938.3 & ring radius posed; Conditionally derived \\
+$\Delta - N$ & 250--336 MeV & 294 & R25 radii; Conditionally derived \\
+$m_n - m_p$, strong part & 2.47 MeV & $2.52 \pm 0.29$ \cite{bmw} & $(2\alpha/3)\,3^{2\pi} m_e c^2$; Derived \\
+$m_n - m_p$, total & 1.27--1.34 MeV & 1.293 & section, pole shape; Conditionally derived \\
+$\mu_p/\mu_n$ & $-3/2$ & $-1.460$ & sharing $2/3, 2/3, -1/3$; Postulated \\
+$\sqrt{\langle r^2\rangle_p}$ & 0.81--0.84 fm & 0.841 & coincidence \\
+\bottomrule
+\end{tabular}
+\caption{Hadronic ratios. All numbers hang on $\lb$, $\alpha$, the exponent $2\pi$ and the count 9.}
+\end{table}
+
+The neutron--proton splitting (R42--R45; \texttt{pn\_splitting.py}, \texttt{coulomb\_geometry.py},
+\texttt{log\_constant.py}, \texttt{partner\_screening.py}): $p = uud$ and $n = udd$ are the same
+three circuits and the same junction graph, so the 763~MeV and the joints cancel; the neutron has
+one more neutral strand, a complete DQD whose bifilar energy at the nucleon rung is
+$(e/3)^2/(\epsilon_0\lone(9)) = 2.47$~MeV, the strong part of the splitting (lattice
+$2.52 \pm 0.29$~MeV \cite{bmw}). The proton's Coulomb energy, with the charge on the charged strands
+(two for $u$, one for $d$), the star geometry (mutual term zero for $p$, $-0.34$~MeV for $n$) and
+the ribbon section as the transverse cut-off (a thin strip of width $w_9 = 0.157$~fm has the
+capacitance of a cylinder of radius $w/4$), gives $m_n - m_p = 1.32$~MeV ($+2.4\,\%$), and
+$1.27$~MeV ($-1.8\,\%$) with the lowest-energy pole shape in the square section (R72); screening by
+the neutral neighbours changes it by less than $1.5\,\%$. The section enters only through a
+logarithm that nearly cancels between $u$ and $d$: the splitting fixes $w$ to a factor of two, no
+better (R46).
+
+The same rule fails for the pions: two circuits of three strands give 40~MeV at $\lone(6)$ or
+508~MeV at $\lone(9)$, never 140. The pion is the closed ring at $r_e/2$, whose mode energy is
+$2m_e c^2/\alpha = 140.05$~MeV ($\pi^\pm$: $+0.34\,\%$); this is the known coincidence
+$m_\pi \approx 2m_e/\alpha$, an identification of the scale and not a derivation (R16).
+
+\status{as in the table; the nucleon ring radius is the number the base does not fix}
+
+%------------------------------------------------------------------------------
+\subsection{The string tension and the nuclear force}\label{sec:tension}
+%------------------------------------------------------------------------------
+
+The energy per unit path of a matched line carrying the circulation quantum on one strand is
+\[
+u_{\rm path} = \frac{4\pi K q^2}{\lone(9)^2} = \frac{\pi\hbar c}{\lone(9)^2} = 939\ {\rm MeV/fm},
+\qquad
+\sqrt\sigma = \frac{3}{2\sqrt\pi}\,3^{2\pi}\,m_e c^2 = 430\ {\rm MeV},
+\]
+$\alpha$ and $Z_0$ cancelling between the pole charge and the matching (R39--R40,
+\texttt{pitch\_search.py}, \texttt{circuit\_rule.py}). Lattice determinations put $\sqrt\sigma$ at
+420--440~MeV \cite{necco}. The tension is the energy per path of the same object that weighs the
+quark; the rule that assigns the quantum to one strand (a star arm is one circuit) is the one that
+gives the electron its circulating half by the same formula, $\pi\hbar c/(3\lone(3)) = m_e c^2/2$.
+
+The nuclear force is the pole-to-pole junction: a balanced junction of $k$ poles binds like
+$\lfloor k/2\rfloor$ pairs (frustration leaves the odd pole inert), and a tri-junction of unit
+poles at the nucleon size, $0.72$~fm, binds 2~MeV, the scale of the deuteron (2.22~MeV) and not of
+confinement (R22, R24; \texttt{quark\_y.py}, \texttt{junction\_valence.py}). The manuscript's
+statement that no confinement regime is reachable by winding is confirmed; the tension is not a
+winding effect (R33--R39).
+
+\status{Conditionally derived for $\sqrt\sigma$ (on the assignment of one quantum per star arm);
+Derived for the $\lfloor k/2\rfloor$ law; Calibrated for the 2~MeV scale}
+
+%------------------------------------------------------------------------------
+\subsection{Lifetimes: the leak law and the weak wall}\label{sec:lifetime}
+%------------------------------------------------------------------------------
+
+Five readings of the author's ``breathing of the impedance'' were computed (R64--R69;
+\texttt{breathing\_lifetime.py}, \texttt{resonance\_mismatch.py}, \texttt{current\_breathing.py},
+\texttt{slowed\_reality.py}, \texttt{z\_field.py}, \texttt{stability\_law.py}). A self-similar
+breathing gives $\tau \propto 1/m$ and puts the tau five orders too long: excluded. A resonance at
+$Z \ne Z_0$ dies in fewer than a hundred turns: excluded (and this closes $Z_e = 0.73\,Z_0$ as a
+circuit impedance). A relativistic slowing, global or internal, is either invisible or a velocity
+tuned to $10^{-34}$: excluded. What the muon and tau impose is a leak per turn $\propto m^4$ with
+the turn $T = 2\pi\hbar/mc^2$ (the Compton period, exact on the ladder), i.e. $\Gamma \propto m^5$;
+an impedance even in the current, $Z(I) = Z_0[1 + (I/I_c)^2]$, the first correction a medium
+without a preferred sense of circulation allows, gives that parity, but $I_c = 2.6\times10^8$~A is
+not in the base.
+
+The law assembled without adjustment,
+\[
+\tau(n) = T(n)\,\Big(\frac{M}{m(n)}\Big)^4\Big/ C(n),\qquad M = \frac{(96\pi^2)^{1/4}}{\sqrt{G_F}} = 1.625\ {\rm TeV},
+\]
+with $C(n)$ the number of lower rungs of the same charge class (colour counting three), gives the
+electron stable ($C = 0$), the muon at $-0.4\,\%$, the tau at $+13\,\%$ by the bare count and
+$+0.5\,\%$ with the standard QCD factor 1.2 on the quark channel, and the branching ratios
+$e: 20\,\%$ (17.8), $\mu: 19.6\,\%$ (17.4), hadrons $60\,\%$ (64.8). The neutron, with the released
+energy in place of the mass, comes out a factor 9 too long ($g_A$ and phase space, outside the
+base). \textbf{$M$ is an identity}: with $\Gamma_\mu = G_F^2 m^5/192\pi^3$ and $T = 2\pi\hbar/m$,
+$\Gamma T = (m/M)^4$ defines $M$; the law has the dimensional structure of the weak interaction and
+does not derive $G_F$. The ladder has no rung at $M_W$ or $M_Z$ (nearest 76.8 and 104~GeV), and the
+base has no neutral spin-1 excitation at $10^2$~GeV.
+
+\status{Conditionally derived for the structure (Compton clock, $m^4$ leak by parity, channel
+count); Reparametrized for $M$, which is $G_F$ under another name; Closed for a weak sector
+inside the base}
+
+%------------------------------------------------------------------------------
+\subsection{Spin, the spinor bundle, and what statistics would need}\label{sec:spin}
+%------------------------------------------------------------------------------
+
+The manuscript's declared half-success was a magneton without spin $\tfrac12$, $g = 2$ or
+statistics. The redraw built the following chain on the orientation of a closed ring (R74,
+R78, R82--R85, R95--R98; \texttt{square\_odd\_mode.py}, \texttt{spin\_half\_rotor.py},
+\texttt{core\_displacement.py}, \texttt{chern\_number.py}, \texttt{su2\_lift.py},
+\texttt{mode\_separator.py}, \texttt{reorientation.py}), and it is reported with its locks:
+
+\begin{itemize}[nosep]
+\item A ring of three single strands has only $Z_3$, which has no element of order two and cannot
+carry antiperiodicity; the square section has $Z_4$, and its odd mode, the $(1,2)/(2,1)$
+Dirichlet doublet ($E$ irrep, $-1$ under $180^\circ$), with a half-twist of the section per
+circuit, is antiperiodic. The half-twist $t = \tfrac12$ is posed. Curvature displaces the current
+centroid 33.9~fm inward ($21.7\,\%$ of the section) under a stated constitutive condition (surface
+current, constrained poloidal flux), so the dipolar pattern is not chosen; a rigid top is excluded
+(a $j = 3/2$ would follow at $3mc^2$); the Chern number of the mode on the orientation sphere is 2
+for the displaced core alone and 1 only with $t = \tfrac12$: it measures the half-twist, it does
+not derive it.
+\item Given $U(2\pi) = -1$ on the axis and the group law of rotations, quaternion tracking shows
+that every $2\pi$ loop gives $-1$, the holonomy is $e^{i\Omega/2}$ and $c_1 = 1$ without Wigner's
+theorem (R95): the SU(2) lift is derived from the axial sign and the group law.
+\item Real analyzers built by projecting the field pattern never give $\cos^2(\theta/2)$
+(deviation 0.25--0.44 after orthonormalization, up to $75\,\%$ of the norm outside the two channels,
+R97); the half angle belongs to the transformation of the orientation, not to overlaps of fields.
+\item With the only coupling the base has, $\mu_B$ in a field, the orientation precesses at
+$\omega_L = eB/m$ and $\mathbf S\cdot\hat{\mathbf a}$ is conserved exactly; a classical
+Stern--Gerlach (flat deflection distribution) and a damped alignment ($P(+) = 1$) are excluded by
+experiment; two outcomes only, with conservation of $\mathbf S\cdot\hat{\mathbf a}$ in the mean,
+give $p = \cos^2(\theta/2)$, the Born rule for one ring (R98). The discrete jump itself is not
+derived.
+\end{itemize}
+
+The exchange sign between two rings, hence statistics, is not produced: the repository's own
+analysis (\texttt{OPEN\_PROBLEMS.md} item 4) that a bosonic classical medium needs a superposition
+of loop configurations with a sign rule stands. And after Section~\ref{sec:electron} the
+carrier of this chain, the charged ring at $\lb$, is no longer the electron's electromagnetic
+structure; what the chain establishes is a property of an orientable circulation, not of the
+electron's charge.
+
+\status{Conditionally derived for the SU(2) lift (on the posed half-twist) and for the Born rule
+of one ring (on two outcomes); not supplied: $g = 2$ (an input after R103) and fermionic
+statistics}
+
+%------------------------------------------------------------------------------
+\subsection{The electron: a representation excluded}\label{sec:electron}
+%------------------------------------------------------------------------------
+
+The redraw's electron (R53--R54) was a closed one-way ring of radius $\lb$ carrying the charge $e$,
+half its rest energy circulating ($\pi\hbar c/2\pi\lb = m_e c^2/2$), half static in three
+junctions; it gave $S = R\,E_{\rm circ}/c = \hbar/2$, $\mu = ecR/2 = \mu_B$, $g = 2$, no
+radiation and no excited state. Four steps close it (\texttt{hydrogen\_ring.py},
+\texttt{ring\_form\_factor.py}, \texttt{hydrogen\_form\_factor.py}, \texttt{moment\_without\_loop.py},
+\texttt{electron\_is\_dirac.py}).
+
+\begin{enumerate}[nosep]
+\item \textbf{The atom of the base (R99, R101).} The base's atom is the Bohr orbit closed by de
+Broglie's phase on the Lorentz-ether clock (R75). Its relativistic version is Sommerfeld's
+\cite{sommerfeld}, and $E(n,k)$ coincides exactly with Dirac's $E(n,j)$ for $k = j + \tfrac12$
+(checked to $10^{-9}$~eV on $1S$, $2S/2P_{1/2}$, $2P_{3/2}$, $3D_{5/2}$; fine structure 10.950~GHz
+against 10.969 measured, the $0.18\,\%$ being QED). The base has the fine structure without the
+ring. A rigid ring with a fixed axis would split the $1S$ by 263~GHz according to its orientation
+(quadrupole in the proton's field) where only the 1.42~GHz hyperfine doublet exists: the
+orientation must be a Bloch variable without quadrupole. The base's own orbits never come within
+$a_0/2 = 68\,R$ of the proton, so the base's atom is blind to the ring; with the quantum-mechanical
+$1S$ wave function imported, the ring shifts the $1S$ by $+205$ to $+232$~GHz against the 8.17~GHz
+measured above Dirac.
+\item \textbf{The form factor (R100), the author's criterion.} Starting from the charge as it
+exists in the model and computing $F(\mathbf q) = e^{-1}\!\int\rho\,e^{i\mathbf q\cdot\mathbf r}d^3r$
+and $\langle r^2\rangle = -6\,dF/dq^2|_0$, with PASS only if the existing theory gives
+$F \approx 1$ despite the 386~fm ring: the three readings of the charge (thin ring at $\lb$; the
+surface-current distribution of R84; $e/3$ at the three junctions) all give $F = \langle
+j_0(q\rho)\rangle$ with $\langle r^2\rangle = 1.00$, $0.88$, $0.12\,\lb^2$; $F = 0.47$ at
+1~MeV/$c$ and $\sim 10^{-4}$ at 1~GeV/$c$. Compton scattering at 1~MeV would be suppressed by
+$|F|^2 = 0.18$ where Klein--Nishina \cite{kleinnishina} holds to the percent; elastic $e$--$p$ at
+$Q^2 = 1$~GeV$^2$ by $10^{-8}$; LEP bounds the electron radius below $10^{-3}$~fm \cite{pdg}. The
+orientation being a spin-$\tfrac12$ Bloch variable (item 1) closes the only direction in which a
+ring is point-like ($\mathbf q$ along its axis); a snapshot reading (the probe sees the charge at
+one point of the ring) leaves the elastic amplitude at $F$ and sends the rest into internal
+excitations the electron does not have. The criterion fails.
+\item \textbf{The Darwin term is not a size.} In the Breit frame $u^\dagger(p')u(p) = 2m$ exactly
+at all $Q^2$: a point Dirac particle has $G_E = 1$ \cite{sachs}, and the $\tfrac34\lb^2$ of the
+hydrogen Darwin term is the normalization factor $m/E = (1 + Q^2/4m^2)^{-1/2}$
+\cite{foldy}, a kinematic quantity. The earlier prediction of the redraw (R89) that the ring should
+have $r_{\rm rms} = (\sqrt3/2)\lb = 334$~fm to reproduce the Darwin term is withdrawn: the target
+was never a charge radius.
+\item \textbf{The magneton (R102).} A Bohr magneton carried by a charge loop, $\mu = qvR/2$ with
+$q = e$ and $v \le c$, requires $R \ge \lb$ whatever the loop, while $F = 1$ to $1\,\%$ up to
+1~GeV/$c$ requires $R < 0.05$~fm: $v/c \ge 8000$. The loop's magnetic form factor at $\lb$ is
+0.72 at 1~MeV/$c$ and $10^{-6}$ at 1~GeV/$c$ against $G_M = 1$; the point Dirac particle has
+$u^\dagger(p')\boldsymbol\alpha u(p) = i\,\boldsymbol\sigma\times\mathbf q$ exactly, $G_M = 1$, the
+moment without a loop. The base has no other source of moment than a charge current.
+\item \textbf{Identities (R103).} $S = \hbar/2$, $\mu_B$ and $g = 2$ follow only from the choice
+$R = \lb$, $E_{\rm circ} = m/2$, $q = e$: with all the mass circulating $g = 1$, with the
+Zitterbewegung radius $\lb/2$ and all the mass, $\mu_B/2$. The one proper output, the action
+$\pi\hbar$ per turn, is the action per period of Dirac's Zitterbewegung (computed: $v = c$,
+amplitude $\lb/2$, $\omega = 2mc^2/\hbar$, $E\,T = \pi\hbar$) \cite{schrodinger,hestenes}. The
+static half in three junctions (R54) is the identity $3\hbar c/(\pi^2 D) = m_e c^2/2$ that
+\emph{defines} $D = 6\lb/\pi^2$; its only content is $6/\pi^2 = 0.608$ against the manuscript's
+$2\cosh\pi/37.1 = 0.625$, a $2.8\,\%$ coincidence.
+\end{enumerate}
+
+Decision: the electromagnetic electron is Dirac's. The base keeps what does not depend on where the
+charge sits: the strand spectrum, the circulation energies (Sections~\ref{sec:ladder}--%
+\ref{sec:tension}), the generation structure, the orientation chain. The ring at $\lb$ remains,
+if anything, a neutral circulation of energy, the de Broglie clock, carrying no charge.
+
+\status{Closed (charge loop, magneton loop); Identity (the ring's numbers); the decision is the
+author's}
+
+%------------------------------------------------------------------------------
 \subsection{Three-dimensional stabilization}\label{sec:stabilization}
-% Derrick: E(lambda) = A lambda^3 + B lambda^2 + C lambda admits a finite
-% equilibrium size iff |B| >= sqrt(3AC).  The Dzyaloshinskii--Moriya carrier is
-% EXCLUDED by astrophysical polarization-rotation bounds by more than thirty
-% orders of magnitude.  A mechanism proposed here must not be that one.
-\status{[level]}
+%------------------------------------------------------------------------------
 
-\subsection{Spin and statistics}\label{sec:spin}
-% The semi-classical magneton mu = mu_B is a declared half-success: spin 1/2,
-% g = 2 and fermionic statistics are absent.  Say which of the three, if any,
-% this work supplies.
-\status{[level]}
+No Derrick-evading term is derived. The stability the redraw uses is the conserved circulation
+quantum per closed circuit (R47) together with the charge lock: a charged locked ring has no
+free deformation that lowers its energy at fixed quantum, whereas a neutral locked defect has
+$E = C/R$ with no minimum, no size, and pinned to the vacuum spacing weighs about 1~MeV and is
+excluded as dark matter by nucleosynthesis (R88, R90, \texttt{dark\_defect.py}). The neutral,
+transient mother loop of R87--R88 has no lock and decays into two locked daughters. This is a
+postulate (one quantum per circuit) plus its consequences, not a stabilization mechanism in the
+sense of \texttt{CONSTRAINTS.md}~\S3, and it says nothing about the medium's own elastic
+coefficients.
+
+\status{Postulated}
+
+%------------------------------------------------------------------------------
+\subsection{Exclusions recorded on the way}\label{sec:exclusions}
+%------------------------------------------------------------------------------
+
+\begin{itemize}[nosep]
+\item Nucleons and quarks on the lepton ladder; masses as strand counts; ``one joint, one number''
+(1.3~MeV at the nucleon, 4.6~MeV at the pion); additive masses calibrated on the electron; the
+lepton ladder with a fourth rung.
+\item Winding as a force mechanism; the flux tube in the base as written; a fixed linear charge
+density; the vortex charge $5.85\,e$ as a circulating charge; free poles and standing waves (no
+moment, radiation, harmonics); the $4$~MeV transverse mode (an artefact of the wave reading).
+\item Lifetimes by self-similar breathing, by resonance at $Z \ne Z_0$, by relativistic slowing.
+\item Dark matter as a neutral locked defect of the medium (no minimum; $\Gamma/H \sim 10^{20}$ at
+nucleosynthesis if pinned); the medium's DQD in circulation ($5\times10^{33}$ times the observed
+vacuum energy); an expanding medium ($g$ drift $10^{-10}$/yr against $3\times10^{-14}$) (R57, R90).
+\item The base as a \emph{local} theory of Bell correlations: any definite-variable local model
+gives $|S| \le 2$ (sign reading 2, Malus reading 0.94) against $2\sqrt2$ and the measured
+$2.42 \pm 0.20$ \cite{hensen}; the shared quantum of a pair as a global constraint overshoots to
+$S = 4$ without the Born rule; the medium's wave at $c_0 = c$ is $10^4$ times too slow to be the
+channel; the joint state of two rings is not constructed (R91--R94).
+\item The electron as an extended charge or an extended magneton (Section~\ref{sec:electron}).
+\end{itemize}
 
 %==============================================================================
 \section{Epistemological status of the results}\label{sec:status}
 %==============================================================================
-% Reproduce the six-level ledger for this paper's own claims:
-% Derived / Conditionally derived / Calibrated / Postulated / Reparametrized / Closed.
-% Nothing is presented above its level.  If a result rests on the imported
-% computation alone, say so and give the level accordingly.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{p{7.2cm}p{7.6cm}}
+\toprule
+level & claims filed at this level \\
+\midrule
+Derived & charge spectrum and colour from three strands (given the strand charges); the step of
+four neutral strands and the exclusion of $n = 5$; three eigenvalues of a $C_3$ mass-root
+operator; the $\{3,3,3\}$ partition; the strong part of $m_n - m_p$; the $\lfloor k/2\rfloor$
+junction law; the SU(2) lift from the axial sign; that the ladder cannot be corrected into Koide;
+that a loop magneton needs $R \ge \lb$. \\
+\addlinespace
+Conditionally derived & the quark scale and mass (on $2\pi$, 9); the nucleon mass and
+$\Delta - N$ (on a ring radius); $m_n - m_p$ total (on the section and pole shape);
+$\sqrt\sigma$ (on one quantum per star arm); Koide's $45^\circ$ (on the network reading of the
+mass-root operator); the lifetime structure; the Born rule of one ring (on two outcomes); the
+circulation quantum from a broken mother loop (on three inputs). \\
+\addlinespace
+Calibrated & the nuclear-force scale (2~MeV at 0.72~fm). \\
+\addlinespace
+Postulated & one quantum per closed circuit; the strand charges; the neutrino rule; the sharing
+$2/3, 2/3, -1/3$; the half-twist $t = \tfrac12$; the phase $\varphi = 2/9$; the constitutive
+condition of the surface current. \\
+\addlinespace
+Reparametrized & the exponent $2\pi$; the wall $M$ (an identity with $G_F$); the pion at $r_e/2$
+(scale identification); the nucleon ring radius 0.67~fm. \\
+\addlinespace
+Closed & the extended electron (charge and magneton loops); a weak sector inside the base; dark
+matter from the medium; the base as a local theory of Bell correlations; winding as confinement;
+the mass-as-inductance law. \\
+\bottomrule
+\end{tabular}
+\caption{The six-level ledger of this paper's claims. Nothing above is presented above its level.}
+\end{table}
+
+Two remarks on the ledger. First, every hadronic number rests on the exponent $2\pi$ and the count
+9, which are inputs: the ratios are derived \emph{from} them, and a reader who does not grant them
+should read the hadronic section as a parametrization with two structural inputs rather than a
+derivation. Second, the coincidences recorded (proton radius as the envelope of three circuits,
+$m_p c^2 = 4\hbar c/r_p$ to $0.05\,\%$, the nucleon ring at $\sqrt3$ circuit radii, $6/\pi^2$
+against $2\cosh\pi/37.1$) are listed because they were found, not because they are claimed.
 
 %==============================================================================
 \section{Open problems}\label{sec:open}
 %==============================================================================
-% What this paper does not close, and what would close it.
-% Carry forward from matter/OPEN_PROBLEMS.md the items left standing.
+
+\begin{enumerate}[nosep]
+\item \textbf{The electron's charge and moment.} After R103 the base contains no source of a
+point-like charge with a Bohr magneton. Either the base supplies a moment that is not a charge
+current, or it adopts the Dirac structure and derives none of $S$, $\mu_B$, $g$. The neutral
+circulation at $\lb$ (the de Broglie clock) is what remains of the ring.
+\item \textbf{The phase $2/9$}, and a dynamics that gives the $45^\circ$ at the particle level
+rather than the family level.
+\item \textbf{The nucleon ring radius} (0.67~fm) and what the collective circulation of three
+circuits turns on; the pion's pinning at $r_e/2$.
+\item \textbf{The weak scale.} $G_F$, $M_W$, $M_Z$ and the mixing angle are not in the base; the
+neutron's factor 9; the QCD factor 1.2 on the tau.
+\item \textbf{Fermionic statistics}: the exchange sign between two rings; the discrete jump in a
+measurement; the joint state of two rings (Bell).
+\item \textbf{The exponent $2\pi$ and the count 9}, structural inputs.
+\item \textbf{The section width} $w = 4\lb/\pi^2$, derived only through the three junctions of a
+representation now closed; the splitting tests it to a factor of two.
+\end{enumerate}
 
 %==============================================================================
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
-% What measurement would kill this sector.  If nothing would, say that, and
-% say what that implies about the status of the results above.
+
+One part of this sector has already been falsified by existing data: an electron whose charge or
+magnetic moment is carried by a loop of any radius above $10^{-3}$~fm (Section~\ref{sec:electron}).
+The paper reports this as its firmest result.
+
+For what remains, the following measurements or computations would kill the corresponding claim:
+\begin{itemize}[nosep]
+\item a lattice determination of the isospin-breaking QCD part of $m_n - m_p$ that departs from
+$2.47$~MeV by more than its present $\pm 0.29$~MeV, or of $\sqrt\sigma$ outside 420--440~MeV by more
+than the $2\,\%$ the exponent allows (the formulae $(2\alpha/3)3^{2\pi} m_e c^2$ and
+$(3/2\sqrt\pi)3^{2\pi} m_e c^2$ have no free number);
+\item a charged lepton of any mass below the ladder's next rung would not falsify the $C_3$
+structure, but a violation of Koide's relation beyond $10^{-5}$ by an improved $\tau$ mass would
+remove the $45^\circ$ that the $g = 2$ pairing explains;
+\item a $\Delta$--$N$ gap or a nucleon magnetic-moment ratio that no single ring radius fits within
+$15\,\%$ and $3\,\%$ respectively;
+\item a tau lifetime or branching ratios that the channel count $C(n)$ cannot reach within the
+$13\,\%$ the bare count leaves, once the QCD factor is computed rather than borrowed.
+\end{itemize}
+Nothing in the generational sector predicts a new particle; the sector's exposure is entirely
+through the precision of the ratios above.
 
 %==============================================================================
-\section*{Acknowledgments and Methodological Disclosure}
+\section*{Acknowledgments and Methodological Disclosure}\label{sec:disclosure}
 %==============================================================================
-% The main manuscript discloses its human--AI collaboration in detail and states
-% its limitation plainly: "Both numerical implementations originate from this
-% same collaboration; independent third-party verification has not yet been
-% performed."
-%
-% This paper involves a SECOND AI system, and that changes what may be claimed.
-% Two cases, and they must not be conflated:
-%   (a) the second system was given the DS manuscript and asked to extend it ---
-%       this is NOT independent verification; the prior is shared;
-%   (b) the second system reproduced a result from the structure equations alone,
-%       without the manuscript's conclusions --- closer to independence, and the
-%       protocol must be described precisely enough for a reader to judge.
-% State which one applies, name the systems and their roles, and do not describe
-% (a) as independent replication.
+
+The main manuscript discloses its human--AI collaboration and states its limitation: both
+numerical implementations originate from the same collaboration, and independent third-party
+verification has not been performed. This paper involves a second AI system, and the case that
+applies is the first of the two the repository distinguishes: \textbf{the system was given the
+author's statements and the repository, including the manuscript's constraints, and asked to
+compute their consequences.} The prior is shared. This is not independent verification, and it is
+not described as such anywhere in this paper.
+
+Roles. The author supplied the constitutive statements (R1--R8 and the later ones quoted in the
+record), the direction at each step, and the review comments that imposed the downgrades recorded
+as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
+derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
+(Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
+in the session record and is to be filled in by the author) wrote the 98 scripts, ran them,
+wrote the record and this draft. Every number in this paper is produced by a script in
+\texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
+\texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
+author's criterion and the result of R100.
 
 %==============================================================================
 \begin{thebibliography}{99}
 \bibitem{pdg} S. Navas \textit{et al.} (Particle Data Group), \textit{Review of Particle Physics}, Phys. Rev. D \textbf{110}, 030001 (2024).
 \bibitem{dsmodel} R. St-Pierre, \textit{Dipolar String Model: an Exploratory Framework for the Vacuum from Transmission-Line Electrodynamics}, V2.10 (2026). Concept DOI: \href{https://doi.org/10.5281/zenodo.21196098}{10.5281/zenodo.21196098}.
-% add the references the imported work actually uses; do not carry over
-% entries from the main manuscript that this paper never cites.
+\bibitem{koide} Y. Koide, Lett. Nuovo Cimento \textbf{34}, 201 (1982); Phys. Lett. B \textbf{120}, 161 (1983).
+\bibitem{foot} R. Foot, \textit{A note on Koide's lepton mass relation}, arXiv:hep-ph/9402242 (1994).
+\bibitem{brannen} C. A. Brannen, \textit{The lepton masses} (2006), unpublished; the phase $2/9$ in the parametrization $\sqrt{m_k} \propto 1 + \sqrt2\cos(2/9 + 2\pi k/3)$.
+\bibitem{bilsonthompson} S. O. Bilson-Thompson, \textit{A topological model of composite preons}, arXiv:hep-ph/0503213 (2005).
+\bibitem{bmw} Sz. Borsanyi \textit{et al.} (BMW Collaboration), \textit{Ab initio calculation of the neutron--proton mass difference}, Science \textbf{347}, 1452 (2015).
+\bibitem{necco} S. Necco and R. Sommer, Nucl. Phys. B \textbf{622}, 328 (2002); the range 420--440~MeV quoted here spans the quenched and unquenched determinations of $\sqrt\sigma$.
+\bibitem{katrin} M. Aker \textit{et al.} (KATRIN Collaboration), \textit{Direct neutrino-mass measurement based on 259 days of KATRIN data}, Science \textbf{388}, 180 (2025).
+\bibitem{hensen} B. Hensen \textit{et al.}, \textit{Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres}, Nature \textbf{526}, 682 (2015).
+\bibitem{sommerfeld} A. Sommerfeld, Ann. Phys. (Leipzig) \textbf{51}, 1 (1916).
+\bibitem{kleinnishina} O. Klein and Y. Nishina, Z. Phys. \textbf{52}, 853 (1929).
+\bibitem{sachs} R. G. Sachs, Phys. Rev. \textbf{126}, 2256 (1962).
+\bibitem{foldy} L. L. Foldy and S. A. Wouthuysen, Phys. Rev. \textbf{78}, 29 (1950).
+\bibitem{schrodinger} E. Schr\"odinger, Sitzungsber. Preuss. Akad. Wiss., Phys.-Math. Kl. \textbf{24}, 418 (1930).
+\bibitem{hestenes} D. Hestenes, \textit{Zitterbewegung in quantum mechanics}, Found. Phys. \textbf{40}, 1 (2010).
 \end{thebibliography}
 
 \end{document}
