@@ -103,8 +103,10 @@ Ce qui reste vraiment :
 2. **Le mécanisme de Koide** : les masses sont les trois valeurs propres d'un opérateur C₃
    (circulant), et Koide est la règle a² = 2|b|² (terme propre² = somme des sauts², le 45°) avec
    la phase φ = 2/9 (R76) ; ni l'une ni l'autre n'a de dynamique (R62, R63). Le pas de génération
-   est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I) ;
-   reste à montrer que six DQD sans holonomie se détachent (liaison par holonomie, R76).
+   est deux DQD (le spin interdit un seul, R70) et le quatrième pas est le premier (U³ = I).
+   La liaison des paires est un verrou topologique (Lk = Tw + Wr conservé, forme gelée, R77),
+   mais ce verrou tient aussi une troisième paire (Wr = 1 à r₀ = 0,376) : l'absence de quatrième
+   génération doit venir du spectre (trois valeurs propres), pas de la liaison.
 3. **Le mur des durées de vie** : M = (96π²)^{1/4}/√G_F = 1,625 TeV par identité (R68, corrigé
    R76) : la loi de fuite a la structure dimensionnelle du faible, mais G_F reste une entrée ;
    avec elle, τ(n) = T(n)(M/m)⁴/C(n) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la
@@ -119,7 +121,7 @@ Ce qui reste vraiment :
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 71 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 72 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

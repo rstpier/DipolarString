@@ -1478,3 +1478,25 @@ holonomie, non calculée. **Verdict** : DÉRIVÉ que le pas est 4 (R70) et que l
 opérateur C₃ a trois états (le quatrième est le premier) ; CONDITIONNEL que n = 15 relaxe vers
 n = 3 (liaison par holonomie à écrire). Les deux travaux les plus rentables restent : cette
 liaison, et une dynamique qui donne à la fois a² = 2|b|² (45°) et φ = 2/9.
+
+**R77 — La liaison par holonomie : pourquoi deux DQD avec un tiers de tour tiennent, et ce que
+devient n = 15.** (suite de R76, « continue le secteur matière »)
+→ `holonomy_binding.py`, 5/5. Outils : la famille de courbes de la phase A (anneau à q = 3 lobes,
+amplitude r₀), le writhe par intégrale de Gauss, et Lk = Tw + Wr (Călugăreanu–White–Fuller),
+invariant tant que le ruban ne se traverse pas (une traversée change Wr de ±2). **Wr(r₀)** : 1/3 à
+r₀ = 0,1785 (R61), **2/3 à r₀ = 0,275** (le tau : trajet +30 % du cercle, aire vectorielle 104 % ; le
+muon : +14 %, 102 %), et Wr monte jusqu'à 2,05 à r₀ → 1. **Le verrou** : Tw = 0 est fixé par le milieu
+(R61), donc Lk = Wr est conservé sous toute déformation ; comme dWr/dr₀ = 3,24 ≠ 0 à r₀*, la forme
+est gelée : la paire enroulée ne peut pas se dégager sans reconnexion. **La liaison des deux DQD
+est un verrou topologique du ruban, pas une énergie** : c'est ce qui rend le muon métastable (le
+défaire coûte la reconnexion, (m/M)⁴ par tour, R69). **Ce que le verrou ne fait pas** : Wr = 1
+(trois paires, n = 15) est atteint à r₀ = 0,376 dans la même famille, donc la troisième paire
+s'enroule et se verrouille comme les autres ; et une traversée mène de Wr = 1 à −1 ou 3, jamais
+à 0 (parité) : le retour de n = 15 dans le secteur de n = 3 n'est pas topologique. **La lecture
+« six DQD = morceau de vide » de R76 E est exclue.** Avec plus de lobes (q = 6, 9) le writhe
+disponible croît encore (jusqu'à 4,9 et 7,9). **Verdict** : DÉRIVÉ que la liaison des paires est
+un verrou topologique (Lk conservé, forme gelée) ; EXCLU que ce verrou ferme les générations :
+n = 15 serait un état verrouillé lui aussi, et son absence doit venir de l'opérateur de masse
+(trois valeurs propres, R76) ou d'une règle que la base n'a pas (un writhe maximal, ou une
+reconnexion propre des paires neutres). La question ouverte se déplace : non plus « pourquoi les
+paires tiennent », mais « pourquoi le spectre n'a que trois états quand le verrou en admet plus ».
