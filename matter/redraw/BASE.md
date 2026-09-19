@@ -661,3 +661,18 @@ nucléons** (enregistré, non revendiqué) : la même énergie de ligne par brin
 la charge de pôle adaptée δ ; c'est la première fois que la tension du réseau sort des règles de
 la base sans nombre libre, au prix d'un facteur 1,8 sur la moitié statique de l'électron et d'un
 neutron trop léger de 14 %.
+
+**R36 — « Cherche ce qui fixe la coupure b/a = 14. »**
+→ `cutoff_search.py`, 4/4. Avec λ = δ/ℓ₁(9) (R35), σ = (4ℏc/(πℓ₁²)) × 2π/ln(b/a). La bande du réseau,
+√σ = 420 à 440 MeV (894 à 981 MeV/fm), correspond à b/a = 11,4 à 14,5. **Candidats de la base** :
+la branche partenaire à la distance D, D/r = 2 cosh π = 23,2, donc ln(b/a) = π à 0,06 % près, gain
+exactement 2, **σ = 8ℏc/(πℓ₁²) = 761 MeV/fm (−16 %)** ; le demi-écartement D/2r = cosh π = 11,6, gain
+2,56, **σ = 976 MeV/fm (+8 %, dans la bande)** ; R₃/r = 37,1 → 661 ; r_p/ƛ_p = 4 → 1724 ; ℓ₁/ƛ_p →
+1770 ; R₋/ƛ_p → 1453 ; (r_e/2)/ƛ_p → 1257. Seuls les deux rapports de l'adaptation à Z₀ approchent.
+**Les deux lectures de l'adaptation encadrent le réseau** : 761 (b = D) et 976 (b = D/2), la bande
+894–981 est entre les deux ; la coupure est donc fixée par la même adaptation qui fixe D/r, à
+l'identification D ou D/2 près, soit ±15 % sur σ. **Forme fermée** avec ln(b/a) = π :
+σ = 8ℏc/(πℓ₁(9)²) = (18·3^{4π}/π³)·m_e²c⁴/ℏc, **√σ = √(18/π³)·3^{2π}·m_ec² = 388 MeV** (réseau 420 à
+440, −8 à −12 %) ; avec b = D/2, 439 MeV. La tension forte s'écrit avec m_e et l'exposant 2π seuls,
+sans α ni Z₀ (ils s'annulent entre δ et l'adaptation). Verdict : DÉRIVÉ à 15 % près ; ce qui reste
+est de dire si la charge enroulée voit sa partenaire à D ou à D/2.
