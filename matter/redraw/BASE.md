@@ -1340,3 +1340,29 @@ DÉRIVÉ que l'échelle manquante est celle du champ faible (M = (96π²)^{1/4}/
 que la base la contienne (aucun barreau, aucune excitation neutre de spin 1 à 10² GeV). Le « champ
 Z » de la base (l'impédance) et le Z faible ne coïncident que si l'impédance sature à I_c (R66) ;
 ce qu'il faudrait dessiner : une excitation neutre de spin 1 du milieu à ~90 GeV, et un angle.
+
+**R69 — « Il faut trouver une relation entre n (et autres propriétés liées) et la stabilité
+temporelle. Il faut attribuer une fréquence relativiste (selon la vitesse de vibration, la
+durée de vie perçue est modulée à nos yeux). »**
+→ `stability_law.py`, 7/7. **La loi**, assemblée de R64–R68 sans ajustement : τ(n) = T(n)·(M/m(n))⁴/C(n),
+avec T(n) = 2πℏ/(m c²) le tour (période de Compton, R68), M = (96π²)^{1/4}/√G_F = 1,625 TeV le mur,
+et C(n) le nombre de barreaux inférieurs de même classe de charge (canaux), la couleur comptant 3
+(position du brin impair, R42). **Électron** (n = 3) : C = 0, stable ; avec un canal il vivrait
+10 jours. **Muon** (n = 7, C = 1) : 2,187 μs contre 2,197 (−0,4 % avec la masse vraie ; 2,275 avec
+la masse de l'échelle, l'écart de 0,8 % à Koide monté à la puissance 5). **Tau** (n = 11) :
+C = 1 (e) + 0,973 (μ, partage à trois corps) + 3 (barreau des quarks × 3 couleurs) = 4,97 donne
+3,27·10⁻¹³ s (+13 %) ; avec la correction forte 1,2 sur les quarks (modèle standard, non
+dérivée ici) C = 5,57 et 2,92·10⁻¹³ (+0,5 %) ; rapports de branchement e 20 % (mesuré 17,8), μ 19,6
+(17,4), quarks 60 (64,8 ; 64,6 avec 1,2). **En n seul** : τ ∝ (3/n)^{10π}/C(n), exposant 31,4 ;
+(7/11)^{10π} = 6,8·10⁻⁷ contre 7,4·10⁻⁷ mesuré (canal e contre canal e, −8 %). **Neutron** : la
+même loi avec Q = 1,29 MeV donne 7960 s contre 878 (facteur 9 : g_A et le partage, hors de la
+base). **La fréquence relativiste** : la loi en contient une seule, la fréquence de Compton
+mc²/h, celle du tour ; un γ de vibration qui porterait la lenteur devrait valoir N = (M/m)⁴
+tours, 5,6·10¹⁶ (μ) et 7·10¹¹ (τ), soit v = c à 10⁻³⁴ et 10⁻²⁴ près, et suivre n^{16π} = n⁵⁰ : une
+vitesse réglée à 34 décimales, exclue ; la lenteur n'est pas une dilatation, c'est le compte
+(m/M)⁴ par tour. Barreau n = 15 (12,6 GeV, exclu par le LEP) : il vivrait 10⁻¹⁷ s. **Verdict** :
+DÉRIVÉ que la stabilité est une fonction de n par la masse et par le compte des barreaux
+inférieurs (électron stable, muon à 0,4 %, tau à 13 % par simple compte, 0,5 % avec la
+correction forte, branchements à 10 %) ; CONDITIONNEL au mur M, emprunté à G_F (R68) ; EXCLU que
+la lenteur soit une dilatation relativiste. Restent au modèle standard : la correction forte
+1,2, le g_A du neutron, et M lui-même.

@@ -93,7 +93,10 @@ de l'exposant.
    ni le courant critique I_c ≈ 3·10⁸ A ni le partage de l'énergie à trois corps ; un
    ralentissement relativiste (global ou interne) n'y change rien (R67). L'échelle manquante
    est celle du champ faible, M = (96π²)^{1/4}/√G_F = 1,625 TeV à 0,3 % (R68) : il faudrait
-   une excitation neutre de spin 1 du milieu à ~90 GeV et un angle de mélange.
+   une excitation neutre de spin 1 du milieu à ~90 GeV et un angle de mélange. Avec M
+   emprunté, la loi τ(n) = T(n)(M/m)⁴/C(n) (un tour = période de Compton, C = barreaux
+   inférieurs, couleur × 3) donne le muon à 0,4 %, le tau à 13 % (0,5 % avec la correction
+   forte), l'électron stable (R69).
 3. La largeur du ruban, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions (R54).
 4. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
 5. Ce qui épingle l'anneau du pion à r_e/2.
@@ -103,7 +106,7 @@ de l'exposant.
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 63 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 64 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
