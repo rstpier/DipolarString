@@ -903,3 +903,22 @@ rayon. Test de ce rayon : le Δ⁺⁺ (uuu, charge 2e) avec toute sa charge à 0
 exclue comme mécanisme ; l'écart est de la circulation, pas du magnétisme. **Verdict** : le Δ est
 le nucléon avec trois fois sa circulation d'anneau ; DÉRIVÉ à ±15 % avec les rayons de R25 ; le
 rayon exact (0,67 fm) n'est pas fixé par la base.
+
+**R49 — « Cherche ce qui fixe le rayon de l'anneau à 0,67 fm. »**
+→ `ring_radius.py`, 5/5. Cible : R = ℏc/(2 × 147 MeV) = 0,671 fm ; dans le langage de la base,
+R = ƛ_p/f avec la fraction circulante f = 0,313 (l'électron a 3/4), E_circ/m = f/2 = 0,157. **Les
+longueurs de la base à l'échelle 9** contre 0,671 fm : le rayon de circuit R_c = 3ℓ₁/(2π) = 0,388 fm
+est √3 fois plus petit (à 0,1 %), ƛ_p est π fois plus petit (1,6 %), le reste est sans rapport.
+**L'étoile de trois anneaux-circuits** : passant par le centre, leurs centres sont à R_c et
+l'écartement entre quarks vaut √3·R_c = 0,672 fm, le rayon cherché à 0,1 % ; mutuellement
+tangents, leur enveloppe extérieure R_c(1 + 2/√3) = 0,836 fm est le rayon de charge du proton à
+0,6 % (r_p n'est une entrée nulle part), centres à 0,448 fm, rayon quadratique 0,593 fm. **Aucun
+mécanisme ne sélectionne √3·R_c** : un écoulement le long des arêtes du triangle des quarks porte
+S = R_in·E/c avec le rayon inscrit R_in = R_c/2 (E_circ serait 508 MeV) ; le rayon propre du circuit
+non apparié donne 254 MeV ; aucun des deux n'est 147. L'identification R = √3·R_c = (3√3/2π)·ℓ₁(9)
+est une coïncidence à 0,1 %, pas une dérivation. Si on l'accepte, tout sort de ℓ₁(9) seul :
+N = 910 MeV (−3 %), Δ = 1204 (−2,3 %), μ(Δ⁺⁺) = 6,4 μ_N, r_p = 0,836 fm (+0,6 %) ; mais μ_p exigerait
+0,87 e en circulation à ce rayon, pas une charge propre (enregistré). **Verdict** : deux
+coïncidences géométriques de la même étoile de circuits (0,672 et 0,836 fm) ; le rayon de
+l'anneau n'est pas dérivé, il manque la règle qui dit sur quel cercle la circulation collective
+des trois circuits tourne.
