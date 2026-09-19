@@ -1619,3 +1619,28 @@ mode impair sous 180° existe sur la section carrée et qu'une demi-torsion de s
 antipériodique ; CONDITIONNEL que la circulation de l'électron porte ce motif (cœur hors centre)
 plutôt que le fondamental centré ; restent le passage de L_z = ½ à j = ½ et l'échange par le tour
 de ceinture (R74 D2). C'est la première route explicite du dépôt vers le spineur.
+
+**R83 — De L_z = ½ à j = ½ : la toupie rigide est exclue, l'orbite de rotation reste.** (suite de
+R82)
+→ `spin_half_rotor.py`, 5/5. R82 donne K = ½ autour de l'axe de l'anneau ; comment en faire une
+représentation j = ½ sans tour d'états excités ? **(A) Toupie symétrique rigide** (axe libre, K = ½) :
+le fondamental est bien j = ½ à deux états, mais j = 3/2 suit à ℏ²[j(j+1) − ¼]/(2I_⊥) avec
+I_⊥ = mR²/2 : **+3 mc² = 1,533 MeV** pour R = ƛ (0,862 MeV pour R = 4ƛ/3), puis j = 5/2 à 4,1 MeV : un
+électron excité de spin 3/2 au MeV, exclu (aucune résonance Compton, compositeness > 10 TeV, R47).
+**L'anneau n'est pas une toupie rigide : son orientation n'a pas d'inertie propre.** **(B) L'orbite** :
+sans inertie d'orientation, tourner l'anneau n'est pas un mouvement mais la même configuration
+vue tournée (éther de Lorentz du manuscrit) ; l'espace des états est l'orbite SO(3)/stabilisateur,
+le stabilisateur étant la rotation autour de l'axe ; avec le mode antipériodique un tour complet
+change le signe, donc l'orbite est SU(2)/U(1) = S² à un signe près, la sphère de Bloch, les états
+cohérents de j = ½ : deux états, pas de tour. **(C) Comptage** : le motif dipolaire est l'irrep E de
+Z₄, de dimension 2 = 2j + 1 pour j = ½ ; le fondamental centré, l'irrep A, un scalaire. **(D)
+L'échange** : l'anneau est attaché par ses trois jonctions (R54) ; échanger deux objets attachés est
+isotope à tourner l'un d'eux de 2π (tour de ceinture, R74 D2) ; avec le −1 de R82, Pauli ; topologie,
+la seule entrée calculée est le −1. **Verdict** : EXCLU (toupie rigide, par le tour à 3mc²) ;
+CONDITIONNEL (orbite de rotation sans inertie + mode dipolaire + attache ⇒ j = ½ et −1 d'échange).
+**Ce qui reste** : (i) que l'électron porte le motif dipolaire ; candidat : la courbure de l'anneau,
+w/R = 4/π² = 0,405, déplace naturellement le cœur radialement, et le demi-tour de section par
+circuit fait tourner ce déplacement dans le repère de la section ; (ii) que l'orientation soit
+sans inertie, ce que l'éther de Lorentz affirme et que le muon en vol vérifie pour l'horloge (R67).
+La chaîne vers Pauli est maintenant écrite de bout en bout, avec ses deux maillons conditionnels
+nommés.
