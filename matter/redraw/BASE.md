@@ -989,3 +989,24 @@ seule observable touchée, m_n − m_p (règle de R44) : bouchon 1,27 MeV (−1,
 plaque 1,39 (+7 %), disque 1,41 (+9 %) : toute forme reste à 10 %, le bouchon fait le mieux.
 **Verdict** : la forme est fixée par R5 (un bouchon qui remplit la section), pas par l'énergie (un
 brin conducteur étalerait la charge, R30) ; elle ramène w à 0,76 de sa valeur et l'écart p–n à −1,8 %.
+
+**R52 — « Cherche ce qui fixe le mécanisme d'entassement de R5. »**
+→ `pileup_mechanism.py`, 5/5. Trois lectures. **Barre** (spin_rod.py) : une barre tournant autour
+de son point de brisure jette le fluide au bout, la force centrifuge bat l'étalement de Coulomb
+par ~50, l'entassement est complet ; mais sur un anneau ou un circuit fermé la force centrifuge est
+la même partout, rien ne s'entasse : il faut une asymétrie, un bout ouvert ou un coude. **Onde**
+(R17 B) : un bout ouvert réfléchit le fluide, nœud de courant et ventre de charge ; l'amplitude de
+charge d'UN quantum ℏω sur une ligne adaptée vaut √(4ℏ/πZ₀) = e/(π√α) = 3,73 e, quelle que soit la
+fréquence : c'est ce qui a fixé δ ; l'entassement est le ventre, sa taille est fixée par le mode,
+pas par un équilibre de forces. **Vortex** (R32) : les « pôles » sont les deux demi-tours de
+l'épingle ; le flux de quantité de mouvement du fluide exige une force centripète u/r_b par unité
+de longueur de coude, fournie, si le fluide est auto-confiné, par un champ transverse
+λ/(ε₀r_b), c'est-à-dire des charges ±πwλ déplacées sur les parois externe et interne du coude :
+avec λ = δ/ℓ₁, Q = π(w/ℓ₁)·δ = (6/π²)·δ = 0,61 δ (0,46 δ avec la largeur du bouchon), sur la taille
+du coude ~w (le bouchon de R51) — **un dipôle, de charge nette nulle, pas un entassement**.
+Conséquence pour la moitié statique (R50), qui exige δ entier à chaque pôle : avec le seul dipôle
+de coude, l'énergie de pôle tombe à 0,28 (0,61² × 0,76) et la largeur devrait descendre à 44 fm
+pour garder g = 2, ramenant m_n − m_p à 1,07 MeV (−17 %). **Verdict** : le mécanisme de R5 est fixé
+dans la lecture onde (réflexion au bout ouvert, δ tiré de ℏ et Z₀) et pas dans la lecture vortex
+(dipôle de coude de 0,6 δ, sans charge nette) ; la base doit dire si le circuit de l'électron est
+ouvert (deux bouts réfléchissants) ou fermé (une épingle) : R40 et R50 ont utilisé les deux.
