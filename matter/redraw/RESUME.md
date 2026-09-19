@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R86)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R87)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R86).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R87).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -111,11 +111,13 @@ Ce qui reste vraiment :
    sans choix (R84, sous une condition constitutive posée : courant de surface, flux interne
    contraint). Le nombre de Chern du mode sur la sphère des orientations vaut 2 pour le cœur
    déplacé seul (hélicité 1) et 1 seulement avec le demi-tour de section : c₁ mesure t, il ne le
-   dérive pas (R85). Mais le quantum de circulation de la base, πℏc/trajet, est l'énergie d'une
-   demi-onde sur l'anneau, qui ne se referme que sur un anneau antipériodique ; l'onde entière
-   donnerait g = 1, exclu : t = ½ est requis par g = 2, plus posé (R86). Reste posé : l'absence
-   d'inertie d'orientation (éther de Lorentz), et le quantum lui-même (4πKq² = πℏc, R32). Avec
-   cela, l'atome à plusieurs électrons a son −1.
+   dérive pas (R85). Le quantum de circulation de la base, πℏc/trajet, est exactement une action
+   de demi-tour, ∮p dl = πℏ (R86, corrigé : conditionnel, la lecture onde et l'appel à g = 2
+   étaient circulaires). Ce quantum se dérive sans g comme la moitié du quantum entier d'une
+   boucle neutre périodique brisée symétriquement en deux (R87) ; alors E_circ = m/2, S = ℏ/2 et
+   g = 2 sont des sorties. Restent posés : les trois entrées de R87 (n = 1 sur la mère, p′ conservé
+   à la brisure, partage C-symétrique), que la phase physique soit e^{iS/ℏ}, et l'absence
+   d'inertie d'orientation (éther de Lorentz).
 2. **Le mécanisme de Koide** : les masses sont les carrés des trois valeurs propres d'un opérateur
    de racine de masse C₃ (circulant), et Koide est la règle a² = 2|b|² (le 45°) avec la phase
    φ = 2/9, toutes deux posées (R76). Le 45° équivaut exactement à « normes isotrope et
@@ -147,9 +149,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R86 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R87 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 81 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 82 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

@@ -1716,3 +1716,38 @@ est requis, non choisi. La chaîne vers Pauli : quantum demi-onde (R32) + g = 2 
 attache et tour de ceinture (R74, R83) ⇒ −1 d'échange. **Reste posé** : l'absence d'inertie
 d'orientation (R83 ii), et le quantum lui-même, 4πKq² = πℏc (R32), qui est la définition de la
 charge de vortex.
+
+**Correction de R86 (relecture de l'auteur).** Deux fautes : (1) R32/R47 avaient écarté la lecture
+onde (« le fluide n'est pas une onde, c'est un vortex ») ; « même énergie qu'une demi-onde » n'implique
+pas « est une demi-onde » ; (2) circularité : q = e/(2√α) a été fixé (vortex.py, « spin condition
+restated ») pour que E_circ = m/2, d'où S = ℏ/2 et g = 2 ; g ne peut pas servir une seconde fois. Et
+`spin_from_breaking.py` suppose l'enroulement ½ dans sa lecture onde : pas une dérivation
+indépendante. **Formulation retenue** (`half_wave_quantum.py` réécrit, 5/5) : avec p = E_circ/c,
+l'action du quantum autour du circuit vaut ∮p dl = E_circ L/c = πℏ pour tout L ; si la phase physique
+est e^{iS/ℏ}, l'holonomie vaut e^{iπ} = −1. **Verdict de R86 corrigé : CONDITIONNEL.** Établi : le
+quantum R32 correspond exactement à une action de demi-tour πℏ. Non établi : que R32 dérive
+l'antipériodicité. Cible : dériver 4πKq² = πℏc de la structure du DQD, indépendamment de g.
+
+**R87 — Dériver le quantum 4πKq² = πℏc de la structure du DQD, sans g.**
+→ `quantum_from_breaking.py`, 7/7. **(A) Ce qu'est l'identité R32**, en quatre formes équivalentes :
+q = e/(2√α) = 5,853 e = **q_Planck/2** (q_P = e/√α, Kq_P² = ℏc) ; **q²Z₀ = πℏ = h/2** ; **E_circ·L/c = πℏ
+pour tout L** (action de demi-tour) ; et ce qu'elle n'est pas : le flux propre électromagnétique de
+l'anneau vaut 1,7·10⁻¹⁷ Wb = (h/e)/241, son énergie magnétique 1 keV contre 255 : le quantum n'est
+pas électromagnétique (R53, R54). **(B) Dérivation candidate, sans g** : (i) la mère (R3, R4) est une
+boucle neutre fermée de 3 DQD = 6 branches en série, périodique (Tw = 0, R61), portant un quantum
+entier : Bohr–Sommerfeld, ∮p dl = h (n = 1) ; (ii) la brisure est locale et instantanée, la densité
+de quantité de mouvement p′ le long des brins est conservée ; (iii) la brisure est symétrique
+(conjugaison de charge) : deux boucles de 3 branches, chacune de longueur L_m/2. Donc chaque fille
+porte ∮p dl = h/2 et E_d = p′c = (h/2)c/L_d = πℏc/L_d : **le quantum R32 est la moitié du quantum
+entier de la mère.** **(C) Conséquences, en sorties** : avec R = ƛ depuis μ = ecR/2 = μ_B (m_e et μ_B,
+pas g), E_circ = πℏc/(2πƛ) = m_ec²/2 exactement, la moitié de la masse circule ; S = RE/c = ℏ/2 ;
+g = 2 (mesuré 2,00232). Énergie à fournir de l'extérieur : 2m_e − E_mère = 2 × 0,511 − hc/L_m =
+0,7665 MeV, le « 0,77 MeV from outside » de la phase A. **(D) Ce qui reste** : les trois entrées
+nommées (n = 1 sur la mère périodique, p′ conservé à la brisure, partage C-symétrique), aucune
+n'étant g ni q : la circularité de R86 est levée ; l'interprétation « holonomie −1 si la phase
+physique est e^{iS/ℏ} » ; et un caveat : une mère à quantum entier pèse hc/L_m = 0,26 MeV, aucun
+boson neutre de 0,26 MeV n'existe libre, donc la mère doit être transitoire (l'intermédiaire de la
+création de paire), ce que la base ne dit pas encore. **Verdict** : CONDITIONNEL, à trois entrées
+physiques nommées ; si elles tiennent, 4πKq² = πℏc n'est plus une calibration mais la moitié du
+quantum d'une boucle neutre, et E_circ = m/2, S = ℏ/2, g = 2 en découlent ; alors toute la chaîne
+R82 → R86 change de statut, comme demandé.
