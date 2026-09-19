@@ -1788,3 +1788,27 @@ se voit au meV, l'hydrogène est mesuré au neV. **Verdict** : PRÉDICTION (r_rm
 TENSION (363 fm pour R84, +8,5 % en rayon) ; premier test qui mord ; il exige un calcul atomique
 propre à la base et il tranchera. Même remarque pour la diffusion Møller au MeV, où un anneau de
 charge répartie aurait un facteur de forme que le point de Dirac n'a pas.
+
+**R90 — Matière noire = défaut neutre verrouillé du milieu DQD ? (proposition de l'auteur, avec
+son critère : énumérer les plus petites boucles neutres à Lk ≠ 0, calculer E(R) par les règles
+établies sans ajuster de masse, exiger un vrai minimum, poser m_DM = E_min/c², puis moments EM et
+sections efficaces.)**
+→ `dark_defect.py`, 4/4. **(A) Énumération** : un DQD fermé avec une demi-torsion est interdit (la
+branche + se raccorderait à la branche −) ; un DQD avec une torsion entière (lien de Hopf des
+branches ±e/3) est neutre mais porte un dipôle ~ (e/3)R = 33 e·fm à R = 100 fm, pas sombre (la
+matière noire dipolaire est exclue) ; **trois DQD avec writhe 1/3 (Z₃)** : neutre, dipôle nul par
+symétrie, quadrupôle et polarisabilité non nuls : le candidat X ; l'anneau 000 à writhe k/3 (les
+neutrinos) a le même statut. **(B) E(R)** par les règles de la base (circulation h/2 ou h par
+trajet, Coulomb des paires, pas de jonction faute de bout chargé) : **E·R = 89,4 MeV·fm constant de
+R = 10 fm à 10⁵ fm, E = C/R, dE/dR < 0 partout, aucun minimum** ; raison dimensionnelle, la base
+n'a que ℏc, α et l'ancre ƛ_e, un objet sans charge n'a pas de taille. **(C) Le seul ancrage**, épingler
+X à l'écart du vide D₀ = 241 fm comme les jonctions de l'électron (R54) : L = 3D₀, m_X = 0,88 MeV
+(h/2) ou 1,74 MeV (h) ; polarisabilité ~ R³ = 1,5·10⁶ fm³, section Rayleigh à T = 1 MeV de 129 barn
+(Thomson 0,67), Γ/H = 2·10²⁰ au BBN : thermalisé, ΔN_eff ~ 1 contre N_eff = 2,99 ± 0,17 : **exclu** ;
+et aucun neutre stable de 0,9–1,7 MeV dans les données e⁺e⁻ ou nucléaires. **(D)** Le nombre de
+l'auteur : ρ_DM c²/u₀ = 8,8·10⁻⁵/4,64·10²³ = 1,9·10⁻²⁸ ; avec A8 (u₀ ne gravite pas), une
+surdensité du substrat n'est pas un mécanisme. **Verdict** : EXCLU comme prédiction. Un défaut
+neutre verrouillé n'a pas de masse dans la base ; épinglé au vide il pèse ~1 MeV et le BBN
+l'exclut. Le secteur sombre de la base, ce sont les neutrinos, dont elle ne fixe pas la taille.
+Une prédiction de matière noire demanderait une constante nouvelle fixant la taille des boucles
+neutres, ce que R28 réclamait déjà (« ce qu'est une corde sans charge »).

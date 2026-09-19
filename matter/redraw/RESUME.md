@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R89)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R90)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R89).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R90).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -99,8 +99,10 @@ Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un deven
 Une prédiction sans nombre libre, qui mord (R89) : si l'électron est l'anneau, sa taille doit
 reproduire le terme de Darwin de l'hydrogène, r_rms = (√3/2)ƛ = 334 fm ; la charge de R84 donne
 363 fm (+18 % en ⟨r²⟩, +31 GHz sur le 1S, mesuré au kHz). Il faut un calcul atomique propre à la
-base ; il tranchera. La matière noire, elle, n'est pas prédite : la structure ne fixe la taille
-d'aucun objet neutre.
+base ; il tranchera. La matière noire, elle, n'est pas prédite : un défaut neutre verrouillé a
+E = C/R sans minimum (aucune taille pour un objet sans charge), et épinglé au vide il pèse
+~1 MeV, exclu par le BBN (R90) ; le secteur sombre de la base, ce sont les neutrinos, dont elle
+ne fixe pas la taille.
 
 Ce qui reste vraiment :
 
@@ -158,9 +160,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R89 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R90 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 84 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 85 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
