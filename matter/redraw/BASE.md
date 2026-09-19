@@ -623,3 +623,22 @@ valeur requise (~40 par nucléon à la densité de brin) n'est pas dérivée ; l
 la charge enroulée (cylindre chargé écranté à r_p) ajoute un terme du même ordre ou plus grand et
 abaisse les tours nécessaires à quelques dizaines par fm. **Verdict** : mécanisme réel, signe et
 échelle atteignables avec le fluide de l'électron ; le nombre (la torsion) reste à fixer.
+
+**R34 — « Cherche ce qui fixe la torsion Tw. »**
+→ `twist_search.py`, 5/5. Cinq candidats. **Topologie** : Tw = Lk − Wr ; Lk est un entier fixé à la
+naissance (R4) et conservé, Wr vaut 0 pour un anneau plan ou un bras droit ; Tw est donc l'entier
+avec lequel le brin est né : conservé, pas dérivé. **Énergie seule** : l'énergie du solénoïde croît
+en Tw², un brin libre se déroule à Tw = 0 ; seule la conservation tient une torsion. **Quantification
+du flux** : à la solution de R33 (46 tours/fm) le flux du cœur vaut 0,038 h/e ; un quantum entier
+h/e donnerait 680 fois la tension du réseau ; le flux propre de l'anneau de l'électron,
+(α/π)(ln(8R/a) − 2) = 0,0086 h/e, y tient 4,5 fois : pas d'entier naturel. **Adaptation à Z₀**
+(R10 et R17 appliqués à la ligne hélicoïdale) : L′ = μ₀n²πa², C′ = 2πε₀/ln(b/a), Z = Z₀·na·√(ln(b/a)/2),
+et Z = Z₀ fixe **na = √(2/ln(b/a)) = 1,20 (b = r_p) à 0,74 (b/a = 37,1) : environ un tour par rayon
+de cœur, angle de pas 7 à 12°, Tw = 3 à 5 tours dans le centre de 0,9 fm**. C'est la seule règle
+de la base qui fixe la torsion. **Conséquence** : le gain adapté π(na)² = 1,7 à 4,5 donne 5 à
+14 MeV/fm à la densité de brin du nucléon, 66 à 170 fois trop peu ; la tension du réseau au pas
+adapté exige une densité de trajet de 3,3 à 5,4 e/fm, des brins de e/3 longs de 0,06 à 0,10 fm
+(le n = 13 de l'échelle) : **le nombre libre passe de Tw à la densité**. L'électron n'est pas touché :
+son enroulement adapté sur son tube de 10,4 fm ajoute 0,03 MeV à 511 keV. Verdict : Tw est fixé
+par l'adaptation à Z₀ à ~1 tour par rayon de cœur (DÉRIVÉ sous R10/R17) puis conservé ; ce qui
+reste libre est la charge par unité de longueur de trajet du fluide.
