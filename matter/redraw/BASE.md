@@ -1252,3 +1252,24 @@ respiration à l'échelle de la particule donne τ ∝ 1/m) ; CONDITIONNEL si la
 comme m² par rapport à une échelle fixe de ~1 TeV, que la base n'a pas : c'est la constante de
 Fermi sous un autre nom. La règle à trouver : quel défaut fixe, mille fois plus petit que le ruban
 du quark, désadapte un circuit en (L/ℓ₁)².
+
+**R65 — « C'est le cas le plus probable [le défaut fixe de R64]. Sauf si résonance à Z ≠ Z₀. »**
+→ `resonance_mismatch.py`, 6/6. **L'alternative** : la particule instable serait une résonance
+dont l'impédance propre diffère de Z₀, et non un circuit adapté avec un petit défaut. Quatre
+lectures d'un Z ≠ Z₀, chacune confrontée aux 5,6·10¹⁶ tours du muon et aux > 2,6·10⁵⁶ tours de
+l'électron (borne 6,6·10²⁸ ans). **(1) Résonance confinée par sa désadaptation** (fuite par tour
+4ZZ₀/(Z+Z₀)²) : il faudrait Z/Z₀ = 4·10⁻¹⁸ ou 2·10¹⁷ ; à Z/Z₀ = 0,5 la fuite est de 89 % par tour,
+à 0,01 encore 4 % (26 tours) : aucune impédance ne fait cela, exclue. **(2) Petite désadaptation**
+(fuite (ΔZ/2Z₀)²) : ΔZ/Z₀ = 8,5·10⁻⁹ pour le muon, < 1,2·10⁻²⁸ pour l'électron ; à 10⁻⁸ près c'est
+Z₀, c'est le défaut fixe de R64 et non une autre impédance. **(3) La calibration de v2.9**,
+Z_e = 0,73 Z₀, lue comme impédance de l'anneau : 2,4 % de fuite par tour, 41 tours, 3·10⁻¹⁹ s
+contre > 2·10³⁶ s mesuré : ce nombre ne peut pas être l'impédance du circuit ; l'adaptation
+exacte de R10 est requise et l'électron est adapté à mieux que 10⁻²⁸. **(4) Résonance ouverte**
+(onde stationnaire, R47) : elle rayonne en 3ℏ/(αmc²) = 2,6·10⁻²¹ s, le muon vit 10¹⁵ fois plus :
+exclue pour μ, τ, n, π ; le Δ se défait 39 fois plus vite que ce temps de Larmor, c'est une
+rupture, pas un rayonnement. **(5) Dispersion** (Z ≠ Z₀ ⇒ v ≠ c, le paquet glisse d'un ruban en
+N tours) : 1 − v/c = 10⁻¹⁸, encore Z₀. **Verdict** : EXCLU ; toute résonance à Z ≠ Z₀ meurt en
+moins de cent tours, et dès que l'écart est assez petit pour vivre, il est le défaut fixe de R64.
+Le cas probable reste donc le seul : un circuit adapté à Z₀, une fuite ∝ m⁴ par un défaut fixe à
+l'échelle du TeV. Gain de consistance : l'électron doit être adapté exactement, ce qui ferme
+définitivement la lecture « Z_e = 0,73 Z₀ » de v2.9.

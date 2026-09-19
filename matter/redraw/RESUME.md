@@ -87,7 +87,8 @@ de l'exposant.
    (les identités trouvées à R63 sont des rationnels par construction). Et pourquoi 3, 7, 11
    (les DQD neutres s'ajoutent par paires, jamais un seul).
 2. Une dynamique : aucun processus n'est calculé. La durée de vie comme « respiration de Z » (R64)
-   exige une désadaptation en m² sur une échelle fixe de ~1 TeV que la base n'a pas.
+   exige une désadaptation en m² sur une échelle fixe de ~1 TeV que la base n'a pas ; une
+   résonance à Z ≠ Z₀ est exclue (R65 : elle meurt en moins de cent tours).
 3. La largeur du ruban, non dérivée depuis l'anneau fermé (R53), sauf par les trois jonctions (R54).
 4. Sur quel cercle tourne la circulation collective des trois circuits du nucléon (0,67 fm).
 5. Ce qui épingle l'anneau du pion à r_e/2.
@@ -97,7 +98,7 @@ de l'exposant.
 ## 7. Fichiers
 
 - `matter/redraw/BASE.md` : les énoncés R1–R56 et leurs conséquences calculées, avec deux bilans.
-- `matter/redraw/*.py` : 59 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 60 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
