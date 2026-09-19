@@ -1106,3 +1106,20 @@ avec la densité ci-dessus et un cœur de ƛ_p vaut 3·10⁻⁹ MeV/fm, 3·10¹�
 circulation propre du milieu est bien trop diluée pour confiner. **Verdict** : ce qui survit est le
 mécanisme d'héritage du quantum (si l'énergie du milieu ne gravite pas) ; l'expansion du milieu
 et le confinement par le milieu sont exclus. À préciser par l'auteur : quel dynamisme ?
+
+**R58 — « Cherche ce qui produit la rotation de Koide 2/9. »**
+→ `koide_angle.py`, 5/5. **Géométrie de Koide** : avec v = (√m_e, √m_μ, √m_τ), Q = |v|²/(Σv)² = 2/3
+signifie que v fait exactement 45° avec la diagonale (1,1,1) : la moitié de Σm est commune aux
+trois leptons (la projection sur la diagonale), l'autre moitié est dans leurs différences ;
+l'azimut de v autour de la diagonale est la rotation θ. **Les données** : angle polaire 45,000°
+(Q = 2/3 à 10⁻⁵) et |θ| = 2/9 rad à 10⁻⁵ près, exact à la précision de la masse du tau : tout
+mécanisme doit donner 2/9 exactement, pas 0,22 ± 1 %. **La loi de puissance** (n/3)^{2π} à 3, 7, 11
+donne 45,07° et un azimut de 0,2200 rad, à 1 % de 2/9 : la structure des comptes place déjà l'azimut,
+l'exactitude de Koide est le raffinement qui manque (R55). **Ce qui vaut 2/9 dans la base** : les
+produits de charges de brins |q_u·q_d| = (2/3)(1/3) et 2·(1/3)² sont exacts ; aucun autre nombre de
+la base (facteurs de Berry 0,186 à 0,507, rapport d'aspect 6/π³, fractions circulantes 3/4 et 0,313,
+4/π², 1/2π) n'est à moins de 10 %. **Le 45°** : « moitié commune, moitié dans les différences » est
+l'analogue à trois leptons du « moitié circulante, moitié immobile » de g = 2 ; une analogie, pas une
+dérivation. **Verdict** : 2/9 est exact et égal au produit des charges u et d, mais aucune règle de
+la base ne transforme un produit de charges en azimut du cercle des générations ; le mécanisme
+cherché doit produire à la fois le 45° et le 2/9.
