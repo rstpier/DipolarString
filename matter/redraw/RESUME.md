@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R83)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R84)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R83).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R84).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -106,9 +106,11 @@ Ce qui reste vraiment :
    exactement sous une demi-torsion, +i sous un quart (R82). L'anneau ne peut pas être une toupie
    rigide (un j = 3/2 suivrait à 3mc² = 1,5 MeV, exclu) ; sans inertie d'orientation, l'orbite de
    rotation avec le mode dipolaire est la sphère de Bloch de j = ½, et l'attache par les jonctions
-   donne l'échange par le tour de ceinture (R83). Restent deux maillons : que l'électron porte le
-   motif dipolaire (candidat : la courbure w/R = 0,4 déplace le cœur), et l'absence d'inertie
-   d'orientation (éther de Lorentz). Sans cela, pas d'atome à plusieurs électrons.
+   donne l'échange par le tour de ceinture (R83). La courbure déplace le cœur de la circulation de
+   34 fm vers l'intérieur (22 % de la section, flux exclu) : l'électron porte le motif dipolaire
+   sans choix (R84). Restent deux maillons posés : le demi-tour de section par circuit (t = ½) qui
+   fait le signe, et l'absence d'inertie d'orientation (éther de Lorentz). Sans cela, pas d'atome
+   à plusieurs électrons.
 2. **Le mécanisme de Koide** : les masses sont les carrés des trois valeurs propres d'un opérateur
    de racine de masse C₃ (circulant), et Koide est la règle a² = 2|b|² (le 45°) avec la phase
    φ = 2/9, toutes deux posées (R76). Le 45° équivaut exactement à « normes isotrope et
@@ -140,9 +142,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R83 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R84 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 78 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 79 scripts (tous PASS), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

@@ -1644,3 +1644,23 @@ circuit fait tourner ce déplacement dans le repère de la section ; (ii) que l'
 sans inertie, ce que l'éther de Lorentz affirme et que le muon en vol vérifie pour l'horloge (R67).
 La chaîne vers Pauli est maintenant écrite de bout en bout, avec ses deux maillons conditionnels
 nommés.
+
+**R84 — Le cœur de la circulation est-il hors du centre de la section ? (le maillon (i) de R83)**
+→ `core_displacement.py`, 5/5. **Modèle** : l'anneau de l'électron comme ligne adaptée sans perte
+(conducteur parfait, flux exclu), R = ƛ, section carrée w = 4ƛ/π² (w/R = 0,405), courant total I le
+long de l'anneau ; le courant de surface se répartit sur le périmètre de la section pour rendre le
+flux poloïdal ψ = rA_φ constant sur la surface ; filaments coaxiaux (inductances mutuelles par
+intégrales elliptiques), ψ_i = ΣM_ij I_j = const, ΣI_j = I. **Résultat** : le centroïde du courant est
+à r_c = 352,3 fm, soit **δ = R − r_c = 33,9 fm vers l'intérieur, 21,7 % de w** (8,8 % de R) ; face
+interne/externe = 4,1 ; convergé à 0,3 % (20 → 60 filaments par côté), robuste au rayon effectif
+des filaments à 1 % (h/2, h/4, h/8 : 34,2 ; 33,9 ; 33,7 fm) ; z_c = 0 (purement radial) ; tous les
+courants positifs. **Échelle** : l'estimation K ∝ 1/r donnerait w²/(12R) = 5,3 fm ; le flux exclu
+concentre le courant sur la face interne six fois plus, exposant en w de 1,76 (w² corrigé par
+ln(8R/w)) : à w/R = 0,1 et 0,2, δ = 3,0 et 10,1 fm. **Fil résistif** (courant uniforme) : δ = 0 ; le
+déplacement est propre à la ligne sans perte, la lecture de la base. **Sens** : le déplacement est
+radial, fixe dans l'espace ; avec le demi-tour de section par circuit (R78, R82) il tourne de −π par
+tour dans le repère de la section : c'est le motif dipolaire antipériodique, d'amplitude δ/w = 0,22.
+**Verdict** : DÉRIVÉ que la courbure met le cœur hors du centre (l'électron porte le motif dipolaire
+sans qu'on le choisisse, avec une amplitude de 22 % de la section) ; reste posé le demi-tour de
+section par circuit (t = ½, R78), qui fait le signe. La chaîne vers Pauli n'a plus qu'un maillon
+posé de ce côté, plus l'absence d'inertie d'orientation (R83 ii).
