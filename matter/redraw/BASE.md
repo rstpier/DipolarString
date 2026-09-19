@@ -732,3 +732,20 @@ brin. Côte à côte : δ par brin → électron 0,91 m_e (×1,8 la moitié stat
 de l'électron, anneau du proton à 125 MeV, centre non couvert. **Verdict** : la base a le nombre
 (πℏc/ℓ₁², √σ = 430 MeV) mais pas la règle qui dit quel brin porte la charge de vortex ; la route de
 l'enroulement (R33–R38) se ferme comme mécanisme de force.
+
+**R40 — « Et ? » : la règle qui assignerait la charge de vortex.**
+→ `circuit_rule.py`, 5/5. Règle testée : **un quantum de circulation, de charge q = e/(2√α), par
+circuit bifilaire fermé** (le fluide sort par une branche et revient par l'autre) ; une chaîne de
+brins bout à bout est un seul circuit, une étoile a un circuit par bras (R20). **Électron** = un
+circuit de trois brins (trajet 3ℓ₁(3) = 2πƛ) : l'énergie de ligne adaptée 4πK(q/trajet)² × trajet =
+πℏc/(3ℓ₁) = m_ec²/2 exactement, la moitié circulante de R13, par la même formule que la tension du
+nucléon ; μ et τ suivent par l'échelle. **Bras d'étoile** = un circuit d'un brin : tension
+πℏc/ℓ₁(9)² = 939 MeV/fm, √σ = 430 MeV, dans la bande du réseau. Une règle, les deux secteurs, sans
+nombre libre. **Mais** énergie = tension × longueur : un bras de ℓ₁(9) stocke 763 MeV ; cinq bras
+chargés (proton à trois brins) pèseraient 3,8 GeV ; **un seul bras** donne 763 MeV, la part statique
+du proton avec e sur un anneau (770 MeV, R25 A) à −0,9 % : le centre serait un circuit unique.
+Parité de spin : ℏ/2 par circuit, nombre impair → spin demi-entier : leptons (1), quarks (3),
+baryons (9) impairs, mésons (6) pairs ; cohérent, sans prédiction. **Verdict** : la règle des
+circuits réconcilie la moitié de l'électron et la tension du réseau sans nombre libre ; elle ne
+donne la masse du proton que si son centre est un seul circuit, contre le contenu à trois brins
+(cinq bras chargés). Ouvert : quels brins se ferment en circuits.
