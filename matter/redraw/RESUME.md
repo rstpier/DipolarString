@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R103)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R104)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R103).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R104).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -33,6 +33,12 @@ pour la tension de corde et l'écart proton–neutron.
   μ_B et g = 2 par la structure spinorielle) ; les nombres de l'anneau (S = ℏ/2, μ_B, g = 2) sont
   des identités de Compton ajustées à Dirac, et le demi-quantum πℏ par tour est l'action du
   Zitterbewegung. L'anneau reste une circulation d'énergie neutre (horloge de de Broglie).
+  **Lecture champ (R104)** : l'électron est le quantum du champ du milieu ; la paire (V, I) de la
+  ligne est déjà un champ à deux composantes du premier ordre, le demi-quantum est le secteur
+  antipériodique de l'anneau, le mode fondamental à R = ƛ/2 avec toute l'énergie reproduit Dirac
+  sans moitié statique, F = 1 par construction, μ_B et g = 2 par la structure du premier ordre.
+  Il manque au milieu un doublet spinoriel sous les rotations (R105 candidat), et l'ancre des
+  hadrons 2πƛ devient une longueur posée.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -114,6 +120,11 @@ ou la structure de Dirac. C'est le point exact où la base et l'électron de Dir
 de Dirac avec une boucle que la diffusion exclut ; ce qui reste à la base est ailleurs : brins,
 générations (Koide, conditionnel), quarks et nucléon, tension forte, force nucléaire, loi de fuite
 (identité avec G_F). La consolidation doit porter là.
+**Après R104** : la lecture « quantum d'un champ universel » est cohérente avec tout ce qui précède et
+donne l'électron de Dirac (ƛ/2, 2mc²/ℏ, L_z = ℏ/2, F = 1, g = 2) au prix d'une addition unique,
+un doublet du milieu qui tourne comme un spineur avec la direction de propagation (R105) ; en
+retour l'ancre hadronique 2πƛ n'est plus dérivée de l'électron mais posée. L'article
+(`matter/paper/`) est consolidé jusqu'à R103.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -219,9 +230,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R103 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R104 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 98 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 99 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

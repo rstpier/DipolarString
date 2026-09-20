@@ -2189,3 +2189,40 @@ d'énergie neutre, sans charge dessus, et ne prédit rien au-delà de Dirac pour
 **Verdict** : DÉCISION (b). Le secteur électron de la base est une reformulation de Dirac, avec
 une boucle que la diffusion exclut ; le contenu propre de la base est ailleurs (brins, générations,
 hadrons). C'est là que la consolidation doit porter.
+
+**R104 — L'électron comme quantum d'un champ universel** (« L'électron semble une entité sans
+localité quand il n'est pas observé… peut-être un champ électronique universel ? »).
+→ `field_quantum.py`, 6/6. Le manuscrit le dit déjà : l'électron est le quantum de la ligne, pas
+son soliton ; un quantum est étalé comme son mode tant qu'il n'interagit pas et se prend en entier
+quand il est absorbé ou diffusé. Ce que la lecture achète et ce qu'elle coûte, calculé. **(A)** Les
+équations du télégraphiste sur une ligne adaptée sont un champ à deux composantes du premier ordre :
+les modes propres du symbole sont V ± Z₀I à ±c sans dispersion, i∂_tψ = −icσ_z∂_xψ, la paire de
+Weyl 1+1 D (identité). **(B)** Sur un anneau fermé de longueur L, le spectre est ℏc|k| avec
+k = 2πn/L (secteur périodique) ou 2π(n + ½)/L (antipériodique) : **le quantum entier 2πℏc/L de la
+mère (R87) est le fondamental périodique, le demi-quantum πℏc/L de la fille (R47, R86) le
+fondamental antipériodique ; le −1 sous un tour est la condition aux limites du champ** (identité).
+**(C)** Le mode fondamental antipériodique porte L_z = ℏ/2 à tout rayon ; son énergie ℏc/(2R) fixe
+le rayon : avec toute l'énergie de repos dans le mode, R = ƛ/2 = 193 fm, tour à 2mc²/ℏ, phase à
+mc²/ℏ, **les trois nombres du Zitterbewegung de Dirac (R103 B), sans moitié statique**. La lecture
+R53 (R = ƛ, m/2 dans le mode) est le même mode à rayon double, qui doit loger m/2 ailleurs (R54,
+coïncidence). **(D)** Le vertex de charge d'un quantum de champ : |⟨k+q|ρ̂(q)|k⟩| = e pour tout q
+(vérifié à 10⁻⁹ de 0,5 à 100 MeV/c), quelle que soit l'étendue du mode : **F = 1 par construction**,
+contre j₀(qR) = 0,45 à 1 MeV/c pour la charge classique étalée (R100) ; la « taille » d'un quantum
+est la longueur d'onde de son paquet, pas une distribution de charge. **(E)** Le moment sans boucle :
+pour un champ à deux composantes couplé au premier ordre, (σ·π)² = π² − eℏσ·B (vérifié à 3·10⁻¹⁴
+dans la représentation de Landau), donc H = (σ·π)²/2m contient −μ_Bσ·B : μ = μ_B, g = 2, sans
+courant de charge spatial ; Lévy-Leblond (1967) : la linéarisation de Schrödinger suffit, la
+relativité n'est pas nécessaire. **(F) Ce qui manque à la base** : son doublet (V₊, V₋) est attaché
+à une direction de ligne (σ_z∂_x) ; pour σ·∇ il faut que le doublet tourne comme un spineur avec la
+direction de propagation (le relèvement SU(2) de R95 appliqué au mode du milieu, pas à un anneau)
+et que les trois directions de la trame portent l'algèbre de Pauli ; V2.10 n'a que Φ et θ : une
+addition structurelle, une seule, nommée. **(G) Conséquence sur l'échelle des hadrons** : l'ancre
+ℓ₁(3) = 2πƛ/3 était « le circuit de l'électron divisé par trois » ; dans la lecture champ le circuit
+de l'électron mesure πƛ, et « le quark = l'électron à l'échelle 9 » pèserait 509 MeV, trois quarks
+1525 MeV > m_p. Les nombres hadroniques (R41–R45) tiennent seulement si 2πƛ est une longueur posée ;
+E_quark = (m_e/2)·3^{2π} n'est plus une géométrie de l'électron. **Verdict** : CONDITIONNEL ; la
+lecture champ est cohérente avec R99–R103 et les force (F = 1, ƛ cinématique, demi-quantum =
+secteur antipériodique, Dirac sans moitié statique, μ_B et g = 2 par la structure du premier ordre) ;
+son prix est une addition (le doublet spinoriel du milieu, F) et une rétrogradation (l'ancre
+hadronique devient posée, G). Candidat R105 : écrire le doublet du milieu sur les trois directions
+de la trame et tester l'algèbre de Pauli.
