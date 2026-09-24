@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R104)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R105)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R104).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R105).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -37,8 +37,12 @@ pour la tension de corde et l'écart proton–neutron.
   ligne est déjà un champ à deux composantes du premier ordre, le demi-quantum est le secteur
   antipériodique de l'anneau, le mode fondamental à R = ƛ/2 avec toute l'énergie reproduit Dirac
   sans moitié statique, F = 1 par construction, μ_B et g = 2 par la structure du premier ordre.
-  Il manque au milieu un doublet spinoriel sous les rotations (R105 candidat), et l'ancre des
-  hadrons 2πƛ devient une longueur posée.
+  Il manque au milieu un doublet spinoriel sous les rotations, et l'ancre des hadrons 2πƛ
+  devient une longueur posée. **R105** : les trois directions de la trame ne le fournissent pas
+  (A₁ + E + T₁, spin 0 et 1 ; une trame réelle n'a pas de σ_y) ; le i vient de la circulation à
+  sens unique, l'algèbre de Pauli de l'orientation de l'unité qui circule (R95) ; la moyenne sur
+  les orientations donne la forme de Weyl σ·p à vitesse c/3, la règle de nœud devant restaurer c
+  (R106 candidat).
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -123,7 +127,10 @@ générations (Koide, conditionnel), quarks et nucléon, tension forte, force nu
 **Après R104** : la lecture « quantum d'un champ universel » est cohérente avec tout ce qui précède et
 donne l'électron de Dirac (ƛ/2, 2mc²/ℏ, L_z = ℏ/2, F = 1, g = 2) au prix d'une addition unique,
 un doublet du milieu qui tourne comme un spineur avec la direction de propagation (R105) ; en
-retour l'ancre hadronique 2πƛ n'est plus dérivée de l'électron mais posée. L'article
+retour l'ancre hadronique 2πƛ n'est plus dérivée de l'électron mais posée. R105 : ce doublet
+n'est pas dans les directions de la trame (spin 0 et 1 seulement, pas de σ_y dans une trame
+réelle) ; il est dans l'orientation des excitations à sens unique, et leur moyenne a la forme de
+Weyl σ·p à vitesse c/3 ; reste la règle de nœud qui transporte le spineur à c (R106). L'article
 (`matter/paper/`) est consolidé jusqu'à R103.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
@@ -230,9 +237,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R104 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R105 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 99 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 100 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

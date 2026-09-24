@@ -2226,3 +2226,35 @@ secteur antipériodique, Dirac sans moitié statique, μ_B et g = 2 par la struc
 son prix est une addition (le doublet spinoriel du milieu, F) et une rétrogradation (l'ancre
 hadronique devient posée, G). Candidat R105 : écrire le doublet du milieu sur les trois directions
 de la trame et tester l'algèbre de Pauli.
+
+**R105 — Le doublet du milieu sur les trois directions de la trame : l'algèbre de Pauli** (le
+candidat nommé en R104 F).
+→ `weave_doublet.py`, 4/4. **(A) La trame réelle ne peut pas.** (i) Une trame réciproque (champ
+(V, I) réel, renversement du temps T² = +1) a des hamiltoniens effectifs réels symétriques, dont
+la composante σ_y est identiquement nulle (vérifié sur 1000 tirages) : au plus deux matrices de
+Pauli, jamais trois. (ii) Les six demi-lignes d'un nœud O_h (24 rotations construites, classes
+E, 8C₃, 3C₂, 6C₄, 6C₂′, caractères 6, 0, 2, 2, 0) se décomposent en **A₁ + E + T₁** : un scalaire, un
+doublet réel E (représentation de O ⊂ SO(3), 2π → +1, bosonique) et un vecteur (spin 1). Aucun
+doublet spinoriel : le « carrier neutre » de la phase A, redit en représentations. **(B) Ce qui
+fournit le i** : une circulation à sens unique. Les deux quadratures d'une onde progressive
+tournent sous la translation du temps avec un générateur J, J² = −1, et T le renverse
+(TJT⁻¹ = −J) : une onde stationnaire n'a pas de structure complexe définie ; l'anneau à sens unique
+(R53) a le i, la trame réciproque ne l'a pas. **(C) Ce qui porte l'algèbre de Pauli** :
+l'orientation d'une unité qui circule (R95). Les coordonnées spinorielles ψ(n̂) = (cos θ/2,
+e^{iϕ} sin θ/2) avec la phase de circulation forment un C² (Hopf, ψ†σψ = n̂, vérifié) ; une
+rotation de l'orientation agit par l'élément SU(2) du relèvement de R95, Uψ(n̂) = ψ(Rn̂) à une
+phase près (|recouvrement| = 1 à 10⁻⁶) ; le commutateur de deux petites rotations (δ = 0,05 autour
+de x puis y) est la rotation nette de δ² = 0,0025 autour de z, et son relèvement vaut
+exp(∓iδ²σ_z/2) (coefficient 0,00125, σ_x et σ_y à 3·10⁻⁵) : **[σ_x/2, σ_y/2] = iσ_z/2 est la loi de
+composition des rotations de l'orientation**, pas une propriété des directions du réseau.
+**(D) L'opérateur moyen d'un milieu de telles unités** : chaque unité porte la paire 1+1 D le long
+de son axe, h = c(σ·n̂)(n̂·p) dans son repère ; la moyenne sur les orientations (isotrope à 10⁻³,
+ou les trois axes cubiques, exactement) donne ⟨(σ·n̂)(n̂·p)⟩ = (1/3)σ·p : **la forme de Weyl sort de
+la moyenne, avec une vitesse c/3**. L'électron a c dans E² = p²c² + m²c⁴ : la règle de nœud doit
+restaurer c pour le secteur spinoriel comme le théorème 3 du manuscrit le fait pour le secteur
+scalaire ; non calculé. **Verdict** : CONDITIONNEL. Les trois directions de la trame ne portent que
+du spin 0 et 1 ; le champ électronique universel est le champ des excitations orientées à sens
+unique du milieu (le secteur antipériodique de R104), dont l'orientation porte SU(2) et la
+circulation le i ; sa forme moyenne est σ·p ; sa vitesse est c/3 tant que la règle de nœud n'est
+pas écrite. **R106 candidat** : ce que le nœud O_h fait à une excitation orientée à sens unique qui
+passe d'une ligne à l'autre (transport cohérent du spineur, vitesse c).
