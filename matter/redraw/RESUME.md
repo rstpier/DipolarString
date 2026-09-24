@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R105)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R106)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R105).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R106).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -41,8 +41,11 @@ pour la tension de corde et l'écart proton–neutron.
   devient une longueur posée. **R105** : les trois directions de la trame ne le fournissent pas
   (A₁ + E + T₁, spin 0 et 1 ; une trame réelle n'a pas de σ_y) ; le i vient de la circulation à
   sens unique, l'algèbre de Pauli de l'orientation de l'unité qui circule (R95) ; la moyenne sur
-  les orientations donne la forme de Weyl σ·p à vitesse c/3, la règle de nœud devant restaurer c
-  (R106 candidat).
+  les orientations donne la forme de Weyl σ·p à vitesse c/3. **R106** : sur la trame cubique de la
+  base (nœud SCN de Johns), la famille complète des nœuds unitaires équivariants pour un spineur
+  verrouillé à sa direction donne un cône de Weyl isotrope à v = 1/3 exactement, contre c₀ = 1/2
+  pour le photon de la même trame : v_e/c₀ = 2/3, exclu (LEP, 10⁻¹¹) ; un spineur qui va à c₀ y est
+  inerte (pas de −1). La trame ne porte pas à la fois le spineur et la vitesse.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -130,8 +133,13 @@ un doublet du milieu qui tourne comme un spineur avec la direction de propagatio
 retour l'ancre hadronique 2πƛ n'est plus dérivée de l'électron mais posée. R105 : ce doublet
 n'est pas dans les directions de la trame (spin 0 et 1 seulement, pas de σ_y dans une trame
 réelle) ; il est dans l'orientation des excitations à sens unique, et leur moyenne a la forme de
-Weyl σ·p à vitesse c/3 ; reste la règle de nœud qui transporte le spineur à c (R106). L'article
-(`matter/paper/`) est consolidé jusqu'à R103.
+Weyl σ·p à vitesse c/3. R106 a écrit la règle de nœud : la famille complète des nœuds
+unitaires équivariants sur la trame cubique de la base transporte le spineur verrouillé
+isotropiquement à v = 1/3 exactement, le photon (SCN) allant à 1/2 : v_e/c₀ = 2/3, exclu par le LEP
+à 10⁻¹¹ ; le spineur inerte va à 1/2 mais sans −1. **La trame cubique ne peut pas porter à la fois
+le spineur et la vitesse de la lumière** : le champ électronique n'est pas une excitation de cette
+trame, ou un mécanisme absent partage le nœud. L'article (`matter/paper/`) est consolidé jusqu'à
+R103.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -237,9 +245,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R105 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R106 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 100 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 101 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

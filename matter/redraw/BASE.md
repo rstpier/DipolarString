@@ -2258,3 +2258,35 @@ unique du milieu (le secteur antipériodique de R104), dont l'orientation porte 
 circulation le i ; sa forme moyenne est σ·p ; sa vitesse est c/3 tant que la règle de nœud n'est
 pas écrite. **R106 candidat** : ce que le nœud O_h fait à une excitation orientée à sens unique qui
 passe d'une ligne à l'autre (transport cohérent du spineur, vitesse c).
+
+**R106 — La règle de nœud : transporter une excitation orientée à sens unique d'une ligne à
+l'autre de la trame, avec son spineur, et à quelle vitesse** (le candidat de R105).
+→ `node_transport.py`, 6/6. Le nœud de la base est le SCN de Johns (`v2.9/scripts/johns/S_johns.npy`,
+12 ports, l'unique nœud isotrope de son ansatz). **(A) Reproduit** : symétrique, unitaire, deux
+branches acoustiques à v = 1/2 sur 12 directions (2·10⁻⁷) ; c'est le c₀ de la base (vitesse de ligne
+1, maille 1). **(B) L'étiquette inerte** : attacher un spineur à chaque impulsion et le faire
+« suivre la direction » par une base d'hélicité par direction de mouvement, S_spin = W_out(S ⊗ I₂)W_in†,
+est une relabellisation : bandes du SCN doublées exactement (4·10⁻¹⁵), v = 1/2, holonomie +1 sur la
+boucle carrée ; le réseau ne voit pas ce spineur. **(C) Le transport géométrique** (relèvement SU(2)
+de la rotation la plus courte à chaque virage, R95) donne −1 autour de la boucle carrée (quatre
+virages de 90° autour de z), mais le nœud S_ij U_ij n'est pas unitaire (‖S†S − I‖ = 1,00) : la règle
+de nœud d'un spineur n'est pas « le SCN plus une rotation ». **(D) La règle construite.** Sur les
+six états d'hélicité + |n̂, +⟩ (une excitation à sens unique, spineur verrouillé à sa direction), le
+groupe octaédrique binaire (48 éléments) agit par j = ½ ⊕ j = 3/2 (2 + 4, commutant de dimension
+2) ; le nœud unitaire équivariant est une phase par composante, et c'est la famille complète.
+Contrôle scalaire (six directions, A₁ + E + T₁, commutant 3, 48² phases) : le seul point isotrope
+à branche linéaire est A₁ et T₁ à phase 0 et E à π, le nœud shunt (1/3)J − I, v = 1/√3 (4·10⁻⁷).
+Spineur : le secteur j = 3/2 à phase 0 ne donne aucun point isotrope ; le secteur j = ½ à phase 0
+donne, pour toute phase β du j = 3/2 entre 0,1π et 1,9π, **un cône de Weyl isotrope** (une branche
+±v|q|, anisotropie < 10⁻⁴, linéaire à 2 %), avec **v = 1/3 exactement à β = π** (0,333333205, 5·10⁻⁷)
+et v de 0,331 à 0,336 sur toute la famille ; β → 0 ou 2π rend le nœud identique, balistique et
+anisotrope. Le c/3 de R105 D est donc la vitesse exacte du nœud spinoriel, pas un artefact.
+**(E)** La même trame donne au photon (SCN) c₀ = 1/2, au scalaire 1/√3, au spineur verrouillé 1/3 :
+**v_e/c₀ = 2/3**, contre |v_max,e − c|/c < 10⁻¹¹ mesuré au LEP (Hohensee et al. 2009). **Verdict** :
+EXCLU sur la trame cubique de la base. Une excitation de spin ½ verrouillée à sa direction s'y
+propage isotropiquement, avec le bon cône de Weyl et le −1 par tour, mais aux deux tiers de la
+vitesse de la lumière de la même trame ; un spineur qui va à c₀ y est inerte (pas de −1). **La trame
+ne peut pas porter à la fois le spineur et la vitesse.** Ce qui reste : ou bien le champ électronique
+n'est pas une excitation de la trame cubique (faisceaux n ≥ 3 de la phase A, autre géométrie de
+nœud), ou bien un mécanisme absent partage le nœud entre le spineur et le photon. C'est le point
+exact où « l'électron est le quantum de la ligne » rencontre la relativité.
