@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R108)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R109)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R108).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R109).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -149,8 +149,10 @@ peut pas porter à la fois le spineur et la vitesse de la lumière** : le champ 
 pas une excitation de cette trame, ou un mécanisme absent partage le nœud. R108 : les faisceaux
 n ≥ 3, seule autre structure de la base, ne portent pas de spineur (charge de Berry continue,
 jamais ½ par structure ; holonomie de génération à Tw = 0). **La base n'a plus de porteur candidat
-pour un spineur à la vitesse de la lumière.** L'article (`matter/paper/`) est consolidé jusqu'à
-R108.
+pour un spineur à la vitesse de la lumière.** Le secteur hadronique, qui n'en dépend pas, est
+consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) : des rapports à
+1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). L'article
+(`matter/paper/`) est consolidé jusqu'à R109.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -256,12 +258,15 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R108 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R109 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 103 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 104 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
+- `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,
+  table des résultats avec statuts, sensibilités, ce qui tuerait le secteur ; `hadron_sector.py`
+  recalcule toute la chaîne en un bloc (6/6).
 - `matter/paper/DS_matter_sector.tex` : la consolidation de R1 à R103 en article (anglais,
   12 pages, `latexmk -pdf`), avec le registre à six niveaux de chaque affirmation, la section
   « électron » comme exclusion, et la divulgation méthodologique (calcul par un second système

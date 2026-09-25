@@ -2344,3 +2344,20 @@ une charge de Berry continue, jamais exactement ½ par structure ; il n'est pas 
 l'était il irait à 1/3 sur la trame. Sa vraie fonction dans la base est l'étiquette de génération.
 Les faisceaux ne sont pas le porteur du champ électronique ; **la base n'a plus de porteur
 candidat pour un spineur à la vitesse de la lumière.**
+
+**R109 — Le secteur hadronique en un seul calcul** (« Consolide le secteur hadronique »).
+→ `hadron_sector.py`, 6/6, et le chapitre `HADRONS.md`. Toute la chaîne recalculée d'un bloc :
+ℓ₁(9) = (2π/3)ƛ_e·3^{−2π} = 0,8128 fm → circuit de quark 254,2 MeV = (m_e/2)·3^{2π} → part statique
+762,7 MeV (81,3 % de m_p) → anneau (trois lectures : 0,562 ; 0,587 ; 0,672 fm ; N = 910 et Δ = 1203
+avec un seul rayon, −3,1 % et −2,3 %) → n − p (partie forte 2,474 MeV = (2α/3)·3^{2π}·m_e, réseau
+2,52 ± 0,29 ; total 1,269 bouchon, 1,324 plaque, mesuré 1,293 ; part QED implicite −1,20 contre
+−1,00 ± 0,16) → √σ = (3/(2√π))·3^{2π}·m_e = 430,3 MeV (réseau 420–440) → force nucléaire 2 MeV à
+0,720 fm ; pion 2m_e/α (+0,34 %, identification) ; r_p à −3,3 % (ℓ₁) et −0,6 % (enveloppe),
+coïncidences. **Sensibilités** : l'exposant dans sa fenêtre (6,2758–6,2926) déplace tout de moins
+de 2 % ; le compte 9 pèse (8 : 364 MeV ; 10 : 1479 MeV) ; w à un facteur 2 : n − p de −12 à +9 % ;
+le rayon de l'anneau (0,56–0,67 fm) est le seul nombre non fixé qui pèse sur m_p (938 → 910).
+**Indépendance** : rien de l'électron n'entre sauf m_e via ƛ_e ; l'ancre est la longueur ℓ₁(9),
+posée via 2π/3 et 3^{2π} sous la lecture champ (R104 G). **Statut** : un ensemble de rapports à
+1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau) ;
+la table des statuts, les entrées, les règles, les sensibilités et les tests qui tuent sont dans
+`HADRONS.md`.

@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 108 steps (R1--R108) backed by 103 scripts.
+statement imposes and what it breaks; the record is 109 steps (R1--R109) backed by 104 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -393,6 +393,18 @@ The same rule fails for the pions: two circuits of three strands give 40~MeV at 
 508~MeV at $\lone(9)$, never 140. The pion is the closed ring at $r_e/2$, whose mode energy is
 $2m_e c^2/\alpha = 140.05$~MeV ($\pi^\pm$: $+0.34\,\%$); this is the known coincidence
 $m_\pi \approx 2m_e/\alpha$, an identification of the scale and not a derivation (R16).
+
+The whole chain is recomputed in one script (\texttt{hadron\_sector.py}, R109) from the inputs,
+with its sensitivities: moving the exponent across the window the lepton masses allow
+($6.2758$--$6.2926$) shifts every hadronic number by less than $2\,\%$; the strand count is the
+input that weighs (8 or 10 in place of 9 would give 364 or 1479~MeV for the static part); the
+ribbon width enters $m_n - m_p$ only through a logarithm that nearly cancels between $u$ and $d$
+($-12$ to $+9\,\%$ for a factor of two); the ring radius, $0.56$--$0.67$~fm, is the one number
+the base does not fix and it moves the nucleon mass from 938 to 910~MeV. Nothing of the electron
+enters but $m_e$ through $\lb$: the sector is independent of the exclusions of
+Sections~\ref{sec:electron}--\ref{sec:fieldquantum}, and under the field reading its anchor
+$2\pi\lb/3$ is a posed length. The consolidated chapter, with inputs, rules, chain, statuses and
+what would kill the sector, is \texttt{matter/redraw/HADRONS.md}.
 
 \status{as in the table; the nucleon ring radius is the number the base does not fix}
 
@@ -804,7 +816,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 103 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 104 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
