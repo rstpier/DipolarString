@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 103 steps (R1--R103) backed by 98 scripts.
+statement imposes and what it breaks; the record is 107 steps (R1--R107) backed by 102 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -106,7 +106,11 @@ the tau, with $M = (96\pi^2)^{1/4}/\sqrt{G_F}$ an identity, not a derivation. Th
 does not survive: any charge carried by a 386~fm ring has the form factor $j_0(qR)$, excluded by
 Compton, $e$--$p$ and LEP data; a Bohr magneton carried by a charge loop needs $R \ge \lb$ at
 $v \le c$; the ring's numbers are Compton identities fitted to Dirac. Decision: the
-electromagnetic electron is Dirac's.
+electromagnetic electron is Dirac's. Read instead as the quantum of the medium's field, the
+electron is consistent with all of this (the telegrapher pair is a Weyl pair, the half quantum is
+the antiperiodic sector of a closed line, $G_E = 1$ by construction, $g = 2$ from the first-order
+structure), but on the base's cubic weave every spin-$\tfrac12$ excitation propagates at exactly
+$2/3$ of the weave's light speed, excluded at $10^{-11}$.
 
 \noindent\textbf{Conclusions.} What the framework can now claim is a set of hadronic and
 generational ratios given one anchor, each at its stated level. What it cannot claim is an
@@ -139,7 +143,9 @@ representation the redraw had built, a closed ring of radius $\lb$ carrying the 
 excluded by the measured electromagnetic form factors, and that its numbers ($S = \hbar/2$,
 $\mu_B$, $g = 2$) are identities of the choice $R = \lb$, $E_{\rm circ} = m/2$, $q = e$ rather than
 outputs. The decision taken (R103) is that the electromagnetic electron is Dirac's point particle.
-The sector's claims are therefore hadronic and generational.
+Steps R104--R107 then test the reading the author proposed, the electron as the quantum of a
+universal field, and find it consistent but not realizable on the base's cubic weave
+(Section~\ref{sec:fieldquantum}). The sector's claims are therefore hadronic and generational.
 \item The computation was done by a second AI system on the author's statements, with the
 repository's constraints in view. This is a shared prior, not independent replication
 (Section~\ref{sec:disclosure}).
@@ -562,6 +568,75 @@ if anything, a neutral circulation of energy, the de Broglie clock, carrying no 
 author's}
 
 %------------------------------------------------------------------------------
+\subsection{The electron as the quantum of the medium's field}\label{sec:fieldquantum}
+%------------------------------------------------------------------------------
+
+The author's proposal after R103: the electron has no locality when it is not observed; it is the
+quantum of a universal field, the medium itself, spread like its mode and taken whole when it
+interacts. The manuscript already says so (``the electron is the quantum of the line, not its
+soliton''). Four steps test what this reading buys and what it costs
+(\texttt{field\_quantum.py}, \texttt{weave\_doublet.py}, \texttt{node\_transport.py},
+\texttt{polarized\_spinor\_node.py}).
+
+\begin{enumerate}[nosep]
+\item \textbf{What it buys (R104).} The telegrapher equations of a matched line are a first-order
+two-component field: the eigenmodes of the symbol are $V \pm Z_0 I$ at $\pm c$ without dispersion,
+$i\partial_t\psi = -ic\,\sigma_z\partial_x\psi$, the 1+1 Weyl pair. On a closed line of length
+$L$ the spectrum is $\hbar c|k|$ with $k = 2\pi n/L$ (periodic sector) or $2\pi(n+\tfrac12)/L$
+(antiperiodic): the mother's whole quantum $2\pi\hbar c/L$ (R87) is the periodic ground state, the
+daughter's half quantum $\pi\hbar c/L$ (R47, R86) the antiperiodic one, and the $-1$ under a full
+turn is the field's boundary condition. The antiperiodic ground mode carries $L_z = \hbar/2$ at
+any radius; with the whole rest energy in the mode, $R = \lb/2$, the turn frequency is
+$2mc^2/\hbar$ and the phase frequency $mc^2/\hbar$: the three numbers of Dirac's Zitterbewegung,
+with no static half. The charge vertex of a field quantum is $|\langle k+q|\hat\rho(q)|k\rangle| = e$
+for every $q$ whatever the extent of the mode: $F = 1$ by construction, against $j_0(qR)$ for a
+classical distribution. For a two-component field coupled at first order,
+$(\boldsymbol\sigma\cdot\boldsymbol\pi)^2 = \boldsymbol\pi^2 - e\hbar\,\boldsymbol\sigma\cdot\mathbf B$
+(checked in the Landau representation), so $H = (\boldsymbol\sigma\cdot\boldsymbol\pi)^2/2m$
+contains $-\mu_B\boldsymbol\sigma\cdot\mathbf B$: $\mu_B$ and $g = 2$ without a loop, and without
+relativity \cite{levyleblond}. Two costs: the medium's doublet must transform as a spinor under
+rotations, and the hadron anchor $2\pi\lb$ of Section~\ref{sec:nucleon} is no longer ``the
+electron's circuit'' (that circuit is now $\pi\lb$) but a posed length; the hadronic numbers stand
+only with it posed.
+\item \textbf{Where the spinor sits (R105).} The three directions of the cubic weave cannot carry
+it: a real reciprocal network ($T^2 = +1$) has no $\sigma_y$, and the six half-lines of an $O_h$
+node decompose as $A_1 + E + T_1$, spin 0 and 1 only, with the doublet $E$ bosonic ($2\pi \to +1$).
+The complex structure comes from one-way circulation ($J^2 = -1$, reversed by $T$), and the Pauli
+algebra from the orientation of a circulating unit: with the SU(2) lift of R95,
+$[\sigma_x/2, \sigma_y/2] = i\sigma_z/2$ is the composition law of orientation rotations. The
+universal electron field is therefore the field of the medium's oriented one-way excitations (the
+antiperiodic sector), not a mode of the weave; averaging the one-dimensional Weyl pair over unit
+orientations gives $\langle(\boldsymbol\sigma\cdot\hat{\mathbf n})(\hat{\mathbf n}\cdot\mathbf p)\rangle
+= \tfrac13\,\boldsymbol\sigma\cdot\mathbf p$: the Weyl form, at $c/3$.
+\item \textbf{The node rule (R106--R107).} The base's node is the Johns symmetrical condensed node
+\cite{johns} (\texttt{v2.9/scripts/johns/S\_johns.npy}), the unique isotropic node of its ansatz;
+it is reproduced: two acoustic branches at $v = 1/2$ in link units, isotropic to $2\times10^{-7}$,
+the base's $c_0$. A spinor label that follows the direction by a change of basis is inert (the SCN
+bands doubled to $10^{-14}$, holonomy $+1$ on every lattice loop). The geometric transport (SU(2)
+lift of the shortest rotation at each turn) gives $-1$ around a square loop but a non-unitary node
+($\|S^\dagger S - I\| = 1.0$). The complete family of unitary equivariant nodes for a
+helicity-locked spin-$\tfrac12$ excitation is enumerated exactly: on the six helicity states the
+binary octahedral group acts as $j = \tfrac12 \oplus \tfrac32$ and the node is a phase per
+component; with the SCN's two polarizations it acts as $2G + E_{1/2} + E'_{1/2}$ and, at first
+order in $q$, the linear branches depend only on the eigenvalue-one subspace $E_1$ of the node,
+which is a sum of irreducible components (any point of $\mathbb{CP}^1$ inside a block of
+multiplicity two). Calibration: the enumeration for the photon ($2T_1 + 2T_2$) reproduces the SCN,
+four branches at $v = 1/2$, and $1/2$ is the maximum of the photon family. Result: every isotropic
+spinor node, with or without polarization, propagates a Weyl cone at $v = 1/3$ exactly (the
+reduced matrix element of $\hat{\mathbf n}$ on $j = \tfrac12$ over the cubic directions), against
+$1/2$ for the photon of the same weave: $v_e/c_0 = 2/3$, where the electron's maximal velocity
+equals that of light to better than $10^{-11}$ \cite{hohensee}.
+\end{enumerate}
+
+The cubic weave of the base cannot carry both the spinor and the speed of light: a spinor at $c_0$
+is inert (no $-1$), a spinor with the $-1$ goes at $2c_0/3$. The field reading survives as a
+consistent reading of the electron; its carrier is not the weave of V2.10.
+
+\status{Conditionally derived for the field identities of R104 (on the spinor nature of the
+unit); Derived for the group-theoretic velocities $1/3$ and $1/2$; Closed for the electron field
+as an excitation of the cubic weave}
+
+%------------------------------------------------------------------------------
 \subsection{Three-dimensional stabilization}\label{sec:stabilization}
 %------------------------------------------------------------------------------
 
@@ -614,7 +689,9 @@ Derived & charge spectrum and colour from three strands (given the strand charge
 four neutral strands and the exclusion of $n = 5$; three eigenvalues of a $C_3$ mass-root
 operator; the $\{3,3,3\}$ partition; the strong part of $m_n - m_p$; the $\lfloor k/2\rfloor$
 junction law; the SU(2) lift from the axial sign; that the ladder cannot be corrected into Koide;
-that a loop magneton needs $R \ge \lb$. \\
+that a loop magneton needs $R \ge \lb$; that the telegrapher pair is a Weyl pair and the half
+quantum the antiperiodic sector; that the cubic weave's directions carry spin 0 and 1 only; the
+velocities $1/3$ (spinor) and $1/2$ (photon) of the cubic weave. \\
 \addlinespace
 Conditionally derived & the quark scale and mass (on $2\pi$, 9); the nucleon mass and
 $\Delta - N$ (on a ring radius); $m_n - m_p$ total (on the section and pole shape);
@@ -631,9 +708,10 @@ condition of the surface current. \\
 Reparametrized & the exponent $2\pi$; the wall $M$ (an identity with $G_F$); the pion at $r_e/2$
 (scale identification); the nucleon ring radius 0.67~fm. \\
 \addlinespace
-Closed & the extended electron (charge and magneton loops); a weak sector inside the base; dark
-matter from the medium; the base as a local theory of Bell correlations; winding as confinement;
-the mass-as-inductance law. \\
+Closed & the extended electron (charge and magneton loops); the electron field as an excitation
+of the cubic weave ($v_e/c_0 = 2/3$); a weak sector inside the base; dark matter from the medium;
+the base as a local theory of Bell correlations; winding as confinement; the mass-as-inductance
+law. \\
 \bottomrule
 \end{tabular}
 \caption{The six-level ledger of this paper's claims. Nothing above is presented above its level.}
@@ -651,10 +729,12 @@ against $2\cosh\pi/37.1$) are listed because they were found, not because they a
 %==============================================================================
 
 \begin{enumerate}[nosep]
-\item \textbf{The electron's charge and moment.} After R103 the base contains no source of a
-point-like charge with a Bohr magneton. Either the base supplies a moment that is not a charge
-current, or it adopts the Dirac structure and derives none of $S$, $\mu_B$, $g$. The neutral
-circulation at $\lb$ (the de Broglie clock) is what remains of the ring.
+\item \textbf{The electron's carrier.} The field reading (R104) gives $S$, $\mu_B$, $g = 2$ and
+$G_E = 1$ from a first-order two-component field, but the base's cubic weave transports a spinor
+at $2c_0/3$ (R106--R107). What is needed is a medium whose node gives the spinor and the photon the
+same limiting velocity, or an electron field that is not a weave excitation (the $n \ge 3$ bundles
+of the earlier phase are the only other carriers the base has). Until then the base derives none
+of $S$, $\mu_B$, $g$.
 \item \textbf{The phase $2/9$}, and a dynamics that gives the $45^\circ$ at the particle level
 rather than the family level.
 \item \textbf{The nucleon ring radius} (0.67~fm) and what the collective circulation of three
@@ -663,7 +743,8 @@ circuits turns on; the pion's pinning at $r_e/2$.
 neutron's factor 9; the QCD factor 1.2 on the tau.
 \item \textbf{Fermionic statistics}: the exchange sign between two rings; the discrete jump in a
 measurement; the joint state of two rings (Bell).
-\item \textbf{The exponent $2\pi$ and the count 9}, structural inputs.
+\item \textbf{The exponent $2\pi$ and the count 9}, structural inputs; and, under the field
+reading, the hadron anchor $2\pi\lb$, now a posed length rather than the electron's circuit.
 \item \textbf{The section width} $w = 4\lb/\pi^2$, derived only through the three junctions of a
 representation now closed; the splitting tests it to a factor of two.
 \end{enumerate}
@@ -672,9 +753,11 @@ representation now closed; the splitting tests it to a factor of two.
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
 
-One part of this sector has already been falsified by existing data: an electron whose charge or
-magnetic moment is carried by a loop of any radius above $10^{-3}$~fm (Section~\ref{sec:electron}).
-The paper reports this as its firmest result.
+Two parts of this sector have already been falsified by existing data: an electron whose charge
+or magnetic moment is carried by a loop of any radius above $10^{-3}$~fm
+(Section~\ref{sec:electron}), and an electron field carried by the base's cubic weave, whose
+limiting velocity would be $2/3$ of light's (Section~\ref{sec:fieldquantum}). The paper reports
+these as its firmest results.
 
 For what remains, the following measurements or computations would kill the corresponding claim:
 \begin{itemize}[nosep]
@@ -710,7 +793,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 98 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 102 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
@@ -734,6 +817,9 @@ author's criterion and the result of R100.
 \bibitem{foldy} L. L. Foldy and S. A. Wouthuysen, Phys. Rev. \textbf{78}, 29 (1950).
 \bibitem{schrodinger} E. Schr\"odinger, Sitzungsber. Preuss. Akad. Wiss., Phys.-Math. Kl. \textbf{24}, 418 (1930).
 \bibitem{hestenes} D. Hestenes, \textit{Zitterbewegung in quantum mechanics}, Found. Phys. \textbf{40}, 1 (2010).
+\bibitem{levyleblond} J.-M. L\'evy-Leblond, \textit{Nonrelativistic particles and wave equations}, Commun. Math. Phys. \textbf{6}, 286 (1967).
+\bibitem{johns} P. B. Johns, \textit{A symmetrical condensed node for the TLM method}, IEEE Trans. Microwave Theory Tech. \textbf{35}, 370 (1987).
+\bibitem{hohensee} M. A. Hohensee, R. Lehnert, D. F. Phillips and R. L. Walsworth, \textit{Particle-accelerator constraints on isotropic modifications of the speed of light}, Phys. Rev. Lett. \textbf{102}, 170402 (2009).
 \end{thebibliography}
 
 \end{document}
