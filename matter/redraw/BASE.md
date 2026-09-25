@@ -2290,3 +2290,29 @@ ne peut pas porter à la fois le spineur et la vitesse.** Ce qui reste : ou bien
 n'est pas une excitation de la trame cubique (faisceaux n ≥ 3 de la phase A, autre géométrie de
 nœud), ou bien un mécanisme absent partage le nœud entre le spineur et le photon. C'est le point
 exact où « l'électron est le quantum de la ligne » rencontre la relativité.
+
+**R107 — Le dernier balayage sur la trame de la base : le spineur avec la polarisation du SCN.**
+→ `polarized_spinor_node.py`, 4/4. Le photon du SCN n'atteint c₀ = 1/2 que grâce à sa polarisation
+(deux états par direction) ; une excitation qui porte la polarisation du SCN et le spineur peut-elle
+atteindre 1/2 ? **(A) Représentations** : les douze états du photon |n̂, e_p⟩ se décomposent sous O
+en 2T₁ + 2T₂ (commutant 8, centre 2) ; les douze états d'hélicité + |n̂, e_p, +⟩ sous le groupe
+octaédrique binaire en 2G + E½ + E′½ (commutant 6, centre 3) ; les copies d'un bloc de
+multiplicité 2 sont alignées (le projecteur sur une copie mélangée commute avec le groupe) ; le SCN
+en base de direction est unitaire, équivariant, à v = 1/2. **(B) La méthode exacte au premier
+ordre** : les branches linéaires viennent du sous-espace E₁ de valeur propre 1 du nœud, et au
+premier ordre ω = valeurs propres de P₁(q·N)P₁ avec N_a = diag(n̂_i·e_a), ce qui ne dépend que de E₁
+et pas des phases des autres composantes ; pour un nœud équivariant, E₁ est une somme de
+composantes irréductibles (dans un bloc de multiplicité 2 : rien, une copie quelconque, un point de
+CP¹, ou les deux). **Énumérer tous les E₁, c'est parcourir la famille complète sans balayage de
+phases.** Calibration : le E₁ du SCN (les deux copies d'un bloc T, dimension 6) redonne quatre
+branches à v = 1/2 (anisotropie 6·10⁻¹⁶) ; sur 534 E₁ isotropes du photon, **1/2 est le maximum**
+(une copie mélangée plafonne à 0,498) : le SCN est le nœud isotrope le plus rapide de sa famille.
+**(C) Le spineur polarisé** : les seuls E₁ isotropes sont E½, E′½ ou les deux, tous à **v = 1/3**
+(quatre branches ou deux) ; le bloc G, une copie quelconque (CP¹ à 24 × 13 points) ou les deux, n'est
+jamais isotrope. Référence R106 retrouvée : E₁ = j = ½ → 1/3. **Verdict** : EXCLU, et la question
+« sur cette trame » est fermée : avec ou sans polarisation, toute excitation de spin ½ verrouillée à
+sa direction se propage sur la trame cubique de la base isotropiquement à exactement c_ligne/3,
+le photon à c_ligne/2, **v_e/c₀ = 2/3**, contre 10⁻¹¹ (LEP). Le 1/3 et le 1/2 sont des constantes de
+groupe de la trame cubique (éléments de matrice réduits de n̂ sur j = ½ et sur T₁ ⊗ T₁), pas des
+réglages. Note technique : l'extraction du noyau droit dans `node_transport.py` conjuguait mal les
+vecteurs (cas complexe) ; corrigée ici, sans changement des résultats de R106.

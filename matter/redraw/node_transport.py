@@ -117,7 +117,7 @@ def commutant_projectors(reps):
         rows.append(np.kron(g, np.eye(n)) - np.kron(np.eye(n), g.T))
     A = np.vstack(rows)
     u, s, vh = np.linalg.svd(A)
-    null = vh[s.size - np.sum(s < 1e-9):] if np.sum(s < 1e-9) else vh[-(n * n - np.linalg.matrix_rank(A)):]
+    null = (vh[s.size - np.sum(s < 1e-9):] if np.sum(s < 1e-9) else vh[-(n * n - np.linalg.matrix_rank(A)):]).conj()   # noyau droit (cas complexe)
     dim = null.shape[0]
     # element hermitien generique du commutant
     rng = np.random.default_rng(11)
