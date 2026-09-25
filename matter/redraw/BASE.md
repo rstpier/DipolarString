@@ -2316,3 +2316,31 @@ le photon à c_ligne/2, **v_e/c₀ = 2/3**, contre 10⁻¹¹ (LEP). Le 1/3 et le
 groupe de la trame cubique (éléments de matrice réduits de n̂ sur j = ½ et sur T₁ ⊗ T₁), pas des
 réglages. Note technique : l'extraction du noyau droit dans `node_transport.py` conjuguait mal les
 vecteurs (cas complexe) ; corrigée ici, sans changement des résultats de R106.
+
+**R108 — Les faisceaux n ≥ 3 comme porteur du champ électronique** (demande de l'auteur).
+→ `bundle_carrier.py`, 4/4. Phase A (steps 3a, 3b, 5) : un faisceau de n brins indistinguables
+porte un doublet de modes différentiels dont la combinaison circulaire a une charge de Berry ±a(n)
+sous la rotation du repère autour de l'axe ; l'inclinaison de l'axe n'a pas d'élément de matrice
+dans le doublet, donc le transport le long d'un chemin de directions a l'holonomie e^{±iaΩ}. Un
+spineur, c'est exactement cela avec a = ½ (R95, R105). **(A)** a(n) recalculé avec la machinerie de
+la phase A (grille 1401², D/r = 2cosh π) pour n = 3…8 : 0,186 ; 0,329 ; 0,432 ; 0,507 ; 0,564 ; 0,608
+(a(3) = 0,1858 reproduit) ; et avec le rayon de conducteur r = 0,5R et 2R : de 0,148 à 0,248 pour n = 3,
+de 0,430 à 0,613 pour n = 6 : **a est une phase géométrique continue du mode, en n et en rayon,
+pas une charge quantifiée**. **(B) L'univalence** : sous un tour complet, e^{2πia} ; un porteur
+isotrope exige ±1 (représentation de SO(3) ou de son double). Distances à ±1 : 1,10 ; 1,02 ; 0,43 ;
+0,044 ; 0,40 ; 0,67 pour n = 3…8. Le plus proche est n = 6 (trois DQD, la mère de R3), 2a = 1,014, à
+1,4 % ; mais 2a(6) varie de 0,86 à 1,23 avec le rayon et ne vaut exactement 1 qu'à r = 0,947 R : un
+réglage du rayon, pas une structure. **Aucun faisceau n'est un spineur par structure** ; un doublet
+à a non demi-entier n'est pas univalent sous 2π, aucun nœud équivariant ne peut le transporter sur
+une trame isotrope (le −1 exact de Kramers est mesuré). **(C)** Si a valait ½, le doublet serait le
+spineur verrouillé de R105, transporté sur la trame cubique à 1/3 contre 1/2 pour le photon
+(R106–R107) : les faisceaux n'échappent pas à R106, ils ne font que fournir ou non le spineur.
+**(D) Le faisceau fermé de l'électron** (n = 3) : holonomie 2π[(1 − a)Lk + aWr] (step 3b, R60, R77) ;
+avec le repère verrouillé sur le milieu (Tw = 0, R61), Lk = Wr = 1/3 donne 120,000°, l'étiquette de
+génération (R60, R76), jamais π ; π exigerait Wr = +1,23 à Lk = 1/3 (Tw = −0,90), Wr = −0,23 à
+Lk = 2/3 (Tw = +0,90) ou Wr = −1,69 à Lk = 1, contre R61, et ne serait qu'un signe autour de l'axe
+de l'anneau (R74, R83), pas un spineur de SO(3). **Verdict** : EXCLU. Le doublet d'un faisceau porte
+une charge de Berry continue, jamais exactement ½ par structure ; il n'est pas univalent ; s'il
+l'était il irait à 1/3 sur la trame. Sa vraie fonction dans la base est l'étiquette de génération.
+Les faisceaux ne sont pas le porteur du champ électronique ; **la base n'a plus de porteur
+candidat pour un spineur à la vitesse de la lumière.**

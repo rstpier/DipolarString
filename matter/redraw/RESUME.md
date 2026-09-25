@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R107)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R108)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R107).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R108).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -48,6 +48,10 @@ pour la tension de corde et l'écart proton–neutron.
   inerte (pas de −1). La trame ne porte pas à la fois le spineur et la vitesse. **R107** ferme la
   question : avec la polarisation du SCN en plus (2G + E½ + E′½), l'énumération exacte de tous les
   sous-espaces propagateurs donne encore 1/3 pour tout spineur, et 1/2 est le maximum du photon.
+  **R108** : les faisceaux n ≥ 3 de la phase A ne sont pas le porteur non plus : leur doublet a une
+  charge de Berry continue a(n) (0,19 ; 0,33 ; 0,43 ; 0,51 …, et variable avec le rayon), jamais ½
+  par structure (n = 6 n'y est qu'à un rayon réglé), donc pas univalent sous 2π ; à Tw = 0 leur
+  holonomie est l'étiquette de génération (120°), jamais π.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -142,8 +146,11 @@ isotropiquement à v = 1/3 exactement, le photon (SCN) allant à 1/2 : v_e/c₀ 
 résultat, par énumération exacte de tous les sous-espaces propagateurs (1/3 pour tout spineur,
 1/2 maximum pour le photon, deux constantes de groupe de la trame cubique). **La trame cubique ne
 peut pas porter à la fois le spineur et la vitesse de la lumière** : le champ électronique n'est
-pas une excitation de cette trame, ou un mécanisme absent partage le nœud. L'article
-(`matter/paper/`) est consolidé jusqu'à R107.
+pas une excitation de cette trame, ou un mécanisme absent partage le nœud. R108 : les faisceaux
+n ≥ 3, seule autre structure de la base, ne portent pas de spineur (charge de Berry continue,
+jamais ½ par structure ; holonomie de génération à Tw = 0). **La base n'a plus de porteur candidat
+pour un spineur à la vitesse de la lumière.** L'article (`matter/paper/`) est consolidé jusqu'à
+R108.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -249,9 +256,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R107 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R108 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 102 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 103 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

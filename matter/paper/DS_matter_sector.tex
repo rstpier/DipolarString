@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 107 steps (R1--R107) backed by 102 scripts.
+statement imposes and what it breaks; the record is 108 steps (R1--R108) backed by 103 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -629,12 +629,23 @@ equals that of light to better than $10^{-11}$ \cite{hohensee}.
 \end{enumerate}
 
 The cubic weave of the base cannot carry both the spinor and the speed of light: a spinor at $c_0$
-is inert (no $-1$), a spinor with the $-1$ goes at $2c_0/3$. The field reading survives as a
-consistent reading of the electron; its carrier is not the weave of V2.10.
+is inert (no $-1$), a spinor with the $-1$ goes at $2c_0/3$. The only other structure the base has,
+the bundles of $n \ge 3$ strands of the earlier phase, was tested as the carrier (R108): the
+differential doublet of an $n$-strand bundle carries a Berry charge $a(n)$ under rotation of its
+frame ($0.186$, $0.329$, $0.432$, $0.507$, $0.564$, $0.608$ for $n = 3$ to $8$ at the matched
+radius, and continuously varying with the conductor radius), so its transport along a path of
+directions is $e^{\pm ia\Omega}$; a spinor needs $a = \tfrac12$ exactly. No bundle has it by
+structure (the six-strand bundle is $1.4\,\%$ away at the matched radius and reaches $\tfrac12$
+only at a tuned radius), a doublet with non-half-integer $a$ is not single-valued under $2\pi$
+and cannot be transported by any equivariant node, and one with $a = \tfrac12$ would fall back to
+$v = 1/3$. With the frame locked to the medium the closed three-strand bundle's holonomy is
+exactly $120^\circ$, the generation label, never $\pi$. The field reading survives as a
+consistent reading of the electron; the base has no carrier for it.
 
 \status{Conditionally derived for the field identities of R104 (on the spinor nature of the
-unit); Derived for the group-theoretic velocities $1/3$ and $1/2$; Closed for the electron field
-as an excitation of the cubic weave}
+unit); Derived for the group-theoretic velocities $1/3$ and $1/2$ and for the Berry charges
+$a(n)$; Closed for the electron field as an excitation of the cubic weave or of an $n \ge 3$
+bundle}
 
 %------------------------------------------------------------------------------
 \subsection{Three-dimensional stabilization}\label{sec:stabilization}
@@ -709,7 +720,7 @@ Reparametrized & the exponent $2\pi$; the wall $M$ (an identity with $G_F$); the
 (scale identification); the nucleon ring radius 0.67~fm. \\
 \addlinespace
 Closed & the extended electron (charge and magneton loops); the electron field as an excitation
-of the cubic weave ($v_e/c_0 = 2/3$); a weak sector inside the base; dark matter from the medium;
+of the cubic weave ($v_e/c_0 = 2/3$) or of an $n \ge 3$ bundle (Berry charge $\ne \tfrac12$); a weak sector inside the base; dark matter from the medium;
 the base as a local theory of Bell correlations; winding as confinement; the mass-as-inductance
 law. \\
 \bottomrule
@@ -731,10 +742,10 @@ against $2\cosh\pi/37.1$) are listed because they were found, not because they a
 \begin{enumerate}[nosep]
 \item \textbf{The electron's carrier.} The field reading (R104) gives $S$, $\mu_B$, $g = 2$ and
 $G_E = 1$ from a first-order two-component field, but the base's cubic weave transports a spinor
-at $2c_0/3$ (R106--R107). What is needed is a medium whose node gives the spinor and the photon the
-same limiting velocity, or an electron field that is not a weave excitation (the $n \ge 3$ bundles
-of the earlier phase are the only other carriers the base has). Until then the base derives none
-of $S$, $\mu_B$, $g$.
+at $2c_0/3$ (R106--R107), and the $n \ge 3$ bundles carry a continuous Berry charge, not a
+spinor (R108). What is needed is a medium whose node gives the spinor and the photon the same
+limiting velocity; the base as written has no carrier. Until then the base derives none of $S$,
+$\mu_B$, $g$.
 \item \textbf{The phase $2/9$}, and a dynamics that gives the $45^\circ$ at the particle level
 rather than the family level.
 \item \textbf{The nucleon ring radius} (0.67~fm) and what the collective circulation of three
@@ -793,7 +804,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 102 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 103 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

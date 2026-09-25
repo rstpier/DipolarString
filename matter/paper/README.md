@@ -2,7 +2,7 @@
 
 `DS_matter_sector.tex` is now a **first content draft** (12 pages, compiles clean, zero
 undefined references), consolidating the redraw recorded in `../redraw/BASE.md`
-(R1–R107, 102 scripts). It keeps the skeleton's section order and the `\status{...}`
+(R1–R108, 103 scripts). It keeps the skeleton's section order and the `\status{...}`
 ledger; every number in it is produced by a script under `../redraw/`.
 
 What the draft claims, and at what level, is in its Section 7 (the six-level ledger).
@@ -11,7 +11,8 @@ built (charge `e` on a ring of radius `λ̄_e`) is excluded by the measured form
 (R100–R102), the decision recorded being that the electromagnetic electron is Dirac's
 (R103); and the electron read as the quantum of the medium's field (R104), consistent
 in itself, cannot be carried by the base's cubic weave, whose every spin-½ excitation
-propagates at 2/3 of the weave's light speed (R106–R107). The sector's positive claims
+propagates at 2/3 of the weave's light speed (R106–R107), and the n ≥ 3 bundles carry a
+continuous Berry charge, not a spinor (R108). The sector's positive claims
 are hadronic and generational ratios.
 
 Two placeholders remain for the author: the model designation of the second AI
