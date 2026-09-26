@@ -2361,3 +2361,23 @@ posée via 2π/3 et 3^{2π} sous la lecture champ (R104 G). **Statut** : un ense
 1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau) ;
 la table des statuts, les entrées, les règles, les sensibilités et les tests qui tuent sont dans
 `HADRONS.md`.
+
+**Note de principe (26 septembre 2026, énoncé de l'auteur, sans calcul).** « Si une particule
+interagit avec une autre, elle devient son référentiel, dont elle doit avoir un état mesurable.
+C'est la condition d'existence de l'univers et c'est ce qui explique l'effondrement de
+l'interférence dans les fentes de Young. » **Ce qui est juste et déjà établi** : quand l'électron
+interagit avec un partenaire, l'état du partenaire garde la trace du chemin, et les franges
+disparaissent dans la mesure exacte où ses deux états « chemin 1 » et « chemin 2 » sont
+distinguables ; la visibilité est leur recouvrement, V = |⟨χ₁|χ₂⟩|, avec V² + D² ≤ 1 (Wootters–Zurek
+1979 ; Englert 1996). C'est la décohérence : un seul partenaire qui emporte l'information suffit,
+sans observateur ; le « référentiel » de l'énoncé est ce partenaire. **Ce que l'énoncé ne donne
+pas** : la disparition des franges n'est pas le choix d'un résultat ; après l'interaction le
+système est encore « chemin 1 ⊗ trace 1 + chemin 2 ⊗ trace 2 », et rien ne dit lequel des deux
+termes devient réel. C'est le saut discret laissé non dérivé en R98 ; « interaction ⇒ état
+mesurable » le pose, ne le produit pas. « Condition d'existence de l'univers » est une lecture
+relationnelle (Rovelli), cohérente, non calculable. **Ce que la base peut en faire** : rien de
+propre ; la visibilité avec une interaction de la base (coup de Coulomb d'une charge sur une
+sonde, Δp = 2Ke²/(bv), V = exp(−Δp²σ²/2ℏ²)) redonne le résultat standard sans nombre nouveau, et
+l'électron de la base n'a de franges que sous la lecture champ (R104), où elles sont celles de la
+mécanique quantique. Enregistré comme principe, pas comme étape : aucun calcul ne peut le tuer
+ni le confirmer.
