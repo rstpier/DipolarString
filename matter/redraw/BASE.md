@@ -2435,3 +2435,39 @@ et Maxwell à la même vitesse, et Maxwell y est la paire symétrique de deux We
 deux brins et mère → deux filles (R3–R4, R87). Ce qui manque à la base n'est plus une trame, c'est
 un nœud : le nœud-pièce, à dériver de ses axiomes ou à poser à la place du SCN. Rien n'est dérivé
 ici des axiomes de V2.10 ; c'est une cible nommée, avec ses amplitudes.
+
+**R112 — Le nœud-pièce contre les axiomes du DQD : se dérive-t-il de C1–C5 ?** (« Dérive le
+nœud-pièce des axiomes du DQD, car aucune idée de quoi tu parles ! »)
+→ `coin_node_axioms.py`, 6/6. **Ce qu'est le nœud-pièce, en clair.** Au croisement de trois lignes,
+le nœud de Johns (SCN) est un standard : une impulsion qui arrive par une ligne repart dans les six
+directions avec des fractions fixes, sans changer de nature. Le nœud-pièce de l'automate de Weyl
+(R111) fait autre chose : les deux impulsions qui arrivent par les deux bouts d'une ligne x forment
+un couple (a₊, a₋) ; le nœud le réexprime dans la base de la ligne suivante et le renvoie en entier
+sur elle : y reçoit (a₊ + a₋)/√2 d'un côté et (a₊ − a₋)/√2 de l'autre, avec un quart d'onde entre
+les deux, puis y → z, puis z → x. En langage de lignes : un coupleur hybride 3 dB à 90° monté en
+circulateur (x → y → z → x). **(A) Construction** : le nœud à 6 ports (trois lignes, deux côtés),
+blocs V_yx, V_zy, V_xz, |V|² = 1/2 partout, déphasage 90° entre les deux sorties pour x → y et
+y → z, 0 pour z → x ; unitaire. **(B) Dynamique de réseau** : cône de Weyl à 1/3 de la vitesse de
+ligne (trois traversées par pas d'automate), anisotropie 10⁻⁶ ; le photon du même automate
+(R111 B) y est à la même vitesse : c'est le point de la pièce. **(C) Contre les axiomes du
+manuscrit** (section « Uniqueness theorem », C1–C5) : C4 énergie, S†S = 1 oui, mais S n'est pas
+réel et **ne peut pas être rendu réel par des phases de référence par port** (résidu 1,22 sur huit
+optimisations) : le quart d'onde est un déphasage physique au croisement, un élément réactif là où
+A5/C3 n'en veulent aucun ; **réciprocité par nœud** : ‖S − Sᵀ‖ = 3,46, c'est un circulateur
+(x → y → z → x, jamais l'inverse), impair sous T ; le cône reste symétrique au premier ordre
+(v(q) − v(−q) = 5·10⁻⁴) et le spectre diffère à |q| = 0,25 de 0,008 (ordre q²) ; **C1** : le routage
+n'est invariant que sous 12 rotations sur 24, le groupe tétraédrique T (les axes d'ordre 4
+renversent l'ordre cyclique x → y → z), mais le miroir et l'inversion le laissent invariant :
+**achiral, groupe T_h (pyritoédrique)**, pas de rotation de polarisation du vide, mais un vide qui
+distingue x → y → z de x → z → y à chaque croisement, ce qu'aucun axiome ne fournit. **(D) Tentative
+achirale par alternance** : deux sous-réseaux d'ordres opposés (parité de x + y + z) détruisent le
+cône (v = 0,275, anisotropie 0,4) : une arrivée x routée vers y en A est routée de y vers x en B, la
+suite n'utilise jamais z ; la symétrisation de Trotter inverse l'ordre après un cycle complet, ce
+qu'un nœud fixe par site ne peut pas faire. **Verdict** : NON DÉRIVABLE de C1–C5. Trois axiomes à
+changer, nommés : (1) C1, un nœud de symétrie T_h au lieu de O_h (un ordre cyclique des trois
+lignes) ; (2) la réciprocité par nœud, un circulateur, élément impair sous T à chaque croisement,
+dont la base n'a que la circulation à sens unique du fluide (R32, R53), exclue pour le vide par son
+énergie (R57) ; (3) A5, un déphasage réactif d'un quart d'onde au croisement. Le quart d'onde de
+R111 D est confirmé physique (non jaugeable) ; « chiral » en R111 E est corrigé en « pyritoédrique,
+achiral ». C'est le point exact où la base et l'automate de Weyl se séparent : pas une trame, pas
+un porteur, mais trois propriétés du croisement.

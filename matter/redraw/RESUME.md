@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R111)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R112)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R111).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R112).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -60,7 +60,11 @@ pour la tension de corde et l'écart proton–neutron.
   Maxwell y vont à la même vitesse (1,000000), Maxwell y est la paire symétrique de deux Weyl, et le
   facteur d'un axe est la paire du télégraphiste de la ligne DQD. Ce qui manque à la base est un
   nœud-pièce (Hadamard 1/√2 entre familles de lignes, quart d'onde sur la famille y) à la place du
-  SCN ; doublement et isotropie au premier ordre seulement, connus, non résolus.
+  SCN ; doublement et isotropie au premier ordre seulement, connus, non résolus. **R112** : ce
+  nœud-pièce (un coupleur hybride 3 dB monté en circulateur) ne se dérive pas de C1–C5 : il est
+  de symétrie T_h (pyritoédrique, achiral) et non O_h, non réciproque par nœud (impair sous T,
+  cône symétrique au premier ordre seulement), et son quart d'onde est un déphasage physique
+  (non jaugeable) contre A5 ; l'alternance de l'ordre entre sites détruit le cône.
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -162,8 +166,9 @@ pour un spineur à la vitesse de la lumière.** R110 : aucun réseau d'impulsion
 spineur est une identité ; le porteur possible est un automate à pièce dont le photon est une paire
 de Weyl, ce qui est le schéma même du DQD. R111 l'a écrit : Weyl et Maxwell à la même vitesse, le
 photon comme paire, la ligne DQD comme facteur d'axe ; la cible est nommée, le nœud-pièce
-(diviseur 1/√2, quart d'onde), à dériver des axiomes ou à poser à la place du SCN. Le secteur
-hadronique, qui n'en dépend pas, est
+(diviseur 1/√2, quart d'onde). R112 : il ne se dérive pas des axiomes ; il exige trois
+changements nommés au croisement (symétrie T_h au lieu de O_h, non-réciprocité, déphasage réactif
+d'un quart d'onde contre A5). Le secteur hadronique, qui n'en dépend pas, est
 consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) : des rapports à
 1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). L'article
 (`matter/paper/`) est consolidé jusqu'à R109.
@@ -272,9 +277,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R111 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R112 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 106 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 107 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
