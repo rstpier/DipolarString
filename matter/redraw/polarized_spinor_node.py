@@ -96,7 +96,7 @@ def evaluate(Snode, dirs):
 def commutant_basis(reps):
     n = reps[0].shape[0]
     A = np.vstack([np.kron(g, np.eye(n)) - np.kron(np.eye(n), g.T) for g in reps])
-    u, s, vh = np.linalg.svd(A)
+    u, s, vh = np.linalg.svd(A, full_matrices=False)          # vh contient les n^2 vecteurs singuliers droits
     k = int(np.sum(s < 1e-9)) + (n * n - s.size)
     null = vh[-k:].conj() if k else np.zeros((0, n * n))   # noyau droit : conjugue des lignes de vh (cas complexe)
     mats = [v.reshape(n, n) for v in null]
