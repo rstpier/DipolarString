@@ -2408,3 +2408,30 @@ n'est pas « une autre trame », c'est « un autre type de nœud », la pièce �
 **Verdict** : DÉRIVÉ (le 1/3 universel, l'identité et ses vérifications) ; EXCLU pour tout réseau
 d'impulsions comme porteur de l'électron ; R111 candidat : l'automate de Weyl minimal sur les DQD,
 et son photon-paire à la même vitesse.
+
+**R111 — L'automate de Weyl minimal sur les DQD, et son photon-paire à la même vitesse.**
+→ `weyl_automaton.py`, 5/5. L'automate de Bialynicki-Birula (1994) : un pas de temps = trois
+déplacements successifs le long de x, y, z, chacun commandé par la composante du spineur sur
+l'axe, W(k) = Π_i [cos k_i + iσ_i sin k_i] (pas 1, τ = 1). **(A) Weyl** : W unitaire ; le facteur d'un
+axe, P₊S₊ + P₋S₋, a les phases propres ±k_z : c'est exactement la paire du télégraphiste sur une
+ligne de cet axe (R104 A), la composante + avance, la − recule ; cône isotrope à petit k avec
+v = 1,000002 pas/τ (extrapolé, anisotropie 4·10⁻⁶ sur 18 directions) ; l'isotropie n'est qu'au
+premier ordre (18 % d'anisotropie à |k| = 0,5, ordre k³). **(B) Maxwell** (Riemann–Silberstein, trois
+composantes) : le même automate avec les matrices de spin 1, W_M = Π_i [P₊e^{ik_i} + P₀ + P₋e^{−ik_i}] :
+unitaire, un mode longitudinal à ω = 0 exactement (à retirer par div F = 0), deux modes transverses
+à **v = 1,000000, la même vitesse que le spineur**. **(C) Le photon comme paire de Weyl** (de Broglie
+1934 ; D'Ariano–Perinotti 2014) : le générateur de deux spineurs, (σ⊗1 + 1⊗σ)/2, restreint au
+triplet symétrique, vérifie [S_x, S_y] = iS_z et S² = 2, c'est le spin 1 de (B) ; deux Weyl
+parallèles de moment K/2 ont ω₁ + ω₂ = |K| à 10⁻³ : la paire va à la vitesse du spineur. **(D) Ce
+que cela demande à la base** : la ligne DQD est déjà le facteur d'un axe ; le nœud doit être une
+**pièce**, pas le SCN : une impulsion arrivant sur une ligne z est réexprimée dans la base des
+mouvants de la ligne x (états propres de σ_x : Hadamard, amplitudes 1/√2) puis de la ligne y (états
+propres de σ_y : Hadamard plus un **quart d'onde**, (1, ±i)/√2, entre les deux mouvants) ; le i qui
+manquait en R105 B est ce quart d'onde. Trois familles de lignes, trois bases de mouvants liées par
+l'algèbre de Pauli, un diviseur 1/√2 et un déphasage π/2 sur la famille y. **(E) Les prix** :
+doublement (quatre coins de zone sur sept portent un cône linéaire à ω = π), isotropie au premier
+ordre seulement ; connus, non résolus ici. **Verdict** : CONDITIONNEL. L'automate à pièce porte Weyl
+et Maxwell à la même vitesse, et Maxwell y est la paire symétrique de deux Weyl, le schéma DQD =
+deux brins et mère → deux filles (R3–R4, R87). Ce qui manque à la base n'est plus une trame, c'est
+un nœud : le nœud-pièce, à dériver de ses axiomes ou à poser à la place du SCN. Rien n'est dérivé
+ici des axiomes de V2.10 ; c'est une cible nommée, avec ses amplitudes.
