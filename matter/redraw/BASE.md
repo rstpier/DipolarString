@@ -2381,3 +2381,30 @@ sonde, Δp = 2Ke²/(bv), V = exp(−Δp²σ²/2ℏ²)) redonne le résultat stan
 l'électron de la base n'a de franges que sous la lecture champ (R104), où elles sont celles de la
 mécanique quantique. Enregistré comme principe, pas comme étape : aucun calcul ne peut le tuer
 ni le confirmer.
+
+**R110 — Le 2/3 est-il propre à la trame cubique ou universel pour les réseaux d'impulsions ?**
+(« Du nouveau pour la CD ? »)
+→ `pulse_network_universality.py`, 3/3. Même méthode exacte qu'en R107 (premier ordre en q sur
+le sous-espace propagateur E₁, énumération de toutes les sommes de composantes irréductibles,
+copies mélangées sur CP¹), refaite pour trois jeux de directions, tous des orbites du groupe du
+cube : les faces (6, la trame de Johns), les sommets (8, diagonales du cube, réseau cubique centré)
+et les arêtes (12, diagonales de faces, réseau cubique à faces centrées). **Spineur d'hélicité
+verrouillé** : vitesse isotrope maximale **1/3 exactement sur les trois jeux**. Ce n'est pas une
+coïncidence, c'est une identité : sur un état d'hélicité +, σ·n̂ = 1, donc Σ_a σ_a(P₁N_aP₁) = 1 sur
+j = ½ ; par Wigner–Eckart P₁N_aP₁ = λσ_a, d'où 3λ = 1, λ = 1/3 pour tout jeu de directions
+isotrope, et donc aussi dans la limite continue de ce type de réseau. **Photon transverse** : 1/2 sur
+les faces (le SCN, retrouvé) et sur les sommets, 1/√3 sur les arêtes : pas universel, mais toujours
+au-dessus. **Scalaire** : 1/√3 partout. **Rapport spineur/photon ≤ 2/3 sur tout jeu** : un spineur
+verrouillé à sa direction n'atteint jamais la vitesse du photon du même réseau. **Ce que cela dit** :
+R106–R108 n'étaient pas un accident du cube ; c'est la structure « impulsion à sens unique +
+étiquette qui la suit » qui plafonne le spineur à 1/3, quelle que soit la trame. **Ce que cela
+pointe** : les modèles de réseau qui donnent Weyl, Dirac et Maxwell à la même vitesse existent et
+ne sont pas des réseaux d'impulsions ; ce sont des automates à pièce, où le spineur décide du pas
+au lieu de suivre une direction (Bialynicki-Birula 1994 ; D'Ariano–Perinotti 2014, automate de
+Weyl unique sur le réseau cubique centré), et où **le photon est une paire de deux excitations de
+Weyl** (de Broglie 1934). La base dit déjà que le DQD de spin 1 est fait de deux brins et que la
+mère se brise en deux filles de spin ½ (R3–R4, R87) : même schéma. Le changement de fondation
+n'est pas « une autre trame », c'est « un autre type de nœud », la pièce à la place du SCN.
+**Verdict** : DÉRIVÉ (le 1/3 universel, l'identité et ses vérifications) ; EXCLU pour tout réseau
+d'impulsions comme porteur de l'électron ; R111 candidat : l'automate de Weyl minimal sur les DQD,
+et son photon-paire à la même vitesse.

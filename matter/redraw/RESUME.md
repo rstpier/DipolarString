@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R109)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R110)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R109).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R110).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -51,7 +51,12 @@ pour la tension de corde et l'écart proton–neutron.
   **R108** : les faisceaux n ≥ 3 de la phase A ne sont pas le porteur non plus : leur doublet a une
   charge de Berry continue a(n) (0,19 ; 0,33 ; 0,43 ; 0,51 …, et variable avec le rayon), jamais ½
   par structure (n = 6 n'y est qu'à un rayon réglé), donc pas univalent sous 2π ; à Tw = 0 leur
-  holonomie est l'étiquette de génération (120°), jamais π.
+  holonomie est l'étiquette de génération (120°), jamais π. **R110** : le 1/3 du spineur est
+  universel pour tout réseau d'impulsions (identité σ·n̂ = 1 + Wigner–Eckart), le photon 1/2 ou
+  1/√3 selon la trame, toujours au-dessus : ce n'est pas le cube, c'est la structure « impulsion +
+  étiquette ». Les réseaux qui portent Weyl et Maxwell à la même vitesse sont des automates à pièce
+  (Bialynicki-Birula, D'Ariano–Perinotti), où le photon est une paire de Weyl : le schéma DQD =
+  deux brins, mère → deux filles (R3–R4, R87).
 - **Les générations.** μ = e + 4 brins neutres (7), τ = e + 8 (11) ; les masses suivent
   m = m_e(n/3)^{2π} à 1 % (exposant épinglé par les données à 0,15 %, unique parmi les constantes
   simples), mais la structure exacte est celle de Koide : le vecteur des racines de masse fait
@@ -149,7 +154,9 @@ peut pas porter à la fois le spineur et la vitesse de la lumière** : le champ 
 pas une excitation de cette trame, ou un mécanisme absent partage le nœud. R108 : les faisceaux
 n ≥ 3, seule autre structure de la base, ne portent pas de spineur (charge de Berry continue,
 jamais ½ par structure ; holonomie de génération à Tw = 0). **La base n'a plus de porteur candidat
-pour un spineur à la vitesse de la lumière.** Le secteur hadronique, qui n'en dépend pas, est
+pour un spineur à la vitesse de la lumière.** R110 : aucun réseau d'impulsions n'en aura, le 1/3 du
+spineur est une identité ; le porteur possible est un automate à pièce dont le photon est une paire
+de Weyl, ce qui est le schéma même du DQD (R111 candidat). Le secteur hadronique, qui n'en dépend pas, est
 consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) : des rapports à
 1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). L'article
 (`matter/paper/`) est consolidé jusqu'à R109.
@@ -258,9 +265,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R109 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R110 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 104 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 105 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
