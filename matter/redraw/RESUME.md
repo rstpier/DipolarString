@@ -171,7 +171,7 @@ changements nommés au croisement (symétrie T_h au lieu de O_h, non-réciprocit
 d'un quart d'onde contre A5). Le secteur hadronique, qui n'en dépend pas, est
 consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) : des rapports à
 1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). L'article
-(`matter/paper/`) est consolidé jusqu'à R109.
+(`matter/paper/`) est consolidé jusqu'à R112.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 

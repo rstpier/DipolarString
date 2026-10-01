@@ -1,8 +1,8 @@
 # Article — matter sector
 
-`DS_matter_sector.tex` is now a **first content draft** (12 pages, compiles clean, zero
+`DS_matter_sector.tex` is now a **first content draft** (15 pages, compiles clean, zero
 undefined references), consolidating the redraw recorded in `../redraw/BASE.md`
-(R1–R109, 104 scripts). It keeps the skeleton's section order and the `\status{...}`
+(R1–R112, 107 scripts). It keeps the skeleton's section order and the `\status{...}`
 ledger; every number in it is produced by a script under `../redraw/`.
 
 What the draft claims, and at what level, is in its Section 7 (the six-level ledger).
@@ -11,9 +11,12 @@ built (charge `e` on a ring of radius `λ̄_e`) is excluded by the measured form
 (R100–R102), the decision recorded being that the electromagnetic electron is Dirac's
 (R103); and the electron read as the quantum of the medium's field (R104), consistent
 in itself, cannot be carried by the base's cubic weave, whose every spin-½ excitation
-propagates at 2/3 of the weave's light speed (R106–R107), and the n ≥ 3 bundles carry a
-continuous Berry charge, not a spinor (R108). The sector's positive claims
-are hadronic and generational ratios.
+propagates at 2/3 of the weave's light speed (R106–R107), nor by any pulse network of its
+type (the spinor's 1/3 is an identity, R110), and the n ≥ 3 bundles carry a continuous
+Berry charge, not a spinor (R108). The lattice structure that carries the spinor and the
+photon at one speed, the Weyl automaton (R111), needs a node that the manuscript's
+constraints C1–C5 do not derive (R112). The sector's positive claims are hadronic and
+generational ratios.
 
 Two placeholders remain for the author: the model designation of the second AI
 system in the Disclosure, and the subtitle if a different one is wanted.

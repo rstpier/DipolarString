@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 109 steps (R1--R109) backed by 104 scripts.
+statement imposes and what it breaks; the record is 112 steps (R1--R112) backed by 107 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -109,8 +109,11 @@ $v \le c$; the ring's numbers are Compton identities fitted to Dirac. Decision: 
 electromagnetic electron is Dirac's. Read instead as the quantum of the medium's field, the
 electron is consistent with all of this (the telegrapher pair is a Weyl pair, the half quantum is
 the antiperiodic sector of a closed line, $G_E = 1$ by construction, $g = 2$ from the first-order
-structure), but on the base's cubic weave every spin-$\tfrac12$ excitation propagates at exactly
-$2/3$ of the weave's light speed, excluded at $10^{-11}$.
+structure), but on the base's cubic weave, and on every pulse network of its type, a
+helicity-locked spin-$\tfrac12$ excitation propagates at $1/3$ of the link speed against $1/2$ or
+more for the photon: a ratio of at most $2/3$, excluded at $10^{-11}$. The one lattice structure
+that carries the spinor and the photon at one speed, the Weyl automaton, needs a node (a $3$~dB
+hybrid mounted as a circulator) that the manuscript's substrate constraints do not derive.
 
 \noindent\textbf{Conclusions.} What the framework can now claim is a set of hadronic and
 generational ratios given one anchor, each at its stated level. What it cannot claim is an
@@ -143,9 +146,11 @@ representation the redraw had built, a closed ring of radius $\lb$ carrying the 
 excluded by the measured electromagnetic form factors, and that its numbers ($S = \hbar/2$,
 $\mu_B$, $g = 2$) are identities of the choice $R = \lb$, $E_{\rm circ} = m/2$, $q = e$ rather than
 outputs. The decision taken (R103) is that the electromagnetic electron is Dirac's point particle.
-Steps R104--R107 then test the reading the author proposed, the electron as the quantum of a
-universal field, and find it consistent but not realizable on the base's cubic weave
-(Section~\ref{sec:fieldquantum}). The sector's claims are therefore hadronic and generational.
+Steps R104--R112 then test the reading the author proposed, the electron as the quantum of a
+universal field, and find it consistent but not realizable on the base's cubic weave nor on any
+pulse network of its type; the automaton that would carry it needs a node outside the
+manuscript's constraints (Section~\ref{sec:fieldquantum}). The sector's claims are therefore
+hadronic and generational.
 \item The computation was done by a second AI system on the author's statements, with the
 repository's constraints in view. This is a shared prior, not independent replication
 (Section~\ref{sec:disclosure}).
@@ -654,10 +659,71 @@ $v = 1/3$. With the frame locked to the medium the closed three-strand bundle's 
 exactly $120^\circ$, the generation label, never $\pi$. The field reading survives as a
 consistent reading of the electron; the base has no carrier for it.
 
+Three further steps ask whether the limit is the cube's or the type's, and name what would lift it
+(\texttt{pulse\_network\_universality.py}, \texttt{weyl\_automaton.py},
+\texttt{coin\_node\_axioms.py}).
+
+\begin{enumerate}[nosep,resume]
+\item \textbf{The $1/3$ is universal (R110).} The same exact first-order enumeration, repeated on
+the three isotropic direction sets of the cube (the six faces of the Johns weave, the eight
+vertices of the body-centred lattice, the twelve edges of the face-centred lattice), gives the
+helicity-locked spinor $1/3$ on all three. It is an identity: on a helicity-$+$ state
+$\boldsymbol\sigma\cdot\hat{\mathbf n} = 1$, so $\sum_a \sigma_a\,(P_1 N_a P_1) = 1$ on
+$j = \tfrac12$, and by Wigner--Eckart $P_1 N_a P_1 = \lambda\sigma_a$ with $3\lambda = 1$, for
+every isotropic set and in the continuum limit of this type of network. The photon gives $1/2$,
+$1/2$, $1/\sqrt3$ and the scalar $1/\sqrt3$: the spinor-to-photon ratio is at most $2/3$ on every
+set. No pulse network, a one-way pulse with a label that follows its direction, carries the
+electron at the speed of light; what caps it is the type, not the cube. The lattice models that
+give Weyl, Dirac and Maxwell one velocity are of another type, coin automata in which the spinor
+decides the step \cite{bialynicki,dariano}, and there the photon is a pair of two Weyl
+excitations \cite{debroglie}: the base's own scheme, the spin-1 DQD as two strands and the
+mother breaking into two spin-$\tfrac12$ daughters (R3--R4, R87).
+\item \textbf{The Weyl automaton on DQD lines (R111).} The minimal automaton
+\cite{bialynicki}, one time step being three successive displacements along $x$, $y$, $z$, each
+commanded by the spinor's component on that axis,
+$W(\mathbf k) = \prod_i[\cos k_i + i\sigma_i\sin k_i]$, is unitary and carries a Weyl cone at
+$v = 1.000002$ steps per tick (Richardson-extrapolated; anisotropy $4\times10^{-6}$ over 18
+directions, but first-order only: $18\,\%$ at $|\mathbf k| = 0.5$). The factor of one axis,
+$P_+S_+ + P_-S_-$, has eigenphases $\pm k_z$: it is the telegrapher pair of R104 on a line of that
+axis. The same automaton with the spin-1 matrices (Riemann--Silberstein, three components) is
+unitary, has one longitudinal mode at $\omega = 0$ exactly and two transverse modes at
+$v = 1.000000$, the spinor's speed; the generator of two spinors restricted to the symmetric
+triplet is that spin 1, and two parallel Weyl excitations of momentum $\mathbf K/2$ satisfy
+$\omega_1 + \omega_2 = |\mathbf K|$ to $10^{-3}$. What it asks of the base is not a weave but a
+node: a pulse arriving on a $z$ line is re-expressed in the basis of the movers of the $x$ line
+(eigenstates of $\sigma_x$: a Hadamard, amplitudes $1/\sqrt2$), then of the $y$ line (eigenstates
+of $\sigma_y$: a Hadamard and a quarter wave, $(1, \pm i)/\sqrt2$); the $i$ missing in R105 is
+this quarter wave. Known costs, unresolved: fermion doubling (four of the seven zone corners carry
+a cone at $\omega = \pi$) and first-order isotropy.
+\item \textbf{The coin node against the substrate constraints (R112).} In line language the coin
+node is a $3$~dB $90^\circ$ hybrid coupler mounted as a circulator, $x \to y \to z \to x$: the two
+pulses arriving by the two ends of a line form a pair $(a_+, a_-)$, re-expressed in the next
+line's basis and sent whole onto it, $|V|^2 = 1/2$ in every block. Built as a six-port node it is
+unitary and propagates the Weyl cone at $1/3$ of the link speed (three crossings per tick,
+anisotropy $10^{-6}$), with the photon of the same automaton at the same speed. Against the
+manuscript's uniqueness constraints C1--C5 \cite{dsmodel}: C4 holds as $S^\dagger S = 1$, but
+$S$ is not real and cannot be made real by reference phases on the ports (residual $1.22$ over
+eight optimizations), so the quarter wave is a physical reactive delay at the crossing, where A5
+and C3 allow none; $\|S - S^{\sf T}\| = 3.46$, a circulator, odd under $T$ (the cone stays
+symmetric at first order, $v(\mathbf q) - v(-\mathbf q) = 5\times10^{-4}$, and the spectra differ
+by $0.008$ at $|\mathbf q| = 0.25$); the routing is invariant under 12 of the 24 rotations only,
+the tetrahedral group, while mirror and inversion preserve it: $T_h$, pyritohedral, achiral,
+against the $O_h$ of C1. Alternating the cyclic order between two sublattices to restore the
+symmetry destroys the cone ($v = 0.275$, anisotropy $0.4$). The coin node is not derivable from
+C1--C5; it would need three named changes at the crossing: $T_h$ in place of $O_h$,
+non-reciprocity per node (the base has only the one-way circulation of the fluid, R32 and R53,
+excluded for the vacuum by its energy, R57), and a reactive quarter wave against A5.
+\end{enumerate}
+
+This is the exact point where the base and the Weyl automaton part: not a weave and not a
+carrier, but three properties of the crossing.
+
 \status{Conditionally derived for the field identities of R104 (on the spinor nature of the
-unit); Derived for the group-theoretic velocities $1/3$ and $1/2$ and for the Berry charges
-$a(n)$; Closed for the electron field as an excitation of the cubic weave or of an $n \ge 3$
-bundle}
+unit) and for the Weyl automaton as a target (R111, nothing of it derived from the axioms);
+Derived for the group-theoretic velocities $1/3$ and $1/2$, for the universality of the $1/3$ on
+isotropic pulse networks, for the Berry charges $a(n)$, and for the non-derivability of the coin
+node from C1--C5; Closed for the electron field as an excitation of the cubic weave, of any pulse
+network of its type, or of an $n \ge 3$ bundle}
 
 %------------------------------------------------------------------------------
 \subsection{Three-dimensional stabilization}\label{sec:stabilization}
@@ -714,13 +780,16 @@ operator; the $\{3,3,3\}$ partition; the strong part of $m_n - m_p$; the $\lfloo
 junction law; the SU(2) lift from the axial sign; that the ladder cannot be corrected into Koide;
 that a loop magneton needs $R \ge \lb$; that the telegrapher pair is a Weyl pair and the half
 quantum the antiperiodic sector; that the cubic weave's directions carry spin 0 and 1 only; the
-velocities $1/3$ (spinor) and $1/2$ (photon) of the cubic weave. \\
+velocities $1/3$ (spinor) and $1/2$ (photon) of the cubic weave, and the $1/3$ as an identity on
+every isotropic pulse network; that the Weyl automaton carries the spinor and its photon pair at
+one velocity; that its node is not derivable from C1--C5. \\
 \addlinespace
 Conditionally derived & the quark scale and mass (on $2\pi$, 9); the nucleon mass and
 $\Delta - N$ (on a ring radius); $m_n - m_p$ total (on the section and pole shape);
 $\sqrt\sigma$ (on one quantum per star arm); Koide's $45^\circ$ (on the network reading of the
 mass-root operator); the lifetime structure; the Born rule of one ring (on two outcomes); the
-circulation quantum from a broken mother loop (on three inputs). \\
+circulation quantum from a broken mother loop (on three inputs); the Weyl automaton as the
+base's target (on a node it does not have). \\
 \addlinespace
 Calibrated & the nuclear-force scale (2~MeV at 0.72~fm). \\
 \addlinespace
@@ -732,7 +801,8 @@ Reparametrized & the exponent $2\pi$; the wall $M$ (an identity with $G_F$); the
 (scale identification); the nucleon ring radius 0.67~fm. \\
 \addlinespace
 Closed & the extended electron (charge and magneton loops); the electron field as an excitation
-of the cubic weave ($v_e/c_0 = 2/3$) or of an $n \ge 3$ bundle (Berry charge $\ne \tfrac12$); a weak sector inside the base; dark matter from the medium;
+of the cubic weave or of any pulse network of its type ($v_e/c_0 \le 2/3$) or of an $n \ge 3$
+bundle (Berry charge $\ne \tfrac12$); a weak sector inside the base; dark matter from the medium;
 the base as a local theory of Bell correlations; winding as confinement; the mass-as-inductance
 law. \\
 \bottomrule
@@ -753,11 +823,14 @@ against $2\cosh\pi/37.1$) are listed because they were found, not because they a
 
 \begin{enumerate}[nosep]
 \item \textbf{The electron's carrier.} The field reading (R104) gives $S$, $\mu_B$, $g = 2$ and
-$G_E = 1$ from a first-order two-component field, but the base's cubic weave transports a spinor
-at $2c_0/3$ (R106--R107), and the $n \ge 3$ bundles carry a continuous Berry charge, not a
-spinor (R108). What is needed is a medium whose node gives the spinor and the photon the same
-limiting velocity; the base as written has no carrier. Until then the base derives none of $S$,
-$\mu_B$, $g$.
+$G_E = 1$ from a first-order two-component field, but every pulse network of the base's type
+transports a helicity-locked spinor at $1/3$ of the link speed against $1/2$ or more for the
+photon (R106--R107, R110), and the $n \ge 3$ bundles carry a continuous Berry charge, not a
+spinor (R108). The structure that carries both at one speed is known, the Weyl automaton (R111),
+and its node is not derivable from the substrate constraints: it needs $T_h$ symmetry,
+non-reciprocity and a reactive quarter wave at each crossing (R112). Whether the base can afford
+those three changes, or must pose the node, is the open question; until then the base derives
+none of $S$, $\mu_B$, $g$.
 \item \textbf{The phase $2/9$}, and a dynamics that gives the $45^\circ$ at the particle level
 rather than the family level.
 \item \textbf{The nucleon ring radius} (0.67~fm) and what the collective circulation of three
@@ -778,8 +851,9 @@ representation now closed; the splitting tests it to a factor of two.
 
 Two parts of this sector have already been falsified by existing data: an electron whose charge
 or magnetic moment is carried by a loop of any radius above $10^{-3}$~fm
-(Section~\ref{sec:electron}), and an electron field carried by the base's cubic weave, whose
-limiting velocity would be $2/3$ of light's (Section~\ref{sec:fieldquantum}). The paper reports
+(Section~\ref{sec:electron}), and an electron field carried by the base's cubic weave or by any
+pulse network of its type, whose limiting velocity would be at most $2/3$ of light's
+(Section~\ref{sec:fieldquantum}). The paper reports
 these as its firmest results.
 
 For what remains, the following measurements or computations would kill the corresponding claim:
@@ -816,7 +890,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 104 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 107 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
@@ -843,6 +917,9 @@ author's criterion and the result of R100.
 \bibitem{levyleblond} J.-M. L\'evy-Leblond, \textit{Nonrelativistic particles and wave equations}, Commun. Math. Phys. \textbf{6}, 286 (1967).
 \bibitem{johns} P. B. Johns, \textit{A symmetrical condensed node for the TLM method}, IEEE Trans. Microwave Theory Tech. \textbf{35}, 370 (1987).
 \bibitem{hohensee} M. A. Hohensee, R. Lehnert, D. F. Phillips and R. L. Walsworth, \textit{Particle-accelerator constraints on isotropic modifications of the speed of light}, Phys. Rev. Lett. \textbf{102}, 170402 (2009).
+\bibitem{bialynicki} I. Bialynicki-Birula, \textit{Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata}, Phys. Rev. D \textbf{49}, 6920 (1994).
+\bibitem{dariano} G. M. D'Ariano and P. Perinotti, \textit{Derivation of the Dirac equation from principles of information processing}, Phys. Rev. A \textbf{90}, 062106 (2014).
+\bibitem{debroglie} L. de Broglie, \textit{Une nouvelle conception de la lumi\`ere} (Hermann, Paris, 1934).
 \end{thebibliography}
 
 \end{document}
