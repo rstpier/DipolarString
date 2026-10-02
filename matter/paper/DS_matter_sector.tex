@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 112 steps (R1--R112) backed by 107 scripts.
+statement imposes and what it breaks; the record is 113 steps (R1--R113) backed by 108 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -405,7 +405,17 @@ with its sensitivities: moving the exponent across the window the lepton masses 
 input that weighs (8 or 10 in place of 9 would give 364 or 1479~MeV for the static part); the
 ribbon width enters $m_n - m_p$ only through a logarithm that nearly cancels between $u$ and $d$
 ($-12$ to $+9\,\%$ for a factor of two); the ring radius, $0.56$--$0.67$~fm, is the one number
-the base does not fix and it moves the nucleon mass from 938 to 910~MeV. Nothing of the electron
+the base does not fix and it moves the nucleon mass from 938 to 910~MeV. A last step asks whether
+$S = \hbar/2$ on the collective circulation of the three circuits fixes it (R113,
+\texttt{nucleon\_ring\_radius.py}): it cannot. One circulation quantum on a closed path of length
+$L$ and area $A$ carries $S = 2\pi\hbar A/L^2$, which is $\hbar/2$ exactly when the path is a circle
+and for every radius (the isoperimetric identity); the angular momentum of the three circuits about
+the nucleon's centre is independent of their spacing ($\tfrac12 + \tfrac12 - \tfrac12$ or
+$\tfrac32$ at any $d$); and every term of the ring's energy falls as $1/R$, with no stationary
+point. The identification $R = \sqrt3 R_c$ ($\Delta - N$ to $0.06\,\%$, R49) stays a coincidence.
+The step also records a count: if the quark circuits are circles they carry $\hbar/2$ each, so a
+separate ring must carry an even number of quanta, and the masses then put it at $1.34$~fm, outside
+the proton, or $10\,\%$ off; the reading of R48 ($1$ and $3$ quanta) has an integer total. Nothing of the electron
 enters but $m_e$ through $\lb$: the sector is independent of the exclusions of
 Sections~\ref{sec:electron}--\ref{sec:fieldquantum}, and under the field reading its anchor
 $2\pi\lb/3$ is a posed length. The consolidated chapter, with inputs, rules, chain, statuses and
@@ -833,8 +843,9 @@ those three changes, or must pose the node, is the open question; until then the
 none of $S$, $\mu_B$, $g$.
 \item \textbf{The phase $2/9$}, and a dynamics that gives the $45^\circ$ at the particle level
 rather than the family level.
-\item \textbf{The nucleon ring radius} (0.67~fm) and what the collective circulation of three
-circuits turns on; the pion's pinning at $r_e/2$.
+\item \textbf{The nucleon ring radius} (0.67~fm): not fixed by $S = \hbar/2$, by the collective
+circulation, or by an energy extremum (R113); and the quantum count of a fourth circular circuit,
+which puts an even-quanta ring at 1.34~fm; the pion's pinning at $r_e/2$.
 \item \textbf{The weak scale.} $G_F$, $M_W$, $M_Z$ and the mixing angle are not in the base; the
 neutron's factor 9; the QCD factor 1.2 on the tau.
 \item \textbf{Fermionic statistics}: the exchange sign between two rings; the discrete jump in a
@@ -890,7 +901,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 107 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 108 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

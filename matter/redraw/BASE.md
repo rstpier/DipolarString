@@ -2471,3 +2471,38 @@ dont la base n'a que la circulation à sens unique du fluide (R32, R53), exclue 
 R111 D est confirmé physique (non jaugeable) ; « chiral » en R111 E est corrigé en « pyritoédrique,
 achiral ». C'est le point exact où la base et l'automate de Weyl se séparent : pas une trame, pas
 un porteur, mais trois propriétés du croisement.
+
+**R113 — Le rayon de l'anneau du nucléon : S = ℏ/2 sur la circulation collective le fixe-t-il ?**
+(« On fait R113 »)
+→ `nucleon_ring_radius.py`, 5/5. Le seul nombre non fixé du secteur hadronique (R109) : le rayon R
+de l'anneau qui porte le spin, 0,562 (masse + spin), 0,587 (μ_p) ou 0,672 fm (Δ − N), 3 % sur m_p.
+**(A) L'identité.** Un quantum de circulation (E = πℏc/L) sur un chemin fermé de longueur L et
+d'aire A porte S = (2A/L)(E/c) = 2πℏA/L² : c'est ℏ/2 si et seulement si le chemin est un cercle
+(égalité isopérimétrique), **pour tout rayon** (vérifié à 10⁻¹¹ de 0,39 à 3 fm) ; tout autre chemin
+porte moins (ellipse 0,42–0,50, carré 0,39, triangle 0,30, enveloppe des trois circuits 0,35, Y
+bifilaire à l'échelle 9 : 0,13, ou 0,04 en sens alterné). S = ℏ/2 ne contient donc aucune
+information sur R ; seule l'énergie ℏc/2R le fixe. **(B) La circulation collective.** L'impulsion
+totale d'un écoulement fermé est nulle, donc son moment cinétique est le même autour de tout
+point : les trois circuits de quark donnent S = ½ + ½ − ½ = ℏ/2 (nucléon) et 3ℏ/2 (Δ) **à tout
+écartement** d des circuits (0 à 2R_c, écart 10⁻¹⁰). La condition demandée est satisfaite pour
+toute géométrie : elle ne fixe rien. **(C) Le compte, en route.** Si les circuits de quark sont
+des cercles (trois brins bout à bout, comme l'anneau de l'électron à l'échelle 3), chacun porte
+ℏ/2 par (A) ; l'anneau séparé de R48/R72 est alors un quatrième circuit et le total n'est
+demi-entier que si l'anneau porte un **nombre pair de quanta**. Les masses ne fixent que n/R :
+la lecture de R48, (n_N, n_Δ) = (1, 3) à 0,672 fm, a un total entier ; les assignations
+demi-entières sont (2, 4) à 0,672 fm (N = 1056, +12,6 %, Δ = 1350, +9,6 %), (2, 6) à **1,344 fm**
+(N = 910, −3,1 %, Δ = 1203, −2,3 %, les nombres de R48 avec le rayon doublé, 1,6 r_p, hors du
+proton, et 0,44 e en circulation pour μ_p), (4, 6) à +44 %. Les circuits « statiques » de R72
+exigent A = 0 : aucun circuit fermé à sens unique de la base ne l'a (le Y bifilaire porte 0,13 ℏ,
+non quantifié). **(D) L'énergie.** Quantum ℏc/2R et Coulomb de la charge circulante (1,0 MeV à
+0,67 fm, coupure w₉/4) décroissent tous en 1/R : dE/dR < 0 sur [0,15 ; 3] fm pour n = 1, 2 ; le
+quantum est lui-même le terme de tension ; aucun point stationnaire, aucun rayon d'équilibre.
+**(E) La géométrie.** Les cercles que l'étoile offre (R_c/2, R_c, 2R_c/√3, √3R_c, 2R_c,
+R_c(1 + 2/√3), ℓ₁(9), 2√3R_c) contre les trois lectures : seul √3R_c = 0,672 fm tombe sur Δ − N
+(0,06 %, R49) et sur rien d'autre ; les trois lectures s'étalent sur 17,8 % (147 à 176 MeV), aucun
+rayon unique ne les satisfait à mieux que ~9 %. **Verdict** : NON DÉRIVÉ ; S = ℏ/2 est une
+IDENTITÉ (un quantum sur un cercle) qui ne fixe pas R, la circulation collective le donne à toute
+géométrie, l'énergie n'a pas d'extremum ; √3R_c reste une COÏNCIDENCE (R49 confirmé). Point
+nouveau, à trancher par l'auteur : le compte des quanta (C) rend la lecture (1, 3) de R48 et les
+circuits « statiques » de R72 incompatibles avec des circuits de quark circulaires ; l'anneau
+pair à 1,34 fm sort du proton. On s'arrête là, selon le critère posé.

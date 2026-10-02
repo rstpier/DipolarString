@@ -100,7 +100,9 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   pôle ; la section carrée ; le compte 9 ; l'exposant (reparamétré).
 - Coïncidences enregistrées, non revendiquées : r_p comme enveloppe de trois circuits ;
   m_p c² = 4ℏc/r_p ; l'anneau à √3 rayons de circuit ; le pion à 2m_e/α.
-- Ouvert : ce qui fixe le rayon de l'anneau (et donc m_p à 3 % près) ; ce qui épingle l'anneau
+- Ouvert : ce qui fixe le rayon de l'anneau (et donc m_p à 3 % près ; R113 : pas S = ℏ/2, qui est
+  une identité à tout rayon, ni la circulation collective, ni un extremum d'énergie ; et si les
+  circuits de quark sont des cercles, l'anneau doit porter un nombre pair de quanta, 1,34 fm) ; ce qui épingle l'anneau
   fermé du pion à r_e/2 ; pourquoi 9 et pourquoi 2π ; μ_p exige 0,87 e en circulation au rayon de
   0,67 fm, pas une charge propre (R49) ; les autres lectures de la part circulante donnent le
   neutron de +1,5 à +7 % (R41) ; la section w n'a plus de dérivation depuis que la représentation
@@ -122,7 +124,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 
 ## 9. Fichiers
 
-- `hadron_sector.py` : la chaîne entière en un calcul, 6/6.
+- `hadron_sector.py` : la chaîne entière en un calcul, 6/6 ; `nucleon_ring_radius.py` (R113) : le
+  rayon de l'anneau n'est pas fixé par S = ℏ/2, 5/5.
 - Étapes d'origine : `closed_ring_scale.py` (R16), `quark_star.py` (R20), `quark_y.py` (R22),
   `junction_valence.py` (R24), `nucleon_moments.py` (R25), `three_strand.py` (R28),
   `mode_rule.py` (R29), `pitch_search.py` (R39), `circuit_rule.py` (R40),

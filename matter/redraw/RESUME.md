@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R112)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R113)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R112).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R113).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -109,7 +109,11 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
   un facteur 2 près (±11 %) ; la forme du pôle (bouchon) vient du mécanisme d'entassement pris
   tel quel.
 - Le rayon de l'anneau du nucléon, 0,67 fm : égal à √3 fois le rayon de circuit à 0,1 %, et
-  l'enveloppe de trois circuits tangents vaut r_p à 0,6 % ; sans mécanisme.
+  l'enveloppe de trois circuits tangents vaut r_p à 0,6 % ; sans mécanisme. R113 : S = ℏ/2 ne
+  peut pas le fixer (identité d'un quantum sur un cercle, à tout rayon ; circulation collective
+  des trois circuits à tout écartement ; aucun extremum d'énergie) ; et si les circuits de quark
+  sont des cercles (ℏ/2 chacun), l'anneau séparé doit porter un nombre pair de quanta, ce qui le
+  met à 1,34 fm, hors du proton, ou écarte N et Δ de 10 %.
 - m_p = 4ℏc/r_p à 0,05 % ; le muon à 0,79 fm et 1,09 fm pour les brins + et − ; μ(Δ⁺⁺) = 6,4 μ_N.
 - Le neutron sort 1,5 à 7 % trop lourd ; le spin est compté à la fois par circuits et par anneau.
 - « Dynamisme de l'espace » (R57) : des DQD du vide qui circulent donneraient à l'électron son
@@ -170,8 +174,11 @@ photon comme paire, la ligne DQD comme facteur d'axe ; la cible est nommée, le 
 changements nommés au croisement (symétrie T_h au lieu de O_h, non-réciprocité, déphasage réactif
 d'un quart d'onde contre A5). Le secteur hadronique, qui n'en dépend pas, est
 consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) : des rapports à
-1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). L'article
-(`matter/paper/`) est consolidé jusqu'à R112.
+1–3 % avec deux entrées structurelles (9, 2π) et un nombre non fixé (le rayon de l'anneau). R113 a
+cherché si S = ℏ/2 sur la circulation collective des trois circuits fixe ce rayon : non, c'est une
+identité vraie à tout rayon et à toute géométrie, sans extremum d'énergie ; √3R_c reste une
+coïncidence, et le compte des quanta (quatre circuits circulaires → anneau pair → 1,34 fm) est un
+point à trancher. L'article (`matter/paper/`) est consolidé jusqu'à R113.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -272,14 +279,14 @@ Ce qui reste vraiment :
    (R54) ; et le partage 2/3, 2/3, −1/3 de la circulation du nucléon (R72), posé.
 5. **L'amplitude d'un saut** (émission, désintégration) : la base a les états et les horloges, pas
    les amplitudes.
-6. Trois coïncidences à 1 % sans mécanisme : l'anneau du nucléon à 0,67 fm (√3 × R_c), le pion à
-   r_e/2, m_p = 4ℏc/r_p.
+6. Trois coïncidences à 1 % sans mécanisme : l'anneau du nucléon à 0,67 fm (√3 × R_c, confirmée
+   coïncidence en R113), le pion à r_e/2, m_p = 4ℏc/r_p.
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R112 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R113 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 107 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 108 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
