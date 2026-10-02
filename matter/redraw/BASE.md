@@ -2506,3 +2506,28 @@ géométrie, l'énergie n'a pas d'extremum ; √3R_c reste une COÏNCIDENCE (R49
 nouveau, à trancher par l'auteur : le compte des quanta (C) rend la lecture (1, 3) de R48 et les
 circuits « statiques » de R72 incompatibles avec des circuits de quark circulaires ; l'anneau
 pair à 1,34 fm sort du proton. On s'arrête là, selon le critère posé.
+
+**R114 — L'anneau à 1,34 fm : recalcul de μ_p.** (« Mets l'anneau à 1,34 fm et recalcule μ_p »)
+→ `ring_at_134.py`, 4/4. L'anneau est posé à R = 2√3 R_c = 1,344 fm, le rayon du compte pair
+(R113 C : (n_N, n_Δ) = (2, 6), N = 910, Δ = 1203 MeV), et le moment est recalculé avec la règle de
+la base (R25, R72) : la charge circulante tourne à c, μ = Q (R/ƛ_p) μ_N, partage de SU(6)
+Q_p = (2/3)² + (2/3)² + (1/3)² = 1, Q_n = −2/3. **(A)** μ_p = 6,39 μ_N (mesuré 2,793, +129 %),
+μ_n = −4,26 (mesuré −1,913, +123 %), μ(Δ⁺⁺) avec 2e = 12,8 μ_N (fourchette 3,7–7,5) ; le rapport
+μ_p/μ_n = −3/2 ne voit pas R (2,7 %, inchangé). **(B)** Le moment ne fixe que le produit
+Q R = μ_p ƛ_p = 0,587 fm·e, indépendant du nombre de quanta (la charge fait un tour par tour, à c) :
+à 1,344 fm il faut Q_p = 0,437 e (R49 : 0,874 e à 0,672 ; R72 : 1,045 e à 0,562), Q_n = −0,299 e.
+Aucune fraction de la base ne le donne (1, 2/3, 1/2, 4/9, 1/3, 2/9, 1/(2√α), √α) : la plus proche,
+4/9, à 1,7 %, sans lecture. **(C) Le rayon de charge.** Un anneau portant les 0,437 e que μ_p exige
+à 1,344 fm a ⟨r²⟩ = 0,790 fm², déjà plus que r_p² = 0,707 : r_p ≥ 0,889 fm (+5,7 %) même avec le
+reste de la charge au centre, 0,979 fm (+16,5 %) avec le reste sur les circuits ; r_p est mesuré à
+0,05 %. **Exclu.** Le même calcul à 0,672 fm avec 0,874 e donne 0,658 fm (−22 %) et à 0,587 fm
+avec 1 e, 0,587 fm (−30 %) : l'image « charge circulante sur l'anneau » n'a jamais eu le rayon de
+charge, qui était lu comme la taille de l'étoile (R43, R49), pas comme le rms de la charge. **(D)**
+μ_p et r_p ensemble fixent (R, Q) = (0,994 fm, 0,591 e) (reste sur les circuits) ; à ce rayon N et
+Δ − N demandent n_N = 1,77 et n_Δ − n_N = 2,96 quanta, non entiers ; le meilleur compte entier,
+(2, 5), tient les quatre données à 2,4 % mais avec un total de spin entier (R113 C) ; le meilleur
+compte pair, (2, 4), met Δ − N à 199 MeV (−32 %). Quatre nombres (R, Q, n_N, n_Δ) pour quatre
+données : au mieux un ajustement, pas une prédiction. **Verdict** : EXCLU. À 1,34 fm la règle de
+la base donne μ_p = 6,4 μ_N ; le moment ne fixe que Q R ; la charge qu'il exige dépasse à elle
+seule le rayon du proton. Le compte pair (R113), μ_p et r_p sont incompatibles : l'anneau chargé
+tournant à c n'est pas la lecture du moment du nucléon, à aucun rayon.

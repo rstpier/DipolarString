@@ -3,7 +3,7 @@
 **Status: research front with a first draft. Nothing here is part of any released version.**
 
 Since 14–19 September 2026 the sector has been redrawn from the author's constitutive
-statements in [`redraw/`](redraw/) (`BASE.md`, R1–R113, 108 scripts with PASS/FAIL checks;
+statements in [`redraw/`](redraw/) (`BASE.md`, R1–R114, 109 scripts with PASS/FAIL checks;
 `RESUME.md` for the summary) and consolidated into the article draft
 [`paper/DS_matter_sector.tex`](paper/DS_matter_sector.tex). The draft's Section 7 files every
 claim at one of the six maturity levels; its firmest result is the exclusion of an extended

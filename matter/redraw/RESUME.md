@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R113)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R114)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R113).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R114).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -113,7 +113,10 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
   peut pas le fixer (identité d'un quantum sur un cercle, à tout rayon ; circulation collective
   des trois circuits à tout écartement ; aucun extremum d'énergie) ; et si les circuits de quark
   sont des cercles (ℏ/2 chacun), l'anneau séparé doit porter un nombre pair de quanta, ce qui le
-  met à 1,34 fm, hors du proton, ou écarte N et Δ de 10 %.
+  met à 1,34 fm, hors du proton, ou écarte N et Δ de 10 %. R114 : à 1,34 fm la règle de la base
+  donne μ_p = 6,4 μ_N (+129 %) ; le moment ne fixe que Q R = 0,587 fm·e, et les 0,44 e qu'il exige
+  à ce rayon dépassent à eux seuls le rayon de charge du proton (r_p ≥ 0,89 fm) : exclu ; l'image
+  de la charge circulante sur l'anneau n'a le rayon de charge à aucun rayon (0,66 fm à 0,672).
 - m_p = 4ℏc/r_p à 0,05 % ; le muon à 0,79 fm et 1,09 fm pour les brins + et − ; μ(Δ⁺⁺) = 6,4 μ_N.
 - Le neutron sort 1,5 à 7 % trop lourd ; le spin est compté à la fois par circuits et par anneau.
 - « Dynamisme de l'espace » (R57) : des DQD du vide qui circulent donneraient à l'électron son
@@ -178,7 +181,10 @@ consolidé en un chapitre et un calcul (R109, `HADRONS.md`, `hadron_sector.py`) 
 cherché si S = ℏ/2 sur la circulation collective des trois circuits fixe ce rayon : non, c'est une
 identité vraie à tout rayon et à toute géométrie, sans extremum d'énergie ; √3R_c reste une
 coïncidence, et le compte des quanta (quatre circuits circulaires → anneau pair → 1,34 fm) est un
-point à trancher. L'article (`matter/paper/`) est consolidé jusqu'à R113.
+point à trancher. R114 a posé l'anneau à 1,34 fm : μ_p = 6,4 μ_N avec la règle de la base, et la
+charge que le moment exige (0,44 e) dépasse à elle seule r_p : exclu ; le compte pair, μ_p et r_p
+ne laissent aucun anneau chargé tournant à c. L'article (`matter/paper/`) est consolidé jusqu'à
+R114.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -284,9 +290,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R113 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R114 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 108 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 109 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
