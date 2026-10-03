@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 114 steps (R1--R114) backed by 109 scripts.
+statement imposes and what it breaks; the record is 115 steps (R1--R115) backed by 110 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -422,7 +422,11 @@ the product $QR = \mu_p\lambda\!\!\!^{-}_p = 0.587$~fm$\cdot e$, and the $0.44\,
 that radius already exceed the proton's charge radius on their own ($r_p \ge 0.89$~fm against
 $0.841$). The same charge-radius test gives $0.66$~fm at $0.672$~fm: a charged ring at $c$ is not
 the reading of the nucleon's moment at any radius, and the table's $\mu_p/\mu_n = -3/2$, which
-does not see $R$, is what survives of it. Nothing of the electron
+does not see $R$, is what survives of it. The other charged structure, the quark circuits at $R_c$
+with the quark charge on their strands (R115, \texttt{circuit\_moments.py}), gives the ratio
+$-3/2$ with the SU(6) weights but a magnitude $34\,\%$ low ($\mu_p = 1.85\,\mu_N$), or the
+magnitude to $1\,\%$ with weights whose sum is not a spin $\tfrac12$; no sharing at spin $\tfrac12$
+gives both (minimax $9.5\,\%$). What carries the nucleon's moment is open. Nothing of the electron
 enters but $m_e$ through $\lb$: the sector is independent of the exclusions of
 Sections~\ref{sec:electron}--\ref{sec:fieldquantum}, and under the field reading its anchor
 $2\pi\lb/3$ is a posed length. The consolidated chapter, with inputs, rules, chain, statuses and
@@ -852,8 +856,9 @@ none of $S$, $\mu_B$, $g$.
 rather than the family level.
 \item \textbf{The nucleon ring radius} (0.67~fm): not fixed by $S = \hbar/2$, by the collective
 circulation, or by an energy extremum (R113); the quantum count of a fourth circular circuit,
-which puts an even-quanta ring at 1.34~fm, where $\mu_p$ and $r_p$ exclude it (R114): what carries
-the nucleon's moment is open; the pion's pinning at $r_e/2$.
+which puts an even-quanta ring at 1.34~fm, where $\mu_p$ and $r_p$ exclude it (R114); the quark
+circuits at $R_c$ give the ratio but not the magnitude (R115): what carries the nucleon's moment
+is open, only $\mu_p/\mu_n = -3/2$ stands; the pion's pinning at $r_e/2$.
 \item \textbf{The weak scale.} $G_F$, $M_W$, $M_Z$ and the mixing angle are not in the base; the
 neutron's factor 9; the QCD factor 1.2 on the tau.
 \item \textbf{Fermionic statistics}: the exchange sign between two rings; the discrete jump in a
@@ -909,7 +914,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 109 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 110 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

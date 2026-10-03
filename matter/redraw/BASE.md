@@ -2531,3 +2531,25 @@ données : au mieux un ajustement, pas une prédiction. **Verdict** : EXCLU. À 
 la base donne μ_p = 6,4 μ_N ; le moment ne fixe que Q R ; la charge qu'il exige dépasse à elle
 seule le rayon du proton. Le compte pair (R113), μ_p et r_p sont incompatibles : l'anneau chargé
 tournant à c n'est pas la lecture du moment du nucléon, à aucun rayon.
+
+**R115 — Le moment du nucléon porté par les circuits de quark eux-mêmes, à R_c.** (« ok »)
+→ `circuit_moments.py`, 4/4. R114 a fermé l'anneau chargé ; reste la seule autre structure chargée
+du nucléon : les trois circuits de quark, cercles de rayon R_c = 0,388 fm portant chacun un quantum
+à c (S = ℏ/2 chacun, R113 A), la charge du quark sur ses brins (R43). Le moment d'un circuit est
+μ_q = q_q w_q (R_c/ƛ_p) μ_N, unité R_c/ƛ_p = 1,845 μ_N (R_c = ℏc/2E_q : toute l'énergie en
+circulation, g = 1 ; g = 2 serait 2R_c). **(A) Sens classiques**, paire alignée, impair contre :
+μ_p = 3,08 μ_N (+10 %), μ_n = −2,46 (+29 %), rapport −5/4 (−14 %) : la lecture « impair à
+contre-sens à égalité » que R72 avait exclue, retrouvée. **(B) Poids de SU(6)** (4/3, −1/3) :
+rapport −3/2 exact (il ne dépend que de w_impair/w_paire = −1/2), grandeur μ_p = 1,845 μ_N
+(−34 %), μ_n = −1,23 (−36 %) ; la grandeur exigerait R = 0,587 fm = 1,51 R_c (le rayon de R25,
+entre g = 1 et g = 2). **(C) La famille complète** μ_q ∝ q_q w_q avec 2w_paire + w_impair = 1
+(spin ½), un seul paramètre : μ_p exact (w_paire = 0,92) donne le rapport à −1,28 (−12 %) ; le
+rapport exact donne μ_p à −34 % ; le minimax est à 9,5 % sur les deux (w_paire = 0,85). Aucun
+partage à spin ½ ne donne les deux à R_c. **(D) Coïncidence enregistrée et rejetée** :
+(w_paire, w_impair) = (1, −½) donne μ_p = (3/2)(R_c/ƛ_p) = 2,768 μ_N (−0,9 %), μ_n = −1,845
+(−3,5 %), rapport −3/2, mais la somme des poids vaut 3/2 : S_z = 3ℏ/4, pas un spin ½. **Verdict** :
+NON. À R_c, les circuits donnent le rapport −3/2 avec les poids de SU(6) (règle posée, R72) mais
+une grandeur 34 % trop faible, ou la grandeur avec des poids qui ne font pas un spin ½. Ce qui
+porte le moment du nucléon reste OUVERT : ni un anneau chargé (R114), ni les circuits à R_c. Ce
+qui tient du moment : le rapport μ_p/μ_n = −3/2 (2,7 %), identité des poids de SU(6) avec
+μ_q ∝ q_q, et rien d'autre.
