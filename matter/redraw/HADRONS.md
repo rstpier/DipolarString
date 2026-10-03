@@ -107,7 +107,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   exclu ; la charge circulante sur l'anneau n'a le rayon de charge à aucun rayon ; R115 : les
   circuits de quark à R_c donnent le rapport −3/2 avec SU(6) mais μ_p à −34 % : ce qui porte le
   moment du nucléon est ouvert, seul le rapport tient) ; ce qui épingle l'anneau
-  fermé du pion à r_e/2 ; pourquoi 9 et pourquoi 2π ; μ_p exige 0,87 e en circulation au rayon de
+  fermé du pion à r_e/2 ; pourquoi 9 et pourquoi 2π (R116 : pas par l'adaptation à Z₀, qui fixe des rapports
+  transverses e^π et e^{2π} sans le compte de brins ; 9 = 3 × 3 est le compte, 2π reste reparamétré) ; μ_p exige 0,87 e en circulation au rayon de
   0,67 fm, pas une charge propre (R49) ; les autres lectures de la part circulante donnent le
   neutron de +1,5 à +7 % (R41) ; la section w n'a plus de dérivation depuis que la représentation
   de l'électron à trois jonctions est fermée (R103) : elle reste une entrée à un facteur 2 près.

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R115)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R116)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R115).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R116).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -188,7 +188,10 @@ point à trancher. R114 a posé l'anneau à 1,34 fm : μ_p = 6,4 μ_N avec la r�
 charge que le moment exige (0,44 e) dépasse à elle seule r_p : exclu ; le compte pair, μ_p et r_p
 ne laissent aucun anneau chargé tournant à c. R115 a épuisé l'autre porteur, les circuits de quark
 à R_c : le rapport −3/2 avec SU(6) mais la grandeur à −34 %, ou la grandeur à 1 % sans spin ½ ; le
-moment du nucléon est ouvert. L'article (`matter/paper/`) est consolidé jusqu'à R115.
+moment du nucléon est ouvert. R116 a testé la lecture de l'auteur des deux entrées (« 2π = tour du
+cercle unité », « 9 = 3² ») : l'adaptation à Z₀ fixe des rapports transverses (e^π, e^{2π}), jamais une
+puissance du compte de brins ; 2π reste reparamétré, 9 = 3 × 3 est déjà le compte de la base.
+L'article (`matter/paper/`) est consolidé jusqu'à R116.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -294,9 +297,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R115 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R116 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 110 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 111 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

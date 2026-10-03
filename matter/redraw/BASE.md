@@ -2553,3 +2553,27 @@ une grandeur 34 % trop faible, ou la grandeur avec des poids qui ne font pas un 
 porte le moment du nucléon reste OUVERT : ni un anneau chargé (R114), ni les circuits à R_c. Ce
 qui tient du moment : le rapport μ_p/μ_n = −3/2 (2,7 %), identité des poids de SU(6) avec
 μ_q ∝ q_q, et rien d'autre.
+
+**R116 — L'exposant 2π de l'échelle peut-il sortir de l'adaptation à Z₀ ?** (énoncé de l'auteur,
+3 octobre 2026 : « 2π c'est une circonférence r = 1, et 9 c'est n_électron² » ; test proposé : la
+longueur de circuit adaptée à Z₀ pour n brins varie-t-elle comme (3/n)^{2π} ?)
+→ `ladder_exponent_matching.py`, 4/4. **(A) Ce que les données fixent** : p(e, μ) = 6,2925,
+p(e, τ) = 6,2758, fenêtre 0,27 %, 2π = 6,2832 dedans ; avec p = 2π exactement, m_μ/m_e sort à
+−0,78 % et m_τ/m_e à +0,97 % (le 0,15 % porte sur p, pas sur les masses) ; n = 3, 7, 11 sont posés.
+**(B) Brins en série** (la géométrie de la base : brins bout à bout) : n tronçons adaptés en chaîne
+ont Z_in = Z₀ pour tout n et toute longueur (10⁻¹⁶) ; l'adaptation bifilaire fixe D/r = 2cosh π =
+23,18 sans n ni longueur. L'adaptation ne contient pas n : elle ne peut pas produire ℓ₁(n) ∝ n^{−2π}.
+**(C) Brins en parallèle** (faisceau de n brins sur un cercle, retour coaxial) : Z = (η/2π) ln(b/r_eq),
+r_eq = (n r ρ^{n−1})^{1/n} ; adapté, b/r_eq = e^{2π} = 535,5 : le 2π y est un rapport de tailles, pas
+un exposant de n ; la taille adaptée varie comme n^{p_eff} avec |p_eff| ≤ 1,1 (n = 3 à 11, ρ/r ≤ 100),
+contre 6,28. **(D)** Les rapports adaptés de la base sont transverses : D/r = 2cosh π = e^π(1 + e^{−2π})
+et (2cosh π)² = e^{2π} à 0,4 % **par identité** (1 + 2e^{−2π}), pas une coïncidence ; aucun rapport de
+longueurs de la base ne vaut e^{2π} à 5 % (le plus proche, ƛ/ℓ₁(9), à −11 %). Le 2π de l'échelle est
+numériquement celui du potentiel de ligne 2D, (λ/2πε) ln r, que la lecture de l'auteur nomme ; un
+mécanisme devrait produire ln(ℓ₁(3)/ℓ₁(n)) = 2π ln(n/3), c'est-à-dire une impédance η ln(n/3) entre
+deux barreaux : la base n'en a pas. **Verdict** : NON DÉRIVÉ. L'adaptation à Z₀ fixe des rapports
+transverses (π dans arccosh, 2π dans ln) et jamais une puissance du compte de brins ; l'exposant 2π
+reste REPARAMÉTRÉ. Les deux lectures de l'auteur sont enregistrées comme noms : 9 = 3 × 3 est
+déjà le compte de la base (trois quarks, trois brins par fermion, le « 3 » étant posé) ; « 2π = tour
+du cercle unité » est le 2π de Gauss en deux dimensions, juste tant qu'un calcul ne le fait pas
+multiplier ln(n/3).

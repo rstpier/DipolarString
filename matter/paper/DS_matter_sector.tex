@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 115 steps (R1--R115) backed by 110 scripts.
+statement imposes and what it breaks; the record is 116 steps (R1--R116) backed by 111 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -864,7 +864,14 @@ neutron's factor 9; the QCD factor 1.2 on the tau.
 \item \textbf{Fermionic statistics}: the exchange sign between two rings; the discrete jump in a
 measurement; the joint state of two rings (Bell).
 \item \textbf{The exponent $2\pi$ and the count 9}, structural inputs; and, under the field
-reading, the hadron anchor $2\pi\lb$, now a posed length rather than the electron's circuit.
+reading, the hadron anchor $2\pi\lb$, now a posed length rather than the electron's circuit. The
+author reads $2\pi$ as the circumference of the unit circle and $9$ as $3^2$; impedance matching
+cannot supply the exponent (R116, \texttt{ladder\_exponent\_matching.py}): it fixes transverse
+ratios, $D/r = 2\cosh\pi \simeq e^{\pi}$ for the bifilar line and $e^{2\pi}$ for a coaxial one,
+and $n$ enters neither a chain of matched segments (exactly $Z_0$ for every $n$) nor a bundle
+(effective exponent at most $1.1$). The data pin $p$ to $[6.276, 6.292]$; a mechanism would have to
+give $\ln(\lone(3)/\lone(n)) = 2\pi\ln(n/3)$, an impedance $Z_0\ln(n/3)$ between rungs, which the
+base does not have.
 \item \textbf{The section width} $w = 4\lb/\pi^2$, derived only through the three junctions of a
 representation now closed; the splitting tests it to a factor of two.
 \end{enumerate}
@@ -914,7 +921,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 110 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 111 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
