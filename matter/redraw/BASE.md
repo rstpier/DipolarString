@@ -2641,3 +2641,11 @@ doit avoir un état mesurable) s'applique à la particule et coïncide avec la d
 appliqué au canal, il prédit une perte d'intrication par ce qui traverse l'espace, qui n'est pas
 observée. Verdict : (i) possible, mais axiome de plus (un canal de contrainte, non une ligne) ;
 (ii) et (iii) EXCLUS par les données existantes. Rien de la base n'est modifié.
+*Suites (même jour).* Un canal « sub-atomique, sous le neutrino » ne répond qu'à la dernière
+objection et pas au chiffre : le flux solaire (6,5 × 10¹⁰ ν/cm²/s) traverse géométriquement un canal
+de 1 fm sur 1200 km ~10⁶ fois par seconde, ~10³ fois pendant la vie d'une paire, et S = 2,37 ± 0,09
+tient ; il faudrait ignorer aussi les neutrinos, donc tout, et les quatre objections structurelles
+restent. Un canal porté par le champ de Higgs est exclu par la portée : m_H = 125 GeV, λ = 1,6 ×
+10⁻¹⁸ m, vitesse ≤ c, et le Higgs couple à tout ce qui a une masse. Un objet sans énergie, sans
+vitesse, que rien ne perturbe, dont l'existence dépend de la mesure choisie, et indexé par deux
+positions : ce sont les propriétés de la fonction d'onde, non d'une ligne de l'éther.
