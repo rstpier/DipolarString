@@ -2602,3 +2602,42 @@ de la partie QCD sous 2,2 MeV à ±0,1, ou une confirmation réseau du 0,71 disp
 sans nombre libre ; une seconde détermination de √σ au point physique hors de 427–435 à plus de 3σ
 tue l'autre. La liste d'auteurs de arXiv:2609.15154 est à compléter par l'auteur (accès bloqué
 depuis la session).
+
+**Note de principe (4 octobre 2026) — le canal d'intrication.** Hypothèse de l'auteur, en trois
+formes successives : (i) l'éther connaît les deux axes instantanément et permet une propagation
+d'état au-delà de c ; (ii) un canal d'intrication naît au point d'intrication et relie les deux
+particules ; (iii) une particule non intriquée qui perturbe le canal fait perdre l'intrication.
+Pas de calcul ; ce qui suit est l'état des faits, à lire avec R92.
+*Ce qui est compatible avec tout ce qui est mesuré* : (i), sous la forme de Bohm avec repère
+privilégié (de Broglie 1927, Bohm 1952, Valentini). L'éther donne un sens à « instantané ». Trois
+conditions imposées par l'expérience : rien de transporté (ni énergie ni information contrôlable,
+non-signalement vérifié dans chaque test de Bell) ; strictement instantané, non seulement rapide
+(> 10⁴ c mesuré en suivant la rotation terrestre, Salart 2008 ; toute vitesse finie permettrait de
+signaler, Bancal 2012) ; invisible dans les probabilités (Born reproduit, donc rien de prédit en
+plus hors d'équilibre). Le prix pour la base : un état intriqué est une fonction de deux positions
+à la fois, pas un champ V(x, t) ; un milieu de lignes en 3D n'a pas de registre indexé par des
+paires de positions. C'est le « hors des lignes » de R92 ; l'analogue classique le plus proche est
+la pression d'un fluide incompressible, contrainte globale et non onde. Le manuscrit avait tenté un
+canal plus rapide que c (v_sync = c₀Z₀/Z_min) et l'a retiré en V2.10.
+*Ce qui exclut (ii) et (iii), un canal comme objet dans l'espace* : échange d'intrication (Pan 1998 ;
+Hensen 2015 : les deux spins à 1,3 km ne se sont jamais rencontrés, chacun intriqué avec un photon,
+les photons mesurés conjointement au milieu et détruits ; aucun point de création commun) ; choix
+retardé (Ma 2012 : l'épissure de 2 et 3 est décidée après que 1 et 4 ont été absorbés et leurs
+résultats écrits ; le « fil » ne change pas des nombres déjà écrits, il indique seulement quelles
+lignes du cahier de 1 vont avec quelles lignes du cahier de 4) ; l'épissure dépend de la question
+posée en C (conjointe ou séparée) et de son résultat (quatre états de Bell) ; aucune énergie par
+longueur ni force (Micius 2017, 1200 km, la corde passe 28 km sous la croûte) ; aucune sensibilité à
+ce qui traverse l'espace entre les deux (atmosphère, bâtiments, bobines de fibre manipulées), alors
+qu'un seul atome diffusant sur la particule, ou le spin nucléaire voisin d'un électron NV, tue la
+corrélation en millisecondes : la décohérence est locale à la particule, jamais au trajet. Un canal
+qu'aucune particule ne peut perturber n'interagit avec rien et n'est pas détectable. Le « fil » des
+diagrammes d'information quantique (ebit, lien d'intrication, répéteur) est une écriture comptable
+des corrélations entre enregistrements, pas un conduit.
+*Ce qui reste physique* : la contrainte fixée au point d'intrication (le total conservé), propriété
+de la paire et non d'un chemin ; et le fait, inexpliqué, qu'elle tienne pour des axes choisis après
+coup (−cos θ, |S| = 2√2 contre ≤ 2 pour toute liste de réponses pré-écrites, R92). Le principe de
+l'auteur enregistré le 26 septembre (une particule qui interagit devient le référentiel de l'autre et
+doit avoir un état mesurable) s'applique à la particule et coïncide avec la décohérence observée ;
+appliqué au canal, il prédit une perte d'intrication par ce qui traverse l'espace, qui n'est pas
+observée. Verdict : (i) possible, mais axiome de plus (un canal de contrainte, non une ligne) ;
+(ii) et (iii) EXCLUS par les données existantes. Rien de la base n'est modifié.
