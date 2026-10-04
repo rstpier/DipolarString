@@ -1,5 +1,10 @@
 # Article — matter sector
 
+**Status (4 October 2026): not for submission.** The author's decision is that the draft is
+not published without a notable discovery; after R100–R116 the record holds exclusions,
+identities and ratios at 1–3 % on posed inputs, none of which is one. The draft stays here as
+the consolidated record.
+
 `DS_matter_sector.tex` is now a **first content draft** (16 pages, compiles clean, zero
 undefined references), consolidating the redraw recorded in `../redraw/BASE.md`
 (R1–R116, 111 scripts). It keeps the skeleton's section order and the `\status{...}`
