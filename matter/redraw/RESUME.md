@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R116)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R117)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R116).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R117).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -78,7 +78,8 @@ pour la tension de corde et l'écart proton–neutron.
 - **Les mésons.** Des anneaux fermés de 4 à 6 brins à r_e/2 : 140 MeV pour le pion.
 - **Les forces.** La force nucléaire est la jonction pôle à pôle (2 MeV à 0,7 fm, l'échelle du
   deutéron) ; la tension forte est l'énergie d'un quantum de circulation par unité de trajet,
-  πℏc/ℓ₁(9)² = 939 MeV/fm, soit √σ = 430 MeV, au centre de la valeur du réseau (420–440).
+  πℏc/ℓ₁(9)² = 939 MeV/fm, soit √σ = 430 MeV, au centre de l'ancienne bande du réseau (420–440) ;
+  la détermination 2+1 saveurs au point physique de 2024 donne 445 ± 7, à 2,2σ (R117).
 
 ## 3. Ce qui est dérivé
 
@@ -91,7 +92,7 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 | masse du muon, du tau : forme C₃ (Koide) avec a² = 2\|b\|² et φ = 2/9 **posés** (R76) | 105,66 ; 1777,0 MeV | 105,66 ; 1776,9 | 10⁻⁵ ; 7·10⁻⁵ |
 | (l'échelle (n/3)^{2π} n'est plus une loi de masse : approximation à 1 %, exclue par l'absence de 4e génération, R73/R76) | 104,8 ; 1794 | | −0,8 % ; +1,0 % |
 | pion (anneau fermé) | 2m_ec²/α = 140,05 MeV | 139,57 | +0,3 % |
-| tension forte √σ | 430 MeV | 420–440 | centre |
+| tension forte √σ | 430 MeV | 420–440 ; 445 ± 7 (2024) | centre ; 2,2σ |
 | écart neutron–proton, part forte | 2,47 MeV | 2,52 ± 0,29 | dans l'erreur |
 | écart neutron–proton, total | 1,27 à 1,35 MeV | 1,293 | −2 à +4,5 % |
 | rayon de charge du proton (charges aux bouts des bras) | 0,81 fm | 0,84 | −3 % |
@@ -191,7 +192,11 @@ ne laissent aucun anneau chargé tournant à c. R115 a épuisé l'autre porteur,
 moment du nucléon est ouvert. R116 a testé la lecture de l'auteur des deux entrées (« 2π = tour du
 cercle unité », « 9 = 3² ») : l'adaptation à Z₀ fixe des rapports transverses (e^π, e^{2π}), jamais une
 puissance du compte de brins ; 2π reste reparamétré, 9 = 3 × 3 est déjà le compte de la base.
-L'article (`matter/paper/`) est consolidé jusqu'à R116.
+R117 a confronté les deux meilleurs nombres aux déterminations de 2024–2026 : √σ = 430 est à 2,2σ du
+445 ± 7 du réseau 2+1 saveurs ; la coupe QCD/QED de m_n − m_p suit le réseau BMW (0,2σ) et contredit
+les déterminations dispersives (GLR 3,7σ, règle de somme de septembre 2026 ~8σ), qui contredisent
+aussi le réseau : en tension, pas tué ; la prochaine valeur réseau au point physique tranche.
+L'article (`matter/paper/`) est consolidé jusqu'à R117.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -297,9 +302,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R116 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R117 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 111 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 112 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

@@ -70,9 +70,9 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 | Δ − N | 250–351 MeV ; 294 avec R = 0,672 | 294 | ±15 % | conditionnel (rayon) | R48 |
 | m_n − m_p, partie forte | 2,474 MeV | 2,52 ± 0,29 (BMW) | 1σ | dérivé | R42 |
 | m_n − m_p, total | 1,27 (bouchon), 1,32 (plaque) MeV | 1,293 | −1,9 %, +2,4 % | conditionnel (section, forme du pôle) | R44, R45, R72 |
-| part QED implicite | −1,20 MeV | −1,00 ± 0,16 | 1,3σ | conséquence | R44 |
+| part QED implicite | −1,20 MeV | −1,00 ± 0,16 (réseau) ; −0,58 ± 0,16, −0,71 ± 0,06 (dispersif) | 1,3σ ; 3,9σ, 8σ | conséquence, en tension | R44, R117 |
 | μ_p/μ_n | −3/2 | −1,460 | +2,7 % | posé (partage) | R72 |
-| √σ | 430,3 MeV | 420–440 | centre | conditionnel (un quantum par bras) | R39, R40 |
+| √σ | 430,3 MeV | 420–440 ; 445 ± 7 (2+1 saveurs, 2024) | centre ; 2,2σ | conditionnel (un quantum par bras), en tension | R39, R40, R117 |
 | force nucléaire | 2 MeV à 0,72 fm | deutéron 2,22 | échelle | calibré | R20, R22 |
 | pion | 140,05 MeV | 139,57 | +0,34 % | identification (2m_e/α), coïncidence connue | R16 |
 | r_p | ℓ₁(9) = 0,813 ; enveloppe 0,836 fm | 0,841 | −3,3 % ; −0,6 % | coïncidences | R43, R49 |
@@ -120,7 +120,12 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 
 - Une détermination sur réseau de la partie QCD de m_n − m_p qui s'écarte de 2,47 MeV de plus que
   son ±0,29 actuel, ou de √σ hors de 420–440 MeV de plus que les 2 % que l'exposant permet : les
-  formules (2α/3)·3^{2π}·m_e c² et (3/(2√π))·3^{2π}·m_e c² n'ont aucun nombre libre.
+  formules (2α/3)·3^{2π}·m_e c² et (3/(2√π))·3^{2π}·m_e c² n'ont aucun nombre libre. État en
+  octobre 2026 (R117) : les déterminations dispersives de la part QED (Gasser–Leutwyler–Rusetsky
+  0,58 ± 0,16 ; règle de somme 2026 0,71 ± 0,06) mettent la partie QCD à 1,87–2,00 MeV, à 3,7–8σ de
+  la formule, mais contredisent aussi le réseau BMW (1,00 ± 0,16) ; une valeur réseau au point
+  physique de la partie QCD sous 2,2 MeV à ±0,1 tue la formule. √σ = 445 ± 7 (2024, 2+1 saveurs)
+  est à 2,2σ : une seconde détermination au point physique hors de 427–435 à plus de 3σ tue l'autre.
 - Un écart Δ − N ou un rapport de moments que plus aucun rayon d'anneau unique ne reproduit à
   15 % et 3 %.
 - Une règle qui fixerait le rayon de l'anneau et donnerait m_p à mieux que 3 % serait le premier
@@ -130,7 +135,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 ## 9. Fichiers
 
 - `hadron_sector.py` : la chaîne entière en un calcul, 6/6 ; `nucleon_ring_radius.py` (R113) : le
-  rayon de l'anneau n'est pas fixé par S = ℏ/2, 5/5 ; `ring_at_134.py` (R114) : l'anneau à 1,34 fm
+  rayon de l'anneau n'est pas fixé par S = ℏ/2, 5/5 ; `data_update_2026.py` (R117) : les deux
+  meilleurs nombres contre 2024–2026, 4/4 ; `ring_at_134.py` (R114) : l'anneau à 1,34 fm
   exclu par μ_p et r_p, 4/4 ; `circuit_moments.py` (R115) : le moment par les circuits à R_c,
   rapport oui, grandeur non, 4/4.
 - Étapes d'origine : `closed_ring_scale.py` (R16), `quark_star.py` (R20), `quark_y.py` (R22),

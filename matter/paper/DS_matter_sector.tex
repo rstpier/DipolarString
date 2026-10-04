@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 116 steps (R1--R116) backed by 111 scripts.
+statement imposes and what it breaks; the record is 117 steps (R1--R117) backed by 112 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -98,7 +98,8 @@ independent verification (see the Disclosure).
 charge spectrum and a colour label. A circulation quantum $\pi\hbar c$ per closed path, with the
 path scale $\lone(n) = (2\pi\lb/3)(3/n)^{2\pi}$, gives the quark as an electron-type circuit at
 $\lone(9) = 0.81$~fm (254~MeV), the nucleon as three static circuits (763~MeV) plus a spin-carrying
-ring, the string tension $\sqrt\sigma = 430$~MeV (lattice 420--440), the neutron--proton splitting
+ring, the string tension $\sqrt\sigma = 430$~MeV (lattice 420--440; $445 \pm 7$ at the physical
+point in 2024, a $2.2\sigma$ tension), the neutron--proton splitting
 1.27--1.34~MeV (measured 1.293) and the $\Delta$--$N$ gap within $15\,\%$. The lepton masses are the
 Koide form of a $C_3$ mass-root operator whose $45^\circ$ is the half-and-half partition of
 $g = 2$; the phase $2/9$ is posed. The lifetime law $\tau = T\,(M/m)^4/C(n)$ reproduces the muon and
@@ -371,7 +372,7 @@ quark circuit & 254 MeV & constituent $\sim 313$ & $2\pi$, 9; Conditionally deri
 nucleon, static part & 763 MeV & --- & partition $\{3,3,3\}$; Derived given the rule \\
 nucleon, total & 910--938 MeV & 938.3 & ring radius posed; Conditionally derived \\
 $\Delta - N$ & 250--336 MeV & 294 & R25 radii; Conditionally derived \\
-$m_n - m_p$, strong part & 2.47 MeV & $2.52 \pm 0.29$ \cite{bmw} & $(2\alpha/3)\,3^{2\pi} m_e c^2$; Derived \\
+$m_n - m_p$, strong part & 2.47 MeV & $2.52 \pm 0.29$ \cite{bmw}; $1.87$--$2.00$ dispersive \cite{glr,sumrule2026} & $(2\alpha/3)\,3^{2\pi} m_e c^2$; Derived, in tension \\
 $m_n - m_p$, total & 1.27--1.34 MeV & 1.293 & section, pole shape; Conditionally derived \\
 $\mu_p/\mu_n$ & $-3/2$ & $-1.460$ & sharing $2/3, 2/3, -1/3$; Postulated \\
 $\sqrt{\langle r^2\rangle_p}$ & 0.81--0.84 fm & 0.841 & coincidence \\
@@ -445,8 +446,11 @@ u_{\rm path} = \frac{4\pi K q^2}{\lone(9)^2} = \frac{\pi\hbar c}{\lone(9)^2} = 9
 \sqrt\sigma = \frac{3}{2\sqrt\pi}\,3^{2\pi}\,m_e c^2 = 430\ {\rm MeV},
 \]
 $\alpha$ and $Z_0$ cancelling between the pole charge and the matching (R39--R40,
-\texttt{pitch\_search.py}, \texttt{circuit\_rule.py}). Lattice determinations put $\sqrt\sigma$ at
-420--440~MeV \cite{necco}. The tension is the energy per path of the same object that weighs the
+\texttt{pitch\_search.py}, \texttt{circuit\_rule.py}). Older lattice determinations put $\sqrt\sigma$ at
+420--440~MeV \cite{necco}; the $2+1$-flavour determination at physical quark masses gives
+$445(3)(6)$~MeV \cite{bulava}, $2.2\sigma$ above the base's value and $1.5\sigma$ above the edge of
+the exponent's window (R117, \texttt{data\_update\_2026.py}): a tension, not an exclusion. The
+tension is the energy per path of the same object that weighs the
 quark; the rule that assigns the quantum to one strand (a star arm is one circuit) is the one that
 gives the electron its circulating half by the same formula, $\pi\hbar c/(3\lone(3)) = m_e c^2/2$.
 
@@ -892,7 +896,15 @@ For what remains, the following measurements or computations would kill the corr
 \item a lattice determination of the isospin-breaking QCD part of $m_n - m_p$ that departs from
 $2.47$~MeV by more than its present $\pm 0.29$~MeV, or of $\sqrt\sigma$ outside 420--440~MeV by more
 than the $2\,\%$ the exponent allows (the formulae $(2\alpha/3)3^{2\pi} m_e c^2$ and
-$(3/2\sqrt\pi)3^{2\pi} m_e c^2$ have no free number);
+$(3/2\sqrt\pi)3^{2\pi} m_e c^2$ have no free number). Status in October 2026 (R117): the dispersive
+determinations of the electromagnetic part, $0.58 \pm 0.16$~MeV \cite{glr} and
+$0.71^{+0.03}_{-0.06}$~MeV \cite{sumrule2026}, put the QCD part at $1.87$--$2.00$~MeV, $3.7$ to
+$8\sigma$ from the formula, while the lattice \cite{bmw} gives $1.00 \pm 0.16$~MeV and $2.52 \pm
+0.29$~MeV, $0.2\sigma$ from it; the base's split follows the lattice and contradicts the dispersive
+values, which contradict each other's method at $1.7\sigma$. A physical-point lattice value of the
+QCD part below $2.2$~MeV at $\pm 0.1$ kills the formula. For $\sqrt\sigma$, $445 \pm 7$~MeV
+\cite{bulava} is $2.2\sigma$ away; a second physical-point determination outside $427$--$435$~MeV by
+more than $3\sigma$ kills the other;
 \item a charged lepton of any mass below the ladder's next rung would not falsify the $C_3$
 structure, but a violation of Koide's relation beyond $10^{-5}$ by an improved $\tau$ mass would
 remove the $45^\circ$ that the $g = 2$ pairing explains;
@@ -921,7 +933,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 111 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 112 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
@@ -937,6 +949,10 @@ author's criterion and the result of R100.
 \bibitem{bilsonthompson} S. O. Bilson-Thompson, \textit{A topological model of composite preons}, arXiv:hep-ph/0503213 (2005).
 \bibitem{bmw} Sz. Borsanyi \textit{et al.} (BMW Collaboration), \textit{Ab initio calculation of the neutron--proton mass difference}, Science \textbf{347}, 1452 (2015).
 \bibitem{necco} S. Necco and R. Sommer, Nucl. Phys. B \textbf{622}, 328 (2002); the range 420--440~MeV quoted here spans the quenched and unquenched determinations of $\sqrt\sigma$.
+\bibitem{bulava} J. Bulava, F. Knechtli, V. Koch, C. Morningstar and M. Peardon, \textit{The quark-mass dependence of the potential energy between static colour sources in the QCD vacuum with light and strange quarks}, Phys. Lett. B \textbf{854}, 138754 (2024).
+\bibitem{glr} J. Gasser, H. Leutwyler and A. Rusetsky, \textit{On the mass difference between proton and neutron}, Phys. Lett. B \textbf{814}, 136087 (2021).
+\bibitem{sumrule2026} \textit{Precision sum rule for nucleon isovector polarizabilities and the proton--neutron mass difference}, arXiv:2609.15154 [hep-ph] (2026); author list to be completed by the author.
+\bibitem{wcm} A. Walker-Loud, C. E. Carlson and G. A. Miller, \textit{The electromagnetic self-energy contribution to $M_p - M_n$ and the isovector nucleon magnetic polarizability}, Phys. Rev. Lett. \textbf{108}, 232301 (2012).
 \bibitem{katrin} M. Aker \textit{et al.} (KATRIN Collaboration), \textit{Direct neutrino-mass measurement based on 259 days of KATRIN data}, Science \textbf{388}, 180 (2025).
 \bibitem{hensen} B. Hensen \textit{et al.}, \textit{Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres}, Nature \textbf{526}, 682 (2015).
 \bibitem{sommerfeld} A. Sommerfeld, Ann. Phys. (Leipzig) \textbf{51}, 1 (1916).

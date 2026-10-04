@@ -2577,3 +2577,28 @@ reste REPARAMÉTRÉ. Les deux lectures de l'auteur sont enregistrées comme noms
 déjà le compte de la base (trois quarks, trois brins par fermion, le « 3 » étant posé) ; « 2π = tour
 du cercle unité » est le 2π de Gauss en deux dimensions, juste tant qu'un calcul ne le fait pas
 multiplier ln(n/3).
+
+**R117 — Les deux meilleurs nombres du dépôt contre les déterminations de 2024–2026.** (« Quoi de
+neuf dans les publications ? », 4 octobre 2026)
+→ `data_update_2026.py`, 4/4. Nouvelles références : Bulava, Knechtli, Koch, Morningstar, Peardon,
+PLB 854 (2024) 138754, √σ = 445(3)(6) MeV à 2+1 saveurs extrapolé aux masses physiques (hamiltonien
+modèle sur le spectre statique, avec brisure de corde) ; règle de somme dispersive pour les
+polarisabilités isovectorielles, arXiv:2609.15154 (septembre 2026), (m_p − m_n)_QED = 0,71
+(+0,03/−0,06) MeV ; Gasser–Leutwyler–Rusetsky, PLB 814 (2021) 136087, 0,58 ± 0,16 (Cottingham) ;
+Walker-Loud–Carlson–Miller, PRL 108 (2012) 232301, 1,30 ± 0,47. **(A) √σ** : la base 430,3 est à
+−2,2σ de 445 ± 6,7 ; le bord de la fenêtre de l'exposant (426,8–434,7) à −1,5σ : tension, pas
+exclusion ; l'ancienne bande 420–440 (trempé et non trempé) n'est pas la même définition. **(B) Part
+QED** : la base (1,20 bouchon, 1,15 sphère) est dans l'étalement des déterminations (0,58 à 1,30),
+à +1,3σ du réseau BMW, mais à +3,9σ de GLR et +8,2σ de la règle de somme 2026 ; réseau et dispersif
+se contredisent entre eux à 1,7σ. **(C) Partie QCD** impliquée (1,2933 + QED) : 2,29 ± 0,16 (BMW),
+1,87 ± 0,16 (GLR), 2,59 ± 0,47 (WCM), 2,00 ± 0,06 (2026), et BMW direct 2,52 ± 0,29 : la formule
+(2α/3)·3^{2π}·m_e c² = 2,474 est à −0,2σ de BMW direct, +1,1σ de BMW dérivé, +3,8σ de GLR, +7,8σ de
+la règle de somme. Elle vit avec le réseau et meurt avec le dispersif ; le désaccord est entre eux.
+**(D) Ce qui ne bouge pas** : le total de la base (1,27–1,32 MeV) ne dépend pas de la coupe ; la masse
+du tau de Belle II (1777,09 ± 0,14) déplace p(e, τ) de 1e-4 ; r_p = 0,8409(4) fm inchangé (PRad-II en
+analyse, données mars–juillet 2026) ; électron : g−2 de 2023, désaccord Rb/Cs sur α (5,5σ) non résolu.
+**Verdict** : EN TENSION. Le critère de HADRONS §8 est précisé : une valeur réseau au point physique
+de la partie QCD sous 2,2 MeV à ±0,1, ou une confirmation réseau du 0,71 dispersif, tue la formule
+sans nombre libre ; une seconde détermination de √σ au point physique hors de 427–435 à plus de 3σ
+tue l'autre. La liste d'auteurs de arXiv:2609.15154 est à compléter par l'auteur (accès bloqué
+depuis la session).
