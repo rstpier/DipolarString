@@ -2649,3 +2649,37 @@ restent. Un canal porté par le champ de Higgs est exclu par la portée : m_H = 
 10⁻¹⁸ m, vitesse ≤ c, et le Higgs couple à tout ce qui a une masse. Un objet sans énergie, sans
 vitesse, que rien ne perturbe, dont l'existence dépend de la mesure choisie, et indexé par deux
 positions : ce sont les propriétés de la fonction d'onde, non d'une ligne de l'éther.
+
+**Note de principe (5 octobre 2026) — la mesure comme intrication, et le choix d'interprétation.**
+Énoncé de l'auteur : « l'appareil de mesure doit, par axiome, être intriqué avec ce qu'il mesure ;
+sinon, pas de mesure ». Pas de calcul ; état des faits.
+*Ce n'est pas un axiome, c'est un théorème* de l'évolution de Schrödinger (von Neumann 1932) : une
+mesure est une interaction qui met l'aiguille de l'appareil en corrélation avec la grandeur
+mesurée ; appliquée à une superposition, elle produit nécessairement (↑, aiguille-↑) + (↓,
+aiguille-↓), de l'intrication, et le degré d'intrication est la quantité d'information enregistrée.
+Pas de corrélation, pas d'enregistrement, pas de mesure. Cas quantitatif : deux fentes avec
+détecteur de passage, visibilité V et distinguabilité D des états du détecteur, V² + D² ≤ 1 (la
+formule de la note du 26 septembre, vérifiée au laboratoire au pourcent). L'appareil « devient le
+référentiel » parce qu'il est macroscopique : il s'intrique à son tour avec l'environnement (air,
+lumière, support) en ~10⁻²⁰ s, les branches cessent d'interférer, et l'interaction elle-même
+sélectionne la grandeur enregistrée (Zurek, einselection). Ce mécanisme est commun à toutes les
+interprétations.
+*Ce que le théorème de Bell laisse ouvert, et ne peut pas fermer* : le théorème (|S| ≤ 2 pour toute
+réponse locale pré-déterminée) est établi ; sa violation par la nature l'est aussi (Freedman–Clauser
+1972, Aspect 1982, 2015 à failles de localité et de détection fermées dans la même expérience,
+Hensen/Giustina/Shalm, quasars 2018, Nobel 2022) ; GHZ (Pan 2000) donne la même conclusion sans
+inégalité, à 85/15 pour un état de fidélité 85 %, ce que la théorie prédit, et par l'inégalité de
+Mermin (≤ 2 contre 4) pour tenir compte du bruit. Les mesures à séparation spatiale (chaque mesure
+bouclée avant qu'un signal de l'autre puisse arriver), ou chacune « première » dans son repère
+(Zbinden–Gisin 2001), ou séparées d'heures, ou décidées après coup (Ma 2012), donnent la même
+corrélation −cos θ : ce qui voyage a un ordre, la corrélation n'en a pas. Reste le choix de ce
+qu'on abandonne, indécidable par l'expérience puisque les trois donnent les mêmes prédictions :
+(a) la localité de l'état (Copenhague, Bohm : un registre indexé par des paires, « hors des lignes »,
+R92) ; (b) l'unicité du résultat (Everett : la mesure n'est que l'intrication ci-dessus, les deux
+termes existent, la corrélation n'apparaît qu'à la rencontre des enregistrements, à c au plus ;
+localité intacte ; prix : toutes les branches réelles, et la règle de Born à dériver) ; (c) la
+liberté des choix (superdéterminisme ; prix : plus aucune expérience ne teste rien).
+*Pour la base* : le principe de l'auteur (26 septembre et aujourd'hui) est la description correcte
+du mécanisme de la mesure, et il est compatible avec (a) comme avec (b). La base doit dire laquelle
+elle prend : (a) lui coûte un registre hors des lignes (R92) ; (b) ne lui coûte rien de plus que
+l'évolution de ses lignes, à condition d'y dériver Born ; elle n'en a encore choisi aucune.
