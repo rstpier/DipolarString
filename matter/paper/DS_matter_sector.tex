@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 117 steps (R1--R117) backed by 112 scripts.
+statement imposes and what it breaks; the record is 118 steps (R1--R118) backed by 113 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -901,7 +901,10 @@ determinations of the electromagnetic part, $0.58 \pm 0.16$~MeV \cite{glr} and
 $0.71^{+0.03}_{-0.06}$~MeV \cite{sumrule2026}, put the QCD part at $1.87$--$2.00$~MeV, $3.7$ to
 $8\sigma$ from the formula, while the lattice \cite{bmw} gives $1.00 \pm 0.16$~MeV and $2.52 \pm
 0.29$~MeV, $0.2\sigma$ from it; the base's split follows the lattice and contradicts the dispersive
-values, which contradict each other's method at $1.7\sigma$. A physical-point lattice value of the
+values, which contradict each other's method at $1.7\sigma$. The split itself is scheme-dependent
+(the dispersive and lattice separations differ, as \cite{sumrule2026} notes); the scheme-free
+quantity is the total, where the base gives $1.27$--$1.32$~MeV against $1.2933$~MeV, $-1.9$ to
+$+2.4\,\%$ (R118). A physical-point lattice value of the
 QCD part below $2.2$~MeV at $\pm 0.1$ kills the formula. For $\sqrt\sigma$, $445 \pm 7$~MeV
 \cite{bulava} is $2.2\sigma$ away; a second physical-point determination outside $427$--$435$~MeV by
 more than $3\sigma$ kills the other;
@@ -933,7 +936,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 112 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 113 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
@@ -951,7 +954,7 @@ author's criterion and the result of R100.
 \bibitem{necco} S. Necco and R. Sommer, Nucl. Phys. B \textbf{622}, 328 (2002); the range 420--440~MeV quoted here spans the quenched and unquenched determinations of $\sqrt\sigma$.
 \bibitem{bulava} J. Bulava, F. Knechtli, V. Koch, C. Morningstar and M. Peardon, \textit{The quark-mass dependence of the potential energy between static colour sources in the QCD vacuum with light and strange quarks}, Phys. Lett. B \textbf{854}, 138754 (2024).
 \bibitem{glr} J. Gasser, H. Leutwyler and A. Rusetsky, \textit{On the mass difference between proton and neutron}, Phys. Lett. B \textbf{814}, 136087 (2021).
-\bibitem{sumrule2026} \textit{Precision sum rule for nucleon isovector polarizabilities and the proton--neutron mass difference}, arXiv:2609.15154 [hep-ph] (2026); author list to be completed by the author.
+\bibitem{sumrule2026} X.-H. Cao \textit{et al.}, \textit{Precision sum rule for nucleon isovector polarizabilities and the proton--neutron mass difference}, arXiv:2609.15154 [hep-ph] (2026; v2, October 2026); the full author list is to be confirmed from the arXiv record.
 \bibitem{wcm} A. Walker-Loud, C. E. Carlson and G. A. Miller, \textit{The electromagnetic self-energy contribution to $M_p - M_n$ and the isovector nucleon magnetic polarizability}, Phys. Rev. Lett. \textbf{108}, 232301 (2012).
 \bibitem{katrin} M. Aker \textit{et al.} (KATRIN Collaboration), \textit{Direct neutrino-mass measurement based on 259 days of KATRIN data}, Science \textbf{388}, 180 (2025).
 \bibitem{hensen} B. Hensen \textit{et al.}, \textit{Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres}, Nature \textbf{526}, 682 (2015).

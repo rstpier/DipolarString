@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R117)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R118)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R117).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R118).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -196,7 +196,9 @@ R117 a confronté les deux meilleurs nombres aux déterminations de 2024–2026 
 445 ± 7 du réseau 2+1 saveurs ; la coupe QCD/QED de m_n − m_p suit le réseau BMW (0,2σ) et contredit
 les déterminations dispersives (GLR 3,7σ, règle de somme de septembre 2026 ~8σ), qui contredisent
 aussi le réseau : en tension, pas tué ; la prochaine valeur réseau au point physique tranche.
-L'article (`matter/paper/`) est consolidé jusqu'à R117.
+R118 (veille du 1er novembre 2026) : rien de neuf sur aucun critère ; nuance : la coupe QCD/QED
+dépend du schéma de séparation, seul le total (1,27–1,32 contre 1,2933 MeV) est un test sans
+schéma. L'article (`matter/paper/`) est consolidé jusqu'à R118.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -302,9 +304,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R117 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R118 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 112 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 113 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

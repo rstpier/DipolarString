@@ -126,6 +126,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   la formule, mais contredisent aussi le réseau BMW (1,00 ± 0,16) ; une valeur réseau au point
   physique de la partie QCD sous 2,2 MeV à ±0,1 tue la formule. √σ = 445 ± 7 (2024, 2+1 saveurs)
   est à 2,2σ : une seconde détermination au point physique hors de 427–435 à plus de 3σ tue l'autre.
+  Veille du 1er novembre 2026 (R118) : rien de neuf ; la coupe QCD/QED dépend du schéma de
+  séparation (Cao et al. le notent), seul le total est sans schéma : 1,27–1,32 contre 1,2933 MeV.
 - Un écart Δ − N ou un rapport de moments que plus aucun rayon d'anneau unique ne reproduit à
   15 % et 3 %.
 - Une règle qui fixerait le rayon de l'anneau et donnerait m_p à mieux que 3 % serait le premier

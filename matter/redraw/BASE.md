@@ -2683,3 +2683,25 @@ liberté des choix (superdéterminisme ; prix : plus aucune expérience ne teste
 du mécanisme de la mesure, et il est compatible avec (a) comme avec (b). La base doit dire laquelle
 elle prend : (a) lui coûte un registre hors des lignes (R92) ; (b) ne lui coûte rien de plus que
 l'évolution de ses lignes, à condition d'y dériver Born ; elle n'en a encore choisi aucune.
+
+**R118 — Veille du 1er novembre 2026 : les critères du dépôt contre ce qui est sorti depuis R117.**
+(« Mise à jour du projet CD avec l'actualité récente »)
+→ `veille_nov2026.py`, 4/4. **(A) m_n − m_p** : aucune nouvelle détermination réseau au point physique.
+Références au 1er novembre : BMW 2015 (QED 1,00 ± 0,16, QCD direct 2,52 ± 0,29) ; ETMC 2022 (total
+1,73 ± 0,69, N_f = 2+1+1, m_π 200–450 MeV ; une coupe QED 1,16 ± 0,25 / QCD 3,10 ± 0,59 d'après la thèse
+de Romiti 2021 est citée par un moteur de recherche, **non vérifiée à la source**, accès bloqué depuis la
+session ; si elle tient, la base en est à +0,2σ et −1,1σ) ; dispersif : GLR 2021 0,58 ± 0,16 ; Cao et
+al., arXiv:2609.15154, v2 du 25 octobre 2026, 0,71 (+0,03/−0,06) (la liste d'auteurs varie selon les
+sources, Cao–Dai ou Cao–Guo, à confirmer sur arXiv ; un second article du même groupe, arXiv:2610.34276,
+donne α_E1 et β_M1 de p et n) ; WCM 2012 1,30 ± 0,47. Les écarts de R117 sont inchangés (BMW +1,3σ,
+règle de somme +8,2σ). **(B) La coupe dépend du schéma** : Cao et al. l'écrivent (séparations dispersive et
+réseau différentes). Seul le total est indépendant du schéma : base 1,269 (bouchon) / 1,324 (sphère) contre
+1,29332 MeV, −1,9 % / +2,4 %. Le « 8σ » de R117 se lit « dans le schéma dispersif » ; le test dur est le
+total, à 2–3 %. **(C) √σ** : aucune nouvelle détermination des niveaux au point physique ; 445 ± 7 contre
+430 : 2,2σ inchangé. Cea et al. 2026 (arXiv:2607.07143, tube de flux à masses physiques) : brisure de corde
+entre 0,96 et 1,16 fm ; la base n'a pas de brisure dans ses règles, donnée enregistrée sans lecture.
+**(D) Le reste** : r_p = 0,8409(4) fm, PRad-II a fini sa prise de données (juillet 2026), analyse en cours ;
+α : Rb/Cs à 5,5σ non résolu ; τ : 1777,09 ± 0,14 (2023) reste la meilleure, nouvelle mesure Belle II en
+cours, fenêtre de l'exposant inchangée ; KATRIN : 0,45 eV officiel, ~0,3 eV attendu de l'analyse complète ;
+Lorentz : nouvelles limites GRB (PRD, février 2026), rien sur l'électron. **Verdict** : RIEN NE BOUGE ;
+statuts de R117 maintenus ; une nuance (schéma) et une bibliographie complétée.
