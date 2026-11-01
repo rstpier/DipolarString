@@ -2705,3 +2705,53 @@ entre 0,96 et 1,16 fm ; la base n'a pas de brisure dans ses règles, donnée enr
 cours, fenêtre de l'exposant inchangée ; KATRIN : 0,45 eV officiel, ~0,3 eV attendu de l'analyse complète ;
 Lorentz : nouvelles limites GRB (PRD, février 2026), rien sur l'électron. **Verdict** : RIEN NE BOUGE ;
 statuts de R117 maintenus ; une nuance (schéma) et une bibliographie complétée.
+
+**Note de principe (1er novembre 2026) — naissance corrélée, décohérence, annihilation, énergie
+sombre.** Postulats de l'auteur, en cinq énoncés successifs ; pas de calcul ; état des faits et
+formulation retenue pour chacun.
+*(1) « Toutes les particules de l'univers émergent en intrication. »* RETENU. Une particule n'apparaît
+jamais seule : une paire créée partage les conservations (charge, impulsion, spin) ; un photon émis est
+intriqué avec l'émetteur ; les paires de Hawking sortent du vide à deux. C'est le principe de
+purification (toute incertitude sur un système est une corrélation avec un autre, Chiribella–D'Ariano–
+Perinotti 2011) sous sa forme physique.
+*(2) « Une paire qui perd toute intrication retourne au vide ; énergie non nulle. »* RENVERSÉ.
+Perdre son intrication (décohérence) rend une particule classique, pas inexistante : masse, charge,
+énergie restent. Un état sans aucune corrélation est soit un état pur isolé (cohérence maximale, le
+photon stocké de Haroche, compté sans destruction après 0,1 s), soit impossible : dans un univers
+unitaire les corrélations se déplacent et ne s'effacent pas (non-dissimulation, Braunstein–Pati 2007,
+vérifié par RMN 2011 ; l'effacement total proposé pour les trous noirs, Hawking 1976, est rejeté par le
+consensus actuel, courbe de Page 2019). Le vide est l'état le plus intriqué (loi d'aire) ; désintriquer
+deux régions coûte une énergie énorme, l'état sans intrication est le plus loin du vide. Le retour au
+vide est un troisième processus, l'annihilation.
+*(3) « Décohérence totale = annihilation de deux particules primaires ; l'énergie retourne au vide. »*
+EXCLU PAR L'EXPÉRIENCE. e⁺e⁻ → deux photons de 511 keV réels (PET) ; désintégration invisible du
+positronium < 4 × 10⁻⁷ (Badertscher et al. 2007) : le fond ne reçoit rien. L'annihilation est unitaire et
+transfère la cohérence aux photons (para-positronium → polarisations perpendiculaires, intriquées ; Wu–
+Shaknov 1950, Bohm–Aharonov 1957) : c'est le contraire d'une décohérence. Formulation retenue :
+*l'annihilation rend l'énergie d'une paire aux ondes propagatives du milieu, en entier et en les
+intriquant ; le fond du milieu n'en reçoit rien* (R87 à l'envers).
+*(4) « Annihilation d'état, pas de charge. »* Deux impulsions +V et −V qui se croisent sur une ligne :
+la tension s'annule dans le recouvrement, le courant double, l'énergie ½CV² + ½LI² est intacte, les
+impulsions ressortent. Version quantique : Hong–Ou–Mandel 1987, l'amplitude « un photon par sortie »
+est annihilée, les deux photons sortent ensemble, norme 1. Une composante d'état peut s'annihiler par
+interférence ; elle est toujours compensée ailleurs (unitarité, positivité de l'énergie). Un état qui
+disparaîtrait avec son énergie sans quantum à la sortie est interdit (norme ; kaons, CPLEAR).
+*(5) « La perte de corrélation est liée à une décohérence de mesure par interaction. »* RETENU, avec
+trois clauses : l'interaction doit **enregistrer** (état du tiers distinguable ; V² + D² ≤ 1 ; une
+interaction sans trace ne coûte rien, miroir, effaceur) ; l'échange est obligatoire (monogamie,
+Coffman–Kundu–Wootters 2000 : ce que le tiers apprend est retiré de la corrélation A–B) ; rien ne se
+perd au total (la corrélation A–B devient A–E et B–E ; réversible tant que la trace l'est : écho de spin,
+séquences de découplage qui prolongent l'intrication des spins NV). Formulation retenue : *une
+corrélation entre deux systèmes ne se perd que par l'enregistrement d'un tiers, à hauteur de ce qu'il
+enregistre, et elle lui est transférée, non détruite.*
+*(6) « L'énergie sombre est peut-être la réserve de toutes les décohérences. »* EXCLU. L'énergie
+sombre (5 × 10⁻¹⁰ J/m³) est lisse (ne s'agglutine pas), constante (w = −1,03 ± 0,03 ; indice DESI 2025
+vers un affaiblissement) et à pression négative ; un réservoir de décohérences serait grumeleux comme
+la matière, croissant, et la décohérence déplace de l'information à énergie constante ; tout le
+rayonnement jamais émis par la matière (fond diffus + étoiles, 5 × 10⁻¹⁴ J/m³) est 10⁴ fois trop petit
+et à pression positive. Cousine sérieuse : l'intrication du **vide** à l'horizon cosmique (~10¹²² bits
+contre ρ_Λ ~ 10⁻¹²² en unités de Planck ; énergie sombre holographique, Li 2004 ; Verlinde 2016), tests
+mitigés, sans accumulation.
+*Pour la base* : (1), (3) et (5) sont compatibles avec ses lignes et avec R87 ; (2), (4) et (6) ne la
+touchent pas ; rien n'est modifié. Les énoncés (1) et (5) sont les deux que la base devrait poser
+explicitement si elle adopte l'axiome A3 de la note du 9 octobre.
