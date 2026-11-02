@@ -2724,12 +2724,24 @@ consensus actuel, courbe de Page 2019). Le vide est l'état le plus intriqué (l
 deux régions coûte une énergie énorme, l'état sans intrication est le plus loin du vide. Le retour au
 vide est un troisième processus, l'annihilation.
 *(3) « Décohérence totale = annihilation de deux particules primaires ; l'énergie retourne au vide. »*
-EXCLU PAR L'EXPÉRIENCE. e⁺e⁻ → deux photons de 511 keV réels (PET) ; désintégration invisible du
-positronium < 4 × 10⁻⁷ (Badertscher et al. 2007) : le fond ne reçoit rien. L'annihilation est unitaire et
-transfère la cohérence aux photons (para-positronium → polarisations perpendiculaires, intriquées ; Wu–
-Shaknov 1950, Bohm–Aharonov 1957) : c'est le contraire d'une décohérence. Formulation retenue :
-*l'annihilation rend l'énergie d'une paire aux ondes propagatives du milieu, en entier et en les
-intriquant ; le fond du milieu n'en reçoit rien* (R87 à l'envers).
+Faits : e⁺e⁻ → deux photons de 511 keV réels (PET) ; désintégration invisible du positronium
+< 4 × 10⁻⁷ (Badertscher et al. 2007) ; l'annihilation est unitaire et transfère la cohérence aux photons
+(para-positronium → polarisations perpendiculaires, intriquées ; Wu–Shaknov 1950, Bohm–Aharonov 1957).
+Premier verdict (1er novembre) : exclu par l'expérience. **Objection de l'auteur (2 novembre)** : « on ne
+connaît pas l'inventaire des intrications » ; le positronium du laboratoire n'est jamais une paire
+totalement décorrélée (il est corrélé à l'appareil, au laboratoire, à son histoire), donc les tests
+existants ne portent pas sur la condition posée. Objection reçue : la borne de 4 × 10⁻⁷ exclut le retour
+au vide pour des paires **ordinaires**, pas pour la paire **totalement décorrélée** que l'énoncé exige.
+**Statut révisé : NON TESTABLE tel qu'énoncé.** La prémisse (décorrélation totale) n'est ni
+certifiable (on ne peut pas prouver l'absence de toute trace ailleurs) ni, en théorie unitaire,
+atteignable (point 2 : les corrélations se déplacent, ne s'effacent pas) ; un énoncé conditionnel dont
+la condition ne se réalise jamais et ne se vérifie jamais ne prédit rien et ne peut être ni confirmé ni
+exclu. Ce qui le rendrait testable : un critère opérationnel de « décorrélation totale » (par exemple une
+pureté de l'état réduit de la paire supérieure à 1 − ε, les états les plus purs que la physique prépare,
+ions refroidis à 99,9 %, photons de cavité, étant déjà disponibles), et alors la borne du positronium
+s'applique dès que ε est fini. Formulation retenue pour les paires ordinaires, inchangée : *l'annihilation
+rend l'énergie d'une paire aux ondes propagatives du milieu, en entier et en les intriquant ; le fond du
+milieu n'en reçoit rien* (R87 à l'envers).
 *(4) « Annihilation d'état, pas de charge. »* Deux impulsions +V et −V qui se croisent sur une ligne :
 la tension s'annule dans le recouvrement, le courant double, l'énergie ½CV² + ½LI² est intacte, les
 impulsions ressortent. Version quantique : Hong–Ou–Mandel 1987, l'amplitude « un photon par sortie »
@@ -2752,6 +2764,6 @@ rayonnement jamais émis par la matière (fond diffus + étoiles, 5 × 10⁻¹�
 et à pression positive. Cousine sérieuse : l'intrication du **vide** à l'horizon cosmique (~10¹²² bits
 contre ρ_Λ ~ 10⁻¹²² en unités de Planck ; énergie sombre holographique, Li 2004 ; Verlinde 2016), tests
 mitigés, sans accumulation.
-*Pour la base* : (1), (3) et (5) sont compatibles avec ses lignes et avec R87 ; (2), (4) et (6) ne la
-touchent pas ; rien n'est modifié. Les énoncés (1) et (5) sont les deux que la base devrait poser
+*Pour la base* : (1) et (5) sont compatibles avec ses lignes et avec R87, (3) l'est pour les paires
+ordinaires ; (2), (4) et (6) ne la touchent pas ; rien n'est modifié. Les énoncés (1) et (5) sont les deux que la base devrait poser
 explicitement si elle adopte l'axiome A3 de la note du 9 octobre.
