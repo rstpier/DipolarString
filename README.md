@@ -9,6 +9,10 @@ releases.
 
 > **Status:** Exploratory research project. The model has not undergone independent
 > peer review. Independent verification and critical evaluation are encouraged.
+>
+> An internal referee-style scientific review of the whole programme (in French,
+> 19 November 2026) is in [`REVUE_SCIENTIFIQUE_2026-11-19.md`](REVUE_SCIENTIFIQUE_2026-11-19.md).
+> It was written by the project's AI collaborator, not by an independent reviewer.
 
 ---
 
