@@ -29,7 +29,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 ## 3. Les règles
 
 1. **Un quantum de circulation par circuit fermé**, d'énergie πℏc/trajet (R40, R47 ; dérivation
-   conditionnelle depuis une boucle mère brisée, R87). Posé.
+   conditionnelle depuis une boucle mère brisée, R87). Posé. R120 : c'est la corde de Nambu–Goto de tension σ à
+   J = ½ (√(πσ) = πℏc/ℓ₁(9) = 763 MeV), identité de définitions.
 2. **Trois brins par fermion**, charges {−1/3, 0, +1/3} ; u = (+,+,0), d = (−,0,0) ; la couleur
    est la position du brin impair ; p et n ont neuf brins (R28). Dérivé du spectre de charge, brins
    posés.
@@ -73,6 +74,7 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 | part QED implicite | −1,20 MeV | −1,00 ± 0,16 (réseau) ; −0,58 ± 0,16, −0,71 ± 0,06 (dispersif) | 1,3σ ; 3,9σ, 8σ | conséquence, en tension | R44, R117 |
 | μ_p/μ_n | −3/2 | −1,460 | +2,7 % | posé (partage) | R72 |
 | √σ | 430,3 MeV (σ = 0,185 GeV²) | Regge–Cornell 0,18–0,19 GeV² (424–436) ; réseau dynamique 445 ± 7 (2+1, 2024) ; 458–481 (cités) | centre de la bande phénoménologique ; 2,2σ ; 4–7σ | conditionnel (un quantum par bras), en tension | R39, R40, R117, R119 |
+| pente de Regge α′ = 1/(2πσ) | 0,859 GeV⁻² | 0,888 (ρ–a₂–ρ₃) ; 0,92–0,96 (N, Δ) | −3 % ; −7 à −10 % | conditionnel (σ de la base), en tension | R120 |
 | force nucléaire | 2 MeV à 0,72 fm | deutéron 2,22 | échelle | calibré | R20, R22 |
 | pion | 140,05 MeV | 139,57 | +0,34 % | identification (2m_e/α), coïncidence connue | R16 |
 | r_p | ℓ₁(9) = 0,813 ; enveloppe 0,836 fm | 0,841 | −3,3 % ; −0,6 % | coïncidences | R43, R49 |
@@ -112,6 +114,9 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   0,67 fm, pas une charge propre (R49) ; les autres lectures de la part circulante donnent le
   neutron de +1,5 à +7 % (R41) ; la section w n'a plus de dérivation depuis que la représentation
   de l'électron à trois jonctions est fermée (R103) : elle reste une entrée à un facteur 2 près.
+- Identité (R120) : la règle 1 est la corde de Nambu–Goto à J = ½ ; l'énergie d'anneau du nucléon (176 MeV) est
+  l'ordonnée de Regge α₀(N) = −0,26 ; la boucle fermée avec tension a un rayon (0,13 fm) et pèse 2 × 763 MeV ; le
+  terme de Lüscher (−64 MeV à ℓ₁(9)) n'est pas dans la base et sort la part statique de 770–813 MeV.
 - Fermé en route : nucléons et quarks sur l'échelle des leptons ; masses par comptes de brins ;
   « un joint = un nombre » ; l'enroulement comme force ; le tube de flux ; la densité de charge
   fixe (R18–R31, R33–R39).
@@ -131,7 +136,9 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   Veille du 21 novembre 2026 (R119) : la bande 420–440 est celle de la phénoménologie (Regge, Cornell), pas du
   réseau ; toutes les déterminations réseau à quarks dynamiques sont au-dessus de la base (445 ± 7 vérifiée ;
   458, 467, 481 citées, non vérifiées à la source), et le σ du réseau est une quantité de fenêtre (brisure vers
-  1,1 fm) : la formule doit dire quelle tension elle vise avant qu'un « plus de 3σ » la tue.
+  1,1 fm) : la formule doit dire quelle tension elle vise avant qu'un « plus de 3σ » la tue. R120 : la même tension lue en
+  corde de Nambu–Goto donne α′ = 0,859 GeV⁻², sous toutes les trajectoires mesurées (−3 à −10 %) et hors de la
+  fenêtre de l'exposant : la tension de la base est basse par le compte 9, dans les deux lectures.
 - Un écart Δ − N ou un rapport de moments que plus aucun rayon d'anneau unique ne reproduit à
   15 % et 3 %.
 - Une règle qui fixerait le rayon de l'anneau et donnerait m_p à mieux que 3 % serait le premier
@@ -145,7 +152,7 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   meilleurs nombres contre 2024–2026, 4/4 ; `ring_at_134.py` (R114) : l'anneau à 1,34 fm
   exclu par μ_p et r_p, 4/4 ; `circuit_moments.py` (R115) : le moment par les circuits à R_c,
   rapport oui, grandeur non, 4/4 ; `veille_nov2026.py` (R118), 4/4, et `veille_21nov2026.py` (R119), 5/5 :
-  les veilles de novembre 2026.
+  les veilles de novembre 2026 ; `nambu_goto_regge.py` (R120) : la corde de Nambu–Goto avec le σ de la base, 5/5.
 - Étapes d'origine : `closed_ring_scale.py` (R16), `quark_star.py` (R20), `quark_y.py` (R22),
   `junction_valence.py` (R24), `nucleon_moments.py` (R25), `three_strand.py` (R28),
   `mode_rule.py` (R29), `pitch_search.py` (R39), `circuit_rule.py` (R40),

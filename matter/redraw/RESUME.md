@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R119)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R120)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R119).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R120).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -126,6 +126,9 @@ le compte nucléonique 9 et la section du ruban ; 2π et 9 sont des entrées str
 - « Dynamisme de l'espace » (R57) : des DQD du vide qui circulent donneraient à l'électron son
   quantum par héritage, au prix d'une énergie du vide 10³³ fois la cosmologique ; l'expansion du
   milieu et le confinement par le milieu sont exclus.
+- La corde de Nambu–Goto (R120) : avec σ = πℏc/ℓ₁(9)², la part statique 763 MeV est la masse de la corde à J = ½
+  (identité de définitions) et l'anneau de 176 MeV est son ordonnée de Regge ; la pente 0,859 GeV⁻² est en tension
+  (−3 à −10 %) ; la boucle fermée a un rayon, 0,13 fm, et une masse, 2 × 763 MeV (identité), non revendiquée.
 
 ## 5. Ce qui a été exclu en route
 
@@ -205,7 +208,13 @@ dynamiques (445 ± 7 vérifiée, 2,2σ ; 458–481 citées, 4–7σ) : la formul
 vise. Première borne de laboratoire sur un excès de non-linéarité du vide à basse énergie (European
 XFEL, champ sombre, 7·10⁴ × QED à 116 eV) : pour toute lecture Z(u) = Z₀(1 + u/u_s), u_s > 10³ u₀. Le
 reste (r_p résolu vers le petit rayon, m_n − m_p, α, τ, ν, PBH, GWTC-5.0, LRD) ne bouge aucun critère.
-L'article (`matter/paper/`) est consolidé jusqu'à R119.
+R120 (corde de Nambu–Goto avec la tension de la base) : la règle « un quantum par circuit » est cette corde
+à J = ½ (√(πσ) = πℏc/ℓ₁(9) = 763 MeV, identité) ; l'anneau de 176 MeV est l'ordonnée de Regge α₀(N) = −0,26 ;
+la pente α′ = 1/(2πσ) = 0,859 GeV⁻² est sous toutes les trajectoires mesurées (ρ : −3 % ; N, Δ : −7 à −10 %),
+hors de la fenêtre de l'exposant, même sens que √σ sous le réseau ; avec une tension la boucle fermée a un rayon
+(0,13 fm, 1,5 GeV pour le demi-quantum : le fonctionnel minimal de la reconstruction) ; le terme de Lüscher
+(−64 MeV) sort la part statique des 770–813 MeV que μ_p exige. Pas de découverte.
+L'article (`matter/paper/`) est consolidé jusqu'à R120.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -311,9 +320,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R119 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R120 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 114 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 115 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

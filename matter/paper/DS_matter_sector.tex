@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 119 steps (R1--R119) backed by 114 scripts.
+statement imposes and what it breaks; the record is 120 steps (R1--R120) backed by 115 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -456,7 +456,17 @@ every lattice static-energy determination with dynamical quarks lies above it, f
 to $458$--$481$~MeV (values cited from a conference talk and from the $2+1+1$-flavour TUMQCD analysis
 \cite{tumqcd}, not verified at source), and the lattice quantity is itself a fit-window quantity because the
 string breaks near $1.1$~fm \cite{cea}. The formula must state which of the two string tensions it aims at
-before a $3\sigma$ criterion can be applied to it (R119, \texttt{veille\_21nov2026.py}). The
+before a $3\sigma$ criterion can be applied to it (R119, \texttt{veille\_21nov2026.py}). The same tension read as a
+Nambu--Goto string (R120, \texttt{nambu\_goto\_regge.py}) gives the Regge slope $\alpha' = 1/(2\pi\sigma) =
+0.859$~GeV$^{-2}$, $3\,\%$ below the $\rho$--$a_2$--$\rho_3$ trajectory ($0.888$) and $7$--$10\,\%$ below the $N$
+and $\Delta$ trajectories ($0.92$--$0.96$), outside the exponent's window ($0.842$--$0.874$) and in the same
+direction as the lattice tension. The base's static part is that string's $J = \tfrac12$ mass,
+$\sqrt{\pi\sigma} = \pi\hbar c/\lone(9) = 763$~MeV, an identity of definitions, and the ring energy of the nucleon
+($176$~MeV) is the Regge intercept $\alpha_0(N) = -0.26$ in another notation. With a tension the closed loop
+acquires a radius, $E = 2\pi\sigma R + \kappa\hbar c/R$ with $R^* = 0.13$~fm and $E^* = 2\sqrt{\pi\sigma} = 1.53$~GeV
+for the half quantum, which R113 could not obtain; the first quantum correction of the string, the L\"uscher
+term $-\pi\hbar c/12r = -64$~MeV at $\lone(9)$, lowers the static part to $699$~MeV, outside the $770$--$813$~MeV
+that $\mu_p$ requires. The
 tension is the energy per path of the same object that weighs the
 quark; the rule that assigns the quantum to one strand (a star arm is one circuit) is the one that
 gives the electron its circulating half by the same formula, $\pi\hbar c/(3\lone(3)) = m_e c^2/2$.
@@ -945,7 +955,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 114 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 115 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

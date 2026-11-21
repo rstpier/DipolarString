@@ -2817,3 +2817,34 @@ TENSION maintenu, avec la clause nouvelle que la formule doit nommer la tension 
 (2) Première borne expérimentale sur un excès de non-linéarité du vide à basse énergie : u_s > 10³ u₀
 pour toute lecture Z(u) ; à verser au cahier des charges de la reconstruction avant son étape 1. Le
 reste ne bouge aucun critère.
+
+**R120 — La corde de Nambu–Goto avec la tension de la base : pente de Regge, tours N/Δ, identités.**
+Énoncé de l'auteur (21 novembre 2026) : importer la « vieille » corde hadronique (énergie = tension × longueur,
+extrémités à c) avec la tension de la base, σ = πℏc/ℓ₁(9)² (√σ = 430,3 MeV, σ = 0,185 GeV²), et voir ce qu'elle
+impose. Script `nambu_goto_regge.py`, 5/5.
+*A. Identité.* La corde ouverte tournante a M = πσR et J = πσR²/2, donc J = α′M² avec α′ = 1/(2πσ). À J = ½ :
+M = √(πσ) = πℏc/ℓ₁(9) = 3E_q = 762,70 MeV, la part statique de la base (trois circuits de quark). C'est une
+identité de définitions (σ = πℏc/ℓ₁²) : **la règle 1, « un quantum πℏc par circuit », est la corde de Nambu–Goto
+à J = ½**. L'énergie d'anneau de la lecture « masse + spin » (R72 : 938 − 763 = 176 MeV) est l'ordonnée de Regge
+du nucléon, α₀(N) = ½ − α′M_N² = −0,26, dans une autre notation ; pour le Δ, α₀ = +0,19 et la masse classique
+√(3πσ) = 1321 MeV (+7 %).
+*B. Pente.* α′_base = 0,859 GeV⁻². Ajustements J(M²) sur les tables (PDG 2024) : ρ–a₂–ρ₃ 0,888 (−3,3 %) ; avec
+a₄(1970) 0,915 (−6 %) ; N(939)–N(1685)–N(2250) 0,955 (−10 %) ; Δ(1232)–Δ(1930)–Δ(2420) 0,922 (−7 %). La fenêtre
+de l'exposant [6,2758 ; 6,2926] déplace α′ entre 0,842 et 0,874 : toutes les pentes mesurées sont au-dessus.
+Même sens que R117/R119 (√σ sous le réseau) : la tension de la base est basse de 3 à 10 % en α′, et c'est le
+compte 9 qui la fixe, pas l'exposant.
+*C. Tours.* Avec α′_base et l'état le plus bas de chaque trajectoire : a₂ 1328 (+0,8 %), ρ₃ 1711 (+1,3 %),
+a₄ 2023 (+2,8 %) ; N 5/2 1791 (+6,3 %), N 9/2 2352 (+4,6 %) ; Δ 7/2 1961 (+1,6 %), Δ 11/2 2484 (+2,7 %).
+*D. Boucle fermée.* E(R) = 2πσR + κℏc/R a un minimum (R113 n'en avait aucun sans tension) : R* = √(κℏc/2πσ),
+E* = 2√(2πσκℏc). Demi-quantum de la base (κ = ½) : R* = 0,129 fm, E* = 2√(πσ) = 1525 MeV = deux fois la part
+statique (identité) ; quantum entier : 0,183 fm, 2157 MeV. Un état neutre vers 1,5 GeV, enregistré, non revendiqué
+(glueball 0⁺⁺ du réseau ~1,7 GeV). **Acquis pour la reconstruction** : E = tension × longueur + quantum/R est le
+fonctionnel minimal de l'étape 1, et la tension est l'échelle d'entrée.
+*E. Lüscher.* Premier terme quantique de la corde en D = 4 : −πℏc/(12r) = −63,6 MeV à r = ℓ₁(9) (−8,3 %) ; la
+part statique quantique est 699 MeV, hors des 770–813 MeV que μ_p exige (`HADRONS.md`, ligne « part statique »).
+La base ne contient pas ce terme, et il va dans le mauvais sens pour le nucléon.
+**Verdict : CONDITIONNEL et EN TENSION** pour la pente (σ de la base, par le compte 9) ; **IDENTITÉ** pour la part
+statique et pour l'anneau ; acquis méthodologique pour la reconstruction (la tension fixe un rayon). Pas de
+découverte : la base avait déjà la tension de Regge–Cornell ; R120 montre que sa règle posée est cette corde à
+J = ½, et que la « grande » théorie des cordes n'a rien à y ajouter (note du 21 novembre : dix dimensions sans
+action, aucune prédiction).
