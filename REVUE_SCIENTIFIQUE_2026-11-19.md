@@ -512,3 +512,13 @@ conjecture G, problèmes ouverts, conclusion, divulgation, historique, table des
 `matter/redraw/HADRONS.md`, `matter/redraw/BASE.md` (bilans et notes de principe),
 `matter/paper/DS_matter_sector.tex` (résumé, portée, grille), `matter/paper/README.md`,
 `matter/notes/2026-10-09-tout-est-onde.md`, `README.md` racine.
+
+---
+
+*Suite (21 novembre 2026).* La recommandation 1 est tranchée : l'auteur adopte l'axiome d'amplitudes (A3 de
+la note du 9 octobre ; A9 dans la numérotation du manuscrit). Entre-temps deux propositions de l'auteur ont été
+calculées et closes (R121 : dimensions de stockage internes → oscillateur gelé, niveaux exclus ; R122 :
+auto-piégeage saturable → loi du sac, électron exclu par la borne XFEL), et la première confrontation du programme
+sous A3 (R123) exclut la trame cubique à ℓ₁ comme support des photons (LHAASO, 10¹⁵) et de l'électron (2c/3), et
+rend A8 obligatoire (point zéro 10³² ρ_Λ). Le programme redéfini, ses trois calculs et son critère d'arrêt sont
+dans `matter/rebuild/A3.md` ; le premier calcul est α₁, α₂.

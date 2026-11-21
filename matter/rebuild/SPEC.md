@@ -75,4 +75,5 @@ La route « énergie → Z » est fermée pour l'électron et redondante pour le
 reste deux voies cohérentes avec tout le dossier : **(a)** restreindre la CD au milieu (états limites gravitationnels),
 comme la déclaration de portée du manuscrit le fait déjà ; **(b)** adopter A3 et redéfinir le programme comme
 ontologie d'un milieu pour les champs quantiques, en demandant ce que le milieu ajoute (ℓ₁, une coupure, un repère).
-Aucune étape 2 n'est lancée sans ce choix, qui appartient à l'auteur.
+**Décision de l'auteur (21 novembre 2026) : (b), l'axiome d'amplitudes est adopté.** Le programme redéfini, sa
+première confrontation (R123) et son critère d'arrêt sont dans `A3.md`.

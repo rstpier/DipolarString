@@ -2897,3 +2897,41 @@ R120) ou un extérieur interdit (confinement, sac).
 demandait) ; **EXCLU comme origine de l'électron** (HIBEF + Schwinger) ; **CONDITIONNEL** pour les hadrons, à une
 échelle E_s ≈ 120–200 MeV posée, sans lien avec ℓ₁ (c'est le modèle du sac). L'étape 1 ne donne pas d'objet
 nouveau ; elle fixe ce que l'objet doit avoir. Cahier des charges et décision proposée : `matter/rebuild/SPEC.md`.
+
+**Décision de principe (21 novembre 2026) : adoption de l'axiome d'amplitudes.**
+L'auteur : « On adopte A3. » L'axiome est celui de la note du 9 octobre (`matter/notes/2026-10-09-tout-est-onde.md`,
+A3 : à chaque configuration classique du milieu est associée une amplitude complexe ; l'état est la superposition
+des configurations ; évolution linéaire ; probabilité = module carré). Dans la numérotation du manuscrit, qui a
+déjà un A3 (quantification de la charge), il sera **A9**. Portée : la CD cesse d'être une tentative de reconstruire
+les particules comme objets classiques du milieu (revue du 19 novembre, §5 ; `matter/rebuild/SPEC.md` §5, voie (b))
+et devient une ontologie pour les champs quantiques : les particules sont les quanta des champs du milieu et la
+question du programme est « que le milieu ajoute-t-il à la théorie quantique des champs ? ». Les notes des 4–5
+octobre et du 1er novembre (intrication sans canal, mesure comme intrication, naissance intriquée, décohérence
+comme transfert) deviennent des conséquences du cadre. Première confrontation : R123 ; programme : `matter/rebuild/A3.md`.
+
+**R123 — Adoption de l'axiome d'amplitudes : les conséquences immédiates et ce que les données en disent.**
+Script `a3_adoption_consequences.py`, 4/4. Sous A3 le milieu ajoute trois choses à la théorie des champs, et
+chacune a déjà sa borne.
+*A. Une coupure.* Le photon est le quantum de l'onde collective du réseau et porte sa dispersion : trame cubique à
+pas ℓ, ω = (2c/ℓ) sin(kℓ/2) = ck(1 − k²ℓ²/24 + …), soit E² = p²c²(1 − (E/E_QG,2)²) avec E_QG,2 = √12 ℏc/ℓ. Pour
+ℓ = ℓ₁ : E_QG,2 = 0,85 MeV (manuscrit : 0,69 par sa convention). LHAASO, GRB 221009A (février 2026) :
+E_QG,2 > 6·10⁻⁸ E_Pl = 7,3·10¹¹ GeV ; écart 8,7·10¹⁴. Le pas d'un réseau porteur des photons doit être
+**ℓ < 9·10⁻²⁸ m = 10⁻¹⁵ ℓ₁**. La sortie du manuscrit (« photon = soliton N = 1 hors du réseau ») n'existe plus sous
+A3 : **ℓ₁ ne peut pas être le pas du milieu.**
+*B. Un spineur.* L'électron est le quantum d'un champ de spin ½ du milieu. Sur la trame cubique de la base, toute
+excitation de spin ½ verrouillée en hélicité va à 1/3 de la vitesse de lien contre 1/2 pour le photon (R106–R107,
+identité universelle R110) : v_e/c = 2/3, exclu à 10⁻¹¹. Le réseau qui porte Weyl et Maxwell à une vitesse
+(automate de Weyl, R111) exige un nœud non réciproque T_h avec un quart d'onde physique (R112), hors de C1–C5 et
+contre A5 : **adopter A3 oblige à remplacer le nœud et A5.**
+*C. Une énergie de point zéro.* ρ_zp ≈ π²ℏc/(8ℓ⁴) (deux polarisations, dispersion linéaire jusqu'au bord de zone) :
+pour ℓ₁, 9·10²² J/m³ contre ρ_Λ = 5,3·10⁻¹⁰ J/m³, rapport 1,7·10³² : **A8 (énergie native non gravitante) devient
+obligatoire**, et c'est le problème de la constante cosmologique sous un autre nom.
+*D. Ce qu'A3 donne sans le milieu* : superposition, intrication sans canal (CHSH 2√2 > 2, conforme aux notes),
+règle de Born (dans l'axiome, ou Gleason). *Ce que le milieu doit encore fournir* : un repère privilégié dont
+α₁, α₂ ne sont pas calculés (problème ouvert n° 6 du manuscrit, désormais le premier calcul) ; un champ de spin ½
+(B) ; la raison pour laquelle le point zéro ne gravite pas (C).
+**Verdict : A3 ADOPTÉ (décision). Le milieu quantifié tel qu'écrit — trame cubique à ℓ₁ — est EXCLU comme support
+des photons (A) et de l'électron (B)** ; ℓ₁ survit comme longueur de Compton de l'électron (2πƛ_e/3, propriété du
+quantum), pas comme pas du milieu. Ce qui reste de la CD sous A3 : ses rapports (secteur hadronique, inchangé),
+ses états limites gravitationnels (inchangés), et un programme : un pas < 10⁻²⁷ m, un nœud qui porte un spineur,
+des α₁, α₂ à calculer (`matter/rebuild/A3.md`).

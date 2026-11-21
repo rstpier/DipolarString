@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R122)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R123)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R122).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R123).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -224,7 +224,13 @@ sac M = Ñ_min^{1/4} E_s N^{3/4} ; avec la borne HIBEF (E_s ≥ 2,3 MeV) le lump
 l'électron est exclu (facteur 6·10⁴ en u_s), un nucléon exige E_s ≈ 120 MeV, l'échelle du sac, 10¹⁰ u₀ ; toute
 non-linéarité qui piège agit au-delà de Schwinger. Le mécanisme est juste, mais ce n'est pas l'électron et c'est
 le sac pour les hadrons ; décision proposée dans `matter/rebuild/SPEC.md` §5.
-L'article (`matter/paper/`) est consolidé jusqu'à R122.
+Décision (21 novembre 2026) : l'auteur adopte l'axiome d'amplitudes (A3 de la note du 9 octobre ; A9 dans la
+numérotation du manuscrit) ; le programme devient une ontologie pour les champs quantiques, question : « que le
+milieu ajoute-t-il ? » (`matter/rebuild/A3.md`). R123 (première confrontation) : sous A3 le photon porte la
+dispersion du réseau et LHAASO exclut ℓ₁ comme pas (10¹⁵ ; pas < 10⁻²⁷ m) ; la trame cubique ne porte pas
+l'électron comme quantum (2c/3) ; le point zéro d'un réseau à ℓ₁ vaut 10³² ρ_Λ (A8 obligatoire). Reste : les
+rapports hadroniques, les états limites gravitationnels, ℓ₁ comme longueur de Compton ; premier calcul : α₁, α₂.
+L'article (`matter/paper/`) est consolidé jusqu'à R123.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -330,9 +336,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R122 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R123 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 116 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 117 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
   l'objet (cahier des charges `SPEC.md`, étape 1 = R122, un script).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
