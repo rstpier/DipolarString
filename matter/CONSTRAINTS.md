@@ -377,3 +377,21 @@ not forbid:
 
 These four are the live targets. `OPEN_PROBLEMS.md` states each one and what
 would close it.
+
+---
+
+## 10. A scalar gravitational sector in a preferred frame has α₁ = −8
+
+*Established 21 November 2026, `rebuild/alpha12_preferred_frame.py` (R124), 5/5; GR control at zero.*
+
+The isotropic exponential metric of the manuscript, with the constrained (elliptic) potential evaluated in the
+substrate frame, is diagonal in that frame: a scalar field has no vector potential, so `g_0i = 0` for a moving mass,
+whereas the PPN form requires `g_0i = −½(4γ+3+α₁−α₂)V_i − ½(1+α₂)W_i`, i.e. **`α₁ = −(4γ+4) = −8` for `γ = 1`**. The
+result does not depend on the contracted or uncontracted reading of the potential (`α₂ = 0` or `−1`) nor on the
+source's kinetic coefficient (`α₃ = −4` or `−3`). Bounds: `|α₁| < 4×10⁻⁵` (binary pulsars), `10⁻⁴` (lunar laser
+ranging): excluded by five orders of magnitude, with no free parameter.
+
+> **Any gravitational sector of a medium with a rest frame must carry a gravitomagnetic field `g_0i = −4 v_i U`; a
+> scalar cannot.** If the tensor bootstrap makes the exterior GR, the frame is unobservable in gravity. Do not build a
+> gravitational sector on a scalar in a frame; and the substrate-star interior, integrated with this scalar sector, is
+> exposed to the same objection.

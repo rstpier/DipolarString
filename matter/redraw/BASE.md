@@ -2935,3 +2935,37 @@ des photons (A) et de l'électron (B)** ; ℓ₁ survit comme longueur de Compto
 quantum), pas comme pas du milieu. Ce qui reste de la CD sous A3 : ses rapports (secteur hadronique, inchangé),
 ses états limites gravitationnels (inchangés), et un programme : un pas < 10⁻²⁷ m, un nœud qui porte un spineur,
 des α₁, α₂ à calculer (`matter/rebuild/A3.md`).
+
+**R124 — Les paramètres de repère privilégié α₁, α₂, α₃ du secteur scalaire : le premier calcul du programme sous A3.**
+Problème ouvert n° 6 du manuscrit (« une computation post-newtonienne complète avec le repère du substrat en mouvement
+par rapport au système, qui seule établirait α₁ et α₂, n'a pas été faite »). Script `matter/rebuild/alpha12_preferred_frame.py`
+(SymPy), 5/5.
+*Le modèle.* Secteur scalaire contraint (elliptique), représentant isotrope auquel la matière se couple :
+ds² = −e^{−χ}dt² + e^{χ}dx², χ = 2U, c₀ = 1, U le potentiel newtonien instantané dans le repère du substrat S ; aucun
+g₀ᵢ, un scalaire n'ayant pas de potentiel vecteur. Pour une masse m à la vitesse v, deux lectures du potentiel
+coexistent dans le manuscrit : (i) elliptique, U = Gm/|x − vt| (instantané, non contracté, section « static use ») ;
+(ii) ellipsoïde de Heaviside, U = Gm/√(γ²(x − vt)² + y² + z²) (contracté, section Lorentz).
+*Méthode.* Deux lectures PPN indépendantes (Will). Dans S : pour une masse en mouvement V_i = v_iU, W_i = vʲU_ij,
+Φ₁ = v²U ; g₀ᵢ = −½(4γ + 3 + α₁ − α₂)V_i − ½(1 + α₂)W_i, dont la somme des coefficients est invariante de jauge ;
+g₀₀ ∋ (2γ + 2 + α₃)Φ₁. Dans le repère comobile S′ : boost de Lorentz exact (c₀ = 1 ; la matière suit la cinématique
+de Lorentz par A6), développement en ε (U ~ ε², v ~ ε), forme PPN à w = v, jauge t′ → t′ + λ(w·x′)U. Contrôle : la
+métrique 1PN de la RG d'une masse en mouvement (boost de la métrique de repos) donne g₀ₓ = −4vU dans S, un
+coefficient de Φ₁ égal à 4, et α₁ = α₂ = α₃ = 0, γ = β = 1 par les deux lectures.
+*Résultat.* **α₁ = −8** dans les deux variantes et par les deux lectures : un champ scalaire n'a aucun terme
+gravitomagnétique dans le repère du substrat, alors que la RG, et les pulsars, exigent g₀ᵢ = −4v_iU pour une masse en
+mouvement ; l'écart vaut −(4γ + 4) = −8 avec γ = 1 (Cassini), **sans paramètre libre**. α₂ = −1 (potentiel
+instantané : le terme U(v·n)² du potentiel non contracté) ou 0 (Heaviside). α₃ = −3 ou −4 avec une source de masse au
+repos (le coefficient de Φ₁ est nul ; il faudrait une source accordée à la structure 1PN de la RG pour l'annuler).
+γ = β = 1 retrouvés.
+*Bornes.* |α₁| < 4·10⁻⁵ (PSR J1738+0333 ; 10⁻⁴ par la Lune) : violation × 2·10⁵ ; |α₂| < 4·10⁻⁷ (spin solaire),
+1,8·10⁻⁹ (pulsars) : × 2,5·10⁶ à 5,6·10⁸ pour la variante (i) ; |α₃| < 4·10⁻²⁰ : × 10²⁰.
+*La sortie.* Si le bootstrap tensoriel rend l'extérieur égal à la RG, α = 0 (c'est le contrôle), mais le repère du
+substrat est alors inobservable en gravitation : le milieu n'ajoute rien à l'extérieur (critère (3) d'`A3.md`). Pas
+de troisième voie : tout secteur gravitationnel d'un milieu à repère doit porter un champ gravitomagnétique
+g₀ᵢ = −4v_iU, ce qu'un scalaire ne peut pas faire.
+**Verdict : EXCLU.** Le secteur scalaire à repère de la CD viole la borne sur α₁ de cinq ordres de grandeur, sans
+paramètre libre. **Critère d'arrêt (1) d'`A3.md` déclenché** : le milieu à repère est mort en gravitation ; il reste
+de la CD des rapports (secteur hadronique) et des états limites — et ces derniers sont calculés avec ce même secteur
+scalaire (intérieur newtonien), ce qui les expose à leur tour. Le problème ouvert n° 6 du manuscrit est résolu,
+négativement. (Le calcul SymPy a été rendu rapide en tronquant e^{±2U} à l'ordre U², les ordres supérieurs étant hors
+PPN : 0,8 s.)

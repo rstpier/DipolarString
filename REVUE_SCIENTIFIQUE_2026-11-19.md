@@ -521,4 +521,8 @@ calculées et closes (R121 : dimensions de stockage internes → oscillateur gel
 auto-piégeage saturable → loi du sac, électron exclu par la borne XFEL), et la première confrontation du programme
 sous A3 (R123) exclut la trame cubique à ℓ₁ comme support des photons (LHAASO, 10¹⁵) et de l'électron (2c/3), et
 rend A8 obligatoire (point zéro 10³² ρ_Λ). Le programme redéfini, ses trois calculs et son critère d'arrêt sont
-dans `matter/rebuild/A3.md` ; le premier calcul est α₁, α₂.
+dans `matter/rebuild/A3.md` ; le premier calcul est α₁, α₂. Ce calcul est fait (R124) : le secteur scalaire tel
+qu'écrit, diagonal dans le repère du substrat, n'a pas de terme gravitomagnétique et donne α₁ = −(4γ + 4) = −8 sans
+paramètre libre, exclu de 2·10⁵ par les pulsars ; le critère d'arrêt a joué, le milieu à repère est mort en
+gravitation, le problème ouvert n° 6 du manuscrit est résolu négativement, et les états limites (intérieur intégré
+sur ce secteur) sont à réexaminer.

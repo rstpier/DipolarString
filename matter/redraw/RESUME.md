@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R123)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R124)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R123).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R124).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -230,7 +230,13 @@ milieu ajoute-t-il ? » (`matter/rebuild/A3.md`). R123 (première confrontation)
 dispersion du réseau et LHAASO exclut ℓ₁ comme pas (10¹⁵ ; pas < 10⁻²⁷ m) ; la trame cubique ne porte pas
 l'électron comme quantum (2c/3) ; le point zéro d'un réseau à ℓ₁ vaut 10³² ρ_Λ (A8 obligatoire). Reste : les
 rapports hadroniques, les états limites gravitationnels, ℓ₁ comme longueur de Compton ; premier calcul : α₁, α₂.
-L'article (`matter/paper/`) est consolidé jusqu'à R123.
+R124 (premier calcul du programme sous A3 : α₁, α₂) : le secteur scalaire tel qu'écrit est une métrique diagonale
+dans le repère du substrat ; pour une masse en mouvement il n'a aucun g₀ᵢ alors que la RG et les pulsars exigent
+−4v_iU : α₁ = −(4γ + 4) = −8 sans paramètre libre (deux lectures PPN, deux variantes du potentiel, contrôle RG à
+zéro), α₂ = −1 ou 0, α₃ = −3 ou −4, contre |α₁| < 4·10⁻⁵ : EXCLU de 2·10⁵. Critère d'arrêt (1) d'A3.md déclenché :
+le milieu à repère est mort en gravitation ; la sortie par le bootstrap vers la RG le rend inobservable. Problème
+ouvert n° 6 du manuscrit résolu, négativement ; les états limites (intérieur sur ce secteur) sont à réexaminer.
+L'article (`matter/paper/`) est consolidé jusqu'à R124.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -336,11 +342,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R123 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R124 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 117 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, étape 1 = R122, un script).
+  l'objet (cahier des charges `SPEC.md`, programme `A3.md` ; R122 et R124, deux scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,
