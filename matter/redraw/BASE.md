@@ -2848,3 +2848,52 @@ statique et pour l'anneau ; acquis méthodologique pour la reconstruction (la te
 découverte : la base avait déjà la tension de Regge–Cornell ; R120 montre que sa règle posée est cette corde à
 J = ½, et que la « grande » théorie des cordes n'a rien à y ajouter (note du 21 novembre : dix dimensions sans
 action, aucune prédiction).
+
+**R121 — « Le coût d'un déplacement est énergie pour masse » : les 3 + 3 dimensions de stockage comme oscillateurs LC.**
+Énoncé de l'auteur (21 novembre 2026), en réponse à la question « quelle énergie coûte un déplacement dans une
+direction capacitive ? », après la proposition « CD en dix dimensions : 3 massiques, 3 stockage capacitif, 3 stockage
+inductif, 1 temps ». Script `internal_lc_oscillator.py`, 4/4.
+Pris au mot, l'énoncé donne une action : chaque direction porte ½ (inertie) × (vitesse)². Direction « inductive » :
+coordonnée q, inertie L, coût ½Lq̇² = ½LI² ; direction « capacitive » : coût q²/2C. Or ½LI² et q²/2C sont l'énergie
+cinétique et l'énergie potentielle de la **même** coordonnée (I = q̇ ; identité de Legendre vérifiée ; la lecture
+duale en flux échange les rôles) : **les 3 + 3 dimensions sont trois oscillateurs LC internes**, de fréquence 1/√(LC),
+pas six dimensions. Les nombres du dossier sont cohérents : I_e = ec/2πƛ_e = 19,8 A, ½L_eI_e² = 2,19 keV et
+ℏ/√(L_eC_e) = 101 keV (CONSTRAINTS §1b) donnent L_e = 1,79·10⁻¹⁸ H, C_e = 2,37·10⁻²³ F, Z_e = 275 Ω = 0,73 Z₀.
+*Masse comme énergie interne.* Point zéro de trois oscillateurs : 152 keV = 0,30 m_e ; m_e = (n + 3/2)ℏω donne
+n = 3,56, (n + ½)ℏω donne 4,56 : aucun niveau ; sans point zéro, m_e/ℏω = 5,06 (« cinq quanta à 1 % », coïncidence
+entre nombres calibrés sur l'électron lui-même, non revendiquée). *Niveaux excités* m_e + nℏω = 612, 713, 814 keV :
+EXCLU (leptons excités > 100 GeV au LEP ; G_E = 1 à 10⁻³ fm, R100 ; g − 2 à 10⁻¹²) ; l'oscillateur doit être gelé
+dans son fondamental. *Fondamental gelé* : toute la masse au point zéro exige ω = 2m_ec²/ℏ = 1,55·10²¹ rad/s, la
+fréquence du Zitterbewegung (R103–R104, identité), et à Z_e fixé L = 1,77·10⁻¹⁹ H, C = 2,34·10⁻²⁴ F, dix fois sous les
+L_e, C_e du modèle.
+**Verdict : RÉDUCTION** (six dimensions de stockage → trois oscillateurs), **IDENTITÉ** (fondamental = Zitterbewegung, à
+L et C réajustés), **EXCLU** (niveaux). Le « 10 = 3 + 3 + 3 + 1 » se réduit au point matériel avec un oscillateur
+interne gelé : un seul nombre, la masse, réglé par L et C, rien d'autre d'observable. La « grande » théorie des
+cordes n'y est pas (note du 21 novembre : dix dimensions sans action ne prédisent rien ; le nombre 10 y vient de
+l'annulation d'anomalie avec fermions sur la corde, les six de trop enroulées sous 10⁻¹⁹ m).
+
+**R122 — Étape 1 de la reconstruction : l'auto-piégeage saturable (`matter/rebuild/step1_saturable_selftrapping.py`, 5/5).**
+Idée de base de l'auteur (20–21 novembre 2026) : l'énergie monte l'impédance Z là où elle est ; les ondes se
+courbent vers l'énergie ; avec assez de quanta au même endroit la bosse se referme (confinement) ; les états mal
+fermés fuient (particules éphémères) ; deux quanta ne suffisent pas. Écrite sans la base : milieu de Kerr saturable,
+Z(u) = Z₀(1 + (u/u_s)/(1 + u/u_sat)) ; l'enveloppe d'une porteuse (k, ω₀ = c₀k) obéit à l'équation de Schrödinger
+non linéaire saturable ; unités : longueur 1/k, amplitude f² = u/u_s, x_s = u_sat/u_s.
+*A. Contrôles.* 1D cubique : Ñ = 4√μ, pas de seuil. 2D cubique : Townes, f(0) = 2,2063, Ñ_c = 11,701 (réf. 11,70).
+3D cubique : Ñ√μ = 18,90, décroissant : aucun lump stable (effondrement, Derrick).
+*B. Le seuil.* 3D saturable : Ñ(μ) a un minimum et une branche stable au-dessus ; loi d'échelle exacte
+**Ñ_min = 158 x_s^{−1/2}** à μ/x_s = 0,049 (288, 158, 91, 50 pour x_s = 0,3 ; 1 ; 3 ; 10). En quanta :
+N_q = Ñ (E_s/E_c)⁴, E_c = ℏω₀, E_s = (u_s (ℏc)³)^{1/4} ; « deux quanta ne suffisent pas » est ce seuil.
+*C. Les échelles.* E_s(u₀ = hc/ℓ₁⁴ = 4,6·10²³ J/m³) = 0,39 MeV ; E_s(borne HIBEF, R119 : 5,7·10²⁶) = 2,3 MeV ;
+E_s(Schwinger, 7,7·10²⁴) = 0,78 MeV ; E_s(Euler–Heisenberg, 1,5·10²⁹) = 9,2 MeV ; E_s(sac MIT, 9,2·10³³) = 145 MeV.
+*D. La loi de masse au seuil* : M c² = Ñ_min^{1/4} E_s N_q^{3/4} (x_s = 1 : 3,54 E_s N_q^{3/4}) — la loi du sac
+(M ∝ B^{1/4} N^{3/4}). Lump classique de 10 quanta à la borne HIBEF : 46 MeV = 90 m_e. L'électron comme lump d'un
+quantum : E_s = 0,14 MeV, u_s = 9·10²¹ J/m³, 6·10⁴ fois sous la borne : **EXCLU**. Nucléon de trois quanta :
+E_s = 116 MeV (sac : 145–235), u_s = 4·10³³ J/m³ = 8·10⁹ u₀ : l'échelle du substrat n'entre pas.
+*E. Le vrai vide.* u_s(HIBEF)/u_Schwinger = 73 : toute non-linéarité assez forte pour piéger agit là où le vide
+réel crée des paires ; la saturation du vide QED est la création de paires, l'électron lui-même. Un lump de quanta
+sans masse libres de sortir est métastable (oscillon) ; la stabilité exige une charge conservée (boucle fermée,
+R120) ou un extérieur interdit (confinement, sac).
+**Verdict : le mécanisme est juste** (seuil, lumps stables, loi de masse du sac : la dynamique que la revue
+demandait) ; **EXCLU comme origine de l'électron** (HIBEF + Schwinger) ; **CONDITIONNEL** pour les hadrons, à une
+échelle E_s ≈ 120–200 MeV posée, sans lien avec ℓ₁ (c'est le modèle du sac). L'étape 1 ne donne pas d'objet
+nouveau ; elle fixe ce que l'objet doit avoir. Cahier des charges et décision proposée : `matter/rebuild/SPEC.md`.

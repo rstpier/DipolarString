@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R120)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R122)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R120).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R122).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -214,7 +214,17 @@ la pente α′ = 1/(2πσ) = 0,859 GeV⁻² est sous toutes les trajectoires mes
 hors de la fenêtre de l'exposant, même sens que √σ sous le réseau ; avec une tension la boucle fermée a un rayon
 (0,13 fm, 1,5 GeV pour le demi-quantum : le fonctionnel minimal de la reconstruction) ; le terme de Lüscher
 (−64 MeV) sort la part statique des 770–813 MeV que μ_p exige. Pas de découverte.
-L'article (`matter/paper/`) est consolidé jusqu'à R120.
+R121 (« le coût d'un déplacement est énergie pour masse », les 3 + 3 dimensions de stockage) : ½LI² et q²/2C
+sont les deux énergies d'une même coordonnée, donc trois oscillateurs LC internes, pas six dimensions ; le
+fondamental gelé est le Zitterbewegung (identité, à L et C réajustés dix fois sous ceux du modèle) ; les niveaux
+excités (612, 713 keV…) sont exclus. Le « 10 = 3 + 3 + 3 + 1 » se réduit à un point avec un oscillateur gelé.
+R122 (étape 1 de la reconstruction, `matter/rebuild/`) : l'idée « l'énergie monte Z, assez de quanta se
+piègent » écrite comme milieu de Kerr saturable donne un seuil universel Ñ_min = 158/√x_s et la loi de masse du
+sac M = Ñ_min^{1/4} E_s N^{3/4} ; avec la borne HIBEF (E_s ≥ 2,3 MeV) le lump le plus léger pèse ≥ 46 MeV,
+l'électron est exclu (facteur 6·10⁴ en u_s), un nucléon exige E_s ≈ 120 MeV, l'échelle du sac, 10¹⁰ u₀ ; toute
+non-linéarité qui piège agit au-delà de Schwinger. Le mécanisme est juste, mais ce n'est pas l'électron et c'est
+le sac pour les hadrons ; décision proposée dans `matter/rebuild/SPEC.md` §5.
+L'article (`matter/paper/`) est consolidé jusqu'à R122.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -320,10 +330,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R120 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R122 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 115 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
-  précédente (holonomie, Faddeev, impédance du proton, topologie).
+- `matter/redraw/*.py` : 116 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+  précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
+  l'objet (cahier des charges `SPEC.md`, étape 1 = R122, un script).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,
