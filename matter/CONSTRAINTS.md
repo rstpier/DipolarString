@@ -395,3 +395,21 @@ ranging): excluded by five orders of magnitude, with no free parameter.
 > scalar cannot.** If the tensor bootstrap makes the exterior GR, the frame is unobservable in gravity. Do not build a
 > gravitational sector on a scalar in a frame; and the substrate-star interior, integrated with this scalar sector, is
 > exposed to the same objection.
+
+---
+
+## 11. Under GR hydrostatics the substrate-star branch is not dark
+
+*Established 21 November 2026, `rebuild/limit_states_tov.py` (R125), 5/5; the control reproduces the manuscript's branch
+(`1.29×10⁶ M☉`, `u_c/u₀ = 14.8`, `r_s/R = 0.82`).*
+
+The manuscript's structure equations omit the two GR factors of the TOV equation, `(M + 4πr³P_g/c²)` and
+`1/(1 − 2GM/rc²)`. Restoring them with every other convention kept (A8 source `u − u₀`, inertia `u + P`, surface at
+`P = u₀/3`) leaves a stable branch but lowers the critical mass to `3.9×10⁵ M☉` (×0.30) and the maximal stable
+compactness to `r_s/R = 0.31` (each factor alone: 0.40 and 0.53) — below the `2/3` needed for a shadow and below the
+radiation-sphere bound `0.49` (Sorkin–Wald–Zhang 1981); the Newtonian `0.82` exceeds that bound and was never
+realizable in GR. The most compact stable star has `1 + z = 1.20`: a bright surface.
+
+> **The dark horizonless objects, the frozen collapses (`c_eff → 0`) and the first three falsification targets of the
+> manuscript were properties of the scalar force law excluded in §10, not of the medium.** `M_crit ∝ ℓ₁²` survives as a
+> dimensional statement only. Do not build a gravitational prediction on the scalar sector's hydrostatics.

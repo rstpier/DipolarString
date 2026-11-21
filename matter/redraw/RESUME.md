@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R124)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R125)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R124).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R125).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -236,7 +236,14 @@ dans le repère du substrat ; pour une masse en mouvement il n'a aucun g₀ᵢ a
 zéro), α₂ = −1 ou 0, α₃ = −3 ou −4, contre |α₁| < 4·10⁻⁵ : EXCLU de 2·10⁵. Critère d'arrêt (1) d'A3.md déclenché :
 le milieu à repère est mort en gravitation ; la sortie par le bootstrap vers la RG le rend inobservable. Problème
 ouvert n° 6 du manuscrit résolu, négativement ; les états limites (intérieur sur ce secteur) sont à réexaminer.
-L'article (`matter/paper/`) est consolidé jusqu'à R124.
+R125 (les états limites sous R124) : la branche des étoiles de substrat réintégrée avec les deux facteurs de la RG
+(TOV, conventions A8 inchangées ; contrôle : le système du manuscrit redonne 1,29·10⁶, 14,8, 0,82) existe encore
+mais M_crit = 3,9·10⁵ M☉ (× 0,30) et la compacité maximale stable est 0,31 < 2/3 : aucun objet sombre sans
+horizon, surface à 1 + z = 1,2, coupure à log M = 5,59 ; chaque facteur seul suffit (0,40 ; 0,53) ; le 0,82
+newtonien dépasse la borne des sphères de rayonnement (0,49). Les effondrements gelés tenaient à c_eff → 0 du
+secteur scalaire : sans lui, horizon en temps propre fini ; les falsificateurs 1–3 du manuscrit perdent leur base.
+Les trois critères d'arrêt d'A3.md ont joué : de la CD restent les rapports hadroniques et les résultats négatifs.
+L'article (`matter/paper/`) est consolidé jusqu'à R125.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -342,11 +349,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R124 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R125 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 117 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programme `A3.md` ; R122 et R124, deux scripts).
+  l'objet (cahier des charges `SPEC.md`, programme `A3.md` ; R122, R124 et R125, trois scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

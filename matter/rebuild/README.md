@@ -9,6 +9,8 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   et pour chaque candidat le test qui le tue.
 - `A3.md` — le programme sous l'axiome d'amplitudes (décision de l'auteur, 21 novembre 2026) : définition,
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
+- `limit_states_tov.py` — les états limites sous R124 (R125) : la branche des étoiles de substrat avec les deux
+  facteurs de la RG restaurés (TOV, conventions A8) ; contrôle sur le système du manuscrit ; pas d'objet sombre.
 - `alpha12_preferred_frame.py` — premier calcul du programme sous A3 (R124) : les paramètres de repère privilégié
   α₁, α₂, α₃ du secteur scalaire, substrat en mouvement (SymPy ; deux lectures PPN, contrôle RG) : α₁ = −8, exclu.
 - `step1_saturable_selftrapping.py` — étape 1 (R122) : l'idée de base de l'auteur (« l'énergie monte Z là où elle

@@ -2969,3 +2969,32 @@ de la CD des rapports (secteur hadronique) et des états limites — et ces dern
 scalaire (intérieur newtonien), ce qui les expose à leur tour. Le problème ouvert n° 6 du manuscrit est résolu,
 négativement. (Le calcul SymPy a été rendu rapide en tronquant e^{±2U} à l'ordre U², les ordres supérieurs étant hors
 PPN : 0,8 s.)
+
+**R125 — Les états limites sous l'objection R124 : la branche des étoiles de substrat avec l'hydrostatique de la RG.**
+Script `matter/rebuild/limit_states_tov.py`, 5/5. R124 exclut le secteur scalaire à repère ; la seule gravitation
+cohérente qui reste au modèle est la RG. Or la branche des étoiles de substrat (manuscrit, éq. star_structure) est
+intégrée avec la loi de force scalaire, dP/dr = −(u + P)GM/(r²c²), que le manuscrit appelle newtonienne et qui omet les
+deux facteurs de la RG, (M + 4πr³P_g/c²) et 1/(1 − 2GM/rc²). On les restaure (Tolman–Oppenheimer–Volkoff) en gardant
+toutes les conventions du manuscrit (A8 : masse et pression gravitantes u − u₀ et (u − u₀)/3 ; inertie u + P ;
+surface P(R) = u₀/3) ; sous forme réduite dθ/dx = −θ[m + x³(θ − 1)/3]/(x²(1 − m/2x)).
+*Contrôle.* Le système du manuscrit redonne M_crit = 1,292·10⁶ M☉ à θ_c = 14,8, r_s/R = 0,817 (manuscrit : 1,29·10⁶,
+14,5, 0,81).
+*Résultat.* TOV-A8 : la branche stable existe (premier maximum encadré), mais **M_crit = 3,86·10⁵ M☉ (× 0,30),
+θ_c = 7,6, compacité 0,31** ; la compacité maximale de toute configuration stable est 0,31 < 2/3 : **aucune
+configuration stable n'est sombre**. Chaque facteur seul suffit déjà (métrique seul : 5,8·10⁵ M☉, 0,40 ; pression
+seule : 7,3·10⁵ M☉, 0,53). Le 0,82 newtonien dépasse la borne des sphères de rayonnement auto-gravitantes (0,49,
+Sorkin–Wald–Zhang 1981) : il n'était pas réalisable en RG.
+*Conséquences.* (i) Les « objets sombres stables » (ombre de trou noir sans horizon, famille 2 sombre, région hachurée
+de la figure de branche) n'existaient que sous la loi de force scalaire exclue par R124. (ii) L'étoile stable la
+plus compacte a 1 + z = 1,20 (manuscrit : 2,3) : surface brillante ; l'argument de luminosité (Broderick–Narayan)
+frappe toute la famille 2, pas seulement Sgr A*. (iii) La coupure de la fonction de masse passe de log M = 6,11 à
+5,59, sous la médiane 6,10 de l'école des petites masses et à deux ordres de la masse dynamique (7,7). (iv) Les
+effondrements gelés (familles 1 et 3) tenaient à c_eff → 0 du secteur scalaire ; sous la RG un horizon se forme en
+temps propre fini : les falsificateurs 1 (pas de sursaut PBH) et 2 (échos) perdent leur mécanisme. (v) M_crit ∝ ℓ₁²
+survit (dimensionnel), la noirceur non.
+**Verdict : les états limites tombent avec le secteur scalaire.** Il reste une sphère de rayonnement
+auto-gravitante à fond non gravitant (A8, posé), lumineuse, de masse ∝ ℓ₁² : pas d'objet sombre sans horizon, pas de
+mécanisme de gel, pas de prédiction propre en gravitation. Avec R123 (le réseau à ℓ₁ ne porte ni le photon ni
+l'électron) et R124 (α₁ = −8), **le programme sous A3 a épuisé ses trois critères d'arrêt en une journée** : de la CD
+restent les rapports du secteur hadronique (R1–R120, conditionnels à 9 et 2π, en tension sur √σ) et les résultats
+négatifs généraux.

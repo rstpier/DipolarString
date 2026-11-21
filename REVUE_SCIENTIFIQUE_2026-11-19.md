@@ -525,4 +525,7 @@ dans `matter/rebuild/A3.md` ; le premier calcul est α₁, α₂. Ce calcul est 
 qu'écrit, diagonal dans le repère du substrat, n'a pas de terme gravitomagnétique et donne α₁ = −(4γ + 4) = −8 sans
 paramètre libre, exclu de 2·10⁵ par les pulsars ; le critère d'arrêt a joué, le milieu à repère est mort en
 gravitation, le problème ouvert n° 6 du manuscrit est résolu négativement, et les états limites (intérieur intégré
-sur ce secteur) sont à réexaminer.
+sur ce secteur) sont à réexaminer. Réexaminés (R125) : avec les deux facteurs de la RG restaurés, la branche des
+étoiles de substrat survit mais n'est plus sombre (compacité ≤ 0,31, M_crit = 3,9·10⁵ M☉, surface à 1 + z = 1,2) et
+les effondrements gelés n'ont plus de mécanisme ; les trois critères d'arrêt du programme sous A3 ont joué le même
+jour. Il reste de la CD ses rapports hadroniques et ses résultats négatifs.
