@@ -2767,3 +2767,53 @@ mitigés, sans accumulation.
 *Pour la base* : (1) et (5) sont compatibles avec ses lignes et avec R87, (3) l'est pour les paires
 ordinaires ; (2), (4) et (6) ne la touchent pas ; rien n'est modifié. Les énoncés (1) et (5) sont les deux que la base devrait poser
 explicitement si elle adopte l'axiome A3 de la note du 9 octobre.
+
+**R119 — Veille du 21 novembre 2026 : les critères du dépôt contre ce qui est sorti depuis R118.**
+Script `veille_21nov2026.py`, 5/5. Sources lues par résumés de moteur de recherche (arxiv.org,
+pos.sissa.it, indico.* hors de la politique réseau de la session) ; chaque valeur porte son statut :
+« vérifiée » ou « citée, non vérifiée à la source ».
+*A. √σ.* La base donne 430,3 MeV, soit σ = 0,185 GeV² : c'est la tension de corde phénoménologique
+(pente de Regge α′ = 0,88 GeV⁻² → 0,181 GeV² ; Cornell 0,183 ; bande 0,18–0,19 GeV² = 424–436 MeV). Le
+réseau à quarks dynamiques donne plus : 445(3)(6) MeV (Bulava et al. 2024, 2+1, point physique,
+vérifiée, −2,2σ) ; 458(7) préliminaire (extrapolation linéaire au point physique, exposé Knechtli, DESY,
+date non vérifiée, −4,0σ) ; 467(7) et 481(7) (TUMQCD 2+1+1, arXiv:2206.03156, PRD 107, 074503 (2023),
+valeurs en MeV citées par le même exposé, non vérifiées à la source — l'abstract vérifié dit seulement
+que r₀√σ concorde avec 2+1 ; −5,2σ et −7,2σ). Le σ du réseau est une quantité de fenêtre d'ajustement,
+la corde se brisant vers 1,1 fm (Cea et al. 2026). Lecture : « au centre de 420–440 » (R39, R117)
+décrivait la bande phénoménologique, pas le réseau ; **la base est sous toutes les déterminations
+réseau à quarks dynamiques**. La formule doit dire quelle tension elle vise avant qu'un critère à 3σ
+s'applique.
+*B. Non-linéarité du vide.* Première borne de laboratoire par champ sombre pompe-sonde : European XFEL,
+instrument HED + laser ReLaX, 2751 collisions, énergie c.m. 116 eV, aucun excès, section efficace
+lumière-lumière < 7·10⁴ × QED à 95 % (arXiv:2610.39867, octobre 2026 ; lettre arXiv:2611.04531,
+novembre 2026), dix ordres de grandeur mieux que les limites expérimentales antérieures, sensibilité
+QED non atteinte. Pour une interaction quartique effective la section efficace est le carré du
+coefficient : tout coefficient non QED à 116 eV est < √(7·10⁴) = 265 × Euler–Heisenberg. En échelle de
+densité d'énergie, pour une lecture Z(u) = Z₀(1 + u/u_s) (premier terme quartique en 1/u_s) :
+u_s > u_EH/265 avec u_EH = 45 m_e⁴c⁵/(8α²ℏ³) = 1,5·10²⁹ J/m³, soit **u_s > 5,7·10²⁶ J/m³ = 1,2·10³ u₀**
+(u₀ = hc/ℓ₁⁴ = 4,6·10²³ J/m³, manuscrit ; 84 × la compression critique 14,5 u₀). Ordre de grandeur : la
+structure de Lorentz de Z(u) n'est pas celle d'Euler–Heisenberg. Le canal BIREF du manuscrit et le
+test décisif de la reconstruction (note du 20 novembre) ont un premier nombre.
+*C. Lorentz.* LHAASO, GRB 221009A, v3 (février 2026) : E_QG,1 > 10 E_Pl ; E_QG,2 > 6·10⁻⁸ E_Pl =
+7,3·10¹¹ GeV. La dispersion du réseau (manuscrit, section Lorentz) équivaut à E_QG,2 = 0,69 MeV :
+écart 10¹⁵. La lecture « onde collective » de la coupure de Brillouin est exclue ; la lecture
+« soliton N = 1 » n'a pas de dispersion calculée (revue du 19 novembre, §3.1).
+*D. Falsificateurs gravitationnels.* PBH : LHAASO tout-ciel (arXiv:2505.24586, 2025), aucun sursaut,
+taux local < 181 pc⁻³ an⁻¹ (99 %, 20 s) ; HAWC < 3400 ; Fermi-LAT < 7,2·10³ : exposition maintenue,
+rien d'établi. GWTC-5.0, tests de la RG (arXiv:2607.19293, 22 juillet 2026, 72 événements O4b) : rien
+au-delà de la RG, pas de polarisation supplémentaire (mode respiratoire : cohérent), restes cohérents
+avec Kerr (GW250114, SNR 76,9) ; échos : recherche dédiée dans GWTC-4.0 seulement, aucun. LRD : aucune
+nouvelle masse dynamique ; Liu et al. (ApJL, octobre 2026) : modèles d'écoulement supercritique
+exigeant 10⁵–10⁷ M☉, un modèle, pas une mesure ; canal toujours défavorisé.
+*E. Le reste.* r_p : énigme résolue vers le petit rayon (hydrogène 2S–6P, Nature, 11 février 2026 ;
+revue avril 2026) ; 0,8409 fm demeure, base ℓ₁(9) = 0,8128 fm (−3,3 %) ; PRad-II : données terminées en
+juin 2026, analyse en cours. m_n − m_p : aucune nouvelle valeur réseau ; PDG 2026 : ~1 MeV (QED) contre
+~2,5 MeV (QCD), la base 1,20 / 2,47 est dans ce schéma, BMW +1,3σ inchangé. α : Rb/Cs non résolu
+(Aliberti et al., Phys. Rep. 1143 (2025)). τ : 1777,09 ± 0,14 (2023). KATRIN : 0,45 eV (2025 ; bilan
+janvier 2026, arXiv:2601.01672). Fenêtre de l'exposant inchangée.
+**Verdict : deux choses bougent.** (1) √σ : la tension n'est pas un 2,2σ isolé ; la base égale la bande
+phénoménologique et se trouve sous toute la bande réseau à quarks dynamiques ; statut CONDITIONNEL, EN
+TENSION maintenu, avec la clause nouvelle que la formule doit nommer la tension qu'elle vise.
+(2) Première borne expérimentale sur un excès de non-linéarité du vide à basse énergie : u_s > 10³ u₀
+pour toute lecture Z(u) ; à verser au cahier des charges de la reconstruction avant son étape 1. Le
+reste ne bouge aucun critère.

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R118)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R119)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R118).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R119).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -198,7 +198,14 @@ les déterminations dispersives (GLR 3,7σ, règle de somme de septembre 2026 ~8
 aussi le réseau : en tension, pas tué ; la prochaine valeur réseau au point physique tranche.
 R118 (veille du 1er novembre 2026) : rien de neuf sur aucun critère ; nuance : la coupe QCD/QED
 dépend du schéma de séparation, seul le total (1,27–1,32 contre 1,2933 MeV) est un test sans
-schéma. L'article (`matter/paper/`) est consolidé jusqu'à R118.
+schéma.
+R119 (veille du 21 novembre 2026) : deux choses bougent. √σ : la base (σ = 0,185 GeV²) est la tension
+phénoménologique de Regge–Cornell (0,18–0,19 GeV²) et se trouve sous toute la bande réseau à quarks
+dynamiques (445 ± 7 vérifiée, 2,2σ ; 458–481 citées, 4–7σ) : la formule doit dire quelle tension elle
+vise. Première borne de laboratoire sur un excès de non-linéarité du vide à basse énergie (European
+XFEL, champ sombre, 7·10⁴ × QED à 116 eV) : pour toute lecture Z(u) = Z₀(1 + u/u_s), u_s > 10³ u₀. Le
+reste (r_p résolu vers le petit rayon, m_n − m_p, α, τ, ν, PBH, GWTC-5.0, LRD) ne bouge aucun critère.
+L'article (`matter/paper/`) est consolidé jusqu'à R119.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -304,9 +311,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R118 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R119 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 113 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 114 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.

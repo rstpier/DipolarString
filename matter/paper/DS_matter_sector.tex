@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 118 steps (R1--R118) backed by 113 scripts.
+statement imposes and what it breaks; the record is 119 steps (R1--R119) backed by 114 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -98,8 +98,9 @@ independent verification (see the Disclosure).
 charge spectrum and a colour label. A circulation quantum $\pi\hbar c$ per closed path, with the
 path scale $\lone(n) = (2\pi\lb/3)(3/n)^{2\pi}$, gives the quark as an electron-type circuit at
 $\lone(9) = 0.81$~fm (254~MeV), the nucleon as three static circuits (763~MeV) plus a spin-carrying
-ring, the string tension $\sqrt\sigma = 430$~MeV (lattice 420--440; $445 \pm 7$ at the physical
-point in 2024, a $2.2\sigma$ tension), the neutron--proton splitting
+ring, the string tension $\sqrt\sigma = 430$~MeV (the Regge--Cornell phenomenological value; $445 \pm 7$~MeV at
+the physical point in 2024, a $2.2\sigma$ tension, every dynamical-quark lattice determination lying above
+the base), the neutron--proton splitting
 1.27--1.34~MeV (measured 1.293) and the $\Delta$--$N$ gap within $15\,\%$. The lepton masses are the
 Koide form of a $C_3$ mass-root operator whose $45^\circ$ is the half-and-half partition of
 $g = 2$; the phase $2/9$ is posed. The lifetime law $\tau = T\,(M/m)^4/C(n)$ reproduces the muon and
@@ -449,7 +450,13 @@ $\alpha$ and $Z_0$ cancelling between the pole charge and the matching (R39--R40
 \texttt{pitch\_search.py}, \texttt{circuit\_rule.py}). Older lattice determinations put $\sqrt\sigma$ at
 420--440~MeV \cite{necco}; the $2+1$-flavour determination at physical quark masses gives
 $445(3)(6)$~MeV \cite{bulava}, $2.2\sigma$ above the base's value and $1.5\sigma$ above the edge of
-the exponent's window (R117, \texttt{data\_update\_2026.py}): a tension, not an exclusion. The
+the exponent's window (R117, \texttt{data\_update\_2026.py}): a tension, not an exclusion. The base's
+value, $\sigma = 0.185$~GeV$^2$, is the phenomenological Regge--Cornell string tension ($\sigma = 0.18$--$0.19$~GeV$^2$);
+every lattice static-energy determination with dynamical quarks lies above it, from $445 \pm 7$~MeV (verified)
+to $458$--$481$~MeV (values cited from a conference talk and from the $2+1+1$-flavour TUMQCD analysis
+\cite{tumqcd}, not verified at source), and the lattice quantity is itself a fit-window quantity because the
+string breaks near $1.1$~fm \cite{cea}. The formula must state which of the two string tensions it aims at
+before a $3\sigma$ criterion can be applied to it (R119, \texttt{veille\_21nov2026.py}). The
 tension is the energy per path of the same object that weighs the
 quark; the rule that assigns the quantum to one strand (a star arm is one circuit) is the one that
 gives the electron its circulating half by the same formula, $\pi\hbar c/(3\lone(3)) = m_e c^2/2$.
@@ -906,8 +913,10 @@ values, which contradict each other's method at $1.7\sigma$. The split itself is
 quantity is the total, where the base gives $1.27$--$1.32$~MeV against $1.2933$~MeV, $-1.9$ to
 $+2.4\,\%$ (R118). A physical-point lattice value of the
 QCD part below $2.2$~MeV at $\pm 0.1$ kills the formula. For $\sqrt\sigma$, $445 \pm 7$~MeV
-\cite{bulava} is $2.2\sigma$ away; a second physical-point determination outside $427$--$435$~MeV by
-more than $3\sigma$ kills the other;
+\cite{bulava} is $2.2\sigma$ away, and the dynamical-quark lattice band as a whole ($445$--$481$~MeV, R119)
+lies above the base, which sits at the Regge--Cornell value; once the formula states which string tension it
+aims at, a physical-point determination of that quantity outside $427$--$435$~MeV by more than $3\sigma$ kills
+it;
 \item a charged lepton of any mass below the ladder's next rung would not falsify the $C_3$
 structure, but a violation of Koide's relation beyond $10^{-5}$ by an improved $\tau$ mass would
 remove the $45^\circ$ that the $g = 2$ pairing explains;
@@ -936,7 +945,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 113 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 114 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
@@ -970,6 +979,8 @@ author's criterion and the result of R100.
 \bibitem{bialynicki} I. Bialynicki-Birula, \textit{Weyl, Dirac, and Maxwell equations on a lattice as unitary cellular automata}, Phys. Rev. D \textbf{49}, 6920 (1994).
 \bibitem{dariano} G. M. D'Ariano and P. Perinotti, \textit{Derivation of the Dirac equation from principles of information processing}, Phys. Rev. A \textbf{90}, 062106 (2014).
 \bibitem{debroglie} L. de Broglie, \textit{Une nouvelle conception de la lumi\`ere} (Hermann, Paris, 1934).
+\bibitem{tumqcd} TUMQCD Collaboration (N. Brambilla \textit{et al.}), \textit{Static energy in $(2+1+1)$-flavor lattice QCD: Scale setting and charm effects}, Phys. Rev. D \textbf{107}, 074503 (2023), arXiv:2206.03156 [hep-lat]; the full author list is to be confirmed from the arXiv record.
+\bibitem{cea} P. Cea \textit{et al.}, \textit{Hints for string breaking in QCD}, arXiv:2607.07143 [hep-lat] (2026); the author list is to be confirmed from the arXiv record.
 \end{thebibliography}
 
 \end{document}
