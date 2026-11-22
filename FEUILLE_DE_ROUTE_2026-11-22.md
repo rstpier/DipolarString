@@ -184,6 +184,13 @@ d'une famille à l'autre, et le budget d'erreur de la « tension de Regge », 42
 familles. B2 (tables de réseau) et la recherche bibliographique de B3 restent à faire. Écart actuel entre les deux
 tensions : 19 MeV, deux écarts types ; le seuil de trois n'est pas atteint.
 
+**État après R134 et R135 (22 novembre 2026, choix délégués).** La tension retenue pour la corde effective est celle
+du réseau, 445 ± 7 MeV ; la formule de la base est retirée comme prédiction. Recherche bibliographique partielle
+faite : spectres 424 ± 2 MeV (Badalian et Bakker 2019), réseau 445(3)(6) MeV (Bulava et al. 2024), écart de deux à
+trois écarts types ; aucune source trouvée ne confronte directement les deux. À lire avant tout calcul : Badalian et
+Bakker (2019) sur l'aplatissement du potentiel, Sonnenschein et Weissman (2018) sur les corrections quantiques,
+Bulava et al. (2024). B2 reste à faire, avec des tables de réseau.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

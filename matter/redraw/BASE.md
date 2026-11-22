@@ -3431,3 +3431,79 @@ mémoire, à vérifier : J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013, arX
 J. Polchinski et A. Strominger, Phys. Rev. Lett. 67, 1681 (1991) ; M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ;
 J. F. Arvis, Phys. Lett. B 127, 106 (1983) ; R. Sommer, Nucl. Phys. B 411, 839 (1994) ; FLAG, r₀ = 0,472(5) fm ;
 brisure de corde : G. Bali et al., Phys. Rev. D 71, 114513 (2005).
+
+**Délégation de l'auteur (22 novembre 2026).** Devant R133 : « ok prend la tension du réseau », puis : « Puisque tu
+connais les meilleures réponses aux questions que tu me poses, fais les choix à ma place. » À partir de cette date les
+choix de physique sont faits par l'assistant, consignés avec leur raison, et révocables par l'auteur. Choix faits ce
+jour :
+1. *La tension.* Dans la corde effective, la tension est celle que le réseau mesure, √σ = 445 ± 7 MeV. Raison : la
+   tension d'une corde longue est par définition la pente du potentiel statique à grande distance, et le réseau la
+   mesure directement ; la formule de la base n'a pas de mécanisme et son accord n'est pas significatif (R126) ; la
+   pente des trajectoires dépend de la famille à 20 % près (R133). La formule de la base est retirée comme
+   prédiction de la tension et gardée au registre comme pièce d'histoire.
+2. *Les deux lectures et leur rôle.* La supercorde à dix dimensions sur un Calabi-Yau (R128 à R132) est un objet
+   d'étude, sans revendication (chemin A). Tout calcul confronté à des mesures se fait dans la corde effective à
+   quatre dimensions (R133, chemin B).
+3. *La table des hadrons de la base.* Elle n'est pas remise à l'échelle de la nouvelle tension : ce serait de la
+   numérologie. L'identité « part statique = corde à J = ½ » est marquée non contrôlée.
+4. *La suite.* Avant tout calcul sur B3, chercher si la réponse est publiée (critère d'arrêt de la feuille de
+   route) : fait partiellement en R135. Aucune nouvelle adoption n'est faite : chaque choix supplémentaire serait une
+   paramétrisation.
+Hors délégation, et inchangés : la publication (décision du 4 octobre), le dépôt (décision du 22 novembre), la mention
+publique, le calendrier, et la règle 1 de la feuille de route, selon laquelle l'auteur refait lui-même ce qu'il
+revendique.
+
+**R134 — La tension du réseau à la place de celle de la base : ce que le remplacement change.**
+Script `matter/rebuild/ds_lattice_tension.py`, 6/6 (il réutilise le solveur de R133).
+*A. Les constantes.* √σ = 445 ± 7 MeV : σ = 0,1980 ± 0,0062 GeV², α′ = 0,8037 ± 0,0253 GeV⁻², longueur de corde
+0,1769 fm, rayon d'Arvis 0,321 fm, 1004 ± 32 MeV par fermi (base : 938), 1254 MeV stockés à 1,25 fm.
+*B. La formule de la base.* √σ = m_e·3^(p+1)/(2√π) donne 430,3 MeV pour p = 2π ; 445 ± 7 MeV demande
+p = 6,314 ± 0,014 : 2π est à 2,1 écarts types, le bord de la fenêtre des leptons (6,2758 à 6,2926, R55) à 1,5. Un seul
+exposant ne sert pas à la fois les rapports des leptons et la tension mesurée. **La formule est retirée comme
+prédiction de la tension.**
+*C. Les trajectoires avec la tension du réseau.* α′ = 0,804 ± 0,025 GeV⁻² contre 0,883 ± 0,014 (six familles) et
+0,903 ± 0,011 (familles vecteur et tenseur) : trop faible de 8,9 % et 11,0 %, à 2,7 et 3,6 écarts types. Tours de Regge
+depuis l'état le plus bas : ρ +3,0, +4,1, +5,8 % (base : +0,8, +1,3, +2,8) ; N +8,9, +7,6 % ; Δ +3,7, +5,3 %. Des masses
+d'extrémité aggravent l'écart. **L'écart passe du côté des spectres et grandit.**
+*D. Le bilan commun.* Trajectoires 426,0 ± 6,1 MeV, réseau 445 ± 7 MeV : meilleure valeur commune 434,2 ± 4,6 MeV ;
+χ² de 4,2 au minimum, 4,9 à la valeur de la base, 9,8 à celle du réseau. Les deux mesures diffèrent de deux écarts
+types quelle que soit la valeur retenue : le choix ne les réconcilie pas, il dit laquelle on croit.
+*E. La « part statique ».* Corde à J = ½ : 763 MeV avec la tension de la base, 789 ± 12 MeV avec celle du réseau (dans
+la fenêtre de 770 à 813 MeV exigée par le moment du proton) ; avec le terme de Lüscher 723 MeV, hors fenêtre ; sa
+longueur, 0,50 fm, vaut 1,6 rayon d'Arvis, paramètre de développement 0,41 : hors domaine. L'identité n'est pas
+reportée, et aucune autre ligne de la table des hadrons n'est remise à l'échelle.
+*F. Le compte.* Tension mesurée, masses d'extrémité et ordonnées ajustées, terme de Lüscher et forme du potentiel
+universels : **dans la corde effective il ne reste aucun nombre propre à la CD.**
+**Verdict : la tension du réseau est le bon choix pour une corde longue. Il retire à la CD son dernier nombre dans
+cette lecture, et il déplace l'écart du côté des spectres, où il passe de 0,7 à 3 écarts types. La question B3 en sort
+plus nette : pourquoi la pente des trajectoires dépasse-t-elle de 9 à 11 % celle que donne la tension statique ?**
+
+**R135 — Question B3, état de la littérature au 22 novembre 2026.**
+Script `matter/rebuild/veille_b3.py`, 6/6. Recherche partielle, huit requêtes ; les articles n'ont pas été lus, les
+nombres viennent des extraits renvoyés par la recherche.
+*A. Côté spectres.* Badalian et Bakker (2019) : pente de la trajectoire dominante 2πσ = 1,13(1) GeV², soit
+σ = 0,180(2) GeV² et √σ = 424,1 ± 1,9 MeV ; compatible avec l'enveloppe de R133, 426,0 ± 6,1 MeV. Une revue de réseau
+donne 420 à 440 MeV pour la tension tirée des trajectoires.
+*B. Côté réseau.* Bulava, Knechtli, Koch, Morningstar et Peardon (2024), 2+1 saveurs, masses physiques :
+√σ = 445(3)(6) MeV, valeur confirmée. Écart aux spectres : 20,9 MeV, soit 3,0 écarts types avec l'erreur publiée des
+spectres et 2,1 avec l'enveloppe de R133. En pente : 2πσ = 1,244 ± 0,038 GeV² pour le réseau, 10 % au-dessus de 1,13.
+*C. Brisure de la corde.* 1,22 fm pour les quarks légers et 1,29 fm pour l'étrange (même source) : la valeur de
+1,25 fm prise de mémoire en R133 est confirmée.
+*D. Échelles de Sommer.* r₁ = 0,3127(30) fm (FLAG 2021, 2+1 saveurs) ; r₀ = 0,474(14) fm (FLAG 2021, 2+1+1) ; mesure
+de 2024, r₁ = 0,3104(33) fm et r₀/r₁ = 1,522(13), soit r₀ = 0,472 fm : la valeur prise de mémoire en R133 est
+confirmée. r₀√σ = 1,069 ± 0,035, à 3,1 écarts types de la valeur 1,178 d'une corde seule.
+*E. Baryons.* Pente universelle publiée 0,95 GeV⁻² (Sonnenschein et Weissman 2015), confirmée ; celles de R133 en
+sont à moins de 5 %. La pente des mésons, 0,884 GeV⁻², et les masses d'extrémité de 60 et 220 MeV restent citées de
+mémoire : la recherche ne les a pas confirmées.
+*F. Mécanismes publiés.* L'aplatissement du potentiel par la création de paires abaisse les pentes des trajectoires
+(Badalian et Bakker 2019) ; les corrections quantiques de la corde tournante à extrémités massives déplacent
+l'ordonnée et non la pente (Sonnenschein et Weissman 2018). Aucune source trouvée ne confronte directement la tension
+de 2024 aux pentes de Regge.
+**Verdict : B3 n'est pas tranchée dans ce que la recherche a trouvé. L'écart vaut 21 MeV, deux à trois écarts types
+selon le budget d'erreur du côté des spectres, que R133 a montré dominé par le choix des familles. Le seuil de trois
+écarts types de la feuille de route n'est pas franchi de façon robuste. Une piste publiée, l'aplatissement du
+potentiel, est à lire avant tout calcul.**
+*Sources (recherche du 22 novembre 2026).* J. Bulava et al., Phys. Lett. B 854 (2024) 138754, arXiv:2403.00754 ;
+A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013,
+arXiv:1402.5603, JHEP 02 (2015) 147 et JHEP 06 (2018) 148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849, et
+FLAG Review 2024, arXiv:2411.04268.

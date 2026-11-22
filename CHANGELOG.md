@@ -47,6 +47,16 @@
   la base est dans l'enveloppe des trajectoires (426 ± 6 MeV) et à deux écarts types sous le
   réseau (445 ± 7 MeV), ni confirmée ni exclue ; domaine de 0,33 à 1,25 fm, ρ et nucléon au
   bord ; le choix réduit le projet aux hadrons ; nuance à R120
+- Délégation de l'auteur : « fais les choix à ma place ». Les choix de physique sont faits par
+  l'assistant, consignés avec leur raison, révocables ; publication, dépôt, mention et
+  calendrier restent à l'auteur
+- R134, premier choix délégué : la tension de la corde effective est celle du réseau,
+  445 ± 7 MeV ; la formule de la base est retirée comme prédiction de la tension ; aucun nombre
+  propre à la CD ne reste dans cette lecture ; les pentes de Regge sortent trop faibles de 9 à
+  11 % ; la table des hadrons n'est pas remise à l'échelle
+- R135 : recherche bibliographique partielle sur la question B3 ; spectres 424 ± 2 MeV, réseau
+  445(3)(6) MeV, deux à trois écarts types ; aucune source ne tranche ; une piste publiée à
+  lire ; deux valeurs de R133 prises de mémoire sont confirmées
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

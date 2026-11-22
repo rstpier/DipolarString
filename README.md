@@ -35,7 +35,10 @@ releases.
 > fermions, with no element left to characterize and the tension as its only number. In four dimensions only an
 > effective string remains (R133): the established description of long flux tubes, limited to hadrons, in which the
 > tension of the base is neither confirmed nor excluded (inside the envelope of Regge fits, two standard deviations
-> below the lattice value). No new claim is made. See
+> below the lattice value). By delegation of the author the lattice tension, 445 ± 7 MeV, is then adopted (R134): the
+> formula of the base is withdrawn as a prediction and no number specific to the framework remains in that reading;
+> the open question is why Regge slopes exceed by about 10 % the value given by the static tension (R135). No new
+> claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

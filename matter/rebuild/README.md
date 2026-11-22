@@ -11,6 +11,11 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `veille_b3.py` — R135 : état de la littérature sur la question B3 (les deux tensions sont-elles la même ?) ;
+  spectres 424 ± 2 MeV, réseau 445(3)(6) MeV, écart de deux à trois écarts types, aucune source ne tranche.
+- `ds_lattice_tension.py` — R134, premier choix fait par délégation : la tension du réseau à la place de celle de la
+  base ; exposant requis 6,314 ± 0,014 ; pentes de Regge trop faibles de 9 à 11 % ; aucun nombre propre à la CD ne
+  reste dans la corde effective.
 - `ds_effective_string.py` — R133, après le choix « ok prend la corde effective » : le calcul B1 de la feuille de
   route (corde tournante à extrémités massives, six familles de mésons, pente commune 0,883 ± 0,014 GeV⁻² contre
   0,884 publié) ; domaine de 0,33 à 1,25 fm, ρ et nucléon au bord ; tension de la base dans l'enveloppe des

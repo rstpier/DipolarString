@@ -314,7 +314,36 @@ la feuille de route, dont R133 fait le premier calcul. Audit : `ds_effective_str
 CD n'y apporte qu'un nombre, la tension, ni confirmée ni exclue. Restent à faire : B1 par l'auteur, B2 avec des tables
 de réseau, la recherche bibliographique de B3.
 
-## 13. Suite
+## 13. Choix faits par délégation (22 novembre, R134 et R135)
+
+L'auteur : « ok prend la tension du réseau », puis : « Puisque tu connais les meilleures réponses aux questions que tu
+me poses, fais les choix à ma place. » Les choix de physique sont désormais faits par l'assistant, consignés avec leur
+raison dans `../redraw/BASE.md`, et révocables. La publication, le dépôt, la mention publique et le calendrier restent
+à l'auteur, ainsi que la règle 1 : refaire soi-même ce que l'on revendique.
+
+| Choix | Décision | Raison |
+|---|---|---|
+| La tension de la corde effective | Celle du réseau, 445 ± 7 MeV | C'est la pente du potentiel à grande distance, que le réseau mesure directement |
+| La formule de la base pour la tension | Retirée comme prédiction, gardée au registre | Aucun mécanisme ; accord non significatif (R126) ; 2π devrait valoir 6,314 ± 0,014 |
+| Le rôle des deux lectures | Dix dimensions : étude. Quatre dimensions : tout calcul confronté aux mesures | Seule la corde effective est testable |
+| La table des hadrons de la base | Pas de remise à l'échelle | Ce serait de la numérologie ; la « part statique » est hors domaine |
+| La suite | Lire avant de calculer ; aucune nouvelle adoption | Chaque choix de plus serait une paramétrisation |
+
+**Ce que la tension du réseau entraîne (R134, `ds_lattice_tension.py`, 6/6).** Le fil pèse 1004 MeV par fermi au lieu
+de 938. Dans la corde effective il ne reste aucun nombre propre à la CD. Et l'écart change de côté : avec cette
+tension la pente des trajectoires sort trop faible de 9 à 11 %, à 2,7 et 3,6 écarts types. Aucune valeur ne réconcilie
+les deux mesures ; la meilleure valeur commune serait 434 ± 5 MeV.
+
+**L'état de la question B3 (R135, `veille_b3.py`, 6/6).** Côté spectres la littérature donne σ = 0,180(2) GeV², soit
+424 ± 2 MeV ; côté réseau 445(3)(6) MeV. Écart de 21 MeV, deux à trois écarts types selon le budget d'erreur. La
+recherche n'a trouvé aucune source qui confronte directement les deux. Une piste publiée existe : le potentiel
+s'aplatit à grande distance quand des paires se créent, ce qui abaisse les pentes. Elle est à lire avant tout calcul.
+La recherche a aussi confirmé deux valeurs prises de mémoire en R133 : la brisure à 1,22 et 1,29 fm, et r₀ = 0,472 fm.
+
+**Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
+ouverte, B3, pour laquelle la CD n'apporte aucun nombre.
+
+## 14. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
 Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12). Pour le
@@ -346,3 +375,6 @@ Mod. Phys. A 3, 1981 (1988) ; M. Lüscher, G. Münster et P. Weisz, Nucl. Phys. 
 *Pour le §12, de mémoire, à vérifier :* J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013 et JHEP 02 (2015) 147 ;
 M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ; R. Sommer, Nucl. Phys. B 411, 839 (1994) ; G. Bali et al., Phys. Rev. D
 71, 114513 (2005) ; masses des états autres que ρ/a, N et Δ.
+*Pour le §13, vérifiées par recherche le 22 novembre :* J. Bulava et al., Phys. Lett. B 854 (2024) 138754,
+arXiv:2403.00754 ; A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 06 (2018)
+148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849.

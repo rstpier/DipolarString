@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R133)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R135)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R133).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R135).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -307,7 +307,15 @@ l'enveloppe des trajectoires (426 ± 6 MeV) et à deux écarts types sous le ré
 et R120 est à nuancer. Domaine : de 0,33 fm à la brisure vers 1,25 fm ; le ρ (0,45 fm) et le nucléon (0,56 fm) sont à
 son bord, la « part statique » de la base n'est pas contrôlée. Ce choix réduit le projet aux hadrons. Restent B2 et la
 recherche bibliographique de B3.
-L'article (`matter/paper/`) est consolidé jusqu'à R133.
+Délégation (22 novembre 2026) : « fais les choix à ma place ». Les choix de physique sont faits par l'assistant,
+consignés et révocables ; publication, dépôt, mention et calendrier restent à l'auteur. R134 : la tension de la corde
+effective est celle du réseau, 445 ± 7 MeV ; la formule de la base est retirée comme prédiction (2π devrait valoir
+6,314 ± 0,014) ; il ne reste aucun nombre propre à la CD dans cette lecture ; les pentes de Regge sortent alors trop
+faibles de 9 à 11 % (2,7 et 3,6 écarts types) ; la table des hadrons n'est pas remise à l'échelle. R135 : recherche
+bibliographique partielle sur B3 ; spectres 424 ± 2 MeV, réseau 445(3)(6) MeV, écart de deux à trois écarts types ;
+aucune source ne confronte directement les deux ; une piste publiée, l'aplatissement du potentiel, est à lire.
+La chaîne des adoptions est close.
+L'article (`matter/paper/`) est consolidé jusqu'à R135.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -413,11 +421,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R133 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R135 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R133, dix scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R135, douze scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,
