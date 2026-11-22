@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this package, please cite the Zenodo concept record and this erratum edition."
+message: "This erratum edition is not deposited on Zenodo; cite the repository. The V2.10 manuscript it corrects is Zenodo concept record 10.5281/zenodo.21196098."
 title: "Dipolar String Model: V2.11 erratum edition (incremental package)"
 type: software
 authors:
@@ -7,6 +7,6 @@ authors:
     given-names: "R."
 version: "2.11"
 date-released: "2026-11-22"
-doi: "10.5281/zenodo.21196098"
+url: "https://github.com/rstpier/DipolarString/tree/main/v2.11"
 license: "CC-BY-4.0 AND MIT"
 repository-code: "https://github.com/rstpier/DipolarString"

@@ -24,7 +24,8 @@ releases.
 
 **Version:** V2.11, erratum edition of 21 November 2026 (package frozen 22 November 2026) — the
 frozen V2.10 manuscript with a twelve-item erratum applied in place, every item reducing the
-model's claims; plus a companion note of fourteen negative results. Not yet deposited on Zenodo.
+model's claims; plus a companion note of fourteen negative results. Not deposited on Zenodo
+(author's decision, 22 November 2026): it is distributed through this repository only.
 
 - Erratum: `v2.11/ERRATUM.md` — manuscript: `v2.11/manuscript/DS_model_V2_11_erratum.pdf`
 - Negative results: `v2.11/negative_results/DS_negative_results.pdf`

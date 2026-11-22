@@ -78,6 +78,9 @@ def block_source(source: str) -> None:
     check("E6 attributes alpha_1 = -8 to the classical stratified theories",
           "\\cite{ni1972,nordtvedtwill1972}" in source and "\\bibitem{ni1972}" in source and "\\bibitem{nordtvedtwill1972}" in source,
           "Ni 1972; Nordtvedt and Will 1972 cited")
+    check("Distribution stated: not deposited on Zenodo",
+          "it is not deposited on Zenodo, whose record remains V2.10" in source
+          and "this edition is not deposited on Zenodo" in source, "erratum notice and Data Availability")
     check("Conclusion states what survives", "Erratum (V2.11):} these three items are withdrawn as predictions" in source, "general conclusion")
 
 

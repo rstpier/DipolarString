@@ -3,7 +3,9 @@
 Author: R. St-Pierre. Applies to: **V2.10** (frozen 7 September 2026, Zenodo concept DOI
 10.5281/zenodo.21196098). The corrected text is `manuscript/DS_model_V2_11_erratum.tex` (and its
 PDF); every change is marked *Erratum E*n in place and listed in the manuscript's Document History.
-The frozen V2.10 remains the record of what was claimed before the erratum. Every item below is
+The frozen V2.10 remains the record of what was claimed before the erratum. This erratum edition is
+**not deposited on Zenodo** (author's decision, 22 November 2026): it is distributed through the
+repository, and the Zenodo record remains V2.10. Every item below is
 reproduced by a script of this repository that prints a `RESULT` line with zero failures.
 
 **All corrections reduce the model's claims.** None changes an equation as integrated in V2.10; two

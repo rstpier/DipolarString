@@ -31,6 +31,8 @@
   résultat connu des théories « stratifiées » (Ni 1972 ; Nordtvedt–Will 1972), que le calcul
   retrouve ; Derrick 1964, Chiao–Garmire–Townes 1964, Vakhitov–Kolokolov 1973, Chodos et
   al. 1974, Lüscher 1981, Tolman et Oppenheimer–Volkoff 1939 ; sommes de contrôle régénérées
+- Décision de l'auteur (22 novembre) : V2.11 n'est pas déposée sur Zenodo ; elle est diffusée
+  par le dépôt GitHub seulement, et le dossier Zenodo reste V2.10
 
 ## V2.10 (7 septembre 2026)
 

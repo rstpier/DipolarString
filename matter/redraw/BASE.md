@@ -3059,3 +3059,9 @@ Inscrit dans la note des résultats négatifs (résultat 12, avec les sources cl
 Derrick 1964 ; Bialynicki-Birula 1994 et D'Ariano–Perinotti 2014 ; Lüscher 1981 ; Chiao–Garmire–Townes 1964,
 Vakhitov–Kolokolov 1973, Chodos et al. 1974 ; Tolman et Oppenheimer–Volkoff 1939), dans l'erratum E6 (`ERRATUM.md` et
 manuscrit V2.11) et dans `CONSTRAINTS.md` §10. Première tâche du chemin 0 de la feuille de route : faite.
+
+**Décision (22 novembre 2026) : pas de dépôt Zenodo de V2.11.** L'auteur : « Dépôt Zenodo de V2.11 non. » L'édition
+erratum et la note des résultats négatifs sont diffusées par le dépôt GitHub seulement ; le dossier Zenodo reste V2.10
+(DOI concept 10.5281/zenodo.21196098), inchangé. Inscrit dans `v2.11/` (README, VERSION, CITATION, ERRATUM, avis
+d'erratum et « Data Availability » du manuscrit), le README racine, le CHANGELOG, le site et la feuille de route.
+Conséquence notée : un lecteur qui arrive par Zenodo lit V2.10 sans l'erratum.

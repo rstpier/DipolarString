@@ -3,7 +3,8 @@
 Author: R. St-Pierre
 Edition date: 21 November 2026 (package frozen 22 November 2026)
 Manuscript version: **V2.11 (erratum edition)**
-Concept DOI: 10.5281/zenodo.21196098 (the V2.10 record stands; deposit of this edition is the author's decision)
+Zenodo: **not deposited** (author's decision, 22 November 2026). The Zenodo record remains V2.10 (concept DOI
+10.5281/zenodo.21196098); this edition is distributed through the repository only.
 Supersedes: **V2.10**, which remains archived unchanged in [`../v2.10/`](../v2.10/)
 
 ## What this package is

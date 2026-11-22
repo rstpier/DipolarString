@@ -46,7 +46,8 @@ repère (R124), les objets sombres sans horizon (R125), et la lecture des accord
 
 ## 2. Chemin 0 — clore proprement (2 à 4 semaines)
 
-- Décider du dépôt Zenodo de V2.11 sous le DOI concept existant.
+- **Décidé le 22 novembre : pas de dépôt Zenodo de V2.11.** L'édition erratum reste dans le dépôt GitHub ; le
+  dossier Zenodo reste V2.10.
 - **Fait le 22 novembre.** Avant de montrer la note à un physicien, y ajouter les références classiques de chaque
   résultat, pour qu'aucun ne soit lu comme une prétention de nouveauté. En particulier R124 retrouve un résultat des années 1970 : les théories
   dites « stratifiées », à tranches d'espace orthogonales au temps, ont α₁ = −4(γ + 1) et ont été écartées pour cela
@@ -247,7 +248,7 @@ numéro de référence est celui des *Philosophical Transactions* de 2020 (Jacqu
 
 | Mois | Travail | Jalon |
 |---|---|---|
-| 0 à 1 | Chemin 0 | Note relue par deux pairs ; décision Zenodo |
+| 0 à 1 | Chemin 0 | Note relue par deux pairs (décision Zenodo prise : pas de dépôt) |
 | 1 à 4 | Socle (mécanique analytique, relativité, quantique) ; Zwiebach 1 à 5 | Tests de sortie des trois premières lignes du socle |
 | 4 à 6 | Zwiebach 6 à 9 ; script B1 dès la fin du chapitre 7 | A1 à la main ; B1 reproduit la littérature |
 | 6 à 9 | Zwiebach 10 à 14 ; B2 | A2 à A4 à la main ; √σ du potentiel avec sa fenêtre |
