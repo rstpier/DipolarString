@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R132)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R133)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R132).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R133).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -299,7 +299,15 @@ demande deux contre-termes exacts ou la supersymétrie. Le dipôle élémentaire
 est une ligne uniformément polarisée. Le fil n'a pas de taille propre : α′(ln M + 0,82) par dimension, la loi du
 rétrécissement de Regge et de l'élargissement du tube de flux, où le seul nombre est la tension. Verdict : il n'y a pas
 d'élément à caractériser ; aucun nombre nouveau.
-L'article (`matter/paper/`) est consolidé jusqu'à R132.
+Décision (22 novembre 2026) : la corde effective. R133 : c'est la corde à quatre dimensions, valable quand elle est
+longue, la théorie établie des tubes de flux, et le chemin B de la feuille de route, dont le premier calcul est fait
+(corde tournante à extrémités massives). Pente commune de six familles de mésons : 0,883 ± 0,014 GeV⁻², à 0,2 % de la
+valeur publiée (0,884). La pente varie de 20 % d'une famille à l'autre ; la tension de la base (430,3 MeV) est dans
+l'enveloppe des trajectoires (426 ± 6 MeV) et à deux écarts types sous le réseau (445 ± 7) : ni confirmée ni exclue,
+et R120 est à nuancer. Domaine : de 0,33 fm à la brisure vers 1,25 fm ; le ρ (0,45 fm) et le nucléon (0,56 fm) sont à
+son bord, la « part statique » de la base n'est pas contrôlée. Ce choix réduit le projet aux hadrons. Restent B2 et la
+recherche bibliographique de B3.
+L'article (`matter/paper/`) est consolidé jusqu'à R133.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -405,11 +413,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R132 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R133 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R132, neuf scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R133, dix scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

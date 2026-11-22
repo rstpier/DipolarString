@@ -41,6 +41,12 @@
   filament est une ligne uniformément polarisée ; le fil n'a pas de taille propre (croissance
   logarithmique avec la résolution) ; il n'y a pas d'élément à caractériser ; aucun nombre
   nouveau
+- Choix de l'auteur : la corde effective. R133 : premier calcul du chemin B de la feuille de
+  route (corde tournante à extrémités massives) ; pente commune de six familles de mésons
+  0,883 ± 0,014 GeV⁻², publiée 0,884 ; la pente varie de 20 % selon la famille ; la tension de
+  la base est dans l'enveloppe des trajectoires (426 ± 6 MeV) et à deux écarts types sous le
+  réseau (445 ± 7 MeV), ni confirmée ni exclue ; domaine de 0,33 à 1,25 fm, ρ et nucléon au
+  bord ; le choix réduit le projet aux hadrons ; nuance à R120
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

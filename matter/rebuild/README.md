@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_effective_string.py` — R133, après le choix « ok prend la corde effective » : le calcul B1 de la feuille de
+  route (corde tournante à extrémités massives, six familles de mésons, pente commune 0,883 ± 0,014 GeV⁻² contre
+  0,884 publié) ; domaine de 0,33 à 1,25 fm, ρ et nucléon au bord ; tension de la base dans l'enveloppe des
+  trajectoires (426 ± 6 MeV) et à deux écarts types sous le réseau (445 ± 7) : ni confirmée ni exclue.
 - `ds_fine_link_limit.py` — R132, après le choix « ok prend le maillon infiniment fin » : la limite continue existe
   (écart en 1/M²) ; elle n'est invariante de Lorentz qu'à 26 dimensions, ou 10 avec des fermions (premier niveau sans
   masse) ; deux contre-termes ou la supersymétrie ; filament = ligne uniformément polarisée ; taille du fil

@@ -284,7 +284,37 @@ maillons tend vers l'infini, la part de chacun vers zéro. Audit : `ds_fine_link
 longueur, qu'à dix dimensions avec des fermions : le choix du §7 en découle. Le fil est fixé par sa tension seule ;
 aucun nombre nouveau.
 
-## 12. Suite
+## 12. La corde effective (décision du 22 novembre, R133)
+
+L'auteur, devant le §11 : « ok prend la corde effective ». C'est la corde à quatre dimensions, valable seulement quand
+elle est longue : la description établie des tubes de flux entre un quark et un antiquark. C'est aussi le chemin B de
+la feuille de route, dont R133 fait le premier calcul. Audit : `ds_effective_string.py`, 6/6.
+
+| Question | Réponse calculée | Statut |
+|---|---|---|
+| Est-elle cohérente à quatre dimensions ? | Oui, pour une corde longue devant 0,33 fm | Acquis, classique |
+| Que couvre-t-elle ? | Les hadrons, entre 0,33 fm et la brisure vers 1,25 fm ; ni leptons, ni photon, ni gravité | Limite du choix |
+| Le ρ et le nucléon ? | Longs de 0,45 et 0,56 fm : au bord du domaine ; la « part statique » de la base n'est pas contrôlée | Hors domaine |
+| Le calcul B1 reproduit-il la littérature ? | Oui : pente commune de six familles 0,883 ± 0,014 GeV⁻², publiée 0,884 | Fait, à refaire par l'auteur |
+| La tension de la base est-elle confirmée par les trajectoires ? | Elle est dans leur enveloppe, 426 ± 6 MeV ; mais la pente varie de 20 % d'une famille à l'autre | Non concluant |
+| Et par le réseau ? | 445 ± 7 MeV : la base, 430,3 MeV, est à deux écarts types en dessous | Non concluant |
+| Les deux tensions sont-elles la même ? | Écart de 19 MeV, deux écarts types | Non tranché |
+
+- **Le calcul.** Une corde qui tourne avec une masse à chaque bout : σℓ = mγ²β². On ajuste la pente, avec une
+  ordonnée par famille, sur six familles de mésons et deux de baryons.
+- **Ce que le calcul apprend.** La pente dite universelle ne l'est qu'à 20 % près : de 0,74 pour η/h à 0,92 pour ω/f.
+  Selon les familles retenues, la base est compatible ou trop haute en tension de 2 à 4 écarts types. R120 est à
+  nuancer dans ce sens.
+- **Ce qui ne dépend pas de la CD.** Le terme de Lüscher, −51,7 MeV·fm/r, et la forme du potentiel. À 0,5 fm le
+  potentiel mesuré sur le réseau n'est pas celui d'une corde seule : la tension qu'on en tire dépend de la fenêtre.
+- **Le raccord avec le §7.** La corde effective est la partie horizontale d'une corde fondamentale au fond d'une
+  géométrie déformée ; les masses d'extrémité en sont les segments verticaux.
+
+**Verdict.** La corde effective est de la physique établie et testable, mais elle réduit le projet aux hadrons, et la
+CD n'y apporte qu'un nombre, la tension, ni confirmée ni exclue. Restent à faire : B1 par l'auteur, B2 avec des tables
+de réseau, la recherche bibliographique de B3.
+
+## 13. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
 Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12). Pour le
@@ -313,3 +343,6 @@ L. Susskind, Nucl. Phys. B 309, 175 (1988) ; C. B. Thorn, hep-th/9405069 ; O. Be
 *Pour le §11, de mémoire, à vérifier :* P. Goddard, J. Goldstone, C. Rebbi et C. B. Thorn, Nucl. Phys. B 56, 109
 (1973) ; L. Brink et H. B. Nielsen, Phys. Lett. B 45, 332 (1973) ; M. Karliner, I. Klebanov et L. Susskind, Int. J.
 Mod. Phys. A 3, 1981 (1988) ; M. Lüscher, G. Münster et P. Weisz, Nucl. Phys. B 180, 1 (1981).
+*Pour le §12, de mémoire, à vérifier :* J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013 et JHEP 02 (2015) 147 ;
+M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ; R. Sommer, Nucl. Phys. B 411, 839 (1994) ; G. Bali et al., Phys. Rev. D
+71, 114513 (2005) ; masses des états autres que ρ/a, N et Δ.

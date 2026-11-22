@@ -177,6 +177,13 @@ chiffrée. Dans les deux cas une note courte, avec son script.
 réponse à B3 est déjà publiée — à chercher avant de commencer —, on a appris le domaine et on s'arrête, ou on met à
 jour avec les données 2026.
 
+**État au 22 novembre 2026 (R133).** L'auteur a pris la corde effective. B1 a été calculé comme audit
+(`matter/rebuild/ds_effective_string.py`) : pente commune de six familles de mésons 0,883 ± 0,014 GeV⁻², à 0,2 % de
+la valeur publiée ; il reste à refaire par l'auteur (règle 1). Ce que le calcul apprend : la pente varie de 20 %
+d'une famille à l'autre, et le budget d'erreur de la « tension de Regge », 426 ± 6 MeV, est dominé par le choix des
+familles. B2 (tables de réseau) et la recherche bibliographique de B3 restent à faire. Écart actuel entre les deux
+tensions : 19 MeV, deux écarts types ; le seuil de trois n'est pas atteint.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

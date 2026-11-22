@@ -3370,3 +3370,64 @@ nouveau.**
 *Sources, données de mémoire, à vérifier :* P. Goddard, J. Goldstone, C. Rebbi et C. B. Thorn, Nucl. Phys. B 56, 109
 (1973) ; L. Brink et H. B. Nielsen, Phys. Lett. B 45, 332 (1973) ; M. Karliner, I. Klebanov et L. Susskind, Int. J.
 Mod. Phys. A 3, 1981 (1988) ; M. Lüscher, G. Münster et P. Weisz, Nucl. Phys. B 180, 1 (1981).
+
+**Décision (22 novembre 2026) : la corde effective.** L'auteur, devant R132 (une corde valable à toute longueur exige
+dix dimensions ; seule une corde effective, longue, reste permise à quatre) : « ok prend la corde effective ».
+Définition retenue : le filament est une corde effective à quatre dimensions, la description des tubes de flux longs
+devant la longueur de corde (Lüscher et Weisz ; Polchinski et Strominger 1991), avec la tension de la base. C'est le
+chemin B de la feuille de route ; R133 en fait le premier calcul (B1), comme audit : il reste à refaire par l'auteur
+(règle 1).
+
+**R133 — La corde effective à quatre dimensions : son domaine, le calcul B1, la tension.**
+Script `matter/rebuild/ds_effective_string.py`, 6/6.
+*A. La corde tournante à extrémités massives.* σℓ = mγ²β² ; par bras, E = γm + σℓ arcsin(β)/β et
+J = γmβℓ + σℓ²[arcsin β − β√(1 − β²)]/(2β²). Condition aux extrémités vérifiée à 10⁻¹⁵ ; limite sans masse
+J = E²/(2πσ), soit R120 ; des extrémités massives réduisent J à masse donnée, donc la pente ajustée monte quand on
+les ajoute.
+*B. Ajustements.* J = J_classique(M ; α′, m₁, m₂) + ordonnée ; masses d'extrémité 60 MeV (u, d) et 220 MeV (s) ; deux
+pondérations (erreur égale en J, erreur relative égale en M²). Pente par famille, avec masses : ρ/a 0,896–0,901 ;
+ω/f 0,904–0,923 ; K* 0,868–0,883 ; φ 0,897–0,906 ; π/b 0,816–0,836 ; η/h 0,737–0,750 ; N 0,964–0,993 ; Δ 0,924–0,929.
+Pente commune des six familles de mésons, masses et poids M² : **α′ = 0,883 ± 0,014 GeV⁻²**, à 0,2 % de la valeur
+publiée par Sonnenschein et Weissman, 0,884 (citée de mémoire) : la cible de 2 % de la feuille de route est atteinte.
+*Note de méthode :* la première version comparait la valeur publiée aux quatre familles vecteur et tenseur seules
+(0,892 à 0,903, écart 0,9 à 2,1 %) ; la valeur publiée porte sur six familles ; refait avec six. Trois seuils de
+contrôle écrits avant le calcul ont été remplacés par les nombres obtenus, et une inégalité fausse corrigée (le rayon
+de Sommer d'Arvis est plus petit que celui de Lüscher, pas plus grand).
+*C. La base contre les trajectoires.* La pente « universelle » varie de 20 % d'une famille à l'autre (0,74 à 0,92),
+soit √σ de 415 à 465 MeV. Huit variantes d'ajustement global (quatre ou six familles, deux pondérations, avec ou sans
+masses) : α′ de 0,853 à 0,903, √σ de 419,9 à 432,0 MeV. La base, α′ = 0,8595 et √σ = 430,3 MeV, est dans cette
+enveloppe. Avec les six familles et les masses elle est à 0,4 et 1,7 écart type ; avec les seules familles vecteur et
+tenseur elle est trop basse en α′ de 3,7 et 4,8 %, à 2,0 et 4,2 écarts types. **Les trajectoires ne tranchent pas.
+Nuance à R120 :** son « en tension, −3 à −10 % » comparait la base aux familles ρ/a, N et Δ sans masses d'extrémité ;
+sur l'ensemble des familles la base est compatible.
+*D. Le domaine.* Rayon d'Arvis r_c = √(π/6σ) = 0,332 fm ; le développement est en (r_c/L)². Longueur des états avec
+la tension de la base : ρ 0,45 fm (1,4 r_c, paramètre 0,54), φ 0,41 fm, nucléon 0,56 fm (1,7 r_c, 0,35), Δ 0,76 fm,
+a₂ 0,82 fm, ρ₃ 1,07 fm, a₄ 1,26 fm (3,8 r_c, 0,07), a₆ 1,59 fm. La corde statique casse vers 1,25 fm (réseau, de
+mémoire), où elle stocke 1173 MeV : fenêtre de 0,33 à 1,25 fm, un facteur 3,8. Le ρ et le nucléon sont au bord du
+domaine ; la corde effective est fiable aux grands moments cinétiques. **La « part statique » de la base, corde à
+J = ½ (R120 A), n'est donc pas contrôlée.**
+*E. Ce qui ne dépend d'aucun nombre de la CD.* Terme de Lüscher −πħc/(12r) = −51,7 MeV·fm/r. Échelle de Sommer,
+r²V′(r₀) = 1,65 : pour la corde seule r₀√σ = √(1,65 − π/12) = 1,178 ; avec la tension de la base r₀ = 0,540 fm
+(Lüscher) ou 0,515 fm (Arvis), où (r_c/r₀)² = 0,38 ; le réseau donne r₀ = 0,472 fm (FLAG, de mémoire) et
+√σ = 445 ± 7 MeV, soit r₀√σ = 1,064. La seconde échelle du réseau, r₁ (valeur 1,0), n'existe pas pour la corde
+d'Arvis, dont r²V′ ne descend pas sous 1,36. À 0,5 fm le potentiel mesuré n'est pas celui d'une corde seule : la
+tension extraite dépend de la fenêtre. C'est l'objet de B2, non fait ici faute de tables de réseau.
+*F. La tension de la base entre deux mesures.* √σ = m_e·3^(2π+1)/(2√π) = 430,3 MeV : identité, sans mécanisme, et
+R126 a montré que cet accord n'est pas significatif. Trajectoires, enveloppe des huit variantes : 426,0 ± 6,1 MeV ;
+réseau à quarks dynamiques : 445 ± 7 MeV (R119). Base − trajectoires = +4,3 MeV (0,7 écart type) ; réseau − base =
++14,7 MeV (2,1) ; réseau − trajectoires = +19,0 MeV (2,1). **Aucun écart n'atteint trois écarts types.**
+*Raccord avec R128.* La corde effective est la partie horizontale d'une corde fondamentale au fond d'une géométrie
+déformée ; les masses d'extrémité y sont ses segments verticaux (Sonnenschein). Les deux lectures se raccordent par
+le facteur de déformation de R128 E.
+**Verdict : la corde effective est cohérente à quatre dimensions ; c'est la théorie établie des tubes de flux
+(IDENTITÉ avec le chemin B). Elle ne couvre que les hadrons, dans une fenêtre de 0,33 à 1,25 fm, et le ρ et le
+nucléon sont à son bord : elle ne reconstruit ni les leptons, ni le photon, ni la gravité. Le seul nombre de la CD y
+est la tension, dans l'enveloppe des trajectoires et à deux écarts types sous le réseau : NI CONFIRMÉE NI EXCLUE, et
+sans mécanisme. La question B3, les deux tensions sont-elles la même, n'est pas tranchée : le budget d'erreur est
+dominé par le choix des familles.** Restent à faire : B1 par l'auteur, B2 avec des tables de réseau, et la recherche
+bibliographique de B3.
+*Sources.* Masses : PDG 2024 pour ρ/a, N et Δ (valeurs de R120) ; les autres états de mémoire, à vérifier. De
+mémoire, à vérifier : J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013, arXiv:1402.5603, et JHEP 02 (2015) 147 ;
+J. Polchinski et A. Strominger, Phys. Rev. Lett. 67, 1681 (1991) ; M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ;
+J. F. Arvis, Phys. Lett. B 127, 106 (1983) ; R. Sommer, Nucl. Phys. B 411, 839 (1994) ; FLAG, r₀ = 0,472(5) fm ;
+brisure de corde : G. Bali et al., Phys. Rev. D 71, 114513 (2005).

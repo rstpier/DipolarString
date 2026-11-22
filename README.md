@@ -32,7 +32,10 @@ releases.
 > further mechanism. Finally the filament is taken as a chain of links (R131), the string-bit formulation: an exact
 > place for the original dipolar filament, no new number, and a link of finite size excluded by Lorentz invariance.
 > With infinitely fine links (R132) the chain is the continuum string: consistent only in ten dimensions with
-> fermions, with no element left to characterize and the tension as its only number. No new claim is made. See
+> fermions, with no element left to characterize and the tension as its only number. In four dimensions only an
+> effective string remains (R133): the established description of long flux tubes, limited to hadrons, in which the
+> tension of the base is neither confirmed nor excluded (inside the envelope of Regge fits, two standard deviations
+> below the lattice value). No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---
