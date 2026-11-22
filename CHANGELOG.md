@@ -75,6 +75,9 @@
 - Complément à R138 : critère de Rayleigh retrouvé à 2,15 fm pour des extrémités lourdes ;
   sensibilité au profil : version naïve inchangée, version cohérente fragile (écart complet
   de 3,0 à 3,8) ; verdict inchangé
+- Choix délégué : prochain calcul B2 (la tension tirée du potentiel du réseau entre 0,4 et
+  1,0 fm) ; critère écrit avant le calcul : à plus de 3 écarts types des spectres, écart
+  établi ; à moins de 2, réconciliation
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

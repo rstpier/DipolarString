@@ -329,6 +329,7 @@ raison dans `../redraw/BASE.md`, et révocables. La publication, le dépôt, la 
 | La table des hadrons de la base | Pas de remise à l'échelle | Ce serait de la numérologie ; la « part statique » est hors domaine |
 | La suite | Lire avant de calculer ; aucune nouvelle adoption | Chaque choix de plus serait une paramétrisation |
 | La piste de la détente du fil | Calculée (R138), puis fermée | Elle déplace le désaccord sans le réduire : 2,9 à 3,0 écarts types, comme sans elle |
+| Le prochain calcul | B2 : la tension tirée du potentiel du réseau entre 0,4 et 1,0 fm | L'autre côté de l'écart ; critère écrit d'avance : à plus de 3 écarts types des spectres, écart établi ; à moins de 2, réconciliation |
 
 **Ce que la tension du réseau entraîne (R134, `ds_lattice_tension.py`, 6/6).** Le fil pèse 1004 MeV par fermi au lieu
 de 938. Dans la corde effective il ne reste aucun nombre propre à la CD. Et l'écart change de côté : avec cette

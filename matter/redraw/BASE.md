@@ -3687,3 +3687,12 @@ ajustée au lieu de garder celle de l'article, soit un profil qui monte 1,8 % pl
 6,45 à 13,56 et son écart complet de 3,01 à 3,83. Raison : l'a₆ et le f₆ y sont au bout de la branche, et un profil à
 peine plus raide la raccourcit. **Les nombres de la version cohérente sont fragiles ; le verdict ne change pas : dans
 aucun cas l'écart complet ne descend sous 2,8.**
+
+**Choix fait par délégation (22 novembre 2026) : prochain calcul, B2 de la feuille de route.** Raison : R138 ferme la
+seule piste publiée du côté des spectres ; reste l'autre côté de l'écart, la tension du réseau, dont R136 F a montré
+qu'elle dépend de sa définition (445 à 482 MeV). Le calcul : ajuster la forme d'une corde, V₀ + σr·√(1 − π/(6σr²)),
+sur un potentiel statique publié, dans la fenêtre de 0,4 à 1,0 fm, sous la brisure, et sortir √σ avec sa dépendance à
+la fenêtre. **Critère écrit avant le calcul.** Mesure : l'écart entre cette tension et celle des spectres,
+423,7 ± 2,5 MeV, en écarts types, erreurs ajoutées en quadrature, la dépendance à la fenêtre comptée dans l'erreur du
+réseau. À plus de 3, l'écart est établi ; à moins de 2, les deux tensions sont réconciliées ; entre les deux, non
+tranché. Ce sont les deux issues que la feuille de route compte comme résultat. Révocable ; non commencé.
