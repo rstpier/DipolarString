@@ -12,7 +12,9 @@ d'arrêt écrit d'avance. Il est rédigé par le collaborateur IA du projet ; le
 > cordes : le filament dipolaire est relu comme corde relativiste, une corde ouverte à charges opposées. Le premier
 > audit (R127, `matter/rebuild/TDC.md`) donne un dictionnaire exact et ferme deux lectures fortes : une corde
 > fondamentale à quatre dimensions est incohérente, et une seule corde ne peut pas faire les hadrons et la gravité.
-> Ce qui reste ouvert est exactement les chemins A et B ci-dessous.
+> Ce qui reste ouvert est exactement les chemins A et B ci-dessous. L'auteur a ensuite pris dix dimensions (R128) : la
+> CD devient la supercorde de type IIA sur trois tores avec des D6-branes sécantes, c'est-à-dire le chapitre 21 de
+> Zwiebach. Ce chapitre devient la cible du chemin A ; les nombres y sont choisis, pas dérivés.
 
 ---
 

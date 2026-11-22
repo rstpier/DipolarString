@@ -21,9 +21,10 @@ releases.
 > **22/11/2026 — Dipolar Strings changes direction.** The original programme — the vacuum as a network of
 > impedance-matched transmission lines — is closed by the V2.11 erratum. From this date the project turns to string
 > theory: the dipolar filament is re-read as a relativistic string, an open string with opposite charges at its ends.
-> A first audit (R127) sets the limits: the dictionary is exact, but a fundamental string in four dimensions is
-> inconsistent and a single string cannot carry both hadrons and gravity; what remains open is an effective hadronic
-> string and the study of string theory itself. No new claim is made. See
+> A fundamental string in four dimensions being inconsistent (R127), the author has taken ten dimensions: the
+> framework then becomes a known construction, the type IIA superstring on three 2-tori with intersecting D6-branes,
+> in which its motifs have an exact place but the gauge group, the three generations and the hadronic tension are
+> chosen, not derived (R128). No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

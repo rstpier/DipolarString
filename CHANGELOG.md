@@ -8,8 +8,14 @@
   dipolaire est relu comme corde relativiste, corde ouverte à charges opposées
 - Premier audit (R127, `matter/rebuild/TDC.md`) : dictionnaire exact ; corde fondamentale à
   quatre dimensions incohérente ; une seule corde pour les hadrons et la gravité exclue de
-  10³⁸ ; restent une corde effective hadronique et l'étude de la théorie ; aucune
-  revendication nouvelle
+  10³⁸ en espace plat ; restent une corde effective hadronique et l'étude de la théorie ;
+  aucune revendication nouvelle
+- Choix de l'auteur : dix dimensions. R128 : la CD devient une construction connue, la
+  supercorde de type IIA sur trois tores avec des D6-branes sécantes ; le dipôle y est la corde
+  ouverte entre deux branes, le 3 + 3 de l'auteur les trois tores, les générations des nombres
+  d'intersection ; groupe de jauge, 3 générations et tension des hadrons y sont choisis, pas
+  dérivés ; deux rectificatifs de R127 (exclusion valable en espace plat seulement ; le compte
+  3 + 3 se transpose)
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

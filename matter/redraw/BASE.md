@@ -3102,3 +3102,40 @@ compactes ; 3 + 3 dédouble trois dimensions : 7 dimensions physiques, pas 10. N
 EXCLUE ; reste une corde effective hadronique dont le seul nombre propre à la CD est la tension (0,185 GeV², 2 à 7σ
 sous le réseau, R119), CONDITIONNELLE, en suspens jusqu'aux calculs B1–B3 de la feuille de route.** « Variante de la
 théorie des cordes » désigne au 22 novembre une lecture et une corde effective, pas une théorie nouvelle.
+
+**Décision (22 novembre 2026) : dix dimensions.** L'auteur, devant R127 B : « ok prend 10 dimensions ». C'est le choix
+de la supercorde. Définition retenue, la plus simple qui respecte le découpage de l'auteur (un temps, trois dimensions
+« massiques », trois « capacitives », trois « inductives ») : supercorde de type IIA sur trois tores, T⁶ = (T²)³, avec
+des D6-branes sécantes (Zwiebach, chapitre 21).
+
+**R128 — La CD en dix dimensions : la supercorde, les trois tores, et ce que le choix impose.**
+Script `matter/rebuild/ds_ten_dimensions.py`, 5/5.
+*A. Spectre.* Supercorde ouverte : 8 états bosoniques et 8 fermioniques sans masse (un vecteur et son partenaire de
+spin ½), puis 128 + 128, 1152 + 1152, 7680, 42112 : bosons = fermions à chaque niveau (identité de Jacobi, vérifiée en
+série jusqu'à q⁴) ; pas de tachyon. Le spin ½ que la CD n'a jamais eu est là, au prix de la supersymétrie.
+*B. Découpage.* 10 = 1 + 3 + 6 ; le vecteur à 8 polarisations = 2 + 6 scalaires ; 6 = 3 × 2, trois dimensions
+complexes, une par tore. Le compte de l'auteur, 1 + 3 + 3 + 3 = 10, se transpose : les trois « capacitives » et les
+trois « inductives » sont les deux directions de chacun des trois tores ; une D6-brane occupe les trois dimensions
+visibles et une direction par tore.
+*C. Générations.* Deux branes d'enroulements (n₁, m₁) et (n₂, m₂) sur un tore se coupent |n₁m₂ − m₁n₂| fois (vérifié
+par comptage direct sur sept paires) ; sur trois tores, le produit ; chaque intersection porte un fermion chiral
+(Ibáñez, Marchesano, Rabadán 2001). Exemple à trois : (1,0)(1,0)(1,0) et (1,3)(1,1)(1,1). Mais 3 n'est pas préféré : sa
+part parmi les paires va de 0 % (enroulements entre −1 et 1) à 13,9 % (−2 à 2), puis 2,6 % et 0,8 % : effet de plage,
+vérifié avant d'être écrit. Il se choisit.
+*D. Échelles.* Tores de la taille de la corde : M_s = √π g_s M_Planck = 4,3·10¹⁷ à 4,3·10¹⁸ GeV. Borne basse du LHC
+environ 7,9 TeV (CMS, citée de mémoire, non confirmée par la recherche) : ℓ_s < 2,5·10⁻²⁰ m, et ℓ₁(9) = 0,81 fm vaut
+3·10⁴ ℓ_s : les longueurs de la base ne sont pas des longueurs de corde. Six grandes dimensions égales à cette borne :
+R = 1,19 fm, valeur d'école (Arkani-Hamed, Dimopoulos, Dvali) qui dépend de la borne comme M_s^(−4/3) : pas une
+trouvaille (règle 4 de la feuille de route).
+*E. Tension des hadrons.* Dans une géométrie déformée la tension effective est e^{2A}/(2πα′) ; σ_base exige
+e^{A} = 1,4·10⁻⁴ (M_s = 7,9 TeV) à 2,5·10⁻¹⁹ (M_s = 4,3·10¹⁸ GeV).
+*F. Non observé.* Aucun partenaire supersymétrique, 1/r² vérifié jusqu'à 52 μm (Lee et al. 2020), aucune résonance de
+corde : rien n'est prédit aux énergies accessibles.
+**Rectificatifs de R127.** (C) « Une seule corde ne peut pas faire les hadrons et la gravité » ne vaut qu'en espace
+plat : en dix dimensions un facteur de déformation le permet (QCD holographique) ; l'énoncé du 22 novembre était trop
+général, il est corrigé dans le script, dans `TDC.md` et sur le site. (F) Le compte 3 + 3 + 3 + 1 se transpose sous dix
+dimensions (trois tores) ; R127 F supposait un dédoublement.
+**Verdict : la CD en dix dimensions est une construction connue** où ses motifs ont une place exacte (IDENTITÉS de
+structure), et où le groupe de jauge, le 3 des générations et le facteur de déformation sont CHOISIS : paramétrisation,
+au sens de `CONSTRAINTS.md` §4. Ce n'est pas une variante de la théorie des cordes, c'en est un cas. Suite : le
+chapitre 21 de Zwiebach, que l'auteur doit pouvoir refaire (compte 8 + 8, nombre d'intersection).

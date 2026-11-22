@@ -11,6 +11,9 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_ten_dimensions.py` — R128, après le choix de dix dimensions : spectre de la supercorde (8 + 8, 128 + 128), les
+  trois tores, générations comme nombres d'intersection (3 non préféré), échelles, facteur de déformation ; deux
+  rectificatifs de R127.
 - `ds_as_string_variant.py` — R127 : identités (tout est ℓ_s), incohérence d'une corde fondamentale à D = 4, exclusion
   d'une corde unique hadrons + gravité, champ critique du dipôle, ligne de transmission comme boson compact.
 - `limit_states_tov.py` — les états limites sous R124 (R125) : la branche des étoiles de substrat avec les deux

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R127)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R128)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R127).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R128).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -259,7 +259,14 @@ seule corde pour les hadrons et la gravité est exclue de 10³⁸ ; le dipôle-c
 au-dessus de Schwinger ; la ligne du vide est un boson compact de rayon R²/α′ = 1/(2α), la dualité T est l'échange
 L ↔ C (identités) ; « 3 + 3 » dédouble trois dimensions, il n'en fait pas six. Reste une corde effective hadronique
 dont le seul nombre propre est la tension : les chemins A et B de la feuille de route.
-L'article (`matter/paper/`) est consolidé jusqu'à R127.
+Décision (22 novembre 2026) : dix dimensions. R128 : la CD devient la supercorde de type IIA sur trois tores avec des
+D6-branes sécantes (Zwiebach, chapitre 21) ; spectre 8 + 8, 128 + 128 (spin ½ acquis, au prix de la supersymétrie) ; le
+compte de l'auteur 1 + 3 + 3 + 3 se transpose (trois tores) ; les générations sont des nombres d'intersection, où 3
+n'est pas préféré (0 % à 14 % selon la plage) ; ℓ_s < 2,5·10⁻²⁰ m, les longueurs de la base ne sont pas des longueurs
+de corde ; la tension des hadrons exige un facteur de déformation de 10⁻⁴ à 10⁻¹⁹. Rectificatifs de R127 : l'exclusion
+« une corde pour hadrons et gravité » ne vaut qu'en espace plat ; le compte 3 + 3 se transpose. Verdict : construction
+connue, nombres choisis, paramétrisation ; un cas de la théorie des cordes, pas une variante.
+L'article (`matter/paper/`) est consolidé jusqu'à R128.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -365,11 +372,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R127 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R128 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125 et R127, quatre scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 et R128, cinq scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

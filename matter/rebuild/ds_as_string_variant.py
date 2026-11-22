@@ -19,7 +19,8 @@ d'amplitudes est alors d'office). R127 etait reserve a « la loi elastique du fi
      a D = 4 est le rayon d'Arvis r_c = (pi/sqrt3) l_s = 0,33 fm.
   C. Gravitation. Le graviton est le niveau sans masse de la corde fermee (D = 26 ou 10) et son couplage est
      G ~ g_s^2 alpha' : avec la tension de la base il faut g_s = l_Planck / l_s = 9e-20 ; a couplage d'ordre 1 la
-     gravite serait 1e38 fois trop forte. La meme corde ne peut pas faire les hadrons et la gravitation.
+     gravite serait 1e38 fois trop forte. En espace plat, la meme corde ne peut pas faire les hadrons et la
+     gravitation (rectificatif R128 : en dix dimensions une geometrie deformee reduit la tension effective et le permet).
   D. Le dipole. Corde ouverte a charges +q, -q : champ critique E_c = sigma/q au-dela duquel le champ arrache les
      extremites. q = e : 9,4e23 V/m ; q = e/3 : 2,8e24 V/m ; champ de Schwinger : 1,3e18 V/m. Le vide reel cree des
      paires e+e- 7e5 fois avant.
@@ -31,8 +32,9 @@ d'amplitudes est alors d'office). R127 etait reserve a « la loi elastique du fi
      Identite alpha = Z_0/(2 R_K) : la constante de structure fine lue comme un rayon, pas derivee.
   Remarque (R121). « 10 = 3 + 3 + 3 + 1 » : en cordes, capacitif/inductif = enroulement/impulsion, deux descriptions
   duales des MEMES dimensions compactes ; 3 + 3 dedouble trois dimensions, il n'en fait pas six (1 + 3 + 3 = 7, pas 10).
+  (Rectificatif R128 : sous dix dimensions le compte se transpose autrement, 3 + 3 = trois tores.)
   Verdict : le dictionnaire est exact (IDENTITES) ; la CD comme corde fondamentale a quatre dimensions est EXCLUE ;
-  une seule corde pour les hadrons et la gravite est EXCLUE (1e38) ; il reste une corde effective hadronique dont le
+  une seule corde pour les hadrons et la gravite est EXCLUE en espace plat (1e38 ; voir R128) ; il reste une corde effective hadronique dont le
   seul nombre propre a la CD est la tension (0,185 GeV^2, deja 2 a 7 sigma sous le reseau, R119). « Variante de la
   TdC » designe donc aujourd'hui un dictionnaire et une corde effective : les chemins A et B de la feuille de route.
 """
@@ -98,8 +100,8 @@ def main():
     g_s = L_PLANCK / (L_S * 1e-15)
     ratio = (L_S * 1e-15 / L_PLANCK) ** 2
     print(f"    l_Planck / l_s = {g_s:.2e} : couplage de corde requis ; a g_s ~ 1 la gravite serait {ratio:.1e} fois trop forte")
-    print("    -> la meme corde ne peut pas porter la tension des hadrons et le graviton.\n")
-    check("C. tension hadronique + graviton : exclu de 1e38 (ou g_s = 9e-20, corde sans interaction)", g_s < 1e-18 and ratio > 1e37, f"g_s = {g_s:.1e} ; {ratio:.1e}")
+    print("    -> en espace plat, la meme corde ne peut pas porter la tension des hadrons et le graviton (rectificatif R128 : une geometrie deformee a dix dimensions le permet).\n")
+    check("C. tension hadronique + graviton en espace plat : exclu de 1e38 (ou g_s = 9e-20) ; rectificatif R128 pour dix dimensions deformees", g_s < 1e-18 and ratio > 1e37, f"g_s = {g_s:.1e} ; {ratio:.1e}")
 
     # D. le dipole
     print("D. Le dipole : corde ouverte a charges +q et -q, champ critique E_c = sigma/q")
@@ -127,11 +129,11 @@ def main():
     print("F. « 10 = 3 + 3 + 3 + 1 » relu en cordes")
     phys = 1 + 3 + 3
     print(f"    capacitif / inductif = enroulement / impulsion : deux descriptions duales des memes dimensions compactes ; 3 + 3 dedouble 3 dimensions")
-    print(f"    dimensions physiques : 1 + 3 + 3 = {phys}, pas 10 ; la supercorde en exige 10 dont 6 compactes : le compte ne se transpose pas (R121 : reduction).\n")
-    check("F. le dedoublement 3 + 3 donne 7 dimensions physiques, pas 10 : le compte de l'auteur ne se transpose pas", phys == 7 and phys != 10, f"{phys}")
+    print(f"    dimensions physiques : 1 + 3 + 3 = {phys}, pas 10 ; la supercorde en exige 10 dont 6 compactes : sous cette lecture le compte ne se transpose pas (R121) ; sous dix dimensions il devient trois tores (R128).\n")
+    check("F. le dedoublement 3 + 3 donne 7 dimensions physiques, pas 10 : sous cette lecture le compte ne se transpose pas (R128 : trois tores)", phys == 7 and phys != 10, f"{phys}")
 
     print("Verdict : le dictionnaire CD <-> cordes est exact (identites A, E) et aucun nombre nouveau n'en sort (tout est l_s). La CD")
-    print("comme corde FONDAMENTALE a quatre dimensions est EXCLUE (B) ; une seule corde pour les hadrons et la gravite est EXCLUE (C).")
+    print("comme corde FONDAMENTALE a quatre dimensions est EXCLUE (B) ; une seule corde pour les hadrons et la gravite est EXCLUE en espace plat (C ; rectificatif R128).")
     print("Reste une corde EFFECTIVE hadronique, dont le seul nombre propre a la CD est la tension, deja en tension avec le reseau (R119).")
     print("« Variante de la theorie des cordes » designe aujourd'hui un dictionnaire et une corde effective : chemins A et B de la feuille de route.\n")
 
