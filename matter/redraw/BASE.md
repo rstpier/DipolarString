@@ -3047,3 +3047,15 @@ théories « stratifiées » ; références à vérifier à la source. Question 
 A5 la pose (« aucun mode de déformation continue », reformulé par l'erratum E5) mais aucune loi élastique du
 filament n'a jamais été écrite ; R127 (tension + rigidité de courbure) est défini, non fait, verdict attendu sans
 nombre nouveau.
+
+**Addendum à R124 (22 novembre 2026) : provenance.** Le résultat α₁ = −(4γ + 4) = −8 n'est pas nouveau. Un champ
+scalaire sur un feuilletage en temps privilégié, avec une métrique diagonale dans le repère privilégié, est une théorie
+« stratifiée » de la gravitation au sens du début des années 1970 ; les théories stratifiées standard ont α₁ ≈ −8 et ont
+été écartées pour cela par les effets de repère privilégié (marées terrestres) : W.-T. Ni, Astrophys. J. 176, 769
+(1972) ; K. Nordtvedt et C. M. Will, Astrophys. J. 177, 775 (1972) ; rappelé par R. H. Sanders, Astrophys. J. 480, 492
+(1997). Références vérifiées par recherche le 22 novembre (titres, volumes, pages ; textes non relus à la source).
+R124 retrouve donc ce résultat pour le secteur scalaire de la CD ; son statut reste EXCLU, sa nouveauté est nulle.
+Inscrit dans la note des résultats négatifs (résultat 12, avec les sources classiques des résultats 3, 8, 9, 11 et 13 :
+Derrick 1964 ; Bialynicki-Birula 1994 et D'Ariano–Perinotti 2014 ; Lüscher 1981 ; Chiao–Garmire–Townes 1964,
+Vakhitov–Kolokolov 1973, Chodos et al. 1974 ; Tolman et Oppenheimer–Volkoff 1939), dans l'erratum E6 (`ERRATUM.md` et
+manuscrit V2.11) et dans `CONSTRAINTS.md` §10. Première tâche du chemin 0 de la feuille de route : faite.

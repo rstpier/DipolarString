@@ -10,3 +10,7 @@ place, the itemized erratum (ERRATUM.md), the companion note of negative results
 and the figures the manuscript includes. Scripts, data and historical archives are
 unchanged from V2.9.2 (v2.9/); the evidence scripts of the erratum live in
 matter/redraw/ and matter/rebuild/ and are re-run by verification/verify_v2_11.py.
+
+Revision of 2026-11-22: classical references added to the companion note and to
+erratum item E6 (alpha_1 = -8 is the standard value for stratified theories of
+gravity: Ni 1972; Nordtvedt and Will 1972); checksums regenerated.

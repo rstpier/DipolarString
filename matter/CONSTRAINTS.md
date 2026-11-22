@@ -396,6 +396,10 @@ ranging): excluded by five orders of magnitude, with no free parameter.
 > gravitational sector on a scalar in a frame; and the substrate-star interior, integrated with this scalar sector, is
 > exposed to the same objection.
 
+*Provenance (22 November 2026).* This is the classical result for the standard "stratified" theories of gravity
+(Ni 1972; Nordtvedt & Will 1972): `α₁ ≈ −8`, ruled out in the 1970s by preferred-frame effects. R124 recovers it for
+the DS scalar sector; it is not a new result.
+
 ---
 
 ## 11. Under GR hydrostatics the substrate-star branch is not dark

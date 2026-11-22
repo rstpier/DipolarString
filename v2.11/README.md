@@ -27,7 +27,7 @@ the zero-point energy of a lattice at ℓ₁ is 10³² times the dark-energy den
 ledger is re-filed (E11); the author's adoption of the amplitude axiom A9 is recorded (E12).
 
 The companion note **`negative_results/DS_negative_results.pdf`** (6 pages) collects the fourteen
-structural negative results established by the programme, each with its proof sketch and the script
+structural negative results established by the programme, each with its proof sketch, its classical source where one exists, and the script
 that reproduces it. They hold for the whole class of "vacuum as a network of matched lines" models.
 
 ## Verify
@@ -59,7 +59,7 @@ cd manuscript && latexmk -pdf -interaction=nonstopmode -halt-on-error DS_model_V
 cd ../negative_results && latexmk -pdf -interaction=nonstopmode -halt-on-error DS_negative_results.tex
 ```
 
-70 and 6 pages, zero undefined references. `figures/` holds the four figures the manuscript includes
+71 and 6 pages, zero undefined references. `figures/` holds the four figures the manuscript includes
 (unchanged from V2.10; Figs. branch and lrd are superseded by E7 and kept as the V2.10 record).
 
 ## Contents

@@ -5,7 +5,7 @@ not published without a notable discovery; after R100–R116 the record holds ex
 identities and ratios at 1–3 % on posed inputs, none of which is one. The draft stays here as
 the consolidated record.
 
-`DS_matter_sector.tex` is now a **first content draft** (17 pages, compiles clean, zero
+`DS_matter_sector.tex` is now a **first content draft** (18 pages, compiles clean, zero
 undefined references), consolidating the redraw recorded in `../redraw/BASE.md`
 (R1–R126, 121 scripts). It keeps the skeleton's section order and the `\status{...}`
 ledger; every number in it is produced by a script under `../redraw/`.

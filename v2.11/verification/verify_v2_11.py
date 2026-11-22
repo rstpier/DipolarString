@@ -75,12 +75,18 @@ def block_source(source: str) -> None:
     check("E11: ledger re-filed", "re-filed by erratum E7" in source and "withdrawn by erratum E7" in source, "Derived list")
     check("E12 / Document History records V2.11", "\\paragraph{V2.11 (erratum edition, 21 November 2026).}" in source
           and "adopted an amplitude axiom (A9" in source, "revision traced")
+    check("E6 attributes alpha_1 = -8 to the classical stratified theories",
+          "\\cite{ni1972,nordtvedtwill1972}" in source and "\\bibitem{ni1972}" in source and "\\bibitem{nordtvedtwill1972}" in source,
+          "Ni 1972; Nordtvedt and Will 1972 cited")
     check("Conclusion states what survives", "Erratum (V2.11):} these three items are withdrawn as predictions" in source, "general conclusion")
 
 
 def block_note(note: str) -> None:
     n = note.count("\\begin{prop}")
     check("Companion note carries fourteen results", n == 14, f"{n} results")
+    classical = ("derrick1964", "townes1964", "vk1973", "bag1974", "ni1972", "nordtvedtwill1972", "luscher1981", "tov1939")
+    missing = [k for k in classical if f"\\bibitem{{{k}}}" not in note or k not in note.split("\\begin{thebibliography}")[0]]
+    check("Note cites its classical sources in the text and lists them", not missing, "all present" if not missing else f"missing {missing}")
     for key in ("alpha_1 = -(4\\gamma+4) = -8", "158/\\sqrt{x_s}", "0.31", "j_0(qR_3)"):
         check(f"Note states: {key}", key in note, "present")
 

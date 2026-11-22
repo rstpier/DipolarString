@@ -47,8 +47,8 @@ repère (R124), les objets sombres sans horizon (R125), et la lecture des accord
 ## 2. Chemin 0 — clore proprement (2 à 4 semaines)
 
 - Décider du dépôt Zenodo de V2.11 sous le DOI concept existant.
-- Avant de montrer la note à un physicien, y ajouter les références classiques de chaque résultat, pour qu'aucun ne
-  soit lu comme une prétention de nouveauté. En particulier R124 retrouve un résultat des années 1970 : les théories
+- **Fait le 22 novembre.** Avant de montrer la note à un physicien, y ajouter les références classiques de chaque
+  résultat, pour qu'aucun ne soit lu comme une prétention de nouveauté. En particulier R124 retrouve un résultat des années 1970 : les théories
   dites « stratifiées », à tranches d'espace orthogonales au temps, ont α₁ = −4(γ + 1) et ont été écartées pour cela
   (Ni 1972 ; Nordtvedt et Will 1972 ; Will, *Theory and Experiment in Gravitational Physics*). À ajouter aussi :
   Derrick 1964, Lüscher 1981, Vakhitov et Kolokolov 1973, Chodos et al. 1974 pour le sac.
@@ -276,7 +276,9 @@ règle 1 s'applique aux deux : rien n'entre au dossier que tu ne puisses expliqu
 ## Références
 
 Elles sont données de mémoire ; plusieurs sites, dont arXiv, n'étaient pas accessibles depuis la session qui a
-rédigé ce document. Chacune est à vérifier à la source avant d'être citée.
+rédigé ce document. Chacune est à vérifier à la source avant d'être citée. Les « références classiques » du dernier
+paragraphe, ainsi que Lüscher 1981 et Chiao, Garmire et Townes 1964, ont été vérifiées par recherche le 22 novembre
+(titres, volumes, pages) et ajoutées à la note.
 
 **Socle et cordes.** L. Susskind et G. Hrabovsky, *The Theoretical Minimum* (2013) ; L. Susskind et A. Friedman,
 *Quantum Mechanics: The Theoretical Minimum* (2014) et *Special Relativity and Classical Field Theory* (2017) ;

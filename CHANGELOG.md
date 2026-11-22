@@ -27,6 +27,10 @@
   valables pour toute la classe « vide = réseau de lignes adaptées »
 - `verify_v2_11.py` : contrôles de source, note, relance des sept scripts de preuve
   (R119–R125), suite V2.9.2 déléguée si ses dépendances sont présentes
+- Révision du 22 novembre : sources classiques ajoutées à la note et à E6 — α₁ ≈ −8 est le
+  résultat connu des théories « stratifiées » (Ni 1972 ; Nordtvedt–Will 1972), que le calcul
+  retrouve ; Derrick 1964, Chiao–Garmire–Townes 1964, Vakhitov–Kolokolov 1973, Chodos et
+  al. 1974, Lüscher 1981, Tolman et Oppenheimer–Volkoff 1939 ; sommes de contrôle régénérées
 
 ## V2.10 (7 septembre 2026)
 
