@@ -16,6 +16,13 @@
   d'intersection ; groupe de jauge, 3 générations et tension des hadrons y sont choisis, pas
   dérivés ; deux rectificatifs de R127 (exclusion valable en espace plat seulement ; le compte
   3 + 3 se transpose)
+- Précisions de l'auteur : neuf dimensions d'espace en trois groupes de trois, « tores, non
+  probablement pas ». R129 : fermés et plats, les trois groupes sont le même espace que les
+  trois tores ; sinon, en trois dimensions la courbure est fixée par le contenu, donc un groupe
+  vide est plat (un tore ou l'un de ses replis), un groupe tenu par un flux est une sphère,
+  exclue comme dimension cachée, et des groupes infinis donnent une gravité en 1/r⁸ ; reste le
+  Calabi-Yau, où les deux groupes cachés sont entrelacés et où le 3 des générations est encore
+  choisi
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

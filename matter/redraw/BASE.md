@@ -3139,3 +3139,70 @@ dimensions (trois tores) ; R127 F supposait un dédoublement.
 structure), et où le groupe de jauge, le 3 des générations et le facteur de déformation sont CHOISIS : paramétrisation,
 au sens de `CONSTRAINTS.md` §4. Ce n'est pas une variante de la théorie des cordes, c'en est un cas. Suite : le
 chapitre 21 de Zwiebach, que l'auteur doit pouvoir refaire (compte 8 + 8, nombre d'intersection).
+
+**Précisions de l'auteur (22 novembre 2026) : trois groupes de trois, et pas des tores.** « 9 dim : 3 groupe de 3
+dimensions. » Puis, à la question « est-ce le même espace que les trois tores de R128 ? » : « tores, non probablement
+pas ». Les deux lectures sont calculées : groupes fermés et plats (A à E), puis groupes qui ne sont pas des tores
+(F à I).
+
+**R129 — Neuf dimensions d'espace en trois groupes de trois ; « tores, non probablement pas ».**
+Script `matter/rebuild/ds_three_groups.py`, 9/9.
+*A. Même espace.* Si chaque groupe caché est fermé et plat, T⁶ = (T²)³ = T³ × T³ : les paires (c_i, l_i) de R128 et les
+triplets (c₁c₂c₃), (l₁l₂l₃) de l'auteur partagent les mêmes six coordonnées. Regroupement, pas espace nouveau.
+*B. Objets qui remplissent des groupes.* Une brane qui remplit k groupes a 3k dimensions d'espace : D3, D6, D9. La
+dualité T sur un groupe entier (trois directions) échange les types IIA et IIB, envoie la D6 sur une D3 ou une D9, et
+échange dans ce groupe impulsion et enroulement : l'échange « inductif » ↔ « capacitif » de R127 E, appliqué à un
+groupe.
+*C. Générations.* Huit branes alignées sur les axes des groupes : |I| = 0 ou 1, jamais 3 ; groupe capacitif entier
+contre groupe inductif entier : I = 1 ; même groupe : I = 0. Avec des enroulements de 1 au plus, |I| = 3 est impossible
+(0 %). Trois générations exigent un biais qui mêle une direction capacitive et une inductive avec un enroulement d'au
+moins 2, par exemple (1,1)(1,0)(1,0) et (1,−2)(0,1)(0,1), I = −3, ou une symétrie d'ordre 3.
+*D. Le « 3ⁿ ».* Une rotation de 120° d'un tore hexagonal a 3 points fixes (comptage direct) ; un, deux, trois tores :
+3, 9, 27. C'est la place exacte du « 3ⁿ » de l'auteur : des points où la matière peut se loger, pas des cordes par
+particule.
+*E. « Même groupe ».* Branes parallèles (même groupe, I = 0) : paires particule-antiparticule de même main,
+annihilation et masse permises. Intersection (groupes différents, I ≠ 0) : fermion chiral, seul, sans masse permise.
+*F. Un groupe vide est plat.* En trois dimensions le tenseur de Riemann (6 composantes) est une fonction du tenseur de
+Ricci (6 composantes) : identité vérifiée exactement, en arithmétique rationnelle, sur une métrique quelconque en trois
+points, avec contrôle sur la 3-sphère (Ricci = 2g/R², courbure scalaire 6/R²). À quatre dimensions c'est faux (20
+contre 10 ; une onde gravitationnelle plane est courbe à Ricci nul), à six aussi (105 contre 21). Or, dans le secteur
+de Neveu-Schwarz, un espace caché fermé sous un espace visible plat à constantes constantes n'a ni flux ni courbure de
+Ricci : l'équation du dilaton s'écrit ∇²e^{−2Φ} = e^{−2Φ}H²/6, dont l'intégrale sur un espace fermé est nulle. Donc
+chaque groupe de trois, pris en produit, est plat : un 3-tore ou l'un de ses neuf replis (dix variétés plates fermées,
+dont six orientables, d'holonomie 1, Z₂, Z₃, Z₄, Z₆, Z₂ × Z₂ ; replis permis d'ordre 1, 2, 3, 4, 6, vérifié). **Trois
+groupes de trois en produit : des tores ou leurs replis, DÉRIVÉ (théorème classique).** Un espace de six dimensions
+d'un bloc échappe à la règle ; un produit de deux groupes de trois, non.
+*G. Des sphères.* Un flux à travers un groupe lui donne une courbure positive constante, Ricci = (h²/2)g : une 3-sphère
+ou l'un de ses quotients, de rayon R² = kα′ ; pas d'espace hyperbolique. Mais le bilan ne ferme pas : charge centrale
+15 − 6(1/k₁ + 1/k₂) < 15 pour tout k. Le manque se paie dans l'espace visible. Soit un couplage qui varie le long d'une
+direction d'espace, Q² = 1/R₁² + 1/R₂² (supergravité et bilan exact concordent ; étalonnage sur la gorge de la
+5-brane, α′Q² = 1/k ; un gradient dans le temps a le mauvais signe) : avec R < 52 μm le couplage est multiplié par e
+tous les 37 μm ; à l'inverse, des constantes stables à 10⁻⁵ près sur 10²⁶ m exigent R > 1,4·10³¹ m, 10⁵ rayons de
+Hubble. Soit une courbure négative de même rayon, 1/L² = 1/R₁² + 1/R₂² : c'est la solution exacte connue à trois
+groupes de trois, AdS₃ × S³ × S³ × S¹ (3 + 3 + 3 + 1 = 10), dont le groupe visible n'a que deux dimensions d'espace ;
+et le rayon de courbure visible observé dépasse 1,9·10²⁷ m. Le compte exact de l'auteur avec trois sphères, temps +
+S³ × S³ × S³, n'a pas de solution statique : il faudrait un gradient de genre espace, α′V² = 1/k₁ + 1/k₂ + 1/k₃ > 0, et
+la seule direction ouverte est le temps. **Sphères cachées tenues par un flux : EXCLUES.** Le tore est plat, c'est
+pour cela qu'il ne coûte rien.
+*H. Des groupes infinis.* Neuf dimensions d'espace ouvertes : force en 1/r⁸ (doubler la distance la divise par 256
+au lieu de 4), aucune orbite stable (exposant inférieur à 3 requis). **EXCLU**, sauf piégeage de la gravité sur notre
+groupe, mécanisme supplémentaire non examiné.
+*I. L'issue sans coût : renoncer au produit.* Une variété de Calabi-Yau est courbe et sans courbure de Ricci. Vue à la
+manière de Strominger, Yau et Zaslow (1996, conjecture), c'est une famille de 3-tores (un groupe) au-dessus d'une base
+de trois dimensions (l'autre groupe), et la dualité T sur le groupe torique est la symétrie miroir (le B ci-dessus).
+Les deux groupes cachés y sont entrelacés : la forme de l'un varie le long de l'autre, et l'un reste torique. Les
+générations y sont un nombre topologique, |χ|/2 dans la lecture hétérotique : quintique χ = −200 (100 générations),
+bicubique −162, variété de Tian et Yau −18, et son quotient libre d'ordre 3, χ = −6, trois générations (classes de
+Chern calculées). S³ × S³ : b₂ = 0, donc pas de Calabi-Yau, et χ = 0.
+**Verdict.** (1) Fermés et plats, les trois groupes de trois sont le même espace que les trois tores de R128
+(IDENTITÉ de regroupement), et des objets alignés sur les groupes donnent une génération au plus. (2) « Pas des
+tores » : en produit, impossible sans payer dans l'espace visible (DÉRIVÉ) ; sphères EXCLUES, groupes infinis EXCLUS.
+(3) Reste le Calabi-Yau, où les deux groupes cachés sont entrelacés : CONDITIONNEL, et le 3 des générations y est
+encore un nombre choisi avec l'espace (χ = ±6). Paramétrisation, comme R128. Hors champ : flux de Ramond et plans
+d'orientifold (compactifications à flux). *Sources, données de mémoire, à vérifier :* L. Bieberbach, Math. Ann. 70, 297
+(1911) ; W. Hantzsche et H. Wendt, Math. Ann. 110, 593 (1935) ; C. Callan, J. Harvey et A. Strominger, Nucl. Phys. B
+359, 611 (1991) ; S. Elitzur, O. Feinerman, A. Giveon et D. Tsabar, Phys. Lett. B 449, 180 (1999), hep-th/9811245 ;
+A. Strominger, S.-T. Yau et E. Zaslow, Nucl. Phys. B 479, 243 (1996) ; P. Candelas, G. Horowitz, A. Strominger et
+E. Witten, Nucl. Phys. B 258, 46 (1985) ; G. Tian et S.-T. Yau (1987) ; stabilité de α à 10⁻⁵ sur 10²⁶ m : ordre de
+grandeur des spectres de quasars (J. King et al., MNRAS 422, 3370, 2012) ; courbure : Planck 2018, Ω_K = 0,0007 ±
+0,0019.

@@ -131,7 +131,50 @@ choisi, c'est une paramétrisation : **c'est l'état actuel** ; (2) si rien ne d
 branes déjà publiés, elle n'ajoute rien : **à établir par la lecture du chapitre 21** ; (3) règle 1 de la feuille de
 route : l'auteur doit pouvoir refaire à la main le compte 8 + 8 et un nombre d'intersection.
 
-## 8. Suite
+## 8. Trois groupes de trois (précisions du 22 novembre, R129)
+
+L'auteur : « 9 dim : 3 groupe de 3 dimensions », puis, à la question de savoir si c'est le même espace que les trois
+tores du §7 : « tores, non probablement pas ». Audit : `ds_three_groups.py`, 9/9.
+
+**Si chaque groupe caché est fermé et plat**, rien ne change : six dimensions regroupées par paires (les trois tores
+du §7) ou par triplets (le groupe capacitif, le groupe inductif), c'est le même espace. Ce que le regroupement par
+trois apporte :
+
+- les objets qui remplissent des groupes entiers ont 3, 6 ou 9 dimensions d'espace (D3, D6, D9) ;
+- retourner un groupe entier (dualité T sur ses trois directions) échange dans ce groupe impulsion et enroulement,
+  l'« inductif » et le « capacitif », et fait passer du type IIA au type IIB ;
+- deux objets alignés sur les groupes se croisent 0 ou 1 fois : une génération au plus. Trois générations demandent
+  un objet en biais entre une direction capacitive et une inductive (enroulement 2 au moins), ou une symétrie
+  d'ordre 3 ;
+- cette symétrie d'ordre 3 a 3 points fixes par tore, donc 3, 9, 27 : c'est la place du « 3ⁿ » de l'auteur ;
+- même groupe : paires non chirales, annihilation et masse permises ; groupes différents : fermion chiral.
+
+**Si les groupes ne sont pas des tores**, la forme d'un groupe de trois dimensions n'est pas libre, parce qu'en trois
+dimensions la courbure est fixée entièrement par le contenu (6 composantes de courbure, 6 équations). Trois cas :
+
+| Forme d'un groupe caché | Ce qu'il faut | Ce que cela coûte | Statut |
+|---|---|---|---|
+| Plat et fermé | Rien | Rien. Un 3-tore ou l'un de ses neuf replis (ordres 2, 3, 4, 6) | Seul cas gratuit en produit |
+| Sphère | Un flux qui la tient, rayon R² = kα′ | L'espace visible paie : couplage multiplié par e tous les R/√2, ou courbure visible de même rayon | Exclu |
+| Infini | Rien | Gravité en 1/r⁸, pas d'orbite stable | Exclu |
+
+La seule solution exacte connue à trois groupes de trois courbes est AdS₃ × S³ × S³ × S¹ : 3 + 3 + 3 + 1, mais son
+groupe visible n'a que deux dimensions d'espace et il est courbe au rayon des sphères. Le compte de l'auteur avec
+trois sphères et le temps n'a pas de solution statique.
+
+**L'issue sans coût** est de renoncer au produit : un espace de six dimensions d'un bloc peut être courbe sans rien
+coûter, c'est une variété de Calabi-Yau. Elle garde quelque chose des deux groupes : on peut la voir comme une famille
+de 3-tores (un groupe) posée au-dessus d'une base de trois dimensions (l'autre groupe), la forme du tore variant d'un
+point à l'autre de la base (Strominger, Yau et Zaslow 1996, conjecture) ; retourner le groupe torique y est la
+symétrie miroir. Les deux groupes y sont entrelacés, et l'un reste torique. Le nombre de générations y est un nombre
+topologique de l'espace : 100 pour la quintique, 3 pour le quotient d'ordre 3 de la variété de Tian et Yau (χ = −6).
+Il se choisit avec l'espace.
+
+**Verdict.** « Trois groupes de trois » est compatible avec le §7. « Pas des tores » n'est possible qu'en entrelaçant
+les deux groupes cachés ; les sphères et les groupes infinis sont exclus. Dans tous les cas le 3 des générations reste
+un choix : paramétrisation. Hors champ de cet audit : les flux de Ramond et les plans d'orientifold.
+
+## 9. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
 Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12).
@@ -142,3 +185,8 @@ en 2020 (la valeur de la borne sur les résonances de cordes, 7,9 TeV de mémoir
 *Données de mémoire, à vérifier à la source :* J. Polchinski et A. Strominger, Phys. Rev. Lett. 67, 1681
 (1991) ; A. M. Polyakov, Nucl. Phys. B 268, 406 (1986) ; H. Kleinert, Phys. Lett. B 174, 335 (1986) ; J. F. Arvis,
 Phys. Lett. B 127, 106 (1983) ; B. Zwiebach, *A First Course in String Theory*, 2ᵉ éd. (2009).
+*Pour le §8, de mémoire, à vérifier :* L. Bieberbach, Math. Ann. 70, 297 (1911) ; W. Hantzsche et H. Wendt, Math. Ann.
+110, 593 (1935) ; C. Callan, J. Harvey et A. Strominger, Nucl. Phys. B 359, 611 (1991) ; S. Elitzur, O. Feinerman,
+A. Giveon et D. Tsabar, Phys. Lett. B 449, 180 (1999) ; A. Strominger, S.-T. Yau et E. Zaslow, Nucl. Phys. B 479, 243
+(1996) ; P. Candelas, G. Horowitz, A. Strominger et E. Witten, Nucl. Phys. B 258, 46 (1985) ; G. Tian et S.-T. Yau
+(1987).

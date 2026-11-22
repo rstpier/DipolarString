@@ -24,7 +24,9 @@ releases.
 > A fundamental string in four dimensions being inconsistent (R127), the author has taken ten dimensions: the
 > framework then becomes a known construction, the type IIA superstring on three 2-tori with intersecting D6-branes,
 > in which its motifs have an exact place but the gauge group, the three generations and the hadronic tension are
-> chosen, not derived (R128). No new claim is made. See
+> chosen, not derived (R128). The author then specified nine space dimensions in three groups of three, "probably
+> not tori": in a product, three-dimensional groups must be flat tori or their quotients, hidden spheres and infinite
+> groups are excluded, and the remaining option is a Calabi–Yau space (R129). No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---
