@@ -3065,3 +3065,40 @@ erratum et la note des résultats négatifs sont diffusées par le dépôt GitHu
 (DOI concept 10.5281/zenodo.21196098), inchangé. Inscrit dans `v2.11/` (README, VERSION, CITATION, ERRATUM, avis
 d'erratum et « Data Availability » du manuscrit), le README racine, le CHANGELOG, le site et la feuille de route.
 Conséquence notée : un lecteur qui arrive par Zenodo lit V2.10 sans l'erratum.
+
+**Décision de principe (22 novembre 2026) : Dipolar String change de direction.** L'auteur : « On va transformer
+dipolar string comme une variante de la TdC », puis : « Mention : 22/11/2026 Dipolar String change direction… ». La CD
+d'origine (le vide comme réseau de lignes adaptées) est close par l'erratum V2.11 ; le projet se réoriente vers la
+théorie des cordes, le filament dipolaire étant relu comme corde relativiste. Définition, dictionnaire, premier audit
+et critères d'arrêt : `matter/rebuild/TDC.md`. Mention portée sur le site, le README et le CHANGELOG, dans les
+termes que l'audit R127 autorise : une réorientation et une relecture, pas une théorie nouvelle.
+
+**R127 — La CD comme variante de la théorie des cordes : définition, dictionnaire, premières conséquences.**
+Script `matter/rebuild/ds_as_string_variant.py`, 6/6. Définition retenue pour pouvoir calculer : le filament reçoit
+la loi élastique d'une corde relativiste, l'action de Nambu–Goto (tension σ, rigidité optionnelle : c'était l'objet
+réservé sous ce numéro), des charges +q et −q à ses extrémités (corde ouverte à charges opposées, un dipôle), et il
+est quantifié (A9 d'office).
+*A. Identités.* Avec σ de la base : α′ = 0,8595 GeV⁻², ℓ_s = 0,1829 fm. Part statique = ℏc/(√2 ℓ_s) = 762,70 MeV ;
+boucle fermée à un quantum de rayon ℓ_s, demi-quantum ℓ_s/√2 (R120) ; anneau rigide (κ_b = σℓ_s²) de rayon ℓ_s/√2.
+Toutes les longueurs sont ℓ_s : aucun nombre nouveau, et la rigidité n'en apporte pas.
+*B. Cohérence quantique.* Corde ouverte : M² = (N − a)/α′, a = (D − 2)/24. À D = 4 : a = 1/12, fondamental
+tachyonique (|M| = 311 MeV), premier niveau à 1033 MeV avec 2 états pour 3 requis : invariance de Lorentz perdue. Un
+vecteur sans masse exige a = 1, D = 26 ; avec fermions de feuillet, D = 10. **Corde fondamentale à quatre dimensions :
+EXCLUE.** Corde effective (longue devant ℓ_s) cohérente en toute dimension (Polchinski–Strominger 1991) ; rayon
+d'Arvis r_c = (π/√3)ℓ_s = 0,332 fm.
+*C. Gravitation.* G ~ g_s²α′ : avec la tension de la base, g_s = ℓ_Planck/ℓ_s = 8,8·10⁻²⁰ ; à g_s ~ 1 la gravité
+serait 1,3·10³⁸ fois trop forte. **Une seule corde pour les hadrons et la gravité : EXCLUE.**
+*D. Le dipôle.* Champ critique E_c = σ/q : 9,4·10²³ V/m (q = e), 2,8·10²⁴ V/m (q = e/3) ; Schwinger 1,3·10¹⁸ V/m :
+le vide réel crée des paires 7·10⁵ fois avant.
+*E. Ligne de transmission et feuillet.* Chaque coordonnée de la corde est une ligne de transmission ; bout ouvert =
+Neumann, court-circuit = Dirichlet. Une ligne d'impédance Z et de quantum q (phase compacte du manuscrit, éq.
+phase_action) est un boson compact de rayon R²/α′ = h/(q²Z). Vide adapté, q = e : R_K/Z₀ = 1/(2α) = 68,518 ; q = e/3 :
+616,7. Dualité T : Z → R_K²/Z (échange L ↔ C) ; point auto-dual Z = R_K = 68,5 Z₀ ; dual du vide 1,77 MΩ = Z₀/(2α)².
+α = Z₀/(2R_K) lu comme un rayon : IDENTITÉ, pas une dérivation. L'idée d'origine, « le vide comme ligne adaptée », a
+donc une lecture exacte en cordes : la ligne est le feuillet, pas l'espace.
+*F. « 10 = 3 + 3 + 3 + 1 ».* Capacitif/inductif = enroulement/impulsion, descriptions duales des mêmes dimensions
+compactes ; 3 + 3 dédouble trois dimensions : 7 dimensions physiques, pas 10. Non transposable (R121).
+**Verdict : dictionnaire exact (IDENTITÉS) ; corde fondamentale à D = 4 EXCLUE ; corde unique hadrons + gravité
+EXCLUE ; reste une corde effective hadronique dont le seul nombre propre à la CD est la tension (0,185 GeV², 2 à 7σ
+sous le réseau, R119), CONDITIONNELLE, en suspens jusqu'aux calculs B1–B3 de la feuille de route.** « Variante de la
+théorie des cordes » désigne au 22 novembre une lecture et une corde effective, pas une théorie nouvelle.

@@ -9,6 +9,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   et pour chaque candidat le test qui le tue.
 - `A3.md` — le programme sous l'axiome d'amplitudes (décision de l'auteur, 21 novembre 2026) : définition,
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
+- `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
+  de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_as_string_variant.py` — R127 : identités (tout est ℓ_s), incohérence d'une corde fondamentale à D = 4, exclusion
+  d'une corde unique hadrons + gravité, champ critique du dipôle, ligne de transmission comme boson compact.
 - `limit_states_tov.py` — les états limites sous R124 (R125) : la branche des étoiles de substrat avec les deux
   facteurs de la RG restaurés (TOV, conventions A8) ; contrôle sur le système du manuscrit ; pas d'objet sombre.
 - `alpha12_preferred_frame.py` — premier calcul du programme sous A3 (R124) : les paramètres de repère privilégié

@@ -8,6 +8,12 @@ demande s'il vaut mieux quitter la CD et repartir de la théorie des cordes. Ce 
 qu'on laisse, et décrit trois chemins, avec pour chacun les lectures, les prérequis, un premier calcul et un critère
 d'arrêt écrit d'avance. Il est rédigé par le collaborateur IA du projet ; les choix sont ceux de l'auteur.
 
+> **Mention du 22/11/2026 — Dipolar String change de direction.** L'auteur réoriente le projet vers la théorie des
+> cordes : le filament dipolaire est relu comme corde relativiste, une corde ouverte à charges opposées. Le premier
+> audit (R127, `matter/rebuild/TDC.md`) donne un dictionnaire exact et ferme deux lectures fortes : une corde
+> fondamentale à quatre dimensions est incohérente, et une seule corde ne peut pas faire les hadrons et la gravité.
+> Ce qui reste ouvert est exactement les chemins A et B ci-dessous.
+
 ---
 
 ## 0. Ce qu'on laisse, ce qu'on emporte
@@ -55,8 +61,9 @@ repère (R124), les objets sombres sans horizon (R125), et la lecture des accord
   Derrick 1964, Lüscher 1981, Vakhitov et Kolokolov 1973, Chodos et al. 1974 pour le sac.
 - Envoyer la note à deux personnes, un relativiste et un physicien des particules ou du réseau, avec une seule
   question : « y a-t-il une erreur ? ».
-- Optionnel : R127, la loi élastique du filament (tension et rigidité de courbure), pour remplacer le dernier
-  « inconnu » de `CONSTRAINTS.md` §3 par un chiffre. Verdict attendu : aucun nombre nouveau.
+- **Fait le 22 novembre, sous une autre forme.** R127, la loi élastique du filament, est devenue l'action de
+  Nambu–Goto de la CD relue comme corde (`matter/rebuild/TDC.md`). Verdict : aucun nombre nouveau, toutes les
+  longueurs sont ℓ_s, rigidité comprise.
 
 ---
 

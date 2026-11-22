@@ -17,6 +17,14 @@ releases.
 > What can follow the programme — string-theory study, the effective hadronic string, analogue
 > gravity on transmission lines — is laid out in a roadmap (in French, 22 November 2026):
 > [`FEUILLE_DE_ROUTE_2026-11-22.md`](FEUILLE_DE_ROUTE_2026-11-22.md).
+>
+> **22/11/2026 — Dipolar Strings changes direction.** The original programme — the vacuum as a network of
+> impedance-matched transmission lines — is closed by the V2.11 erratum. From this date the project turns to string
+> theory: the dipolar filament is re-read as a relativistic string, an open string with opposite charges at its ends.
+> A first audit (R127) sets the limits: the dictionary is exact, but a fundamental string in four dimensions is
+> inconsistent and a single string cannot carry both hadrons and gravity; what remains open is an effective hadronic
+> string and the study of string theory itself. No new claim is made. See
+> [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---
 

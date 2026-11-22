@@ -1,5 +1,16 @@
 # Changelog
 
+## 22 novembre 2026 — Dipolar String change de direction
+
+- La CD d'origine, le vide comme réseau de lignes de transmission adaptées, est close par
+  l'erratum V2.11
+- Décision de l'auteur : le projet se réoriente vers la théorie des cordes ; le filament
+  dipolaire est relu comme corde relativiste, corde ouverte à charges opposées
+- Premier audit (R127, `matter/rebuild/TDC.md`) : dictionnaire exact ; corde fondamentale à
+  quatre dimensions incohérente ; une seule corde pour les hadrons et la gravité exclue de
+  10³⁸ ; restent une corde effective hadronique et l'étude de la théorie ; aucune
+  revendication nouvelle
+
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 
 - Le manuscrit V2.10 gelé reçoit un erratum appliqué sur place, douze points marqués

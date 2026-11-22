@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R126)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R127)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R126).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R127).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -251,7 +251,15 @@ R126 (chasse aux trouvailles, « look-elsewhere ») : 2186 expressions simples d
 44 grandeurs mesurées ; chaque cible a un accord au pour-cent, les formules de la base ont des probabilités locales
 de 0,02 à 0,8, le meilleur accord du tableau (Σ⁺ à 0,002 %, sans sens) tombe à 0,14 après correction du nombre de
 cibles : aucune trouvaille ; la précision des rapports hadroniques n'est pas en elle-même un signal.
-L'article (`matter/paper/`) est consolidé jusqu'à R126.
+Décision (22 novembre 2026) : Dipolar String change de direction ; l'auteur réoriente le projet vers la théorie des
+cordes, le filament étant relu comme corde relativiste (`matter/rebuild/TDC.md`). R127 (premier audit) : avec la
+tension de la base, α′ = 0,86 GeV⁻² et ℓ_s = 0,183 fm, et toutes les longueurs de la CD « corde » sont ℓ_s ; une corde
+fondamentale à quatre dimensions est incohérente (ordonnée 1/12 au lieu de 1 ; 26 ou 10 dimensions requises) ; une
+seule corde pour les hadrons et la gravité est exclue de 10³⁸ ; le dipôle-corde a un champ critique 7·10⁵ fois
+au-dessus de Schwinger ; la ligne du vide est un boson compact de rayon R²/α′ = 1/(2α), la dualité T est l'échange
+L ↔ C (identités) ; « 3 + 3 » dédouble trois dimensions, il n'en fait pas six. Reste une corde effective hadronique
+dont le seul nombre propre est la tension : les chemins A et B de la feuille de route.
+L'article (`matter/paper/`) est consolidé jusqu'à R127.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -357,11 +365,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R126 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R127 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programme `A3.md` ; R122, R124 et R125, trois scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125 et R127, quatre scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,
