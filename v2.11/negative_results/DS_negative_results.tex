@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan}
+\newtheorem{prop}{Result}
+\newcommand{\lone}{\ensuremath{\ell_1}}
+\newcommand{\Ncd}{\ensuremath{N_{\mathrm{DS}}}}
+
+\title{\textbf{What an impedance-matched transmission-line vacuum cannot do:}\\ \large fourteen negative results from the Dipolar Strings programme}
+\author{R. St-Pierre\thanks{Independent researcher, Qu\'ebec, Canada. No external funding; no conflict of interest. See the Disclosure.}}
+\date{21 November 2026 --- companion note to the V2.11 erratum edition of the Dipolar Strings manuscript}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent The Dipolar Strings (DS) programme models the vacuum as a gas of dipolar cells represented by impedance-matched bifilar transmission lines, and asked whether the interactions and the elementary particles could be reconstructed from that element. Between September and November 2026 the attempt was carried out statement by statement, each step a self-contained script with pass/fail checks. The outcome is negative, and the negative results are general: they hold for the whole class of ``vacuum as a network of matched lines'' models, not for one set of parameters. This note collects fourteen of them with their proofs or proof sketches and the scripts that reproduce them: no intrinsic mass scale; coiling does not raise the coupling; no stable three-dimensional soliton; charge is not carried by connectivity; no charge-conserving doublet from connectivity; a sign obstruction for neutrino masses; the extended electron is excluded by form factors; a spin-$\tfrac12$ excitation of a cubic pulse network travels at one third of the link speed against one half for the photon; a circulation quantum fixes no radius without a tension; impedance matching fixes transverse ratios only; saturable self-trapping is the bag model and cannot make the electron; a scalar gravitational sector with a rest frame has $\alpha_1 = -8$; and, under general-relativistic hydrostatics, the medium's compact equilibria are not dark. We state what survives: a set of hadronic ratios conditional on two posed integers, and identities about the representation. The note is offered as a record of closed routes for anyone attempting a model of this type.
+\end{abstract}
+
+\section{The class of models}
+A DS vacuum is a medium made of dipolar cells (``dipolar quantum doubles'', $\Ncd = 2$), each a bifilar transmission line matched to the impedance of free space, $Z_{\rm bif} = Z_0$, arranged on a cubic weave whose scattering node is the symmetric condensed node of the transmission-line-matrix method (Johns). Matter was to be made of closed loops of the same string ($\Ncd \ge 3$), charge of a fluid of $\pm e/3$ per strand, gravity of a scalar impedance field $Z(\vec x)$ with an exponential profile, and compact objects of the compressed medium itself. The manuscript \cite{ds_v210} states the axioms (A1--A8) and the results claimed; the matter-sector record \cite{ds_matter} and the constraints file of the repository \cite{ds_repo} hold the statements, scripts and verdicts referred to below by their step numbers R$n$. Every result below is reproduced by a script that prints a \texttt{RESULT} line with zero failures; the paths are given relative to the repository root.
+
+The results are negative for the programme but positive as knowledge: they say what no model of this class can do without adding something that is not a matched line.
+
+\section{The results}
+
+\begin{prop}[No intrinsic mass scale]
+A purely electromagnetic, impedance-matched vacuum is conformally invariant and has no intrinsic scale: absolute masses are inputs, and only ratios can be derived.
+\end{prop}
+\noindent\emph{Proof sketch.} Four independent analyses converge: the equation of state $P = u/3$; the single-velocity character of the linear lattice; the zero-point sum over a braided defect, a pure ultraviolet term proportional to the cutoff; and, non-perturbatively, the fact that the soliton-to-quantum mass ratio of a transmission line is fixed by its characteristic impedance alone, the relevant coupling being $Ze^2/2\hbar = 2\pi\alpha$ at $Z = Z_0$, so that any soliton of the line weighs $O(1/\alpha)$ times its own quantum. Strong coupling would require $Z \approx 174\,Z_0$, incompatible with the transparency of the vacuum. (\cite{ds_v210}, open problem on the mass scale; \texttt{matter/CONSTRAINTS.md} \S1.)
+
+\begin{prop}[Coiling does not raise the coupling]
+The characteristic impedance of a line, $\sqrt{L/C}$ of a conductor geometry, and the impedance of the medium, $\sqrt{\mu/\varepsilon}$ which sets $\alpha = e^2 Z_0/2h$, are distinct quantities; raising the former by winding does not raise the latter, so no confinement-type strong-coupling regime is reachable by geometry.
+\end{prop}
+\noindent(\texttt{matter/CONSTRAINTS.md} \S1a.) A corollary closes the mass law $m = \kappa L$: under the electron's own thin-wire electrodynamics, 27 strings of length $\lone$ cannot be wound into anything above $\approx 72\,L_e$ or $10.5\,Z_e$ against $1836$ and $22.7$ required for the proton; the law and the index are jointly unrealizable (\texttt{matter/scripts/proton\_object\_search.py}, 9/9).
+
+\begin{prop}[No stable three-dimensional soliton]
+The telegrapher action $S = \tfrac12\int dt\,dx\,[C'(\partial_t\Phi)^2 - (\partial_x\Phi)^2/L']$ coarse-grained to three dimensions contains no term that evades Derrick's theorem; the natural chiral repair is excluded; string bending does not supply the missing term; and the weave has no charged carrier for an induced Faddeev term.
+\end{prop}
+\noindent\emph{Proof sketch.} Under $x \to \lambda x$ a term with $k$ first derivatives scales as $\lambda^{3-k}$: potential $\lambda^3$, gradient $\lambda^1$, both monotonic. A one-derivative chiral (Dzyaloshinskii--Moriya) term $\lambda^2$ stabilizes only if $|B| \ge \sqrt{3AC}$, which at the Compton scale requires a vacuum chirality of order unity, excluded by bounds on the rotation of astrophysical polarization by more than thirty orders of magnitude. Terms quartic in first derivatives (Faddeev) or quadratic in second derivatives scale as $\lambda^{-1}$ and would stabilize, but string bending gives a Frank constant ($\lambda^1$), the differential mode of the bifilar pair has a vanishing Berry connection (\texttt{matter/scripts/step2\_bifilar\_berry\_phase.py}, 7/7), the induced term on a single closed bundle has no local static density (\texttt{step4\_induced\_faddeev.py}, 16/16), and the weave's inter-pair carrier is exactly neutral (\texttt{step5\_carrier.py}, 17/17). (\texttt{matter/CONSTRAINTS.md} \S3--3a.)
+
+\begin{prop}[Charge is not carried by connectivity]
+A stationary state bearing a net flux through a closed surface requires a divergence source inside it; the braided defect, with either handedness and at equal cost, provides none. Charge, if present, lives in the constitutive content of the string, whose equation of state is unspecified.
+\end{prop}
+\noindent(\cite{ds_v210}, open problem on charge; \texttt{matter/CONSTRAINTS.md} \S2.) Three consequences survive: the achiral node conserves net chirality, so chiral solitons are created in mirror pairs; annihilation is mechanical; spatial inversion exchanges the winding senses, so parity acts as charge conjugation --- which puts the weak sector, where P and C are violated separately, outside the class.
+
+\begin{prop}[No charge-conserving doublet from connectivity; protection and mixing are exclusive]
+For a three-string closure the physical states of the connected sector are the orbits of the two 3-cycles under the relabelling gauge group $G$. If $G$ contains an odd permutation (the $O_h$ node does) the two merge: no doublet. If not, they are distinguished by the sense of traversal, which under charge-as-chirality is the charge, and $[\hat Q, H] = 0$ forces $\langle -|H|+\rangle = 0$: no mass mixing. Moreover a two-state label that is topologically protected commutes with every local operator and cannot mix, while one that mixes is not protected and has no reason to be degenerate.
+\end{prop}
+\noindent(\texttt{matter/scripts/audit\_s3\_reconnection.py}; \texttt{matter/CONSTRAINTS.md} \S8--9.) Any Dirac-like two-component structure in this class is a new field.
+
+\begin{prop}[Sign obstruction for neutrino masses]
+Every mass mechanism available in the class makes a mass directly proportional to the available scale; the observed neutrino masses require a mechanism inversely proportional to a large scale. The mismatch is a sign in the exponent, not a magnitude: massless unfolded states are excluded by oscillations, the inductive micro-loop overshoots $\sum m_\nu < 0.12$~eV by $\ge 10^6$, the WKB-weighted mass by $\sim 300$.
+\end{prop}
+\noindent(\cite{ds_v210}, open problem 1; \texttt{matter/CONSTRAINTS.md} \S7.)
+
+\begin{prop}[The extended electron is excluded]
+A charge $e$ carried by a ring of radius $R_3 = \hbar/m_e c = 386$~fm has the form factor $j_0(qR_3)$, excluded by Compton scattering, $e$--$p$ scattering and LEP ($G_E = 1$ down to $10^{-3}$~fm). A Bohr magneton carried by a charge loop requires $R \ge R_3$ at $v \le c$. The inductive self-energy of the loop at its own current is $2.19$~keV, $0.43\,\%$ of $m_e c^2$; the quantum of its LC mode is $101$~keV and reproduces neither $m_e$ with its zero point nor the absence of excited electrons.
+\end{prop}
+\noindent(R100--R103, R121; \texttt{matter/redraw/ring\_form\_factor.py}, \texttt{internal\_lc\_oscillator.py}.) The ring's numbers $S = \hbar/2$, $\mu_B$, $g = 2$ are identities of the choice $R = R_3$, $E_{\rm circ} = m/2$, $q = e$, fitted to Dirac, not outputs.
+
+\begin{prop}[A spinor on a cubic pulse network is too slow]
+On the cubic weave of the model, and on every pulse network of its type, a helicity-locked spin-$\tfrac12$ excitation propagates at $1/3$ of the link speed, the photon at $1/2$ or more: a ratio $\le 2/3$, excluded at $10^{-11}$. The identity $\sigma\cdot\hat n = 1$ with Wigner--Eckart makes the $1/3$ universal. The one lattice that carries Weyl and Maxwell at one speed, the Weyl automaton, needs a non-reciprocal node of symmetry $T_h$ with a physical quarter-wave, outside the substrate constraints C1--C5 and against axiom A5.
+\end{prop}
+\noindent(R105--R112; \texttt{matter/redraw/node\_transport.py}, \texttt{polarized\_spinor\_node.py}, \texttt{pulse\_network\_universality.py}, \texttt{weyl\_automaton.py}, \texttt{coin\_node\_axioms.py}.) Consequently the electron cannot be a quantum of the same lattice as the photon in this class.
+
+\begin{prop}[A circulation quantum fixes no radius without a tension]
+For one quantum of circulation on a closed path, $S = 2\pi\hbar A/L^2$ equals $\hbar/2$ if and only if the path is a circle, of any radius: an isoperimetric identity, not a condition. The angular momentum of a closed flow is origin-independent, and an energy functional with all terms $\propto 1/R$ has no extremum. A tension restores one: $E = 2\pi\sigma R + \kappa\hbar c/R$ has its minimum at $R^* = \sqrt{\kappa\hbar c/2\pi\sigma}$, and the posed rule ``one quantum $\pi\hbar c$ per circuit'' is the Nambu--Goto string at $J = \tfrac12$, $\sqrt{\pi\sigma} = \pi\hbar c/\lone(9)$, an identity of definitions.
+\end{prop}
+\noindent(R113, R120; \texttt{matter/redraw/nucleon\_ring\_radius.py}, \texttt{nambu\_goto\_regge.py}.) With the base's tension the Regge slope is $\alpha' = 1/2\pi\sigma = 0.859$~GeV$^{-2}$, $3$--$10\,\%$ below the measured trajectories, in the same direction as the lattice string tension; the first quantum correction of the string (L\"uscher, $-64$~MeV at $\lone(9)$) lowers the static part below what the magnetic moment requires.
+
+\begin{prop}[Impedance matching fixes transverse ratios only]
+Matching a bifilar line to $Z_0$ fixes $D/r = 2\cosh\pi \approx e^\pi$; matching a coaxial line fixes $b/a = e^{2\pi}$; chains of matched sections are matched for every length; a bundle of $n$ strands has an effective exponent $|p_{\rm eff}| \le 1.1$. No matching condition yields a strand count or a length-scale exponent $2\pi$. The identity $(2\cosh\pi)^2 = e^{2\pi}(1 + 2e^{-2\pi})$ relates the two transverse ratios and nothing else.
+\end{prop}
+\noindent(R116; \texttt{matter/redraw/ladder\_exponent\_matching.py}.)
+
+\begin{prop}[Saturable self-trapping is the bag model and cannot make the electron]
+A medium whose impedance rises with the local energy density, $Z(u) = Z_0[1 + (u/u_s)/(1 + u/u_{\rm sat})]$, gives the envelope of a carrier wave a saturable nonlinear Schr\"odinger equation. In one dimension every packet self-traps; in two the threshold is Townes' ($\tilde N_c = 11.70$); in three the cubic case collapses and the saturable case has a universal threshold $\tilde N_{\min} = 158/\sqrt{x_s}$, $x_s = u_{\rm sat}/u_s$, with a stable branch above it. The mass of a lump of $N_q$ quanta at threshold is $Mc^2 = \tilde N_{\min}^{1/4}E_s N_q^{3/4}$ with $E_s = (u_s(\hbar c)^3)^{1/4}$: the bag-model law. The 2026 dark-field bound on low-energy light-by-light scattering, $\sigma < 7\times10^{4}\,\sigma_{\rm QED}$ at $116$~eV \cite{hibef2026}, gives $u_s > 5.7\times10^{26}$~J/m$^3$, i.e. $E_s > 2.3$~MeV: the electron as such a lump would need $E_s = 0.14$~MeV, excluded by a factor $6\times10^4$ in energy density, and a nucleon of three quanta needs $E_s \approx 120$~MeV, the bag constant, $10^{10}$ above the medium's rest energy density. Any nonlinearity strong enough to trap acts above the Schwinger density, where the real vacuum creates pairs.
+\end{prop}
+\noindent(R119, R122; \texttt{matter/rebuild/step1\_saturable\_selftrapping.py}.) Lumps of massless quanta free to leave are metastable; stability requires a conserved charge or a confined exterior.
+
+\begin{prop}[A scalar gravitational sector with a rest frame has $\alpha_1 = -8$]
+Let the gravitational field of the medium be a scalar $\chi$ evaluated in the medium's rest frame $S$, with matter coupled to the metric $ds^2 = -e^{-\chi}dt^2 + e^{\chi}d\vec x^{\,2}$ and $\chi = 2U$, $U$ the instantaneous Newtonian potential (the manuscript's isotropic exponential representative with the elliptic constraint). The metric is diagonal in $S$: a moving mass carries no gravitomagnetic term, whereas the parametrized post-Newtonian form requires $g_{0i} = -\tfrac12(4\gamma+3+\alpha_1-\alpha_2)V_i - \tfrac12(1+\alpha_2)W_i$. Hence $\alpha_1 = -(4\gamma+4) = -8$ for $\gamma = 1$, independently of the contracted or uncontracted reading of the potential ($\alpha_2 = 0$ or $-1$) and of the source's kinetic coefficient ($\alpha_3 = -4$ or $-3$). Binary pulsars give $|\alpha_1| < 4\times10^{-5}$ \cite{shao2012}.
+\end{prop}
+\noindent\emph{Proof.} Two independent readings agree: in $S$, from the vanishing of $g_{0i}$ and the $\Phi_1$ coefficient; in the comoving frame, after an exact Lorentz boost, a post-Newtonian expansion and the gauge $t' \to t' + \lambda(\vec w\cdot\vec x')U$. The 1PN metric of General Relativity for a moving mass is reproduced as a control ($g_{0x} = -4vU$, all $\alpha = 0$). (R124; \texttt{matter/rebuild/alpha12\_preferred\_frame.py}, SymPy.) \emph{Corollary.} Any gravitational sector of a medium with a rest frame must carry a gravitomagnetic field $g_{0i} = -4v_iU$; a scalar cannot. If a tensor bootstrap makes the exterior General Relativity, the frame is unobservable in gravitation.
+
+\begin{prop}[Under general-relativistic hydrostatics the medium's compact equilibria are not dark]
+The manuscript's structure equations for the compressed medium ($dM/dr = 4\pi r^2(u-u_0)/c^2$, $dP/dr = -(u+P)GM/r^2c^2$, $P = u/3$, surface at $P = u_0/3$) omit the two factors of the Tolman--Oppenheimer--Volkoff equation. With them restored and every other convention kept, the stable branch survives but its critical mass falls from $1.29\times10^{6}$ to $3.9\times10^{5}\,M_\odot$ and its maximal stable compactness from $0.82$ to $0.31$ (each factor alone: $0.40$, $0.53$), below the $2/3$ needed for a shadow and below the bound for self-gravitating radiation spheres, $0.49$ \cite{swz1981}; the Newtonian $0.82$ exceeds that bound. The most compact stable star has surface redshift $1.20$.
+\end{prop}
+\noindent(R125; \texttt{matter/rebuild/limit\_states\_tov.py}; the control reproduces the manuscript's branch.) The dark horizonless objects, the frozen collapses ($c_{\rm eff}\to0$ was the excluded scalar dynamics) and the falsification targets built on them were properties of the scalar force law, not of the medium.
+
+\begin{prop}[A lattice at the Compton scale cannot carry the photon]
+If the medium's state is an amplitude over its configurations (superposition), the photon is the quantum of the lattice wave and carries its dispersion, $E^2 = p^2c^2[1 - (E/E_{QG,2})^2]$ with $E_{QG,2} = \sqrt{12}\,\hbar c/\ell$ for a cubic lattice of spacing $\ell$. For $\ell = \lone = 809$~fm, $E_{QG,2} = 0.85$~MeV, against the LHAASO bound $E_{QG,2} > 6\times10^{-8}E_{\rm Pl} = 7\times10^{11}$~GeV \cite{lhaaso2026}: a photon-carrying lattice needs $\ell < 10^{-27}$~m. The zero-point energy of a quantized lattice at $\lone$, $\pi^2\hbar c/8\lone^4 \approx 9\times10^{22}$~J/m$^3$, exceeds the dark-energy density by $10^{32}$.
+\end{prop}
+\noindent(R123; \texttt{matter/redraw/a3\_adoption\_consequences.py}.) $\lone = 2\pi\hbar/3m_ec$ survives as the electron's Compton scale, not as the spacing of a medium.
+
+\section{What survives}
+Within the class, what can be derived without a free number is: identities about the representation ($D/r = 2\cosh\pi$; Maxwell's equations in one dimension rewritten in circuit variables and the uniqueness of the Johns node under the constraints C1--C5; the exact covariance identity of the scalar sector; $\gamma = \beta = 1$ inherited from the isotropic exponential metric; $M_{\rm crit}\propto\lone^2$ as a dimensional statement); combinatorics once the rules are posed (the observed charge spectrum $\{0, \pm\tfrac13, \pm\tfrac23, \pm1\}$ and a colour label from three strands carrying $-\tfrac13, 0, +\tfrac13$; Koide's relation with a posed phase); and two parameter-free hadronic numbers that rest on two posed integers, the strand count $9$ and the exponent $2\pi$: the strong part of the neutron--proton splitting, $(2\alpha/3)\,3^{2\pi}m_ec^2 = 2.47$~MeV against the lattice value $2.52 \pm 0.29$~MeV, and the string tension $\sqrt\sigma = (3/2\sqrt\pi)\,3^{2\pi}m_ec^2 = 430$~MeV, equal to the Regge--Cornell phenomenological value and $2$--$7\sigma$ below the lattice determinations with dynamical quarks \cite{bulava2024}. Both are post-dictions. No measured quantity is derived from inputs fixed elsewhere.
+
+\section{Disclosure and method}
+Each result above was obtained as a step of a recorded procedure: a statement of the author, a self-contained script with pass/fail checks, a verdict (derived, conditional, identity, coincidence, excluded), and an entry in the public record. The scripts were written by an AI system (Anthropic's Claude, through Claude Code sessions in 2026) working from the author's statements, which the author directed and decided upon; the same system wrote this note. This is a documented human--AI collaboration, not independent verification, and no human peer review has taken place. The negative results are nevertheless of the kind that can be checked line by line: each is a short calculation or a known theorem applied to a stated action, and the repository gives every number's provenance.
+
+\begin{thebibliography}{9}
+\bibitem{ds_v210} R. St-Pierre, \textit{Dipolar String Model: an Exploratory Framework for the Vacuum from Transmission-Line Electrodynamics}, V2.10 (September 2026) and V2.11 erratum edition (21 November 2026), Zenodo concept DOI 10.5281/zenodo.21196098.
+\bibitem{ds_matter} R. St-Pierre, \textit{The matter sector of the Dipolar Strings framework: a redraw from eight constitutive statements}, draft, \texttt{matter/paper/} of the repository (not for submission).
+\bibitem{ds_repo} \texttt{https://github.com/rstpier/DipolarString}: \texttt{matter/CONSTRAINTS.md}, \texttt{matter/redraw/BASE.md} (steps R1--R125), \texttt{matter/rebuild/}.
+\bibitem{hibef2026} Dark-field search for quantum vacuum signals in the low-energy regime, European XFEL HED instrument with the ReLaX laser, arXiv:2610.39867 (2026); companion letter arXiv:2611.04531.
+\bibitem{shao2012} L. Shao and N. Wex, \textit{New tests of local Lorentz invariance of gravity with small-eccentricity binary pulsars}, Class. Quantum Grav. \textbf{29}, 215018 (2012); C. M. Will, \textit{The confrontation between General Relativity and experiment}, Living Rev. Relativ. \textbf{17}, 4 (2014).
+\bibitem{swz1981} R. D. Sorkin, R. M. Wald and Z. J. Zhang, \textit{Entropy of self-gravitating radiation}, Gen. Relativ. Gravit. \textbf{13}, 1127 (1981).
+\bibitem{lhaaso2026} LHAASO Collaboration, \textit{Stringent tests of Lorentz invariance violation from LHAASO observations of GRB 221009A}, arXiv:2402.06009 (v3, 2026).
+\bibitem{bulava2024} J. Bulava, F. Knechtli, V. Koch, C. Morningstar and M. Peardon, Phys. Lett. B \textbf{854}, 138754 (2024).
+\end{thebibliography}
+\end{document}

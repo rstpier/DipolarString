@@ -16,9 +16,17 @@ releases.
 
 ---
 
-## Latest Stable Release
+## Latest Release
 
-**Version:** V2.10, frozen 7 September 2026 — an incremental package over V2.9.2
+**Version:** V2.11, erratum edition of 21 November 2026 (package frozen 22 November 2026) — the
+frozen V2.10 manuscript with a twelve-item erratum applied in place, every item reducing the
+model's claims; plus a companion note of fourteen negative results. Not yet deposited on Zenodo.
+
+- Erratum: `v2.11/ERRATUM.md` — manuscript: `v2.11/manuscript/DS_model_V2_11_erratum.pdf`
+- Negative results: `v2.11/negative_results/DS_negative_results.pdf`
+- Verification: `v2.11/verification/verify_v2_11.py` — source checks + the seven evidence scripts
+
+**Zenodo record:** V2.10, frozen 7 September 2026 — an incremental package over V2.9.2
 
 - Manuscript: `v2.10/manuscript/DS_model_V2_10_Zenodo.pdf`
 - LaTeX source: `v2.10/manuscript/DS_model_V2_10_Zenodo.tex`
@@ -35,7 +43,8 @@ experimental validation of the physical model.
 ## Repository Structure
 
 ```
-v2.10/     Latest stable release — corrected manuscript and its figures (incremental)
+v2.11/     Erratum edition (21 November 2026) — manuscript with erratum E1–E12, note of negative results
+v2.10/     Zenodo record — corrected manuscript and its figures (incremental)
 v2.9/      V2.9.2 package — scripts, data, verification suite, historical archives
 v2.8/      Johns-node microstructure sessions (DQD development)
 v2.7/      Archived release
@@ -46,6 +55,9 @@ matter/    Working directory for the matter sector — not part of any release
 
 V2.10 changes three sentences of the manuscript and nothing else, so it does not duplicate
 the V2.9.2 code and data; `v2.9/` stays frozen and its checksums remain valid.
+
+`matter/rebuild/` holds the November 2026 reconstruction attempt and its stopping criteria (all
+three fired on 21 November 2026: `matter/rebuild/A3.md`).
 
 `matter/` is a research front, not a release. The framework is a theory of the medium,
 not of matter; that directory is where an attempt at the matter sector is built, and it

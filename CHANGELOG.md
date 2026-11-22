@@ -1,5 +1,33 @@
 # Changelog
 
+## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
+
+- Le manuscrit V2.10 gelé reçoit un erratum appliqué sur place, douze points marqués
+  « Erratum En » dans le texte et listés dans l'historique du document ; chacun réduit
+  les revendications, et deux (E6, E7) effectuent des calculs que V2.10 déclarait non
+  faits, tous deux contre le modèle. Détail : `v2.11/ERRATUM.md`
+- E1 : charge par chiralité d'enroulement et masse par inductance de boucle retirées du
+  résumé (la charge n'est pas portée par la connectivité ; l'énergie inductive de la
+  boucle vaut 0,43 % de m_e c²)
+- E2 : l'électron comme soliton étendu est retiré (facteur de forme j₀(qR₃), magnéton,
+  quantum LC) ; l'électron électromagnétique est celui de Dirac
+- E3 : l'impédance du proton est bloquée en principe (m = κL et N_p = 27 irréalisables
+  ensemble) ; E4 : Γ_pole = 1/3 est un coefficient de réflexion, son identification à
+  e/3 une identification ; E5 : A5 reformulé (« D fixé, pas de fusion de pôles »)
+- E6 : paramètres de repère privilégié calculés : α₁ = −(4γ + 4) = −8 sans paramètre
+  libre, exclu de 2·10⁵ par les pulsars ; problème ouvert n° 6 clos négativement
+- E7 : les étoiles de substrat réintégrées avec les deux facteurs de la RG : M_crit =
+  3,9·10⁵ M☉, compacité maximale stable 0,31 ; aucun objet sombre, plus de mécanisme de
+  gel ; falsificateurs 1–3 et prédiction LRD enregistrée retirés
+- E8 : sous l'axiome d'amplitudes le photon porte la dispersion du réseau ; LHAASO exclut
+  ℓ₁ comme pas ; E9 : un spineur de la trame cubique va à 2c₀/3 ; E10 : point zéro à ℓ₁ =
+  10³² ρ_Λ, A8 obligatoire ; E11 : grille des statuts reclassée ; E12 : adoption de
+  l'axiome d'amplitudes A9 par l'auteur (21 novembre 2026) enregistrée
+- Note d'accompagnement `v2.11/negative_results/` : quatorze résultats négatifs structurels
+  valables pour toute la classe « vide = réseau de lignes adaptées »
+- `verify_v2_11.py` : contrôles de source, note, relance des sept scripts de preuve
+  (R119–R125), suite V2.9.2 déléguée si ses dépendances sont présentes
+
 ## V2.10 (7 septembre 2026)
 
 - Cible de falsification primaire : une phrase résiduelle de la section LRD

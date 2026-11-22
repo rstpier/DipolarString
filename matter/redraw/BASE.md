@@ -2998,3 +2998,11 @@ mécanisme de gel, pas de prédiction propre en gravitation. Avec R123 (le rése
 l'électron) et R124 (α₁ = −8), **le programme sous A3 a épuisé ses trois critères d'arrêt en une journée** : de la CD
 restent les rapports du secteur hadronique (R1–R120, conditionnels à 9 et 2π, en tension sur √σ) et les résultats
 négatifs généraux.
+
+**Note de consolidation (21–22 novembre 2026).** Décision de l'auteur : « On consolide : erratum V2.11 et note des
+résultats négatifs. » Fait : le paquet `v2.11/` contient le manuscrit V2.10 avec un erratum de douze points appliqué sur
+place (E1–E12, chacun marqué dans le texte et repris dans l'historique du document ; `v2.11/ERRATUM.md` donne pour
+chaque point l'énoncé de V2.10, la correction et la preuve R-numérotée), la note d'accompagnement
+`v2.11/negative_results/DS_negative_results.pdf` (quatorze résultats négatifs structurels, chacun avec son script), et
+`verify_v2_11.py` (contrôles de source, note, relance des sept scripts de preuve R119–R125). Le dépôt Zenodo de V2.11
+est la décision de l'auteur ; V2.10 reste le dossier de ce qui était revendiqué avant l'erratum.

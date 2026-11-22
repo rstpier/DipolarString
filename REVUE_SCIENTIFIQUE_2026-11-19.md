@@ -528,4 +528,6 @@ gravitation, le problème ouvert n° 6 du manuscrit est résolu négativement, e
 sur ce secteur) sont à réexaminer. Réexaminés (R125) : avec les deux facteurs de la RG restaurés, la branche des
 étoiles de substrat survit mais n'est plus sombre (compacité ≤ 0,31, M_crit = 3,9·10⁵ M☉, surface à 1 + z = 1,2) et
 les effondrements gelés n'ont plus de mécanisme ; les trois critères d'arrêt du programme sous A3 ont joué le même
-jour. Il reste de la CD ses rapports hadroniques et ses résultats négatifs.
+jour. Il reste de la CD ses rapports hadroniques et ses résultats négatifs. Consolidation faite (22 novembre) : paquet
+`v2.11/` avec l'erratum E1–E12 appliqué au manuscrit (recommandation 2) et la note des quatorze résultats négatifs
+(recommandation 6).

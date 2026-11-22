@@ -243,6 +243,8 @@ horizon, surface à 1 + z = 1,2, coupure à log M = 5,59 ; chaque facteur seul s
 newtonien dépasse la borne des sphères de rayonnement (0,49). Les effondrements gelés tenaient à c_eff → 0 du
 secteur scalaire : sans lui, horizon en temps propre fini ; les falsificateurs 1–3 du manuscrit perdent leur base.
 Les trois critères d'arrêt d'A3.md ont joué : de la CD restent les rapports hadroniques et les résultats négatifs.
+Consolidation (21–22 novembre 2026) : paquet `v2.11/` — manuscrit V2.10 avec erratum E1–E12 appliqué sur place
+(`ERRATUM.md`), note des quatorze résultats négatifs (`negative_results/`), `verify_v2_11.py`.
 L'article (`matter/paper/`) est consolidé jusqu'à R125.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
