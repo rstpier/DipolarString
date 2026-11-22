@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 131 steps (R1--R131) backed by 126 scripts.
+statement imposes and what it breaks; the record is 132 steps (R1--R132) backed by 127 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -965,7 +965,14 @@ joining a concatenation, and the chain is an $LC$ ladder whose impedance is the 
 the Regge slope and its zero-point energy gives the intercept $(D-2)/24$, the $1/12$ of the four-dimensional
 exclusion. A finite number $M$ of links breaks Lorentz invariance (two levels that must coincide separate in the
 ratio $\cos(\pi/2M)$), so that links of the size of the base lengths, five per fermi, are excluded, and the chain is
-the string itself in the limit of infinitely fine links. No new number follows.
+the string itself in the limit of infinitely fine links. No new number follows. Taking that limit (R132,
+\texttt{matter/rebuild/ds\_fine\_link\_limit.py}), the deviation falls as $1/M^2$; the limit is Lorentz invariant only
+if the first level, which has the $D-2$ states of a massless vector, is massless, that is in $26$ dimensions, or $10$
+with worldsheet fermions, so that the choice of ten dimensions becomes a consequence for a string valid at all lengths
+(an effective long string remains allowed in four). The elementary dipole moment vanishes and the filament is a
+uniformly polarized line; the string has no intrinsic size, its mean square extent per dimension growing as
+$\alpha'(\ln M+\gamma+\ln(4/\pi))$, the law of Regge shrinkage and flux-tube broadening, in which the only number is
+the tension. No element is left to characterize.
 
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
@@ -1024,7 +1031,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 126 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 127 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

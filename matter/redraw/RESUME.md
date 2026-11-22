@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R131)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R132)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R131).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R132).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -291,7 +291,15 @@ l'impédance est la tension. Ses modes lents redonnent la pente de Regge ; son �
 (D − 2)/24, le 1/12 de R127 B. Mais un nombre fini de maillons brise l'invariance de Lorentz (rapport cos(π/2M)) :
 cinq maillons par fermi, la taille des longueurs de la base, donnent 5 % d'écart, et les tests d'isotropie en exigent
 plus de 10¹⁴ par nucléon. Verdict : écriture connue de la corde, aucun nombre nouveau, maillon de taille finie exclu.
-L'article (`matter/paper/`) est consolidé jusqu'à R131.
+Décision (22 novembre 2026) : le maillon infiniment fin. R132 : c'est la limite continue de la chaîne, la corde.
+L'écart tombe comme 1/M². La limite n'est invariante de Lorentz que si le premier niveau, qui a les D − 2 états d'un
+vecteur sans masse, est sans masse : 26 dimensions, ou 10 avec des fermions ; le choix de dix dimensions (R128) devient
+une conséquence pour une corde valable à toute longueur, une corde effective longue restant permise à quatre. Elle
+demande deux contre-termes exacts ou la supersymétrie. Le dipôle élémentaire n'a plus ni taille ni moment : le filament
+est une ligne uniformément polarisée. Le fil n'a pas de taille propre : α′(ln M + 0,82) par dimension, la loi du
+rétrécissement de Regge et de l'élargissement du tube de flux, où le seul nombre est la tension. Verdict : il n'y a pas
+d'élément à caractériser ; aucun nombre nouveau.
+L'article (`matter/paper/`) est consolidé jusqu'à R132.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -397,11 +405,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R131 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R132 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R131, huit scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R132, neuf scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

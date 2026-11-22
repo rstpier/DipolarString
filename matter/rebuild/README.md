@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_fine_link_limit.py` — R132, après le choix « ok prend le maillon infiniment fin » : la limite continue existe
+  (écart en 1/M²) ; elle n'est invariante de Lorentz qu'à 26 dimensions, ou 10 avec des fermions (premier niveau sans
+  masse) ; deux contre-termes ou la supersymétrie ; filament = ligne uniformément polarisée ; taille du fil
+  α′(ln M + 0,82), sans valeur propre ; aucune taille d'élément.
 - `ds_chain_of_links.py` — R131, après le choix « ok prend la chaîne de maillons » : la corde comme chaîne de maillons
   à ressorts (bits de corde) ; fréquences exactes et pente de Regge ; ordonnée (D − 2)/24 comme énergie de point zéro ;
   un nombre fini de maillons brise l'invariance de Lorentz (cos(π/2M)) ; maillon = dipôle, chaîne = produit de

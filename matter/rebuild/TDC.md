@@ -253,12 +253,43 @@ Elle donne sa place exacte au filament dipolaire et aux cellules LC de la CD d'o
 nouveau, et elle ferme une porte : le maillon ne peut pas avoir la taille d'une longueur de la base. C'est la même
 cause que R123 et R124 : toute structure discrète de taille finie fixe un repère.
 
-## 11. Suite
+## 11. Le maillon infiniment fin (décision du 22 novembre, R132)
+
+L'auteur, devant le §10 : « ok prend le maillon infiniment fin ». C'est la limite continue de la chaîne : le nombre de
+maillons tend vers l'infini, la part de chacun vers zéro. Audit : `ds_fine_link_limit.py`, 6/6.
+
+| Question | Réponse calculée | Statut |
+|---|---|---|
+| La limite existe-t-elle ? | Oui : l'écart de la chaîne à la corde tombe comme 1/M² | Dérivé |
+| À quelle condition respecte-t-elle la relativité ? | Le premier niveau doit être sans masse : 26 dimensions, ou 10 avec des fermions | Dérivé, classique |
+| Que devient le choix de dix dimensions du §7 ? | Une conséquence, pour une corde valable à toute longueur | Dérivé |
+| Et à quatre dimensions ? | Premier niveau à 1033 MeV avec 2 états pour 3 ; seule une corde effective, longue, reste permise | Exclu comme corde fondamentale |
+| Que coûte la limite ? | Deux contre-termes ajustés exactement, ou la supersymétrie, qui les rend inutiles | Dérivé |
+| Que devient le dipôle élémentaire ? | Son moment tend vers zéro ; le fil est une ligne uniformément polarisée, charges aux deux bouts | Identité |
+| Quelle est la taille du fil ? | Aucune taille propre : α′(ln M + 0,82) par dimension, elle croît avec la résolution | Dérivé |
+| Quelle longueur reste ? | ℓ_s = ℓ₁(9)/(π√2) = 0,183 fm, amplitude des vibrations, pas taille d'un élément | Identité |
+
+- **Dix dimensions, à refaire à la main.** Le premier niveau de vibration a D − 2 états. C'est le nombre d'états d'un
+  vecteur sans masse ; un vecteur massif en aurait D − 1. Il doit donc être sans masse. Or sa masse au carré vaut
+  1 − (D − 2)/24 en unités de 1/α′ : zéro pour D = 26. Avec un fermion par dimension elle vaut 1/2 − (D − 2)/16 : zéro
+  pour D = 10.
+- **La taille.** Chaque mode n ajoute α′/n au carré de la taille : la somme croît comme le logarithme du nombre de
+  maillons. De mille à 10³⁰ maillons, 0,5 à 1,5 fm par dimension avec la tension de la base : l'ordre de grandeur d'un
+  hadron, sans valeur définie. C'est la loi connue de l'élargissement du tube de flux et du rétrécissement de Regge ;
+  le seul nombre qui y entre est la tension.
+- **L'élément.** Dans cette lecture, la question d'origine du projet, caractériser l'élément du filament, reçoit sa
+  réponse : il n'y a pas d'élément. Le rapport D/r = 2 cosh π de la CD d'origine n'y a pas de place.
+
+**Verdict.** Le maillon infiniment fin est la corde continue. La limite n'est cohérente, pour une corde valable à toute
+longueur, qu'à dix dimensions avec des fermions : le choix du §7 en découle. Le fil est fixé par sa tension seule ;
+aucun nombre nouveau.
+
+## 12. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
 Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12). Pour le
 §9 : le compte 126 − 25 = 101 et le nombre d'Euler −200 de la quintique. Pour le §10 : les fréquences des chaînes de 2,
-3 et 4 maillons.
+3 et 4 maillons. Pour le §11 : 1 − (D − 2)/24 = 0 et 1/2 − (D − 2)/16 = 0.
 
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,
 hep-th/0105155 ; J. G. Lee et al., Phys. Rev. Lett. 124, 101101 (2020) ; CMS, arXiv:1911.03947, paru dans JHEP
@@ -279,3 +310,6 @@ M. Gross, Invent. Math. 144, 75 (2001).
 *Pour le §10, de mémoire, à vérifier :* R. Giles et C. B. Thorn, Phys. Rev. D 16, 366 (1977) ; I. Klebanov et
 L. Susskind, Nucl. Phys. B 309, 175 (1988) ; C. B. Thorn, hep-th/9405069 ; O. Bergman et C. B. Thorn, Phys. Rev. D 52,
 5980 (1995) ; M. Smiciklas et al., Phys. Rev. Lett. 107, 171604 (2011).
+*Pour le §11, de mémoire, à vérifier :* P. Goddard, J. Goldstone, C. Rebbi et C. B. Thorn, Nucl. Phys. B 56, 109
+(1973) ; L. Brink et H. B. Nielsen, Phys. Lett. B 45, 332 (1973) ; M. Karliner, I. Klebanov et L. Susskind, Int. J.
+Mod. Phys. A 3, 1981 (1988) ; M. Lüscher, G. Münster et P. Weisz, Nucl. Phys. B 180, 1 (1981).

@@ -35,6 +35,12 @@
   chaîne une échelle LC dont l'impédance est la tension ; pente de Regge et ordonnée (D − 2)/24
   retrouvées ; aucun nombre nouveau ; un maillon de taille finie est exclu par l'invariance de
   Lorentz (5 % d'écart pour cinq maillons par fermi, plus de 10¹⁴ exigés par nucléon)
+- Choix de l'auteur : le maillon infiniment fin. R132 : c'est la corde continue ; la limite
+  n'est invariante de Lorentz qu'à 26 dimensions, ou 10 avec des fermions, ce qui fait du choix
+  de dix dimensions une conséquence ; le dipôle élémentaire n'a plus ni taille ni moment, le
+  filament est une ligne uniformément polarisée ; le fil n'a pas de taille propre (croissance
+  logarithmique avec la résolution) ; il n'y a pas d'élément à caractériser ; aucun nombre
+  nouveau
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

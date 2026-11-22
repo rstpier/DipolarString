@@ -3322,3 +3322,51 @@ la pente et l'ordonnée à l'origine ; un maillon de la taille d'une longueur de
 L. Susskind, Nucl. Phys. B 309, 175 (1988) ; C. B. Thorn, hep-th/9405069 ; O. Bergman et C. B. Thorn, Phys. Rev. D 52,
 5980 (1995) ; H. Blöte, J. Cardy et M. Nightingale, Phys. Rev. Lett. 56, 742 (1986) ; M. Smiciklas et al., Phys. Rev.
 Lett. 107, 171604 (2011).
+
+**Décision (22 novembre 2026) : le maillon infiniment fin.** L'auteur, devant R131 : « ok prend le maillon infiniment
+fin ». C'est la limite continue de la chaîne : le nombre de maillons M tend vers l'infini et la part m de chacun vers
+zéro, à impulsion P⁺ = Mm fixée.
+
+**R132 — Le maillon infiniment fin : la limite continue de la chaîne, ses conditions, ce qu'elle laisse.**
+Script `matter/rebuild/ds_fine_link_limit.py`, 6/6.
+*A. La limite existe.* L'écart du mode n de la chaîne à celui de la corde vaut 1 − sin(x)/x, x = nπ/2M, soit
+n²π²/(24M²) : il est divisé par 100 quand M est multiplié par 10. La brisure de R131 C s'éteint comme 1/M².
+*B. Elle n'est invariante de Lorentz qu'en dimension critique.* Le premier niveau a D − 2 états, ceux d'un vecteur
+sans masse (un vecteur massif en demande D − 1) : sa masse doit être nulle. Avec l'ordonnée de la chaîne (R131 B),
+α′M² = 1 − (D − 2)/24, nul si et seulement si D = 26. Avec un fermion de feuillet par dimension (modes demi-entiers,
+dont la somme de chaîne a pour terme constant +π/24, vérifié), a = (D − 2)/16 et α′M² = 1/2 − (D − 2)/16, nul si et
+seulement si D = 10. Le coefficient d'anomalie de l'algèbre de Lorentz, m[1 − (D − 2)/24] + (1/m)[(D − 2)/24 − a],
+s'annule pour tout m dans le cas (26, 1) seulement, et son second crochet est nul en toute dimension avec l'ordonnée
+propre de la chaîne. À quatre dimensions : premier niveau à 1033 MeV, 2 états pour 3 requis, le résultat de R127 B.
+**Le choix de dix dimensions (R128) devient une conséquence : DÉRIVÉ (classique, Goddard, Goldstone, Rebbi et Thorn
+1973 ; Brink et Nielsen 1973).** Portée : corde fondamentale, valable à toute longueur ; une corde effective, longue
+devant ℓ_s, reste permise à quatre dimensions (R127 B).
+*C. Les contre-termes.* Par dimension, en unités de la tension : boson seul, 4M²/π − M − π/12 ; boson et fermion à
+modes demi-entiers, −M − π/8 (l'énergie propre des maillons s'annule, vérifié) ; boson et fermion de mêmes fréquences,
+0. Pour la chaîne bosonique la compensation doit être exacte à π²/(48M²) près, soit 1,7·10⁻³⁰ pour 3,5·10¹⁴ maillons,
+et rigoureuse à la limite. Le maillon infiniment fin demande deux contre-termes ajustés exactement, ou la
+supersymétrie, qui les rend inutiles.
+*D. Le dipôle continu.* N dipôles bout à bout de charge q sur une longueur L : moment total qL pour tout N, charges
+intérieures nulles, potentiel identique à celui des deux charges de bout (vérifié jusqu'à N = 2000). Le moment de
+chaque maillon, qL/N, tend vers zéro. Le filament dipolaire est une ligne uniformément polarisée, de polarisation
+linéique q, à charges liées aux deux bouts seulement : le dipôle élémentaire n'a ni taille ni moment propres.
+*E. La taille du fil.* Écart quadratique moyen d'un maillon au centre, par dimension transverse : α′(ln M + c), avec
+c = γ + ln(4/π) = 0,8188 (constante d'Euler ; vérifié jusqu'à 10⁵ maillons). Il croît comme le logarithme du nombre
+de maillons et diverge à la limite : un fil aux maillons infiniment fins est infiniment étalé, et ce que l'on en voit
+dépend de la résolution. Avec la tension de la base, α′ = 0,0335 fm² par facteur e ; de mille à 10³⁰ maillons, 0,51 à
+1,53 fm par dimension : l'ordre de grandeur d'un hadron, sans valeur définie (règle 4 : pas une trouvaille). C'est la
+loi du rétrécissement de Regge, B = B₀ + 2α′ ln s avec 2α′ = 1,72 GeV⁻², et de l'élargissement logarithmique du tube
+de flux, w² = (D − 2)α′ ln(R/R₀), 0,067 fm² par facteur e à quatre dimensions. Le seul nombre qui y entre est la
+tension, déjà confrontée en R119 et R120.
+*F. Les longueurs.* Il ne reste aucune taille d'élément. ƛ_e est une masse mesurée ; ℓ₁(3) et ℓ₁(9) sont construites
+sur elle avec les entiers posés ; la seule longueur tirée de la tension est ℓ_s = ℓ₁(9)/(π√2) = 0,1829 fm (identité),
+amplitude des vibrations et non taille d'un maillon : chaque mode n ajoute α′/n à la taille. Paramètres du fil : la
+tension et la probabilité de jonction ; le reste vient de R128 à R130.
+**Verdict : le maillon infiniment fin est la corde continue (IDENTITÉ). La limite n'est cohérente, pour une corde
+valable à toute longueur, qu'à dix dimensions avec des fermions (DÉRIVÉ, classique). Elle ne laisse aucun élément à
+caractériser : dans cette lecture, la question d'origine du projet reçoit sa réponse, il n'y a pas d'élément, et le
+rapport D/r = 2 cosh π de la CD d'origine n'y a pas de place. Le fil est fixé par sa tension seule. Aucun nombre
+nouveau.**
+*Sources, données de mémoire, à vérifier :* P. Goddard, J. Goldstone, C. Rebbi et C. B. Thorn, Nucl. Phys. B 56, 109
+(1973) ; L. Brink et H. B. Nielsen, Phys. Lett. B 45, 332 (1973) ; M. Karliner, I. Klebanov et L. Susskind, Int. J.
+Mod. Phys. A 3, 1981 (1988) ; M. Lüscher, G. Münster et P. Weisz, Nucl. Phys. B 180, 1 (1981).
