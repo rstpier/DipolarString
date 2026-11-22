@@ -345,6 +345,14 @@ en cours. La pente publiée 0,884 GeV⁻², les masses d'extrémité et les mass
 restent donc citées de mémoire. Les résumés donnent un élément de plus : selon Badalian et Bakker, l'aplatissement du
 potentiel abaisse les pentes d'environ 30 %, le sens et l'ordre de grandeur qu'il faut pour l'écart de 9 à 11 %.
 
+**Lecture à la source, faite (R136, `ds_b1_reproduction.py`, 6/6).** L'auteur a autorisé le téléchargement depuis
+arXiv. L'ajustement de l'article de 2014 est refait à l'identique : neuf familles, 38 états, pente 0,8848 contre
+0,884 publié, même mesure d'écart, 13,13·10⁻⁴, et les 38 masses calculées à 4 MeV près. La tension des spectres vaut
+424 ± 2,5 MeV. Celle de la base en est à 2,5 écarts types, celle du réseau à 2,9. Côté réseau, la tension dépend de sa
+définition : 445 MeV dans le modèle qui traite la brisure, 467 à 482 MeV dans des ajustements du potentiel sous 1 fm.
+Et la piste publiée n'est pas une réponse : elle vient d'un autre modèle, qui garde la tension des spectres et ne la
+compare pas au réseau. La question B3 se pose donc des deux côtés.
+
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
 ouverte, B3, pour laquelle la CD n'apporte aucun nombre.
 
@@ -382,4 +390,5 @@ M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ; R. Sommer, Nucl. Phys. B 411, 839 
 71, 114513 (2005) ; masses des états autres que ρ/a, N et Δ.
 *Pour le §13, vérifiées par recherche le 22 novembre :* J. Bulava et al., Phys. Lett. B 854 (2024) 138754,
 arXiv:2403.00754 ; A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 06 (2018)
-148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849.
+148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849. *Lus à la source le 22 novembre (R136) :* arXiv:1402.5603,
+arXiv:2403.00754, arXiv:1901.10280.

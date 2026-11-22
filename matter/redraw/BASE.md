@@ -3520,3 +3520,55 @@ du potentiel abaisse les pentes radiale et orbitale d'environ 30 % par rapport a
 0,51(1) GeV². Le sens et l'ordre de grandeur sont ceux qu'il faut pour les 9 à 11 % de R134 : la piste est sérieuse,
 non vérifiée. Références repérées pour B2 : « The determination of potential scales in 2+1 flavor QCD »
 (arXiv:2412.10215) ; PoS(LATTICE2024)390 sur la structure du tube de flux en QCD complète.
+
+**Autorisation de l'auteur (22 novembre 2026) :** « ok autorise le téléchargement depuis arxiv ». Quatre articles ont
+été téléchargés depuis arxiv.org et lus : Sonnenschein et Weissman, arXiv:1402.5603 et arXiv:1801.00798 ; Bulava et
+al., arXiv:2403.00754 ; Badalian et Bakker, arXiv:1901.10280. L'autorisation ne porte que sur arXiv : les tables du
+PDG n'ont pas été téléchargées.
+
+**R136 — Le calcul B1 refait à l'identique de l'article de 2014, lu à la source, et ce que la lecture corrige.**
+Script `matter/rebuild/ds_b1_reproduction.py`, 6/6. Masses de la table 8 de l'article ; mesure d'écart de l'article,
+χ² = (1/(N − 1)) Σ((M² − E²)/M²)², E étant la masse calculée de l'état.
+*A. Ajustements linéaires.* Les neuf trajectoires publiées (π/b, ρ/a, η/h, ω/f, K*, φ, D, D_s*, Ψ), refaites : pentes à
+0,71 % près au pire, ordonnées à 0,02 près, χ² retrouvés (ρ/a : 9,90 publié, 9,87 refait ; π/b : 7,99 et 8,00). La
+trajectoire η/h sans l'η : 0,745 publié, 0,746 refait.
+*B. Ajustements à extrémités massives.* Huit ajustements aux masses publiées, refaits : ρ/a à 65 MeV, 0,896 publié et
+0,895 refait ; K* à 60 et 220 MeV, 0,885 et 0,886 ; φ à 400 MeV, 1,078 et 1,076 ; D à 80 et 1640 MeV, 1,073 et 1,073 ;
+écart maximal 1,5 % (Ψ), ordonnées à 0,005 près.
+*C. Ajustement universel.* Neuf trajectoires, 38 états, masses fixées à 60, 220 et 1500 MeV, une pente et neuf
+ordonnées. Publié : α′ = 0,884 GeV⁻², χ² = 13,13·10⁻⁴. Refait : **α′ = 0,8848, χ² = 13,13·10⁻⁴**, les neuf ordonnées à
+0,01 près, et les 38 masses calculées de la table 8 à 3,7 MeV près (1,1 MeV en moyenne). L'ordonnée publiée du D_s*,
+−0,39, diffère de 1,00 exactement de l'ordonnée refaite avec J : elle est donnée dans la convention du moment orbital
+(table 4 de l'article). **La cible de la feuille de route, reproduire à 2 %, est atteinte à 0,1 %, contre des nombres
+lus à la source.**
+*D. Rectificatifs de R133 et R135.* (1) L'ajustement universel porte sur neuf trajectoires, dont trois avec un quark
+charmé, et garde l'η ; R133 écrivait « six familles, comme l'article ». Avec les états de l'article, les six familles
+légères et étranges donnent à elles seules 0,884 : le nombre de R133 tient, sa description était inexacte. (2) La masse
+d'extrémité du charme est 1500 MeV. (3) 0,884 GeV⁻², 60 et 220 MeV, cités de mémoire, sont confirmés. (4) La pente
+universelle des baryons, 0,95, reste confirmée par recherche seulement.
+*E. La tension dans l'ajustement universel refait.* Erreur commune ajustée pour que le χ² par degré de liberté vaille 1
+(28 degrés de liberté) : α′ = 0,885 ± 0,010 GeV⁻², soit **√σ = 424,1 ± 2,5 MeV pour les spectres**, la valeur de
+Badalian et Bakker (424,1 ± 1,9). Pente fixée à celle de la base : χ² multiplié par 1,22, **2,5 écarts types**. Pente
+fixée à celle du réseau : χ² multiplié par 3,62, 8,6 écarts types d'ajustement, **2,9 avec l'erreur du réseau**. La
+base est en tension modérée, pas exclue ; cela précise R133 C, qui donnait 0,2 à 4,2 selon les variantes.
+*F. Côté réseau, lu à la source.* Bulava et al. décrivent les niveaux par un modèle à trois états dont le potentiel
+est V₀ + σr + γ/r, avec γ = −0,434(11) au point physique, soit 1,66 fois le terme d'une corde seule (−π/12). σt₀ =
+0,1061(7)(20) avec √t₀ = 0,1443(7)(13) fm : √σ = 445(3)(6) MeV. Échelles de Sommer de ce potentiel : r₀ = 0,489 fm
+(réseau 0,472 à 0,474), r₁ = 0,333 fm (réseau 0,3127). Brisure au point physique : 1,211(7)(11) fm pour les quarks
+légers, 1,336(7)(12) fm pour l'étrange. L'article cite deux autres déterminations : 467(7) et 482(7) MeV à 2+1+1
+saveurs, selon le type d'ajustement de Cornell du potentiel sous 1 fm, et, en jauge pure, σt₀ de 0,143 à 0,159, soit
+517 à 545 MeV. **La « tension du réseau » dépend de sa définition : 445 à 482 MeV avec des quarks dynamiques.** Le
+choix de R134, 445 ± 7 MeV, est maintenu : c'est la tension de l'état de corde non brisée dans un modèle qui traite
+la brisure ; les ajustements de Cornell sous 1 fm mêlent la corde et l'échange de gluons.
+*G. La piste publiée, lue.* Badalian et Bakker travaillent dans un autre cadre, un hamiltonien de corde relativiste où
+un potentiel linéaire donne une pente 8σ et non 2πσ. Ils gardent σ = 0,18 GeV², tirée de la pente des trajectoires,
+et ne la comparent pas à la tension du réseau. Leur aplatissement, σ(r) = σ(1 − γf(r)) à partir de 1,2 à 1,4 fm avec
+γ de 0,40 à 0,45, abaisse les masses jusqu'à 300 MeV pour les états 3P et 3D ; la correction de corde abaisse la
+pente orbitale de 5 à 10 % ; l'auto-énergie donne la linéarité et l'ordonnée. **Ce n'est pas une réponse à B3 :** le
+mécanisme va dans le bon sens et a la bonne taille (il faudrait abaisser a₄ de 90 à 115 MeV avec la tension du
+réseau), mais il n'a pas été appliqué à la corde tournante avec la tension de 2024.
+**Verdict : B1 est fait et vérifié contre la source, à 0,1 %. La tension des spectres vaut 424 ± 2,5 MeV ; celle de la
+base, 430,3 MeV, en est à 2,5 écarts types ; celle du réseau, 445 ± 7 MeV, à 2,9, et jusqu'à 482 MeV selon sa
+définition. B3 n'est pas tranchée, et se pose des deux côtés : quelle tension le réseau mesure-t-il, et quel
+mécanisme abaisse les états de grand moment cinétique.** Restent à faire : B2, avec les tables de niveaux du réseau,
+et l'application de l'aplatissement à la corde tournante.

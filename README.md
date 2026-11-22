@@ -37,8 +37,9 @@ releases.
 > tension of the base is neither confirmed nor excluded (inside the envelope of Regge fits, two standard deviations
 > below the lattice value). By delegation of the author the lattice tension, 445 ± 7 MeV, is then adopted (R134): the
 > formula of the base is withdrawn as a prediction and no number specific to the framework remains in that reading;
-> the open question is why Regge slopes exceed by about 10 % the value given by the static tension (R135). No new
-> claim is made. See
+> the open question is why Regge slopes exceed by about 10 % the value given by the static tension (R135). The
+> published trajectory fits, read at the source, are reproduced to 0.1 % (R136): spectroscopic tension 424 ± 2.5 MeV,
+> with the base value 2.5 and the lattice value 2.9 standard deviations above it. No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

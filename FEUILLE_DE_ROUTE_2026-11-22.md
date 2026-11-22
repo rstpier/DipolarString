@@ -191,6 +191,12 @@ trois écarts types ; aucune source trouvée ne confronte directement les deux. 
 Bakker (2019) sur l'aplatissement du potentiel, Sonnenschein et Weissman (2018) sur les corrections quantiques,
 Bulava et al. (2024). B2 reste à faire, avec des tables de réseau.
 
+**État après R136 (22 novembre 2026).** Les articles sont lus à la source. B1 est refait à l'identique de l'article de
+2014 : pente 0,8848 contre 0,884, même χ², les 38 masses à 4 MeV près ; la cible de 2 % est atteinte à 0,1 %. Tension
+des spectres : 424 ± 2,5 MeV. Tension du réseau : 445(3)(6) MeV dans le modèle qui traite la brisure, 467 à 482 MeV
+dans des ajustements du potentiel sous 1 fm. B3 se pose des deux côtés. Prochain calcul utile : appliquer un
+aplatissement du potentiel à la corde tournante avec la tension de 2024, puis B2 avec les niveaux publiés du réseau.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

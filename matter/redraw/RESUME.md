@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R135)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R136)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R135).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R136).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -315,7 +315,15 @@ faibles de 9 à 11 % (2,7 et 3,6 écarts types) ; la table des hadrons n'est pas
 bibliographique partielle sur B3 ; spectres 424 ± 2 MeV, réseau 445(3)(6) MeV, écart de deux à trois écarts types ;
 aucune source ne confronte directement les deux ; une piste publiée, l'aplatissement du potentiel, est à lire.
 La chaîne des adoptions est close.
-L'article (`matter/paper/`) est consolidé jusqu'à R135.
+Autorisation (22 novembre 2026) : téléchargement depuis arXiv. R136 : les articles sont lus à la source et le calcul
+B1 est refait à l'identique de celui de 2014 : neuf familles, 38 états, pente 0,8848 contre 0,884 publié, même χ²
+(13,13·10⁻⁴), les 38 masses calculées à 4 MeV près. La tension des spectres vaut 424 ± 2,5 MeV ; celle de la base en
+est à 2,5 écarts types, celle du réseau à 2,9. La tension du réseau dépend de sa définition : 445 MeV dans le modèle
+qui traite la brisure, 467 à 482 MeV dans des ajustements sous 1 fm ; son terme en 1/r vaut 1,66 fois celui d'une
+corde. La piste publiée de l'aplatissement vient d'un autre modèle et ne compare pas au réseau : B3 n'est pas
+tranchée et se pose des deux côtés. Rectificatifs de R133 : l'ajustement publié porte sur neuf familles, pas six ; la
+base est à 2,5 écarts types dans cet ajustement.
+L'article (`matter/paper/`) est consolidé jusqu'à R136.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -421,11 +429,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R135 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R136 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R135, douze scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R136, treize scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

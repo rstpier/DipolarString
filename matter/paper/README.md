@@ -7,7 +7,7 @@ the consolidated record.
 
 `DS_matter_sector.tex` is now a **first content draft** (19 pages, compiles clean, zero
 undefined references), consolidating the redraw recorded in `../redraw/BASE.md`
-(R1–R135, 130 scripts). It keeps the skeleton's section order and the `\status{...}`
+(R1–R136, 131 scripts). It keeps the skeleton's section order and the `\status{...}`
 ledger; every number in it is produced by a script under `../redraw/`.
 
 What the draft claims, and at what level, is in its Section 7 (the six-level ledger).

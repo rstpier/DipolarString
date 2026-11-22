@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_b1_reproduction.py` — R136 : le calcul B1 refait à l'identique de l'article de 2014, lu à la source ; neuf
+  familles, 38 états, pente 0,8848 contre 0,884 publié, même χ² (13,13·10⁻⁴), masses à 4 MeV près ; tension des
+  spectres 424 ± 2,5 MeV ; base à 2,5 écarts types, réseau à 2,9 ; la tension du réseau va de 445 à 482 MeV selon sa
+  définition.
 - `veille_b3.py` — R135 : état de la littérature sur la question B3 (les deux tensions sont-elles la même ?) ;
   spectres 424 ± 2 MeV, réseau 445(3)(6) MeV, écart de deux à trois écarts types, aucune source ne tranche.
 - `ds_lattice_tension.py` — R134, premier choix fait par délégation : la tension du réseau à la place de celle de la

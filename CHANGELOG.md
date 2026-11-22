@@ -57,6 +57,11 @@
 - R135 : recherche bibliographique partielle sur la question B3 ; spectres 424 ± 2 MeV, réseau
   445(3)(6) MeV, deux à trois écarts types ; aucune source ne tranche ; une piste publiée à
   lire ; deux valeurs de R133 prises de mémoire sont confirmées
+- Autorisation de l'auteur : téléchargement depuis arXiv. R136 : quatre articles lus à la
+  source ; le calcul B1 est refait à l'identique de l'article de 2014 (neuf familles, 38 états,
+  pente 0,8848 contre 0,884, même χ², masses à 4 MeV près) ; tension des spectres
+  424 ± 2,5 MeV, base à 2,5 écarts types, réseau à 2,9 ; la tension du réseau va de 445 à
+  482 MeV selon sa définition ; rectificatifs de R133 (neuf familles et non six)
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 
