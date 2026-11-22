@@ -245,6 +245,8 @@ secteur scalaire : sans lui, horizon en temps propre fini ; les falsificateurs 1
 Les trois critères d'arrêt d'A3.md ont joué : de la CD restent les rapports hadroniques et les résultats négatifs.
 Consolidation (21–22 novembre 2026) : paquet `v2.11/` — manuscrit V2.10 avec erratum E1–E12 appliqué sur place
 (`ERRATUM.md`), note des quatorze résultats négatifs (`negative_results/`), `verify_v2_11.py`.
+Suite (22 novembre 2026) : `FEUILLE_DE_ROUTE_2026-11-22.md` à la racine — ce qu'on emporte, cinq règles, trois chemins
+(théorie des cordes pour comprendre ; corde hadronique effective ; gravité analogue sur ligne de transmission).
 R126 (chasse aux trouvailles, « look-elsewhere ») : 2186 expressions simples de la base (224 par décade) contre
 44 grandeurs mesurées ; chaque cible a un accord au pour-cent, les formules de la base ont des probabilités locales
 de 0,02 à 0,8, le meilleur accord du tableau (Σ⁺ à 0,002 %, sans sens) tombe à 0,14 après correction du nombre de

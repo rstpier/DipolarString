@@ -3031,3 +3031,19 @@ m_p = 4ℏc/r_p) sont ce que le hasard donne avec cette grammaire, et aucun ne s
 cibles. La seule chose qui distinguerait une formule est une dérivation ou une prédiction avant mesure — ce que le
 manuscrit exigeait déjà pour G. Le secteur hadronique garde son statut : des rapports conditionnels à deux entiers
 posés, dont la précision n'est pas en elle-même un signal.
+
+**Note de clôture (22 novembre 2026) : après la CD.** L'auteur : « Toujours pas de découvertes. […] Crois qu'il serait
+mieux de quitter la CD et de repartir de la théorie des cordes et tenter d'y trouver une solution. » Réponse enregistrée :
+quitter la CD comme théorie des particules est la conclusion de son propre dossier (R123–R126) ; la théorie des
+cordes résout par construction les trois murs où la CD est tombée (une échelle, des fermions, pas de repère), mais ne
+fournit ni masses ni couplages (paysage de vides, échelle de Planck) : elle vaut comme culture, pas comme chemin vers
+une découverte. Deux terrains où les forces de l'auteur comptent et où l'on teste : la corde hadronique effective
+(suite directe de R119–R120) et la gravité analogue sur ligne de transmission (où « l'impédance dépend de l'énergie »
+et « la sonde derrière la pompe » sont vraies et mesurées). Feuille de route : `FEUILLE_DE_ROUTE_2026-11-22.md` (ce
+qu'on emporte, cinq règles, chemin 0 de clôture, socle, chemins A, B, C avec lectures, prérequis, premier calcul et
+critère d'arrêt, calendrier à douze mois). À faire dans le chemin 0 : ajouter à la note des résultats négatifs les
+références classiques, dont Ni 1972 et Nordtvedt–Will 1972 — R124 (α₁ = −4(γ + 1)) retrouve le sort connu des
+théories « stratifiées » ; références à vérifier à la source. Question de l'auteur sur la rigidité de la corde :
+A5 la pose (« aucun mode de déformation continue », reformulé par l'erratum E5) mais aucune loi élastique du
+filament n'a jamais été écrite ; R127 (tension + rigidité de courbure) est défini, non fait, verdict attendu sans
+nombre nouveau.

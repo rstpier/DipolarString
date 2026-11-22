@@ -13,6 +13,10 @@ releases.
 > An internal referee-style scientific review of the whole programme (in French,
 > 19 November 2026) is in [`REVUE_SCIENTIFIQUE_2026-11-19.md`](REVUE_SCIENTIFIQUE_2026-11-19.md).
 > It was written by the project's AI collaborator, not by an independent reviewer.
+>
+> What can follow the programme — string-theory study, the effective hadronic string, analogue
+> gravity on transmission lines — is laid out in a roadmap (in French, 22 November 2026):
+> [`FEUILLE_DE_ROUTE_2026-11-22.md`](FEUILLE_DE_ROUTE_2026-11-22.md).
 
 ---
 
