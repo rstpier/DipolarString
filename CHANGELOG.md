@@ -23,6 +23,13 @@
   exclue comme dimension cachée, et des groupes infinis donnent une gravité en 1/r⁸ ; reste le
   Calabi-Yau, où les deux groupes cachés sont entrelacés et où le 3 des générations est encore
   choisi
+- Choix de l'auteur : Calabi-Yau. R130 : choix cohérent et sans coût pour l'espace visible, qui
+  garde un quart des supersymétries et deux groupes cachés (une base, un tore qui se pince) ; on
+  n'y calcule que des entiers (quintique : 1 taille, 101 formes, 204 cycles, nombre d'Euler
+  −200) ; générations = produit d'intersection où tout entier est disponible ; masses non
+  calculables (métrique sans expression connue) ; 52 à 410 champs sans masse à fixer ;
+  paramétrisation, plus large que R128 ; complément à R128 : son exemple à trois générations ne
+  ferme pas seul son bilan de charge
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

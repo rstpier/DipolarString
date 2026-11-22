@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R129)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R130)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R129).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R130).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -275,7 +275,16 @@ comme dimension cachée (couplage multiplié par e tous les R/√2, ou courbure 
 à trois groupes de trois, AdS₃ × S³ × S³ × S¹, n'a que deux dimensions d'espace visibles) ; des groupes infinis donnent
 une gravité en 1/r⁸. Reste le Calabi-Yau, où les deux groupes cachés sont entrelacés et où trois générations sont un
 nombre topologique choisi (χ = ±6). Paramétrisation.
-L'article (`matter/paper/`) est consolidé jusqu'à R129.
+Décision (22 novembre 2026) : Calabi-Yau. R130 : supercorde de type IIA sur une variété de Calabi-Yau avec des
+D6-branes sur des cycles de dimension trois. Le choix est cohérent et ne coûte rien à l'espace visible ; il garde un
+quart des supersymétries et deux groupes cachés, une base et un tore dont la forme varie et se pince. On n'y calcule
+que des entiers (quintique : 1 taille, 101 formes, 204 cycles, nombre d'Euler −200, retrouvés de trois façons) ; les
+générations sont un produit d'intersection où tout entier est disponible ; la règle du nombre d'Euler appartient à la
+corde hétérotique, sans corde ouverte donc sans dipôle, et −6 est absent d'un échantillon de 2362 espaces ; les masses
+dépendent d'une métrique sans expression connue ; le choix ajoute 52 à 410 champs sans masse à fixer. Complément à
+R128 : son exemple à trois générations ne ferme pas seul son bilan de charge. Verdict : paramétrisation, plus large
+que R128.
+L'article (`matter/paper/`) est consolidé jusqu'à R130.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -381,11 +390,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R129 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R130 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127, R128 et R129, six scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R130, sept scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

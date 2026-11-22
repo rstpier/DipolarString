@@ -3206,3 +3206,70 @@ A. Strominger, S.-T. Yau et E. Zaslow, Nucl. Phys. B 479, 243 (1996) ; P. Candel
 E. Witten, Nucl. Phys. B 258, 46 (1985) ; G. Tian et S.-T. Yau (1987) ; stabilité de α à 10⁻⁵ sur 10²⁶ m : ordre de
 grandeur des spectres de quasars (J. King et al., MNRAS 422, 3370, 2012) ; courbure : Planck 2018, Ω_K = 0,0007 ±
 0,0019.
+
+**Décision (22 novembre 2026) : Calabi-Yau.** L'auteur, devant R129 : « ok prend Calabi-Yau ». Définition retenue, la
+plus simple qui garde les deux groupes cachés de l'auteur et le dipôle comme corde ouverte : supercorde de type IIA sur
+une variété de Calabi-Yau, vue comme une famille de 3-tores (le groupe torique) au-dessus d'une base de trois
+dimensions (le groupe de base), avec des D6-branes enroulées sur des cycles de dimension trois. Exemple de travail : la
+quintique, la plus simple des variétés de Calabi-Yau.
+
+**R130 — La CD sur une variété de Calabi-Yau : ce que le choix donne, ce qu'il impose, ce qu'il laisse libre.**
+Script `matter/rebuild/ds_calabi_yau.py`, 7/7.
+*A. Ce que le choix donne.* Six dimensions d'un bloc : 105 composantes de courbure pour 21 équations, 84 libres ; l'espace
+caché est courbe sans contenu et ne coûte rien à l'espace visible (l'échappatoire de R129 F). L'holonomie SU(3) laisse
+invariant un état du spineur sur quatre : un quart des supersymétries, 8 charges sur 32 (N = 2 à quatre dimensions), 4
+avec des branes (N = 1), le minimum, celui qui permet des fermions chiraux. Le 6-tore les gardait toutes (N = 8).
+*B. Les entiers de l'espace.* Trois comptes indépendants concordent sur dix variétés classiques : le nombre de formes
+h²¹ par comptage des déformations (quintique : 126 monômes moins 25 changements de coordonnées, 101), le nombre d'Euler
+par les classes de Chern (−200), le nombre de tailles par différence, h¹¹ = h²¹ + χ/2 (1). Tous les couples publiés sont
+retrouvés : (1, 101), (1, 89), (1, 73) deux fois, (1, 65), (2, 83), (2, 86), (4, 68), Tian et Yau (14, 23), Schoen
+(19, 19). Quintique : 204 cycles de dimension trois. Le quotient d'ordre 3 de la variété de Tian et Yau est libre
+(équations invariantes, aucun point fixe, vérifié dans les entiers d'Eisenstein) : χ = −18/3 = −6, en accord avec le
+couple publié (6, 9).
+*C. Les générations avec des cordes ouvertes.* Deux branes se coupent un nombre de fois égal à leur produit
+antisymétrique dans le réseau des cycles de dimension trois. Sur le 6-tore, ce produit est le déterminant 6 × 6 des six
+cycles, égal au signe près à la formule de R128 (200 paires) ; le réseau a le rang 20, il est unimodulaire. Sur un
+Calabi-Yau, même accouplement, de rang 2 + 2h²¹ : 204 pour la quintique. Tout entier y est disponible : **le 3 des
+générations se choisit.** Bilan de charge sur chaque cycle (loi de Gauss dans un espace fermé) : la somme des classes
+des branes est nulle ; deux familles de branes seules ont donc des classes opposées et un nombre d'intersection nul,
+et le bilan fermé annule les anomalies (identité). **Complément à R128 :** l'exemple à trois générations,
+(1,0)(1,0)(1,0) et (1,3)(1,1)(1,1), ne ferme pas seul son bilan de charge ; il lui faut d'autres branes ou des plans
+d'orientifold, que R128 n'avait pas examinés.
+*D. Le prix.* Chaque paramètre de taille ou de forme est un champ sans masse. 6-tore : 70 scalaires et 28 vecteurs (le
+contenu de la supergravité N = 8, contrôle), dont 22 de taille, de forme et de couplage. Quintique : 410 scalaires,
+dont 204. Quotient de Tian et Yau : 52, dont 25. Trois tores repliés : 76, dont 37. Sans mécanisme supplémentaire
+chacun porte une force de portée infinie ; la gravité vérifiée jusqu'à 52 μm exige une masse supérieure à 3,8 meV. Le
+choix de l'espace ne fixe ni ses tailles ni ses formes : les fixer demande des flux, dont les choix entiers font le
+« paysage ».
+*E. Les deux groupes.* Un 3-tore et une 3-sphère ont un nombre d'Euler nul, une famille lisse de tores aussi : tout le
+nombre d'Euler d'un Calabi-Yau loge aux endroits où le groupe torique se pince. Retourner le groupe torique (dualité T
+sur ses trois directions, l'échange L ↔ C de R127 E) est la symétrie miroir : tailles et formes s'échangent,
+(h¹¹, h²¹) → (h²¹, h¹¹), χ change de signe, les 204 cycles de dimension trois de la quintique deviennent 4. Les deux
+groupes cachés ne sont plus interchangeables : une base (pour la quintique, une 3-sphère), et un tore dont la forme
+varie et se pince le long de la base.
+*F. Le Calabi-Yau le plus proche de R128 : les trois tores repliés par leur symétrie d'ordre 3.* 27 = 3³ points fixes
+(R129 D) ; nombre d'Euler 72 par la formule d'orbifold et par le compte des formes invariantes, h¹¹ = 9 + 27 = 36,
+h²¹ = 0. La courbure est concentrée aux 27 points ; aucun paramètre de forme (la symétrie impose le réseau hexagonal) ;
+deux cycles de dimension trois seulement (rang de l'accouplement des orbites : 2). Mais la rotation envoie la direction
+capacitive de chaque tore sur l'inductive : la brane « tout capacitif » et la brane « tout inductif » sont la même
+brane, et **les deux groupes cachés de l'auteur n'en font plus qu'un**. Trois générations parmi les paires de branes
+qui se coupent : 34,4 % (enroulements de 1 au plus), 15,9 % (2 au plus, valeur la plus fréquente), 1,6 % (3 au plus,
+septième rang) : effet de plage, comme en R128.
+*G. Le 3 d'Euler.* La règle « générations = |χ|/2 » est celle de la corde hétérotique, qui n'a pas de corde ouverte,
+donc pas de dipôle : elle n'est pas disponible dans la construction retenue. Pour mémoire : quintique 100, bicubique
+81, trois tores repliés 36, quotient de Tian et Yau 3. Dans un échantillon de 2362 configurations irréductibles
+(intersections complètes d'au plus quatre équations), χ prend 66 valeurs entre −200 et 0, **jamais −6** ; il faut une
+symétrie libre du bon ordre, choisie.
+*Hors calcul.* La métrique d'un Calabi-Yau fermé existe (Yau 1977) mais n'a pas d'expression connue : les masses, qui
+en dépendent, ne se calculent pas en forme close. L'espace se choisit parmi au moins 30 108 couples (h¹¹, h²¹) connus
+(Kreuzer et Skarke 2000, de mémoire). Non examinés : plans d'orientifold, flux.
+**Verdict : le Calabi-Yau est un choix cohérent et sans coût pour l'espace visible (DÉRIVÉ), qui garde deux groupes
+cachés, une base et un tore (IDENTITÉ de structure). Aucun nombre mesuré n'en sort : l'espace est CHOISI, le 3 des
+générations est un entier CHOISI, les masses ne sont pas calculables, et le choix ajoute de 52 à 410 champs sans masse
+à fixer par un mécanisme de plus. PARAMÉTRISATION, plus large que R128.** Le critère d'arrêt (1) de `TDC.md` §7 reste
+atteint. Règle 1 de la feuille de route : l'auteur doit pouvoir refaire à la main 126 − 25 = 101 et χ = −200.
+*Sources, données de mémoire, à vérifier :* S.-T. Yau, Proc. Natl. Acad. Sci. 74, 1798 (1977) ; P. Candelas, A. Dale,
+C. Lütken et R. Schimmrigk, Nucl. Phys. B 298, 493 (1988) ; M. Kreuzer et H. Skarke, Adv. Theor. Math. Phys. 4, 1209
+(2000) ; B. Greene, K. Kirklin, P. Miron et G. Ross, Nucl. Phys. B 278, 667 (1986) ; L. Dixon, J. Harvey, C. Vafa et
+E. Witten, Nucl. Phys. B 261, 678 (1985) ; R. Blumenhagen, B. Körs, D. Lüst et T. Ott, Nucl. Phys. B 616, 3 (2001) ;
+M. Gross, Invent. Math. 144, 75 (2001).

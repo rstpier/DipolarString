@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_calabi_yau.py` — R130, après le choix « ok prend Calabi-Yau » : un quart des supersymétries ; les entiers de la
+  quintique (1 taille, 101 formes, 204 cycles, χ = −200) retrouvés de trois façons sur dix variétés ; générations comme
+  produit d'intersection dans le réseau des cycles (tout entier disponible) ; 52 à 410 champs sans masse à fixer ; les
+  trois tores repliés (36, 0) ; χ = −6 absent d'un échantillon de 2362 configurations.
 - `ds_three_groups.py` — R129, après les précisions « 9 dim : 3 groupes de 3 dimensions » et « tores, non probablement
   pas » : même espace que les trois tores si les groupes sont fermés et plats ; sinon un groupe vide est plat (à trois
   dimensions Riemann est une fonction de Ricci), une sphère tenue par un flux se paie dans l'espace visible (exclue),

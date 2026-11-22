@@ -26,7 +26,10 @@ releases.
 > in which its motifs have an exact place but the gauge group, the three generations and the hadronic tension are
 > chosen, not derived (R128). The author then specified nine space dimensions in three groups of three, "probably
 > not tori": in a product, three-dimensional groups must be flat tori or their quotients, hidden spheres and infinite
-> groups are excluded, and the remaining option is a Calabi–Yau space (R129). No new claim is made. See
+> groups are excluded, and the remaining option is a Calabi–Yau space (R129). The author then chose a Calabi–Yau
+> space (R130): a consistent choice that costs nothing in the visible space, but on which only integers can be
+> computed, the number of generations remains a chosen integer, and 52 to 410 massless fields must be fixed by a
+> further mechanism. No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

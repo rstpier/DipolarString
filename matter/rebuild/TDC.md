@@ -89,7 +89,8 @@ Elle peut dire : la CD d'origine, le vide comme réseau de lignes adaptées, est
 réoriente vers la théorie des cordes ; le filament dipolaire y est relu comme corde ouverte à charges opposées ; le
 dictionnaire est exact. Elle ne peut pas dire que la CD *est* une variante de la théorie des cordes au sens d'une
 théorie nouvelle et cohérente, ni annoncer une prédiction. Depuis le choix de dix dimensions (§7), elle peut ajouter
-que la CD devient une construction connue de la théorie des cordes, où les nombres sont choisis et non dérivés.
+que la CD devient une construction connue de la théorie des cordes, où les nombres sont choisis et non dérivés. Depuis le
+choix du Calabi-Yau (§9), elle peut nommer l'espace caché ; la conclusion ne change pas.
 
 ## 7. Dix dimensions (décision du 22 novembre, R128)
 
@@ -174,10 +175,53 @@ Il se choisit avec l'espace.
 les deux groupes cachés ; les sphères et les groupes infinis sont exclus. Dans tous les cas le 3 des générations reste
 un choix : paramétrisation. Hors champ de cet audit : les flux de Ramond et les plans d'orientifold.
 
-## 9. Suite
+## 9. Calabi-Yau (décision du 22 novembre, R130)
+
+L'auteur, devant le §8 : « ok prend Calabi-Yau ». Définition retenue : **supercorde de type IIA sur une variété de
+Calabi-Yau, avec des D6-branes enroulées sur des cycles de dimension trois** ; la variété est vue comme une famille de
+3-tores (le groupe torique) au-dessus d'une base de trois dimensions (le groupe de base). Exemple de travail : la
+quintique, la plus simple. Audit : `ds_calabi_yau.py`, 7/7.
+
+| Question | Réponse calculée | Statut |
+|---|---|---|
+| Que coûte la courbure ? | Rien : à six dimensions, 105 composantes de courbure pour 21 équations | Dérivé |
+| Que reste-t-il de la supersymétrie ? | Un quart : 8 charges sur 32, 4 avec des branes ; le tore gardait tout | Dérivé |
+| Que deviennent les deux groupes cachés ? | Une base et un tore dont la forme varie et se pince ; ils ne sont plus interchangeables | Identité de structure |
+| Que vaut l'échange capacitif ↔ inductif ? | Retourner le groupe torique : c'est la symétrie miroir, qui échange tailles et formes | Identité |
+| Que peut-on calculer ? | Des entiers. Quintique : 1 taille, 101 formes, 204 cycles de dimension trois, nombre d'Euler −200 | Calculé, à refaire à la main |
+| D'où viennent les générations ? | Du produit d'intersection de deux branes dans le réseau des cycles : tout entier est disponible | Entier choisi |
+| Et la règle du nombre d'Euler ? | Elle appartient à la corde hétérotique, sans corde ouverte, donc sans dipôle ; et −6 n'apparaît jamais dans un échantillon de 2362 espaces | Non disponible |
+| Les masses ? | Elles dépendent de la forme exacte de l'espace, qui existe mais que personne ne sait écrire | Non calculable |
+| Le prix ? | 52 à 410 champs sans masse selon l'espace, à fixer par un mécanisme de plus | Choix supplémentaires |
+
+- **Les entiers.** Trois comptes indépendants concordent sur dix variétés classiques : les formes par comptage des
+  déformations, le nombre d'Euler par les classes de Chern, les tailles par différence. Pour la quintique : 126 monômes
+  de degré 5 moins 25 changements de coordonnées, soit 101 formes ; nombre d'Euler −200 ; une taille.
+- **Les générations.** Le dipôle exige des cordes ouvertes, donc des branes ; le nombre de générations est alors le
+  produit antisymétrique de deux branes dans le réseau des cycles de dimension trois. Sur le 6-tore c'est la formule
+  du §7 (un déterminant, réseau de rang 20) ; sur la quintique le réseau a le rang 204. Tout entier s'y obtient.
+- **Complément au §7.** Dans un espace fermé les lignes de force n'ont nulle part où aller : la charge totale des
+  branes est nulle sur chaque cycle. Deux familles de branes seules ont alors un nombre d'intersection nul. L'exemple
+  à trois générations du §7 ne ferme donc pas seul son bilan : il lui faut d'autres branes ou des plans d'orientifold.
+- **Le prix.** 6-tore : 70 champs scalaires sans masse, dont 22 de taille, de forme et de couplage. Quintique : 410,
+  dont 204. Quotient de Tian et Yau : 52, dont 25. Chacun porterait une force de portée infinie ; il faut leur donner
+  une masse supérieure à 3,8 meV par des flux, dont les choix entiers font le « paysage ».
+- **Le Calabi-Yau le plus proche du §7** est celui des trois tores repliés par leur symétrie d'ordre 3 : la courbure
+  y est concentrée aux 27 = 3³ points fixes, il n'a aucun paramètre de forme et deux cycles de dimension trois
+  seulement. Mais la rotation envoie la direction capacitive de chaque tore sur l'inductive : les deux groupes cachés
+  de l'auteur n'y font plus qu'un. Trois générations y sont fréquentes aux petits enroulements (34 %, puis 16 %, puis
+  2 %) : effet de plage, comme au §7.
+
+**Verdict.** Le Calabi-Yau est un choix cohérent, sans coût pour l'espace visible, qui garde deux groupes cachés. Il ne
+donne aucun nombre mesuré : l'espace se choisit, parmi au moins 30 108 types connus ; le 3 des générations est un entier
+choisi ; les masses ne sont pas calculables ; et le choix ajoute des dizaines à des centaines de champs à fixer. C'est
+une paramétrisation, plus large que celle du §7. Le critère d'arrêt (1) du §7 reste atteint.
+
+## 10. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
-Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12).
+Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12). Pour le
+§9 : le compte 126 − 25 = 101 et le nombre d'Euler −200 de la quintique.
 
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,
 hep-th/0105155 ; J. G. Lee et al., Phys. Rev. Lett. 124, 101101 (2020) ; CMS, arXiv:1911.03947, paru dans JHEP
@@ -190,3 +234,8 @@ Phys. Lett. B 127, 106 (1983) ; B. Zwiebach, *A First Course in String Theory*, 
 A. Giveon et D. Tsabar, Phys. Lett. B 449, 180 (1999) ; A. Strominger, S.-T. Yau et E. Zaslow, Nucl. Phys. B 479, 243
 (1996) ; P. Candelas, G. Horowitz, A. Strominger et E. Witten, Nucl. Phys. B 258, 46 (1985) ; G. Tian et S.-T. Yau
 (1987).
+*Pour le §9, de mémoire, à vérifier :* S.-T. Yau, Proc. Natl. Acad. Sci. 74, 1798 (1977) ; P. Candelas, A. Dale,
+C. Lütken et R. Schimmrigk, Nucl. Phys. B 298, 493 (1988) ; M. Kreuzer et H. Skarke, Adv. Theor. Math. Phys. 4, 1209
+(2000) ; B. Greene, K. Kirklin, P. Miron et G. Ross, Nucl. Phys. B 278, 667 (1986) ; L. Dixon, J. Harvey, C. Vafa et
+E. Witten, Nucl. Phys. B 261, 678 (1985) ; R. Blumenhagen, B. Körs, D. Lüst et T. Ott, Nucl. Phys. B 616, 3 (2001) ;
+M. Gross, Invent. Math. 144, 75 (2001).
