@@ -22,7 +22,7 @@ Critere ecrit avant le calcul : l'ecart entre la tension des spectres (423,7 +- 
   G. Les spectres demandent-ils une detente ? Degradation en fonction de gamma, tension libre.
   H. Le critere.
   Verdict : la detente publiee remonte la tension demandee par les spectres de 424 a 430 MeV, mais l'ajustement se
-  degrade d'autant : l'ecart complet au reseau reste a 2,9 ecarts types (3,0 sans detente). La piste ne tient pas.
+  degrade d'autant : l'ecart complet au reseau reste a 2,9 ecarts types ou plus (3,0 sans detente). La piste ne tient pas.
 
 Mesure d'ecart : celle de l'article de 2014, somme des ((M^2 - E^2) / M^2)^2 ; erreur commune s ajustee pour que le
 chi2 par degre de liberte vaille 1 sans detente (28 degres de liberte), comme en R136 et R137.
@@ -47,13 +47,13 @@ TRAJ = up.TRAJ_2026
 PAIRS = sorted({tuple(sorted((q1, q2))) for _, q1, q2 in TRAJ.values()})
 
 def phi(L, par):
-    """sigma_f(L) / sigma et sa derivee par rapport a L (GeV)."""
+    """sigma_f(L) / sigma et sa derivee par rapport a L (GeV). par = (gamma, B, R0) ou (gamma, B, R0, vitesse de montee)."""
     if par is None: return 1.0, 0.0
-    gam, B, R0 = par
-    x = RATE * (L - R0)
+    gam, B, R0 = par[:3]; k = par[3] if len(par) > 3 else RATE
+    x = k * (L - R0)
     if x > 80: return 1 - gam, 0.0
     e = exp(x); f = e / (B + e)
-    return 1 - gam * f, -gam * RATE * f * (1 - f)
+    return 1 - gam * f, -gam * k * f * (1 - f)
 
 def solve_L(L, sig, m1, m2, par, mode, guess=None):
     """Corde droite de longueur totale L en rotation stationnaire, extremites de masses m1 et m2.
@@ -268,16 +268,27 @@ def main():
         br = Branch(sig_lat, 0.06, 0.06, par, "b"); uu[label] = (br.jend, br.lend * HBARC)
     print("    quarks legers, selon le jeu : " + " ; ".join(f"{k} : {j:.2f} a {l:.2f} fm" for k, (j, l) in uu.items()))
     naive_open = Branch(sig_lat, 0.06, 0.06, BEST, "a").end
+    Fend = lambda L: phi(L, BEST)[0] + phi(L, BEST)[1] * L
+    lslope = lambda x: (log(Fend(fm(x) * (1 + 1e-5))) - log(Fend(fm(x) * (1 - 1e-5)))) / 2e-5
+    lo, hi = 1.8, 2.4
+    for _ in range(50):
+        mid = 0.5 * (lo + hi)
+        if lslope(mid) > -3: lo = mid
+        else: hi = mid
+    l3 = 0.5 * (lo + hi)
+    heavy = Branch(sig_lat, 500.0, 500.0, BEST, "b", jmax=1e9, lmin=1.0).lend * HBARC
+    print(f"    la force d'extremite tombe comme 1 / L^3 (pente logarithmique -3) a {l3:.2f} fm ; avec des extremites tres lourdes (500 GeV) la branche finit a {heavy:.2f} fm")
     a_ref = total(rs0, None, "a")[1]
     need = 6 - a_ref["rho/a"]
     print(f"    version naive : branche {naive_open} jusqu'a J = 12,5. Les etats J = 6 (a6, f6) demandent un moment classique de {need:.2f} (ordonnee {a_ref['rho/a']:.2f}).")
-    print("    -> au-dela de 2,1 fm la force d'extremite tombe plus vite que 1 / L^3 : J decroit quand L croit, la rotation est instable")
-    print("       (critere de Rayleigh). Avec le meilleur jeu, un meson leger de la trajectoire dominante ne depasse pas J = 6, le plus haut")
+    print("    -> vers 2,1 fm la force d'extremite se met a tomber comme 1 / L^3, puis plus vite : J decroit quand L croit, la rotation est")
+    print("       instable (critere de Rayleigh, exact pour des extremites lourdes). Avec le meilleur jeu, un meson leger de la trajectoire dominante ne depasse pas J = 6, le plus haut")
     print("       spin observe ; avec gamma = 0,45 les etats J = 6 ne tiennent qu'en forcant l'ajustement, au coin fort ils n'existent pas.")
     print("       Aucun nombre de la CD n'entre ici, et le profil est phenomenologique.\n")
-    check("D. version coherente, tension du reseau, meilleur jeu : J classique maximal 5,70 pour les quarks legers, atteint a 2,10 fm ; six paires entre 2,05 et 2,20 fm ; version naive sans maximum",
-          5.6 < ends[("u", "u")][0] < 5.8 and all(2.05 < l < 2.20 and e == "maximum de J" for _, l, e in ends.values()) and naive_open == "ouverte" and uu["coin fort (0,50 ; 15 ; 5)"][0] < 5.0,
-          f"uu : {ends[('u','u')][0]:.2f} a {ends[('u','u')][1]:.2f} fm ; coin fort {uu['coin fort (0,50 ; 15 ; 5)'][0]:.2f}")
+    check("D. version coherente, tension du reseau, meilleur jeu : J classique maximal 5,70 pour les quarks legers, atteint a 2,10 fm ; six paires entre 2,05 et 2,20 fm ; version naive sans maximum ; critere de Rayleigh retrouve a 2,15 fm pour des extremites lourdes",
+          5.6 < ends[("u", "u")][0] < 5.8 and all(2.05 < l < 2.20 and e == "maximum de J" for _, l, e in ends.values()) and naive_open == "ouverte" and uu["coin fort (0,50 ; 15 ; 5)"][0] < 5.0
+          and 2.12 < l3 < 2.18 and abs(heavy - l3) < 0.01,
+          f"uu : {ends[('u','u')][0]:.2f} a {ends[('u','u')][1]:.2f} fm ; coin fort {uu['coin fort (0,50 ; 15 ; 5)'][0]:.2f} ; pente -3 a {l3:.2f} fm, extremites lourdes {heavy:.2f} fm")
 
     # E
     print("E. Ajustement des neuf familles au meilleur jeu publie (gamma = 0,40 ; B = 20 ; R0 = 6,0 GeV^-1)")
@@ -293,13 +304,21 @@ def main():
     print(f"    a4 a la tension du reseau, ordonnee fixee ({a_lat:.2f}) : {a4['sans']:.0f} MeV sans detente, {a4['naive']:.0f} (naive), {a4['coherente']:.0f} (coherente) ; mesure 1967 MeV")
     print(f"    -> la detente abaisse a4 de {a4['sans']-a4['naive']:.0f} a {a4['sans']-a4['coherente']:.0f} MeV ; il en faudrait {a4['sans']-1967:.0f}. Rectificatif de R136 G : le mecanisme va dans le bon sens,")
     print("       il n'a pas la bonne taille pour la corde tournante.")
+    tied = {m: study(BEST + (e["xm"] * 1e-3,), m, ref_tot, s2, 12) for m, e in (("a", ea), ("b", eb))}
+    print(f"    sensibilite : vitesse de montee de f prise a la tension ajustee ({ea['xm']*1e-3:.4f} et {eb['xm']*1e-3:.4f} GeV) et non a celle de l'article ({RATE:.4f} GeV)")
+    print(f"       naive     : tension demandee {tied['a']['xm']:.1f} MeV, degradation {tied['a']['deg']:.2f}, ecart complet {tied['a']['full']:.2f}")
+    print(f"       coherente : tension demandee {tied['b']['xm']:.1f} MeV, degradation {tied['b']['deg']:.2f}, ecart complet {tied['b']['full']:.2f}")
+    print("       -> la version naive n'y est pas sensible. La version coherente l'est, parce que l'a6 et le f6 y sont au bout de la branche :")
+    print("          un profil qui monte 1,8 % plus vite raccourcit la branche et double la degradation. Ses nombres sont fragiles ;")
+    print("          dans les deux cas l'ecart ne baisse pas.")
     rs_base = 1e3 / sqrt(2 * pi * b1.AP_BASE)
     print(f"    a noter : version naive, tension demandee {ea['xm']:.1f} MeV ; valeur de la base {rs_base:.1f} MeV. Coincidence sans portee : cet ajustement est")
     print("       moins bon que l'ajustement sans detente, et la formule de la base n'a pas de mecanisme (R126).\n")
-    check("E. meilleur jeu publie : tension demandee 430,1 MeV (naive) et 434,2 (coherente) ; degradation 3,8 et 6,5 ; ecart complet 2,86 et 3,01 contre 2,97 sans detente",
+    check("E. meilleur jeu publie : tension demandee 430,1 MeV (naive) et 434,2 (coherente) ; degradation 3,8 et 6,5 ; ecart complet 2,86 et 3,01 contre 2,97 sans detente ; version naive insensible a la vitesse de montee de f, version coherente fragile (ecart complet 3,8)",
           429.6 < ea["xm"] < 430.6 and 433.6 < eb["xm"] < 434.8 and 3.5 < ea["deg"] < 4.1 and 6.0 < eb["deg"] < 6.9 and 2.78 < ea["full"] < 2.94 and 2.93 < eb["full"] < 3.09
-          and 2.90 < ref["full"] < 3.04 and set(eb["bound"]) == {"rho/a", "omega/f"} and 15 < a4["sans"] - a4["naive"] < 60,
-          f"{ea['xm']:.1f} et {eb['xm']:.1f} MeV ; {ea['full']:.2f} et {eb['full']:.2f} ; reference {ref['full']:.2f}")
+          and 2.90 < ref["full"] < 3.04 and set(eb["bound"]) == {"rho/a", "omega/f"} and 15 < a4["sans"] - a4["naive"] < 60
+          and abs(tied["a"]["full"] - ea["full"]) < 0.05 and 3.5 < tied["b"]["full"] < 4.2,
+          f"{ea['xm']:.1f} et {eb['xm']:.1f} MeV ; {ea['full']:.2f} et {eb['full']:.2f} ; reference {ref['full']:.2f} ; variante {tied['a']['full']:.2f} et {tied['b']['full']:.2f}")
 
     # F
     print("F. La fourchette publiee")
@@ -355,7 +374,8 @@ def main():
 
     print("Verdict : la piste ne tient pas. La detente publiee, appliquee a la corde tournante, remonte la tension demandee par les spectres")
     print("de 424 a 430 MeV (434 dans la version coherente) et degrade l'ajustement d'autant : l'ecart complet au reseau reste a 2,9 et 3,0")
-    print("ecarts types, contre 3,0 sans detente. Les spectres ne demandent pas de detente. B3 reste ouverte.\n")
+    print("ecarts types, contre 3,0 sans detente, et monte a 3,8 dans une variante de la version coherente. Les spectres ne demandent pas")
+    print("de detente. B3 reste ouverte.\n")
 
     print("Bilan :")
     for status, name, detail in RESULTS:

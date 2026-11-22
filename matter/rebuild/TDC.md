@@ -374,6 +374,8 @@ des résumés valent dans le modèle de ses auteurs, pas pour la corde tournante
 
 - **Ce que le calcul apprend.** La détente déplace le désaccord sans le réduire : ce qu'elle gagne sur la tension, 6 à
   10 MeV sur 21, elle le perd sur l'ajustement. Sur toute la fourchette publiée l'écart complet reste au-dessus de 2,8.
+  La seconde version est fragile : l'a₆ et le f₆ y sont au bout de la branche, et son écart monte à 3,8 si le profil
+  monte 1,8 % plus vite.
 - **Les spectres ne demandent pas de détente.** L'ajustement se dégrade dès la plus petite valeur ; à deux écarts types
   ils tolèrent γ jusqu'à 0,36 à 0,41, la valeur publiée étant 0,40.
 - **Un fait nouveau, qui n'est pas de la CD.** Si la force est la dérivée de l'énergie, un fil tournant n'a plus de

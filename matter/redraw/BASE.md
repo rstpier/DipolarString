@@ -3676,3 +3676,14 @@ réduire : elle remonte la tension demandée par les spectres de 424 à 430 MeV 
 sans détente par l'article de 2014 ; profil ajusté par ses auteurs dans un autre modèle ; corde classique, les
 corrections quantiques étant laissées aux ordonnées. B3 reste ouverte, des deux côtés. Reste à faire : B2, avec les
 niveaux publiés du réseau. Leçon de méthode : un critère d'arrêt s'écrit avec sa mesure et son seuil en un nombre.
+
+**Complément à R138 (22 novembre 2026) : deux contrôles ajoutés au script, 8/8.** (1) *Le critère de stabilité.* La
+force d'extrémité tombe comme 1/L³ à 2,15 fm, et avec des extrémités très lourdes la branche finit à 2,15 fm : c'est
+le critère de Rayleigh, retrouvé exactement. Avec les masses d'extrémité réelles la fin vient un peu avant, de 2,10 à
+2,13 fm. R138 D écrivait « au-delà de 2,1 fm la force tombe plus vite que 1/L³ » : lire « vers 2,1 fm elle se met à
+tomber comme 1/L³, puis plus vite ». (2) *La sensibilité au profil.* Si la vitesse de montée de f suit la tension
+ajustée au lieu de garder celle de l'article, soit un profil qui monte 1,8 % plus vite, la version naïve ne bouge pas
+(430,2 MeV, dégradation 3,85, écart complet 2,86) ; la version cohérente passe de 434,2 à 437,8 MeV, sa dégradation de
+6,45 à 13,56 et son écart complet de 3,01 à 3,83. Raison : l'a₆ et le f₆ y sont au bout de la branche, et un profil à
+peine plus raide la raccourcit. **Les nombres de la version cohérente sont fragiles ; le verdict ne change pas : dans
+aucun cas l'écart complet ne descend sous 2,8.**

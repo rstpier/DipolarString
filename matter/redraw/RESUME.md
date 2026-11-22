@@ -333,7 +333,8 @@ Choix délégué (22 novembre 2026) : appliquer la détente publiée à la corde
 détente du fil ne vaut que 1,9 % à 1,18 fm et 4,4 % à 1,6 fm ; les 40 % ne sont atteints qu'au-delà de 3 fm. Appliquée
 à l'ajustement des neuf familles, elle remonte la tension demandée par les spectres de 423,7 à 430,1 MeV (434,2 si la
 force est prise comme la dérivée de l'énergie) et dégrade l'ajustement de 2,0 à 2,5 écarts types : l'écart complet au
-réseau reste à 2,9 et 3,0 écarts types, contre 3,0 sans détente, pour un seuil écrit d'avance de 2. La piste est exclue
+réseau reste à 2,9 et 3,0 écarts types, contre 3,0 sans détente, pour un seuil écrit d'avance de 2 ; il monte à 3,8 dans
+une variante de la version cohérente, dont les nombres sont fragiles. La piste est exclue
 comme explication de l'écart ; les spectres ne demandent pas de détente (γ toléré jusqu'à 0,36 à 0,41 à deux écarts
 types, pour 0,40 publié). Fait nouveau, sans lien avec la CD : dans la version cohérente, un fil tournant n'a plus de
 rotation stable au-delà de 2,1 fm, et la trajectoire des mésons légers s'arrête à J = 6. Rectificatif de R136 : le

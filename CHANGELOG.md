@@ -72,6 +72,9 @@
   424 à 430 MeV et dégrade l'ajustement de 2,0 à 2,5 écarts types ; écart complet au réseau
   2,9 à 3,0 écarts types contre 3,0 sans détente, pour un seuil écrit d'avance de 2 : piste
   exclue ; version cohérente : plus de rotation stable au-delà de 2,1 fm
+- Complément à R138 : critère de Rayleigh retrouvé à 2,15 fm pour des extrémités lourdes ;
+  sensibilité au profil : version naïve inchangée, version cohérente fragile (écart complet
+  de 3,0 à 3,8) ; verdict inchangé
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 
