@@ -314,7 +314,7 @@ la feuille de route, dont R133 fait le premier calcul. Audit : `ds_effective_str
 CD n'y apporte qu'un nombre, la tension, ni confirmée ni exclue. Restent à faire : B1 par l'auteur, B2 avec des tables
 de réseau, la recherche bibliographique de B3.
 
-## 13. Choix faits par délégation (22 novembre, R134 et R135)
+## 13. Choix faits par délégation (22 novembre, R134 à R138)
 
 L'auteur : « ok prend la tension du réseau », puis : « Puisque tu connais les meilleures réponses aux questions que tu
 me poses, fais les choix à ma place. » Les choix de physique sont désormais faits par l'assistant, consignés avec leur
@@ -328,6 +328,7 @@ raison dans `../redraw/BASE.md`, et révocables. La publication, le dépôt, la 
 | Le rôle des deux lectures | Dix dimensions : étude. Quatre dimensions : tout calcul confronté aux mesures | Seule la corde effective est testable |
 | La table des hadrons de la base | Pas de remise à l'échelle | Ce serait de la numérologie ; la « part statique » est hors domaine |
 | La suite | Lire avant de calculer ; aucune nouvelle adoption | Chaque choix de plus serait une paramétrisation |
+| La piste de la détente du fil | Calculée (R138), puis fermée | Elle déplace le désaccord sans le réduire : 2,9 à 3,0 écarts types, comme sans elle |
 
 **Ce que la tension du réseau entraîne (R134, `ds_lattice_tension.py`, 6/6).** Le fil pèse 1004 MeV par fermi au lieu
 de 938. Dans la corde effective il ne reste aucun nombre propre à la CD. Et l'écart change de côté : avec cette
@@ -359,8 +360,29 @@ celle du Δ(2420), estimé à 2450 MeV, ce qui ramène la pente de sa famille de
 masses de 2026 l'ajustement ne bouge pas : tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
 à 3,0. La dernière masse a été relue ensuite : D₂(2740)⁰, 2747 ± 6 MeV. Plus aucune valeur n'est citée de mémoire.
 
+**La détente du fil appliquée à la corde tournante (R138, `ds_string_relaxation.py`, 8/8).** Le long d'un fil long, des
+paires de quarks apparaissent et le fil tire moins fort : c'est la piste publiée pour l'écart entre les deux tensions.
+Critère écrit avant le calcul : l'écart, 3,0 écarts types, doit tomber sous 2. Relue, la fonction publiée est faible
+aux longueurs des mésons : 1,9 % à 1,18 fm, 4,4 % à 1,6 fm ; les 40 % ne sont atteints qu'au-delà de 3 fm. Les « 30 % »
+des résumés valent dans le modèle de ses auteurs, pas pour la corde tournante.
+
+| | Tension demandée par les spectres | Perte d'ajustement | Écart complet au réseau |
+|---|---|---|---|
+| Sans détente | 423,7 MeV | 0 | 2,97 écarts types |
+| Détente publiée, force égale à la tension | 430,1 MeV | 1,95 écart type | 2,86 |
+| Détente publiée, force égale à la dérivée de l'énergie | 434,2 MeV | 2,54 écarts types | 3,01 |
+
+- **Ce que le calcul apprend.** La détente déplace le désaccord sans le réduire : ce qu'elle gagne sur la tension, 6 à
+  10 MeV sur 21, elle le perd sur l'ajustement. Sur toute la fourchette publiée l'écart complet reste au-dessus de 2,8.
+- **Les spectres ne demandent pas de détente.** L'ajustement se dégrade dès la plus petite valeur ; à deux écarts types
+  ils tolèrent γ jusqu'à 0,36 à 0,41, la valeur publiée étant 0,40.
+- **Un fait nouveau, qui n'est pas de la CD.** Si la force est la dérivée de l'énergie, un fil tournant n'a plus de
+  rotation stable au-delà de 2,1 fm : la trajectoire des mésons légers s'arrête à J = 6, le plus haut spin observé.
+  Cela dépend d'un profil que ses auteurs disent arbitraire.
+
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
-ouverte, B3, pour laquelle la CD n'apporte aucun nombre.
+ouverte, B3, pour laquelle la CD n'apporte aucun nombre. La seule piste publiée pour B3, la détente du fil, ne tient
+pas pour la corde tournante (R138). Reste B2, avec les niveaux publiés du réseau.
 
 ## 14. Suite
 
@@ -397,4 +419,4 @@ M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ; R. Sommer, Nucl. Phys. B 411, 839 
 *Pour le §13, vérifiées par recherche le 22 novembre :* J. Bulava et al., Phys. Lett. B 854 (2024) 138754,
 arXiv:2403.00754 ; A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 06 (2018)
 148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849. *Lus à la source le 22 novembre (R136) :* arXiv:1402.5603,
-arXiv:2403.00754, arXiv:1901.10280.
+arXiv:2403.00754, arXiv:1901.10280. *Pour R138 :* arXiv:1901.10280, éq. 51 à 54, relues à la source.

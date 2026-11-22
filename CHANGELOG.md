@@ -67,6 +67,11 @@
   corrigé à 2450 MeV (pente de sa famille 0,89 et non 0,92) ; ajustement universel mis à jour :
   0,8864 ± 0,0106 GeV⁻², tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
   à 3,0 ; dernière masse relue, D₂(2740)⁰ à 2747 ± 6 MeV : plus aucune valeur de mémoire
+- Choix délégué : la détente publiée du fil appliquée à la corde tournante. R138 : la fonction
+  publiée ne vaut que 1,9 % à 1,18 fm ; elle remonte la tension demandée par les spectres de
+  424 à 430 MeV et dégrade l'ajustement de 2,0 à 2,5 écarts types ; écart complet au réseau
+  2,9 à 3,0 écarts types contre 3,0 sans détente, pour un seuil écrit d'avance de 2 : piste
+  exclue ; version cohérente : plus de rotation stable au-delà de 2,1 fm
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

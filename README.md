@@ -40,7 +40,8 @@ releases.
 > the open question is why Regge slopes exceed by about 10 % the value given by the static tension (R135). The
 > published trajectory fits, read at the source, are reproduced to 0.1 % (R136): spectroscopic tension 424 ± 2.5 MeV,
 > with the base value 2.5 and the lattice value 2.9 standard deviations above it; with the 2026 PDG masses, 2.6 and
-> 3.0 (R137). No new claim is made. See
+> 3.0 (R137). The one published mechanism for that gap, a relaxation of the string by pair creation, does not reduce
+> it when applied to the rotating string: 2.9 to 3.0 standard deviations (R138). No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

@@ -3608,3 +3608,71 @@ masses de 2026 donne α′ = 0,8864 ± 0,0106 GeV⁻² et χ² = 13,50·10⁻⁴
 famille du D passe de −0,19 à −0,20 ; la tension des spectres reste 423,7 ± 2,5 MeV, la base à 2,6 écarts types et le
 réseau à 3,0. Le script est à jour, 5/5. **Il ne reste aucune masse citée de mémoire ou reprise sans relecture dans
 R133 à R137.**
+
+**Choix fait par délégation (22 novembre 2026) : appliquer la détente publiée à la corde tournante.** Raison : c'est
+le calcul annoncé en R136 et dans la feuille de route, et la seule piste publiée pour l'écart de 21 MeV entre la
+tension des spectres et celle du réseau. Mécanisme : le long d'un fil long, des paires de quarks légers apparaissent ;
+le fil tire alors moins fort. Ce que la piste rapporterait si elle tenait : la question B3 tranchée, une seule tension,
+celle du réseau, pour le potentiel statique et pour les spectres ; rien de propre à la CD. **Critère écrit avant le
+calcul :** l'écart vaut 21 MeV, soit 3,0 écarts types (R137) ; la piste tient si la détente publiée le ramène sous 2 ;
+sinon elle est exclue pour ce modèle, la corde tournante à extrémités massives de R136. Révocable.
+
+**R138 — La détente du fil appliquée à la corde tournante : elle n'explique pas l'écart entre spectres et réseau.**
+Script `matter/rebuild/ds_string_relaxation.py`, 8/8 (il réutilise R136 et R137 : mêmes neuf familles, mêmes 38 états,
+masses du PDG 2026, masses d'extrémité 60, 220 et 1500 MeV, même mesure d'écart et même erreur commune).
+*A. La fonction publiée, relue à la source* (Badalian et Bakker, éq. 51 à 54) : σ_f(r) = σ(1 − γf(r)), f = eˣ/(B + eˣ),
+x = √σ(r − R₀) ; meilleur jeu γ = 0,40, B = 20, R₀ = 6,0 GeV⁻¹ = 1,18 fm, σ = 0,182 GeV². La détente commence à R₀, où
+elle vaut γ/(B + 1) = 1,9 % ; 2,6 % à 1,33 fm, la longueur de l'a₄ ; 4,4 % à 1,6 fm ; 9 % à 2 fm ; 29 % à 3 fm. Les
+« 40 à 45 % » sont la valeur atteinte au-delà de 3 fm. La force dV/dr tombe plus vite que la tension : 0,94 σ à
+1,18 fm, 0,82 σ à 1,6 fm, 0,61 σ à 2 fm, un minimum de 0,18 σ à 2,9 fm, puis elle remonte vers 0,60 σ.
+*B. Deux versions de la corde tournante.* Naïve : la force aux extrémités est σ_f(L). Cohérente : l'énergie d'un fil au
+repos étant σ_f(L)·L, la force est sa dérivée ; l'équilibre de chaque bout devient mωβγ = T/γ + T′(L)∫√(1 − ω²r²)dr.
+Contrôles : une rotation stationnaire doit vérifier dE/dJ = ω ; la version cohérente le fait à 4·10⁻⁸ près, la version
+naïve s'en écarte de 0,3 % à 16 % entre 0,5 et 1,9 fm. À la limite statique la force centripète vaut 0,9999 dV/dL
+(cohérente) et 1,124 dV/dL (naïve). **C'est la version cohérente qui traduit le potentiel publié ;** la naïve est
+gardée comme borne.
+*C. Contrôles du solveur.* Sans détente il redonne le calcul direct de R136 à 1·10⁻⁷ près et l'ajustement de R137 :
+α′ = 0,8864 ± 0,0106 GeV⁻², χ² = 13,50·10⁻⁴, 423,7 ± 2,5 MeV ; écart au réseau 21,3 MeV, 2,97 écarts types.
+*D. Fait nouveau : la branche stable a une fin (version cohérente).* Au-delà de 2,1 fm la force d'extrémité tombe plus
+vite que 1/L³ : le moment cinétique décroît quand le fil s'allonge, et la rotation est instable (critère de Rayleigh).
+À la tension du réseau et au meilleur jeu, le moment cinétique classique maximal vaut 5,70 pour deux quarks légers,
+6,15 (léger et étrange), 6,64 (deux étranges), 7,90, 8,55 et 11,33 avec un ou deux quarks charmés, toujours entre 2,10
+et 2,13 fm. Les états J = 6 en demandent 5,48. Selon le jeu : 6,21 (γ = 0,35), 5,32 (γ = 0,45), 3,84 (coin fort),
+8,55 (coin faible). Avec le meilleur jeu, la trajectoire dominante des mésons légers s'arrête à J = 6, le plus haut
+spin observé (a₆ et f₆, états absents de la table de synthèse du PDG). Ce n'est pas un résultat de la CD : aucun de
+ses nombres n'y entre, et le profil est phénoménologique, ses auteurs écrivant que f(r) « can be rather arbitrary ».
+*E. Ajustement au meilleur jeu publié.*
+
+| | Tension demandée par les spectres | χ² | Dégradation | Écart de tension seul | Écart complet |
+|---|---|---|---|---|---|
+| Sans détente | 423,7 MeV | × 1 | 0 | 2,97 | 2,97 |
+| Version naïve | 430,1 MeV | × 1,136 | 3,80, soit 1,95 écart type | 2,09 | 2,86 |
+| Version cohérente | 434,2 MeV | × 1,231 | 6,45, soit 2,54 écarts types | 1,61 | 3,01 |
+
+La dégradation est la hausse du χ² minimal, en unités de l'erreur commune. L'écart complet minimise sur la tension la
+somme de la hausse du χ² et de l'écart à 445 ± 6,7 MeV ; sans détente il redonne les 3,0 de R137. Dans la version
+cohérente, l'a₆ et le f₆ sont au bout de la branche (J classique 5,44). À la tension du réseau, la détente abaisse
+l'a₄ de 2082 à 2058 MeV, pour 1967 mesurés : 24 MeV sur les 115 qu'il faudrait. **Rectificatif de R136 G :** le
+mécanisme va dans le bon sens, il n'a pas « la bonne taille » pour la corde tournante ; les 30 % et les 300 MeV de
+l'article valent dans son hamiltonien, dont la pente sans détente est 8σ. À noter, COÏNCIDENCE sans portée : dans la
+version naïve la tension demandée, 430,1 MeV, est celle de la base, 430,3 MeV ; mais cet ajustement est moins bon que
+l'ajustement sans détente, et la formule de la base n'a pas de mécanisme (R126).
+*F. La fourchette publiée* (γ de 0,35 à 0,50, B de 15 à 25, R₀ de 5 à 8 GeV⁻¹). Écart complet : 2,82 et 2,83 pour
+γ = 0,35 ; 2,91 (naïve) et 7,45 (cohérente, états J = 6 au bout de la branche) pour γ = 0,45 ; 2,84 et 2,83 au coin
+faible ; 4,06 au coin fort (naïve), où la version cohérente n'a plus d'états J = 5 ni 6 (branche finie à 3,84). **Il
+ne descend jamais sous 2,8.**
+*G. Les spectres ne demandent pas de détente.* À tension libre, la dégradation croît avec γ dès la première valeur :
+0,59 (γ = 0,10), 1,40, 2,47, 3,10, 3,80 et 4,58 (γ = 0,45) en version naïve ; 0,59, 1,44, 2,64, 3,42, 6,45 et 55 en
+version cohérente. La tension demandée monte de 1,6 MeV par dixième de γ. À deux écarts types les spectres tolèrent
+γ jusqu'à 0,41 (naïve) ou 0,36 (cohérente) : la valeur publiée, 0,40, est au bord.
+*H. Le critère.* Écart complet : 2,86 et 3,01, pour un seuil de 2. Le critère écrit d'avance ne disait pas si la
+dégradation compte ; les trois lectures sont donc données. La plus favorable, la tension seule : 2,09 (naïve) et 1,61
+(cohérente). La plus stricte, la tension du réseau imposée sans son erreur : 6,5 et 6,4, contre 8,6 sans détente. Le
+critère n'est atteint que dans la lecture qui ignore la perte d'ajustement, et dans une seule des deux versions.
+**Verdict : EXCLU comme explication de l'écart, pour ce modèle. La détente publiée déplace le désaccord sans le
+réduire : elle remonte la tension demandée par les spectres de 424 à 430 MeV (434 dans la version cohérente), soit 6 à
+10 MeV sur 21, et dégrade l'ajustement d'autant ; l'écart complet au réseau reste à 2,9 et 3,0 écarts types, contre
+3,0 sans détente. Les spectres ne demandent pas de détente.** Limites : masses d'extrémité gardées telles qu'ajustées
+sans détente par l'article de 2014 ; profil ajusté par ses auteurs dans un autre modèle ; corde classique, les
+corrections quantiques étant laissées aux ordonnées. B3 reste ouverte, des deux côtés. Reste à faire : B2, avec les
+niveaux publiés du réseau. Leçon de méthode : un critère d'arrêt s'écrit avec sa mesure et son seuil en un nombre.

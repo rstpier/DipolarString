@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R137)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R138)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R137).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R138).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -329,7 +329,16 @@ ramène la pente de sa famille de 0,92 à 0,89 (rectificatif de R120 et R133). L
 masses de 2026 ne bouge pas : α′ = 0,8864 ± 0,0106, tension des spectres 423,7 ± 2,5 MeV ; la base est à 2,6 écarts
 types, le réseau à 3,0, au seuil de la feuille de route sans le franchir de façon établie. Toutes les masses sont
 relues, D₂(2740)⁰ compris (2747 ± 6 MeV).
-L'article (`matter/paper/`) est consolidé jusqu'à R137.
+Choix délégué (22 novembre 2026) : appliquer la détente publiée à la corde tournante. R138 : relue à la source, la
+détente du fil ne vaut que 1,9 % à 1,18 fm et 4,4 % à 1,6 fm ; les 40 % ne sont atteints qu'au-delà de 3 fm. Appliquée
+à l'ajustement des neuf familles, elle remonte la tension demandée par les spectres de 423,7 à 430,1 MeV (434,2 si la
+force est prise comme la dérivée de l'énergie) et dégrade l'ajustement de 2,0 à 2,5 écarts types : l'écart complet au
+réseau reste à 2,9 et 3,0 écarts types, contre 3,0 sans détente, pour un seuil écrit d'avance de 2. La piste est exclue
+comme explication de l'écart ; les spectres ne demandent pas de détente (γ toléré jusqu'à 0,36 à 0,41 à deux écarts
+types, pour 0,40 publié). Fait nouveau, sans lien avec la CD : dans la version cohérente, un fil tournant n'a plus de
+rotation stable au-delà de 2,1 fm, et la trajectoire des mésons légers s'arrête à J = 6. Rectificatif de R136 : le
+mécanisme n'a pas « la bonne taille » pour la corde tournante (24 MeV sur les 115 qu'il faudrait pour l'a₄).
+L'article (`matter/paper/`) est consolidé jusqu'à R138.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -435,11 +444,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R137 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R138 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R137, quatorze scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R138, quinze scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

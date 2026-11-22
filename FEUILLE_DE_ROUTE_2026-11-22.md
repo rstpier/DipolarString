@@ -202,6 +202,11 @@ mémoire sont identiques aux tables, et le Δ(2420) est corrigé à 2450 MeV. Aj
 α′ = 0,8864 ± 0,0106 GeV⁻², tension des spectres 423,7 ± 2,5 MeV. Écart au réseau : 21 MeV, 3,0 écarts types avec les
 erreurs publiées, sans compter la dépendance de la tension du réseau à sa définition.
 
+**État après R138 (22 novembre 2026, choix délégué).** Le calcul annoncé après R136 est fait : la détente publiée du
+fil, appliquée à la corde tournante avec la tension de 2024, ne réduit pas l'écart. Elle remonte la tension demandée
+par les spectres de 424 à 430 MeV et dégrade l'ajustement d'autant ; l'écart complet reste à 2,9 et 3,0 écarts types,
+pour un seuil écrit d'avance de 2. B3 reste ouverte, des deux côtés. Reste B2, avec les niveaux publiés du réseau.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

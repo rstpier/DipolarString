@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_string_relaxation.py` — R138 : la détente du fil (aplatissement publié du potentiel) appliquée à la corde
+  tournante ; elle remonte la tension demandée par les spectres de 424 à 430 MeV et dégrade l'ajustement d'autant ;
+  écart complet au réseau 2,9 à 3,0 écarts types contre 3,0 sans détente, seuil écrit d'avance 2 : piste exclue.
+  Version cohérente : plus de rotation stable au-delà de 2,1 fm.
 - `ds_pdg2026_update.py` — R137 : masses du PDG 2026 lues à la source ; 28 des 31 valeurs citées de mémoire sont
   identiques aux tables, le Δ(2420) est corrigé à 2450 MeV ; l'ajustement universel mis à jour donne
   α′ = 0,8864 ± 0,0106, soit 423,7 ± 2,5 MeV ; base à 2,6 écarts types, réseau à 3,0. Toutes les masses sont relues,
