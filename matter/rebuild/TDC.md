@@ -357,7 +357,7 @@ compare pas au réseau. La question B3 se pose donc des deux côtés.
 depuis le PDG. Sur trente et un états cités de mémoire, vingt-huit sont identiques aux tables ; une correction compte,
 celle du Δ(2420), estimé à 2450 MeV, ce qui ramène la pente de sa famille de 0,92 à 0,89, celle des mésons. Avec les
 masses de 2026 l'ajustement ne bouge pas : tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
-à 3,0.
+à 3,0. La dernière masse a été relue ensuite : D₂(2740)⁰, 2747 ± 6 MeV. Plus aucune valeur n'est citée de mémoire.
 
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
 ouverte, B3, pour laquelle la CD n'apporte aucun nombre.

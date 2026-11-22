@@ -3599,3 +3599,12 @@ mésons. **Rectificatif de R120 et de R133 :** seule la famille du nucléon rest
 **Verdict : les valeurs citées de mémoire sont confirmées à 0,2 MeV près, sauf le Δ(2420), corrigé. Avec les masses
 de 2026 la tension des spectres reste 424 ± 2,5 MeV ; la base est à 2,6 écarts types, le réseau à 3,0.** Il ne reste
 plus de masse citée de mémoire dans R133 à R137, sauf l'état D₂(2740), pris à la valeur de l'article.
+
+**Complément à R137 (22 novembre 2026) : la dernière masse relue.** À la demande de l'auteur, la fiche du D₂(2740)⁰ a
+été lue dans l'édition 2026 du PDG : I(J^P) = ½(2⁻), **masse 2747 ± 6 MeV**, moyenne de deux mesures de LHCb
+(2737,0 ± 3,5 ± 11,2 en 2013 ; 2751 ± 3 ± 7 en 2020), état omis de la table de synthèse ; le spin et la parité ont été
+établis en 2020. L'article de 2014 prenait 2737 MeV, la première mesure. Avec 2747 MeV l'ajustement universel aux
+masses de 2026 donne α′ = 0,8864 ± 0,0106 GeV⁻² et χ² = 13,50·10⁻⁴, au lieu de 0,8866 et 13,52 ; l'ordonnée de la
+famille du D passe de −0,19 à −0,20 ; la tension des spectres reste 423,7 ± 2,5 MeV, la base à 2,6 écarts types et le
+réseau à 3,0. Le script est à jour, 5/5. **Il ne reste aucune masse citée de mémoire ou reprise sans relecture dans
+R133 à R137.**

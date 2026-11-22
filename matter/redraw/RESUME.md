@@ -326,8 +326,9 @@ base est à 2,5 écarts types dans cet ajustement.
 Autorisation (22 novembre 2026) : téléchargement depuis le PDG. R137 : les masses de l'édition 2026 sont lues à la
 source. Sur 31 états cités de mémoire, 28 sont identiques aux tables ; le Δ(2420) est corrigé à 2450 MeV, ce qui
 ramène la pente de sa famille de 0,92 à 0,89 (rectificatif de R120 et R133). L'ajustement universel refait avec les
-masses de 2026 ne bouge pas : α′ = 0,8866 ± 0,0106, tension des spectres 423,7 ± 2,5 MeV ; la base est à 2,6 écarts
-types, le réseau à 3,0, au seuil de la feuille de route sans le franchir de façon établie.
+masses de 2026 ne bouge pas : α′ = 0,8864 ± 0,0106, tension des spectres 423,7 ± 2,5 MeV ; la base est à 2,6 écarts
+types, le réseau à 3,0, au seuil de la feuille de route sans le franchir de façon établie. Toutes les masses sont
+relues, D₂(2740)⁰ compris (2747 ± 6 MeV).
 L'article (`matter/paper/`) est consolidé jusqu'à R137.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.

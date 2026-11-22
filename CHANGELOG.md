@@ -65,8 +65,8 @@
 - Autorisation de l'auteur : téléchargement depuis le PDG. R137 : masses de l'édition 2026 lues
   à la source ; 28 des 31 valeurs citées de mémoire sont identiques aux tables ; Δ(2420)
   corrigé à 2450 MeV (pente de sa famille 0,89 et non 0,92) ; ajustement universel mis à jour :
-  0,8866 ± 0,0106 GeV⁻², tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
-  à 3,0
+  0,8864 ± 0,0106 GeV⁻², tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
+  à 3,0 ; dernière masse relue, D₂(2740)⁰ à 2747 ± 6 MeV : plus aucune valeur de mémoire
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

@@ -3,7 +3,7 @@
 
 Le 22 novembre 2026 l'auteur a autorise le telechargement depuis le PDG. Lus : les tables de synthese des mesons et
 des baryons, edition 2026 (F. Takahashi et al., Particle Data Group, Int. J. Mod. Phys. A 41, 2630011 (2026)), et
-les fiches de rho5(2350), f6(2510), K5*(2380) et des « autres etats ». Ce script reutilise le calcul de R136.
+les fiches de rho5(2350), f6(2510), K5*(2380), D2(2740)0 et des « autres etats ». Ce script reutilise le calcul de R136.
 
   A. Controle des masses que R133 citait de memoire : vingt-huit etats, ecart maximal a la table.
   B. Deux corrections : Delta(2420), dont la masse de Breit-Wigner est estimee a 2450 MeV et non 2420 (R120, R133) ;
@@ -37,7 +37,8 @@ CONTROL = {
     "Delta(2420) 11/2+": (2420.0, 2450.0, 150.0),
 }
 
-# L'ajustement universel de l'article, memes etats, masses du PDG 2026 (GeV). D2(2740) : valeur de l'article, non relue.
+# L'ajustement universel de l'article, memes etats, masses du PDG 2026 (GeV). D2(2740)0 : 2747 +- 6 MeV, lu dans sa
+# fiche (omis de la table de synthese ; l'article de 2014 prenait 2737, la premiere mesure).
 TRAJ_2026 = {
     "pi/b":  ([(1, 1.2295), (2, 1.6706), (3, 2.032), (4, 2.250)], "u", "u"),
     "rho/a": ([(1, 0.77526), (2, 1.3182), (3, 1.6888), (4, 1.967), (5, 2.330), (6, 2.450)], "u", "u"),
@@ -45,7 +46,7 @@ TRAJ_2026 = {
     "omega/f": ([(1, 0.78266), (2, 1.2754), (3, 1.667), (4, 2.018), (5, 2.250), (6, 2.470)], "u", "u"),
     "K*":    ([(1, 0.89188), (2, 1.4273), (3, 1.779), (4, 2.048), (5, 2.382)], "u", "s"),
     "phi":   ([(1, 1.019460), (2, 1.5173), (3, 1.854)], "s", "s"),
-    "D":     ([(0, 1.86484), (1, 2.4221), (2, 2.737)], "u", "c"),
+    "D":     ([(0, 1.86484), (1, 2.4221), (2, 2.747)], "u", "c"),
     "Ds*":   ([(1, 2.1122), (2, 2.5691), (3, 2.860)], "s", "c"),
     "Psi":   ([(0, 3.096900), (1, 3.51067), (2, 3.7737)], "c", "c"),
 }
