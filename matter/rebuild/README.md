@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_chain_of_links.py` — R131, après le choix « ok prend la chaîne de maillons » : la corde comme chaîne de maillons
+  à ressorts (bits de corde) ; fréquences exactes et pente de Regge ; ordonnée (D − 2)/24 comme énergie de point zéro ;
+  un nombre fini de maillons brise l'invariance de Lorentz (cos(π/2M)) ; maillon = dipôle, chaîne = produit de
+  matrices, jonction = concaténation ; chaîne = échelle LC d'impédance égale à la tension.
 - `ds_calabi_yau.py` — R130, après le choix « ok prend Calabi-Yau » : un quart des supersymétries ; les entiers de la
   quintique (1 taille, 101 formes, 204 cycles, χ = −200) retrouvés de trois façons sur dix variétés ; générations comme
   produit d'intersection dans le réseau des cycles (tout entier disponible) ; 52 à 410 champs sans masse à fixer ; les

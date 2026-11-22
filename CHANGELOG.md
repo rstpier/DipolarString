@@ -30,6 +30,11 @@
   calculables (métrique sans expression connue) ; 52 à 410 champs sans masse à fixer ;
   paramétrisation, plus large que R128 ; complément à R128 : son exemple à trois générations ne
   ferme pas seul son bilan de charge
+- Choix de l'auteur : la chaîne de maillons. R131 : c'est l'écriture de la corde en « bits de
+  corde » ; le maillon est un dipôle, la chaîne un fil, la jonction une mise bout à bout, la
+  chaîne une échelle LC dont l'impédance est la tension ; pente de Regge et ordonnée (D − 2)/24
+  retrouvées ; aucun nombre nouveau ; un maillon de taille finie est exclu par l'invariance de
+  Lorentz (5 % d'écart pour cinq maillons par fermi, plus de 10¹⁴ exigés par nucléon)
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

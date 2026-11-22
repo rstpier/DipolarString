@@ -3273,3 +3273,52 @@ C. Lütken et R. Schimmrigk, Nucl. Phys. B 298, 493 (1988) ; M. Kreuzer et H. Sk
 (2000) ; B. Greene, K. Kirklin, P. Miron et G. Ross, Nucl. Phys. B 278, 667 (1986) ; L. Dixon, J. Harvey, C. Vafa et
 E. Witten, Nucl. Phys. B 261, 678 (1985) ; R. Blumenhagen, B. Körs, D. Lüst et T. Ott, Nucl. Phys. B 616, 3 (2001) ;
 M. Gross, Invent. Math. 144, 75 (2001).
+
+**Décision (22 novembre 2026) : la chaîne de maillons.** À la question de l'auteur, « les cordes peuvent-elles se lier
+en longueur ? (fil) », il a été répondu que oui, bout à bout, et que son filament de dipôles en chaîne a un équivalent
+connu. L'auteur : « ok prend la chaîne de maillons ». Définition retenue : la corde de R130 écrite comme une chaîne de
+M maillons, chacun portant la même part m de l'impulsion (P⁺ = Mm) et lié à ses voisins par un ressort ; c'est le
+modèle des « bits de corde » (Giles et Thorn 1977). Chaque maillon est un dipôle.
+
+**R131 — Le filament comme chaîne de maillons : ce que la chaîne est, ce qu'elle donne, ce qu'elle interdit.**
+Script `matter/rebuild/ds_chain_of_links.py`, 6/6.
+*A. La chaîne est la corde.* Fréquences exactes d'une chaîne ouverte : ω_n = (2T₀/m) sin(nπ/2M), vérifiées par action
+directe sur les vecteurs propres (résidu 6·10⁻¹⁴). Pour n petit devant M les niveaux sont équidistants,
+M² = N/α′ avec α′ = 1/(2πσ) = 0,8595 GeV⁻² : la pente de R120, premier niveau à 1079 MeV. À refaire à la main (unités
+T₀/m) : 2 maillons, √2 ; 3 maillons, 1 et √3 ; 4 maillons, 0,765, 1,414, 1,848.
+*B. L'ordonnée à l'origine est l'énergie de point zéro de la chaîne.* Somme exacte M[cot(π/4M) − 1] = 4M²/π − M −
+π/12 − π³/(2880M²) − … (vérifiée numériquement jusqu'au quatrième terme). Le terme en M² (énergie propre de chaque
+maillon) et le terme en M (énergie des deux bouts) demandent deux contre-termes ajustés ; le terme constant donne
+a = (D − 2)/24 : **le 1/12 qui condamnait la corde à quatre dimensions (R127 B) est l'énergie de Casimir de la
+chaîne**, et 1 à vingt-six dimensions. Chaîne supersymétrique : 8 modes bosoniques et 8 fermioniques de mêmes
+fréquences, tout s'annule, état fondamental sans masse (R128 A).
+*C. Un nombre fini de maillons brise l'invariance de Lorentz.* Au niveau 2, un quantum du mode 2 et deux quanta du mode
+1 doivent avoir la même énergie pour former un seul multiplet de rotation (2 + 3 = 5 états à quatre dimensions,
+24 + 300 = 324 à vingt-six) ; or ω₂/2ω₁ = cos(π/2M) : écart 29 % pour 2 maillons, 4,9 % pour 5, 1,2·10⁻⁴ pour 100.
+Des maillons de la taille des longueurs de la base : 5,5 par fermi avec ℓ_s = 0,183 fm, 1,2 avec ℓ₁(9) = 0,813 fm,
+soit un écart de 5 % ou aucun mode interne. L'isotropie de l'inertie du nucléon, vérifiée à 10⁻²⁹ près (ordre de
+grandeur, de mémoire), exigerait plus de 3,5·10¹⁴ maillons par nucléon, des maillons 6·10¹³ fois plus fins que ℓ_s.
+**Maillon de taille finie : EXCLU.** Même cause que R123 et R124 : une structure discrète de taille finie fixe un
+repère et un axe.
+*D. Dipôles et jonction.* Un maillon est une matrice élémentaire E_ab, une charge sur le support a et la charge opposée
+sur b ; E_ab E_cd = E_ad si b = c, zéro sinon (81 produits vérifiés) : la chaîne est un produit de matrices, les
+charges voisines s'annulent, il reste un plus et un moins aux bouts ; la jonction bout à bout est une concaténation,
+et le nombre de maillons se conserve (P⁺). Mais ce nombre dépend du repère : un proton du LHC (6,8 TeV) porte 14 500
+fois plus de maillons que le même proton au repos. Le maillon n'est pas un constituant que l'on compte, c'est une
+tranche d'impulsion aussi fine qu'on veut.
+*E. La chaîne est une échelle LC.* Cellule (L, C) ↔ (masse du maillon, ressort de raideur 1/C) : même dispersion
+(2/√(LC)) sin(θ/2), même impédance √(L/C). Pour la corde, l'impédance de la chaîne est la tension T₀, indépendante de
+la finesse des maillons, et la coupure 2T₀/m part à l'infini. Deux cordes de même tension sont deux lignes adaptées :
+l'idée d'origine de la CD, le vide comme lignes adaptées, est sur le feuillet la chaîne de maillons elle-même
+(R127 E).
+*F. Où vivent les maillons.* Dans les D − 2 dimensions transverses : 8 = 2 visibles + 6 cachées à dix dimensions ; la
+troisième dimension visible est portée par le nombre de maillons. Dans les six dimensions cachées les ressorts suivent
+la forme du Calabi-Yau, sans expression connue (R130).
+**Verdict : la chaîne de maillons est une écriture connue de la corde, exacte à la limite d'un nombre infini de
+maillons (IDENTITÉ). Le filament dipolaire de l'auteur y a sa place exacte : le maillon est un dipôle, la chaîne un
+fil, la jonction une mise bout à bout, l'échelle LC son circuit. Elle n'apporte aucun nombre nouveau ; elle retrouve
+la pente et l'ordonnée à l'origine ; un maillon de la taille d'une longueur de la base est EXCLU.**
+*Sources, données de mémoire, à vérifier :* R. Giles et C. B. Thorn, Phys. Rev. D 16, 366 (1977) ; I. Klebanov et
+L. Susskind, Nucl. Phys. B 309, 175 (1988) ; C. B. Thorn, hep-th/9405069 ; O. Bergman et C. B. Thorn, Phys. Rev. D 52,
+5980 (1995) ; H. Blöte, J. Cardy et M. Nightingale, Phys. Rev. Lett. 56, 742 (1986) ; M. Smiciklas et al., Phys. Rev.
+Lett. 107, 171604 (2011).

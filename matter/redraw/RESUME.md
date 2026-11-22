@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R130)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R131)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R130).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R131).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -284,7 +284,14 @@ corde hétérotique, sans corde ouverte donc sans dipôle, et −6 est absent d'
 dépendent d'une métrique sans expression connue ; le choix ajoute 52 à 410 champs sans masse à fixer. Complément à
 R128 : son exemple à trois générations ne ferme pas seul son bilan de charge. Verdict : paramétrisation, plus large
 que R128.
-L'article (`matter/paper/`) est consolidé jusqu'à R130.
+Décision (22 novembre 2026) : la chaîne de maillons. R131 : la corde écrite comme une chaîne de maillons liés par des
+ressorts (bits de corde, Giles et Thorn 1977). Le filament dipolaire y a sa place exacte : le maillon est un dipôle, la
+chaîne un produit de matrices, la jonction bout à bout une concaténation, et la chaîne est une échelle LC dont
+l'impédance est la tension. Ses modes lents redonnent la pente de Regge ; son énergie de point zéro redonne l'ordonnée
+(D − 2)/24, le 1/12 de R127 B. Mais un nombre fini de maillons brise l'invariance de Lorentz (rapport cos(π/2M)) :
+cinq maillons par fermi, la taille des longueurs de la base, donnent 5 % d'écart, et les tests d'isotropie en exigent
+plus de 10¹⁴ par nucléon. Verdict : écriture connue de la corde, aucun nombre nouveau, maillon de taille finie exclu.
+L'article (`matter/paper/`) est consolidé jusqu'à R131.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -390,11 +397,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R130 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R131 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R130, sept scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R131, huit scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

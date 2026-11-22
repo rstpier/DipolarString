@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 130 steps (R1--R130) backed by 125 scripts.
+statement imposes and what it breaks; the record is 131 steps (R1--R131) backed by 126 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -959,6 +959,13 @@ classes in the lattice of three-cycles, where every integer is available; the Eu
 heterotic string, which has no open strings, and in a sample of 2362 complete-intersection configurations the value
 $-6$ never occurs. Masses depend on a metric known to exist but not in closed form, and the choice brings 52 to 410
 massless scalars to be fixed by a further mechanism. The construction is a parametrization, wider than that of R128.
+Finally the author took the filament as a chain of links (R131, \texttt{matter/rebuild/ds\_chain\_of\_links.py}),
+which is the string-bit formulation: each link is a dipole (a matrix unit), the chain a matrix product, end-to-end
+joining a concatenation, and the chain is an $LC$ ladder whose impedance is the string tension. Its slow modes give
+the Regge slope and its zero-point energy gives the intercept $(D-2)/24$, the $1/12$ of the four-dimensional
+exclusion. A finite number $M$ of links breaks Lorentz invariance (two levels that must coincide separate in the
+ratio $\cos(\pi/2M)$), so that links of the size of the base lengths, five per fermi, are excluded, and the chain is
+the string itself in the limit of infinitely fine links. No new number follows.
 
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
@@ -1017,7 +1024,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 125 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 126 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

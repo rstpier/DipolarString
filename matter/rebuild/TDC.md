@@ -217,11 +217,48 @@ donne aucun nombre mesuré : l'espace se choisit, parmi au moins 30 108 types co
 choisi ; les masses ne sont pas calculables ; et le choix ajoute des dizaines à des centaines de champs à fixer. C'est
 une paramétrisation, plus large que celle du §7. Le critère d'arrêt (1) du §7 reste atteint.
 
-## 10. Suite
+## 10. La chaîne de maillons (décision du 22 novembre, R131)
+
+L'auteur demandait si les cordes peuvent se lier en longueur, en fil. Oui, bout à bout ; et son filament de dipôles en
+chaîne a un équivalent connu. L'auteur : « ok prend la chaîne de maillons ». Définition retenue : la corde du §9
+écrite comme une **chaîne de M maillons**, chacun portant la même part d'impulsion et lié à ses voisins par un ressort.
+C'est le modèle des « bits de corde » de Giles et Thorn (1977). Audit : `ds_chain_of_links.py`, 6/6.
+
+| Motif de la CD | Sa place dans la chaîne | Statut |
+|---|---|---|
+| Le dipôle élémentaire | Un maillon : une charge sur un support, la charge opposée sur un autre | Identité |
+| Le filament dipolaire | La chaîne : les charges voisines s'annulent, il reste un plus et un moins aux bouts | Identité |
+| Deux fils qui se lient en longueur | La mise bout à bout de deux chaînes ; le nombre de maillons se conserve | Identité |
+| Les cellules L et C de la ligne | La chaîne elle-même : même dispersion, même impédance | Identité |
+| L'adaptation d'impédance | L'égalité des tensions : l'impédance de la chaîne est la tension | Identité |
+| La pente de Regge | Les modes lents de la chaîne, équidistants | Retrouvé |
+| Le 1/12 qui condamnait la corde à quatre dimensions | L'énergie de point zéro de la chaîne | Retrouvé |
+| La taille du maillon | Aucune : un maillon de taille finie fixe un repère et un axe | Exclu |
+
+- **La chaîne est la corde.** Ses fréquences sont (2T₀/m) sin(nπ/2M). Pour les modes lents elles sont équidistantes :
+  c'est le spectre de la corde, avec la pente α′ = 1/(2πσ) = 0,86 GeV⁻².
+- **Le point zéro.** L'énergie de point zéro de la chaîne vaut 4M²/π − M − π/12 − … en unités de la tension. Les deux
+  premiers termes demandent deux contre-termes ajustés ; le troisième donne l'ordonnée (D − 2)/24. Avec la
+  supersymétrie tout s'annule.
+- **Lorentz.** Avec un nombre fini de maillons, deux niveaux qui doivent coïncider se séparent dans le rapport
+  cos(π/2M). Cinq maillons par fermi, la taille des longueurs de la base : 5 % d'écart. Les tests d'isotropie en
+  demandent plus de 10¹⁴ par nucléon. Et le nombre de maillons dépend du repère : un proton du LHC en porte 14 500
+  fois plus que le même proton au repos. Le maillon n'est pas un constituant, c'est une tranche aussi fine qu'on veut.
+- **Où vivent les maillons.** Dans huit dimensions, deux visibles et six cachées ; la troisième dimension visible est
+  portée par leur nombre.
+- **À refaire à la main.** Les fréquences des chaînes de 2, 3 et 4 maillons : √2 ; 1 et √3 ; 0,765, 1,414 et 1,848.
+
+**Verdict.** La chaîne de maillons est une écriture connue de la corde, exacte quand les maillons sont infiniment fins.
+Elle donne sa place exacte au filament dipolaire et aux cellules LC de la CD d'origine. Elle n'apporte aucun nombre
+nouveau, et elle ferme une porte : le maillon ne peut pas avoir la taille d'une longueur de la base. C'est la même
+cause que R123 et R124 : toute structure discrète de taille finie fixe un repère.
+
+## 11. Suite
 
 Les chemins A et B de la feuille de route, avec sa règle 1 : ne rien revendiquer qu'on ne peut pas refaire soi-même.
 Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres 7 et 8) et R127 B (chapitre 12). Pour le
-§9 : le compte 126 − 25 = 101 et le nombre d'Euler −200 de la quintique.
+§9 : le compte 126 − 25 = 101 et le nombre d'Euler −200 de la quintique. Pour le §10 : les fréquences des chaînes de 2,
+3 et 4 maillons.
 
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,
 hep-th/0105155 ; J. G. Lee et al., Phys. Rev. Lett. 124, 101101 (2020) ; CMS, arXiv:1911.03947, paru dans JHEP
@@ -239,3 +276,6 @@ C. Lütken et R. Schimmrigk, Nucl. Phys. B 298, 493 (1988) ; M. Kreuzer et H. Sk
 (2000) ; B. Greene, K. Kirklin, P. Miron et G. Ross, Nucl. Phys. B 278, 667 (1986) ; L. Dixon, J. Harvey, C. Vafa et
 E. Witten, Nucl. Phys. B 261, 678 (1985) ; R. Blumenhagen, B. Körs, D. Lüst et T. Ott, Nucl. Phys. B 616, 3 (2001) ;
 M. Gross, Invent. Math. 144, 75 (2001).
+*Pour le §10, de mémoire, à vérifier :* R. Giles et C. B. Thorn, Phys. Rev. D 16, 366 (1977) ; I. Klebanov et
+L. Susskind, Nucl. Phys. B 309, 175 (1988) ; C. B. Thorn, hep-th/9405069 ; O. Bergman et C. B. Thorn, Phys. Rev. D 52,
+5980 (1995) ; M. Smiciklas et al., Phys. Rev. Lett. 107, 171604 (2011).
