@@ -340,6 +340,11 @@ recherche n'a trouvé aucune source qui confronte directement les deux. Une pist
 s'aplatit à grande distance quand des paires se créent, ce qui abaisse les pentes. Elle est à lire avant tout calcul.
 La recherche a aussi confirmé deux valeurs prises de mémoire en R133 : la brisure à 1,22 et 1,29 fm, et r₀ = 0,472 fm.
 
+**Lecture à la source (22 novembre).** Tentée et bloquée : les sites des articles ne sont pas lisibles depuis la session
+en cours. La pente publiée 0,884 GeV⁻², les masses d'extrémité et les masses des familles autres que ρ/a, N et Δ
+restent donc citées de mémoire. Les résumés donnent un élément de plus : selon Badalian et Bakker, l'aplatissement du
+potentiel abaisse les pentes d'environ 30 %, le sens et l'ordre de grandeur qu'il faut pour l'écart de 9 à 11 %.
+
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
 ouverte, B3, pour laquelle la CD n'apporte aucun nombre.
 

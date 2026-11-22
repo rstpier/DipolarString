@@ -3507,3 +3507,16 @@ potentiel, est à lire avant tout calcul.**
 A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 08 (2014) 013,
 arXiv:1402.5603, JHEP 02 (2015) 147 et JHEP 06 (2018) 148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849, et
 FLAG Review 2024, arXiv:2411.04268.
+
+**Note (22 novembre 2026) : lecture à la source, tentée et bloquée.** Choix délégué : lire les articles avant tout
+calcul sur B3. Les sites des articles et des tables n'étaient pas ouverts dans les réglages réseau de la session ;
+l'auteur a approuvé l'ajout de arxiv.org et pdg.lbl.gov à l'environnement, mais la lecture des pages échoue encore dans
+la session en cours, et le téléchargement direct a été refusé par le mode automatique : il n'a pas été contourné. Trois
+recherches approfondies n'ont pas renvoyé les nombres détaillés. Restent donc cités de mémoire : la pente
+0,884 GeV⁻² et les masses d'extrémité de 60 et 220 MeV (R133 B), les paramètres du potentiel de Bulava et al., les
+masses PDG des familles autres que ρ/a, N et Δ. Acquis par les résumés : chez Badalian et Bakker (arXiv:1901.10280),
+l'auto-énergie donne des trajectoires linéaires, la correction de corde abaisse la pente orbitale, et l'aplatissement
+du potentiel abaisse les pentes radiale et orbitale d'environ 30 % par rapport au potentiel linéaire ; l'ordonnée vaut
+0,51(1) GeV². Le sens et l'ordre de grandeur sont ceux qu'il faut pour les 9 à 11 % de R134 : la piste est sérieuse,
+non vérifiée. Références repérées pour B2 : « The determination of potential scales in 2+1 flavor QCD »
+(arXiv:2412.10215) ; PoS(LATTICE2024)390 sur la structure du tube de flux en QCD complète.
