@@ -3006,3 +3006,28 @@ chaque point l'énoncé de V2.10, la correction et la preuve R-numérotée), la 
 `v2.11/negative_results/DS_negative_results.pdf` (quatorze résultats négatifs structurels, chacun avec son script), et
 `verify_v2_11.py` (contrôles de source, note, relance des sept scripts de preuve R119–R125). Le dépôt Zenodo de V2.11
 est la décision de l'auteur ; V2.10 reste le dossier de ce qui était revendiqué avant l'erratum.
+
+**R126 — La chasse aux trouvailles : les expressions simples de la base contre les tables, avec l'effet « look-elsewhere ».**
+Demande de l'auteur (22 novembre 2026) : « cherche des trouvailles ». Au sens strict du dossier (manuscrit, section G ;
+revue §3.3) : un nombre est une trouvaille s'il sort d'un calcul, apparaît ailleurs indépendamment et tombe juste
+au-delà de ce que le hasard donne. La troisième condition n'avait jamais été chiffrée. Script `look_elsewhere.py`, 4/4.
+*Grammaire.* E = m_e c² × 3^{2πk} × 3^{a/2} × 2^{b/2} × π^{c/2} × α^d, k ∈ {0, 1}, a, b, c ∈ [−6, 6], d ∈ {−1, 0, 1},
+complexité 2k + |a| + |b| + |c| + 2|d| ≤ 8 : 2186 expressions entre 10⁻⁴ et 7·10⁵ MeV, 224 par décade, espacement
+typique 1,0 % en log ; toutes les formules de la base y sont (√σ = (3/2√π)3^{2π}m_e, partie forte (2α/3)3^{2π}m_e,
+Δ − N = 3^{2π−½}m_e, pion 2m_e/α, E_q = 3^{2π}m_e/2). Même grammaire sans m_e pour les grandeurs sans dimension.
+*Cibles.* 44 grandeurs mesurées : mésons et baryons (π⁰, π±, K, η, ρ, ω, η′, p, n, Λ, Σ⁺, Ξ⁻, Δ, Ω⁻, N(1440)),
+μ, τ, Δ − N, m_n − m_p (total et partie QCD réseau), √σ (réseau 2024 et Regge–Cornell), f_π, Λ_QCD, quark constituant,
+m_s, m_c, m_b, ℏc/r_p, ℏc/r_π, ℏc/(1,1 fm), W, Z, H, B⁺, J/ψ ; μ_p/μ_N, μ_n/μ_N, μ_p/μ_n, m_p/m_e, α_s(M_Z),
+sin²θ_W, m_τ/m_μ. Pour chaque cible : la meilleure expression, son écart, et la probabilité locale p qu'une cible
+tirée au hasard à la même échelle (facteur 10^u, |u| ≤ 0,3) obtienne un accord au moins aussi bon.
+*Résultat.* Chaque cible a un accord au pour-cent ; une sur quelques-unes au pour-mille. Les formules de la base ont
+p_local = 0,33 (Δ − N, +0,17 %), 0,65 (pion), 0,19 (partie forte), 0,02–0,30 (√σ selon la valeur visée), 0,87 (E_q) :
+**au niveau du hasard**. Le meilleur accord du tableau est Σ⁺ = m_e 3^{2π} 3^{3/2} 2^{1/2}/π à 0,002 % (p_local = 0,003),
+une expression sans aucun sens, et sa probabilité corrigée du nombre de cibles (Bonferroni) est 0,14 ; 3 cibles ont
+p < 0,05 (attendu 2,2), 1 a p < 0,01 (attendu 0,4). Grammaire restreinte à la complexité ≤ 6 (celle des formules de la
+base) : 814 expressions, 83 par décade ; un accord à 1 % reste attendu pour 72 % des cibles, à 0,1 % pour 7 %.
+**Verdict : AUCUNE TROUVAILLE.** Les accords de la base à 0,1–3 % (pion, Δ − N, partie forte, √σ, E_q, r_p,
+m_p = 4ℏc/r_p) sont ce que le hasard donne avec cette grammaire, et aucun ne survit à la correction du nombre de
+cibles. La seule chose qui distinguerait une formule est une dérivation ou une prédiction avant mesure — ce que le
+manuscrit exigeait déjà pour G. Le secteur hadronique garde son statut : des rapports conditionnels à deux entiers
+posés, dont la précision n'est pas en elle-même un signal.

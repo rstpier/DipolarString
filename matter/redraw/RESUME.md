@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R125)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R126)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R125).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R126).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -245,7 +245,11 @@ secteur scalaire : sans lui, horizon en temps propre fini ; les falsificateurs 1
 Les trois critères d'arrêt d'A3.md ont joué : de la CD restent les rapports hadroniques et les résultats négatifs.
 Consolidation (21–22 novembre 2026) : paquet `v2.11/` — manuscrit V2.10 avec erratum E1–E12 appliqué sur place
 (`ERRATUM.md`), note des quatorze résultats négatifs (`negative_results/`), `verify_v2_11.py`.
-L'article (`matter/paper/`) est consolidé jusqu'à R125.
+R126 (chasse aux trouvailles, « look-elsewhere ») : 2186 expressions simples de la base (224 par décade) contre
+44 grandeurs mesurées ; chaque cible a un accord au pour-cent, les formules de la base ont des probabilités locales
+de 0,02 à 0,8, le meilleur accord du tableau (Σ⁺ à 0,002 %, sans sens) tombe à 0,14 après correction du nombre de
+cibles : aucune trouvaille ; la précision des rapports hadroniques n'est pas en elle-même un signal.
+L'article (`matter/paper/`) est consolidé jusqu'à R126.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -351,9 +355,9 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R125 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R126 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
-- `matter/redraw/*.py` : 117 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
+- `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
   l'objet (cahier des charges `SPEC.md`, programme `A3.md` ; R122, R124 et R125, trois scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des

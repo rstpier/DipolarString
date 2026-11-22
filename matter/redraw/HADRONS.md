@@ -100,6 +100,10 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
 
 - Posé : le quantum par circuit ; les charges des brins ; le partage 2/3, 2/3, −1/3 ; la forme du
   pôle ; la section carrée ; le compte 9 ; l'exposant (reparamétré).
+- Toutes les précisions de ce chapitre sont au niveau du hasard pour une grammaire de cette complexité (R126,
+  `look_elsewhere.py` : 224 expressions simples par décade, accord au pour-cent attendu pour chaque cible, aucun
+  accord ne survit à la correction du nombre de cibles) ; seule une dérivation ou une prédiction avant mesure
+  distinguerait une formule.
 - Coïncidences enregistrées, non revendiquées : r_p comme enveloppe de trois circuits ;
   m_p c² = 4ℏc/r_p ; l'anneau à √3 rayons de circuit ; le pion à 2m_e/α.
 - Ouvert : ce qui fixe le rayon de l'anneau (et donc m_p à 3 % près ; R113 : pas S = ℏ/2, qui est
@@ -152,7 +156,8 @@ sont dans `BASE.md` (R16–R49, R72) ; ce chapitre les réordonne en une seule c
   meilleurs nombres contre 2024–2026, 4/4 ; `ring_at_134.py` (R114) : l'anneau à 1,34 fm
   exclu par μ_p et r_p, 4/4 ; `circuit_moments.py` (R115) : le moment par les circuits à R_c,
   rapport oui, grandeur non, 4/4 ; `veille_nov2026.py` (R118), 4/4, et `veille_21nov2026.py` (R119), 5/5 :
-  les veilles de novembre 2026 ; `nambu_goto_regge.py` (R120) : la corde de Nambu–Goto avec le σ de la base, 5/5.
+  les veilles de novembre 2026 ; `nambu_goto_regge.py` (R120) : la corde de Nambu–Goto avec le σ de la base, 5/5 ; `look_elsewhere.py` (R126) :
+  l'effet look-elsewhere sur toutes les précisions du chapitre, 4/4.
 - Étapes d'origine : `closed_ring_scale.py` (R16), `quark_star.py` (R20), `quark_y.py` (R22),
   `junction_valence.py` (R24), `nucleon_moments.py` (R25), `three_strand.py` (R28),
   `mode_rule.py` (R29), `pitch_search.py` (R39), `circuit_rule.py` (R40),

@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 125 steps (R1--R125) backed by 120 scripts.
+statement imposes and what it breaks; the record is 126 steps (R1--R126) backed by 121 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -456,7 +456,14 @@ every lattice static-energy determination with dynamical quarks lies above it, f
 to $458$--$481$~MeV (values cited from a conference talk and from the $2+1+1$-flavour TUMQCD analysis
 \cite{tumqcd}, not verified at source), and the lattice quantity is itself a fit-window quantity because the
 string breaks near $1.1$~fm \cite{cea}. The formula must state which of the two string tensions it aims at
-before a $3\sigma$ criterion can be applied to it (R119, \texttt{veille\_21nov2026.py}). The same tension read as a
+before a $3\sigma$ criterion can be applied to it (R119, \texttt{veille\_21nov2026.py}). A look-elsewhere audit
+(R126, \texttt{look\_elsewhere.py}) puts the precision of this sector in its place: the grammar of the base
+($m_e c^2 \times 3^{2\pi k}3^{a/2}2^{b/2}\pi^{c/2}\alpha^d$, complexity $\le 8$) contains $2186$ expressions, $224$
+per decade, so that every one of $44$ measured hadronic and electroweak quantities finds an agreement at the percent
+level and one in a few at the per-mille level; the base's own formulas have local chance probabilities between
+$0.02$ and $0.8$, and the best agreement of the whole table ($\Sigma^+$ at $0.002\,\%$, by a meaningless expression)
+falls to $0.14$ once corrected for the number of targets. The $1$--$3\,\%$ agreements of this paper are not, by
+themselves, a signal; only a derivation or a prediction made before a measurement would be. The same tension read as a
 Nambu--Goto string (R120, \texttt{nambu\_goto\_regge.py}) gives the Regge slope $\alpha' = 1/(2\pi\sigma) =
 0.859$~GeV$^{-2}$, $3\,\%$ below the $\rho$--$a_2$--$\rho_3$ trajectory ($0.888$) and $7$--$10\,\%$ below the $N$
 and $\Delta$ trajectories ($0.92$--$0.96$), outside the exponent's window ($0.842$--$0.874$) and in the same
@@ -983,7 +990,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 120 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 121 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the
