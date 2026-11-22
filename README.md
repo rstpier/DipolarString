@@ -39,7 +39,8 @@ releases.
 > formula of the base is withdrawn as a prediction and no number specific to the framework remains in that reading;
 > the open question is why Regge slopes exceed by about 10 % the value given by the static tension (R135). The
 > published trajectory fits, read at the source, are reproduced to 0.1 % (R136): spectroscopic tension 424 ± 2.5 MeV,
-> with the base value 2.5 and the lattice value 2.9 standard deviations above it. No new claim is made. See
+> with the base value 2.5 and the lattice value 2.9 standard deviations above it; with the 2026 PDG masses, 2.6 and
+> 3.0 (R137). No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

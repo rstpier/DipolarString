@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R136)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R137)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R136).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R137).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -323,7 +323,12 @@ qui traite la brisure, 467 à 482 MeV dans des ajustements sous 1 fm ; son terme
 corde. La piste publiée de l'aplatissement vient d'un autre modèle et ne compare pas au réseau : B3 n'est pas
 tranchée et se pose des deux côtés. Rectificatifs de R133 : l'ajustement publié porte sur neuf familles, pas six ; la
 base est à 2,5 écarts types dans cet ajustement.
-L'article (`matter/paper/`) est consolidé jusqu'à R136.
+Autorisation (22 novembre 2026) : téléchargement depuis le PDG. R137 : les masses de l'édition 2026 sont lues à la
+source. Sur 31 états cités de mémoire, 28 sont identiques aux tables ; le Δ(2420) est corrigé à 2450 MeV, ce qui
+ramène la pente de sa famille de 0,92 à 0,89 (rectificatif de R120 et R133). L'ajustement universel refait avec les
+masses de 2026 ne bouge pas : α′ = 0,8866 ± 0,0106, tension des spectres 423,7 ± 2,5 MeV ; la base est à 2,6 écarts
+types, le réseau à 3,0, au seuil de la feuille de route sans le franchir de façon établie.
+L'article (`matter/paper/`) est consolidé jusqu'à R137.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -429,11 +434,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R136 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R137 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R136, treize scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R137, quatorze scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

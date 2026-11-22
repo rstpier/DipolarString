@@ -197,6 +197,11 @@ des spectres : 424 ± 2,5 MeV. Tension du réseau : 445(3)(6) MeV dans le modèl
 dans des ajustements du potentiel sous 1 fm. B3 se pose des deux côtés. Prochain calcul utile : appliquer un
 aplatissement du potentiel à la corde tournante avec la tension de 2024, puis B2 avec les niveaux publiés du réseau.
 
+**État après R137 (22 novembre 2026).** Les masses du PDG 2026 sont lues à la source : 28 des 31 valeurs citées de
+mémoire sont identiques aux tables, et le Δ(2420) est corrigé à 2450 MeV. Ajustement universel mis à jour :
+α′ = 0,8866 ± 0,0106 GeV⁻², tension des spectres 423,7 ± 2,5 MeV. Écart au réseau : 21 MeV, 3,0 écarts types avec les
+erreurs publiées, sans compter la dépendance de la tension du réseau à sa définition.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

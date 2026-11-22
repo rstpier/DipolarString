@@ -353,6 +353,12 @@ définition : 445 MeV dans le modèle qui traite la brisure, 467 à 482 MeV dans
 Et la piste publiée n'est pas une réponse : elle vient d'un autre modèle, qui garde la tension des spectres et ne la
 compare pas au réseau. La question B3 se pose donc des deux côtés.
 
+**Masses du PDG 2026, lues à la source (R137, `ds_pdg2026_update.py`, 5/5).** L'auteur a autorisé le téléchargement
+depuis le PDG. Sur trente et un états cités de mémoire, vingt-huit sont identiques aux tables ; une correction compte,
+celle du Δ(2420), estimé à 2450 MeV, ce qui ramène la pente de sa famille de 0,92 à 0,89, celle des mésons. Avec les
+masses de 2026 l'ajustement ne bouge pas : tension des spectres 423,7 ± 2,5 MeV, base à 2,6 écarts types, réseau
+à 3,0.
+
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
 ouverte, B3, pour laquelle la CD n'apporte aucun nombre.
 

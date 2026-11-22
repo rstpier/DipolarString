@@ -3572,3 +3572,30 @@ base, 430,3 MeV, en est à 2,5 écarts types ; celle du réseau, 445 ± 7 MeV, �
 définition. B3 n'est pas tranchée, et se pose des deux côtés : quelle tension le réseau mesure-t-il, et quel
 mécanisme abaisse les états de grand moment cinétique.** Restent à faire : B2, avec les tables de niveaux du réseau,
 et l'application de l'aplatissement à la corde tournante.
+
+**Autorisation de l'auteur (22 novembre 2026) :** « ok autorise le téléchargement depuis pdg ». Téléchargés depuis
+pdg.lbl.gov et lus : les tables de synthèse des mésons et des baryons, édition 2026 (F. Takahashi et al., Particle Data
+Group, Int. J. Mod. Phys. A 41, 2630011 (2026)), et les fiches de ρ₅(2350), f₆(2510), K₅*(2380) et des « autres états ».
+
+**R137 — Les masses du PDG 2026 lues à la source : contrôle des valeurs citées de mémoire, mise à jour de
+l'ajustement.** Script `matter/rebuild/ds_pdg2026_update.py`, 5/5 (il réutilise le calcul de R136).
+*A. Contrôle.* Trente et un états que R120 et R133 citaient de mémoire, comparés aux tables : vingt-huit identiques ;
+hors Δ(2420), écart maximal 0,21 MeV. Neuf états ne sont pas dans la table de synthèse et ont été lus dans les
+fiches : ρ₅(2350) 2330 ± 35, a₆(2450) 2450 ± 130, f₆(2510) 2470 ± 50, K₅*(2380) 2382 ± 14 ± 19, b₃(2030) 2032 ± 12,
+π₄(2250) 2250 ± 15, h₃(2025) 2025 ± 20, η₄(2330) 2328 ± 38, ω₅(2250) 2250 ± 70 MeV.
+*B. Corrections.* (1) **Δ(2420) 11/2⁺ : la masse de Breit-Wigner est estimée de 2300 à 2600 MeV, soit environ 2450 ;
+R120 et R133 prenaient 2420.** (2) K*(892) chargé : 891,88 ± 0,23 MeV et non 891,67. (3) f₂′(1525) : 1517,3 et non
+1517,4, sans effet.
+*C. L'ajustement universel avec les masses de 2026.* Mêmes neuf familles et mêmes états que l'article de 2014. Les
+masses ont bougé de 29 MeV au plus en douze ans (a₄, de 1996 à 1967 MeV ; l'état 1⁺⁺ du charmonium, +17 MeV).
+Masses de 2014 : α′ = 0,8848 ± 0,0104, χ² = 13,13·10⁻⁴, √σ = 424,1 ± 2,5 MeV. Masses de 2026 : **α′ = 0,8866 ± 0,0106,
+χ² = 13,52·10⁻⁴, √σ = 423,7 ± 2,5 MeV** ; les neuf ordonnées sont inchangées à 0,01 près. Déplacement : 0,1 écart type.
+*D. La tension.* Pente fixée à celle de la base : 2,6 écarts types d'ajustement. Pente fixée à celle du réseau : 8,6,
+et 3,0 avec l'erreur du réseau (445 − 423,7 = 21,3 MeV pour ± 7,2). L'écart entre spectres et réseau touche le seuil de
+trois écarts types de la feuille de route, sans le franchir de façon établie : l'erreur des spectres est une erreur
+commune ajustée, et celle du réseau ne compte pas la dépendance à la définition (445 à 482 MeV, R136 F).
+*E. Les baryons.* Avec 2450 MeV la pente de la famille du Δ passe de 0,922 à 0,892 GeV⁻² : elle rejoint celle des
+mésons. **Rectificatif de R120 et de R133 :** seule la famille du nucléon reste au-dessus, à 0,955.
+**Verdict : les valeurs citées de mémoire sont confirmées à 0,2 MeV près, sauf le Δ(2420), corrigé. Avec les masses
+de 2026 la tension des spectres reste 424 ± 2,5 MeV ; la base est à 2,6 écarts types, le réseau à 3,0.** Il ne reste
+plus de masse citée de mémoire dans R133 à R137, sauf l'état D₂(2740), pris à la valeur de l'article.
