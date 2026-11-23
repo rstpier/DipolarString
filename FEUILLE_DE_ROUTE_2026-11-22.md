@@ -207,6 +207,12 @@ fil, appliquée à la corde tournante avec la tension de 2024, ne réduit pas l'
 par les spectres de 424 à 430 MeV et dégrade l'ajustement d'autant ; l'écart complet reste à 2,9 et 3,0 écarts types,
 pour un seuil écrit d'avance de 2. B3 reste ouverte, des deux côtés. Reste B2, avec les niveaux publiés du réseau.
 
+**État après R139 (23 novembre 2026, choix délégué).** B2 est fait, sur le modèle publié du potentiel et non sur des
+tables, que l'article ne donne pas. Avec la forme d'une corde la tension du réseau vaut 455 ± 8 MeV et non 445 : elle
+dépend de 10 MeV de la forme ajustée. Écart aux spectres : 31 MeV, 3,65 écarts types, au-dessus du seuil de 3 écrit
+avant le calcul ; 2,97 avec le budget le plus prudent du côté des spectres. Le chemin B a ses trois calculs. La note
+courte prévue pour un tel écart, et la suite, restent à décider par l'auteur.
+
 **Prérequis.** Zwiebach 6 à 8 ; ajustements avec incertitudes (χ², bootstrap) ; pour la suite, le socle de champs
 quantiques.
 

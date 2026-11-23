@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_static_potential_window.py` — R139 : calcul B2, fait sur le modèle publié du potentiel statique du réseau ; avec
+  la forme d'une corde il donne 454,8 MeV dans la fenêtre de 0,4 à 1,0 fm, et non 445 ; avec la dépendance à la
+  fenêtre, 455 ± 8 MeV contre 423,7 ± 2,5 pour les spectres : 31 MeV, 3,65 écarts types, 2,97 avec le budget le plus
+  prudent ; le niveau le plus bas du fil décroche entre 1,1 et 1,3 fm.
 - `ds_string_relaxation.py` — R138 : la détente du fil (aplatissement publié du potentiel) appliquée à la corde
   tournante ; elle remonte la tension demandée par les spectres de 424 à 430 MeV et dégrade l'ajustement d'autant ;
   écart complet au réseau 2,9 à 3,0 écarts types contre 3,0 sans détente, seuil écrit d'avance 2 : piste exclue.

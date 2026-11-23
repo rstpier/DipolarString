@@ -78,6 +78,11 @@
 - Choix délégué : prochain calcul B2 (la tension tirée du potentiel du réseau entre 0,4 et
   1,0 fm) ; critère écrit avant le calcul : à plus de 3 écarts types des spectres, écart
   établi ; à moins de 2, réconciliation
+- 23 novembre, R139 : calcul B2 sur le modèle publié du potentiel du réseau, relu et contrôlé
+  par ses deux distances de brisure ; avec la forme d'une corde, 454,8 MeV dans la fenêtre
+  de 0,4 à 1,0 fm et non 445 ; 455 ± 8 MeV contre 423,7 ± 2,5 pour les spectres : 31 MeV,
+  3,65 écarts types, au-dessus du seuil écrit d'avance ; 2,97 avec le budget le plus
+  prudent ; le niveau le plus bas du fil décroche entre 1,1 et 1,3 fm
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

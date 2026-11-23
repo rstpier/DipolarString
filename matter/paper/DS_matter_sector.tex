@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 138 steps (R1--R138) backed by 133 scripts.
+statement imposes and what it breaks; the record is 139 steps (R1--R139) backed by 134 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -1011,7 +1011,18 @@ without it, and never falls below $2.8$ over the published parameter range (it r
 version if the profile rises $1.8\%$ faster, the $J=6$ states then sitting at the end of the stable branch): the
 mechanism moves the disagreement without reducing it, and the spectra do not ask for it. In the consistent version a rotating string has no stable
 rotation beyond $2.1$~fm, which ends the leading light-meson trajectory at $J=6$; this follows from a
-phenomenological profile and involves no number of this paper.
+phenomenological profile and involves no number of this paper. Finally the lattice side was examined (R139,
+\texttt{matter/rebuild/ds\_static\_potential\_window.py}), with thresholds written beforehand: above $3$ standard
+deviations the discrepancy counts as established, below $2$ as an agreement. The published lattice model of the static
+potential, re-read and checked against its two published string-breaking distances, was fitted with the form of a
+string, $V_0+\sigma r\sqrt{1-\pi/(6\sigma r^2)}$, in the window $0.4$--$1.0$~fm. It gives $\sqrt{\sigma}=454.8$~MeV
+instead of $445$~MeV, follows the published curve within $1$~MeV between $0.45$ and $1.0$~fm with one parameter fewer,
+and cannot match the lattice force at any tension below $0.43$~fm. With the window dependence included the lattice
+value is $455\pm8$~MeV, $31$~MeV above the spectroscopic tension: $3.65$ standard deviations, and $2.97$ if the
+family-to-family envelope of the trajectory fits is added on the spectroscopic side. The value of this paper,
+$430.3$~MeV, lies between the two, $3.0$ standard deviations below the first and $2.6$ above the second. The same
+lattice model shows that the lowest level of the string does not relax slowly: its force is $96\%$ of the string
+force at $1.0$~fm, $56\%$ at $1.2$~fm and $16\%$ at $1.3$~fm.
 
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
@@ -1070,7 +1081,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 133 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 134 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

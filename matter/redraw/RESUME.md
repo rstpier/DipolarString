@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R138)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R139)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R138).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R139).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -339,7 +339,15 @@ comme explication de l'écart ; les spectres ne demandent pas de détente (γ to
 types, pour 0,40 publié). Fait nouveau, sans lien avec la CD : dans la version cohérente, un fil tournant n'a plus de
 rotation stable au-delà de 2,1 fm, et la trajectoire des mésons légers s'arrête à J = 6. Rectificatif de R136 : le
 mécanisme n'a pas « la bonne taille » pour la corde tournante (24 MeV sur les 115 qu'il faudrait pour l'a₄).
-L'article (`matter/paper/`) est consolidé jusqu'à R138.
+Choix délégué (22 novembre 2026), critère écrit avant le calcul : B2. R139 (23 novembre) : l'article du réseau ne publie
+pas ses points, seulement son modèle ; relu et contrôlé par ses deux distances de brisure, ce modèle est ajusté avec la
+forme d'une corde. Dans la fenêtre de 0,4 à 1,0 fm il donne 454,8 MeV et non 445 : la tension du réseau dépend de 10 MeV
+de la forme ajustée, et sous 0,43 fm aucune corde ne tire comme le réseau. Avec la dépendance à la fenêtre, 455 ± 8 MeV,
+contre 423,7 ± 2,5 pour les spectres : écart de 31 MeV, 3,65 écarts types, au-dessus du seuil de 3 écrit d'avance ; 2,97
+avec l'enveloppe des familles du côté des spectres. La base, 430,3 MeV, est entre les deux, compatible avec aucune. Le
+même modèle montre que le fil ne se détend pas lentement : son niveau le plus bas tire à 96 % à 1,0 fm et à 16 % à
+1,3 fm. Aucun nombre de la CD n'entre dans ce calcul.
+L'article (`matter/paper/`) est consolidé jusqu'à R139.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -445,11 +453,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R138 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R139 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R138, quinze scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R139, seize scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

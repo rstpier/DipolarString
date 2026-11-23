@@ -314,7 +314,7 @@ la feuille de route, dont R133 fait le premier calcul. Audit : `ds_effective_str
 CD n'y apporte qu'un nombre, la tension, ni confirmée ni exclue. Restent à faire : B1 par l'auteur, B2 avec des tables
 de réseau, la recherche bibliographique de B3.
 
-## 13. Choix faits par délégation (22 novembre, R134 à R138)
+## 13. Choix faits par délégation (22 et 23 novembre, R134 à R139)
 
 L'auteur : « ok prend la tension du réseau », puis : « Puisque tu connais les meilleures réponses aux questions que tu
 me poses, fais les choix à ma place. » Les choix de physique sont désormais faits par l'assistant, consignés avec leur
@@ -383,9 +383,35 @@ des résumés valent dans le modèle de ses auteurs, pas pour la corde tournante
   rotation stable au-delà de 2,1 fm : la trajectoire des mésons légers s'arrête à J = 6, le plus haut spin observé.
   Cela dépend d'un profil que ses auteurs disent arbitraire.
 
+**B2 : la tension tirée du potentiel du réseau avec la forme d'une corde (R139, `ds_static_potential_window.py`, 7/7).**
+Le réseau mesure l'énergie d'un quark et d'un antiquark immobiles selon leur distance ; la pente à grande distance est
+la tension du fil, mais la valeur qu'on en tire dépend de la forme ajustée. L'article de 2024 ne publie pas ses points,
+seulement son modèle : le calcul est fait sur ce modèle, dont la relecture est contrôlée par les deux distances de
+brisure publiées, retrouvées à 1,211 et 1,336 fm.
+
+| Ce qu'on ajuste | Fenêtre | Tension |
+|---|---|---|
+| Le modèle de l'article, terme en 1/r libre | 0,25 à 1,5 fm | 445 ± 7 MeV |
+| La forme d'une corde, sur l'état de corde | 0,4 à 1,0 fm | 454,8 MeV |
+| La même, autres fenêtres sous 1,2 fm | | 453,1 à 455,8 MeV |
+| La même, sur le niveau le plus bas | sous 1,0 fm | 450,4 à 453,1 MeV |
+| Les spectres (R137) | | 423,7 ± 2,5 MeV |
+
+- **Ce que le calcul apprend.** Entre 0,45 et 1,0 fm la forme d'une corde suit la courbe publiée à 1 MeV près, avec un
+  paramètre de moins et 10 MeV de plus sur la tension. Sous 0,43 fm aucune tension ne permet à une corde de tirer comme
+  le réseau.
+- **La détente réelle du fil.** Son niveau le plus bas tire encore à 96 % à 1,0 fm, puis décroche : 56 % à 1,2 fm, 16 %
+  à 1,3 fm. Le profil publié de R138 en donne 93 et 91 % : il est trop lent.
+- **Le critère, écrit avant.** Écart de 31 MeV, 3,65 écarts types pour un seuil de 3 : franchi. Avec l'enveloppe des
+  familles du côté des spectres : 2,97, juste sous le seuil.
+- **Limites.** Un modèle publié et non des points ; une seule maille, sans limite du continu ; corde tournante classique
+  du côté des spectres.
+
 **Verdict.** La chaîne des adoptions est close. Il reste de la physique établie, les tubes de flux, et une question
 ouverte, B3, pour laquelle la CD n'apporte aucun nombre. La seule piste publiée pour B3, la détente du fil, ne tient
-pas pour la corde tournante (R138). Reste B2, avec les niveaux publiés du réseau.
+pas pour la corde tournante (R138). B2 est fait (R139) : les deux tensions diffèrent de 31 MeV, à 3,65 écarts types
+selon le critère écrit et 2,97 avec le budget le plus prudent. Le chemin B a ses trois calculs ; la note courte que la
+feuille de route prévoit pour un tel écart, et la suite, sont des décisions de l'auteur.
 
 ## 14. Suite
 
@@ -422,4 +448,4 @@ M. Lüscher et P. Weisz, JHEP 07 (2002) 049 ; R. Sommer, Nucl. Phys. B 411, 839 
 *Pour le §13, vérifiées par recherche le 22 novembre :* J. Bulava et al., Phys. Lett. B 854 (2024) 138754,
 arXiv:2403.00754 ; A. M. Badalian et B. L. G. Bakker, arXiv:1901.10280 ; J. Sonnenschein et D. Weissman, JHEP 06 (2018)
 148, arXiv:1801.00798 ; FLAG Review 2021, arXiv:2111.09849. *Lus à la source le 22 novembre (R136) :* arXiv:1402.5603,
-arXiv:2403.00754, arXiv:1901.10280. *Pour R138 :* arXiv:1901.10280, éq. 51 à 54, relues à la source.
+arXiv:2403.00754, arXiv:1901.10280. *Pour R138 :* arXiv:1901.10280, éq. 51 à 54, relues à la source. *Pour R139 :* arXiv:2403.00754, éq. 6 et table 4, relues à la source ; de mémoire, à vérifier : J. F. Arvis, Phys. Lett. B 127, 106 (1983).

@@ -3696,3 +3696,48 @@ la fenêtre. **Critère écrit avant le calcul.** Mesure : l'écart entre cette 
 423,7 ± 2,5 MeV, en écarts types, erreurs ajoutées en quadrature, la dépendance à la fenêtre comptée dans l'erreur du
 réseau. À plus de 3, l'écart est établi ; à moins de 2, les deux tensions sont réconciliées ; entre les deux, non
 tranché. Ce sont les deux issues que la feuille de route compte comme résultat. Révocable ; non commencé.
+
+**R139 — Calcul B2 : la tension tirée du potentiel statique du réseau avec la forme d'une corde (23 novembre 2026).**
+Script `matter/rebuild/ds_static_potential_window.py`, 7/7. Source : Bulava et al., arXiv:2403.00754, table 4,
+paramètres au point physique. L'article ne publie pas les points du potentiel, seulement le modèle ajusté entre 0,25
+et 1,5 fm : un état de corde V̂(r) = V̂₀ + σr + γ/r, couplé à deux états de paires de mésons. B2 est fait sur ce modèle
+publié, et non sur des tables comme la feuille de route le prévoyait.
+*A. Le modèle relu.* Avec σt₀ = 0,1061, γ = −0,434, V̂₀√t₀ = −0,835 et les énergies des paires, il redonne les deux
+distances de brisure publiées, 8,39 et 9,26 √t₀, soit 1,211 et 1,336 fm, et √σ = 445,4 MeV : la lecture est contrôlée.
+*B. La forme d'une corde.* V₀ + σr√(1 − π/(6σr²)) redonne à grande distance le terme universel −π/(12r). Sa force,
+σ/√(1 − π/(6σr²)), ne descend jamais sous 3√3π/(12r²) = 1,360/r², quelle que soit la tension. Celle du réseau vaut
+σ + 0,434/r² : une corde ne peut l'égaler qu'au-delà de 0,426 fm. La fenêtre de la feuille de route, 0,4 à 1,0 fm,
+commence juste sous cette limite.
+*C. La tension locale,* celle qu'une corde doit avoir pour tirer comme le réseau à la distance r : 455,1 MeV à 0,5 fm,
+maximum 457,9 à 0,58 fm, 452,0 à 1,0 fm, 448,6 à 1,5 fm, 445,9 à 4 fm. Elle dépasse 445 MeV partout au-delà de 0,46 fm
+et ne rejoint cette valeur qu'à l'infini, parce que le terme en 1/r du réseau vaut 1,66 fois celui d'une corde.
+*D. Ajustements par fenêtre sur l'état de corde.* Fenêtre de la feuille de route, 0,4 à 1,0 fm : **454,8 MeV**. Autres
+fenêtres sous 1,2 fm : de 453,1 à 455,8 MeV ; écart à la courbe publiée de 0,2 à 1,25 MeV en moyenne ; les poids n'y
+changent que 0,6 MeV au plus. En partant de 0,25 fm comme l'article, la forme ne tient plus (écart moyen 149 MeV).
+**Entre 0,45 et 1,0 fm la forme d'une corde, qui a un paramètre de moins, suit la courbe publiée à 1 MeV près, avec
+455 MeV là où le terme en 1/r libre donne 445 : la tension du réseau dépend de 10 MeV de la forme ajustée.** Les points
+n'étant pas publiés, on ne peut pas dire laquelle des deux formes les données préfèrent.
+*E. Le niveau le plus bas : la détente du fil, mesurée par le réseau.* Le fil partage son niveau le plus bas avec les
+paires de mésons. Ce niveau est 3 MeV sous l'état de corde à 0,5 fm, 11 MeV à 1,0 fm, 45 MeV à 1,2 fm, 116 MeV à
+1,3 fm ; sa force vaut 96 % de celle de la corde à 1,0 fm, 88 % à 1,1 fm, 56 % à 1,2 fm, 16 % à 1,3 fm. Le profil
+publié employé en R138 donne aux mêmes distances 96, 95, 93 et 91 % : **sur le réseau le fil ne se détend pas
+lentement jusqu'à 3 fm, il décroche entre 1,1 et 1,3 fm.** La forme d'une corde ajustée sur ce niveau sous 1,0 fm donne
+450,4 à 453,1 MeV, soit 3 à 4 MeV de moins ; au-delà elle ne le décrit plus (écart moyen 7,6 MeV jusqu'à 1,2 fm).
+*F. Sensibilité.* ± 1,5 MeV pour l'erreur statistique de σ, ± 1,2 MeV pour celle de γ, corrélées dans l'article. Erreur
+retenue : celle de l'article, ± 6,7 MeV sur 445, portée à la même part de 454,8, soit ± 6,8 MeV.
+*G. Budget et critère.* Réseau : 454,8 MeV ; fenêtres et niveau ajusté, de 450,4 à 455,8, soit ± 4,4 ; avec l'erreur
+de l'article, **± 8,1 MeV**. Spectres : 423,7 ± 2,5 MeV (R137, refait dans le script). **Écart : 31,1 MeV, soit 3,65
+écarts types ; le seuil de 3 écrit avant le calcul est franchi.** Avec la tension publiée, 445 ± 6,7 : 2,97 (R137).
+Avec l'enveloppe des familles de R133 ajoutée du côté des spectres, ± 6,1 MeV : 2,97. La valeur de la base, 430,3 MeV,
+est à 3,0 écarts types sous cette tension du réseau et à 2,6 au-dessus des spectres : entre les deux, compatible avec
+aucune. Hors budget : l'article n'a qu'une maille, donc pas de limite du continu ; les autres ajustements publiés, 467
+à 482 MeV (R136 F), agrandissent l'écart ; du côté des spectres la corde tournante est classique.
+**Verdict : ÉCART ÉTABLI au sens du critère écrit, CONDITIONNEL au budget d'erreur des spectres. Avec la forme d'une
+corde, le potentiel publié du réseau donne 455 ± 8 MeV ; les spectres demandent 423,7 ± 2,5 MeV ; l'écart est de
+31 MeV, 3,65 écarts types. Avec l'erreur la plus prudente du côté des spectres il retombe à 2,97, juste sous le
+seuil.** Ce que le calcul apprend : (1) la « tension du réseau » bouge de 10 MeV avec la forme ajustée, ce qui précise
+R136 F ; (2) la détente réelle du fil est un décrochage vers 1,2 fm, pas le profil lent de R138 ; (3) B3 a sa réponse
+chiffrée dans ce cadre : les deux tensions diffèrent de 7 %, soit 15 % sur la pente des trajectoires. Aucun nombre de
+la CD n'entre dans ce calcul. La feuille de route compte un tel écart comme un résultat qui vaut une note courte ;
+l'écrire, la montrer, et la suite du chemin B sont des décisions de l'auteur. Limites : B2 est fait sur un modèle
+publié et non sur des points ; une seule maille ; erreurs de l'article reprises sans leur matrice de corrélation.
