@@ -46,7 +46,8 @@ releases.
 > with the most cautious error budget; the base value lies between the two (R139). On 27 November the author took the
 > first step of another path of the roadmap, an analogue horizon simulated on a transmission line (R140), which says
 > nothing about the vacuum or the framework. A simulation of the finite bench (R141) corrects the loss estimate of
-> R140 and finds that the law would be read at the 10 % level only with selected parts. No new claim is made. See
+> R140 and finds that the law would be read at the 10 % level only with selected parts. This is not a discovery, and
+> the author set this path aside the same day. No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

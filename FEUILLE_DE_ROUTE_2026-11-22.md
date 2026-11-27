@@ -294,6 +294,12 @@ instants de commande comptent peu. Voir les deux raies est à la portée d'un ba
 à pièces choisies. Le banc n'est pas chiffré : aucune pièce réelle n'a été choisie. Acheter et monter restent des
 décisions de l'auteur.
 
+**Décision de l'auteur (27 novembre 2026) : le chemin C est mis de côté.** À sa question « Découverte ? », la réponse
+a été non : la loi est de Hawking, l'analogie sur une ligne électrique date de 2005, et le même effet a déjà été
+mesuré sur un écoulement d'eau (2010) et dans un gaz d'atomes froids (2015). Seule la mesure sur une ligne électrique
+serait une première, sans physique nouvelle. Sa décision : « ok on met ca de cote ». R140 et R141 restent au dossier ;
+rien n'est acheté ni monté. Ce chemin peut être rouvert par l'auteur.
+
 ---
 
 ## 7. Comparatif

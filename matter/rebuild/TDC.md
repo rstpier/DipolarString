@@ -423,7 +423,7 @@ Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres
 Le 27 novembre l'auteur a lancé le premier pas du chemin C, qui n'est pas une théorie des cordes : la gravité analogue
 sur une ligne de transmission. Le calcul C1 est R140 (`ds_analogue_line.py`, 7/7) ; le banc fini est simulé en R141
 (`ds_analogue_bench.py`, 5/5), qui rectifie les pertes annoncées par R140. Leur état est tenu dans la feuille de
-route, §6.
+route, §6. Le même jour, l'auteur a mis ce chemin de côté : « ok on met ca de cote ».
 
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,
 hep-th/0105155 ; J. G. Lee et al., Phys. Rev. Lett. 124, 101101 (2020) ; CMS, arXiv:1911.03947, paru dans JHEP

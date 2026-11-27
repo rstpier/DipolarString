@@ -366,6 +366,9 @@ banc sans défaut la loi se lit à 10 % près, à condition de compter une trois
 de la sonde fait naître. D'un banc à l'autre la lecture bouge de 15 % avec des pièces à 1 %, de 30 % à 2 %, d'un
 facteur 2 à 5 % ; les instants de commande, eux, comptent peu. Voir les deux raies est à la portée d'un banc ;
 vérifier la loi à 10 % demande 195 cellules appariées à 1 % et des bobines peu résistives. Le banc n'est pas chiffré.
+Décision de l'auteur (27 novembre 2026) : « ok on met ca de cote ». Ce n'est pas une découverte : la loi est de
+Hawking, l'analogie sur une ligne date de 2005, et le même effet a déjà été mesuré sur un écoulement d'eau et dans un
+gaz d'atomes froids. Le chemin C est mis de côté ; R140 et R141 restent au dossier.
 L'article (`matter/paper/`) est consolidé jusqu'à R139 ; R140 et R141 sont hors de son sujet.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.

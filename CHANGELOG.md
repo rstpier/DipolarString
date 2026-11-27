@@ -95,6 +95,9 @@
   demande Qb = 126. Loi lue à 10 % sur un banc sans défaut ; d'un banc à l'autre, 15 % avec
   des pièces à 1 %, 30 % à 2 %, un facteur 2 à 5 % ; les instants de commande comptent peu.
   Le banc n'est pas chiffré
+- 27 novembre, décision de l'auteur : le chemin C est mis de côté (« ok on met ca de cote »).
+  Ce n'est pas une découverte : loi de Hawking, analogie proposée en 2005, effet déjà mesuré
+  dans l'eau et dans un gaz d'atomes froids ; R140 et R141 restent au dossier
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

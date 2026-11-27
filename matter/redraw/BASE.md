@@ -3849,3 +3849,15 @@ et monter restent des décisions de l'auteur. Limites : une seule architecture e
 continue et un point de mesure ; six bancs tirés ; la fuite de la commande dans la ligne n'est pas simulée, elle ne
 dépend pas de la sonde et se retire en inversant la sonde d'un tir sur deux ; les pertes des diodes sont comptées dans
 Qb. Rien de ceci ne porte sur le vide ni sur la CD.
+
+**Décision de l'auteur (27 novembre 2026) : le chemin C est mis de côté.** Après le verdict de R141, l'auteur a demandé
+ce qui était testé, puis ce que voulait dire « ça ne teste pas la CD », puis : « Découverte ? ». Réponse donnée : non.
+La loi est celle de Hawking ; l'analogie sur une ligne électrique a été proposée par d'autres dès 2005 (R140) ; le
+même effet a déjà été mesuré dans d'autres milieux, en émission stimulée sur un écoulement d'eau (Weinfurtner,
+Tedford, Penrice, Unruh et Lawrence, arXiv:1008.1911, dans la même configuration de trou blanc que R140) et dans un
+condensat d'atomes froids (Steinhauer, arXiv:1510.00621) ; résumés lus à la source le 27 novembre. Les calculs R140 et
+R141 confirment donc ce qui était attendu. Seule une mesure sur une ligne électrique serait une première, sur ce
+support et sans physique nouvelle, et R141 dit qu'un banc ordinaire la lirait mal. Dans le calcul, la marche
+d'impédance est imposée de l'extérieur : il n'est pas montré que le courant la crée de lui-même, ce qui était l'image
+de départ de l'auteur (R122). Sa décision : « ok on met ca de cote ». R140 et R141 restent au dossier ; rien n'est
+acheté ni monté ; le banc n'est pas chiffré. Le chemin C peut être rouvert par l'auteur.
