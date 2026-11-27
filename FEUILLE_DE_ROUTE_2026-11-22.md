@@ -282,6 +282,18 @@ bibliographique : aucune mesure de cette loi trouvée sur une ligne électrique 
 dans une ligne supraconductrice (2026). Limite : le front simulé est imposé de l'extérieur. Le banc qui lui est
 fidèle commande les diodes cellule par cellule ; il reste à le simuler tel quel avant tout achat.
 
+**État après R141 (27 novembre 2026).** Ce banc est simulé (`matter/rebuild/ds_analogue_bench.py`, 5/5) : 195
+cellules, sonde continue, front commandé cellule par cellule, tension lue en un point. Deux rectificatifs de l'état
+précédent. Le « Q = 100 » de R140 était compté à une fréquence 2,77 fois plus basse que celle des raies : pour un
+monteur c'est Qb = 277. Et il faut 146 cellules, pas une centaine. Avec de vraies bobines les raies sont 4 fois plus
+faibles pour Qb = 200, 18 fois pour Qb = 100, 290 fois pour Qb = 50. **Le critère d'arrêt ci-dessus, un facteur 10,
+n'est tenu qu'à partir de Qb = 126 à la fréquence des raies.** Sur un banc sans défaut la loi se lit à 10 % près ;
+avec des pièces à 1 % la lecture bouge de 15 % d'un banc à l'autre, de 30 % à 2 %, d'un facteur 2 à 5 %. Les
+instants de commande comptent peu. Voir les deux raies est à la portée d'un banc ; vérifier la loi à 10 % demande
+195 cellules appariées à 1 % et des bobines peu résistives. Selon le critère, on s'arrête à la simulation, sauf banc
+à pièces choisies. Le banc n'est pas chiffré : aucune pièce réelle n'a été choisie. Acheter et monter restent des
+décisions de l'auteur.
+
 ---
 
 ## 7. Comparatif

@@ -3795,8 +3795,57 @@ absence, et le domaine bouge vite.
 **Verdict : DÉRIVÉ pour la simulation, les trois critères sont remplis. La loi sort à 0,1 % sur la ligne adaptée et à
 6 % près sur la température pour la ligne d'un banc, jusqu'à un front d'une demi-cellule ; aucune mesure de cette loi
 n'a été trouvée sur une ligne électrique ; avec Q = 100 et un front raide les pertes coûtent un facteur 4, sous le
-seuil de 10.** Limite qui commande la suite : le front simulé est imposé de l'extérieur, lisse, de vitesse choisie. Une
+seuil de 10.** *Rectifié en R141 : ce facteur 4 vaut pour Qb = 277 à la fréquence des raies, sur une ligne deux fois
+trop courte ; le critère de pertes n'est tenu qu'à partir de Qb = 126.* Limite qui commande la suite : le front simulé
+est imposé de l'extérieur, lisse, de vitesse choisie. Une
 impulsion forte lancée dans une vraie ligne à diodes ne donne pas ce front : elle se raidit et se couvre
 d'oscillations. Le banc fidèle à la simulation commande donc les diodes cellule par cellule, et il reste à simuler tel
 quel avant tout achat. Rien de ceci ne dit quoi que ce soit du vide ni de la CD : c'est un analogue, mesurable sur une
 table.
+
+**R141 — Chemin C : ce qu'un banc fini donnerait ; deux rectificatifs de R140.** Script
+`matter/rebuild/ds_analogue_bench.py`, 5/5. R140 finissait sur une limite : le banc fidèle commande les diodes cellule
+par cellule et reste à simuler avant tout achat. C'est ce calcul. *Le banc simulé.* 195 cellules, fermées à chaque bout
+sur leur résistance. Une sonde continue entre par un bout et remplit la ligne ; elle est coupée juste avant le départ
+du front, parce qu'une source qui émettrait derrière le front ajouterait des ondes parasites. Le front, raide d'une
+demi-cellule, part du même bout : chaque cellule reçoit sa commande à son instant, avec une erreur possible. La tension
+est lue à la cellule 150, après le passage du front, tant que la raie basse y passe. Trois sinusoïdes de fréquences
+connues sont ajustées (raie haute, raie basse, porteuse), et le rapport des deux raies est comparé à celui de R140.
+*A. Rectificatifs de R140 G.* (1) R140 comptait le facteur de qualité à la fréquence 1 du calcul. Les deux raies sont à
+la fréquence 2,77 : pour la même résistance, le facteur de qualité d'une bobine, lu là où un monteur le lit, à la
+fréquence des raies (41 MHz dans l'exemple), est 2,77 fois plus grand. **« Q = 100 » de R140 vaut Qb = 277.** (2) R140
+donnait aux deux raies la vitesse de la porteuse et trouvait 75 cellules pour trois battements. La raie basse va à 0,84
+quand le front va à 1,2 : elle le suit de près et ne dure au point de mesure que 0,35 unité de temps par cellule
+parcourue. **Trois battements demandent 146 cellules, pas 75.**
+*B. Banc idéal* (pièces exactes, sans pertes). À x = 2 la raie haute vaut 2,06 fois la sonde en tension et la raie
+basse 1,00 : le front leur donne son énergie. Une troisième onde apparaît à la porteuse, la fréquence dont la vitesse
+de phase est celle du front : 1,17 fois la sonde si la sonde est coupée net, 0,44 si elle est coupée sur une période.
+Mécanisme : la partie lente de la coupure est presque immobile vue du front, et l'horizon amplifie sans limite ce qui
+est presque immobile. Rapport lu sur rapport de R140 : 0,98, 1,02 et 0,92 pour x = 1,5, 2 et 2,5 ; sans compter la
+troisième onde, 0,63, 1,15 et 0,92.
+*C. Pertes de vraies bobines.* Résistance en série dans chaque bobine, montant comme la racine de la fréquence (effet de
+peau), Qb compté à la fréquence des raies. Le niveau des raies est divisé par 4,4 pour Qb = 200, par 18,5 pour
+Qb = 100, par 290 pour Qb = 50 ; **le facteur 10 correspond à Qb = 126.** Borne pessimiste, résistance indépendante de
+la fréquence : facteur 96 pour Qb = 100. C'est la sonde qui paie : elle parcourt 150 cellules avant d'être convertie.
+Le rapport des raies, corrigé de pertes connues, reste à moins de 8 % de celui de R140 pour Qb = 200 et 100.
+*D. Tolérances* (Qb = 200, six bancs tirés au hasard, x = 2). Pièces à 1 % et instants de commande à 2 % d'une cellule :
+rapport lu 1,03 ± 0,15 fois celui de R140. À 2 % et 5 % : 1,09 ± 0,30. À 5 % et 10 % : 1,22 ± 0,60. Pièces exactes
+commandées à un dixième de cellule près : 0,99 ± 0,04. **Ce sont les pièces qui comptent, pas les instants de
+commande** : les deux raies sont à 84 et 96 % de la fréquence de coupure, et une cellule un peu lourde les arrête
+presque.
+*E. Température* tirée de trois fréquences de sonde (x = 1,5, 2 et 2,5) : 0,945 fois celle de R140 sur le banc idéal,
+0,958 avec Qb = 200, 0,98 ± 0,11 avec des pièces à 1 %.
+**Verdict : CONDITIONNEL, et rectificatif du verdict de R140. Le critère de pertes écrit avant R140 n'est tenu qu'avec
+des bobines de Qb = 126 ou plus à la fréquence des raies ; R140 le disait tenu d'un facteur 4 avec Q = 100, ce qui
+valait pour Qb = 277 sur une ligne deux fois trop courte. Sur un banc sans défaut de 195 cellules la loi se lit à 10 %
+près. Avec de vraies pièces il faut 1 % de tolérance pour lire le rapport des raies à 15 % et la température à 11 %.**
+Ce que le calcul apprend : (1) voir les deux raies est à la portée d'un banc, elles sont aussi grandes que la sonde
+tant que les pertes le permettent ; (2) vérifier la loi à 10 % demande 195 cellules appariées à 1 % et des bobines peu
+résistives, ce qui est un travail d'appairage plus qu'un achat ; (3) la commande cellule par cellule n'a pas besoin
+d'instants précis ; (4) toute tension lente présente devant le front ressort amplifiée à la porteuse, donc la sonde se
+coupe en douceur et la lecture compte trois ondes. Selon le critère d'arrêt de la feuille de route, on s'arrête à la
+simulation sauf banc à pièces choisies ; le banc n'est pas chiffré, aucune pièce réelle n'ayant été choisie. Acheter
+et monter restent des décisions de l'auteur. Limites : une seule architecture et un seul protocole de lecture, sonde
+continue et un point de mesure ; six bancs tirés ; la fuite de la commande dans la ligne n'est pas simulée, elle ne
+dépend pas de la sonde et se retire en inversant la sonde d'un tir sur deux ; les pertes des diodes sont comptées dans
+Qb. Rien de ceci ne porte sur le vide ni sur la CD.

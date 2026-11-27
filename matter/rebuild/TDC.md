@@ -421,7 +421,8 @@ Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres
 3 et 4 maillons. Pour le §11 : 1 − (D − 2)/24 = 0 et 1/2 − (D − 2)/16 = 0.
 
 Le 27 novembre l'auteur a lancé le premier pas du chemin C, qui n'est pas une théorie des cordes : la gravité analogue
-sur une ligne de transmission. Le calcul C1 est R140 (`ds_analogue_line.py`, 7/7) ; son état est tenu dans la feuille de
+sur une ligne de transmission. Le calcul C1 est R140 (`ds_analogue_line.py`, 7/7) ; le banc fini est simulé en R141
+(`ds_analogue_bench.py`, 5/5), qui rectifie les pertes annoncées par R140. Leur état est tenu dans la feuille de
 route, §6.
 
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,

@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R140)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R141)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R140).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R141).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -357,7 +357,16 @@ pas le rapport des raies ; avec Q = 100 et 90 cellules elles laissent 24 % de le
 n'a été trouvée sur une ligne électrique ; deux mesures voisines existent (2003, 2026). Limite : le front simulé est
 imposé de l'extérieur ; le banc fidèle commande les diodes cellule par cellule et reste à simuler avant tout achat.
 Rien de ceci ne porte sur le vide ni sur la CD.
-L'article (`matter/paper/`) est consolidé jusqu'à R139 ; R140 est hors de son sujet.
+R141 : ce banc, simulé. 195 cellules, une sonde continue, le front commandé cellule par cellule, la tension lue en un
+point. Deux rectificatifs de R140 : son « Q = 100 » était compté à une fréquence 2,77 fois plus basse que celle des
+raies et vaut Qb = 277 pour un monteur ; et il faut 146 cellules, pas 75, parce que la raie basse suit le front de
+près. Avec des bobines dont la résistance monte comme la racine de la fréquence, les raies sont 4 fois plus faibles
+pour Qb = 200, 18 fois pour Qb = 100, 290 fois pour Qb = 50 : le seuil de 10 écrit d'avance demande Qb = 126. Sur un
+banc sans défaut la loi se lit à 10 % près, à condition de compter une troisième onde, à la porteuse, que la coupure
+de la sonde fait naître. D'un banc à l'autre la lecture bouge de 15 % avec des pièces à 1 %, de 30 % à 2 %, d'un
+facteur 2 à 5 % ; les instants de commande, eux, comptent peu. Voir les deux raies est à la portée d'un banc ;
+vérifier la loi à 10 % demande 195 cellules appariées à 1 % et des bobines peu résistives. Le banc n'est pas chiffré.
+L'article (`matter/paper/`) est consolidé jusqu'à R139 ; R140 et R141 sont hors de son sujet.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -463,11 +472,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R140 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R141 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R140, dix-sept scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R141, dix-huit scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

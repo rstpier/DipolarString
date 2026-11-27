@@ -89,6 +89,12 @@
   ligne adaptée et à 6 % près sur la température pour une ligne à capacité seule, jusqu'à
   un front d'une demi-cellule ; les pertes ne changent pas le rapport des raies ; aucune
   mesure de cette loi trouvée sur une ligne électrique ; le banc fidèle reste à simuler
+- 27 novembre, R141 : ce banc, simulé (195 cellules, sonde continue, front commandé cellule
+  par cellule, lecture en un point). Rectificatifs de R140 : son « Q = 100 » vaut Qb = 277 à
+  la fréquence des raies, et il faut 146 cellules, pas 75. Le seuil de pertes écrit d'avance
+  demande Qb = 126. Loi lue à 10 % sur un banc sans défaut ; d'un banc à l'autre, 15 % avec
+  des pièces à 1 %, 30 % à 2 %, un facteur 2 à 5 % ; les instants de commande comptent peu.
+  Le banc n'est pas chiffré
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

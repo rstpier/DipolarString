@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_analogue_bench.py` — R141 : le banc fini du chemin C, simulé. 195 cellules, sonde continue, front commandé
+  cellule par cellule, lecture en un point. Rectifie R140 : son « Q = 100 » vaut Qb = 277 à la fréquence des raies, et
+  il faut 146 cellules, pas 75. Le seuil de pertes écrit d'avance demande Qb = 126 ; la loi se lit à 10 % sur un banc
+  sans défaut, à 15 % avec des pièces à 1 %, à 30 % à 2 %. Les instants de commande comptent peu.
 - `ds_analogue_line.py` — R140 : chemin C de la feuille de route, calcul C1. Simulation d'une échelle LC dont un front
   mobile abaisse la capacité : la loi de conversion par paires, exp(−2πω/κ), sort à 0,1 % sur une ligne adaptée et à
   6 % près sur la température pour une ligne à capacité seule, jusqu'à un front d'une demi-cellule ; les pertes ne
