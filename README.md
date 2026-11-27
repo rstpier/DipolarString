@@ -43,7 +43,9 @@ releases.
 > 3.0 (R137). The one published mechanism for that gap, a relaxation of the string by pair creation, does not reduce
 > it when applied to the rotating string: 2.9 to 3.0 standard deviations (R138). Fitted with the form of a string, the
 > published lattice potential gives 455 ± 8 MeV, 31 MeV above the spectroscopic tension: 3.65 standard deviations, 2.97
-> with the most cautious error budget; the base value lies between the two (R139). No new claim is made. See
+> with the most cautious error budget; the base value lies between the two (R139). On 27 November the author took the
+> first step of another path of the roadmap, an analogue horizon simulated on a transmission line (R140), which says
+> nothing about the vacuum or the framework. No new claim is made. See
 > [`matter/rebuild/TDC.md`](matter/rebuild/TDC.md) (in French).
 
 ---

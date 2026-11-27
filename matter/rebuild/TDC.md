@@ -420,6 +420,10 @@ Les deux premiers calculs à refaire à la main sont R127 A (Zwiebach, chapitres
 §9 : le compte 126 − 25 = 101 et le nombre d'Euler −200 de la quintique. Pour le §10 : les fréquences des chaînes de 2,
 3 et 4 maillons. Pour le §11 : 1 − (D − 2)/24 = 0 et 1/2 − (D − 2)/16 = 0.
 
+Le 27 novembre l'auteur a lancé le premier pas du chemin C, qui n'est pas une théorie des cordes : la gravité analogue
+sur une ligne de transmission. Le calcul C1 est R140 (`ds_analogue_line.py`, 7/7) ; son état est tenu dans la feuille de
+route, §6.
+
 *Références.* Vérifiées par recherche (titre, revue) : L. E. Ibáñez, F. Marchesano et R. Rabadán, JHEP 11 (2001) 002,
 hep-th/0105155 ; J. G. Lee et al., Phys. Rev. Lett. 124, 101101 (2020) ; CMS, arXiv:1911.03947, paru dans JHEP
 en 2020 (la valeur de la borne sur les résonances de cordes, 7,9 TeV de mémoire, n'a pas pu être confirmée).

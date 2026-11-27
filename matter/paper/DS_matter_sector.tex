@@ -85,7 +85,7 @@
 impedance-matched, purely electromagnetic vacuum has no intrinsic scale, so the electron mass is
 an input, and the matter sector was out of scope. Between 14 and 19 September 2026 the sector was
 redrawn from eight constitutive statements of the author (R1--R8), computing at each step what the
-statement imposes and what it breaks; the record is 139 steps (R1--R139) backed by 134 scripts.
+statement imposes and what it breaks; the record is 140 steps (R1--R140) backed by 135 scripts.
 
 \noindent\textbf{Methods.} Each statement became a self-contained script with PASS/FAIL checks and
 a verdict (derived, conditional, coincidence, identity, excluded), recorded in
@@ -1022,7 +1022,10 @@ value is $455\pm8$~MeV, $31$~MeV above the spectroscopic tension: $3.65$ standar
 family-to-family envelope of the trajectory fits is added on the spectroscopic side. The value of this paper,
 $430.3$~MeV, lies between the two, $3.0$ standard deviations below the first and $2.6$ above the second. The same
 lattice model shows that the lowest level of the string does not relax slowly: its force is $96\%$ of the string
-force at $1.0$~fm, $56\%$ at $1.2$~fm and $16\%$ at $1.3$~fm.
+force at $1.0$~fm, $56\%$ at $1.2$~fm and $16\%$ at $1.3$~fm. The last step of the record (R140,
+\texttt{matter/rebuild/ds\_analogue\_line.py}) lies outside the subject of this paper: it is the first calculation of a
+different path chosen by the author, an analogue horizon on a discrete transmission line whose capacitance is lowered
+by a moving front, where the pair-conversion law $\exp(-2\pi\omega/\kappa)$ is recovered numerically.
 
 \section{Falsification}\label{sec:falsification}
 %==============================================================================
@@ -1081,7 +1084,7 @@ record), the direction at each step, and the review comments that imposed the do
 as ``corrections'' in \texttt{matter/redraw/BASE.md} (R68 from derived to identity; R86 from
 derived to conditional; R92--R93, R96--R97 rewordings; the criterion of R100). The second system
 (Claude, Anthropic, used through Claude Code sessions in September 2026; the model designation is
-in the session record and is to be filled in by the author) wrote the 134 scripts, ran them,
+in the session record and is to be filled in by the author) wrote the 135 scripts, ran them,
 wrote the record and this draft. Every number in this paper is produced by a script in
 \texttt{matter/redraw/} that prints a \texttt{RESULT} line; one script,
 \texttt{ring\_form\_factor.py}, is left with a failing check on purpose, the failure being the

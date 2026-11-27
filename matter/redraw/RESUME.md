@@ -1,7 +1,7 @@
-# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R139)
+# Travaux « matière » — résumé (au 19 septembre 2026, à jour de R140)
 
 Tout ce qui suit est calculé par des scripts (`matter/scripts/`, `matter/redraw/`), chacun avec
-des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R139).
+des vérifications PASS/FAIL ; le détail étape par étape est dans `BASE.md` (R1 à R140).
 Verdicts : **dérivé** (sort des règles de la base sans nombre réglé), **conditionnel** (dépend
 d'une lecture non tranchée), **coïncidence** (nombre juste, sans mécanisme), **exclu**.
 
@@ -347,7 +347,17 @@ contre 423,7 ± 2,5 pour les spectres : écart de 31 MeV, 3,65 écarts types, au
 avec l'enveloppe des familles du côté des spectres. La base, 430,3 MeV, est entre les deux, compatible avec aucune. Le
 même modèle montre que le fil ne se détend pas lentement : son niveau le plus bas tire à 96 % à 1,0 fm et à 16 % à
 1,3 fm. Aucun nombre de la CD n'entre dans ce calcul.
-L'article (`matter/paper/`) est consolidé jusqu'à R139.
+Décision de l'auteur (27 novembre 2026) : le premier pas du chemin C de la feuille de route, « pars la simulation
+maintenant ». R140 : une échelle de bobines et de condensateurs dont un front mobile abaisse la capacité ; une petite
+onde plus lente que le front ne peut pas le traverser, c'est un horizon, et elle est convertie en deux raies. La
+théorie des trous noirs donne leur rapport, exp(−2πω/κ). La simulation le retrouve à 0,01 % près à basse fréquence et
+6 % à huit unités de ω/T sur une ligne adaptée ; sur une ligne à capacité seule, celle d'un banc à varicaps, la même
+loi sort avec une température 3 % plus haute, et elle tient jusqu'à un front d'une demi-cellule. Les pertes ne changent
+pas le rapport des raies ; avec Q = 100 et 90 cellules elles laissent 24 % de leur niveau. Aucune mesure de cette loi
+n'a été trouvée sur une ligne électrique ; deux mesures voisines existent (2003, 2026). Limite : le front simulé est
+imposé de l'extérieur ; le banc fidèle commande les diodes cellule par cellule et reste à simuler avant tout achat.
+Rien de ceci ne porte sur le vide ni sur la CD.
+L'article (`matter/paper/`) est consolidé jusqu'à R139 ; R140 est hors de son sujet.
 
 Passe de cohérence (R71–R75) : cinq points examinés, trois fermés, un devenu une décision, un ouvert.
 
@@ -453,11 +463,11 @@ Ce qui reste vraiment :
 
 ## 7. Fichiers
 
-- `matter/redraw/BASE.md` : les énoncés R1–R139 et leurs conséquences calculées, avec trois bilans
+- `matter/redraw/BASE.md` : les énoncés R1–R140 et leurs conséquences calculées, avec trois bilans
   (R20, R31, R49) et la passe de cohérence R71–R75.
 - `matter/redraw/*.py` : 118 scripts (tous PASS, sauf `ring_form_factor.py`, 4/5 : l'échec du critère de R100 est le résultat), un par étape ; `matter/scripts/` : la phase
   précédente (holonomie, Faddeev, impédance du proton, topologie) ; `matter/rebuild/` : la reconstruction de
-  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R139, seize scripts).
+  l'objet (cahier des charges `SPEC.md`, programmes `A3.md` et `TDC.md` ; R122, R124, R125, R127 à R140, dix-sept scripts).
 - `matter/OPEN_PROBLEMS.md`, `matter/CONSTRAINTS.md` : l'état des problèmes ouverts et des
   contraintes.
 - `matter/redraw/HADRONS.md` : le secteur hadronique consolidé (R109) : entrées, règles, chaîne,

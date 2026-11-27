@@ -83,6 +83,12 @@
   de 0,4 à 1,0 fm et non 445 ; 455 ± 8 MeV contre 423,7 ± 2,5 pour les spectres : 31 MeV,
   3,65 écarts types, au-dessus du seuil écrit d'avance ; 2,97 avec le budget le plus
   prudent ; le niveau le plus bas du fil décroche entre 1,1 et 1,3 fm
+- 27 novembre, décision de l'auteur : premier pas du chemin C de la feuille de route, « pars la
+  simulation maintenant ». R140 : simulation d'une ligne de transmission dont un front mobile
+  abaisse la capacité ; la loi de conversion par paires exp(−2πω/κ) sort à 0,1 % sur une
+  ligne adaptée et à 6 % près sur la température pour une ligne à capacité seule, jusqu'à
+  un front d'une demi-cellule ; les pertes ne changent pas le rapport des raies ; aucune
+  mesure de cette loi trouvée sur une ligne électrique ; le banc fidèle reste à simuler
 
 ## V2.11 (21 novembre 2026) — édition erratum, paquet gelé le 22 novembre
 

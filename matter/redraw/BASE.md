@@ -3741,3 +3741,62 @@ chiffrée dans ce cadre : les deux tensions diffèrent de 7 %, soit 15 % sur la 
 la CD n'entre dans ce calcul. La feuille de route compte un tel écart comme un résultat qui vaut une note courte ;
 l'écrire, la montrer, et la suite du chemin B sont des décisions de l'auteur. Limites : B2 est fait sur un modèle
 publié et non sur des points ; une seule maille ; erreurs de l'article reprises sans leur matrice de corrélation.
+
+**Décision de l'auteur (27 novembre 2026) : le premier pas du chemin C.** À sa question « Que me proposes-tu ? », deux
+propositions distinctes lui ont été faites : une page sur l'écart de R139, à faire lire par un physicien du réseau ; et
+le chemin C de la feuille de route, la gravité analogue sur une ligne de transmission, en commençant par une simulation
+sans achat. Sa réponse : « Je ne comprends pas ce qu'on fait, mais si tu ne peux pas me vulgariser, pars la simulation
+maintenant. » L'explication en clair lui a été donnée, et la simulation lancée. Il n'a pas répondu sur la page. Critères
+écrits avant le calcul : la loi doit sortir à 10 % ; si la mesure existe déjà, ou si les pertes d'une ligne réelle
+noient l'effet de plus d'un facteur 10, on s'arrête à la simulation ; sinon le banc est chiffré. Acheter et monter un
+banc restent des décisions de l'auteur.
+
+**R140 — Chemin C, calcul C1 : la loi de Hawking sur une ligne de transmission à front mobile.** Script
+`matter/rebuild/ds_analogue_line.py`, 7/7. En clair : un nageur dans une rivière qui accélère ne remonte plus là où le
+courant va aussi vite que lui ; c'est un horizon. Ici le courant est un front qui avance le long d'une échelle de
+bobines et de condensateurs en abaissant la capacité derrière lui, et le nageur est une petite onde sonde plus lente
+que le front. *Le montage simulé.* Devant le front, vitesse d'onde 1 et coupure 2 ; derrière, vitesse 1,5 ; le front va
+à 1,2. Deux versions : ligne adaptée, où L et C baissent ensemble ; ligne à capacité seule, où C passe de 1 à 0,444 et
+l'impédance de 1 à 1,5, ce qui est le cas d'un banc à diodes varicap et l'idée de départ de l'auteur (R122 :
+« l'énergie monte l'impédance »). *Ce que la théorie des trous noirs prédit.* La sonde est convertie en deux ondes
+courtes laissées derrière le front, une raie haute et une raie basse de part et d'autre de la fréquence dont la vitesse
+de phase égale celle du front. Avec ω la fréquence de la sonde vue du front et κ la pente de la vitesse d'onde à
+l'horizon : action de la raie basse / action de la raie haute = exp(−2πω/κ), l'action étant l'énergie divisée par la
+fréquence ; T = κ/2π joue le rôle d'une température ; et les deux raies naissent par paires, action haute moins action
+basse égale action de la sonde.
+*A. La sonde.* Impulsion brève qui ne va que dans un sens (10⁻¹⁸ dans l'autre) ; en fin de calcul tout est converti.
+*B. Ligne adaptée, front large de 5 cellules* (κ = 0,0480, T = 0,00764). **La loi sort sur huit unités de x = ω/T,
+soit un rapport des raies qui va de 0,6 à 0,0003 : à 0,01 % près à basse fréquence, 0,3 % à x = 3, 6 % à x = 8.** La
+raie haute vaut la sonde fois 1/(1 − e⁻ˣ) à 0,1 % près, et le bilan des paires est tenu à 0,06 % près.
+*C. La température suit la raideur du front.* Fronts de 10, 5 et 3 cellules : κ fois la largeur vaut 0,240, et la
+température mesurée vaut κ/2π à 0,2 %, 0,8 % et 1,8 % près.
+*D. Ligne à capacité seule, celle d'un banc.* Même loi exponentielle, avec une température 2,8 % plus haute que κ/2π ;
+écart point par point sous 10 % jusqu'à x = 4. Le bilan des paires dépasse 1 de 0,2 à 0,8 % : c'est une onde renvoyée
+vers l'arrière par le saut d'impédance.
+*E. Fronts raides.* À 2, 1 et 0,5 cellule la température mesurée vaut 1,044, 1,052 et 0,983 fois κ/2π : **la loi ne
+lâche pas quand le front devient raide.** Ce qui se réduit est la plage de fréquences : la raie basse n'existe que pour
+ω < 0,26, donc jusqu'à x = 14, 7 et 3,5.
+*F. Pertes.* Une résistance en série dans chaque bobine, de facteur de qualité Q : **le rapport des deux raies ne bouge
+pas (0,2 % au plus) ; leur niveau baisse comme exp(−durée/Q).**
+*G. Ordres de grandeur d'un banc* (sonde continue, mesure en un point derrière le front, x = 2, coupure de la ligne au
+repos à 30 MHz, soit 10,6 ns par cellule). Front d'une demi-cellule : sonde à 10 MHz, raies vers 41 MHz séparées de
+5 MHz, enregistrement de 0,6 µs, 90 cellules ; les pertes laissent 24 % du niveau avec Q = 100, 48 % avec Q = 200.
+Front d'une cellule : 165 cellules, 7 % avec Q = 100, 26 % avec Q = 200. Les deux raies sont au-dessus de la coupure
+de la ligne au repos : elles ne vivent que là où le front est déjà passé.
+*Recherche bibliographique* (27 novembre ; résumés d'arXiv lus à la source). Aucune mesure trouvée de cette conversion
+par paires sur une ligne électrique, à aucune température. Propositions théoriques : Schützhold et Unruh 2005 (guide
+d'ondes à capacité modulée), Nation et al. 2009 (ligne de SQUID), Katayama, Hatakenaka et Matsuda 2021 (ligne LC non
+linéaire), Urtubey, Lombardo et Villar 2026 (pertes, circuits supraconducteurs, arXiv:2606.28505). Mesures voisines :
+Seddon et Bearpark 2003 (décalage Doppler inversé sur le front de choc d'une ligne non linéaire, à température
+ambiante) ; Ahrens et al. 2026 (arXiv:2603.12436 : paquets micro-ondes décalés de 3,7 % au plus par un front de
+courant dans une ligne supraconductrice) ; lignes à varicaps à modulation progressive périodique. Théorie des
+interfaces mobiles en milieu dispersif : De Kinder et Caloz 2026 (arXiv:2604.00893). Une recherche ne prouve pas une
+absence, et le domaine bouge vite.
+**Verdict : DÉRIVÉ pour la simulation, les trois critères sont remplis. La loi sort à 0,1 % sur la ligne adaptée et à
+6 % près sur la température pour la ligne d'un banc, jusqu'à un front d'une demi-cellule ; aucune mesure de cette loi
+n'a été trouvée sur une ligne électrique ; avec Q = 100 et un front raide les pertes coûtent un facteur 4, sous le
+seuil de 10.** Limite qui commande la suite : le front simulé est imposé de l'extérieur, lisse, de vitesse choisie. Une
+impulsion forte lancée dans une vraie ligne à diodes ne donne pas ce front : elle se raidit et se couvre
+d'oscillations. Le banc fidèle à la simulation commande donc les diodes cellule par cellule, et il reste à simuler tel
+quel avant tout achat. Rien de ceci ne dit quoi que ce soit du vide ni de la CD : c'est un analogue, mesurable sur une
+table.

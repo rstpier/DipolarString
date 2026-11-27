@@ -11,6 +11,10 @@ ni le manuscrit V2.10 ni le registre `../redraw/` (qui garde la numérotation R 
   première confrontation (R123), les trois calculs à faire dans l'ordre, et le critère d'arrêt écrit d'avance.
 - `TDC.md` — la CD comme variante de la théorie des cordes (décision de l'auteur, 22 novembre 2026) : les trois sens
   de « variante », la définition retenue, le dictionnaire CD ↔ cordes, le premier audit (R127) et les critères d'arrêt.
+- `ds_analogue_line.py` — R140 : chemin C de la feuille de route, calcul C1. Simulation d'une échelle LC dont un front
+  mobile abaisse la capacité : la loi de conversion par paires, exp(−2πω/κ), sort à 0,1 % sur une ligne adaptée et à
+  6 % près sur la température pour une ligne à capacité seule, jusqu'à un front d'une demi-cellule ; les pertes ne
+  changent pas le rapport des raies. Ce n'est plus la CD ni les cordes : un analogue d'horizon, mesurable sur une table.
 - `ds_static_potential_window.py` — R139 : calcul B2, fait sur le modèle publié du potentiel statique du réseau ; avec
   la forme d'une corde il donne 454,8 MeV dans la fenêtre de 0,4 à 1,0 fm, et non 445 ; avec la dépendance à la
   fenêtre, 455 ± 8 MeV contre 423,7 ± 2,5 pour les spectres : 31 MeV, 3,65 écarts types, 2,97 avec le budget le plus

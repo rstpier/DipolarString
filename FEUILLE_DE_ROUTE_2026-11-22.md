@@ -273,6 +273,15 @@ facteur 10 dans le devis de C2, on s'arrête à la simulation.
 **À qui parler.** La communauté de la gravité analogue est petite, expérimentale et ouverte aux ingénieurs ; son
 numéro de référence est celui des *Philosophical Transactions* de 2020 (Jacquet, Weinfurtner et König).
 
+**État après R140 (27 novembre 2026).** L'auteur a lancé le premier pas : « pars la simulation maintenant ». C1 est
+fait (`matter/rebuild/ds_analogue_line.py`, 7/7). La loi sort à 0,1 % sur une ligne adaptée et à 6 % près sur la
+température pour une ligne à capacité seule, jusqu'à un front d'une demi-cellule ; les pertes ne changent pas le
+rapport des deux raies et, avec Q = 100 et une centaine de cellules, coûtent un facteur 4 sur leur niveau. Recherche
+bibliographique : aucune mesure de cette loi trouvée sur une ligne électrique ; des propositions théoriques depuis
+2005 et deux mesures voisines, un Doppler inversé sur un front de choc (2003) et un Doppler sur un front de courant
+dans une ligne supraconductrice (2026). Limite : le front simulé est imposé de l'extérieur. Le banc qui lui est
+fidèle commande les diodes cellule par cellule ; il reste à le simuler tel quel avant tout achat.
+
 ---
 
 ## 7. Comparatif
